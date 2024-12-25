@@ -89,8 +89,7 @@ test.describe.serial('Shopping DE-CZ', () => {
           await page.getByTestId('locationPicker.button').click();
           await page.getByPlaceholder('PSČ/město').fill(datosCZ.CZPostalCode);
           await page.getByRole('button', { name: datosCZ.CZCity}).click();
-          await page.getByLabel('dialog').getByRole('button', { name: 'Zvolit pobočku' }).click();
-          
+          await page.getByLabel('dialog').getByRole('button', { name: 'Zvolit pobočku' }).click();          
 
           await page.locator('//a[@data-purpose="cart.button.submit.bottom"]').click();          
         }
