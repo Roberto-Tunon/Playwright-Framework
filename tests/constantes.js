@@ -14,17 +14,10 @@ module.exports = {
       Test IT. Prosím, ignorujte ho. Děkujeme!`,
       address: "Ringstrasse", 
       nummer: "10",
-      birthdate: "24.01.1980",
-      cardnumber: "5319 5447 7987 5501",
-      cardholder: "Mike Pascher",
-      cardcvv: "311",
-      carddate: "04/27",
+      birthdate: "24.01.1980",      
       Pocoproduct : "498152800",
       SSOuser: "LUTZNT\\Robe",
       SSOpwd: "Utrecht26",
-      PayPalusr: "too-buyer@xxxlutz.at",
-      PayPalpwd: "xxxlutz12345",
-
     },
 
     datosDE: {            
@@ -48,7 +41,27 @@ module.exports = {
       ATPhone: '050545454',
       ATPostalCode: '4030',
       ATCity: 'Linz', 
-    }
+    },
+
+    PayLive: {      
+      cardnumber: "5319 5447 7987 5501",
+      cardholder: "Mike Pascher",
+      cardcvv: "311",
+      carddate: "04/27",
+      PayPalusr: "mp2@xxxlutz.at",
+      PayPalpwd: "0810Shadow",
+    },
+
+    PayQC: {      
+      PayPalusr: "too-buyer@xxxlutz.at",
+      PayPalpwd: "xxxlutz12345",
+      cardnumber: "5555 5555 5555 4444",
+      cardholder: "Robert T.",
+      cardcvv: "737",
+      carddate: "03/30",
+    },
+
+
 
 };
   

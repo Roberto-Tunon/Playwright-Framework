@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
-const { datosvar, datosDE } = require('./constantes');
+const { datosvar, datosDE, PayQC } = require('./constantes');
+const { fillDeliveryForm } = require('./utils/fillDeliveryForm');
 
 test('Shopping', async ({ browser }) => {
 
@@ -51,6 +52,8 @@ test('Shopping', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
+    /*
+
     await page.locator('//input[@name="deliveryAddress.email"]').fill(datosvar.ecoemail);
     await page.locator('//input[@name="deliveryAddress.phone"]').fill(datosDE.DEPhone); 
     await page.locator('//input[@name="deliveryAddress.firstName"]').fill(datosvar.name);
@@ -60,21 +63,25 @@ test('Shopping', async ({ browser }) => {
     await page.locator('//input[@name="deliveryAddress.postalCode"]').fill(datosDE.DEPostalCode);
     await page.locator('//input[@name="deliveryAddress.town"]').fill(datosDE.DECity);
     await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
+    */
+
+    await fillDeliveryForm(page, datosvar, datosDE);
+
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
     
     const frameLocator1 = page.frameLocator('iframe[title="Iframe für Kartennummer"]');
     const cardNumberInput = frameLocator1.locator('#encryptedCardNumber');
-    await cardNumberInput.fill(datosvar.cardnumber);
+    await cardNumberInput.fill(PayQC.cardnumber);
 
     const frameLocator2 = page.frameLocator('iframe[title="Iframe für Ablaufdatum"]');
     const cardDateInput = frameLocator2.locator('#encryptedExpiryDate');
-    await cardDateInput.fill(datosvar.carddate);
+    await cardDateInput.fill(PayQC.carddate);
 
     const frameLocator3 = page.frameLocator('iframe[title="Iframe für Sicherheitscode"]');
     const cardcvvInput = frameLocator3.locator('#encryptedSecurityCode');
-    await cardcvvInput.fill(datosvar.cardcvv);
+    await cardcvvInput.fill(PayQC.cardcvv);
 
-    await page.locator('[data-testid="holderName"]').fill(datosvar.cardholder);
+    await page.locator('[data-testid="holderName"]').fill(PayQC.cardholder);
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard.submit"]').click();
     
 
