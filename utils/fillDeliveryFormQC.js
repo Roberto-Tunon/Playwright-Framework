@@ -1,5 +1,5 @@
 // utils/fillDeliveryForm.js
-async function fillDeliveryForm(page, datosvar, datosDE) {
+async function fillDeliveryFormQC(page, datosvar, datosDE) {
     await page.locator('//input[@name="deliveryAddress.email"]').fill(datosvar.ecoemail);
     await page.locator('//input[@name="deliveryAddress.phone"]').fill(datosDE.DEPhone);
     await page.locator('//input[@name="deliveryAddress.firstName"]').fill(datosvar.name);
@@ -11,5 +11,5 @@ async function fillDeliveryForm(page, datosvar, datosDE) {
     await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
   }
   
-  module.exports = { fillDeliveryForm };  
+  module.exports = { fillDeliveryFormQC };  
   
