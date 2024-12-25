@@ -11,5 +11,5 @@ async function fillDeliveryForm(page, datosvar, datosDE) {
     await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
   }
   
-  module.exports = { fillDeliveryForm };
+  module.exports = { fillDeliveryForm };  
   
