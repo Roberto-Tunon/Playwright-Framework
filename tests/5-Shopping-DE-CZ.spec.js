@@ -1,9 +1,10 @@
 const { test, expect } = require('@playwright/test');
-
 const { datosvar, datosDE, datosCZ, PayLive } = require('./constantes');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
+
 
 test.describe.serial('Shopping DE-CZ', () => {
-    ['cz','de'].forEach((rail) => {
+    ['de','cz'].forEach((rail) => {
 
     test(`Shopping for ${rail}`, async ({ browser }) => {
 
@@ -14,8 +15,8 @@ test.describe.serial('Shopping DE-CZ', () => {
         await page.setViewportSize({ width: 1920, height: 1080 });
     
         // Accept cookies    
-        await page.goto(`https://www.xxxlutz.${rail}`);
-        await page.waitForTimeout(3000);  // 3 seconds pause
+        await page.goto(`https://www.xxxlutz.${rail}/`);
+        await page.waitForTimeout(3000);  // 3 seconds pause 
     
         // Verifica si el botón de aceptar cookies está presente y haz clic si existe
         const acceptCookiesButton = await page.locator('[data-purpose="cookieBar.button.accept"]');
@@ -95,6 +96,9 @@ test.describe.serial('Shopping DE-CZ', () => {
         }
 
         if (rail === 'de') {
+
+          await fillDeliveryForm(page, datosvar, datosDE);
+          /*
           await page.locator('[data-purpose="form.input.paymentAddress.email.field"]').fill(datosvar.ecoemail);
           await page.locator('[data-purpose="form.input.paymentAddress.phone.field"]').fill(datosDE.DEPhone); 
           await page.locator('[data-purpose="form.input.paymentAddress.firstName.field"]').fill(datosvar.name);
@@ -105,6 +109,7 @@ test.describe.serial('Shopping DE-CZ', () => {
           await page.locator('[data-purpose="form.input.paymentAddress.town.field"]').fill(datosDE.DECity);
 
           await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
+          */
           await page.getByRole('heading', { name: 'Sicher bestellen in 3' }).click();
         }  
 

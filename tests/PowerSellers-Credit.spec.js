@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { datosvar, datosDE, PayQC } = require('./constantes');
-const { fillDeliveryForm } = require('./utils/fillDeliveryForm');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 
 test('Shopping', async ({ browser }) => {
 
@@ -51,19 +51,6 @@ test('Shopping', async ({ browser }) => {
     await page.locator('[data-purpose="sidebar.button.submit"]').click();
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-
-    /*
-
-    await page.locator('//input[@name="deliveryAddress.email"]').fill(datosvar.ecoemail);
-    await page.locator('//input[@name="deliveryAddress.phone"]').fill(datosDE.DEPhone); 
-    await page.locator('//input[@name="deliveryAddress.firstName"]').fill(datosvar.name);
-    await page.locator('//input[@name="deliveryAddress.lastName"]').fill(datosvar.surname);
-    await page.locator('//input[@name="deliveryAddress.streetname"]').fill(datosvar.address);
-    await page.locator('//input[@name="deliveryAddress.streetnumber"]').fill(datosvar.nummer);
-    await page.locator('//input[@name="deliveryAddress.postalCode"]').fill(datosDE.DEPostalCode);
-    await page.locator('//input[@name="deliveryAddress.town"]').fill(datosDE.DECity);
-    await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
-    */
 
     await fillDeliveryForm(page, datosvar, datosDE);
 
