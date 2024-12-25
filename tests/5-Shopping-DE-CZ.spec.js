@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { datosvar, datosDE, datosCZ, PayLive } = require('./constantes');
-const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
+const { fillDeliveryFormLive } = require('../utils/fillDeliveryFormLive');
 
 
 test.describe.serial('Shopping DE-CZ', () => {
@@ -9,7 +9,7 @@ test.describe.serial('Shopping DE-CZ', () => {
     test(`Shopping for ${rail}`, async ({ browser }) => {
 
         const context = await browser.newContext({
-          ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos
+          ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos          
         });
         const page = await context.newPage();
         await page.setViewportSize({ width: 1920, height: 1080 });
@@ -97,19 +97,7 @@ test.describe.serial('Shopping DE-CZ', () => {
 
         if (rail === 'de') {
 
-          await fillDeliveryForm(page, datosvar, datosDE);
-          /*
-          await page.locator('[data-purpose="form.input.paymentAddress.email.field"]').fill(datosvar.ecoemail);
-          await page.locator('[data-purpose="form.input.paymentAddress.phone.field"]').fill(datosDE.DEPhone); 
-          await page.locator('[data-purpose="form.input.paymentAddress.firstName.field"]').fill(datosvar.name);
-          await page.locator('[data-purpose="form.input.paymentAddress.lastName.field"]').fill(datosvar.surname);
-          await page.locator('[data-purpose="form.input.paymentAddress.streetname.field"]').fill(datosvar.address);
-          await page.locator('[data-purpose="form.input.paymentAddress.streetnumber.field"]').fill(datosvar.nummer);
-          await page.locator('[data-purpose="form.input.paymentAddress.postalCode.field"]').fill(datosDE.DEPostalCode);
-          await page.locator('[data-purpose="form.input.paymentAddress.town.field"]').fill(datosDE.DECity);
-
-          await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
-          */
+          await fillDeliveryFormLive(page, datosvar, datosDE);          
           await page.getByRole('heading', { name: 'Sicher bestellen in 3' }).click();
         }  
 
