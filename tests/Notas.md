@@ -8,8 +8,7 @@ For executing:
 - npx playwright test tests/3-LutzCard-DE-CZ.spec.js --project chromium --headed
 - npx playwright test tests/4-ContactCenter-DE-CZ.spec.js --project chromium --headed
 - npx playwright test tests/5-Shopping-DE-CZ.spec.js --project chromium --headed
-- npx playwright test tests/6-Poco-DE.spec.js --project chromium --headed
-- npx playwright test tests/7-Poco-Contact-Center.spec.js --project chromium --headed
+- npx playwright test tests/6-Poco-DE.spec.js --project chromium --headed  
 
 Powersellers
 ---------------
