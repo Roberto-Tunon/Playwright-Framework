@@ -80,8 +80,7 @@ test.describe.serial('Shopping DE-CZ', () => {
           
           /*
           await page.getByText('Osobní odběrBalíková přepravaOsobní odběr').click();
-          await page.getByRole('option', { name: 'Osobní odběr' }).click();
-          
+          await page.getByRole('option', { name: 'Osobní odběr' }).click();          
 
           await page.getByText('Osobní odběr').nth(0).click();
           await page.getByRole('option', { name: 'Osobní odběr' }).locator('div').click();

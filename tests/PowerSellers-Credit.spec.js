@@ -3,7 +3,7 @@ const { datosvar, datosDE, PayQC } = require('./constantes');
 const { fillDeliveryFormQC } = require('../utils/fillDeliveryFormQC');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 
-test('Shopping', async ({ browser }) => {
+test('Shopping with Credit Card', async ({ browser }) => {
 
     const context = await browser.newContext({
         ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos

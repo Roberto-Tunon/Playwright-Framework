@@ -1,7 +1,8 @@
 const { test, expect } = require('@playwright/test');
 const { datosvar, datosDE } = require('./constantes');
+const { fillDeliveryFormQC } = require('../utils/fillDeliveryFormQC');
 
-test('Shopping', async ({ browser }) => {
+test('Shopping with PayPal', async ({ browser }) => {
 
     const context = await browser.newContext({
         ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos
@@ -35,6 +36,13 @@ test('Shopping', async ({ browser }) => {
         await acceptCookiesButton.click();
     }
 
+    await page.waitForTimeout(1000);  // 1 second pause
+
+    const acceptModalButton = await page.locator('//span[contains(text(),"Weiter einkaufen")]').nth(1);
+    if (await acceptModalButton.isVisible()) {
+    await acceptModalButton.click();
+    };
+
     await page.waitForTimeout(2000);  // 2 seconds pause
   
     await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.DEProduct);
@@ -44,15 +52,8 @@ test('Shopping', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await page.locator('//input[@name="deliveryAddress.email"]').fill(datosvar.ecoemail);
-    await page.locator('//input[@name="deliveryAddress.phone"]').fill(datosDE.DEPhone); 
-    await page.locator('//input[@name="deliveryAddress.firstName"]').fill(datosvar.name);
-    await page.locator('//input[@name="deliveryAddress.lastName"]').fill(datosvar.surname);
-    await page.locator('//input[@name="deliveryAddress.streetname"]').fill(datosvar.address);
-    await page.locator('//input[@name="deliveryAddress.streetnumber"]').fill(datosvar.nummer);
-    await page.locator('//input[@name="deliveryAddress.postalCode"]').fill(datosDE.DEPostalCode);
-    await page.locator('//input[@name="deliveryAddress.town"]').fill(datosDE.DECity);
-    await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
+    await fillDeliveryFormQC(page, datosvar, datosDE);
+
     await page.locator('[data-purpose="checkout.paymentOptions.paypal.submit"]').click();
 
     await page.waitForTimeout(2000);  // 2 seconds pause
