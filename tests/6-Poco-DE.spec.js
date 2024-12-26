@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { datosvar, datosDE } = require('./constantes');
+const { datosvar, datosDE, PayLive } = require('./constantes');
 
 test('Poco DE', async ({ browser }) => {
     const context = await browser.newContext({
@@ -52,17 +52,19 @@ test('Poco DE', async ({ browser }) => {
 
     const frameLocator1 = page.frameLocator('iframe[title="Iframe für Kartennummer"]');
     const cardNumberInput = frameLocator1.locator('#encryptedCardNumber');
-    await cardNumberInput.fill(datosvar.cardnumber);
+    await cardNumberInput.fill(PayLive.cardnumber);
 
     const frameLocator2 = page.frameLocator('iframe[title="Iframe für Ablaufdatum"]');
     const cardDateInput = frameLocator2.locator('#encryptedExpiryDate');
-    await cardDateInput.fill(datosvar.cardnumber);
+    await cardDateInput.fill(PayLive.carddate);
 
     const frameLocator3 = page.frameLocator('iframe[title="Iframe für Sicherheitscode"]');
     const cardcvvInput = frameLocator3.locator('#encryptedSecurityCode');
-    await cardcvvInput.fill(datosvar.cardcvv);
+    await cardcvvInput.fill(PayLive.cardcvv);
 
-    await page.locator('[data-testid="holderName"]').fill(datosvar.cardholder);
+    await page.locator('[data-testid="holderName"]').fill(PayLive.cardholder);
+
+    await page.locator('[data-purpose="checkout.paymentOptions.creditcard.submit"]').click();
           
     await page.pause();      
 
