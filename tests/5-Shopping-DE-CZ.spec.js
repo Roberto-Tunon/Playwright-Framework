@@ -1,10 +1,11 @@
 const { test, expect } = require('@playwright/test');
 const { datosvar, datosDE, datosCZ, PayLive } = require('./constantes');
 const { fillDeliveryFormLive } = require('../utils/fillDeliveryFormLive');
+const { fillCreditCard } = require('../utils/fillCreditCard');
 
 
 test.describe.serial('Shopping DE-CZ', () => {
-    ['de','cz'].forEach((rail) => {
+    ['cz','de'].forEach((rail) => {
 
     test(`Shopping for ${rail}`, async ({ browser }) => {
 
@@ -102,42 +103,7 @@ test.describe.serial('Shopping DE-CZ', () => {
 
         await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 
-        if (rail === 'de') {
-          const frameLocator1 = page.frameLocator('iframe[title="Iframe für Kartennummer"]');
-          const cardNumberInput = frameLocator1.locator('#encryptedCardNumber');
-          await cardNumberInput.fill(PayLive.cardnumber);
-        }
-        else if (rail === 'cz') {  
-          const frameLocator1 = page.frameLocator('iframe[title="Iframe pro číslo karty"]');
-          const cardNumberInput = frameLocator1.locator('#encryptedCardNumber');
-          await cardNumberInput.fill(PayLive.cardnumber);
-        }          
-
-        if (rail === 'de') {
-          const frameLocator2 = page.frameLocator('iframe[title="Iframe für Ablaufdatum"]');
-          const cardDateInput = frameLocator2.locator('#encryptedExpiryDate');
-          await cardDateInput.fill(PayLive.carddate);
-        }
-        else if (rail === 'cz') {  
-          const frameLocator2 = page.frameLocator('iframe[title="Iframe pro datum vypršení platnosti"]');
-          const cardDateInput = frameLocator2.locator('#encryptedExpiryDate');
-          await cardDateInput.fill(PayLive.carddate);
-        }        
-
-        if (rail === 'de') {
-          const frameLocator3 = page.frameLocator('iframe[title="Iframe für Sicherheitscode"]');
-          const cardcvvInput = frameLocator3.locator('#encryptedSecurityCode');
-          await cardcvvInput.fill(PayLive.cardcvv);
-        }
-        else if (rail === 'cz') {
-          const frameLocator3 = page.frameLocator('iframe[title="Iframe pro bezpečnostní kód"]');
-          const cardcvvInput = frameLocator3.locator('#encryptedSecurityCode');
-          await cardcvvInput.fill(PayLive.cardcvv);
-        }
-
-        await page.locator('[data-testid="holderName"]').fill(PayLive.cardholder);
-
-        await page.locator('[data-purpose="checkout.paymentOptions.creditcard.submit"]').click();
+        await fillCreditCard(page, PayLive, rail)          
 
         if (rail === 'de') {
           await page.locator('//span[normalize-space()="Kommentar hinzufügen (optional)"]').click();
