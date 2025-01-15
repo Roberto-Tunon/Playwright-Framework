@@ -32,9 +32,9 @@ test.describe.serial('Shopping DE-CZ', () => {
           }  
         
         if (rail === 'de') {
-          await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.DEProduct);
+          await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.Product);
         } else if (rail === 'cz') {
-          await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosCZ.CZProduct);
+          await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosCZ.Product);
         }
         await page.locator('[data-purpose="header.searchBar.button.submit"]').click();         
         await page.locator('[data-testid="favourites.unchecked"]').first().click();  
@@ -69,8 +69,8 @@ test.describe.serial('Shopping DE-CZ', () => {
           await page.getByText('PostversandPostversandSelbstabholung').click();  
           await page.getByText('Selbstabholung').click();
           await page.getByTestId('locationPicker.button').click();
-          await page.getByPlaceholder('PLZ/Ort').fill(datosDE.DEPostalCode);
-          await page.getByRole('button', { name: datosDE.DECity}).click();
+          await page.getByPlaceholder('PLZ/Ort').fill(datosDE.PostalCode);
+          await page.getByRole('button', { name: datosDE.City}).click();
           await page.getByLabel('dialog').getByRole('button', { name: 'Filiale wählen' }).click();
           await page.locator('//button[@data-purpose="cart.button.login.modal.bottom"]').click();
           await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
@@ -87,8 +87,8 @@ test.describe.serial('Shopping DE-CZ', () => {
           */
 
           await page.getByTestId('locationPicker.button').click();
-          await page.getByPlaceholder('PSČ/město').fill(datosCZ.CZPostalCode);
-          await page.getByRole('button', { name: datosCZ.CZCity}).click();
+          await page.getByPlaceholder('PSČ/město').fill(datosCZ.PostalCode);
+          await page.getByRole('button', { name: datosCZ.City}).click();
           await page.getByLabel('dialog').getByRole('button', { name: 'Zvolit pobočku' }).click();          
 
           await page.locator('//a[@data-purpose="cart.button.submit.bottom"]').click();          
@@ -106,10 +106,10 @@ test.describe.serial('Shopping DE-CZ', () => {
 
         if (rail === 'de') {
           await page.locator('//span[normalize-space()="Kommentar hinzufügen (optional)"]').click();
-          await page.locator('[data-purpose="form.input.userComment.field"]').fill(datosDE.DEMessage);
+          await page.locator('[data-purpose="form.input.userComment.field"]').fill(datosDE.Message);
         } else if (rail === 'cz') {
           await page.locator('(//span[contains(text(),"Komentář")])[1]').click();  
-          await page.locator('[data-purpose="form.input.userComment.field"]').fill(datosCZ.CZMessage);
+          await page.locator('[data-purpose="form.input.userComment.field"]').fill(datosCZ.Message);
         }
           
         await page.pause();

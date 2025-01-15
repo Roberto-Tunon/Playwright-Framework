@@ -15,8 +15,10 @@ test('Shopping with Credit Card', async ({ browser }) => {
     console.log(`Parámetro recibido: ${param}`);
 
     if (param === 'QC') {
+
         await page.goto(`https://xxxlutz-de.qc.xxxl-dev.at/`);   
-        
+        //await page.goto(`https://branch-daa19fb9c4-xxxlutz-de.qc.xxxl-dev.at`);   
+
         await page.getByRole('link', { name: 'XXXLutz SSO' }).click();
         await page.locator('//input[@id="userNameInput"]').fill(datosvar.SSOuser);
         await page.locator('//input[@id="passwordInput"]').fill(datosvar.SSOpwd);
@@ -46,7 +48,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
 
     await page.waitForTimeout(2000);  // 2 seconds pause
   
-    await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.DEProduct);
+    await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.Product);
     await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();

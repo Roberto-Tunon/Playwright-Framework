@@ -34,13 +34,13 @@ test.describe.serial('Lutz Card DE-CZ', () => {
         await page.locator('[data-purpose="form.input.streetNumber.field"]').fill(datosvar.nummer); 
 
         if (rail === 'de') {
-            await page.locator('[data-purpose="form.input.postalcode.field"]').fill(datosDE.DEPostalCode); 
-            await page.locator('[data-purpose="form.input.town.field"]').fill(datosDE.DECity);
-            await page.locator('[data-purpose="form.input.phone.field"]').fill(datosDE.DEPhone);  
+            await page.locator('[data-purpose="form.input.postalcode.field"]').fill(datosDE.PostalCode); 
+            await page.locator('[data-purpose="form.input.town.field"]').fill(datosDE.City);
+            await page.locator('[data-purpose="form.input.phone.field"]').fill(datosDE.Phone);  
         } else if (rail === 'cz') {
-            await page.locator('[data-purpose="form.input.postalcode.field"]').fill(datosCZ.CZPostalCode); 
-            await page.locator('[data-purpose="form.input.town.field"]').fill(datosCZ.CZCity);
-            await page.locator('[data-purpose="form.input.phone.field"]').fill(datosCZ.CZPhone);  
+            await page.locator('[data-purpose="form.input.postalcode.field"]').fill(datosCZ.PostalCode); 
+            await page.locator('[data-purpose="form.input.town.field"]').fill(datosCZ.City);
+            await page.locator('[data-purpose="form.input.phone.field"]').fill(datosCZ.Phone);  
         }
 
         await page.locator('[data-purpose="customerCard.register.addressStep"]').click();

@@ -45,7 +45,7 @@ test('Shopping with PayPal', async ({ browser }) => {
 
     await page.waitForTimeout(2000);  // 2 seconds pause
   
-    await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.DEProduct);
+    await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.Product);
     await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();

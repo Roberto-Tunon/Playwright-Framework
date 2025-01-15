@@ -29,13 +29,13 @@ test('Poco DE', async ({ browser }) => {
     await page.getByText('Selbstabholung').click();
 
     await page.getByTestId('locationPicker.button').click();
-    await page.getByPlaceholder('PLZ/Ort').fill(datosDE.DEPostalCode);
-    await page.getByRole('button', { name: datosDE.DECity}).click();
+    await page.getByPlaceholder('PLZ/Ort').fill(datosDE.PostalCode);
+    await page.getByRole('button', { name: datosDE.City}).click();
     await page.getByLabel('dialog').getByRole('button', { name: 'Filiale wählen' }).click();
     
     await page.locator('//a[@data-purpose="cart.button.submit.bottom"]').click();
     await page.locator('[data-purpose="form.input.paymentAddress.email.field"]').fill(datosvar.ecoemail);
-    await page.locator('[data-purpose="form.input.paymentAddress.phone.field"]').fill(datosDE.DEPhone); 
+    await page.locator('[data-purpose="form.input.paymentAddress.phone.field"]').fill(datosDE.Phone); 
 
     await page.getByText('Anrede *').click();
     await page.getByRole('option', { name: 'Herr' }).click();
@@ -44,8 +44,8 @@ test('Poco DE', async ({ browser }) => {
     await page.locator('[data-purpose="form.input.paymentAddress.lastName.field"]').fill(datosvar.surname);
     await page.locator('[data-purpose="form.input.paymentAddress.streetname.field"]').fill(datosvar.address);
     await page.locator('[data-purpose="form.input.paymentAddress.streetnumber.field"]').fill(datosvar.nummer);
-    await page.locator('[data-purpose="form.input.paymentAddress.postalCode.field"]').fill(datosDE.DEPostalCode);
-    await page.locator('[data-purpose="form.input.paymentAddress.town.field"]').fill(datosDE.DECity);   
+    await page.locator('[data-purpose="form.input.paymentAddress.postalCode.field"]').fill(datosDE.PostalCode);
+    await page.locator('[data-purpose="form.input.paymentAddress.town.field"]').fill(datosDE.City);   
     await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
     
     await page.pause();

@@ -49,14 +49,14 @@ test.describe.serial('Contact Center DE-CZ', () => {
         await page.locator('[data-purpose="form.input.email.field"]').fill(datosvar.email);
 
         if (rail === 'de') {
-          await page.locator('[data-purpose="form.input.phone.field"]').fill(datosDE.DEPhone);
-          await page.locator('[data-purpose="form.input.postalCode.field"]').fill(datosDE.DEPostalCode);
-          await page.locator('[data-purpose="form.input.town.field"]').fill(datosDE.DECity);
+          await page.locator('[data-purpose="form.input.phone.field"]').fill(datosDE.Phone);
+          await page.locator('[data-purpose="form.input.postalCode.field"]').fill(datosDE.PostalCode);
+          await page.locator('[data-purpose="form.input.town.field"]').fill(datosDE.City);
             
         } else if (rail === 'cz') {
-          await page.locator('[data-purpose="form.input.phone.field"]').fill(datosCZ.CZPhone);
-          await page.locator('[data-purpose="form.input.postalCode.field"]').fill(datosCZ.CZPostalCode);
-          await page.locator('[data-purpose="form.input.town.field"]').fill(datosCZ.CZCity);
+          await page.locator('[data-purpose="form.input.phone.field"]').fill(datosCZ.Phone);
+          await page.locator('[data-purpose="form.input.postalCode.field"]').fill(datosCZ.PostalCode);
+          await page.locator('[data-purpose="form.input.town.field"]').fill(datosCZ.City);
         }
 
         await page.locator('[data-purpose="contactcenter.contactdata.submit"]').click();        

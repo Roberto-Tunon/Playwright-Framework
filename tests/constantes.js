@@ -1,6 +1,6 @@
 // Deployment variables
 
-module.exports = {
+const constantes = {
     datosvar: {       
       version: '"version":"5.523.0"',
       email: 'rafodev686@nozamas.com',
@@ -21,27 +21,35 @@ module.exports = {
     },
 
     datosDE: {            
-      DEPhone: '030250025',
-      DEPostalCode: '10178',
-      DECity: 'Berlin',
-      DEProduct: '78140021',   
-      DEFloor: '1',
-      DEMessage: 'Dies ist eine Testbestellung, bitte stornieren und Geld zurücküberweisen. Vielen Danke.',
+      Phone: '030250025',
+      PostalCode: '10178',
+      City: 'Berlin',
+      Product: '78140021',   
+      Floor: '1',
+      Message: 'Dies ist eine Testbestellung, bitte stornieren und Geld zurücküberweisen. Vielen Danke.',
     },
 
     datosCZ: {      
-      CZPhone: '224373368',
-      CZPostalCode: '102 00',
-      CZCity: 'Praha 102',
-      CZProduct: '58080103',
-      CZMessage: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
+      Phone: '224373368',
+      PostalCode: '102 00',
+      City: 'Praha 102',
+      Product: '58080103',
+      Message: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
     },
 
     datosAT: {      
-      ATPhone: '050545454',
-      ATPostalCode: '4030',
-      ATCity: 'Linz', 
-    },
+      Phone: '050545454',
+      PostalCode: '4030',
+      City: 'Linz', 
+    },    
+
+    datosCH: {      
+      Cookiebutton: 'Weiter einkaufen',	
+      PostalCode: '8001',
+      City: 'Zürich', 
+      Product: '37313811',
+      Phone: '442154000',
+    },    
 
     PayLive: {      
       cardnumber: "5319 5447 7987 5501",
@@ -55,13 +63,13 @@ module.exports = {
     PayQC: {      
       PayPalusr: "too-buyer@xxxlutz.at",
       PayPalpwd: "xxxlutz12345",
-      cardnumber: "5555 5555 5555 4444",
-      cardholder: "Robert T.",
+      cardnumber: "2222 4000 7000 0005",
+      cardholder: "Robert Tunon",
       cardcvv: "737",
       carddate: "03/30",
-    },
-
-
+    }
 
 };
+
+module.exports = constantes;
   
