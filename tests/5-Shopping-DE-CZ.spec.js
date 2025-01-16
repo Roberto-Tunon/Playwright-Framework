@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { datosvar, datosDE, datosCZ, PayLive } = require('./constantes');
-const { fillDeliveryFormLive } = require('../utils/fillDeliveryFormLive');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 
 
@@ -74,18 +74,21 @@ test.describe.serial('Shopping DE-CZ', () => {
           await page.getByLabel('dialog').getByRole('button', { name: 'Filiale wählen' }).click();
           await page.locator('//button[@data-purpose="cart.button.login.modal.bottom"]').click();
           await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+
+
+           // Seleccionar el combo box por su selector
+    const comboBox = page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
+    await comboBox.click();    
+    await page.locator('#SELF_SERVICE').click();
+    await page.getByTestId('locationPicker.button').click();
+    await page.getByPlaceholder('PLZ/Ort').fill(datosrail.PostalCode);
+    await page.getByRole('button', { name: datosrail.City}).click();
+    //  await page.locator('[data-purpose="locationSearch.input.field"]').click(); 
+    await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click(); 
           
 
         } else if (rail === 'cz') {
           
-          /*
-          await page.getByText('Osobní odběrBalíková přepravaOsobní odběr').click();
-          await page.getByRole('option', { name: 'Osobní odběr' }).click();          
-
-          await page.getByText('Osobní odběr').nth(0).click();
-          await page.getByRole('option', { name: 'Osobní odběr' }).locator('div').click();
-          */
-
           await page.getByTestId('locationPicker.button').click();
           await page.getByPlaceholder('PSČ/město').fill(datosCZ.PostalCode);
           await page.getByRole('button', { name: datosCZ.City}).click();
@@ -96,7 +99,7 @@ test.describe.serial('Shopping DE-CZ', () => {
 
         if (rail === 'de') {
 
-          await fillDeliveryFormLive(page, datosvar, datosDE);          
+          await fillDeliveryForm(page, datosvar, datosDE);          
           await page.getByRole('heading', { name: 'Sicher bestellen in 3' }).click();
         }  
 

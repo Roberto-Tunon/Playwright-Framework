@@ -4,7 +4,7 @@ const constantes = {
     datosvar: {       
       version: '"version":"5.523.0"',
       email: 'rafodev686@nozamas.com',
-      ecoemail: 'ecoqa@xxxl.digital',
+      ecoemail: 'ecoqa@xxxl.digital',      
       user: 'roberto.tunon@xxxl.digital',
       pwd: 'Duncan21',
       name: 'Roberto',
@@ -38,6 +38,7 @@ const constantes = {
     },
 
     datosAT: {      
+      Cookiebutton: 'Weiter einkaufen',	
       Phone: '050545454',
       PostalCode: '4030',
       City: 'Linz', 

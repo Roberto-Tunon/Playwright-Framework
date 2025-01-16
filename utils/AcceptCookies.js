@@ -1,7 +1,7 @@
 // utils/AcceptCookies.js
 async function AcceptCookies(page, datos) {
 
-    await page.waitForTimeout(2000);  // 2 seconds pause
+    await page.waitForTimeout(1000);  // 1 second pause
       
     // Verifica si el botón de aceptar cookies está presente y haz click si existe
     const acceptCookiesButton = await page.locator('[data-purpose="cookieBar.button.accept"]');

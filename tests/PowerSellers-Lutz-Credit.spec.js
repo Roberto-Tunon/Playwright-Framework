@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
-const { fillDeliveryFormQC } = require('../utils/fillDeliveryFormQC');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 const { fillSSO } = require('../utils/fillSSO');
 const { AcceptCookies } = require('../utils/AcceptCookies');
@@ -32,25 +32,27 @@ test('Shopping with Credit Card', async ({ browser }) => {
     await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosrail.Product);
     await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
     await page.locator('[data-purpose="checkout.addtocart"]').click();
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();
-    await page.locator('[data-purpose="entry.counter.increase"]').click();
-
-    // Seleccionar el combo box por su selector
-    const comboBox = page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
-    await comboBox.click();    
+    await page.locator('[data-purpose="sidebar.button.submit"]').click();    
+   
+    await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click();
+    await page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]').click();    
     await page.locator('#SELF_SERVICE').click();
+
+    await page.getByTestId('locationPicker.button').click();
+    await page.locator('[data-purpose="locationSearch.input.field"]').fill(datosrail.PostalCode);
+    await page.getByRole('button', { name: datosrail.City}).click();    
+    await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();     
 
 
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await fillDeliveryFormQC(page, datosvar, datosrail);
+    await fillDeliveryForm(page, datosvar, datosrail);
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 
-    await fillCreditCard(page, PayQC, 'de')    
-
-    await page.waitForTimeout(2000);  // 2 seconds pause
+    await fillCreditCard(page, PayQC, 'de');
+    await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();    
 
     await page.pause();
     
