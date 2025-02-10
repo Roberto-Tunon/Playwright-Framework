@@ -2,7 +2,7 @@
 
 const constantes = {
     datosvar: {       
-      version: '"version":"5.523.0"',
+      version: '"version":"5.600.0"',
       email: 'rafodev686@nozamas.com',
       ecoemail: 'ecoqa@xxxl.digital',      
       user: 'roberto.tunon@xxxl.digital',
@@ -12,36 +12,47 @@ const constantes = {
       message: `IT Test. Please ignore it. Thank you!
       IT-Test. Bitte ignorieren Sie ihn. Ich danke Ihnen.
       Test IT. Prosím, ignorujte ho. Děkujeme!`,
-      address: "Ringstrasse", 
+      address: "Rintstraße", 
       nummer: "10",
       birthdate: "24.01.1980",      
       Pocoproduct : "498152800",
       SSOuser: "LUTZNT\\Robe",
       SSOpwd: "Utrecht26",
+      Klarna: "263250",
+      
     },
 
-    datosDE: {            
-      Phone: '030250025',
+    datosDE: {        
+      Cookiebutton: 'Weiter einkaufen',      
       PostalCode: '10178',
       City: 'Berlin',
-      Product: '78140021',   
+      Product: '8227089202',
+      Phone: '030250025',
       Floor: '1',
       Message: 'Dies ist eine Testbestellung, bitte stornieren und Geld zurücküberweisen. Vielen Danke.',
+      MKPPhoneApprove: "+49017614284340",
+      MKPPhoneDeny: "+49017610927312",
+      
     },
 
     datosCZ: {      
-      Phone: '224373368',
+      Cookiebutton: 'Nakupovat dále',	    
       PostalCode: '102 00',
       City: 'Praha 102',
-      Product: '58080103',
+      Product: '257213420',
+      Phone: '200',
       Message: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
     },
 
     datosAT: {      
-      Cookiebutton: 'Weiter einkaufen',	
-      Phone: '050545454',
+      Cookiebutton: 'Weiter einkaufen',	      
       PostalCode: '4030',
       City: 'Linz', 
+      Product: '3501049101',
+      MKPProduct: '800000927978',
+      MKPPhoneApprove: "+4306762600456",
+      MKPPhoneDeny: "+4306762600745",
+      Phone: '050545454',
     },    
 
     datosCH: {      
@@ -50,6 +61,14 @@ const constantes = {
       City: 'Zürich', 
       Product: '37313811',
       Phone: '442154000',
+    },    
+
+    datosSE: {      
+      Cookiebutton: '',	
+      PostalCode: '11151',
+      City: 'Stockholm', 
+      Product: '',
+      Phone: '87005690',
     },    
 
     PayLive: {      

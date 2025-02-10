@@ -1,6 +1,11 @@
 const { test, expect } = require('@playwright/test');
-const { datosvar, datosDE } = require('./constantes');
-const { fillDeliveryFormQC } = require('../utils/fillDeliveryFormQC');
+const { constantes } = require('./constantes');
+const { PayQC, datosvar } = require('./constantes');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
+const { fillCreditCard } = require('../utils/fillCreditCard');
+const { fillSSO } = require('../utils/fillSSO');
+const { AcceptCookies } = require('../utils/AcceptCookies');
+const { ObtenerDatos } = require('../utils/ObtenerDatos');
 
 test('Shopping with PayPal', async ({ browser }) => {
 
@@ -10,49 +15,29 @@ test('Shopping with PayPal', async ({ browser }) => {
       const page = await context.newPage();
       await page.setViewportSize({ width: 1920, height: 1080 });
     
-    const param = process.env.PARAM || 'default';
-    console.log(`Parámetro recibido: ${param}`);
+    const rail = process.env.PARAM || 'default';
+    console.log(`Parámetro recibido: ${rail}`);
 
-    if (param === 'QC') {
-        await page.goto(`https://xxxlutz-de.qc.xxxl-dev.at/`);   
-        
-        await page.getByRole('link', { name: 'XXXLutz SSO' }).click();
-        await page.locator('//input[@id="userNameInput"]').fill(datosvar.SSOuser);
-        await page.locator('//input[@id="passwordInput"]').fill(datosvar.SSOpwd);
-
-        await page.locator('//span[@id="submitButton"]').click();
-
-        await page.pause();        
-
-    } else {
-        await page.goto(`https://www.xxxlutz.de/`);     
-    }
+    const datosrail = ObtenerDatos(rail);
+    await page.goto(`https://xxxlutz-de.qc.xxxl-dev.at/`);   
+    console.log(`Parámetro recibido: ${rail}`);
     
-    await page.waitForTimeout(3000);  // 3 seconds pause
-      
-    // Verifica si el botón de aceptar cookies está presente y haz click si existe
-    const acceptCookiesButton = await page.locator('[data-purpose="cookieBar.button.accept"]');
-    if (await acceptCookiesButton.isVisible()) {
-        await acceptCookiesButton.click();
-    }
-
-    await page.waitForTimeout(1000);  // 1 second pause
-
-    const acceptModalButton = await page.locator('//span[contains(text(),"Weiter einkaufen")]').nth(1);
-    if (await acceptModalButton.isVisible()) {
-    await acceptModalButton.click();
-    };
-
-    await page.waitForTimeout(2000);  // 2 seconds pause
+    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/`);   
+   
+    await fillSSO(page, datosvar);
+ 
+    await page.pause();        
+    
+    await AcceptCookies(page, datosrail);
   
-    await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosDE.Product);
+    await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosrail.Product);
     await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await fillDeliveryFormQC(page, datosvar, datosDE);
+    await fillDeliveryForm(page, datosvar, datosrail);
 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal.submit"]').click();
 

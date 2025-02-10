@@ -5,7 +5,7 @@ function ObtenerDatos(pais) {
     if (constantes[clave]) {
       return constantes[clave];
     } else {
-      throw new Error(`País no soportado: ${pais}`);
+      throw new Error(`País no soportado: ${pais}`); 
     }
   }
 
