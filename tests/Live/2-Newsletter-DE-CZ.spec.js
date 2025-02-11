@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-const { datosvar } = require('./constantes');
+const { datosvar } = require('../constantes');
 
 test.describe.serial('Newsletter DE-CZ', () => {
     ['de', 'cz'].forEach((rail) => {

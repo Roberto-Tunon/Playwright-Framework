@@ -1,11 +1,11 @@
 const { test, expect, chromium } = require('@playwright/test');
-const { constantes } = require('./constantes');
-const { PayLive, datosvar } = require('./constantes');
-const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
-const { fillCreditCard } = require('../utils/fillCreditCard');
-const { loginUser } = require('../utils/loginUser');
-const { ObtenerDatos } = require('../utils/ObtenerDatos');
-const { AcceptCookies } = require('../utils/AcceptCookies');
+const { constantes } = require('../constantes');
+const { PayLive, datosvar } = require('../constantes');
+const { fillDeliveryForm } = require('../../utils/fillDeliveryForm');
+const { fillCreditCard } = require('../../utils/fillCreditCard');
+const { loginUser } = require('../../utils/loginUser');
+const { ObtenerDatos } = require('../../utils/ObtenerDatos');
+const { AcceptCookies } = require('../../utils/AcceptCookies');
 
 
 test.describe.serial('Shopping DE-CZ', () => {

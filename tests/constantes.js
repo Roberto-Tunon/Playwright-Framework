@@ -64,7 +64,7 @@ const constantes = {
     },    
 
     datosSE: {      
-      Cookiebutton: '',	
+      Cookiebutton: 'Acceptera alla cookies',	
       PostalCode: '11151',
       City: 'Stockholm', 
       Product: '',

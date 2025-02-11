@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
-const { datosvar, datosDE, datosCZ, PayLive } = require('./constantes');
-const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
-const { fillCreditCard } = require('../utils/fillCreditCard');
+const { datosvar, datosDE, datosCZ, PayLive } = require('../constantes');
+const { fillDeliveryForm } = require('../../utils/fillDeliveryForm');
+const { fillCreditCard } = require('../../utils/fillCreditCard');
 
 
 test.describe.serial('Shopping DE-CZ', () => {

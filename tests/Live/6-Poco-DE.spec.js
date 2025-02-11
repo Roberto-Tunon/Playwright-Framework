@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { datosvar, datosDE, PayLive } = require('./constantes');
+const { datosvar, datosDE, PayLive } = require('../constantes');
 
 test('Poco DE', async ({ browser }) => {
     const context = await browser.newContext({

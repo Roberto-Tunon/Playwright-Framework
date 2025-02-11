@@ -20,8 +20,10 @@ Powersellers Marketplace
 
 - COUNTRY=DE MODE=3P PAY=KN npx playwright test tests/MKP/PowerSellers-Lutz-MKP.spec.js --project chromium --headed 
 - COUNTRY=DE MODE=2P PAY=KL npx playwright test tests/MKP/PowerSellers-Lutz-MKP.spec.js --project chromium --headed 
+- COUNTRY=AT MODE=2P PAY=KL npx playwright test tests/MKP/PowerSellers-Lutz-MKP.spec.js --project chromium --headed 
 - COUNTRY=AT MODE=3P PAY=KN npx playwright test tests/MKP/PowerSellers-Lutz-MKP.spec.js --project chromium --headed 
 - COUNTRY=DE MODE=1P PAY=CC npx playwright test tests/MKP/PowerSellers-Lutz-MKP.spec.js --project chromium --headed 
+- COUNTRY=AT MODE=2P PAY=CC npx playwright test tests/MKP/PowerSellers-Lutz-MKP.spec.js --project chromium --headed 
 
 
 -------------------------
@@ -29,7 +31,9 @@ Executions:
 COUNTRY=DE MODE=3P PAY=KL  -> OK
 COUNTRY=AT MODE=3P PAY=KL  -> OK 
 COUNTRY=DE MODE=1P PAY=CC  -> OK 
-COUNTRY=DE MODE=3P PAY=KN  -> OK PERO REVISAR DE NUEVO 
-COUNTRY=AT MODE=3P PAY=KN  
-
+COUNTRY=DE MODE=3P PAY=KN  -> OK Ultimos pasos en manual
+COUNTRY=AT MODE=3P PAY=KN  -> OK Ultimos pasos en manual
+COUNTRY=DE MODE=2P PAY=KL  -> OK
+COUNTRY=AT MODE=2P PAY=KL  -> OK
+COUNTRY=AT MODE=2P PAY=CC  -> OK
 

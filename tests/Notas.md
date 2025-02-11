@@ -3,24 +3,25 @@ For executing:
 
 - npx playwright test tests/Deployment/Newsletter.spec.js --project chromium --headed
 
-- npx playwright test tests/1-Version.spec.js --project chromium --headed
-- npx playwright test tests/2-Newsletter-DE-CZ.spec.js --project chromium --headed
-- npx playwright test tests/3-LutzCard-DE-CZ.spec.js --project chromium --headed
-- npx playwright test tests/4-ContactCenter-DE-CZ.spec.js --project chromium --headed
-- npx playwright test tests/5-Shopping-DE-CZ.spec.js --project chromium --headed
-- npx playwright test tests/5-Shopping-DE-CZNEW.spec.js --project chromium --headed
-- npx playwright test tests/6-Poco-DE.spec.js --project chromium --headed  
-
 Powersellers
 ---------------
 
 - PARAM=AT npx playwright test tests/PowerSellers-PayPal.spec.js --project chromium --headed 
 - PARAM=QC npx playwright test tests/PowerSellers-Credit.spec.js --project chromium --headed
-- 
+  
 - COUNTRY=CH npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=CZ npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+
+
+- PAY=KO npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
+
+-------------------------
+Executions:
+PAY=KO  -> OK
+
+
 
 For code generator:
 ---------------

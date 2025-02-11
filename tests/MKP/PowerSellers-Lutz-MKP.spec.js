@@ -8,7 +8,7 @@ const { AcceptCookies } = require('../../utils/AcceptCookies');
 const { ObtenerDatos } = require('../../utils/ObtenerDatos');
 
 
-test('Marketplace shopping with Credit Card', async ({ browser }) => {
+test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
 
     const context = await browser.newContext({
         ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos
@@ -22,7 +22,7 @@ test('Marketplace shopping with Credit Card', async ({ browser }) => {
     const datosrail = ObtenerDatos(rail);    
 
     console.log(`Parámetros recibido: ${rail} - ${mode} - ${pay}`);
-    
+
     await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/`);   
     
     await fillSSO(page, datosvar);
@@ -33,6 +33,7 @@ test('Marketplace shopping with Credit Card', async ({ browser }) => {
     if (mode !== "1P") {
         if (rail === "AT") {
             await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/p/${datosrail.MKPProduct}`);
+
         } else {
             await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing//products/standardDeliveryMarketplaceProduct`);           
         }
@@ -55,6 +56,9 @@ test('Marketplace shopping with Credit Card', async ({ browser }) => {
     if (pay === "CC") {        
         await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
         await fillCreditCard(page, PayQC, rail);
+        if (rail === "AT") {
+            await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
+        }   
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
     } else if (pay === "PP") {
@@ -73,7 +77,7 @@ test('Marketplace shopping with Credit Card', async ({ browser }) => {
         await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
         await page.locator('//button[@id="onContinue"]').click();
         await page.locator('//input[@id="otp_field"]').fill(datosvar.Klarna);
-        await page.locator('//button[@id="buy_button"]').click();
+        await page.locator('//button[@id="buy_button"]').click();             
 
 
     } else if (pay === "KN") {
@@ -88,7 +92,8 @@ test('Marketplace shopping with Credit Card', async ({ browser }) => {
         await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
         await page.locator('//button[@id="onContinue"]').click();
         await page.locator('//input[@id="otp_field"]').fill(datosvar.Klarna);
-        await page.locator('//button[@data-testid="pick-plan"]').click();
+        await page.locator('(//input[@id="banktransferkob_kp.1__label"])[1]').click();
+        await page.locator('//button[@data-testid="pick-plan"]').click();        
         await page.locator('//button[@id="buy_button"]').click();        
 
     } else {
