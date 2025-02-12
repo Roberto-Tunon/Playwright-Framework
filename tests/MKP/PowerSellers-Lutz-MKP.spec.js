@@ -6,6 +6,7 @@ const { fillCreditCard } = require('../../utils/fillCreditCard');
 const { fillSSO } = require('../../utils/fillSSO');
 const { AcceptCookies } = require('../../utils/AcceptCookies');
 const { ObtenerDatos } = require('../../utils/ObtenerDatos');
+const { fillKlarna } = require('../../utils/fillKlarna');
 
 
 test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
@@ -65,38 +66,10 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
         await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').click();
         await page.pause();
 
-    } else if (pay === "KL") {
-        await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]').click();
-        await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount.submit"]').click();   
-     
-        if (rail === "AT") {
-            await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
-        }        
-        await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
+    } else if (["KL", "KN"].includes(pay)) {
+        await fillKlarna(page, pay, datosrail, rail); 
 
-        await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
-        await page.locator('//button[@id="onContinue"]').click();
-        await page.locator('//input[@id="otp_field"]').fill(datosvar.Klarna);
-        await page.locator('//button[@id="buy_button"]').click();             
-
-
-    } else if (pay === "KN") {
-        await page.locator('[data-purpose="checkout.paymentOptions.klarna_sofort"]').click();
-        await page.locator('[data-purpose="checkout.paymentOptions.klarna_sofort.submit"]').click();   
-        
-        if (rail === "AT") {
-            await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
-        }
-        await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click(); 
-        
-        await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
-        await page.locator('//button[@id="onContinue"]').click();
-        await page.locator('//input[@id="otp_field"]').fill(datosvar.Klarna);
-        await page.locator('(//input[@id="banktransferkob_kp.1__label"])[1]').click();
-        await page.locator('//button[@data-testid="pick-plan"]').click();        
-        await page.locator('//button[@id="buy_button"]').click();        
-
-    } else {
+    }  else {
         throw new Error(`Unsupported payment method: ${pay}`);
     }
   

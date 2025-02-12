@@ -16,10 +16,16 @@ Powersellers
 
 
 - PAY=KO npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
+- PAY=SW npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
+- PAY=TW npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
+- PAY=ON npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 
 -------------------------
 Executions:
 PAY=KO  -> OK
+PAY=SW  -> OK
+PAY=TW  -> OK
+PAY=ON   Revisar CZ. No coge el email. Revisar los tests de Live.
 
 
 

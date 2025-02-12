@@ -39,8 +39,8 @@ const constantes = {
       Cookiebutton: 'Nakupovat dále',	    
       PostalCode: '102 00',
       City: 'Praha 102',
-      Product: '257213420',
-      Phone: '200',
+      Product: '3279063603',
+      Phone: '221714714',
       Message: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
     },
 
@@ -56,7 +56,7 @@ const constantes = {
     },    
 
     datosCH: {      
-      Cookiebutton: 'Weiter einkaufen',	
+      Cookiebutton: 'Geht klar!',	
       PostalCode: '8001',
       City: 'Zürich', 
       Product: '37313811',

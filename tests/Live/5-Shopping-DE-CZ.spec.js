@@ -77,15 +77,14 @@ test.describe.serial('Shopping DE-CZ', () => {
 
 
            // Seleccionar el combo box por su selector
-    const comboBox = page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
-    await comboBox.click();    
-    await page.locator('#SELF_SERVICE').click();
-    await page.getByTestId('locationPicker.button').click();
-    await page.getByPlaceholder('PLZ/Ort').fill(datosrail.PostalCode);
-    await page.getByRole('button', { name: datosrail.City}).click();
-    //  await page.locator('[data-purpose="locationSearch.input.field"]').click(); 
-    await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click(); 
-          
+          const comboBox = page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
+          await comboBox.click();    
+          await page.locator('#SELF_SERVICE').click();
+          await page.getByTestId('locationPicker.button').click();
+          await page.getByPlaceholder('PLZ/Ort').fill(datosrail.PostalCode);
+          await page.getByRole('button', { name: datosrail.City}).click();
+          //  await page.locator('[data-purpose="locationSearch.input.field"]').click(); 
+          await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();           
 
         } else if (rail === 'cz') {
           
