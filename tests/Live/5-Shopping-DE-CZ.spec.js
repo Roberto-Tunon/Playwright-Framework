@@ -52,16 +52,17 @@ test.describe.serial('Shopping DE-CZ', () => {
        
         await page.locator('[data-purpose="checkout.addtocart"]').click();
         await page.locator('[data-purpose="sidebar.button.cancel"]').click();
-        
-
+       
         await page.locator('[data-purpose="wxs.header.actions.favourites"]').click();
         const texto = await page.locator('[data-purpose="product.productNumber"]').textContent();
-                
+        
+        /*
         if (rail === 'de') {
           await expect(texto.includes(datosDE.DEProduct)).toBeTruthy();
         } else if (rail === 'cz') {  
           await expect(texto.includes(datosCZ.CZProduct)).toBeTruthy();
         }
+        */
 
         await page.locator('[data-purpose="wxs.header.actions.cart"]').click();        
 

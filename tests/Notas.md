@@ -25,12 +25,12 @@ Executions:
 PAY=KO  -> OK
 PAY=SW  -> OK
 PAY=TW  -> OK
-PAY=ON   Revisar CZ. No coge el email. Revisar los tests de Live.
+PAY=ON  -> OK
 
 
 
 For code generator:
 ---------------
 
-- npx playwright codegen
+- npx playwright codegen 
 

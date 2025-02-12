@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { constantes } = require('../constantes');
 const { PayQC, datosvar } = require('../constantes');
-const { fillMKPDeliveryForm } = require('../../utils/fillMKPDeliveryForm');
+const { fillDeliveryForm } = require('../../utils/fillDeliveryForm');
 const { fillCreditCard } = require('../../utils/fillCreditCard');
 const { fillSSO } = require('../../utils/fillSSO');
 const { AcceptCookies } = require('../../utils/AcceptCookies');
@@ -52,7 +52,7 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await fillMKPDeliveryForm(page, datosvar, datosrail);    
+    await fillDeliveryForm(page, datosvar, datosrail);    
 
     if (pay === "CC") {        
         await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();

@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
-const { fillMKPDeliveryForm } = require('../utils/fillMKPDeliveryForm');
 const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
+const { fillCZDeliveryForm } = require('../utils/fillCZDeliveryForm');
 const { fillKlarna } = require('../utils/fillKlarna');
 const { fillSSO } = require('../utils/fillSSO');
 const { AcceptCookies } = require('../utils/AcceptCookies');
@@ -55,9 +55,11 @@ test('Lutz Special Payments', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await page.locator('[data-purpose="form.input.deliveryAddress.email.field"]').fill('hola@dddd.com');
-
-    await fillMKPDeliveryForm(page, datosvar, datosrail);    
+    if (rail === "CZ") {
+      await fillCZDeliveryForm(page, datosvar, datosrail);  
+    } else {    
+      await fillDeliveryForm(page, datosvar, datosrail);
+    }    
 
     if (pay === "SW") {        
         await page.locator('[data-purpose="checkout.paymentOptions.swish_adyen"]').click();
