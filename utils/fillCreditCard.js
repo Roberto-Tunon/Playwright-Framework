@@ -6,7 +6,6 @@ async function fillCreditCard(page, PayData, rail) {
             await cardNumberInput.fill(PayData.cardnumber);
     }
     else if (rail === 'CZ') {  
-
             const frameLocator1 = page.frameLocator('iframe[title="Iframe pro číslo karty"]');
             const cardNumberInput = frameLocator1.locator('#encryptedCardNumber');
             await cardNumberInput.fill(PayData.cardnumber);

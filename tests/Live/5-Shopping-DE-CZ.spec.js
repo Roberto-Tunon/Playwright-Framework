@@ -17,7 +17,7 @@ test.describe.serial('Shopping DE-CZ', () => {
     
         // Accept cookies    
         await page.goto(`https://www.xxxlutz.${rail}/`);
-        await page.waitForTimeout(3000);  // 3 seconds pause 
+        await page.waitForTimeout(2000);  // 2 seconds pause 
     
         // Verifica si el botón de aceptar cookies está presente y haz clic si existe
         const acceptCookiesButton = await page.locator('[data-purpose="cookieBar.button.accept"]');
@@ -54,16 +54,14 @@ test.describe.serial('Shopping DE-CZ', () => {
         await page.locator('[data-purpose="sidebar.button.cancel"]').click();
        
         await page.locator('[data-purpose="wxs.header.actions.favourites"]').click();
-        const texto = await page.locator('[data-purpose="product.productNumber"]').textContent();
-        
-        /*
-        if (rail === 'de') {
-          await expect(texto.includes(datosDE.DEProduct)).toBeTruthy();
-        } else if (rail === 'cz') {  
-          await expect(texto.includes(datosCZ.CZProduct)).toBeTruthy();
-        }
-        */
+        const texto = await page.locator('[data-purpose="productList.item.link.articleNumber"]').textContent();
 
+        if (rail === 'de') {
+          await expect(texto.includes(String(datosDE.Product))).toBeTruthy();
+        } else if (rail === 'cz') {  
+          await expect(texto.includes(String(datosCZ.Product))).toBeTruthy();
+        }
+        
         await page.locator('[data-purpose="wxs.header.actions.cart"]').click();        
 
         if (rail === 'de') {             
@@ -104,8 +102,7 @@ test.describe.serial('Shopping DE-CZ', () => {
         }  
 
         await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
-
-        await fillCreditCard(page, PayLive, rail)          
+        await fillCreditCard(page, PayLive, rail.toUpperCase())          
 
         if (rail === 'de') {
           await page.locator('//span[normalize-space()="Kommentar hinzufügen (optional)"]').click();

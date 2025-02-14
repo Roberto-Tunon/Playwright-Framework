@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { datosvar, datosDE, PayQC } = require('./constantes');
-const { fillDeliveryFormQC } = require('../utils/fillDeliveryFormQC');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 
 test('Shopping with Credit Card', async ({ browser }) => {
@@ -55,7 +55,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await fillDeliveryFormQC(page, datosvar, datosDE);
+    await fillDeliveryForm(page, datosvar, datosDE);
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 
