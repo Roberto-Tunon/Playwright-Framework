@@ -45,20 +45,16 @@ test('Lutz Special Payments', async ({ browser }) => {
     await page.locator('[data-purpose="sidebar.button.submit"]').click();   
     
     if (rail === "CZ") {  
-      const button = page.getByTestId('locationPicker.button');
-      // Esperar a que el botón esté **adjunto al DOM** antes de verificar visibilidad
-      await page.waitForSelector('[data-testid="locationPicker.button"]', { state: 'attached', timeout: 5000 });
-
-      if (await button.isVisible()) {
-        await button.click();
-        console.log("✅ Botón clickeado.");
-        await page.getByPlaceholder('PSČ/město').fill(datosrail.PostalCode);
-        await page.getByRole('button', { name: datosrail.City}).click();
-        await page.getByLabel('dialog').getByRole('button', { name: 'Zvolit pobočku' }).click(); 
+      const button = page.getByTestId('locationPicker.button');      
+      if ((await button.isVisible()) && (await button.count() > 0)) {
+            await button.click();
+            console.log("✅ Botón clickeado.");
+            await page.getByPlaceholder('PSČ/město').fill(datosrail.PostalCode);
+            await page.getByRole('button', { name: datosrail.City}).click();
+            await page.getByLabel('dialog').getByRole('button', { name: 'Zvolit pobočku' }).click(); 
       } else {
         console.log("🚫 El botón no está visible, no se hizo clic.");
-      }
-    
+      }    
     }
     
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
