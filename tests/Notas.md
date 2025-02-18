@@ -6,8 +6,8 @@ For executing:
 Powersellers
 ---------------
 
-- PARAM=AT npx playwright test tests/PowerSellers-PayPal.spec.js --project chromium --headed 
-- PARAM=QC npx playwright test tests/PowerSellers-Credit.spec.js --project chromium --headed
+- COUNTRY=AT npx playwright test tests/PowerSellers-PayPal.spec.js --project chromium --headed 
+
   
 - COUNTRY=CH npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
