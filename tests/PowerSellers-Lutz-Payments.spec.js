@@ -98,8 +98,9 @@ test('Lutz Special Payments', async ({ browser }) => {
         await page.click('input#formSubmit[value="Positive authorization"]');
         await page.click('input#formSubmit[value="Continue"]');
 
-    }       
-        
+    }
+    await page.waitForLoadState('networkidle'); 
+    await page.screenshot({ path: 'Final-Order.png' });    
     await page.pause();
     
 });

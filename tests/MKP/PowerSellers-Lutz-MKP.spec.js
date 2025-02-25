@@ -42,8 +42,7 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
     } 
     
     if (mode !== "3P") {
-        await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosrail.Product);
-        await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
+        await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);                
         await page.locator('[data-purpose="checkout.addtocart"]').click();
     }
 

@@ -28,9 +28,9 @@ test('Shopping with Credit Card', async ({ browser }) => {
     await page.pause();        
 
     await AcceptCookies(page, datosrail);
-  
-    await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosrail.Product);
-    await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
+    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
+    // await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosrail.Product);
+    //await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();    
    
