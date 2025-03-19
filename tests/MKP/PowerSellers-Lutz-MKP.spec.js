@@ -58,11 +58,13 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
         await fillCreditCard(page, PayQC, rail);
         if (rail === "AT") {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
-        }   
+        } 
+        await page.waitForLoadState('networkidle'); 
+        await page.screenshot({ path: 'tests/Screenshots/Payment1.png', fullPage: true });   
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
     } else if (pay === "PP") {
-        await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').click();
+        await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').click();       
         await page.pause();
 
     } else if (["KL", "KN"].includes(pay)) {
@@ -71,7 +73,8 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
     }  else {
         throw new Error(`Unsupported payment method: ${pay}`);
     }
-  
+    await page.waitForLoadState('networkidle'); 
+    await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });    
     await page.pause();
     
 });

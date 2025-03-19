@@ -3,6 +3,9 @@ async function fillKlarna(page, mode, datosrail,rail) {
     if (mode === 'KO') {
         await page.locator('[data-purpose="checkout.paymentOptions.klarna_sliceit"]').click();
         await page.locator('[data-purpose="checkout.paymentOptions.klarna_sliceit.submit"]').click(); 
+        await page.waitForLoadState('networkidle'); 
+        await page.screenshot({ path: 'tests/Screenshots/Payment1.png', fullPage: true }); 
+
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
         await page.locator('//button[@id="signInWithBankIdButton"]').click();        
         await page.locator('//button[@data-testid="pick-plan"]').click();        
@@ -14,8 +17,9 @@ async function fillKlarna(page, mode, datosrail,rail) {
 
         if (rail === "AT") {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
-        }        
-
+        }  
+        await page.waitForLoadState('networkidle');       
+        await page.screenshot({ path: 'tests/Screenshots/Payment1.png', fullPage: true }); 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
         await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
         await page.locator('//button[@id="onContinue"]').click();
@@ -29,7 +33,8 @@ async function fillKlarna(page, mode, datosrail,rail) {
         if (rail === "AT") {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
         }   
-
+        await page.waitForLoadState('networkidle'); 
+        await page.screenshot({ path: 'tests/Screenshots/Payment1.png', fullPage: true }); 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click(); 
         await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
         await page.locator('//button[@id="onContinue"]').click();

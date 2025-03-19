@@ -40,15 +40,17 @@ test('Shopping with PayPal', async ({ browser }) => {
     if (rail === "AT") {
       await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
     }
+    await page.screenshot({ path: 'tests/Screenshots/Payment2.png', fullPage: true }); 
     await page.getByTestId('step-content').locator('a[href="#widerrufsbelehrung"]').click();
     await page.locator('//button[@aria-label="Schließen"]').click(); 
 
+    await page.keyboard.press('Tab');    
     await page.keyboard.press('Tab');
-    await page.keyboard.press('Enter');
-    await page.waitForTimeout(2500);  // 2 seconds pause
-    
+    await page.waitForTimeout(1000);  // 1 second pause
+        
     const [popup] = await Promise.all([
     page.waitForEvent('popup'), // Espera la ventana emergente    
+    page.keyboard.press('Enter')
     ]);
 
     await popup.waitForLoadState(); // Espera que la página cargue completamente
@@ -65,5 +67,8 @@ test('Shopping with PayPal', async ({ browser }) => {
     // await page.locator('#submit-button-initial').click();
     await popup.click('button#payment-submit-btn');
     
+    await page.waitForLoadState('networkidle'); 
+    await page.waitForTimeout(1000);  // 1 second pause
+    await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });    
     await page.pause();    
 });

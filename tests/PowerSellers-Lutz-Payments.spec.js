@@ -22,7 +22,7 @@ test('Lutz Special Payments', async ({ browser }) => {
 
     if (["SW", "KO"].includes(pay)) {
         rail = "SE";   
-      } else if (pay === "ON") {
+      } else if (["ON", "DEL"].includes(pay)) {
         rail = "CZ";
       } else if (pay === "TW") {
         rail = "CH";
@@ -71,12 +71,23 @@ test('Lutz Special Payments', async ({ browser }) => {
         await page.locator('[data-purpose="checkout.paymentOptions.swish_adyen.submit"]').click();
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
+    } else if (pay === "DEL") {
+        await page.locator('[data-purpose="checkout.paymentOptions.ondelivery"]').click();
+        await page.locator('[data-purpose="checkout.paymentOptions.ondelivery.submit"]').click();
+        await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click(); 
+
     } else if (pay === "KO") {
         await fillKlarna(page, pay, datosrail, rail);         
 
     } else if (pay === "TW") {
-        await page.locator('[data-purpose="checkout.paymentOptions.twint"]').click();
+        await page.locator('[data-purpose="checkout.paymentOptions.twint"]').click(); 
+        await page.waitForLoadState('networkidle'); 
+        await page.screenshot({ path: 'tests/Screenshots/Payment1.png', fullPage: true }); 
+        
         await page.locator('[data-purpose="checkout.paymentOptions.twint.submit"]').click();
+        await page.waitForTimeout(2000); 
+        await page.screenshot({ path: 'tests/Screenshots/Payment2.png', fullPage: true }); 
+
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
         await page.waitForSelector("button[value='authorised']", { state: "visible" });
         await page.click("button[value='authorised']");  
@@ -100,7 +111,7 @@ test('Lutz Special Payments', async ({ browser }) => {
 
     }
     await page.waitForLoadState('networkidle'); 
-    await page.screenshot({ path: 'Final-Order.png' });    
+    await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });    
     await page.pause();
     
 });
