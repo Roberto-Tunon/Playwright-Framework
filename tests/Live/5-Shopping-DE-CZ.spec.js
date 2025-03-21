@@ -75,7 +75,7 @@ test.describe.serial('Shopping DE-CZ', () => {
           await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
 
-           // Seleccionar el combo box por su selector
+          // Seleccionar el combo box por su selector
           const comboBox = page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
           await comboBox.click();    
           await page.locator('#SELF_SERVICE').click();

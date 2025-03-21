@@ -74,6 +74,9 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
         throw new Error(`Unsupported payment method: ${pay}`);
     }
     await page.waitForLoadState('networkidle'); 
+    if (["KL", "SW"].includes(pay)) {
+        await page.waitForTimeout(6500); 
+    }  
     await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });    
     await page.pause();
     

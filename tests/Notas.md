@@ -20,6 +20,8 @@ Powersellers
 - PAY=TW npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=ON npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=DEL npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
+- PAY=KL npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
+- PAY=KN npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 
 -------------------------
 Executions:
@@ -27,7 +29,9 @@ PAY=KO  -> OK  Klarna OverTime
 PAY=SW  -> OK  Swish
 PAY=TW  -> OK  Twint
 PAY=ON  -> OK  OnLine Banking
-PAY=DEL        On Delivery
+PAY=KL  -> OK  Klarna Play Later
+PAY=KN  -> OK  Klarna Play Now
+PAY=DEL -> OK  On Delivery
 
 
 

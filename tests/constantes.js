@@ -68,6 +68,8 @@ const constantes = {
       PostalCode: '11151',
       City: 'Stockholm', 
       Product: '',
+      MKPPhoneApprove: "+46701740615",
+      MKPPhoneDeny: "+46701740620",
       Phone: '87005690',
     },    
 
