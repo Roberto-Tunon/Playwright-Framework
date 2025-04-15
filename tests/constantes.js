@@ -57,11 +57,19 @@ const constantes = {
 
     datosCH: {      
       Cookiebutton: 'Geht klar!',	
-      PostalCode: '8001',
-      City: 'Zürich', 
+      PostalCode: '8112',
+      City: 'Otelfingen', 
       Product: '37313811',
       Phone: '442154000',
-    },    
+    },
+    
+    datosRO: {      
+      Cookiebutton: 'Accept toate cookie-urile',	
+      PostalCode: '032604',
+      City: 'Bucuresti', 
+      Product: '001930000219',
+      Phone: '213055500',
+    },   
 
     datosSE: {      
       Cookiebutton: 'Acceptera alla cookies',	
@@ -85,7 +93,8 @@ const constantes = {
     PayQC: {      
       PayPalusr: "too-buyer@xxxlutz.at",
       PayPalpwd: "xxxlutz12345",
-      cardnumber: "2222 4000 7000 0005",
+      cardnumber: "5555 4444 3333 1111",
+      visanumber: "4646 4646 4646 4644",
       cardholder: "Robert Tunon",
       cardcvv: "737",
       carddate: "03/30",

@@ -22,6 +22,9 @@ Powersellers
 - PAY=DEL npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=KL npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=KN npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
+- ------------
+- RO Split IT
+- npx playwright test tests/PowerSellers-Lutz-SplitIT.spec.js --project chromium --headed 
 
 -------------------------
 Executions:

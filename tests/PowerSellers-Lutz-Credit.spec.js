@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
-const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillCreditCard } = require('../utils/fillCreditCard');
+const { fillCZDeliveryForm } = require('../utils/fillCZDeliveryForm');
 const { fillSSO } = require('../utils/fillSSO');
 const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
@@ -30,12 +30,11 @@ test('Shopping with Credit Card', async ({ browser }) => {
     await AcceptCookies(page, datosrail);
     await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
     // await page.locator('[data-purpose="header.searchBar.input.field"]').fill(datosrail.Product);
-    //await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
+    // await page.locator('[data-purpose="header.searchBar.button.submit"]').click();
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();    
    
     await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click();
-    await page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]').click();    
     await page.locator('#SELF_SERVICE').click();
 
     await page.getByTestId('locationPicker.button').click();
@@ -47,7 +46,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await fillDeliveryForm(page, datosvar, datosrail);
+    await fillCZDeliveryForm(page, datosvar, datosrail);     
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 
