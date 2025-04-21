@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
 const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
-const { fillCZDeliveryForm } = require('../utils/fillCZDeliveryForm');
+const { fillSELFDeliveryForm } = require('../utils/fillSELFDeliveryForm');
 const { fillKlarna } = require('../utils/fillKlarna');
 const { fillSSO } = require('../utils/fillSSO');
 const { AcceptCookies } = require('../utils/AcceptCookies');
@@ -73,7 +73,7 @@ test('Lutz Special Payments', async ({ browser }) => {
 
     //if (rail === "CZ") {
     if (pay === "ON") {
-      await fillCZDeliveryForm(page, datosvar, datosrail);  
+      await fillSELFDeliveryForm(page, datosvar, datosrail);  
     } else {    
       await fillDeliveryForm(page, datosvar, datosrail);
     }    

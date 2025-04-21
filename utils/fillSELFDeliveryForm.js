@@ -1,4 +1,4 @@
-async function fillCZDeliveryForm(page, datosvar, datosrail) {           
+async function fillSELFDeliveryForm(page, datosvar, datosrail) {           
       await page.locator('//*[@name="paymentAddress.email"]').fill(datosvar.user);
       await page.locator('//*[@name="paymentAddress.phone"]').fill(datosrail.Phone); 
       await page.locator('//*[@name="paymentAddress.streetname"]').fill(datosvar.address);
@@ -10,5 +10,5 @@ async function fillCZDeliveryForm(page, datosvar, datosrail) {
       await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
   }
   
-  module.exports = { fillCZDeliveryForm };  
+  module.exports = { fillSELFDeliveryForm };  
 
