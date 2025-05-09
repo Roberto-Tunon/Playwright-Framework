@@ -19,6 +19,7 @@ const constantes = {
       SSOuser: "LUTZNT\\Robe",
       SSOpwd: "Utrecht26",
       Klarna: "263250",
+      Branch: "b271103bfb",
       
     },
 
