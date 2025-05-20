@@ -28,7 +28,7 @@ test('Lutz Regression with Credit Card', async ({ browser }) => {
     await page.pause();        
 
     await AcceptCookies(page, datosrail);
-    await page.goto(`https://branch-${datosvar.Branch}-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);     
+    await page.goto(`https://branch-${datosvar.Branch}-xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);     
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();    
    

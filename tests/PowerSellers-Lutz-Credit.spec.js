@@ -50,7 +50,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 
-    await fillCreditCard(page, PayQC, rail);
+    await fillCreditCard(page, PayQC, datosrail);
 
     if (rail === "AT") {
         await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       

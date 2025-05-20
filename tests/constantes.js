@@ -19,7 +19,7 @@ const constantes = {
       SSOuser: "LUTZNT\\Robe",
       SSOpwd: "Utrecht26",
       Klarna: "263250",
-      Branch: "b271103bfb",
+      Branch: "989d63a46c",
       
     },
 
@@ -33,7 +33,9 @@ const constantes = {
       Message: 'Dies ist eine Testbestellung, bitte stornieren und Geld zurücküberweisen. Vielen Danke.',
       MKPPhoneApprove: "+49017614284340",
       MKPPhoneDeny: "+49017610927312",
-      
+      FrameNumber: 'Iframe für Kartennummer',
+      FrameDate: 'Iframe für Ablaufdatum',
+      FrameCVV: 'Iframe für Sicherheitscode',      
     },
 
     datosCZ: {      
@@ -43,6 +45,9 @@ const constantes = {
       Product: '3279063603',
       Phone: '221714714',
       Message: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
+      FrameNumber: 'Iframe pro číslo karty',
+      FrameDate: 'Iframe pro datum vypršení platnosti',
+      FrameCVV: 'Iframe pro bezpečnostní kód',      
     },
 
     datosAT: {      
@@ -54,6 +59,9 @@ const constantes = {
       MKPPhoneApprove: "+4306762600456",
       MKPPhoneDeny: "+4306762600745",
       Phone: '050545454',
+      FrameNumber: 'Iframe für Kartennummer',
+      FrameDate: 'Iframe für Ablaufdatum',
+      FrameCVV: 'Iframe für Sicherheitscode',    
     },    
 
     datosCH: {      
@@ -62,6 +70,9 @@ const constantes = {
       City: 'Otelfingen', 
       Product: '37313811',
       Phone: '442154000',
+      FrameNumber: 'Iframe für Kartennummer',
+      FrameDate: 'Iframe für Ablaufdatum',
+      FrameCVV: 'Iframe für Sicherheitscode',    
     },
     
     datosRO: {      
@@ -80,6 +91,9 @@ const constantes = {
       MKPPhoneApprove: "+46701740615",
       MKPPhoneDeny: "+46701740620",
       Phone: '87005690',
+      FrameNumber: 'Iframe för kortnummer',
+      FrameDate: 'Iframe för utgångsdatum',
+      FrameCVV: 'Iframe för säkerhetskod',
     },    
 
     PayLive: {      

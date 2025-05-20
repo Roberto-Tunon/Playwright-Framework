@@ -13,6 +13,7 @@ Powersellers
 - COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=CZ npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- COUNTRY=SE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 
 
 - PAY=KO npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 

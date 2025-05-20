@@ -55,7 +55,7 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
 
     if (pay === "CC") {        
         await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
-        await fillCreditCard(page, PayQC, rail);
+        await fillCreditCard(page, PayQC, datosrail);
         if (rail === "AT") {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
         } 
