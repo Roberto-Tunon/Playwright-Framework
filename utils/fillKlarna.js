@@ -51,7 +51,9 @@ async function fillKlarna(page, mode, datosrail,rail) {
             await page.locator('//button[@id="buy_button"]').click();
         } else {
             await page.waitForTimeout(10000);
-            await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
+            //await page.locator('//input[@id="phonePasskey"]').fill(datosrail.MKPPhoneApprove);
+            await page.getByLabel('Handynummer').fill(datosrail.MKPPhoneApprove);
+
             await page.locator('//button[@id="onContinue"]').click();
             await page.locator('//input[@id="otp_field"]').fill('234570');        
             

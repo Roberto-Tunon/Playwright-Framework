@@ -17,7 +17,7 @@ const constantes = {
       birthdate: "24.01.1980",      
       Pocoproduct : "498152800",
       SSOuser: "LUTZNT\\Robe",
-      SSOpwd: "Utrecht26",
+      SSOpwd: "Utrecht27",
       Klarna: "263250",
       Branch: "989d63a46c",
       
@@ -94,7 +94,14 @@ const constantes = {
       FrameNumber: 'Iframe för kortnummer',
       FrameDate: 'Iframe för utgångsdatum',
       FrameCVV: 'Iframe för säkerhetskod',
-    },    
+    },
+
+    datosRS: {      
+      PostalCode: '11426',
+      City: 'MELJAK', 
+      Product: '000840005101',
+      Phone: '112635622',
+    },   
 
     PayLive: {      
       cardnumber: "5319 5447 7987 5501",

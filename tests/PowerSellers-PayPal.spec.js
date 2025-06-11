@@ -25,7 +25,7 @@ test('Shopping with PayPal', async ({ browser }) => {
  
     await page.pause();        
     
-    await AcceptCookies(page, datosrail);
+    // await AcceptCookies(page, datosrail);
 
     await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);     
     await page.locator('[data-purpose="checkout.addtocart"]').click();
@@ -35,7 +35,7 @@ test('Shopping with PayPal', async ({ browser }) => {
 
     await fillDeliveryForm(page, datosvar, datosrail);
 
-    await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').click();
+    await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').first().click(); 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal.submit"]').click();
     if (rail === "AT") {
       await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
@@ -43,9 +43,10 @@ test('Shopping with PayPal', async ({ browser }) => {
     await page.screenshot({ path: 'tests/Screenshots/Payment2.png', fullPage: true }); 
     await page.getByTestId('step-content').locator('a[href="#widerrufsbelehrung"]').click();
     await page.locator('//button[@aria-label="Schließen"]').click(); 
-
+      
     await page.keyboard.press('Tab');    
-    await page.keyboard.press('Tab');
+    await page.keyboard.press('Enter');
+
     await page.waitForTimeout(1000);  // 1 second pause
         
     const [popup] = await Promise.all([
@@ -64,8 +65,7 @@ test('Shopping with PayPal', async ({ browser }) => {
     await popup.click('button#btnLogin');
 
     // Confirmar el pago
-    // await page.locator('#submit-button-initial').click();
-    await popup.click('button#payment-submit-btn');
+    await popup.getByTestId('submit-button-initial').click();
     
     await page.waitForLoadState('networkidle'); 
     await page.waitForTimeout(1000);  // 1 second pause

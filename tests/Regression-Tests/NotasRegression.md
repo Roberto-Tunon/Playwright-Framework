@@ -8,9 +8,6 @@ Regression
 - COUNTRY=CZ npx playwright test tests/Regression-Tests/Regression-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=SE npx playwright test tests/Regression-Tests/Regression-Lutz-Credit.spec.js --project chromium --headed 
 - 
-- COUNTRY=SE Error filling credit card. Check!!!
-
-
 
 -------------------------
 Executions:

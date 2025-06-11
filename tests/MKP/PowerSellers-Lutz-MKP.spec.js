@@ -32,12 +32,8 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
 
     await AcceptCookies(page, datosrail);
     if (mode !== "1P") {
-        if (rail === "AT") {
-            await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/p/${datosrail.MKPProduct}`);
-
-        } else {
-            await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing//products/standardDeliveryMarketplaceProduct`);           
-        }
+       
+        await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing//products/standardDeliveryMarketplaceProduct`);
         await page.locator('[data-purpose="checkout.addtocart"]').click();
     } 
     

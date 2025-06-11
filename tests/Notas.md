@@ -14,7 +14,7 @@ Powersellers
 - COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=CZ npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=SE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
-
+  
 
 - PAY=KO npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=SW npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
@@ -26,6 +26,9 @@ Powersellers
 - ------------
 - RO Split IT
 - npx playwright test tests/PowerSellers-Lutz-SplitIT.spec.js --project chromium --headed 
+
+- RS Lesnina CorvusPay
+- npx playwright test tests/PowerSellers-Lutz-RS.spec.js --project chromium --headed 
 
 -------------------------
 Executions:
