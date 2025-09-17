@@ -6,16 +6,23 @@ For executing:
 Powersellers
 ---------------
 
+------------
+-- PAYPAL --
+------------
 - COUNTRY=AT npx playwright test tests/PowerSellers-PayPal.spec.js --project chromium --headed 
 
-  
+-----------------
+-- CREDIT CARD --
+-----------------
 - COUNTRY=CH npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=CZ npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - COUNTRY=SE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
   
-
+----------------------
+-- SPECIAL PAYMENTS --
+----------------------
 - PAY=KO npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=SW npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=TW npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
@@ -23,12 +30,21 @@ Powersellers
 - PAY=DEL npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=KL npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
 - PAY=KN npx playwright test tests/PowerSellers-Lutz-Payments.spec.js --project chromium --headed 
-- ------------
-- RO Split IT
+
+-----------------
+-- RO Split IT --
+-----------------
 - npx playwright test tests/PowerSellers-Lutz-SplitIT.spec.js --project chromium --headed 
 
-- RS Lesnina CorvusPay
+--------------------------
+-- RS Lesnina CorvusPay --
+--------------------------
 - npx playwright test tests/PowerSellers-Lutz-RS.spec.js --project chromium --headed 
+  
+--------------------------
+-- Billie --
+--------------------------
+- COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Billie.spec.js --project chromium --headed 
 
 -------------------------
 Executions:

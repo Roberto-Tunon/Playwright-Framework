@@ -56,7 +56,7 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
         } 
         await page.waitForLoadState('networkidle'); 
-        await page.screenshot({ path: 'tests/Screenshots/Payment1.png', fullPage: true });   
+        await page.screenshot({ path: `tests/Screenshots/Payment-MKP-${rail}-${mode}-${pay}.png`, fullPage: true });   
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
     } else if (pay === "PP") {
@@ -65,6 +65,7 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
 
     } else if (["KL", "KN"].includes(pay)) {
         await fillKlarna(page, pay, datosrail, rail); 
+        await page.waitForTimeout(6500); 
 
     }  else {
         throw new Error(`Unsupported payment method: ${pay}`);
@@ -73,7 +74,7 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
     if (["KL", "SW"].includes(pay)) {
         await page.waitForTimeout(6500); 
     }  
-    await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });    
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-MKP-${rail}-${mode}-${pay}.png` });    
     await page.pause();
     
 });

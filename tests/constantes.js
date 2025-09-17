@@ -12,7 +12,7 @@ const constantes = {
       message: `IT Test. Please ignore it. Thank you!
       IT-Test. Bitte ignorieren Sie ihn. Ich danke Ihnen.
       Test IT. Prosím, ignorujte ho. Děkujeme!`,
-      address: "Rintstraße", 
+      address: "Bahnhofstraße", 
       nummer: "10",
       birthdate: "24.01.1980",      
       Pocoproduct : "498152800",
@@ -20,6 +20,7 @@ const constantes = {
       SSOpwd: "Utrecht27",
       Klarna: "263250",
       Branch: "989d63a46c",
+      karte: "2014740137",
       
     },
 
@@ -35,7 +36,9 @@ const constantes = {
       MKPPhoneDeny: "+49017610927312",
       FrameNumber: 'Iframe für Kartennummer',
       FrameDate: 'Iframe für Ablaufdatum',
-      FrameCVV: 'Iframe für Sicherheitscode',      
+      FrameCVV: 'Iframe für Sicherheitscode',
+      BillieUID: 'DE812345678',
+      BillieName: 'XXXLutz DE',   
     },
 
     datosCZ: {      
@@ -52,16 +55,21 @@ const constantes = {
 
     datosAT: {      
       Cookiebutton: 'Weiter einkaufen',	      
-      PostalCode: '4030',
+      PostalCode: '4020',
       City: 'Linz', 
+      PostalCode2: '1100',
+      City2: 'Wien', 
       Product: '3501049101',
       MKPProduct: '800000927978',
       MKPPhoneApprove: "+4306762600456",
       MKPPhoneDeny: "+4306762600745",
       Phone: '050545454',
+      Phone2: '06762600456',      
       FrameNumber: 'Iframe für Kartennummer',
       FrameDate: 'Iframe für Ablaufdatum',
       FrameCVV: 'Iframe für Sicherheitscode',    
+      BillieUID: 'ATU65296645',
+      BillieName: 'XXXLutz AT',
     },    
 
     datosCH: {      
@@ -94,6 +102,8 @@ const constantes = {
       FrameNumber: 'Iframe för kortnummer',
       FrameDate: 'Iframe för utgångsdatum',
       FrameCVV: 'Iframe för säkerhetskod',
+      BillieUID: 'SE999999999901',
+      BillieName: 'XXXLutz SE',      
     },
 
     datosRS: {      
@@ -117,6 +127,7 @@ const constantes = {
       PayPalpwd: "xxxlutz12345",
       cardnumber: "5555 4444 3333 1111",
       visanumber: "4646 4646 4646 4644",
+      threedsnumber: "5454 5454 5454 5454",
       cardholder: "Robert Tunon",
       cardcvv: "737",
       carddate: "03/30",

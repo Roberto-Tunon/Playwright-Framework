@@ -19,14 +19,14 @@ test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
     const rail = 'RO';
     const datosrail = ObtenerDatos(rail);    
 
-    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/`);   
+    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
     
     await fillSSO(page, datosvar);
 
     await page.pause();        
 
     await AcceptCookies(page, datosrail);
-    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
+    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();    
     

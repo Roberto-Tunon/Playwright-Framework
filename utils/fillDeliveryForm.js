@@ -1,4 +1,5 @@
-async function fillDeliveryForm(page, datosvar, datosrail) {       
+async function fillDeliveryForm(page, datosvar, datosrail) {   
+      
     await page.locator('[data-purpose="form.input.deliveryAddress.email.field"]').fill(datosvar.user);
     await page.locator('[data-purpose="form.input.deliveryAddress.phone.field"]').fill(datosrail.Phone); 
     await page.locator('[data-purpose="form.input.deliveryAddress.streetname.field"]').fill(datosvar.address);  

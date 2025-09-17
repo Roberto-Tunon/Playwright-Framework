@@ -19,13 +19,13 @@ test('Shopping on Lesnina RS', async ({ browser }) => {
     const rail = 'RS';
     const datosrail = ObtenerDatos(rail);    
 
-    await page.goto(`https://xxxlesnina-${rail}.qc.xxxl-dev.at/`);   
+    await page.goto(`https://xxxlesnina-${rail}.qa.xxxl-dev.at/`);   
     
     await fillSSO(page, datosvar);
     await page.pause();        
 
     // await AcceptCookies(page, datosrail);
-    await page.goto(`https://xxxlesnina-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
+    await page.goto(`https://xxxlesnina-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();    
     

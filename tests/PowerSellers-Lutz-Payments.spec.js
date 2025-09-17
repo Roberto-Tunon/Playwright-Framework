@@ -33,13 +33,13 @@ test('Lutz Special Payments', async ({ browser }) => {
     const datosrail = ObtenerDatos(rail);    
 
     console.log(`Parámetros recibidos: ${rail} - ${pay}`);
-    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/`);   
+    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
     
     await fillSSO(page, datosvar);
     await page.pause();        
 
     await AcceptCookies(page, datosrail);    
-    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
+    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
     
     await page.locator('[data-purpose="checkout.addtocart"]').click();    
     await page.locator('[data-purpose="sidebar.button.submit"]').click();   
@@ -113,7 +113,7 @@ test('Lutz Special Payments', async ({ browser }) => {
         await page.click('[data-purpose="checkout.payment.onlinebanking.select.select.value"]');
         // Luego, selecciona la opción "Česká spořitelna"
         await page.click('text="Česká spořitelna"');
-        await page.screenshot({ path: 'tests/Screenshots/Payment.png', fullPage: true }); 
+        await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}.png`, fullPage: true }); 
 
         await page.locator('[data-purpose="checkout.paymentOptions.onlineBanking_CZ.submit"]').click();
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
@@ -129,7 +129,7 @@ test('Lutz Special Payments', async ({ browser }) => {
     if (["SW", "KO", "KL", "KN"].includes(pay)) {
       await page.waitForTimeout(6500); 
     }  
-    await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });    
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-Credit-${pay}-${rail}.png` });
     await page.pause();
     
 });

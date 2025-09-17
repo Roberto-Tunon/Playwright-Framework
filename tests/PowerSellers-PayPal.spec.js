@@ -19,15 +19,15 @@ test('Shopping with PayPal', async ({ browser }) => {
     console.log(`Parámetro recibido: ${rail}`);
 
     const datosrail = ObtenerDatos(rail);   
-    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/`);   
+    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
    
     await fillSSO(page, datosvar);
  
     await page.pause();        
     
-    // await AcceptCookies(page, datosrail);
+    await AcceptCookies(page, datosrail);
 
-    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);     
+    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);     
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
@@ -40,35 +40,79 @@ test('Shopping with PayPal', async ({ browser }) => {
     if (rail === "AT") {
       await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
     }
-    await page.screenshot({ path: 'tests/Screenshots/Payment2.png', fullPage: true }); 
-    await page.getByTestId('step-content').locator('a[href="#widerrufsbelehrung"]').click();
-    await page.locator('//button[@aria-label="Schließen"]').click(); 
+
+    await page.waitForTimeout(2000);
+    await page.screenshot({ path: `tests/Screenshots/Payment-Paypal-${rail}.png`, fullPage: true });     
+    await page.waitForTimeout(1000);
+    
+    const widerrufLink = page.getByTestId('step-content').locator('a[href="#widerrufsbelehrung"]');
+    const isFocused = await widerrufLink.evaluate(el => el === document.activeElement);
+
+    if (!isFocused) {
+      await widerrufLink.focus();
+    }
+
+    await page.waitForTimeout(1500);                     
       
-    await page.keyboard.press('Tab');    
+    await page.keyboard.press('Tab');        
     await page.keyboard.press('Enter');
+    await page.waitForTimeout(5000);  
+    
+    // Esperar la ventana de PayPal (popup)
+    let popup;
+    for (let i = 0; i < 10; i++) {
+      const pages = page.context().pages();
+      popup = pages.find(p => p.url().includes('paypal.com') && p !== page);
+      if (popup) break;
+      await page.waitForTimeout(500);
+    }
+    if (!popup) throw new Error('❌ No se detectó ninguna ventana de PayPal');
 
-    await page.waitForTimeout(1000);  // 1 second pause
-        
-    const [popup] = await Promise.all([
-    page.waitForEvent('popup'), // Espera la ventana emergente    
-    page.keyboard.press('Enter')
-    ]);
+    // Esperar el iframe que contiene el campo de email
+    let loginFrame;
+    for (let i = 0; i < 20; i++) {
+      for (const f of popup.frames()) {
+        const emailInput = f.locator('input#email');
+        if (await emailInput.count() > 0) {
+          loginFrame = f;
+          //console.log(`✅ Se encontró el iframe con input#email (URL: ${f.url()})`);
+          break;
+        }
+      }
+      if (loginFrame) break;
+      await page.waitForTimeout(500);
+    }
+    if (!loginFrame) throw new Error('❌ No se encontró el iframe del login de PayPal');
 
-    await popup.waitForLoadState(); // Espera que la página cargue completamente
+    // --- Paso 1: rellenar email ---
+    const emailInput = loginFrame.locator('input#email');
+    await emailInput.waitFor({ state: 'visible', timeout: 10000 });
+    await emailInput.click({ force: true });
+    await emailInput.fill('too-buyer@xxxlutz.at');
 
-    // Ingresar email de PayPal
-    await popup.fill('input#email', 'too-buyer@xxxlutz.at');
-    await popup.click('button#btnNext');
+    // --- Paso 2: clic en botón "Siguiente" ---
+    const btnNext = loginFrame.locator('button#btnNext');
+    await btnNext.waitFor({ state: 'visible', timeout: 5000 });
+    await btnNext.click({ force: true });
 
-    // Ingresar contraseña
-    await popup.fill('input#password', 'xxxlutz12345');
-    await popup.click('button#btnLogin');
+    // --- Paso 3: esperar el campo de contraseña ---
+    const passwordInput = loginFrame.locator('input#password');
+    await passwordInput.waitFor({ state: 'visible', timeout: 10000 });
+    await passwordInput.click({ force: true });
+    await passwordInput.fill('xxxlutz12345');
+
+    // --- Paso 4: clic en botón "Iniciar sesión" ---
+    const btnLogin = loginFrame.locator('button#btnLogin');
+    await btnLogin.waitFor({ state: 'visible', timeout: 5000 });
+    await btnLogin.click({ force: true });
+
+    console.log('✅ Login de PayPal completado');
 
     // Confirmar el pago
     await popup.getByTestId('submit-button-initial').click();
     
     await page.waitForLoadState('networkidle'); 
-    await page.waitForTimeout(1000);  // 1 second pause
-    await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });    
+    await page.waitForTimeout(7000);  // 7 seconds pause
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-Paypal-${rail}.png` });    
     await page.pause();    
 });
