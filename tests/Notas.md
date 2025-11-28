@@ -3,8 +3,21 @@ For executing:
 
 - npx playwright test tests/Deployment/Newsletter.spec.js --project chromium --headed
 
-Powersellers
----------------
+-------------------------------------
+-------------------------------------
+-- Install latest Playwright version
+npm i -D @playwright/test@latest
+
+-- Version
+npm list @playwright/test
+
+-- Create Project from scratch
+npm init playwright@latest
+
+-------------------------------------
+-------------------------------------
+
+
 
 ------------
 -- PAYPAL --
@@ -14,11 +27,12 @@ Powersellers
 -----------------
 -- CREDIT CARD --
 -----------------
-- COUNTRY=CH npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
-- COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
-- COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
-- COUNTRY=CZ npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
-- COUNTRY=SE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=moemax COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=moemax COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CZ npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CH npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
   
 ----------------------
 -- SPECIAL PAYMENTS --
@@ -46,6 +60,10 @@ Powersellers
 --------------------------
 - COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Billie.spec.js --project chromium --headed 
 
+--------------------------
+-- Riverty --
+--------------------------
+- COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Riverty-logged.spec.js --project chromium --headed 
 -------------------------
 Executions:
 PAY=KO  -> OK  Klarna OverTime

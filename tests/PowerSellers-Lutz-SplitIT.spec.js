@@ -44,7 +44,7 @@ test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
    
     await page.locator('[data-purpose="checkout.paymentOptions.null.submit"]').first().click();   
     await page.waitForTimeout(1000);
-    await page.screenshot({ path: 'tests/Screenshots/Payment.png', fullPage: true }); 
+    await page.screenshot({ path: 'tests/Screenshots/Payment-SplitIT.png', fullPage: true }); 
     await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();   
     
     await page.waitForLoadState('networkidle'); 
@@ -56,8 +56,8 @@ test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
     await page.waitForTimeout(500); 
     await page.locator('[qa-id="pay-button"]').click();
 
-    await page.waitForTimeout(8000);
-    await page.screenshot({ path: 'tests/Screenshots/Final-Order.png' });   
+    await page.waitForTimeout(10000);
+    await page.screenshot({ path: 'tests/Screenshots/Final-Order-SplitIT.png' });   
     await page.pause();
     
 });

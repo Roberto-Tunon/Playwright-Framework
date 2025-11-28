@@ -14,9 +14,12 @@ async function AcceptCookies(page, datos) {
     // await page.getByRole('button', { name: datos.Cookiebutton }).click();
 
     const modal = page.locator('[data-purpose="modal.body"]');
-    const button = modal.locator('button');
-    await button.waitFor({ state: 'visible' });
-    await button.click();
+
+    if (await modal.isVisible()) {
+      const button = modal.locator('button');
+      await button.waitFor({ state: 'visible' });
+      await button.click();
+    }
    
   }
   

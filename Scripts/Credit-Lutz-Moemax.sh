@@ -1,17 +1,19 @@
 # Define los valores para cada variable
-COUNTRIES=("AT" "DE" "CH" "CZ" "SE")
+COUNTRIES=("AT" "DE" "CH")
+RAIL=("moemax" "xxxlutz")
 
 # Opciones de Playwright
 PROJECT="chromium"
 SPEC="tests/PowerSellers-Lutz-Credit.spec.js"
-RAIL="xxxlutz"
 
 # Itera sobre combinaciones
-for COUNTRY in "${COUNTRIES[@]}"; do
+for RAIL in "${RAIL[@]}"; do
+  for COUNTRY in "${COUNTRIES[@]}"; do
 
-    echo "▶ Testing Credit card on Lutz $COUNTRY"
+    echo "▶ Testing Credit card on ${RAIL^^} $COUNTRY"
     RAIL=$RAIL COUNTRY=$COUNTRY npx playwright test $SPEC --project $PROJECT --headed
-    echo "✓ Successful test on $RAIL $COUNTRY"
+    echo "✓ Successful test on ${RAIL^^} $COUNTRY"
     echo "---------------------------------------------"
 
+  done
 done

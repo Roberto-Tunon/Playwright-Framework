@@ -1,5 +1,7 @@
 async function fillRODeliveryForm(page, datosvar, datosrail) {      
     
+      await page.waitForTimeout(2000);  // 2 seconds pause
+      
       await page.locator('[data-purpose="form.input.deliveryAddress.email.field"]').fill(datosvar.user);
       await page.locator('[data-purpose="form.input.deliveryAddress.phone.field"]').fill(datosrail.Phone); 
       await page.locator('[data-purpose="form.input.deliveryAddress.streetname.field"]').fill(datosvar.address);  

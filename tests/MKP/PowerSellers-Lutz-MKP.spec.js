@@ -24,7 +24,7 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
 
     console.log(`Parámetros recibido: ${rail} - ${mode} - ${pay}`);
 
-    await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/`);   
+    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
     
     await fillSSO(page, datosvar);
 
@@ -33,12 +33,12 @@ test('Marketplace shopping for Lutz AT and DE', async ({ browser }) => {
     await AcceptCookies(page, datosrail);
     if (mode !== "1P") {
        
-        await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing//products/standardDeliveryMarketplaceProduct`);
+        await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing//products/standardDeliveryMarketplaceProduct`);
         await page.locator('[data-purpose="checkout.addtocart"]').click();
     } 
     
     if (mode !== "3P") {
-        await page.goto(`https://xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);                
+        await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);                
         await page.locator('[data-purpose="checkout.addtocart"]').click();
     }
 

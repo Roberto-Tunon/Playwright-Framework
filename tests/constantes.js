@@ -3,7 +3,7 @@
 const constantes = {
     datosvar: {       
       version: '"version":"5.600.0"',
-      email: 'rafodev686@nozamas.com',
+      email: 'tadera2504@etramay.com',
       ecoemail: 'ecoqa@xxxl.digital',      
       user: 'roberto.tunon@xxxl.digital',
       pwd: 'Duncan21',
@@ -17,7 +17,7 @@ const constantes = {
       birthdate: "24.01.1980",      
       Pocoproduct : "498152800",
       SSOuser: "LUTZNT\\Robe",
-      SSOpwd: "Utrecht27",
+      SSOpwd: "Utrecht28#",
       Klarna: "263250",
       Branch: "989d63a46c",
       karte: "2014740137",
@@ -65,9 +65,9 @@ const constantes = {
       MKPPhoneDeny: "+4306762600745",
       Phone: '050545454',
       Phone2: '06762600456',      
-      FrameNumber: 'Iframe für Kartennummer',
-      FrameDate: 'Iframe für Ablaufdatum',
-      FrameCVV: 'Iframe für Sicherheitscode',    
+      FrameNumber: 'Iframe for card number',
+      FrameDate: 'Iframe for expiry date',
+      FrameCVV: 'Iframe for security code',    
       BillieUID: 'ATU65296645',
       BillieName: 'XXXLutz AT',
     },    
@@ -78,9 +78,9 @@ const constantes = {
       City: 'Otelfingen', 
       Product: '37313811',
       Phone: '442154000',
-      FrameNumber: 'Iframe für Kartennummer',
-      FrameDate: 'Iframe für Ablaufdatum',
-      FrameCVV: 'Iframe für Sicherheitscode',    
+       FrameNumber: 'Iframe for card number',
+      FrameDate: 'Iframe for expiry date',
+      FrameCVV: 'Iframe for security code',  
     },
     
     datosRO: {      

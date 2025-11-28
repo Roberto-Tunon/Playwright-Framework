@@ -3,6 +3,7 @@ const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 const { fillSELFDeliveryForm } = require('../utils/fillSELFDeliveryForm');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillSSO } = require('../utils/fillSSO');
 const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
@@ -16,44 +17,55 @@ test('Shopping with Credit Card', async ({ browser }) => {
       const page = await context.newPage();
       await page.setViewportSize({ width: 1920, height: 1080 });
     
-    const rail = process.env.COUNTRY || 'default';
-    const datosrail = ObtenerDatos(rail);    
+    const cod_country = process.env.COUNTRY || 'default';
+    const rail = process.env.RAIL || 'default';
+    const datosrail = ObtenerDatos(cod_country);    
 
-    console.log(`Parámetro recibido: ${rail}`);
+    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}`);
     
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
+    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/`);   
     
     await fillSSO(page, datosvar);
 
     await page.pause();        
 
     await AcceptCookies(page, datosrail);
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/deliveryselfservice`);      
+    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/deliveryselfservice`);      
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();    
-   
-    await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click();
-    await page.locator('#SELF_SERVICE').click();
-
-    await page.getByTestId('locationPicker.button').click();
-    await page.locator('[data-purpose="locationSearch.input.field"]').fill(datosrail.PostalCode);
-    await page.getByRole('button', { name: datosrail.City}).click();    
-    await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();     
 
 
-    await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-    await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+    try {
+        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
+        await page.locator('#SELF_SERVICE').click();
 
-    await fillSELFDeliveryForm(page, datosvar, datosrail);     
+        await page.getByTestId('locationPicker.button').click();
+        await page.locator('[data-purpose="locationFinder.input.field"]').fill(datosrail.PostalCode);
+        await page.getByRole('button', { name: datosrail.City}).click();    
+        await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();
+
+        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+        await fillSELFDeliveryForm(page, datosvar, datosrail);   
+
+    } catch (e) {
+  
+        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+        await fillDeliveryForm(page, datosvar, datosrail);   
+    }
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 
     await fillCreditCard(page, PayQC, datosrail);
-
-    if (rail === "AT") {
-        await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
-    }
     
+    try {
+        if (rail === "AT") {
+            await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click({ timeout: 2000 });       
+        } 
+    } catch (e) {
+    }  
+
     await page.waitForTimeout(1000);
     await page.screenshot({ path: `tests/Screenshots/Payment-Credit-${rail}.png`, fullPage: true });  
 

@@ -28,7 +28,7 @@ test('Lutz Regression with Credit Card', async ({ browser }) => {
     await page.pause();        
 
     await AcceptCookies(page, datosrail);
-    await page.goto(`https://branch-${datosvar.Branch}-xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/delivery`);     
+    await page.goto(`https://branch-${datosvar.Branch}-xxxlutz-${rail}.qc.xxxl-dev.at/api/${rail}/testing/products/mailableselfservice`);     
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();    
    
@@ -36,7 +36,7 @@ test('Lutz Regression with Credit Card', async ({ browser }) => {
     await page.locator('#SELF_SERVICE').click();
 
     await page.getByTestId('locationPicker.button').click();
-    await page.locator('[data-purpose="locationSearch.input.field"]').fill(datosrail.PostalCode);
+    await page.locator('[data-purpose="locationFinder.input.field"]').fill(datosrail.PostalCode);
     await page.getByRole('button', { name: datosrail.City}).click();    
     await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();     
 
