@@ -22,7 +22,7 @@ npm init playwright@latest
 ------------
 -- PAYPAL --
 ------------
-- COUNTRY=AT npx playwright test tests/PowerSellers-PayPal.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-PayPal.spec.js --project chromium --headed 
 
 -----------------
 -- CREDIT CARD --

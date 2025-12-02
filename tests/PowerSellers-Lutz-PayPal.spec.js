@@ -15,11 +15,13 @@ test('Shopping with PayPal', async ({ browser }) => {
       const page = await context.newPage();
       await page.setViewportSize({ width: 1920, height: 1080 });
     
-    const rail = process.env.COUNTRY || 'default';
-    console.log(`Parámetro recibido: ${rail}`);
-
-    const datosrail = ObtenerDatos(rail);   
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
+    const cod_country = process.env.COUNTRY || 'default';
+    const rail = process.env.RAIL || 'default';
+    const datosrail = ObtenerDatos(cod_country); 
+    
+    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}`);
+    
+    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/`); 
    
     await fillSSO(page, datosvar);
  
@@ -27,7 +29,7 @@ test('Shopping with PayPal', async ({ browser }) => {
     
     await AcceptCookies(page, datosrail);
 
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);     
+    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/delivery`);  
     await page.locator('[data-purpose="checkout.addtocart"]').click();
     await page.locator('[data-purpose="sidebar.button.submit"]').click();
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
@@ -42,7 +44,7 @@ test('Shopping with PayPal', async ({ browser }) => {
     }
 
     await page.waitForTimeout(2000);
-    await page.screenshot({ path: `tests/Screenshots/Payment-Paypal-${rail}.png`, fullPage: true });     
+    await page.screenshot({ path: `tests/Screenshots/Payment-Paypal-${rail}-${cod_country}.png`, fullPage: true });     
     await page.waitForTimeout(1000);
     
     const widerrufLink = page.getByTestId('step-content').locator('a[href="#widerrufsbelehrung"]');
@@ -113,6 +115,6 @@ test('Shopping with PayPal', async ({ browser }) => {
     
     await page.waitForLoadState('networkidle'); 
     await page.waitForTimeout(7000);  // 7 seconds pause
-    await page.screenshot({ path: `tests/Screenshots/Final-Order-Paypal-${rail}.png` });    
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-Paypal-${rail}-${cod_country}.png` });    
     await page.pause();    
 });

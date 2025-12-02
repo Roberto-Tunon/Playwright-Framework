@@ -67,11 +67,11 @@ test('Shopping with Credit Card', async ({ browser }) => {
     }  
 
     await page.waitForTimeout(1000);
-    await page.screenshot({ path: `tests/Screenshots/Payment-Credit-${rail}.png`, fullPage: true });  
+    await page.screenshot({ path: `tests/Screenshots/Payment-Credit-${rail}-${cod_country}.png`, fullPage: true });  
 
     await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
     await page.waitForTimeout(3000);  // 3 seconds pause
-    await page.screenshot({ path: `tests/Screenshots/Final-Order-Credit-${rail}.png` });
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-Credit-${rail}-${cod_country}.png` });
 
     await page.pause();
     
