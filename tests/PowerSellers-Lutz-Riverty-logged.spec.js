@@ -1,11 +1,10 @@
 const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
-const { fillSSO } = require('../utils/fillSSO');
-const { AcceptCookies } = require('../utils/AcceptCookies');
 const { AcceptCookiesLogin } = require('../utils/AcceptCookiesLogin');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
 const { loginUserIDP } = require('../utils/loginUserIDP');
+const { OpenPage } = require('../utils/OpenPage');
 
 
 test('Shopping with logged user Riverty', async ({ browser }) => {
@@ -16,22 +15,12 @@ test('Shopping with logged user Riverty', async ({ browser }) => {
       const page = await context.newPage();
       await page.setViewportSize({ width: 1920, height: 1080 });
     
-    const rail = process.env.COUNTRY || 'default';
-    const datosrail = ObtenerDatos(rail);    
+    const cod_country = process.env.COUNTRY || 'default';
+    const rail = process.env.RAIL || 'default';
+    const datosrail = ObtenerDatos(cod_country);   
+   
+    await OpenPage(page, datosvar, datosrail, rail, cod_country);
 
-    console.log(`Parámetro recibido: ${rail}`);
-    
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
-    
-    await fillSSO(page, datosvar);
-
-    await page.pause();        
-
-    await AcceptCookies(page, datosrail);
-
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/deliveryselfservice`);      
-    await page.locator('[data-purpose="checkout.addtocart"]').click();
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();    
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
 
     await page.getByRole('link', { name: 'Anmelden' }).click();  
@@ -52,17 +41,17 @@ test('Shopping with logged user Riverty', async ({ browser }) => {
     await page.locator('[data-purpose="form.input.birthdate.field"]').fill('24.01.1980');
     await page.locator('[data-purpose="checkout.paymentOptions.riverty.submit"]').click();
 
-    if (rail === "AT") {
+    if (cod_country === "AT") {
         await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
     }
     
     await page.waitForTimeout(1000);
-    await page.screenshot({ path: `tests/Screenshots/Payment-Riverty-${rail}.png`, fullPage: true });  
+    await page.screenshot({ path: `tests/Screenshots/Payment-Riverty-${rail}-${cod_country}.png`, fullPage: true });  
 
     await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
     
     await page.waitForTimeout(5000);  // 5 seconds pause
-    await page.screenshot({ path: `tests/Screenshots/Final-Order-Riverty-${rail}.png`});
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-Riverty-${rail}-${cod_country}.png`});
 
     await page.pause();
     

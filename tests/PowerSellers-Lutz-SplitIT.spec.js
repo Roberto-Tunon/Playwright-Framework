@@ -3,10 +3,8 @@ const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 const { fillRODeliveryForm } = require('../utils/fillRODeliveryForm');
-const { fillSSO } = require('../utils/fillSSO');
-const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
-
+const { OpenPage } = require('../utils/OpenPage');
 
 test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
 
@@ -16,19 +14,11 @@ test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
       const page = await context.newPage();
       await page.setViewportSize({ width: 1920, height: 1080 });
     
-    const rail = 'RO';
-    const datosrail = ObtenerDatos(rail);    
-
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
-    
-    await fillSSO(page, datosvar);
-
-    await page.pause();        
-
-    await AcceptCookies(page, datosrail);
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
-    await page.locator('[data-purpose="checkout.addtocart"]').click();
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();    
+    const cod_country = process.env.COUNTRY || 'default';
+    const rail = process.env.RAIL || 'default';
+    const datosrail = ObtenerDatos(cod_country); 
+   
+    await OpenPage(page, datosvar, datosrail, rail, cod_country);
     
     await page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]').click();  
     await page.keyboard.press('ArrowUp'); // Baja a la primera opción
@@ -44,7 +34,7 @@ test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
    
     await page.locator('[data-purpose="checkout.paymentOptions.null.submit"]').first().click();   
     await page.waitForTimeout(1000);
-    await page.screenshot({ path: 'tests/Screenshots/Payment-SplitIT.png', fullPage: true }); 
+    await page.screenshot({ path: `tests/Screenshots/Payment-SplitIT-${rail}-${cod_country}.png`, fullPage: true }); 
     await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();   
     
     await page.waitForLoadState('networkidle'); 
@@ -57,7 +47,7 @@ test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
     await page.locator('[qa-id="pay-button"]').click();
 
     await page.waitForTimeout(10000);
-    await page.screenshot({ path: 'tests/Screenshots/Final-Order-SplitIT.png' });   
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-SplitIT-${rail}-${cod_country}.png` });   
     await page.pause();
     
 });

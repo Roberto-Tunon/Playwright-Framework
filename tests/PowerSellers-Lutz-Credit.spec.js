@@ -4,9 +4,8 @@ const { PayQC, datosvar } = require('./constantes');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 const { fillSELFDeliveryForm } = require('../utils/fillSELFDeliveryForm');
 const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
-const { fillSSO } = require('../utils/fillSSO');
-const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
+const { OpenPage } = require('../utils/OpenPage');
 
 
 test('Shopping with Credit Card', async ({ browser }) => {
@@ -19,21 +18,9 @@ test('Shopping with Credit Card', async ({ browser }) => {
     
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
-    const datosrail = ObtenerDatos(cod_country);    
-
-    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}`);
-    
-    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/`);   
-    
-    await fillSSO(page, datosvar);
-
-    await page.pause();        
-
-    await AcceptCookies(page, datosrail);
-    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/deliveryselfservice`);      
-    await page.locator('[data-purpose="checkout.addtocart"]').click();
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();    
-
+    const datosrail = ObtenerDatos(cod_country);   
+   
+    await OpenPage(page, datosvar, datosrail, rail, cod_country);
 
     try {
         await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
@@ -59,13 +46,10 @@ test('Shopping with Credit Card', async ({ browser }) => {
 
     await fillCreditCard(page, PayQC, datosrail);
     
-    try {
-        if (rail === "AT") {
+    if (cod_country === "AT") {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click({ timeout: 2000 });       
-        } 
-    } catch (e) {
-    }  
-
+    } 
+    
     await page.waitForTimeout(1000);
     await page.screenshot({ path: `tests/Screenshots/Payment-Credit-${rail}-${cod_country}.png`, fullPage: true });  
 

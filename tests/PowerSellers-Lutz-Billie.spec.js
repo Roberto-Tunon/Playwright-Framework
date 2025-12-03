@@ -1,12 +1,9 @@
 const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
-const { fill3DSCreditCard } = require('../utils/fill3DSCreditCard');
 const { fillDeliveryFormCompany } = require('../utils/fillDeliveryFormCompany');
-const { fillSSO } = require('../utils/fillSSO');
-const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
-
+const { OpenPage } = require('../utils/OpenPage');
 
 test('Shopping with Billie', async ({ browser }) => {
 
@@ -16,21 +13,12 @@ test('Shopping with Billie', async ({ browser }) => {
       const page = await context.newPage();
       await page.setViewportSize({ width: 1920, height: 1080 });
     
-    const rail = process.env.COUNTRY || 'default';
-    const datosrail = ObtenerDatos(rail);    
-
-    console.log(`Parámetro recibido: ${rail}`);
+    const cod_country = process.env.COUNTRY || 'default';
+    const rail = process.env.RAIL || 'default';
+    const datosrail = ObtenerDatos(cod_country);   
+   
+    await OpenPage(page, datosvar, datosrail, rail, cod_country);    
     
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
-    
-    await fillSSO(page, datosvar);
-
-    await page.pause();        
-
-    await AcceptCookies(page, datosrail);
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/deliveryselfservice`);      
-    await page.locator('[data-purpose="checkout.addtocart"]').click();
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();    
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
@@ -39,12 +27,12 @@ test('Shopping with Billie', async ({ browser }) => {
     await page.locator('[data-purpose="checkout.paymentOptions.klarna_b2b"]').click();
     await page.locator('[data-purpose="checkout.paymentOptions.klarna_b2b.submit"]').click();
 
-    if (rail === "AT") {
+    if (cod_country === "AT") {
         await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
     }
     
     await page.waitForTimeout(1000);
-    await page.screenshot({ path: `tests/Screenshots/Payment-Billie-${rail}.png`, fullPage: true });  
+    await page.screenshot({ path: `tests/Screenshots/Payment-Billie-${rail}-${cod_country}.png`, fullPage: true });  
 
     await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
     await page.waitForTimeout(2000);  // 2 seconds pause
@@ -85,7 +73,7 @@ test('Shopping with Billie', async ({ browser }) => {
 
     
     await page.waitForTimeout(10000);  // 10 seconds pause
-    await page.screenshot({ path: `tests/Screenshots/Final-Order-Billie-${rail}.png` });
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-Billie-${rail}-${cod_country}.png` });
 
     await page.pause();
     

@@ -23,6 +23,8 @@ npm init playwright@latest
 -- PAYPAL --
 ------------
 - RAIL=xxxlutz COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-PayPal.spec.js --project chromium --headed 
+- 
+- Scripts/Paypal-Lutz.sh
 
 -----------------
 -- CREDIT CARD --
@@ -33,6 +35,13 @@ npm init playwright@latest
 - RAIL=moemax COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - RAIL=xxxlutz COUNTRY=CZ npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
 - RAIL=xxxlutz COUNTRY=CH npx playwright test tests/PowerSellers-Lutz-Credit.spec.js --project chromium --headed 
+- 
+- Scripts/Credit-Lutz.sh
+
+---------------------
+-- CREDIT CARD 3DS --
+---------------------
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Credit-3DS.spec.js --project chromium --headed 
   
 ----------------------
 -- SPECIAL PAYMENTS --
@@ -48,7 +57,7 @@ npm init playwright@latest
 -----------------
 -- RO Split IT --
 -----------------
-- npx playwright test tests/PowerSellers-Lutz-SplitIT.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=RO npx playwright test tests/PowerSellers-Lutz-SplitIT.spec.js --project chromium --headed 
 
 --------------------------
 -- RS Lesnina CorvusPay --
@@ -58,12 +67,12 @@ npm init playwright@latest
 --------------------------
 -- Billie --
 --------------------------
-- COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Billie.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Billie.spec.js --project chromium --headed 
 
 --------------------------
 -- Riverty --
 --------------------------
-- COUNTRY=DE npx playwright test tests/PowerSellers-Lutz-Riverty-logged.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/PowerSellers-Lutz-Riverty-logged.spec.js --project chromium --headed 
 -------------------------
 Executions:
 PAY=KO  -> OK  Klarna OverTime

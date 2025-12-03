@@ -2,10 +2,8 @@ const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
 const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
-const { fillCreditCard } = require('../utils/fillCreditCard');
-const { fillSSO } = require('../utils/fillSSO');
-const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
+const { OpenPage } = require('../utils/OpenPage');
 
 test('Shopping with PayPal', async ({ browser }) => {
 
@@ -18,20 +16,9 @@ test('Shopping with PayPal', async ({ browser }) => {
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
     const datosrail = ObtenerDatos(cod_country); 
-    
-    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}`);
-    
-    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/`); 
    
-    await fillSSO(page, datosvar);
- 
-    await page.pause();        
-    
-    await AcceptCookies(page, datosrail);
+    await OpenPage(page, datosvar, datosrail, rail, cod_country);
 
-    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/delivery`);  
-    await page.locator('[data-purpose="checkout.addtocart"]').click();
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
@@ -39,7 +26,8 @@ test('Shopping with PayPal', async ({ browser }) => {
 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').first().click(); 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal.submit"]').click();
-    if (rail === "AT") {
+
+    if (cod_country === "AT") {
       await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
     }
 
