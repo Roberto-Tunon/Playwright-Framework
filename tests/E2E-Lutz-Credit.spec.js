@@ -18,9 +18,10 @@ test('Shopping with Credit Card', async ({ browser }) => {
     
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
+    const mode = process.env.MODE || '1P';
     const datosrail = ObtenerDatos(cod_country);   
    
-    await OpenPage(page, datosvar, datosrail, rail, cod_country);
+    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
 
     try {
         await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
@@ -33,13 +34,17 @@ test('Shopping with Credit Card', async ({ browser }) => {
 
         await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
         await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-        await fillSELFDeliveryForm(page, datosvar, datosrail);   
+
+        await fillSELFDeliveryForm(page, datosvar, datosrail); 
+                
 
     } catch (e) {
   
         await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
         await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-        await fillDeliveryForm(page, datosvar, datosrail);   
+
+        await fillDeliveryForm(page, datosvar, datosrail);  
+        
     }
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();

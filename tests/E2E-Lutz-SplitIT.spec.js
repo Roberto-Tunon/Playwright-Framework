@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
 const { fillCreditCard } = require('../utils/fillCreditCard');
-const { fillRODeliveryForm } = require('../utils/fillRODeliveryForm');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
 const { OpenPage } = require('../utils/OpenPage');
 
@@ -28,7 +28,7 @@ test('Shopping with Split IT on Lutz RO', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await fillRODeliveryForm(page, datosvar, datosrail);     
+    await fillDeliveryForm(page, datosvar, datosrail);     
 
     await page.locator('[data-purpose="checkout.paymentOptions.null"]').click();
    

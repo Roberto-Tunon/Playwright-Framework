@@ -13,6 +13,8 @@
     "@types/yargs": "^17.0.33"
   },
   "dependencies": {
+    "enquirer": "^2.4.1",
+    "inquirer": "^13.1.0",
     "yargs": "^17.7.2"
   }
 }

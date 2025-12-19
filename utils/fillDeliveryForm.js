@@ -8,9 +8,18 @@ async function fillDeliveryForm(page, datosvar, datosrail) {
     await page.locator('[data-purpose="form.input.deliveryAddress.streetnumber.field"]').fill(datosvar.nummer);
     await page.locator('[data-purpose="form.input.deliveryAddress.firstName.field"]').fill(datosvar.name);
     await page.locator('[data-purpose="form.input.deliveryAddress.lastName.field"]').fill(datosvar.surname);
-    await page.locator('[data-purpose="form.input.deliveryAddress.postalCode.field"]').fill(datosrail.PostalCode);
-    await page.locator('[data-purpose="form.input.deliveryAddress.town.field"]').fill(datosrail.City);
+
+    if (datosrail.Country === 'RO'){ 
+      await page.click('[data-purpose="postalCodeDistrictLocality.region"]');
+      await page.click('role=option >> text=Bucuresti');
+      await page.locator('[data-purpose="postalCodeDistrictLocality.town"]').click();
+      await page.locator('[role="option"][id="Bucuresti (Sectorul 5)"]').click();
+    } else {
+      await page.locator('[data-purpose="form.input.deliveryAddress.postalCode.field"]').fill(datosrail.PostalCode);
+      await page.locator('[data-purpose="form.input.deliveryAddress.town.field"]').fill(datosrail.City);
+    }
+    
     await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
-  }
   
+  }
   module.exports = { fillDeliveryForm };  

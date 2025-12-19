@@ -39,6 +39,7 @@ const constantes = {
       FrameCVV: 'Iframe für Sicherheitscode',
       BillieUID: 'DE812345678',
       BillieName: 'XXXLutz DE',   
+      Country: 'DE',
     },
 
     datosCZ: {      
@@ -50,7 +51,9 @@ const constantes = {
       Message: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
       FrameNumber: 'Iframe pro číslo karty',
       FrameDate: 'Iframe pro datum vypršení platnosti',
-      FrameCVV: 'Iframe pro bezpečnostní kód',      
+      FrameCVV: 'Iframe pro bezpečnostní kód',
+      Country: 'CZ',
+
     },
 
     datosAT: {      
@@ -70,6 +73,7 @@ const constantes = {
       FrameCVV: 'Iframe for security code',    
       BillieUID: 'ATU65296645',
       BillieName: 'XXXLutz AT',
+      Country: 'AT',
     },    
 
     datosCH: {      
@@ -78,9 +82,10 @@ const constantes = {
       City: 'Otelfingen', 
       Product: '37313811',
       Phone: '442154000',
-       FrameNumber: 'Iframe for card number',
+      FrameNumber: 'Iframe for card number',
       FrameDate: 'Iframe for expiry date',
       FrameCVV: 'Iframe for security code',  
+      Country: 'CH',
     },
     
     datosRO: {      
@@ -89,6 +94,10 @@ const constantes = {
       City: 'Bucuresti', 
       Product: '001930000219',
       Phone: '213055500',
+      Country: 'RO',
+      FrameNumber: 'Iframe pentru numărul cardului',
+      FrameDate: 'Iframe pentru data de expirare',
+      FrameCVV: 'Iframe pentru codul de securitate',
     },   
 
     datosSE: {      
@@ -103,7 +112,8 @@ const constantes = {
       FrameDate: 'Iframe för utgångsdatum',
       FrameCVV: 'Iframe för säkerhetskod',
       BillieUID: 'SE999999999901',
-      BillieName: 'XXXLutz SE',      
+      BillieName: 'XXXLutz SE',
+      Country: 'SE',
     },
 
     datosRS: {      
@@ -111,6 +121,7 @@ const constantes = {
       City: 'MELJAK', 
       Product: '000840005101',
       Phone: '112635622',
+      Country: 'RS',
     },   
 
     PayLive: {      

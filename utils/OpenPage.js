@@ -1,7 +1,7 @@
 const { fillSSO } = require('./fillSSO');
 const { AcceptCookies } = require('./AcceptCookies');
 
-async function OpenPage(page, datosvar, datosrail, rail, cod_country) {
+async function OpenPage(page, datosvar, datosrail, rail, cod_country, mode) {
 
     console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}`);
     
@@ -9,11 +9,22 @@ async function OpenPage(page, datosvar, datosrail, rail, cod_country) {
     
     await fillSSO(page, datosvar);
     await page.pause();        
-    await AcceptCookies(page, datosrail);
+    await AcceptCookies(page, datosrail);   
 
-    await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/deliveryselfservice`);      
-    await page.locator('[data-purpose="checkout.addtocart"]').click();
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();    
+    if (mode !== "1P") {      
+       try {         
+         await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing//products/standardDeliveryMarketplaceProduct`);
+         await page.locator('[data-purpose="checkout.addtocart"]').click();       
+       } catch (e) {
+           throw new Error(`No Marketplace product for Country: ${cod_country}`);   
+       } 
+    } 
+    
+    if (mode !== "3P") {
+        await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/delivery`);                
+        await page.locator('[data-purpose="checkout.addtocart"]').click();
+    }
+    await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
 }
   
 module.exports = { OpenPage };
