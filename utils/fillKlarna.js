@@ -42,7 +42,7 @@ async function fillKlarna(page, pay, datosrail,rail) {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();       
         }   
         await page.waitForLoadState('networkidle'); 
-        await page.screenshot({ path: `tests/Screenshots/Payment--${pay}-${rail}-${datosrail.Country}.png`, fullPage: true }); 
+        await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}-${datosrail.Country}.png`, fullPage: true }); 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click(); 
         await page.waitForTimeout(10000); 
         if (datosrail.Country === "SE") {

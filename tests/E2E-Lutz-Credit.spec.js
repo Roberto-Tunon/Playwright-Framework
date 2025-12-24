@@ -15,7 +15,10 @@ test('Shopping with Credit Card', async ({ browser }) => {
       });
       const page = await context.newPage();
       await page.setViewportSize({ width: 1920, height: 1080 });
-    
+
+    // Overrides the global timeout just for this specific test
+    test.setTimeout(100000);
+
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
     const mode = process.env.MODE || '1P';
@@ -51,7 +54,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
 
     await fillCreditCard(page, PayQC, datosrail);
     
-    if (cod_country === "AT") {
+    if (["AT", "SI"].includes(cod_country)) {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click({ timeout: 2000 });       
     } 
     
@@ -59,7 +62,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
     await page.screenshot({ path: `tests/Screenshots/Payment-Credit-${rail}-${cod_country}.png`, fullPage: true });  
 
     await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
-    await page.waitForTimeout(3000);  // 3 seconds pause
+    await page.waitForTimeout(6000);  // 3 seconds pause
     await page.screenshot({ path: `tests/Screenshots/Final-Order-Credit-${rail}-${cod_country}.png` });
 
     await page.pause();

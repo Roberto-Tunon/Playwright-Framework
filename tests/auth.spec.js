@@ -1,10 +1,13 @@
 // tests/auth.spec.js
 const { test } = require('@playwright/test');
+const { datosvar } = require('./constantes');
+const { fillSSO } = require('../utils/fillSSO');
 
 test('SSO Session Capture', async ({ page }) => {
   
   // 1. Navigate to the QA environment
   await page.goto('https://xxxlutz-at.qa.xxxl-dev.at/');
+  await fillSSO(page, datosvar);
 
   console.log('---------------------------------------------------------');
   console.log('   STEPS TO CAPTURE THE SESSION:');

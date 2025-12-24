@@ -122,7 +122,18 @@ const constantes = {
       Product: '000840005101',
       Phone: '112635622',
       Country: 'RS',
-    },   
+    },
+
+    datosSI: {      
+      Cookiebutton: 'V redu je!',	
+      PostalCode: '1002',
+      City: 'Ljubljana', 
+      Phone: '013061215',
+      FrameNumber: 'Iframe za številko kartice',
+      FrameDate: 'Iframe za datum poteka veljavnosti',
+      FrameCVV: 'Iframe za varnostno kodo',      
+      Country: 'SI',
+    },
 
     PayLive: {      
       cardnumber: "5319 5447 7987 5501",
