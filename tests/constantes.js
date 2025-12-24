@@ -16,7 +16,7 @@ const constantes = {
       nummer: "10",
       birthdate: "24.01.1980",      
       Pocoproduct : "498152800",
-      SSOuser: "LUTZNT\\Robe",
+      SSOuser: "  ",
       SSOpwd: "Utrecht28#",
       Klarna: "263250",
       Branch: "989d63a46c",

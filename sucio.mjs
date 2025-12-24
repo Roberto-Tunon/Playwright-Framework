@@ -4,36 +4,13 @@ import { execSync } from 'child_process';
 
 async function run() {
   try {
-    console.log('\x1b[36m%s\x1b[0m', '\n--- 🧪 SMART PLAYWRIGHT RUNNER (SSO Edition) ---\n');
+    console.log('\x1b[36m%s\x1b[0m', '\n--- 🧪 SMART PLAYWRIGHT RUNNER (Restricciones Aplicadas) ---\n');
 
-    // --- SESSION MANAGEMENT ---
-    const action = await new Select({
-      name: 'action',
-      message: 'What do you want to do?',
-      choices: [
-        { name: 'run',    message: '🚀 Run Tests (using auth.json)\n' },
-        { name: 'login',  message: '🔑 Login / Refresh Session (MFA)' }
-      ]
-    }).run();
-
-    if (action === 'login') {
-      console.log('\n🔑 Opening browser for manual login...');
-      try {
-        // Run the auth spec forcing chromium and headed mode
-        execSync('npx playwright test tests/auth.spec.js --project chromium --headed', { stdio: 'inherit' });
-        console.log('\n✅ Session saved to auth.json. You can now run your tests!');
-      } catch (e) {
-        console.log('\n❌ Error: Login failed or the window was closed prematurely.');
-      }
-      return; 
-    }
-
-    // --- TEST SELECTION LOGIC ---
-
-    // 1. RAIL SELECTION
+    // 1. SELECCIÓN DE MARCA (RAIL)
     const rail = await new Select({
       name: 'rail',
       message: 'Choose Rail:\n --------------',      
+      symbols: { pointer: '👉', prefix: '❓' },
       choices: [
            { name: 'xxxlutz',   message: ` 🪑 🔴 XXXLutz` },       
            { name: 'moemax',    message: ` 🛏️  🟢 Mömax` },
@@ -42,7 +19,7 @@ async function run() {
       ]
     }).run();
 
-    // 2. COUNTRY DEFINITION
+    // 2. DEFINICIÓN MAESTRA DE PAÍSES
     const allCountries = [
       { name: 'AT', message: '🇦🇹 Austria' },
       { name: 'DE', message: '🇩🇪 Germany' },
@@ -64,14 +41,15 @@ async function run() {
       availableCountries = allCountries.filter(c => ['HR', 'RS', 'SI'].includes(c.name));
     }
 
-    // 3. COUNTRY SELECTION
+    // 3. SELECCIÓN DE PAÍS
     const country = await new Select({
       name: 'country',
       message: 'Choose Country:\n -----------------',
+      symbols: { pointer: '👉', prefix: '🌐' },
       choices: availableCountries
     }).run();
 
-    // 4. PAYMENT METHODS LOGIC
+    // 4. LÓGICA DE MÉTODOS DE PAGO
     const allPayments = [
       { name: 'tests/E2E-Lutz-Credit.spec.js',   message: '💳 Credit Card',       id: 'credit' },
       { name: 'tests/E2E-Lutz-PayPal.spec.js',   message: '🅿️  PayPal',            id: 'paypal' },
@@ -88,51 +66,63 @@ async function run() {
     ];
 
     let filteredPayments = [];
+
     if (country === 'RS') {
       filteredPayments = allPayments.filter(p => p.id === 'corvus');
-    } else if (['HR', 'SI'].includes(country)) {
+    } 
+    else if (['HR', 'SI'].includes(country)) {
       const ids = ['credit', 'paypal', 'splitit'];
       if (country === 'HR') ids.push('corvus');
       filteredPayments = allPayments.filter(p => ids.includes(p.id));
-    } else if (['AT', 'DE'].includes(country)) {
+    }
+    else if (['AT', 'DE'].includes(country)) {
       const forbidden = ['corvus', 'twint', 'swish', 'bank', 'splitit', 'delivery'];
       filteredPayments = allPayments.filter(p => !forbidden.includes(p.id));
-    } else if (country === 'CH') {
+    }
+    else if (country === 'CH') {
+      // Actualizado para incluir Klarna Pay Later (KL)
       filteredPayments = allPayments.filter(p => ['twint', 'credit', 'paypal', 'k_later'].includes(p.id));
-    } else if (country === 'CZ') {
+    }
+    else if (country === 'CZ') {
       filteredPayments = allPayments.filter(p => ['bank', 'delivery', 'credit', 'paypal'].includes(p.id));
-    } else if (country === 'SE') {
+    }
+    else if (country === 'SE') {
       const seIds = ['swish', 'k_over', 'k_later', 'k_now', 'credit', 'paypal'];
       filteredPayments = allPayments.filter(p => seIds.includes(p.id));
-    } else {
+    }
+    else {
       filteredPayments = allPayments.filter(p => ['credit', 'paypal'].includes(p.id));
     }
 
     const selectedMessage = await new Select({
       name: 'payment',
       message: 'Choose Payment Method:\n ------------------------',
+      symbols: { pointer: '👉', prefix: '💰' },
       choices: filteredPayments.map(p => p.message)
     }).run();
 
     const selectedPaymentObj = filteredPayments.find(p => p.message === selectedMessage);
+    
     const testFile = selectedPaymentObj.name;
     const payCode = selectedPaymentObj.payCode;
 
-    // 5. MODE SELECTION (AT, DE, CZ only)
+    // 5. LÓGICA DE MODO (Solo AT, DE, CZ)
     let mode = '1P';
     if (['AT', 'DE', 'CZ'].includes(country)) {
       mode = await new Select({
         name: 'mode',
         message: 'Choose Mode:\n --------------',
+        symbols: { pointer: '👉', prefix: '🆔' },
+        initial: 0, 
         choices: [
-          { name: '1P', message: '1️⃣ 🅿️' },
-          { name: '2P', message: '2️⃣ 🅿️' },
-          { name: '3P', message: '3️⃣ 🅿️' }
+          { name: '1P', message: '1️⃣ 🅿️   ' },
+          { name: '2P', message: '2️⃣ 🅿️   ' },
+          { name: '3P', message: '3️⃣ 🅿️    \n' }
         ]
       }).run();
     }
 
-    // 6. FINAL COMMAND EXECUTION
+    // 6. CONSTRUCCIÓN DEL COMANDO
     let envVars = `RAIL=${rail} COUNTRY=${country} MODE=${mode}`;
     if (payCode) envVars += ` PAY=${payCode}`;
 
@@ -140,6 +130,7 @@ async function run() {
     
     console.log('\n' + '─'.repeat(50));
     console.log(`🚀 RUNNING: ${rail.toUpperCase()} | ${country} | ${mode}${payCode ? ` | PAY: ${payCode}` : ''}`);
+    console.log(`📄 FILE: ${testFile.split('/').pop()}`);
     console.log('─'.repeat(50) + '\n');
     
     execSync(command, { stdio: 'inherit' });

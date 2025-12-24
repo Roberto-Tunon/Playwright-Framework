@@ -4,9 +4,8 @@ const { PayQC, datosvar } = require('./constantes');
 const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillSELFDeliveryForm } = require('../utils/fillSELFDeliveryForm');
 const { fillKlarna } = require('../utils/fillKlarna');
-const { fillSSO } = require('../utils/fillSSO');
-const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
+const { OpenPage } = require('../utils/OpenPage');
 
 
 test('Lutz Special Payments', async ({ browser }) => {
@@ -14,35 +13,20 @@ test('Lutz Special Payments', async ({ browser }) => {
     const context = await browser.newContext({
         ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos
       });
-      const page = await context.newPage();
-      await page.setViewportSize({ width: 1920, height: 1080 });
+    const page = await context.newPage();
+    await page.setViewportSize({ width: 1920, height: 1080 });
     
+    // Overrides the global timeout just for this specific test
+    test.setTimeout(100000);
+
     const pay  = process.env.PAY || 'default';
-    let rail;
-
-    if (["SW", "KO", "KL", "KN"].includes(pay)) {
-        rail = "SE";   
-      } else if (["ON", "DEL"].includes(pay)) {
-        rail = "CZ";
-      } else if (pay === "TW") {
-        rail = "CH";
-      }  else {
-        throw new Error(`Unsupported payment method: ${pay}`);
-    }
+    const cod_country = process.env.COUNTRY || 'default';
+    const rail = process.env.RAIL || 'default';
+    const mode = process.env.MODE || '1P';
+    const datosrail = ObtenerDatos(cod_country);   
+   
+    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
     
-    const datosrail = ObtenerDatos(rail);    
-
-    console.log(`Parámetros recibidos: ${rail} - ${pay}`);
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/`);   
-    
-    await fillSSO(page, datosvar);
-    await page.pause();        
-
-    await AcceptCookies(page, datosrail);    
-    await page.goto(`https://xxxlutz-${rail}.qa.xxxl-dev.at/api/${rail}/testing/products/delivery`);   
-    
-    await page.locator('[data-purpose="checkout.addtocart"]').click();    
-    await page.locator('[data-purpose="sidebar.button.submit"]').click();   
     
     if (pay === "ON") {  
       const button = await page.getByTestId('locationPicker.button'); 
@@ -70,8 +54,7 @@ test('Lutz Special Payments', async ({ browser }) => {
     
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-
-    //if (rail === "CZ") {
+    
     if (pay === "ON") {
       await fillSELFDeliveryForm(page, datosvar, datosrail);  
     } else {    
@@ -82,14 +65,14 @@ test('Lutz Special Payments', async ({ browser }) => {
         //await page.locator('[data-purpose="checkout.paymentOptions.swish_adyen"]').click();
         await page.locator('[data-purpose="checkout.paymentOptions.swish_adyen.submit"]').click();
         await page.waitForTimeout(2000); 
-        await page.screenshot({ path: 'tests/Screenshots/Payment.png', fullPage: true }); 
+        await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}-${cod_country}.png`, fullPage: true }); 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
     } else if (pay === "DEL") {
         await page.locator('[data-purpose="checkout.paymentOptions.ondelivery"]').click();
         await page.locator('[data-purpose="checkout.paymentOptions.ondelivery.submit"]').click();
         await page.waitForTimeout(2000); 
-        await page.screenshot({ path: 'tests/Screenshots/Payment.png', fullPage: true }); 
+        await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}-${cod_country}.png`, fullPage: true }); 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click(); 
 
     } else if (["KO", "KL", "KN"].includes(pay)) {
@@ -100,7 +83,7 @@ test('Lutz Special Payments', async ({ browser }) => {
                
         await page.locator('[data-purpose="checkout.paymentOptions.twint.submit"]').click();
         await page.waitForTimeout(2000); 
-        await page.screenshot({ path: 'tests/Screenshots/Payment.png', fullPage: true }); 
+        await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}-${cod_country}.png`, fullPage: true }); 
 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
         await page.waitForSelector("button[value='authorised']", { state: "visible" });
@@ -113,13 +96,15 @@ test('Lutz Special Payments', async ({ browser }) => {
         await page.click('[data-purpose="checkout.payment.onlinebanking.select.select.value"]');
         // Luego, selecciona la opción "Česká spořitelna"
         await page.click('text="Česká spořitelna"');
-        await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}.png`, fullPage: true }); 
-
+        
         await page.locator('[data-purpose="checkout.paymentOptions.onlineBanking_CZ.submit"]').click();
+        await page.waitForTimeout(2000); 
+        await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}-${cod_country}.png`, fullPage: true }); 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
-        await page.waitForSelector('input[name="submit"][value="Pokračovat"]', { state: 'visible' });
-        await page.click('input[name="submit"][value="Pokračovat"]');
+        const continueButton = page.getByRole('button', { name: 'Pokračovat' });
+        await expect(continueButton).toBeVisible({ timeout: 8000 });
+        await continueButton.click();
 
         await page.click('input#formSubmit[value="Positive authorization"]');
         await page.click('input#formSubmit[value="Continue"]');
@@ -129,7 +114,8 @@ test('Lutz Special Payments', async ({ browser }) => {
     if (["SW", "KO", "KL", "KN"].includes(pay)) {
       await page.waitForTimeout(6500); 
     }  
-    await page.screenshot({ path: `tests/Screenshots/Final-Order-Credit-${pay}-${rail}.png` });
+    await page.waitForTimeout(1500);
+    await page.screenshot({ path: `tests/Screenshots/Final-Order-${pay}-${rail}-${cod_country}.png` });
     await page.pause();
     
 });

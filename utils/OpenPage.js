@@ -3,12 +3,14 @@ const { AcceptCookies } = require('./AcceptCookies');
 
 async function OpenPage(page, datosvar, datosrail, rail, cod_country, mode) {
 
-    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}`);
+    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}`);
     
     await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/`);   
     
-    await fillSSO(page, datosvar);
-    await page.pause();        
+    // await fillSSO(page, datosvar);
+    // await page.pause();   
+
+    await page.waitForTimeout(2000); 
     await AcceptCookies(page, datosrail);   
 
     if (mode !== "1P") {      
@@ -21,7 +23,7 @@ async function OpenPage(page, datosvar, datosrail, rail, cod_country, mode) {
     } 
     
     if (mode !== "3P") {
-        await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/delivery`);                
+        await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
         await page.locator('[data-purpose="checkout.addtocart"]').click();
     }
     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 

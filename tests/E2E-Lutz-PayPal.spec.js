@@ -10,14 +10,18 @@ test('Shopping with PayPal', async ({ browser }) => {
     const context = await browser.newContext({
         ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos
       });
-      const page = await context.newPage();
-      await page.setViewportSize({ width: 1920, height: 1080 });
+    const page = await context.newPage();
+    await page.setViewportSize({ width: 1920, height: 1080 });
+
+    // Overrides the global timeout just for this specific test
+    test.setTimeout(100000);
     
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
     const datosrail = ObtenerDatos(cod_country); 
+    const mode = process.env.MODE || '1P';
    
-    await OpenPage(page, datosvar, datosrail, rail, cod_country);
+    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
 
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
@@ -31,7 +35,7 @@ test('Shopping with PayPal', async ({ browser }) => {
       await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
     }
 
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
     await page.screenshot({ path: `tests/Screenshots/Payment-Paypal-${rail}-${cod_country}.png`, fullPage: true });     
     await page.waitForTimeout(1000);
     
@@ -42,11 +46,11 @@ test('Shopping with PayPal', async ({ browser }) => {
       await widerrufLink.focus();
     }
 
-    await page.waitForTimeout(1500);                     
+    await page.waitForTimeout(1000);                     
       
     await page.keyboard.press('Tab');        
     await page.keyboard.press('Enter');
-    await page.waitForTimeout(5000);  
+    await page.waitForTimeout(6000);  
     
     // Esperar la ventana de PayPal (popup)
     let popup;
@@ -72,7 +76,7 @@ test('Shopping with PayPal', async ({ browser }) => {
       if (loginFrame) break;
       await page.waitForTimeout(500);
     }
-    if (!loginFrame) throw new Error('❌ No se encontró el iframe del login de PayPal');
+    if (!loginFrame) throw new Error('❌ PayPal login Iframe not found');
 
     // --- Paso 1: rellenar email ---
     const emailInput = loginFrame.locator('input#email');
@@ -96,7 +100,7 @@ test('Shopping with PayPal', async ({ browser }) => {
     await btnLogin.waitFor({ state: 'visible', timeout: 5000 });
     await btnLogin.click({ force: true });
 
-    console.log('✅ Login de PayPal completado');
+    console.log('✅ PayPal Login completed');
 
     // Confirmar el pago
     await popup.getByTestId('submit-button-initial').click();

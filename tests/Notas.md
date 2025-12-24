@@ -26,11 +26,10 @@ npm init playwright@latest
     CC  -> Credit Card    
     KN  -> Klarna Pay Now (Sofortüberweisung (Bank transfer))
     KO  -> Klarna OverTime
+    KL  -> Klarna Play Later (Kauf auf Rechnung)
     SW  -> Swish
     TW  -> Twint
-    ON  -> OnLine Banking
-    KL  -> Klarna Play Later (Kauf auf Rechnung)
-    KN  -> Klarna Play Now
+    ON  -> OnLine Banking       
     DEL -> On Delivery
 
 ------------
