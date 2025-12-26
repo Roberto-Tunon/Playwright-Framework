@@ -23,10 +23,31 @@ test('Shopping with PayPal', async ({ browser }) => {
    
     await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
 
-    await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-    await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+    const deliverySelect = page.locator('select[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
+    const selfServiceOption = deliverySelect.locator('option[value="SELF_SERVICE"]');    
 
-    await fillDeliveryForm(page, datosvar, datosrail);
+    if (await selfServiceOption.count() > 0) {
+        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
+        await page.locator('#SELF_SERVICE').click();
+
+        await page.getByTestId('locationPicker.button').click();
+        await page.locator('[data-purpose="locationFinder.input.field"]').fill(datosrail.PostalCode);
+        await page.getByRole('button', { name: datosrail.City}).click();    
+        await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();
+
+        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+
+        await fillSELFDeliveryForm(page, datosvar, datosrail); 
+
+    } else {
+        console.log('⚠️ SELF_SERVICE not found. Selecting the first available option...');  
+        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
+        await page.locator('#POSTAGE').click();       
+        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+        await fillDeliveryForm(page, datosvar, datosrail);
+    }
 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').first().click(); 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal.submit"]').click();
@@ -39,12 +60,8 @@ test('Shopping with PayPal', async ({ browser }) => {
     await page.screenshot({ path: `tests/Screenshots/Payment-Paypal-${rail}-${cod_country}.png`, fullPage: true });     
     await page.waitForTimeout(1000);
     
-    const widerrufLink = page.getByTestId('step-content').locator('a[href="#widerrufsbelehrung"]');
-    const isFocused = await widerrufLink.evaluate(el => el === document.activeElement);
-
-    if (!isFocused) {
-      await widerrufLink.focus();
-    }
+    const link = page.locator('a[href*="widerrufsbelehrung"]','a[href="#oou"]');
+    await link.focus();
 
     await page.waitForTimeout(1000);                     
       

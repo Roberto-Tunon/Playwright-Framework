@@ -10,14 +10,18 @@ test('Shopping with Billie', async ({ browser }) => {
     const context = await browser.newContext({
         ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos
       });
-      const page = await context.newPage();
-      await page.setViewportSize({ width: 1920, height: 1080 });
+    const page = await context.newPage();
+    await page.setViewportSize({ width: 1920, height: 1080 });
+    
+    // Overrides the global timeout just for this specific test
+    test.setTimeout(100000);
     
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
+    const mode = process.env.MODE || '1P';
     const datosrail = ObtenerDatos(cod_country);   
    
-    await OpenPage(page, datosvar, datosrail, rail, cod_country);    
+    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);    
     
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
@@ -59,11 +63,11 @@ test('Shopping with Billie', async ({ browser }) => {
 
     const billieFrame2 = page.frameLocator('#klarna-hpp-instance-fullscreen').frameLocator('#b2binvoice_billie-fullscreen-iframe');
     
-    await billieFrame2.locator('[data-test="company-name"]').fill('Theta Electronics Gold GmbH');
-    await billieFrame2.locator('[data-test="street"]').fill('Fichtenstraße');
-    await billieFrame2.locator('[data-test="number"]').fill('9');    
-    await billieFrame2.locator('[data-test="postal_code"]').fill('6364');
-    await billieFrame2.locator('[data-test="city"]').fill('Brixen im Thale');
+    await billieFrame2.locator('[data-test="company-name"]').fill(datosrail.BillieName);
+    await billieFrame2.locator('[data-test="street"]').fill(datosrail.BillieStreet);
+    await billieFrame2.locator('[data-test="number"]').fill(datosrail.BillieNumber);    
+    await billieFrame2.locator('[data-test="postal_code"]').fill(datosrail.BilliePostalCode);
+    await billieFrame2.locator('[data-test="city"]').fill(datosrail.BillieCity);
 
     await billieFrame2.locator('[data-test="company-details-cta"]').click();
     

@@ -25,8 +25,11 @@ test('Shopping with Credit Card', async ({ browser }) => {
     const datosrail = ObtenerDatos(cod_country);   
    
     await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
+        
+    const deliverySelect = page.locator('select[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
+    const selfServiceOption = deliverySelect.locator('option[value="SELF_SERVICE"]');
 
-    try {
+    if (await selfServiceOption.count() > 0) {
         await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
         await page.locator('#SELF_SERVICE').click();
 
@@ -39,15 +42,12 @@ test('Shopping with Credit Card', async ({ browser }) => {
         await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
         await fillSELFDeliveryForm(page, datosvar, datosrail); 
-                
 
-    } catch (e) {
-  
+    } else {
+        console.log('⚠️ SELF_SERVICE not found. Selecting the first available option...');             
         await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
         await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-
-        await fillDeliveryForm(page, datosvar, datosrail);  
-        
+        await fillDeliveryForm(page, datosvar, datosrail);
     }
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();

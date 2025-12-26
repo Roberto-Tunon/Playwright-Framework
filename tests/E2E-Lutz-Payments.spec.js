@@ -25,8 +25,7 @@ test('Lutz Special Payments', async ({ browser }) => {
     const mode = process.env.MODE || '1P';
     const datosrail = ObtenerDatos(cod_country);   
    
-    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
-    
+    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);    
     
     if (pay === "ON") {  
       const button = await page.getByTestId('locationPicker.button'); 
