@@ -68,9 +68,12 @@ test('Lutz Special Payments', async ({ browser }) => {
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
     } else if (pay === "DEL") {
-        await page.locator('[data-purpose="checkout.paymentOptions.ondelivery"]').click();
-        await page.locator('[data-purpose="checkout.paymentOptions.ondelivery.submit"]').click();
+        await page.locator('[data-purpose^="checkout.paymentOptions.ondelivery"]').click();
+        await page.locator('[data-purpose="checkout.paymentOptions.ondelivery.submit"], [data-purpose="checkout.paymentOptions.ondelivery_ro.submit"]').click();
         await page.waitForTimeout(2000); 
+        if (["AT", "SI"].includes(cod_country)){
+          await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
+        }
         await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}-${cod_country}.png`, fullPage: true }); 
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click(); 
 

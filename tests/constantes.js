@@ -16,7 +16,7 @@ const constantes = {
       nummer: "10",
       birthdate: "24.01.1980",      
       Pocoproduct : "498152800",
-      SSOuser: "  ",
+      SSOuser: "LUTZNT\\ROBE",
       SSOpwd: "Utrecht28#",
       Klarna: "263250",
       Branch: "989d63a46c",
@@ -35,6 +35,7 @@ const constantes = {
       Phone2: '017614284340',
       Floor: '1',
       Message: 'Dies ist eine Testbestellung, bitte stornieren und Geld zurücküberweisen. Vielen Danke.',
+      MKPProduct: '800000464523',
       MKPPhoneApprove: "+49017614284340",
       MKPPhoneDeny: "+49017610927312",
       FrameNumber: 'Iframe für Kartennummer',
@@ -49,20 +50,6 @@ const constantes = {
       Country: 'DE',
     },
 
-    datosCZ: {      
-      Cookiebutton: 'Nakupovat dále',	    
-      PostalCode: '102 00',
-      City: 'Praha 102',
-      Product: '3279063603',
-      Phone: '221714714',
-      Message: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
-      FrameNumber: 'Iframe pro číslo karty',
-      FrameDate: 'Iframe pro datum vypršení platnosti',
-      FrameCVV: 'Iframe pro bezpečnostní kód',
-      Country: 'CZ',
-
-    },
-
     datosAT: {      
       Cookiebutton: 'Weiter einkaufen',	      
       PostalCode: '4020',
@@ -70,7 +57,7 @@ const constantes = {
       PostalCode2: '1100',
       City2: 'Wien', 
       Product: '3501049101',
-      MKPProduct: '800000927978',
+      MKPProduct: '800000943827',
       MKPPhoneApprove: "+4306762600456",
       MKPPhoneDeny: "+4306762600745",
       Phone: '050545454',
@@ -85,8 +72,22 @@ const constantes = {
       BilliePostalCode: '6364',
       BillieCity: 'Brixen im Thale',
       Country: 'AT',
-    },    
+    },   
 
+    datosCZ: {      
+      Cookiebutton: 'Nakupovat dále',	    
+      PostalCode: '102 00',
+      City: 'Praha 102',
+      Product: '3279063603',
+      Phone: '221714714',
+      Message: 'Jedná se o testovací objednávku digitálního oddělení XXXLutz. Prosím, zrušte ji a vraťte peníze zpět. Děkujeme za pomoc.',
+      FrameNumber: 'Iframe pro číslo karty',
+      FrameDate: 'Iframe pro datum vypršení platnosti',
+      FrameCVV: 'Iframe pro bezpečnostní kód',
+      Country: 'CZ',
+
+    },
+  
     datosCH: {      
       Cookiebutton: 'Geht klar!',	
       PostalCode: '8112',
@@ -98,18 +99,6 @@ const constantes = {
       FrameCVV: 'Iframe for security code',  
       Country: 'CH',
     },
-    
-    datosRO: {      
-      Cookiebutton: 'Accept toate cookie-urile',	
-      PostalCode: '032604',
-      City: 'Bucuresti', 
-      Product: '001930000219',
-      Phone: '213055500',
-      Country: 'RO',
-      FrameNumber: 'Iframe pentru numărul cardului',
-      FrameDate: 'Iframe pentru data de expirare',
-      FrameCVV: 'Iframe pentru codul de securitate',
-    },   
 
     datosSE: {      
       Cookiebutton: 'Acceptera alla cookies',	
@@ -125,7 +114,20 @@ const constantes = {
       BillieUID: 'SE999999999901',
       BillieName: 'XXXLutz SE',
       Country: 'SE',
+      NINSE: '19410321-9202',      
     },
+
+    datosRO: {      
+      Cookiebutton: 'Accept toate cookie-urile',	
+      PostalCode: '032604',
+      City: 'Bucuresti', 
+      Product: '001930000219',
+      Phone: '213055500',
+      Country: 'RO',
+      FrameNumber: 'Iframe pentru numărul cardului',
+      FrameDate: 'Iframe pentru data de expirare',
+      FrameCVV: 'Iframe pentru codul de securitate',
+    },   
 
     datosRS: {      
       PostalCode: '11426',
@@ -145,6 +147,42 @@ const constantes = {
       FrameCVV: 'Iframe za varnostno kodo',      
       Country: 'SI',
     },
+
+    datosHR: {      
+      PostalCode: '10010',
+      City: 'Zagreb-Slobostina', 
+      Product: '',
+      Phone: '14898555',
+      FrameNumber: 'Iframe za broj kartice',
+      FrameDate: 'Iframe za datum isteka',
+      FrameCVV: 'Iframe za sigurnosni kôd',  
+      Country: 'HR',
+    },
+
+    datosSK: {      
+      Cookiebutton: '',	
+      PostalCode: '81101',
+      City: 'Bratislava', 
+      Product: '',
+      Phone: '0918573172',
+      FrameNumber: 'Iframe pre číslo karty',
+      FrameDate: 'Iframe pre deň vypršania platnosti',
+      FrameCVV: 'Iframe pre bezpečnostný kód',  
+      Country: 'SK',
+    },
+
+    datosHU: {      
+      Cookiebutton: 'Összes süti elfogadása',	
+      PostalCode: '1052',
+      City: 'Budapest V.', 
+      Product: '',
+      Phone: '0614388080',
+      FrameNumber: 'Iframe a kártyaszámhoz',
+      FrameDate: 'Iframe a lejárati dátumhoz',
+      FrameCVV: 'Iframe a biztonsági kódhoz',  
+      Country: 'HU',
+    },
+
 
     PayLive: {      
       cardnumber: "5319 5447 7987 5501",

@@ -30,8 +30,15 @@ npm init playwright@latest
     SW  -> Swish
     TW  -> Twint
     ON  -> OnLine Banking       
-    DEL -> On Delivery
+    DEL -> On Delivery (Per Nachname/Cash on Delivery/Pago contra reembolso)
 
+------------
+-- MKP --
+------------ 
+
+- COUNTRY=DE MODE=3P PAY=KN npx playwright test tests/MKP/E2E-Lutz-MKP.spec.js --project chromium --headed --debug
+- COUNTRY=DE MODE=2P PAY=KL npx playwright test tests/MKP/E2E-Lutz-MKP.spec.js --project chromium --headed 
+  
 ------------
 -- PAYPAL --
 ------------
@@ -40,7 +47,7 @@ npm init playwright@latest
 -----------------
 -- CREDIT CARD --
 -----------------
-- RAIL=xxxlutz COUNTRY=RO MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
 - RAIL=moemax COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
 
 ---------------------

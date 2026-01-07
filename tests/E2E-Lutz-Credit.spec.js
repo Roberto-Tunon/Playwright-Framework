@@ -17,7 +17,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
       await page.setViewportSize({ width: 1920, height: 1080 });
 
     // Overrides the global timeout just for this specific test
-    test.setTimeout(100000);
+    test.setTimeout(80000);
 
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
@@ -54,7 +54,7 @@ test('Shopping with Credit Card', async ({ browser }) => {
 
     await fillCreditCard(page, PayQC, datosrail);
     
-    if (["AT", "SI"].includes(cod_country)) {
+    if (["AT", "SI", "HR", "HU"].includes(cod_country)) {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click({ timeout: 2000 });       
     } 
     

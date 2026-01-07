@@ -14,7 +14,7 @@ test('Shopping with PayPal', async ({ browser }) => {
     await page.setViewportSize({ width: 1920, height: 1080 });
 
     // Overrides the global timeout just for this specific test
-    test.setTimeout(100000);
+    test.setTimeout(80000);
     
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
@@ -52,7 +52,7 @@ test('Shopping with PayPal', async ({ browser }) => {
     await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').first().click(); 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal.submit"]').click();
 
-    if (cod_country === "AT") {
+    if (["AT", "SI", "HR"].includes(cod_country)){
       await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
     }
 
@@ -60,7 +60,7 @@ test('Shopping with PayPal', async ({ browser }) => {
     await page.screenshot({ path: `tests/Screenshots/Payment-Paypal-${rail}-${cod_country}.png`, fullPage: true });     
     await page.waitForTimeout(1000);
     
-    const link = page.locator('a[href*="widerrufsbelehrung"]','a[href="#oou"]');
+    const link = page.locator('a[href*="widerrufsbelehrung"],a[href="#oou"],a[href="#koepvillkor"], a[href="#preklic"]');
     await link.focus();
 
     await page.waitForTimeout(1000);                     
@@ -122,8 +122,8 @@ test('Shopping with PayPal', async ({ browser }) => {
     // Confirmar el pago
     await popup.getByTestId('submit-button-initial').click();
     
-    await page.waitForLoadState('networkidle'); 
-    await page.waitForTimeout(7000);  // 7 seconds pause
+    // await page.waitForLoadState('networkidle'); 
+    await page.waitForTimeout(6000);  // 6 seconds pause
     await page.screenshot({ path: `tests/Screenshots/Final-Order-Paypal-${rail}-${cod_country}.png` });    
     await page.pause();    
 });

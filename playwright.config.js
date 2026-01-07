@@ -27,7 +27,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     
     // Recomendado: ver el navegador para interactuar si algo falla
-    headless: false, 
+    headless: true, 
   },
 
   /* Configure projects for major browsers */

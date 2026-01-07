@@ -19,7 +19,6 @@ async function run() {
     if (action === 'login') {
       console.log('\n🔑 Opening browser for manual login...');
       try {
-        // Run the auth spec forcing chromium and headed mode
         execSync('npx playwright test tests/auth.spec.js --project chromium --headed', { stdio: 'inherit' });
         console.log('\n✅ Session saved to auth.json. You can now run your tests!');
       } catch (e) {
@@ -59,6 +58,7 @@ async function run() {
 
     let availableCountries = [...allCountries];
     if (rail === 'xxxlutz') {
+      // XXXLutz permite Hungría (HU) pero sigue excluyendo HR, RS, SI
       availableCountries = allCountries.filter(c => !['HR', 'RS', 'SI'].includes(c.name));
     } else if (rail === 'xxxlesnina') {
       availableCountries = allCountries.filter(c => ['HR', 'RS', 'SI'].includes(c.name));
@@ -73,8 +73,8 @@ async function run() {
 
     // 4. PAYMENT METHODS LOGIC
     const allPayments = [
-      { name: 'tests/E2E-Lutz-Credit.spec.js',   message: '💳 Credit Card',       id: 'credit' },
-      { name: 'tests/E2E-Lutz-PayPal.spec.js',   message: '🅿️  PayPal',            id: 'paypal' },
+      { name: 'tests/E2E-Lutz-Credit.spec.js',   message: '💳 Credit Card',          id: 'credit' },
+      { name: 'tests/E2E-Lutz-PayPal.spec.js',   message: '🅿️  PayPal',               id: 'paypal' },
       { name: 'tests/E2E-Lutz-Payments.spec.js', message: '🚀 Klarna Pay Now',    id: 'k_now',    payCode: 'KN' },
       { name: 'tests/E2E-Lutz-Payments.spec.js', message: '⏳ Klarna Pay Later',  id: 'k_later',  payCode: 'KL' },
       { name: 'tests/E2E-Lutz-Payments.spec.js', message: '📅 Klarna Pay Overtime', id: 'k_over',   payCode: 'KO' },
@@ -88,11 +88,20 @@ async function run() {
     ];
 
     let filteredPayments = [];
-    if (country === 'RS') {
+    
+    // Lógica por país
+    if (country === 'HU') {
+      // Solo Credit Card para Hungría
+      filteredPayments = allPayments.filter(p => p.id === 'credit');
+    } else if (country === 'SK') {
+      // Slovakia: Añadimos Bank y Delivery a los básicos
+      filteredPayments = allPayments.filter(p => ['credit', 'paypal', 'bank', 'delivery'].includes(p.id));
+    } else if (country === 'RS') {
       filteredPayments = allPayments.filter(p => p.id === 'corvus');
-    } else if (['HR', 'SI'].includes(country)) {
-      const ids = ['credit', 'paypal', 'splitit'];
-      if (country === 'HR') ids.push('corvus');
+    } else if (['HR', 'SI', 'RO'].includes(country)) {
+      const ids = ['credit', 'paypal', 'splitit', 'delivery'];
+      // Solo RS y HR (si no es Lesnina) suelen llevar Corvus. Quitamos Corvus para Lesnina Croatia.
+      if (country === 'HR' && rail !== 'xxxlesnina') ids.push('corvus'); 
       filteredPayments = allPayments.filter(p => ids.includes(p.id));
     } else if (['AT', 'DE'].includes(country)) {
       const forbidden = ['corvus', 'twint', 'swish', 'bank', 'splitit', 'delivery'];
@@ -118,8 +127,9 @@ async function run() {
     const testFile = selectedPaymentObj.name;
     const payCode = selectedPaymentObj.payCode;
 
-    // 5. MODE SELECTION (AT, DE, CZ only)
+    // 5. MODE SELECTION
     let mode = '1P';
+    // Hungría siempre 1P, por eso no entra en el condicional de selección
     if (['AT', 'DE', 'CZ'].includes(country)) {
       mode = await new Select({
         name: 'mode',

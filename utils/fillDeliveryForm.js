@@ -15,6 +15,10 @@ async function fillDeliveryForm(page, datosvar, datosrail) {
       await page.locator('[data-purpose="postalCodeDistrictLocality.town"]').click();
       await page.locator('[role="option"][id="Bucuresti (Sectorul 5)"]').click();
     } else {
+      if (datosrail.Country === 'HU') {
+      await page.click('[data-purpose="form.select.deliveryAddress.gender"]');
+      await page.click('role=option >> text=Úr');
+      }
       await page.locator('[data-purpose="form.input.deliveryAddress.postalCode.field"]').fill(datosrail.PostalCode);
       await page.locator('[data-purpose="form.input.deliveryAddress.town.field"]').fill(datosrail.City);
     }
