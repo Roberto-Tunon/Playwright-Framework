@@ -16,19 +16,30 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
-  
-  /* Shared settings for all the projects below. */
-  use: {
-    // 2. SESSION LOGIC: If auth.json exists, it loads it automatically
-    storageState: fs.existsSync('auth.json') ? 'auth.json' : undefined,
+ reporter: [
+    ['html'], 
+    ['allure-playwright', { outputFolder: 'allure-results' }]
+    ],
 
-    /* Collect trace when retrying the failed test. */
-    trace: 'on-first-retry',
-    
-    // Recomendado: ver el navegador para interactuar si algo falla
-    headless: true, 
-  },
+    /* Shared settings for all the projects below. */
+    use: {
+      // --- SESSION LOGIC ---
+      // Automatically loads session from auth.json if it exists to bypass SSO/Login
+      storageState: fs.existsSync('auth.json') ? 'auth.json' : undefined,
+
+      // --- EXECUTION SETTINGS ---
+      headless: true, // Run in background for CI/CD and batch execution
+
+      // --- ARTIFACTS & DEBUGGING ---
+      // Collect trace only when retrying a failed test to save resources
+      trace: 'on-first-retry',
+      
+      // Capture screenshots only on failure to provide evidence in Allure reports
+      screenshot: 'only-on-failure', 
+      
+      // Keep video recordings only for failed tests to analyze the root cause
+      video: 'retain-on-failure',
+    },
 
   /* Configure projects for major browsers */
   projects: [

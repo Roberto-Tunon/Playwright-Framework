@@ -1,4 +1,0 @@
-[
-  { "rail": "xxxlutz", "country": "AT", "mode": "1P", "pay": "CC", "file": "tests/E2E-Lutz-Credit.spec.js" },
-  { "rail": "xxxlutz", "country": "DE", "mode": "1P", "pay": "PP", "file": "tests/E2E-Lutz-Paypal.spec.js" }
-]

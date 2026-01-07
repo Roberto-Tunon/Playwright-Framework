@@ -1,3 +1,4 @@
+import { step, description, label, tag, parameter } from "allure-js-commons";
 const { test, expect } = require('@playwright/test');
 const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
@@ -7,8 +8,10 @@ const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
 const { OpenPage } = require('../utils/OpenPage');
 
+// Helper to format the test title dynamically
+const testTitle = `[${process.env.COUNTRY || 'N/A'}] ${process.env.RAIL} - Payment: ${process.env.PAY || 'CreditCard'} (${process.env.MODE})`;
 
-test('Shopping with Credit Card', async ({ browser }) => {
+test(testTitle, async ({ browser }) => {
 
     const context = await browser.newContext({
         ignoreHTTPSErrors: true  // Ignora los errores de certificados no válidos
@@ -22,7 +25,11 @@ test('Shopping with Credit Card', async ({ browser }) => {
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
     const mode = process.env.MODE || '1P';
-    const datosrail = ObtenerDatos(cod_country);   
+    const datosrail = ObtenerDatos(cod_country);
+
+    await description("E2E Test for " + process.env.COUNTRY);
+    await tag(process.env.COUNTRY);
+    await parameter("Mode", process.env.MODE);
    
     await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
         
