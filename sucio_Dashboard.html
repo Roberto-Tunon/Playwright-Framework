@@ -23,18 +23,41 @@
 </head>
 
 <body class="text-slate-900 min-h-screen flex flex-col">
-  <nav class="bg-white border-b border-slate-200 px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+
+  <!-- ✅ NAVBAR (con logos) -->
+  <nav class="bg-gradient-to-b from-blue-100/80 via-white to-white border-b border-slate-200 px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-xl shadow-slate-200/70">
     <div class="flex items-center gap-4">
       <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-200">
         <i data-lucide="shield-check" class="text-white w-7 h-7"></i>
       </div>
+
       <div>
-        <h1 class="text-xl font-black tracking-tight leading-none text-slate-800 uppercase">
-          Market <span class="text-blue-600">Monitor</span>
-        </h1>
-        <p class="text-[11px] text-slate-400 font-bold uppercase tracking-wider mt-1 italic">
-          Author: <span class="text-slate-600 font-black">Roberto Tuñón</span>
-        </p>
+       <div class="flex items-center gap-5">
+            <div>
+                <h1 class="text-xl font-black tracking-tight leading-none text-slate-800 uppercase">
+                Market <span class="text-blue-600">Monitor</span>
+                </h1>
+                <p class="text-[11px] text-slate-400 font-bold uppercase tracking-wider mt-1 italic">
+                Author: <span class="text-slate-600 font-black">Roberto Tuñón</span>
+                </p>
+            </div>
+
+            <!-- Rail logos (navbar) - bigger and spanning 2 lines -->
+            <div class="flex items-stretch gap-2 flex-wrap">
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl px-3 py-2 flex items-center shadow-sm">
+                <img src="./assets/rails/xxxlutz.png" alt="XXXLUTZ" class="h-9 w-auto object-contain" />
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl px-3 py-2 flex items-center shadow-sm">
+                <img src="./assets/rails/moemax.png" alt="MOEMAX" class="h-9 w-auto object-contain" />
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl px-3 py-2 flex items-center shadow-sm">
+                <img src="./assets/rails/mobelix.png" alt="MOBELIX" class="h-9 w-auto object-contain" />
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl px-3 py-2 flex items-center shadow-sm">
+                <img src="./assets/rails/lesnina.png" alt="LESNINA" class="h-9 w-auto object-contain" />                
+                </div>
+            </div>
+            </div>       
       </div>
     </div>
 
@@ -96,15 +119,12 @@
         </div>
         <div class="w-full">
           <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Global Health</p>
-
-          <!-- % color is dynamic -->
           <p id="stat-health" class="text-xl font-black">0%</p>
 
           <div class="mt-3 w-full h-2 bg-slate-100 rounded-full overflow-hidden">
             <div id="stat-health-bar" class="h-full rounded-full" style="width:0%"></div>
           </div>
 
-          <!-- bigger + black -->
           <p class="mt-2 text-xs font-black uppercase tracking-widest text-slate-900" id="stat-health-meta">--/-- passed</p>
         </div>
       </div>
@@ -112,7 +132,7 @@
       <div class="bg-slate-900 p-6 rounded-3xl shadow-2xl flex items-center gap-6 text-white overflow-hidden relative">
         <div class="z-10">
           <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Next Run</p>
-          <p class="text-xl font-black leading-none mt-1">02:00 <span class="text-xs text-slate-400 uppercase">AM</span></p>
+          <p class="text-xl font-black leading-none mt-1">09:00 <span class="text-xs text-slate-400 uppercase">AM</span></p>
           <p id="next-run-date" class="text-[10px] font-bold text-blue-400 mt-2 uppercase tracking-tight"></p>
         </div>
         <i data-lucide="timer" class="absolute -right-2 -bottom-2 w-16 h-16 text-slate-800 opacity-50"></i>
@@ -121,9 +141,11 @@
 
     <!-- Header + Controls -->
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-      <h2 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em] flex items-center gap-2">
-        <i data-lucide="activity" class="w-4 h-4 text-blue-500"></i>
-        Market Health Status
+      <h2 class="text-sm md:text-base font-black text-slate-700 uppercase tracking-[0.25em] flex items-center gap-3">
+         <span class="w-10 h-10 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center">
+            <i data-lucide="activity" class="w-5 h-5 text-blue-600"></i>
+         </span>
+            Market Health Status
       </h2>
 
       <!-- Toggle: show only incidents -->
@@ -234,10 +256,12 @@
       "sync_status": "OK"
     };
 
-    // Rail logos (SVG recommended). Put files in: assets/rails/
+    // Rail logos (PNG). Put files in: assets/rails/
     const railLogos = {
-      'XXXLUTZ': './assets/rails/xxxlutz.svg',
-      'MOEMAX': './assets/rails/moemax.svg'
+      'XXXLUTZ': './assets/rails/xxxlutz.png',
+      'MOEMAX': './assets/rails/moemax.png',
+      'MOBELIX': './assets/rails/mobelix.png',
+      'LESNINA': './assets/rails/lesnina.png'
     };
 
     function computeGlobalHealth(data) {
@@ -264,7 +288,7 @@
     }
 
     function healthTheme(health) {
-      if (health >= 90) return 'emerald';
+      if (health >= 95) return 'emerald';
       if (health >= 80) return 'amber';
       return 'red';
     }
@@ -368,7 +392,8 @@
           ? 'hover:ring-2 hover:ring-red-200 hover:shadow-red-200/60'
           : 'hover:ring-2 hover:ring-emerald-200 hover:shadow-emerald-200/60';
 
-        const railLogoSrc = railLogos[m.rail];
+        const railKey = String(m.rail || '').trim().toUpperCase();
+        const railLogoSrc = railLogos[railKey];
 
         // Sort payments: failed first
         const sortedPayments = [...(m.payments || [])].sort((a, b) => {
@@ -389,11 +414,11 @@
                       railLogoSrc
                         ? `<img
                             src="${railLogoSrc}"
-                            alt="${m.rail}"
+                            alt="${railKey}"
                             class="h-4 mt-1 object-contain opacity-90"
-                            onerror="this.outerHTML='<span class=&quot;text-[10px] font-extrabold text-slate-400 uppercase tracking-widest&quot;>${m.rail}</span>'"
+                            onerror="this.outerHTML='<span class=&quot;text-[10px] font-extrabold text-slate-400 uppercase tracking-widest&quot;>${railKey}</span>'"
                           />`
-                        : `<span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">${m.rail}</span>`
+                        : `<span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">${railKey}</span>`
                     }
                   </div>
                 </div>
@@ -482,5 +507,3 @@
   </script>
 </body>
 </html>
-
- 
