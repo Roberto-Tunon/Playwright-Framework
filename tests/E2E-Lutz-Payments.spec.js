@@ -37,7 +37,7 @@ test(testTitle, async ({ browser }) => {
     const deliverySelect = page.locator('select[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
     const selfServiceOption = deliverySelect.locator('option[value="SELF_SERVICE"]');
    
-    if (await selfServiceOption.count() > 0) {
+    if ((await selfServiceOption.count() > 0) || pay === "TW") {
 
         await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
         await page.locator('#SELF_SERVICE').click();
