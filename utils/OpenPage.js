@@ -23,8 +23,13 @@ async function OpenPage(page, datosvar, datosrail, rail, cod_country, mode) {
     } 
     
     if (mode !== "3P") {
-        await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
-        await page.locator('[data-purpose="checkout.addtocart"]').click();
+        if (["SE", "HU"].includes(cod_country)){
+            await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/delivery`);                
+            await page.locator('[data-purpose="checkout.addtocart"]').click();
+        } else {
+            await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+            await page.locator('[data-purpose="checkout.addtocart"]').click();
+        }    
     }
     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
 }

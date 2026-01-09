@@ -1,9 +1,25 @@
 {
   "settings": {
     "author": "Roberto Tuñón",
-    "maxRandomRuns": 5
+    "maxRandomRuns": 4
   },
   "permanentRuns": [
+    { 
+      "country": "DE", 
+      "rail": "moemax", 
+      "mode": "1P", 
+      "pay": "PP", 
+      "file": "tests/E2E-Lutz-Paypal.spec.js",
+      "icon": "wallet"
+    },
+    { 
+      "country": "AT", 
+      "rail": "moemax", 
+      "mode": "1P", 
+      "pay": "CC", 
+      "file": "tests/E2E-Lutz-Credit.spec.js",
+      "icon": "credit-card"
+    },
     { 
       "country": "AT", 
       "rail": "xxxlutz", 
@@ -11,6 +27,14 @@
       "pay": "CC", 
       "file": "tests/E2E-Lutz-Credit.spec.js",
       "icon": "credit-card"
+    },
+    { 
+      "country": "DE", 
+      "rail": "xxxlutz", 
+      "mode": "1P", 
+      "pay": "PP", 
+      "file": "tests/E2E-Lutz-Paypal.spec.js",
+      "icon": "wallet"
     },
     { 
       "country": "AT", 
@@ -27,15 +51,7 @@
       "pay": "BI", 
       "file": "tests/E2E-Lutz-Billie.spec.js",
       "icon": "credit-card"
-    },
-    { 
-      "country": "DE", 
-      "rail": "xxxlutz", 
-      "mode": "3P", 
-      "pay": "PP", 
-      "file": "tests/E2E-Lutz-Paypal.spec.js",
-      "icon": "wallet"
-    }
+    }    
   ],
   "randomPool": [
     { 
@@ -45,15 +61,7 @@
       "pay": "TW", 
       "file": "tests/E2E-Lutz-Payments.spec.js",
       "icon": "qr-code"
-    },
-    { 
-      "country": "SE", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "SW", 
-      "file": "tests/E2E-Lutz-Payments.spec.js",
-      "icon": "send"
-    },
+    },    
     { 
       "country": "CZ", 
       "rail": "xxxlutz", 
@@ -64,7 +72,7 @@
     },
      { 
       "country": "HR", 
-      "rail": "xxxlutz", 
+      "rail": "xxxlesnina", 
       "mode": "1P", 
       "pay": "CC", 
       "file": "tests/E2E-Lutz-Credit.spec.js",
@@ -96,7 +104,7 @@
     },
     { 
       "country": "SI", 
-      "rail": "xxxlutz", 
+      "rail": "xxxlesnina", 
       "mode": "1P", 
       "pay": "SP", 
       "file": "tests/E2E-Lutz-SplitIT.spec.js",

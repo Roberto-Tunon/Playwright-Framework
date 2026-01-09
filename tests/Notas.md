@@ -10,10 +10,20 @@ npm list @playwright/test
 -- Create Project from scratch
 npm init playwright@latest
 
-------------
--- INTERFAZ
-------------
+------------------------------------
+-- INTERFAZ PARA EJECUCIONES LOCALES
+------------------------------------
 - node run-test.mjs
+-
+-------------------------------------------
+-- INTERFAZ PARA BATCH NOCTURNO Y DASHBOARD
+-------------------------------------------
+- node runner.js
+- 
+--------------------
+-- TRACEO DE ERRORES
+--------------------
+- npx playwright show-trace test-results/**/trace.zip
 
 ---------------------------------
 -- Scripts para varias ejecuciones
@@ -42,12 +52,14 @@ npm init playwright@latest
 ------------
 -- PAYPAL --
 ------------
-- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
+- RAIL=moemax COUNTRY=DE MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
 
 -----------------
 -- CREDIT CARD --
 -----------------
 - RAIL=xxxlutz COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=xxxlesnina COUNTRY=HR MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
 - RAIL=moemax COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
 
 ---------------------
@@ -59,12 +71,12 @@ npm init playwright@latest
 -- SPECIAL PAYMENTS --
 ----------------------
 - PAY=KO npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- PAY=SW npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- PAY=TW npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- PAY=ON npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- PAY=KL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- PAY=KN npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=SE MODE=1P PAY=SW npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CH MODE=1P PAY=TW npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CZ MODE=1P PAY=ON npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CZ MODE=1P PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KN npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
 
 -----------------
 -- RO Split IT --

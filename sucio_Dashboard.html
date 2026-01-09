@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Shops Health Monitor | By Roberto Tuñón</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .market-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .market-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        .dot-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+    </style>
+</head>
+<body class="text-slate-900 min-h-screen flex flex-col">
+
+    <nav class="bg-white border-b border-slate-200 px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+        <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-200">
+                <i data-lucide="shield-check" class="text-white w-7 h-7"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-black tracking-tight leading-none text-slate-800 uppercase">Market <span class="text-blue-600">Monitor</span></h1>
+                <p class="text-[11px] text-slate-400 font-bold uppercase tracking-wider mt-1 italic text-slate-400">Author: <span class="text-slate-600 font-black">Roberto Tuñón</span></p>
+            </div>
+        </div>
+        <div class="flex items-center gap-8">
+            <div class="hidden md:flex flex-col items-end">
+                <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-none mb-1 text-right w-full">Global Health</span>
+                <div id="global-status-container"></div>
+            </div>
+            <div class="text-right border-l border-slate-200 pl-8">
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Sync Status</p>
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    <p id="last-update-time" class="text-sm font-mono font-bold text-slate-700">00:00:00</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto p-8 flex-grow w-full">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6">
+                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600">
+                    <i data-lucide="calendar" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Last Run Date</p>
+                    <p class="text-xl font-black text-slate-800" id="stat-date">--/--/--</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6">
+                <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600">
+                    <i data-lucide="clock" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Total Duration</p>
+                    <p class="text-xl font-black text-slate-800" id="stat-duration">0s</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6 border-l-4 border-l-green-500">
+                <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center text-green-600">
+                    <i data-lucide="trending-up" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Global Health</p>
+                    <p class="text-xl font-black text-green-600" id="stat-health">0%</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-3xl shadow-2xl flex items-center gap-6 text-white overflow-hidden relative">
+                <div class="z-10">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Next Run</p>
+                    <p class="text-xl font-black leading-none mt-1">02:00 <span class="text-xs text-slate-400 uppercase">AM</span></p>
+                    <p id="next-run-date" class="text-[10px] font-bold text-blue-400 mt-2 uppercase tracking-tight"></p>
+                </div>
+                <i data-lucide="timer" class="absolute -right-2 -bottom-2 w-16 h-16 text-slate-800 opacity-50"></i>
+            </div>
+        </div>
+
+        <h2 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
+            <i data-lucide="activity" class="w-4 h-4 text-blue-500"></i> Market Health Status
+        </h2>
+
+        <div id="market-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-start"></div>
+    </main>
+
+    <footer class="mt-auto py-10 border-t border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col items-center justify-center gap-2 text-center">
+            <p class="text-sm font-black text-slate-800 tracking-tight uppercase">Roberto Tuñón</p>
+            <p class="text-[10px] text-slate-300 font-bold uppercase tracking-widest italic">© 2026 QA Automation Infrastructure</p>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * VARIABLES QUE EL RUNNER DEBE RELLENAR
+         */
+        const reportStats = {
+    "lastDate": "08/01/2026",
+    "totalDuration": "4m 41s"
+};
+
+        const marketData = [
+    {
+        "id": "DE",
+        "country": "DE",
+        "flag": "🇩🇪",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "18:26",
+        "payments": [
+            {
+                "name": "PP",
+                "status": "passed",
+                "time": "44s",
+                "icon": "wallet"
+            }
+        ]
+    },
+    {
+        "id": "AT",
+        "country": "AT",
+        "flag": "🇦🇹",
+        "rail": "XXXLUTZ",
+        "status": "Incident",
+        "lastRun": "18:26",
+        "payments": [
+            {
+                "name": "CC",
+                "status": "passed",
+                "time": "28s",
+                "icon": "credit-card"
+            },
+            {
+                "name": "KL",
+                "status": "failed",
+                "time": "29s",
+                "icon": "zap"
+            },
+            {
+                "name": "BI",
+                "status": "passed",
+                "time": "49s",
+                "icon": "credit-card"
+            }
+        ]
+    },
+    {
+        "id": "CH",
+        "country": "CH",
+        "flag": "🇨🇭",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "18:26",
+        "payments": [
+            {
+                "name": "TW",
+                "status": "passed",
+                "time": "32s",
+                "icon": "qr-code"
+            }
+        ]
+    },
+    {
+        "id": "CZ",
+        "country": "CZ",
+        "flag": "🇨🇿",
+        "rail": "XXXLUTZ",
+        "status": "Incident",
+        "lastRun": "18:26",
+        "payments": [
+            {
+                "name": "ON",
+                "status": "failed",
+                "time": "29s",
+                "icon": "landmark"
+            }
+        ]
+    },
+    {
+        "id": "HR",
+        "country": "HR",
+        "flag": "🇭🇷",
+        "rail": "XXXLUTZ",
+        "status": "Incident",
+        "lastRun": "18:26",
+        "payments": [
+            {
+                "name": "CC",
+                "status": "failed",
+                "time": "19s",
+                "icon": "credit-card"
+            }
+        ]
+    },
+    {
+        "id": "SK",
+        "country": "SK",
+        "flag": "🇸🇰",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "18:26",
+        "payments": [
+            {
+                "name": "PP",
+                "status": "passed",
+                "time": "48s",
+                "icon": "wallet"
+            }
+        ]
+    }
+];
+
+        function renderDashboard() {
+            const grid = document.getElementById('market-grid');
+            
+            // Actualizar Stats de Cabecera
+            document.getElementById('stat-date').innerText = reportStats.lastDate;
+            document.getElementById('stat-duration').innerText = reportStats.totalDuration;
+            document.getElementById('last-update-time').innerText = reportStats.lastTime;
+
+            // Próxima ejecución (Mañana)
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('next-run-date').innerText = tomorrow.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+
+            // Calcular Salud
+            const allPayments = marketData.flatMap(m => m.payments);
+            const passed = allPayments.filter(p => p.status === 'passed').length;
+            const health = allPayments.length > 0 ? Math.round((passed / allPayments.length) * 100) : 0;
+            document.getElementById('stat-health').innerText = `${health}%`;
+
+            // Badge de Salud Global
+            const hasIncidents = marketData.some(m => m.status === 'Incident');
+            document.getElementById('global-status-container').innerHTML = hasIncidents 
+                ? `<span class="flex items-center gap-2 text-[10px] font-black text-red-600 bg-red-50 px-2 py-1 rounded border border-red-100 uppercase tracking-tighter"> Attention Needed</span>`
+                : `<span class="flex items-center gap-2 text-[10px] font-black text-green-600 bg-green-50 px-2 py-1 rounded border border-green-100 uppercase tracking-tighter"> All Systems OK</span>`;
+
+            // Render de Tarjetas
+            grid.innerHTML = marketData.map(market => {
+                const isInc = market.status === 'Incident';
+                const statusColor = isInc ? 'red' : market.status === 'Operational' ? 'green' : 'slate';
+                return `
+                    <div class="market-card bg-white rounded-[2rem] border border-slate-200 p-6 shadow-sm flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-center gap-3">
+                                <span class="text-3xl">${market.flag}</span>
+                                <div>
+                                    <h3 class="font-bold text-slate-800 leading-tight">${market.country}</h3>
+                                    <p class="text-[9px] text-slate-400 font-bold uppercase">${market.rail}</p>
+                                </div>
+                            </div>
+                            <span class="text-[8px] font-black px-2 py-1 rounded bg-${statusColor}-50 text-${statusColor}-600 border border-${statusColor}-100 uppercase">
+                                ${market.status}
+                            </span>
+                        </div>
+                        <div class="flex-grow space-y-1 mb-4">
+                            ${market.payments.map(p => `
+                                <div class="flex items-center justify-between py-1.5 border-b border-slate-50 last:border-0">
+                                    <span class="text-[11px] text-slate-600">${p.name}</span>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[9px] font-mono text-slate-300">${p.time}</span>
+                                        <div class="w-2 h-2 rounded-full ${p.status === 'passed' ? 'bg-green-500' : 'bg-red-500 dot-pulse'}"></div>
+                                    </div>
+                                </div>`).join('')}
+                        </div>
+                        <button onclick="window.open('./allure-report/index.html')" 
+                                class="w-full bg-slate-900 hover:bg-blue-600 text-white py-3 rounded-xl text-[10px] font-bold transition-all flex items-center justify-center gap-2 uppercase tracking-widest">
+                            <i data-lucide="bar-chart-3" class="w-3 h-3"></i> Report
+                        </button>
+                    </div>`;
+            }).join('');
+            lucide.createIcons();
+        }
+        window.onload = renderDashboard;
+    </script>
+</body>
+</html>

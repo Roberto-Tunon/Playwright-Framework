@@ -51,7 +51,9 @@ test(testTitle, async ({ browser }) => {
         await fillSELFDeliveryForm(page, datosvar, datosrail); 
 
     } else {
-        console.log('⚠️ SELF_SERVICE not found. Selecting the first available option...');             
+        console.log('⚠️ SELF_SERVICE not found. Selecting the first available option...');  
+        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
+        await page.locator('#POSTAGE').click();            
         await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
         await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
         await fillDeliveryForm(page, datosvar, datosrail);
@@ -61,7 +63,7 @@ test(testTitle, async ({ browser }) => {
 
     await fillCreditCard(page, PayQC, datosrail);
     
-    if (["AT", "SI", "HR", "HU"].includes(cod_country)) {
+    if (["AT", "SI", "HR", "HU"].includes(cod_country) && rail === "xxxlutz") {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click({ timeout: 2000 });       
     } 
     

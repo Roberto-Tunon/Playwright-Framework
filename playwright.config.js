@@ -32,13 +32,16 @@ module.exports = defineConfig({
 
       // --- ARTIFACTS & DEBUGGING ---
       // Collect trace only when retrying a failed test to save resources
-      trace: 'on-first-retry',
+      //trace: 'on-first-retry',
       
       // Capture screenshots only on failure to provide evidence in Allure reports
       screenshot: 'only-on-failure', 
       
       // Keep video recordings only for failed tests to analyze the root cause
       video: 'retain-on-failure',
+      viewport: { width: 1920, height: 1080 }, // Forzamos resolución FullHD     
+      trace: 'retain-on-failure',
+      actionTimeout: 15000,
     },
 
   /* Configure projects for major browsers */

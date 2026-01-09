@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Shops Health Monitor | By Roberto Tuñón</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .market-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .market-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        
+        /* Animación para incidencias */
+        .dot-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+    </style>
+</head>
+<body class="text-slate-900 min-h-screen flex flex-col">
+
+    <nav class="bg-white border-b border-slate-200 px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+        <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-200">
+                <i data-lucide="shield-check" class="text-white w-7 h-7"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-black tracking-tight leading-none text-slate-800 uppercase">Market <span class="text-blue-600">Monitor</span></h1>
+                <p class="text-[11px] text-slate-400 font-bold uppercase tracking-wider mt-1 italic">Author: <span class="text-slate-600 font-black">Roberto Tuñón</span></p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-8">
+            <a href="allure-report/index.html" target="_blank" class="flex items-center gap-2 bg-slate-800 text-white px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-slate-700 transition-all shadow-md">
+                <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                Full Allure Report
+            </a>
+
+            <!-- Badge Global Health en navbar -->
+            <div class="hidden lg:flex flex-col items-end border-l border-slate-200 pl-8">
+                <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-none mb-1 text-right w-full">Global Health</span>
+                <div id="global-status-container"></div>
+            </div>
+
+            <div class="hidden md:flex flex-col items-end border-l border-slate-200 pl-8">
+                <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-none mb-1 text-right w-full">Session Duration</span>
+                <p id="duration-display" class="text-sm font-mono font-bold text-slate-700">0m 0s</p>
+            </div>
+
+            <div class="text-right border-l border-slate-200 pl-8">
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Sync Status</p>
+                <div class="flex items-center gap-2">
+                    <span id="sync-dot" class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    <p id="last-update-time" class="text-sm font-mono font-bold text-slate-700">00:00:00</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="p-8 flex-1">
+        <!-- KPIs -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6">
+                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600">
+                    <i data-lucide="calendar" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Last Run Date</p>
+                    <p class="text-xl font-black text-slate-800" id="stat-date">--/--/--</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6">
+                <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600">
+                    <i data-lucide="clock" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Total Duration</p>
+                    <p class="text-xl font-black text-slate-800" id="stat-duration">0s</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6 border-l-4 border-l-green-500">
+                <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center text-green-600">
+                    <i data-lucide="trending-up" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Global Health</p>
+                    <p class="text-xl font-black text-green-600" id="stat-health">0%</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-3xl shadow-2xl flex items-center gap-6 text-white overflow-hidden relative">
+                <div class="z-10">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Next Run</p>
+                    <p class="text-xl font-black leading-none mt-1">02:00 <span class="text-xs text-slate-400 uppercase">AM</span></p>
+                    <p id="next-run-date" class="text-[10px] font-bold text-blue-400 mt-2 uppercase tracking-tight"></p>
+                </div>
+                <i data-lucide="timer" class="absolute -right-2 -bottom-2 w-16 h-16 text-slate-800 opacity-50"></i>
+            </div>
+        </div>
+
+        <!-- (Añadido) Título Market Health Status -->
+        <h2 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
+            <i data-lucide="activity" class="w-4 h-4 text-blue-500"></i>
+            Market Health Status
+        </h2>
+
+        <div id="market-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+    </main>
+
+    <footer class="p-8 text-center text-slate-400 text-xs font-bold uppercase tracking-widest">
+        &copy; 2026 QA Automation System | Last Run: <span id="footer-date">--/--/--</span>
+    </footer>
+
+    <script>
+        // Variables que inyecta el Runner
+        const marketData = [
+    {
+        "id": "DE",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "rail": "XXXLUTZ",
+        "status": "Incident",
+        "lastRun": "10:58",
+        "reportLink": "allure-report/index.html#behaviors?search=DE",
+        "payments": [
+            {
+                "name": "PayPal",
+                "status": "failed",
+                "time": "51s"
+            }
+        ]
+    },
+    {
+        "id": "AT",
+        "country": "Austria",
+        "flag": "🇦🇹",
+        "rail": "XXXLUTZ",
+        "status": "Incident",
+        "lastRun": "10:58",
+        "reportLink": "allure-report/index.html#behaviors?search=AT",
+        "payments": [
+            {
+                "name": "PayPal",
+                "status": "passed",
+                "time": "59s"
+            },
+            {
+                "name": "Credit Card",
+                "status": "passed",
+                "time": "41s"
+            },
+            {
+                "name": "Klarna Play Later (Kauf auf Rechnung)",
+                "status": "failed",
+                "time": "45s"
+            },
+            {
+                "name": "BI",
+                "status": "passed",
+                "time": "71s"
+            }
+        ]
+    },
+    {
+        "id": "CH",
+        "country": "Switzerland",
+        "flag": "🇨🇭",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "10:58",
+        "reportLink": "allure-report/index.html#behaviors?search=CH",
+        "payments": [
+            {
+                "name": "Twint",
+                "status": "passed",
+                "time": "36s"
+            }
+        ]
+    },
+    {
+        "id": "SK",
+        "country": "Slovakia",
+        "flag": "🇸🇰",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "10:58",
+        "reportLink": "allure-report/index.html#behaviors?search=SK",
+        "payments": [
+            {
+                "name": "PayPal",
+                "status": "passed",
+                "time": "48s"
+            }
+        ]
+    },
+    {
+        "id": "CZ",
+        "country": "Czech Republic",
+        "flag": "🇨🇿",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "10:58",
+        "reportLink": "allure-report/index.html#behaviors?search=CZ",
+        "payments": [
+            {
+                "name": "Online Banking",
+                "status": "passed",
+                "time": "37s"
+            }
+        ]
+    },
+    {
+        "id": "HU",
+        "country": "Hungary",
+        "flag": "🇭🇺",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "10:58",
+        "reportLink": "allure-report/index.html#behaviors?search=HU",
+        "payments": [
+            {
+                "name": "Credit Card",
+                "status": "passed",
+                "time": "32s"
+            }
+        ]
+    }
+];
+
+        const reportStats = {
+    "lastDate": "09/01/2026",
+    "totalDuration": "7m 3s",
+    "sync_status": "OK"
+};
+
+        function computeGlobalHealth(marketData) {
+            const allPayments = marketData.flatMap(m => Array.isArray(m.payments) ? m.payments : []);
+            const total = allPayments.length;
+            const passed = allPayments.filter(p => p.status === 'passed').length;
+            const health = total > 0 ? Math.round((passed / total) * 100) : 0;
+            return { health, total, passed };
+        }
+
+        function setGlobalHealthBadge(hasIncidents) {
+            const container = document.getElementById('global-status-container');
+            if (!container) return;
+
+            container.innerHTML = hasIncidents
+                ? `<span class="flex items-center gap-2 text-[10px] font-black text-red-600 bg-red-50 px-2 py-1 rounded border border-red-100 uppercase tracking-tighter">
+                        <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                        Attention Needed
+                   </span>`
+                : `<span class="flex items-center gap-2 text-[10px] font-black text-green-600 bg-green-50 px-2 py-1 rounded border border-green-100 uppercase tracking-tighter">
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                        All Systems OK
+                   </span>`;
+        }
+
+        function render() {
+            // Stats (v1)
+            document.getElementById('duration-display').innerText = reportStats.totalDuration;
+            document.getElementById('last-update-time').innerText = new Date().toLocaleTimeString('en-GB');
+            document.getElementById('footer-date').innerText = reportStats.lastDate;
+
+            // Stats (v2) KPIs
+            const statDate = document.getElementById('stat-date');
+            const statDuration = document.getElementById('stat-duration');
+            if (statDate) statDate.innerText = reportStats.lastDate;
+            if (statDuration) statDuration.innerText = reportStats.totalDuration;
+
+            // Next run (mañana)
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            const nextRunDateEl = document.getElementById('next-run-date');
+            if (nextRunDateEl) {
+                nextRunDateEl.innerText = tomorrow.toLocaleDateString('en-GB', {
+                    weekday: 'short',
+                    day: 'numeric',
+                    month: 'short'
+                });
+            }
+
+            // Global health
+            const { health } = computeGlobalHealth(marketData);
+            const statHealth = document.getElementById('stat-health');
+            if (statHealth) statHealth.innerText = `${health}%`;
+
+            const hasIncidents = marketData.some(m => m.status === 'Incident');
+            setGlobalHealthBadge(hasIncidents);
+
+            // Grid cards
+            const grid = document.getElementById('market-grid');
+            grid.innerHTML = marketData.map(m => {
+                const isIncident = m.status === 'Incident';
+                const statusColor = isIncident ? 'text-red-500' : 'text-emerald-500';
+                const borderTop = isIncident ? 'border-red-500' : 'border-blue-600';
+
+                return `
+                <div class="market-card bg-white rounded-3xl p-6 border-t-4 ${borderTop} shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-center gap-3">
+                                <span class="text-3xl">${m.flag}</span>
+                                <div>
+                                    <h3 class="font-black text-slate-800 text-lg uppercase tracking-tight">${m.country}</h3>
+                                    <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">${m.rail}</span>
+                                </div>
+                            </div>
+                            <a href="${m.reportLink}" target="_blank" class="p-2 hover:bg-slate-100 rounded-xl transition-colors text-slate-400 hover:text-blue-600" aria-label="Open filtered report">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-6">
+                            <span class="relative flex h-2 w-2">
+                                ${isIncident ? '<span class="dot-pulse absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>' : ''}
+                                <span class="relative inline-flex rounded-full h-2 w-2 ${isIncident ? 'bg-red-500' : 'bg-emerald-500'}"></span>
+                            </span>
+                            <span class="text-[11px] font-black uppercase tracking-widest ${statusColor}">
+                                ${m.status}
+                            </span>
+                        </div>
+                        <div class="space-y-2">
+  ${(m.payments || []).map(p => `
+    <div class="flex items-center justify-between bg-slate-50 p-3 rounded-2xl border border-slate-100">
+      <div class="flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full ${p.status === 'passed' ? 'bg-emerald-500' : 'bg-red-500'}"></span>
+
+        <span class="text-xs font-bold text-slate-600 uppercase flex items-center gap-2">
+          <i data-lucide="${p.icon || 'credit-card'}" class="w-4 h-4 text-slate-400 shrink-0"></i>
+          ${p.name}
+        </span>
+      </div>
+      <span class="text-[10px] font-mono font-bold text-slate-400">${p.time}</span>
+    </div>
+  `).join('')}
+</div>
+                    </div>
+
+                    <!-- (Añadido) Botón Report por país (filtrado) -->
+                    <div class="mt-6 space-y-3">
+                        <a href="${m.reportLink}" target="_blank"
+                           class="w-full bg-slate-900 hover:bg-blue-600 text-white py-3 rounded-xl text-[10px] font-bold transition-all flex items-center justify-center gap-2 uppercase tracking-widest">
+                            <i data-lucide="bar-chart-3" class="w-3 h-3"></i>
+                            Report
+                        </a>
+
+                        <div class="pt-3 border-t border-slate-50 flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Last Checked</span>
+                            <span class="text-[10px] font-mono font-bold text-slate-600">${m.lastRun}</span>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            lucide.createIcons();
+        }
+
+        render();
+    </script>
+</body>
+</html>

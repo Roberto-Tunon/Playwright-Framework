@@ -22,8 +22,8 @@ test(testTitle, async ({ browser }) => {
     
     const cod_country = process.env.COUNTRY || 'default';
     const rail = process.env.RAIL || 'default';
-    const datosrail = ObtenerDatos(cod_country); 
     const mode = process.env.MODE || '1P';
+    const datosrail = ObtenerDatos(cod_country);
 
     await description("E2E Test for " + process.env.COUNTRY);
     await tag(process.env.COUNTRY);

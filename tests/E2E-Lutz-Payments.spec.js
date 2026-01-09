@@ -32,41 +32,53 @@ test(testTitle, async ({ browser }) => {
     await tag(process.env.COUNTRY);
     await parameter("Mode", process.env.MODE);
    
-    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);    
-    
-    if (pay === "ON") {  
-      const button = await page.getByTestId('locationPicker.button'); 
-      
-      console.log('Visible:', await button.isVisible());
-      console.log('Habilitado:', await button.isEnabled());
+    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
+   
+    const deliverySelect = page.locator('select[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
+    const selfServiceOption = deliverySelect.locator('option[value="SELF_SERVICE"]');
+   
+    if (await selfServiceOption.count() > 0) {
 
-      if ((await button.isVisible()) && (await button.count() > 0)) {
-            await button.click();
-            console.log("✅ Botón clickeado.");
-            await page.getByPlaceholder('PSČ/město').fill(datosrail.PostalCode);
-            await page.getByRole('button', { name: datosrail.City}).click();
-            await page.getByLabel('dialog').getByRole('button', { name: 'Zvolit pobočku' }).click(); 
-      } else {
-        console.log("🚫 El botón no está visible, no se hizo clic.");
-      }    
-    } else if (pay === "DEL") {
+        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
+        await page.locator('#SELF_SERVICE').click();
+
+        await page.getByTestId('locationPicker.button').click();
+        await page.locator('[data-purpose="locationFinder.input.field"]').fill(datosrail.PostalCode);
+        await page.getByRole('button', { name: datosrail.City}).click();    
+        await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();
+
+        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+
+        await fillSELFDeliveryForm(page, datosvar, datosrail); 
+
+    } else if (['ON'].includes(pay)){  
+        const button = await page.getByTestId('locationPicker.button'); 
+       
+        if ((await button.isVisible()) && (await button.count() > 0)) {
+              await button.click();
+              console.log("✅ Botón clickeado.");
+              await page.getByPlaceholder('PSČ/město').fill(datosrail.PostalCode);
+              await page.getByRole('button', { name: datosrail.City}).click();
+              await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click(); 
+              await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+              await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+              await fillSELFDeliveryForm(page, datosvar, datosrail);  
+        } else {
+          console.log("🚫 El botón no está visible, no se hizo clic.");
+        }    
+    } else {
         // Seleccionar el combo box por su selector
         //const comboBox = page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
         await page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]').click();  
         await page.keyboard.press('ArrowUp'); // Baja a la primera opción
         await page.keyboard.press('Enter'); // Selecciona la opción activa
-        const firstOption = page.locator('[role="option"]').first();        
+        const firstOption = page.locator('[role="option"]').first();  
+        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+        await fillDeliveryForm(page, datosvar, datosrail);        
     }  
-    
-    await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-    await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-    
-    if (pay === "ON") {
-      await fillSELFDeliveryForm(page, datosvar, datosrail);  
-    } else {    
-      await fillDeliveryForm(page, datosvar, datosrail);
-    }    
-
+            
     if (pay === "SW") {        
         //await page.locator('[data-purpose="checkout.paymentOptions.swish_adyen"]').click();
         await page.locator('[data-purpose="checkout.paymentOptions.swish_adyen.submit"]').click();
