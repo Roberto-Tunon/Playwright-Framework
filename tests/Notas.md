@@ -11,13 +11,13 @@ npm list @playwright/test
 npm init playwright@latest
 
 ------------------------------------
--- INTERFAZ PARA EJECUCIONES LOCALES
+-- INTERFAZ PARA SSO Y EJECUCIONES LOCALES
 ------------------------------------
 - node run-test.mjs
 -
--------------------------------------------
--- INTERFAZ PARA BATCH NOCTURNO Y DASHBOARD
--------------------------------------------
+----------------------------------
+-- INTERFAZ PARA BATCH Y DASHBOARD
+----------------------------------
 - node runner.js
 - 
 --------------------
@@ -52,7 +52,7 @@ npm init playwright@latest
 ------------
 -- PAYPAL --
 ------------
-- RAIL=xxxlutz COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=DE MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
 - RAIL=moemax COUNTRY=DE MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
 
 -----------------
@@ -79,9 +79,10 @@ npm init playwright@latest
 - RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KN npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
 
 -----------------
--- RO Split IT --
+-- Split IT --
 -----------------
 - RAIL=xxxlutz COUNTRY=RO npx playwright test tests/E2E-Lutz-SplitIT.spec.js --project chromium --headed 
+- RAIL=xxxlesnina COUNTRY=SI MODE=1P PAY=SP npx playwright test tests/E2E-Lutz-SplitIT.spec.js --project chromium --headed 
 
 --------------------------
 -- RS Lesnina CorvusPay --

@@ -1,0 +1,91 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=1]: Bestätigen und bezahlen
+                - generic:
+                  - generic:
+                    - text: Überprüfe vor der Zahlung noch einmal alle Angaben. Du profitierst außerdem vom Klarna
+                    - link:
+                      - /url: https://www.klarna.com/at/kauferschutzrichtlinie/
+                      - text: Käuferschutz.
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - button:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic: TP
+                                  - generic:
+                                    - generic:
+                                      - generic: customer@email.at
+                                      - generic: 0676 2600456
+                              - generic:
+                                - generic:
+                                  - img
+              - generic:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - img
+                            - generic:
+                              - generic:
+                                - generic: Adyen Test Account
+                        - generic:
+                          - generic:
+                            - img
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Bestellbetrag
+                  - generic:
+                    - generic:
+                      - paragraph: 46,25 €
+                - generic:
+                  - generic:
+                    - paragraph: Gesamtbetrag
+                  - generic:
+                    - paragraph: 46,25 €
+        - button [disabled] [ref=e11] [cursor=pointer]:
+          - generic [ref=e12] [cursor=pointer]:
+            - generic [ref=e14] [cursor=pointer]: Bezahlen mit
+            - img [ref=e16] [cursor=pointer]
+        - button [ref=e27] [cursor=pointer]:
+          - img [ref=e30] [cursor=pointer]
+      - dialog "Bestellung konnte wegen technischer Probleme nicht abgeschlossen werden" [active] [ref=e36]:
+        - generic [ref=e39]:
+          - generic [ref=e45]:
+            - heading "Bestellung konnte wegen technischer Probleme nicht abgeschlossen werden" [level=1] [ref=e46]
+            - generic [ref=e48]: "Keine Sorge: Es wurde keine Zahlung abgebucht. Ändere deine Zahlungsmethode, um deine Bestellung abzuschließen."
+          - button "Zurück zum Shop" [ref=e55] [cursor=pointer]:
+            - generic [ref=e58] [cursor=pointer]: Zurück zum Shop
+          - button "Schließen" [ref=e67] [cursor=pointer]:
+            - img [ref=e70] [cursor=pointer]
+```

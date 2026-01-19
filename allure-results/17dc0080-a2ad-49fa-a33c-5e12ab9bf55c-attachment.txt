@@ -1,0 +1,3 @@
+Params: Country: DE, Rail: MOEMAX, Mode: 1P
+⚠️ SELF_SERVICE not found. Selecting the first available option...
+✅ PayPal Login completed

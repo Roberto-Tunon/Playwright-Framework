@@ -23,7 +23,7 @@ async function OpenPage(page, datosvar, datosrail, rail, cod_country, mode) {
     } 
     
     if (mode !== "3P") {
-        if (["SE", "HU"].includes(cod_country)){
+        if (["SE", "HU", "SI"].includes(cod_country)){
             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/delivery`);                
             await page.locator('[data-purpose="checkout.addtocart"]').click();
         } else {

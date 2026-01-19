@@ -1,0 +1,244 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Prejsť na hlavný obsah" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: checkout.titletag
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Hlavná stránka" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Nákupný košík" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Nákupný košík
+            - heading "Objednajte pohodlne v 3 krokoch" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Všetky polia označené * sú povinné.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - heading "Detaily" [level=2] [ref=e38] [cursor=pointer]
+                - button "Upraviť" [ref=e40] [cursor=pointer]:
+                  - generic [ref=e41] [cursor=pointer]: Upraviť
+                - generic [ref=e46]:
+                  - generic [ref=e47]:
+                    - generic [ref=e48]:
+                      - term [ref=e49]:
+                        - paragraph [ref=e50]: Kontakt
+                      - definition [ref=e51]:
+                        - paragraph [ref=e52]: roberto.tunon@xxxl.digital
+                        - paragraph [ref=e53]: "+421918573172"
+                    - generic [ref=e54]:
+                      - term [ref=e55]:
+                        - paragraph [ref=e56]: Dodacia adresa
+                      - definition [ref=e57]:
+                        - paragraph [ref=e58]: Roberto Tuñon
+                        - paragraph [ref=e59]: Bahnhofstraße 10
+                        - paragraph [ref=e60]: 811 01
+                        - paragraph [ref=e61]: Bratislava
+                  - generic [ref=e63]:
+                    - term [ref=e64]:
+                      - paragraph [ref=e65]: Fakturačná adresa
+                    - definition [ref=e66]:
+                      - paragraph [ref=e67]: Ako dodacia adresa
+              - generic [ref=e68]:
+                - generic [ref=e71]: "2"
+                - heading "Platba" [level=2] [ref=e72]
+                - progressbar "Loading" [ref=e76]:
+                  - img [ref=e77]
+              - generic [ref=e79]:
+                - generic [ref=e82]: "3"
+                - heading "Dokončenie objednávky" [level=2] [ref=e83]
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - heading "Nákupný košík" [level=3] [ref=e86]
+              - link "Nákupný košík Upraviť" [ref=e87] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e88] [cursor=pointer]: Upraviť
+            - generic [ref=e89]:
+              - button "Zobraziť obsah košíka" [ref=e90] [cursor=pointer]:
+                - img [ref=e94] [cursor=pointer]
+              - heading "Zhrnutie" [level=3] [ref=e95]
+              - generic [ref=e96]:
+                - generic [ref=e97]: Cena tovaru
+                - generic [ref=e98]:
+                  - text: € 5,
+                  - superscript [ref=e99]: "99"
+                - button "Cena za dopravu" [ref=e100] [cursor=pointer]:
+                  - generic [ref=e101] [cursor=pointer]: Cena za dopravu
+                - generic [ref=e102]:
+                  - generic [ref=e103]: +
+                  - text: € 6,‒
+              - generic [ref=e104]:
+                - generic [ref=e105]: Cena celkom
+                - generic [ref=e106]:
+                  - text: € 11,
+                  - superscript [ref=e107]: "99"
+                - generic [ref=e108]: zahrnutá DPH
+              - generic [ref=e109]:
+                - button "Kód poukazu" [ref=e110] [cursor=pointer]:
+                  - generic [ref=e111] [cursor=pointer]: Kód poukazu
+                  - img [ref=e112] [cursor=pointer]
+                - generic [ref=e115]:
+                  - generic [ref=e118]:
+                    - textbox "Kód poukazu" [ref=e119]
+                    - generic: Kód poukazu
+                  - button "Uplatniť" [ref=e120] [cursor=pointer]:
+                    - generic [ref=e121] [cursor=pointer]: Uplatniť
+            - list [ref=e122]:
+              - listitem [ref=e123]: Osobný odber ZDARMA
+              - listitem [ref=e124]: Balík nad 99,- € doprava ZDARMA
+              - listitem [ref=e125]: Špedícia od 1299,- € doprava ZDARMA
+    - contentinfo [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]: Výhody XXXLutz
+          - list [ref=e131]:
+            - listitem [ref=e132]:
+              - link "Osobný odber ZDARMA" [ref=e133] [cursor=pointer]:
+                - /url: /c/click-collect
+                - text: Osobný odber ZDARMA
+            - listitem [ref=e135]:
+              - link "Väčší nákup – doprava ZDARMA" [ref=e136] [cursor=pointer]:
+                - /url: /c/xxxl-online-nakup
+                - text: Väčší nákup – doprava ZDARMA
+            - listitem [ref=e138]:
+              - link "Rýchle dodanie a výnos až do bytu" [ref=e139] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - text: Rýchle dodanie a výnos až do bytu
+            - listitem [ref=e141]:
+              - link "Bezpečná platba" [ref=e142] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby
+                - text: Bezpečná platba
+            - listitem [ref=e144]:
+              - link "Zapožičanie dodávky výhodne" [ref=e145] [cursor=pointer]:
+                - /url: /c/xxxl-dodavka
+                - text: Zapožičanie dodávky výhodne
+            - listitem [ref=e147]:
+              - link "5 pobočiek po celej Slovenskej republike" [ref=e148] [cursor=pointer]:
+                - /url: /pobocky
+                - text: 5 pobočiek po celej Slovenskej republike
+            - listitem [ref=e150]:
+              - link "Zákaznícky servis e-shopu PO-NE" [ref=e151] [cursor=pointer]:
+                - /url: /kontaktnecentrum
+                - text: Zákaznícky servis e-shopu PO-NE
+        - generic [ref=e154]:
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: Chcete sa na niečo spýtať?
+            - generic [ref=e159]:
+              - generic [ref=e160]:
+                - link "Ku kontaktnému formuláru" [ref=e161] [cursor=pointer]:
+                  - /url: /kontaktnecentrum
+                  - generic [ref=e162] [cursor=pointer]: Ku kontaktnému formuláru
+                - paragraph [ref=e163]: Kontaktujte nás
+              - generic [ref=e164]:
+                - link "Často kladené otázky" [ref=e165] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e166] [cursor=pointer]: Často kladené otázky
+                - paragraph [ref=e167]: Ak potrebujete poradiť okamžite, navštívte sekciu s často kladenými otázkami.
+          - generic [ref=e168]:
+            - generic [ref=e169]: Spôsoby platby v e-shope
+            - generic [ref=e170]:
+              - link "Mastercard" [ref=e173] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "Mastercard" [ref=e174] [cursor=pointer]
+              - link "VISA" [ref=e177] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "VISA" [ref=e178] [cursor=pointer]
+              - link "Diners card" [ref=e181] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "Diners card" [ref=e182] [cursor=pointer]
+              - link "PAYPAL" [ref=e185] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#paypal
+                - img "PAYPAL" [ref=e186] [cursor=pointer]
+              - link "bankovi prevod" [ref=e189] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#bank
+                - img "bankovi prevod" [ref=e190] [cursor=pointer]
+              - link "DOBIERKA" [ref=e193] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#dobierka
+                - img "DOBIERKA" [ref=e194] [cursor=pointer]
+              - link "GPay" [ref=e197] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby
+                - img "GPay" [ref=e198] [cursor=pointer]
+              - link "Apple Pay" [ref=e201] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#applepay
+                - img "Apple Pay" [ref=e202] [cursor=pointer]
+          - generic [ref=e203]:
+            - generic [ref=e204]: Spôsoby dopravy v e-shope
+            - generic [ref=e205]:
+              - link "Gebruder Weiss" [ref=e208] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "Gebruder Weiss" [ref=e209] [cursor=pointer]
+              - link "SPS" [ref=e212] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "SPS" [ref=e213] [cursor=pointer]
+              - link "DPD" [ref=e216] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "DPD" [ref=e217] [cursor=pointer]
+          - generic [ref=e218]: "* nezáväzne odporúčaná spotrebiteľská cena. /** doterajšia predajná cena. / ***Najnižšia cena za posledných 30 dní. / Všetky uvedené ceny sú vrátane DPH. / Doprava a montáž nie sú súčasťou uvedených cien. / Dodanie v rámci Slovenskej republiky. / Zmeny a chyby vyhradené."
+        - generic [ref=e221]:
+          - link "XXXLutz" [ref=e222] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e223] [cursor=pointer]: XXXLutz
+            - img [ref=e225] [cursor=pointer]
+          - generic [ref=e231]: © 2025 XLSK Nábytok s.r.o.
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - link "Kontakty" [ref=e234] [cursor=pointer]:
+                - /url: /c/kontakty
+            - listitem [ref=e235]:
+              - link "Impresum" [ref=e236] [cursor=pointer]:
+                - /url: /c/impresum
+            - listitem [ref=e237]:
+              - link "Podmienky akcie" [ref=e238] [cursor=pointer]:
+                - /url: /c/podmienkyakcie
+            - listitem [ref=e239]:
+              - link "VOP" [ref=e240] [cursor=pointer]:
+                - /url: /c/vop
+            - listitem
+            - listitem [ref=e241]:
+              - link "Ochrana údajov" [ref=e242] [cursor=pointer]:
+                - /url: /c/ochrana-osobnych-udajov
+            - listitem [ref=e243]:
+              - button "Nastavenia cookie" [ref=e244] [cursor=pointer]
+            - listitem [ref=e245]:
+              - link "Vyhlásenie o prístupnosti" [ref=e246] [cursor=pointer]:
+                - /url: /accessibility
+            - listitem [ref=e247]:
+              - link "Accessibility" [ref=e248] [cursor=pointer]:
+                - /url: /c/accessibility-statement
+          - list [ref=e249]:
+            - listitem [ref=e250]:
+              - link "youtube" [ref=e251] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCe5Dy_RRyw-KGdHu0rbL2hw
+            - listitem [ref=e252]:
+              - link "pinterest" [ref=e253] [cursor=pointer]:
+                - /url: https://www.pinterest.com/Lutznabytok/
+            - listitem [ref=e254]:
+              - link "instagram" [ref=e255] [cursor=pointer]:
+                - /url: https://www.instagram.com/lutz.nabytok/
+            - listitem [ref=e256]:
+              - link "facebook" [ref=e257] [cursor=pointer]:
+                - /url: https://www.facebook.com/lutznabytok/
+            - listitem [ref=e258]:
+              - link "tiktok" [ref=e259] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_czsk
+          - link "WACA bronz tanusítvány" [ref=e260] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA bronz tanusítvány" [ref=e261] [cursor=pointer]
+  - generic:
+    - log
+```

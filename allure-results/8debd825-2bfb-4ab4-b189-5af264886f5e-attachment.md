@@ -1,0 +1,233 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: Bestellübersicht | XXXLutz.at
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - heading "Details" [level=2] [ref=e38] [cursor=pointer]
+                - button "bearbeiten" [ref=e40] [cursor=pointer]:
+                  - generic [ref=e41] [cursor=pointer]: bearbeiten
+                - generic [ref=e46]:
+                  - generic [ref=e47]:
+                    - generic [ref=e48]:
+                      - term [ref=e49]:
+                        - paragraph [ref=e50]: Kontakt
+                      - definition [ref=e51]:
+                        - paragraph [ref=e52]: roberto.tunon@xxxl.digital
+                        - paragraph [ref=e53]: "+4350545454"
+                    - generic [ref=e54]:
+                      - term [ref=e55]:
+                        - paragraph [ref=e56]: Lieferadresse
+                      - definition [ref=e57]:
+                        - paragraph [ref=e58]: Roberto Tuñon
+                        - paragraph [ref=e59]: Bahnhofstraße 10
+                        - paragraph [ref=e60]: "4020"
+                        - paragraph [ref=e61]: Linz
+                  - generic [ref=e63]:
+                    - term [ref=e64]:
+                      - paragraph [ref=e65]: Rechnungsadresse
+                    - definition [ref=e66]:
+                      - paragraph [ref=e67]: Wie Lieferadresse
+              - generic [ref=e68]:
+                - generic [ref=e71]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e72]
+                - group "Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus." [ref=e76]:
+                  - generic [ref=e77]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+                  - paragraph [ref=e78]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+                  - generic [ref=e81] [cursor=pointer]:
+                    - radio "Apple Pay" [ref=e82]
+                    - generic [ref=e86] [cursor=pointer]: Apple Pay
+                  - generic [ref=e89] [cursor=pointer]:
+                    - radio "Kauf auf Rechnung" [ref=e90]
+                    - generic [ref=e94] [cursor=pointer]: Kauf auf Rechnung
+                  - generic [ref=e97] [cursor=pointer]:
+                    - radio "Kauf auf Raten" [ref=e98]
+                    - generic [ref=e102] [cursor=pointer]: Kauf auf Raten
+                  - generic [ref=e105] [cursor=pointer]:
+                    - radio "PayPal" [ref=e106]
+                    - generic [ref=e110] [cursor=pointer]: PayPal
+                  - generic [ref=e113] [cursor=pointer]:
+                    - radio "Sofortüberweisung" [ref=e114]
+                    - generic [ref=e118] [cursor=pointer]: Sofortüberweisung
+                  - generic [ref=e121] [cursor=pointer]:
+                    - radio "Google Pay" [ref=e122]
+                    - generic [ref=e126] [cursor=pointer]: Google Pay
+                  - generic [ref=e127]:
+                    - generic [ref=e129] [cursor=pointer]:
+                      - radio "Kreditkarte / Debitkarte Bezahlen Sie Ihren Einkauf einfach und bequem mit Visa oder Mastercard." [checked] [ref=e130]
+                      - generic [ref=e134] [cursor=pointer]:
+                        - generic [ref=e135] [cursor=pointer]: Kreditkarte / Debitkarte
+                        - generic [ref=e138] [cursor=pointer]: Bezahlen Sie Ihren Einkauf einfach und bequem mit Visa oder Mastercard.
+                    - alert [ref=e142]:
+                      - strong [ref=e143]:
+                        - text: Um Ihr Einkaufserlebnis noch sicherer zu gestalten, wird bei Kreditkartenzahlungen der
+                        - strong [ref=e144]: Mastercard Identity Check
+                        - text: oder
+                        - strong [ref=e145]: Visa Secure
+                        - text: verwendet. Dabei handelt es sich um Ihr
+                        - strong [ref=e146]: Passwort
+                        - text: für Onlinezahlungen. Bitte halten Sie dieses bereit.
+                    - generic [ref=e147]:
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: Kartennummer*
+                        - iframe [ref=e151]: <p>Your browser does not support iframes.</p>:
+                          - generic [active] [ref=f1e1]:
+                            - textbox [ref=f1e2]
+                            - generic:
+                              - textbox "Card number" [ref=f1e3]: 5555 4444 3333 1111
+                              - generic:
+                                - textbox [ref=f1e4]
+                                - textbox [ref=f1e5]
+                      - generic [ref=e152]:
+                        - generic [ref=e153]: gültig bis*
+                        - iframe [ref=e155]: <p>Your browser does not support iframes.</p>:
+                          - generic [active] [ref=f2e1]:
+                            - textbox [ref=f2e2]
+                            - textbox "Expiry date" [ref=f2e3]: 03/30
+                      - generic [ref=e156]:
+                        - generic [ref=e157]: CVC*
+                        - iframe [ref=e159]: <p>Your browser does not support iframes.</p>:
+                          - generic [active] [ref=f3e1]:
+                            - textbox [ref=f3e2]
+                            - textbox "Security code" [ref=f3e3]: "737"
+                      - generic [ref=e160]:
+                        - generic [ref=e161]: Karteninhaber*
+                        - textbox "Karteninhaber*" [ref=e162]: Robert Tunon
+                    - button "Weiter" [ref=e163] [cursor=pointer]:
+                      - generic [ref=e164] [cursor=pointer]: Weiter
+              - generic [ref=e165]:
+                - generic [ref=e168]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e169]
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - heading "Warenkorb" [level=3] [ref=e172]
+              - link "Warenkorb Bearbeiten" [ref=e173] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e174] [cursor=pointer]: Bearbeiten
+            - generic [ref=e175]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e176] [cursor=pointer]:
+                - img [ref=e180] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e181]
+              - generic [ref=e182]:
+                - generic [ref=e183]: Warenwert
+                - generic [ref=e184]:
+                  - text: € 29,
+                  - superscript [ref=e185]: "99"
+                - button "Lieferkosten" [ref=e186] [cursor=pointer]:
+                  - generic [ref=e187] [cursor=pointer]: Lieferkosten
+                - generic [ref=e188]:
+                  - generic [ref=e189]: +
+                  - text: € 4,
+                  - superscript [ref=e190]: "95"
+              - generic [ref=e191]:
+                - generic [ref=e192]: Gesamtsumme
+                - generic [ref=e193]:
+                  - text: € 34,
+                  - superscript [ref=e194]: "94"
+                - generic [ref=e195]: inkl. MwSt.
+              - generic [ref=e196]:
+                - button "Gutscheincode" [ref=e197] [cursor=pointer]:
+                  - generic [ref=e198] [cursor=pointer]: Gutscheincode
+                  - img [ref=e199] [cursor=pointer]
+                - generic [ref=e202]:
+                  - generic [ref=e205]:
+                    - textbox "Code kopieren" [ref=e206]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e207] [cursor=pointer]:
+                    - generic [ref=e208] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e209]:
+              - listitem [ref=e210]: Schnelle Lieferung
+              - listitem [ref=e211]: 30 Tage Rückgaberecht
+              - listitem [ref=e212]: Sicher bezahlen
+    - contentinfo [ref=e213]:
+      - generic [ref=e214]:
+        - generic [ref=e216]:
+          - generic [ref=e219]:
+            - paragraph [ref=e220]: Hilfe & Kontakt
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - link "Zum Kontaktformular" [ref=e223] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e224] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e225]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e226]:
+                - link "Häufig gestellte Fragen" [ref=e227] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e228] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e229]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e232]:
+            - generic [ref=e233]: Zahlungsmöglichkeiten
+            - generic [ref=e234]:
+              - img "Klarna" [ref=e237]
+              - img "Paypal" [ref=e240]
+              - img "Mastercard Visa" [ref=e243]
+              - img "Google Pay" [ref=e246]
+              - img "Apple Pay" [ref=e249]
+              - img "Logo Billie" [ref=e252]
+          - generic [ref=e253]: "*Vom Hersteller unverbindlich empfohlener Preis. Alle Preise sind Abholpreise. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise."
+        - generic [ref=e256]:
+          - link "XXXLutz" [ref=e257] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e258] [cursor=pointer]: XXXLutz
+            - img [ref=e260] [cursor=pointer]
+          - generic [ref=e266]: © 2025 XXXLutz KG
+          - list [ref=e267]:
+            - listitem [ref=e268]:
+              - link "Impressum" [ref=e269] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e270]:
+              - link "AGB" [ref=e271] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e272]:
+              - link "Datenschutz" [ref=e273] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e274]:
+              - button "Cookie-Einstellungen" [ref=e275] [cursor=pointer]
+          - list [ref=e276]:
+            - listitem [ref=e277]:
+              - link "youtube" [ref=e278] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/XXXLutzTV
+            - listitem [ref=e279]:
+              - link "facebook" [ref=e280] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.at/
+            - listitem [ref=e281]:
+              - link "instagram" [ref=e282] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_at
+            - listitem [ref=e283]:
+              - link "pinterest" [ref=e284] [cursor=pointer]:
+                - /url: https://www.pinterest.at/xxxlutzAT/
+            - listitem [ref=e285]:
+              - link "tiktok" [ref=e286] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_at
+          - link "WACA accessibilty seal in silver" [ref=e287] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e288] [cursor=pointer]
+  - generic:
+    - log
+```

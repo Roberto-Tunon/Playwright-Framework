@@ -1,0 +1,231 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: checkout.titletag
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - heading "Details" [level=2] [ref=e38] [cursor=pointer]
+                - button "bearbeiten" [ref=e40] [cursor=pointer]:
+                  - generic [ref=e41] [cursor=pointer]: bearbeiten
+                - generic [ref=e46]:
+                  - generic [ref=e47]:
+                    - generic [ref=e48]:
+                      - term [ref=e49]:
+                        - paragraph [ref=e50]: Kontakt
+                      - definition [ref=e51]:
+                        - paragraph [ref=e52]: roberto.tunon@xxxl.digital
+                        - paragraph [ref=e53]: "+4930250025"
+                    - generic [ref=e54]:
+                      - term [ref=e55]:
+                        - paragraph [ref=e56]: Lieferadresse
+                      - definition [ref=e57]:
+                        - paragraph [ref=e58]: Roberto Tuñon
+                        - paragraph [ref=e59]: Bahnhofstraße 10
+                        - paragraph [ref=e60]: "10178"
+                        - paragraph [ref=e61]: Berlin
+                  - generic [ref=e63]:
+                    - term [ref=e64]:
+                      - paragraph [ref=e65]: Rechnungsadresse
+                    - definition [ref=e66]:
+                      - paragraph [ref=e67]: Wie Lieferadresse
+              - generic [ref=e68]:
+                - heading "Zahlungsarten" [level=2] [ref=e72] [cursor=pointer]
+                - button "bearbeiten" [ref=e74] [cursor=pointer]:
+                  - generic [ref=e75] [cursor=pointer]: bearbeiten
+                - paragraph [ref=e79]: Sofortüberweisung
+              - generic [ref=e80]:
+                - generic [ref=e83]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e84]
+                - generic [ref=e87]:
+                  - paragraph [ref=e88]: Roberto Tuñon, bitte überprüfen Sie alle Angaben auf Richtigkeit und klicken Sie auf den Zahlungsbutton am Ende des Formulars.
+                  - button "Kommentar hinzufügen (optional)" [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92] [cursor=pointer]: Kommentar hinzufügen (optional)
+                  - generic [ref=e93]:
+                    - generic [ref=e94]: Verkauf durch XXXLutz
+                    - article [ref=e95]:
+                      - img "SEIFENKORB - Chromfarben, Basics, Metall (21,5/6/11,7cm) - Smedbo" [ref=e97]
+                      - heading "Smedbo SEIFENKORB" [level=4] [ref=e99]:
+                        - generic [ref=e100]: Smedbo SEIFENKORB
+                      - generic [ref=e101]:
+                        - generic [ref=e102]: Chromfarben
+                        - generic [ref=e103]: 21,5/6/11,7 cm
+                      - generic [ref=e105]: "Preis für 1 Stk.:"
+                      - generic [ref=e107]:
+                        - text: € 29,
+                        - superscript [ref=e108]: "90"
+                      - paragraph [ref=e111]:
+                        - text: Verkauf & Versand durch
+                        - generic [ref=e112]: XXXLutz
+                      - generic [ref=e113]:
+                        - generic [ref=e115]: Postversand
+                        - generic [ref=e116]:
+                          - generic [ref=e117]: Lieferzeit 5-6 Wochen
+                          - generic [ref=e118]: 10178 Berlin
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: Warenwert
+                    - generic [ref=e121]:
+                      - text: € 29,
+                      - superscript [ref=e122]: "90"
+                    - button "Lieferkosten" [ref=e123] [cursor=pointer]:
+                      - generic [ref=e124] [cursor=pointer]: Lieferkosten
+                    - generic [ref=e125]:
+                      - generic [ref=e126]: +
+                      - text: € 5,
+                      - superscript [ref=e127]: "99"
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Gesamtsumme
+                    - generic [ref=e130]:
+                      - text: € 35,
+                      - superscript [ref=e131]: "89"
+                    - generic [ref=e132]: inkl. gesetzlicher MwSt.
+                  - generic [ref=e134]:
+                    - generic [ref=e135]:
+                      - text: Mit Ihrer Bestellung erklären Sie sich mit unseren
+                      - link "AGB" [ref=e136] [cursor=pointer]:
+                        - /url: "#agb"
+                      - text: und
+                      - link "Widerrufsbelehrung" [ref=e137] [cursor=pointer]:
+                        - /url: "#widerrufsbelehrung"
+                      - text: einverstanden.
+                    - button "Jetzt kaufen" [ref=e138] [cursor=pointer]:
+                      - generic [ref=e139] [cursor=pointer]: Jetzt kaufen
+          - generic [ref=e140]:
+            - generic [ref=e141]:
+              - heading "Warenkorb" [level=3] [ref=e142]
+              - link "Warenkorb Bearbeiten" [ref=e143] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e144] [cursor=pointer]: Bearbeiten
+            - generic [ref=e145]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e146] [cursor=pointer]:
+                - img [ref=e150] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e151]
+              - generic [ref=e152]:
+                - generic [ref=e153]: Warenwert
+                - generic [ref=e154]:
+                  - text: € 29,
+                  - superscript [ref=e155]: "90"
+                - button "Lieferkosten" [ref=e156] [cursor=pointer]:
+                  - generic [ref=e157] [cursor=pointer]: Lieferkosten
+                - generic [ref=e158]:
+                  - generic [ref=e159]: +
+                  - text: € 5,
+                  - superscript [ref=e160]: "99"
+              - generic [ref=e161]:
+                - generic [ref=e162]: Gesamtsumme
+                - generic [ref=e163]:
+                  - text: € 35,
+                  - superscript [ref=e164]: "89"
+                - generic [ref=e165]: inkl. gesetzlicher MwSt.
+              - generic [ref=e166]:
+                - button "Gutscheincode" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e168] [cursor=pointer]: Gutscheincode
+                  - img [ref=e169] [cursor=pointer]
+                - generic [ref=e172]:
+                  - generic [ref=e175]:
+                    - textbox "Code kopieren" [ref=e176]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e177] [cursor=pointer]:
+                    - generic [ref=e178] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e179]:
+              - listitem [ref=e180]: Gratis Leihtransporter
+              - listitem [ref=e181]: 30 Tage Rückgabe
+              - listitem [ref=e182]: Sicher bezahlen
+    - contentinfo [ref=e183]:
+      - generic [ref=e184]:
+        - generic [ref=e186]:
+          - generic [ref=e189]:
+            - paragraph [ref=e190]: Hilfe & Kontakt
+            - generic [ref=e191]:
+              - generic [ref=e192]:
+                - link "Zum Kontaktformular" [ref=e193] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e194] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e195]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e196]:
+                - link "Häufig gestellte Fragen" [ref=e197] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e198] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e199]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e200]:
+            - generic [ref=e201]: Versand
+            - generic [ref=e202]:
+              - img "DHL" [ref=e205]
+              - img "Hermes" [ref=e208]
+              - img "XXXLutz Spedition" [ref=e211]
+          - generic [ref=e212]:
+            - generic [ref=e213]: Zahlungsmöglichkeiten
+            - generic [ref=e214]:
+              - img "Paypal" [ref=e217]
+              - img "Klarna" [ref=e220]
+              - img "Master Card" [ref=e223]
+              - img "Visa" [ref=e226]
+              - img "Google Pay" [ref=e229]
+              - img "Apple Pay" [ref=e232]
+              - img "Logo Billie" [ref=e235]
+          - generic [ref=e236]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis ***Filialpreis ohne Freundschaftskarte.
+        - generic [ref=e239]:
+          - link "XXXLutz" [ref=e240] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e241] [cursor=pointer]: XXXLutz
+            - img [ref=e243] [cursor=pointer]
+          - generic [ref=e249]: © 2025 BDSK Handels GmbH & Co. KG
+          - list [ref=e250]:
+            - listitem [ref=e251]:
+              - link "IMPRESSUM" [ref=e252] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e253]:
+              - link "DATENSCHUTZ" [ref=e254] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e255]:
+              - link "AGB" [ref=e256] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e257]:
+              - button "COOKIE-EINSTELLUNGEN" [ref=e258] [cursor=pointer]
+          - list [ref=e259]:
+            - listitem [ref=e260]:
+              - link "facebook" [ref=e261] [cursor=pointer]:
+                - /url: https://www.facebook.com/XXXLutzDeutschland
+            - listitem [ref=e262]:
+              - link "instagram" [ref=e263] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_de/
+            - listitem [ref=e264]:
+              - link "pinterest" [ref=e265] [cursor=pointer]:
+                - /url: https://www.pinterest.de/xxxlutzdeutschland/
+            - listitem [ref=e266]:
+              - link "youtube" [ref=e267] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC1w2HpXiRl5pbLGQEwnUl2w
+            - listitem [ref=e268]:
+              - link "tiktok" [ref=e269] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_de
+          - link "WACA accessibilty seal in silver" [ref=e270] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e271] [cursor=pointer]
+  - generic:
+    - log
+```

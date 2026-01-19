@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "updatedAt": "2026-01-10T17:25:06.962Z",
+  "entries": {
+    "DE|MOEMAX|PP": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "failed",
+      "lastDuration": "27s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "AT|MOEMAX|CC": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "failed",
+      "lastDuration": "22s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "AT|XXXLUTZ|CC": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "failed",
+      "lastDuration": "24s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "DE|XXXLUTZ|PP": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "failed",
+      "lastDuration": "21s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "AT|XXXLUTZ|KL": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "passed",
+      "lastDuration": "56s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "AT|XXXLUTZ|BI": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "passed",
+      "lastDuration": "61s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "CH|XXXLUTZ|TW": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "failed",
+      "lastDuration": "15s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "SI|XXXLESNINA|SP": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "failed",
+      "lastDuration": "33s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "DE|XXXLUTZ|KN": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "failed",
+      "lastDuration": "60s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    },
+    "CZ|XXXLUTZ|ON": {
+      "lastSeenAt": "2026-01-10T17:25:06.962Z",
+      "lastStatus": "passed",
+      "lastDuration": "41s",
+      "lastRunLabel": "10/01/2026, 18:25"
+    }
+  },
+  "DE|MOEMAX|PP": {
+    "lastSeenAt": "2026-01-19T09:57:39.391Z",
+    "lastStatus": "passed",
+    "lastDuration": "42s",
+    "lastRunDay": "19/01/2026"
+  },
+  "AT|MOEMAX|CC": {
+    "lastSeenAt": "2026-01-19T09:58:07.758Z",
+    "lastStatus": "passed",
+    "lastDuration": "28s",
+    "lastRunDay": "19/01/2026"
+  },
+  "AT|XXXLUTZ|CC": {
+    "lastSeenAt": "2026-01-19T09:58:36.431Z",
+    "lastStatus": "passed",
+    "lastDuration": "28s",
+    "lastRunDay": "19/01/2026"
+  },
+  "DE|XXXLUTZ|PP": {
+    "lastSeenAt": "2026-01-19T09:59:15.903Z",
+    "lastStatus": "passed",
+    "lastDuration": "39s",
+    "lastRunDay": "19/01/2026"
+  },
+  "AT|XXXLUTZ|KL": {
+    "lastSeenAt": "2026-01-19T10:00:04.188Z",
+    "lastStatus": "passed",
+    "lastDuration": "48s",
+    "lastRunDay": "19/01/2026"
+  },
+  "AT|XXXLUTZ|BI": {
+    "lastSeenAt": "2026-01-19T10:01:02.933Z",
+    "lastStatus": "failed",
+    "lastDuration": "58s",
+    "lastRunDay": "19/01/2026"
+  },
+  "HR|XXXLESNINA|CC": {
+    "lastSeenAt": "2026-01-19T08:00:02.697Z",
+    "lastStatus": "failed",
+    "lastDuration": "0s",
+    "lastRunDay": "19/01/2026"
+  },
+  "CH|XXXLUTZ|TW": {
+    "lastSeenAt": "2026-01-19T10:02:45.319Z",
+    "lastStatus": "passed",
+    "lastDuration": "30s",
+    "lastRunDay": "19/01/2026"
+  },
+  "RO|XXXLUTZ|SP": {
+    "lastSeenAt": "2026-01-19T08:00:02.587Z",
+    "lastStatus": "failed",
+    "lastDuration": "0s",
+    "lastRunDay": "19/01/2026"
+  },
+  "DE|XXXLUTZ|KN": {
+    "lastSeenAt": "2026-01-19T10:04:19.573Z",
+    "lastStatus": "passed",
+    "lastDuration": "94s",
+    "lastRunDay": "19/01/2026"
+  },
+  "SI|XXXLESNINA|SP": {
+    "lastSeenAt": "2026-01-13T10:16:03.775Z",
+    "lastStatus": "failed",
+    "lastDuration": "32s",
+    "lastRunDay": "13/01/2026"
+  },
+  "AT|XXXLUTZ|KN": {
+    "lastSeenAt": "2026-01-19T10:02:14.917Z",
+    "lastStatus": "passed",
+    "lastDuration": "71s",
+    "lastRunDay": "19/01/2026"
+  },
+  "SK|XXXLUTZ|PP": {
+    "lastSeenAt": "2026-01-13T10:17:59.235Z",
+    "lastStatus": "passed",
+    "lastDuration": "49s",
+    "lastRunDay": "13/01/2026"
+  },
+  "CZ|XXXLUTZ|ON": {
+    "lastSeenAt": "2026-01-12T09:25:17.457Z",
+    "lastStatus": "passed",
+    "lastDuration": "46s",
+    "lastRunDay": "12/01/2026"
+  },
+  "HU|XXXLUTZ|CC": {
+    "lastSeenAt": "2026-01-19T10:04:47.779Z",
+    "lastStatus": "failed",
+    "lastDuration": "28s",
+    "lastRunDay": "19/01/2026"
+  }
+}

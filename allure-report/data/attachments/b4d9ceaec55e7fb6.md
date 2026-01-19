@@ -1,0 +1,386 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "5% Gutschein bei Newsletteranmeldung" [ref=e9] [cursor=pointer]:
+              - /url: /c/newsletter
+              - generic [ref=e10] [cursor=pointer]: 5% Gutschein bei Newsletteranmeldung
+            - link "Look & Feel Magazin" [ref=e11] [cursor=pointer]:
+              - /url: https://looknfeel.xxxlutz.at/
+              - generic [ref=e12] [cursor=pointer]: Look & Feel Magazin
+          - generic [ref=e14]:
+            - link "Angebote des Monats" [ref=e15] [cursor=pointer]:
+              - /url: /c/angebote-des-monats
+              - generic [ref=e16] [cursor=pointer]: Angebote des Monats
+            - link "47 Filialen in Ihrer Nähe" [ref=e17] [cursor=pointer]:
+              - /url: /filialen-standorte
+              - generic [ref=e18] [cursor=pointer]: 47 Filialen in Ihrer Nähe
+            - link "Hilfe & Kontakt" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Hilfe & Kontakt
+            - switch "Hoher Kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menü
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Suchen" [ref=e43] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e44]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+          - generic [ref=e45]:
+            - button "Anmelden" [ref=e47] [cursor=pointer]:
+              - generic [ref=e48] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e50] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e51] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 1 Produkt" [ref=e53] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e54] [cursor=pointer]: "1"
+              - generic [ref=e55] [cursor=pointer]: Warenkorb
+          - navigation [ref=e56]:
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - link "X-Mas" [ref=e59] [cursor=pointer]:
+                  - /url: /c/weihnachtsdeko
+              - listitem [ref=e60]:
+                - link "Möbel" [ref=e61] [cursor=pointer]:
+                  - /url: /c/moebel
+              - listitem [ref=e62]:
+                - link "Küchen" [ref=e63] [cursor=pointer]:
+                  - /url: /kuechen-C41
+              - listitem [ref=e64]:
+                - link "Haushalt" [ref=e65] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+              - listitem [ref=e66]:
+                - link "Leuchten" [ref=e67] [cursor=pointer]:
+                  - /url: /lampen-leuchten-C10
+              - listitem [ref=e68]:
+                - link "Deko&Textil" [ref=e69] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+              - listitem [ref=e70]:
+                - link "Baby" [ref=e71] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e72]:
+                - link "Freizeit" [ref=e73] [cursor=pointer]:
+                  - /url: /freizeit-co-C61
+              - listitem [ref=e74]:
+                - link "Trends" [ref=e75] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e76]:
+                - link "Angebote" [ref=e77] [cursor=pointer]:
+                  - /url: /c/aus-unserer-werbung
+              - listitem [ref=e78]:
+                - link "XXXL Sale" [ref=e79] [cursor=pointer]:
+                  - /url: /c/xxxl-sale
+              - listitem [ref=e80]:
+                - link "XXXL Restaurant" [ref=e81] [cursor=pointer]:
+                  - /url: /c/restaurant
+              - listitem [ref=e82]:
+                - link "Beratungstermin" [ref=e83] [cursor=pointer]:
+                  - /url: /c/beratungstermin
+      - main [ref=e84]:
+        - status [ref=e85]:
+          - generic [ref=e86]: Warenkorb | XXXLutz.at
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - heading "Warenkorb" [level=1] [ref=e91]
+              - link "weiter einkaufen" [ref=e92] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e93] [cursor=pointer]: weiter einkaufen
+            - generic [ref=e94]:
+              - generic [ref=e95]: Verkauf durch XXXLutz
+              - list [ref=e96]:
+                - listitem [ref=e97]:
+                  - article [ref=e98]:
+                    - generic [ref=e99]:
+                      - img "TOILETTENPAPIERHALTER in Metall - Chromfarben, Basics, Metall (14/11.4cm)" [ref=e100]
+                      - link [ref=e101] [cursor=pointer]:
+                        - /url: /p/toilettenpapierhalter-in-metall-001311029201
+                    - generic [ref=e102]:
+                      - generic [ref=e103]:
+                        - generic [ref=e104]: "001311029201"
+                        - link "Artikelnr. 1311029201" [ref=e105] [cursor=pointer]:
+                          - /url: /p/toilettenpapierhalter-in-metall-001311029201
+                          - generic [ref=e106] [cursor=pointer]: Artikelnr. 1311029201
+                      - link "TOILETTENPAPIERHALTER in Metall" [ref=e108] [cursor=pointer]:
+                        - /url: /p/toilettenpapierhalter-in-metall-001311029201
+                        - heading "TOILETTENPAPIERHALTER in Metall" [level=2] [ref=e109] [cursor=pointer]:
+                          - generic [ref=e110] [cursor=pointer]: TOILETTENPAPIERHALTER
+                          - generic [ref=e111] [cursor=pointer]: in Metall
+                      - generic [ref=e112]:
+                        - generic [ref=e113]: Chromfarben
+                        - generic [ref=e114]: 14/11.4 cm
+                      - paragraph [ref=e117]:
+                        - text: Verkauf & Versand durch
+                        - generic [ref=e118]: XXXLutz
+                    - generic [ref=e121]:
+                      - generic [ref=e123]:
+                        - text: € 45,
+                        - superscript [ref=e124]: "90"
+                      - generic [ref=e125]: € 45,90 / Stk
+                    - generic [ref=e126]:
+                      - button "Produkt entfernen - TOILETTENPAPIERHALTER in Metall" [ref=e127] [cursor=pointer]
+                      - generic [ref=e128]:
+                        - textbox "Menge" [ref=e129]: "1"
+                        - generic [ref=e130]: Menge
+                      - button "1" [ref=e131] [cursor=pointer]:
+                        - generic [ref=e132] [cursor=pointer]: "1"
+                      - button "Anzahl erhöhen - TOILETTENPAPIERHALTER in Metall" [ref=e133] [cursor=pointer]
+                    - generic [ref=e135]:
+                      - button "TOILETTENPAPIERHALTER in Metall - Für später merken" [ref=e136] [cursor=pointer]:
+                        - generic [ref=e138] [cursor=pointer]: Für später merken
+                      - button "TOILETTENPAPIERHALTER in Metall - Produkt entfernen" [ref=e139] [cursor=pointer]:
+                        - generic [ref=e141] [cursor=pointer]: Produkt entfernen
+                  - generic [ref=e142]:
+                    - generic [ref=e143]:
+                      - combobox "Lieferart wählen" [ref=e146] [cursor=pointer]:
+                        - generic [ref=e149] [cursor=pointer]: Postversand
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: Die geschätzte Lieferzeit richtet sich nach Ihrem Standort.
+                        - button "Lieferzeit berechnen" [ref=e156] [cursor=pointer]:
+                          - generic [ref=e159] [cursor=pointer]: Lieferzeit berechnen
+                      - generic [ref=e160]:
+                        - text: Lieferkosten
+                        - generic [ref=e161]: + € 4,95
+                    - paragraph [ref=e162]:
+                      - generic [ref=e163]: Gratis Postversand ab €49,- Bestellwert, bei Lieferung mit XXXL Spedition entfallen die Kosten für Postversand.
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - heading "Zusammenfassung" [level=2] [ref=e167]
+              - generic [ref=e168]:
+                - generic [ref=e169]:
+                  - generic [ref=e170]: Warenwert
+                  - generic [ref=e171]:
+                    - text: € 45,
+                    - superscript [ref=e172]: "90"
+                  - button "Lieferkosten" [ref=e173] [cursor=pointer]:
+                    - generic [ref=e174] [cursor=pointer]: Lieferkosten
+                  - generic [ref=e175]:
+                    - generic [ref=e176]: +
+                    - text: € 4,
+                    - superscript [ref=e177]: "95"
+                - generic [ref=e178]:
+                  - generic [ref=e179]: Gesamtsumme
+                  - generic [ref=e180]:
+                    - text: € 50,
+                    - superscript [ref=e181]: "85"
+                  - generic [ref=e182]: inkl. MwSt.
+                - button "zur Kasse" [ref=e183] [cursor=pointer]:
+                  - generic [ref=e184] [cursor=pointer]: zur Kasse
+                - separator "oder" [ref=e185]
+                - generic [ref=e186]:
+                  - button "Mit GPay kaufen" [ref=e191] [cursor=pointer]
+                  - button "Mit Apple Pay kaufen" [ref=e196] [cursor=pointer]:
+                    - img [ref=e198] [cursor=pointer]:
+                      - generic [ref=e199] [cursor=pointer]:
+                        - generic [ref=e200] [cursor=pointer]: Mit
+                        - img [ref=e201] [cursor=pointer]
+                        - generic [ref=e209] [cursor=pointer]: kaufen
+            - generic [ref=e211]:
+              - button "Gutscheincode" [ref=e212] [cursor=pointer]:
+                - generic [ref=e213] [cursor=pointer]: Gutscheincode
+                - img [ref=e214] [cursor=pointer]
+              - generic [ref=e217]:
+                - generic [ref=e220]:
+                  - textbox "Code kopieren" [ref=e221]
+                  - generic: Code kopieren
+                - button "Gutschein einlösen" [ref=e222] [cursor=pointer]:
+                  - generic [ref=e223] [cursor=pointer]: Gutschein einlösen
+          - complementary [ref=e224]:
+            - link "weiter einkaufen" [ref=e225] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e226] [cursor=pointer]: weiter einkaufen
+    - contentinfo [ref=e227]:
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - link "Die nächste Liste überspringen" [ref=e230] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+            - text: Abschnitt überspringen
+          - generic [ref=e231]:
+            - generic [ref=e233]:
+              - generic [ref=e234]: Einkaufen bei XXXLutz
+              - list [ref=e235]:
+                - listitem [ref=e236]:
+                  - link "Online Bestellung" [ref=e237] [cursor=pointer]:
+                    - /url: /c/xxxl-onlinekauf
+                - listitem [ref=e238]:
+                  - link "Lieferung & Versand" [ref=e239] [cursor=pointer]:
+                    - /url: /c/onlinelieferung-versand
+                - listitem [ref=e240]:
+                  - link "Click&Collect" [ref=e241] [cursor=pointer]:
+                    - /url: /c/click-and-collect
+                - listitem [ref=e242]:
+                  - link "Auftragsstatusabfrage" [ref=e243] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e244]:
+                  - link "Retouren & Reklamationen" [ref=e245] [cursor=pointer]:
+                    - /url: /c/retouren
+                - listitem [ref=e246]:
+                  - link "Zahlung" [ref=e247] [cursor=pointer]:
+                    - /url: /c/zahlungsarten
+                - listitem [ref=e248]:
+                  - link "Geschenkgutscheine" [ref=e249] [cursor=pointer]:
+                    - /url: /c/geschenkgutschein
+                - listitem [ref=e250]:
+                  - link "Aktionsbedingungen" [ref=e251] [cursor=pointer]:
+                    - /url: /c/newsaktion
+                - listitem [ref=e252]:
+                  - link "Häufig gestellte Fragen (FAQ)" [ref=e253] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e254]:
+                  - link "Look & Feel Magazin" [ref=e255] [cursor=pointer]:
+                    - /url: https://looknfeel.xxxlutz.at/
+            - generic [ref=e257]:
+              - generic [ref=e258]: Service
+              - list [ref=e259]:
+                - listitem [ref=e260]:
+                  - link "XXXL Serviceübersicht" [ref=e261] [cursor=pointer]:
+                    - /url: /c/service
+                - listitem [ref=e262]:
+                  - link "Preisepass" [ref=e263] [cursor=pointer]:
+                    - /url: /c/preisepass-vorteile
+                - listitem [ref=e264]:
+                  - link "Transporter" [ref=e265] [cursor=pointer]:
+                    - /url: /c/xxxl-transporter
+                - listitem [ref=e266]:
+                  - link "Montage" [ref=e267] [cursor=pointer]:
+                    - /url: /c/lieferung-montage
+                - listitem [ref=e268]:
+                  - link "Newsletter" [ref=e269] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e270]:
+                  - link "Babykarte" [ref=e271] [cursor=pointer]:
+                    - /url: /c/babykarte
+                - listitem [ref=e272]:
+                  - link "X-POWR Stromtarif" [ref=e273] [cursor=pointer]:
+                    - /url: /c/xpowr
+                - listitem [ref=e274]:
+                  - link "B2B/Geschäftskunden" [ref=e275] [cursor=pointer]:
+                    - /url: /c/objektbau
+            - generic [ref=e277]:
+              - generic [ref=e278]: Filialen & Standorte
+              - list [ref=e279]:
+                - listitem [ref=e280]:
+                  - link "Filialfinder" [ref=e281] [cursor=pointer]:
+                    - /url: /filialen-standorte
+                - listitem [ref=e282]:
+                  - link "Küchenstudios" [ref=e283] [cursor=pointer]:
+                    - /url: /kuechenstudios
+                - listitem [ref=e284]:
+                  - link "Restaurants" [ref=e285] [cursor=pointer]:
+                    - /url: /c/restaurant
+                - listitem [ref=e286]:
+                  - link "Filialschnäppchen" [ref=e287] [cursor=pointer]:
+                    - /url: /hs
+                - listitem [ref=e288]:
+                  - link "Prospekte" [ref=e289] [cursor=pointer]:
+                    - /url: /c/unsere-prospekte
+                - listitem [ref=e290]:
+                  - link "Beratungstermin" [ref=e291] [cursor=pointer]:
+                    - /url: /c/beratungstermin
+                - listitem [ref=e292]:
+                  - link "XXXL Möbel Outlets" [ref=e293] [cursor=pointer]:
+                    - /url: /c/moebel-outlet
+            - generic [ref=e295]:
+              - generic [ref=e296]: Über Uns
+              - list [ref=e297]:
+                - listitem [ref=e298]:
+                  - link "Jobs & Karriere" [ref=e299] [cursor=pointer]:
+                    - /url: https://karriere.xxxlutz.at/
+                - listitem [ref=e300]:
+                  - link "Unternehmen" [ref=e301] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e302]:
+                  - link "XXXL Markenwelt" [ref=e303] [cursor=pointer]:
+                    - /url: /c/xxxlutz-markenwelt
+                - listitem [ref=e304]:
+                  - link "Marktplatz" [ref=e305] [cursor=pointer]:
+                    - /url: /c/marketplace
+                - listitem [ref=e306]:
+                  - link "XXXL Kodex" [ref=e307] [cursor=pointer]:
+                    - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCM_MoCXs6LC6jt9IFntebMA/xxxl-verhaltenskodex-juli-2021-doppelseite-web.pdf
+                - listitem [ref=e308]:
+                  - link "XXXL Das Radio" [ref=e309] [cursor=pointer]:
+                    - /url: /c/radio
+                - listitem [ref=e310]:
+                  - link "Barrierefreiheit" [ref=e311] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+        - generic [ref=e313]:
+          - generic [ref=e316]:
+            - paragraph [ref=e317]: Hilfe & Kontakt
+            - generic [ref=e318]:
+              - generic [ref=e319]:
+                - link "Zum Kontaktformular" [ref=e320] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e321] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e322]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e323]:
+                - link "Häufig gestellte Fragen" [ref=e324] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e325] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e326]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e329]:
+            - generic [ref=e330]: Zahlungsmöglichkeiten
+            - generic [ref=e331]:
+              - img "Klarna" [ref=e334]
+              - img "Paypal" [ref=e337]
+              - img "Mastercard Visa" [ref=e340]
+              - img "Google Pay" [ref=e343]
+              - img "Apple Pay" [ref=e346]
+              - img "Logo Billie" [ref=e349]
+          - generic [ref=e350]: "*Vom Hersteller unverbindlich empfohlener Preis. Alle Preise sind Abholpreise. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise."
+        - generic [ref=e353]:
+          - link "XXXLutz" [ref=e354] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e355] [cursor=pointer]: XXXLutz
+            - img [ref=e357] [cursor=pointer]
+          - generic [ref=e363]: © 2025 XXXLutz KG
+          - list [ref=e364]:
+            - listitem [ref=e365]:
+              - link "Impressum" [ref=e366] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e367]:
+              - link "AGB" [ref=e368] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e369]:
+              - link "Datenschutz" [ref=e370] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e371]:
+              - button "Cookie-Einstellungen" [ref=e372] [cursor=pointer]
+          - list [ref=e373]:
+            - listitem [ref=e374]:
+              - link "youtube" [ref=e375] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/XXXLutzTV
+            - listitem [ref=e376]:
+              - link "facebook" [ref=e377] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.at/
+            - listitem [ref=e378]:
+              - link "instagram" [ref=e379] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_at
+            - listitem [ref=e380]:
+              - link "pinterest" [ref=e381] [cursor=pointer]:
+                - /url: https://www.pinterest.at/xxxlutzAT/
+            - listitem [ref=e382]:
+              - link "tiktok" [ref=e383] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_at
+          - link "WACA accessibilty seal in silver" [ref=e384] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e385] [cursor=pointer]
+  - generic:
+    - log
+```

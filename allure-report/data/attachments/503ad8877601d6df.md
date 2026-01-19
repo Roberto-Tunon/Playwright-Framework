@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e9]:
+            - generic [ref=e10]:
+              - heading [level=1] [ref=e12]: Bestätigen und bezahlen
+              - generic [ref=e15]:
+                - text: Überprüfe vor der Zahlung noch einmal alle Angaben. Du profitierst außerdem vom Klarna
+                - link [ref=e16] [cursor=pointer]:
+                  - /url: https://www.klarna.com/at/kauferschutzrichtlinie/
+                  - text: Käuferschutz.
+            - button [ref=e22] [cursor=pointer]:
+              - generic [ref=e25] [cursor=pointer]:
+                - generic [ref=e27] [cursor=pointer]:
+                  - generic [ref=e33] [cursor=pointer]: TP
+                  - generic [ref=e35] [cursor=pointer]:
+                    - generic [ref=e36] [cursor=pointer]: customer@email.at
+                    - generic [ref=e37] [cursor=pointer]: 0676 2600456
+                - img [ref=e40] [cursor=pointer]
+            - button [ref=e45] [cursor=pointer]:
+              - generic [ref=e48] [cursor=pointer]:
+                - generic [ref=e50] [cursor=pointer]:
+                  - img [ref=e56] [cursor=pointer]
+                  - generic [ref=e61] [cursor=pointer]: Adyen Test Account
+                - img [ref=e64] [cursor=pointer]
+            - button [ref=e69] [cursor=pointer]:
+              - generic [ref=e72] [cursor=pointer]:
+                - generic [ref=e74] [cursor=pointer]:
+                  - img [ref=e80] [cursor=pointer]
+                  - generic [ref=e86] [cursor=pointer]: Zahlungsmethode
+                - img [ref=e89] [cursor=pointer]
+          - generic [ref=e100]:
+            - paragraph [ref=e103]: Bestellbetrag
+            - paragraph [ref=e107]: 119,00 €
+        - button [ref=e116] [cursor=pointer]:
+          - generic [ref=e117] [cursor=pointer]:
+            - generic [ref=e119] [cursor=pointer]: Zahlungspflichtig bestellen
+            - img [ref=e121] [cursor=pointer]
+        - button [ref=e132] [cursor=pointer]:
+          - img [ref=e135] [cursor=pointer]
+      - dialog "Wie möchtest du 119,00 € bezahlen?" [active] [ref=e141]:
+        - generic [ref=e144]:
+          - generic [ref=e148]:
+            - heading "Wie möchtest du 119,00 € bezahlen?" [level=2] [ref=e151]
+            - radiogroup "Wie möchtest du 119,00 € bezahlen?" [ref=e153]:
+              - generic [ref=e156]:
+                - radio "Sofortüberweisung Testbank •••• 7264" [checked] [ref=e157] [cursor=pointer]
+                - generic [ref=e161]:
+                  - generic [ref=e163]:
+                    - generic [ref=e165]: Sofortüberweisung
+                    - generic [ref=e167]: Testbank •••• 7264
+                  - generic [ref=e169]:
+                    - img [ref=e172]
+                    - img [ref=e180]
+              - generic [ref=e186]:
+                - radio "Lastschrift STADTSPARKASSE BORKEN (HESS... •••• 0131" [ref=e187] [cursor=pointer]
+                - generic [ref=e191]:
+                  - generic [ref=e193]:
+                    - generic [ref=e195]: Lastschrift
+                    - generic [ref=e197]: STADTSPARKASSE BORKEN (HESS... •••• 0131
+                  - img [ref=e202]
+              - generic [ref=e213]:
+                - radio "Karte Speichere deine Kartendaten für zukünftige Zahlungen" [ref=e214] [cursor=pointer]
+                - generic [ref=e218]:
+                  - generic [ref=e220]:
+                    - generic [ref=e222]: Karte
+                    - generic [ref=e224]: Speichere deine Kartendaten für zukünftige Zahlungen
+                  - generic [ref=e227]:
+                    - img [ref=e228]
+                    - img [ref=e233]
+          - button "Weiter" [ref=e249] [cursor=pointer]:
+            - generic [ref=e252] [cursor=pointer]: Weiter
+          - button "Schließen" [ref=e261] [cursor=pointer]:
+            - img [ref=e264] [cursor=pointer]
+```

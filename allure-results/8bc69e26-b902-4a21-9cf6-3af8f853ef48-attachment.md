@@ -1,0 +1,202 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: checkout.titletag
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - heading "Details" [level=2] [ref=e38] [cursor=pointer]
+                - button "bearbeiten" [ref=e40] [cursor=pointer]:
+                  - generic [ref=e41] [cursor=pointer]: bearbeiten
+                - generic [ref=e46]:
+                  - generic [ref=e47]:
+                    - generic [ref=e48]:
+                      - term [ref=e49]:
+                        - paragraph [ref=e50]: Kontakt
+                      - definition [ref=e51]:
+                        - paragraph [ref=e52]: roberto.tunon@xxxl.digital
+                        - paragraph [ref=e53]: "+4930250025"
+                    - generic [ref=e54]:
+                      - term [ref=e55]:
+                        - paragraph [ref=e56]: Lieferadresse
+                      - definition [ref=e57]:
+                        - paragraph [ref=e58]: Roberto Tuñon
+                        - paragraph [ref=e59]: Bahnhofstraße 10
+                        - paragraph [ref=e60]: "10178"
+                        - paragraph [ref=e61]: Berlin
+                  - generic [ref=e63]:
+                    - term [ref=e64]:
+                      - paragraph [ref=e65]: Rechnungsadresse
+                    - definition [ref=e66]:
+                      - paragraph [ref=e67]: Wie Lieferadresse
+              - generic [ref=e68]:
+                - generic [ref=e71]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e72]
+                - group "Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus." [ref=e76]:
+                  - generic [ref=e77]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+                  - paragraph [ref=e78]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+                  - generic [ref=e81] [cursor=pointer]:
+                    - radio "Apple Pay" [ref=e82]
+                    - generic [ref=e86] [cursor=pointer]: Apple Pay
+                  - generic [ref=e89] [cursor=pointer]:
+                    - radio "Kauf auf Rechnung" [ref=e90]
+                    - generic [ref=e94] [cursor=pointer]: Kauf auf Rechnung
+                  - generic [ref=e95]:
+                    - generic [ref=e97] [cursor=pointer]:
+                      - radio "PayPal Einfache Zahlung über Ihr PayPal-Konto. Nach der Kaufbestätigung werden Sie direkt zu PayPal weitergeleitet. Jetzt auch Ratenzahlung möglich." [checked] [ref=e98]
+                      - generic [ref=e102] [cursor=pointer]:
+                        - generic [ref=e103] [cursor=pointer]: PayPal
+                        - generic [ref=e106] [cursor=pointer]: Einfache Zahlung über Ihr PayPal-Konto. Nach der Kaufbestätigung werden Sie direkt zu PayPal weitergeleitet. Jetzt auch Ratenzahlung möglich.
+                    - button "Weiter" [ref=e108] [cursor=pointer]:
+                      - generic [ref=e109] [cursor=pointer]: Weiter
+                  - generic [ref=e112] [cursor=pointer]:
+                    - radio "Sofortüberweisung" [ref=e113]
+                    - generic [ref=e117] [cursor=pointer]: Sofortüberweisung
+                  - generic [ref=e120] [cursor=pointer]:
+                    - radio "Google Pay" [ref=e121]
+                    - generic [ref=e125] [cursor=pointer]: Google Pay
+                  - generic [ref=e128] [cursor=pointer]:
+                    - radio "Kreditkarte / Debitkarte" [ref=e129]
+                    - generic [ref=e133] [cursor=pointer]: Kreditkarte / Debitkarte
+              - generic [ref=e134]:
+                - generic [ref=e137]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e140]:
+              - heading "Warenkorb" [level=3] [ref=e141]
+              - link "Warenkorb Bearbeiten" [ref=e142] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e143] [cursor=pointer]: Bearbeiten
+            - generic [ref=e144]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e145] [cursor=pointer]:
+                - img [ref=e149] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e150]
+              - generic [ref=e151]:
+                - generic [ref=e152]: Warenwert
+                - generic [ref=e153]:
+                  - text: € 10,
+                  - superscript [ref=e154]: "49"
+                - button "Lieferkosten" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156] [cursor=pointer]: Lieferkosten
+                - generic [ref=e157]:
+                  - generic [ref=e158]: +
+                  - text: € 5,
+                  - superscript [ref=e159]: "99"
+              - generic [ref=e160]:
+                - generic [ref=e161]: Gesamtsumme
+                - generic [ref=e162]:
+                  - text: € 16,
+                  - superscript [ref=e163]: "48"
+                - generic [ref=e164]: inkl. gesetzlicher MwSt.
+              - generic [ref=e165]:
+                - button "Gutscheincode" [ref=e166] [cursor=pointer]:
+                  - generic [ref=e167] [cursor=pointer]: Gutscheincode
+                  - img [ref=e168] [cursor=pointer]
+                - generic [ref=e171]:
+                  - generic [ref=e174]:
+                    - textbox "Code kopieren" [ref=e175]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e176] [cursor=pointer]:
+                    - generic [ref=e177] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e178]:
+              - listitem [ref=e179]: Gratis Leihtransporter
+              - listitem [ref=e180]: 30 Tage Rückgabe
+              - listitem [ref=e181]: Sicher bezahlen
+    - contentinfo [ref=e182]:
+      - generic [ref=e183]:
+        - generic [ref=e185]:
+          - generic [ref=e188]:
+            - paragraph [ref=e189]: Hilfe & Kontakt
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - link "Zum Kontaktformular" [ref=e192] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e193] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e194]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e195]:
+                - link "Häufig gestellte Fragen" [ref=e196] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e197] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e198]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e199]:
+            - generic [ref=e200]: Versand
+            - generic [ref=e201]:
+              - img "DHL" [ref=e204]
+              - img "Hermes" [ref=e207]
+              - img "XXXLutz Spedition" [ref=e210]
+          - generic [ref=e211]:
+            - generic [ref=e212]: Zahlungsmöglichkeiten
+            - generic [ref=e213]:
+              - img "Paypal" [ref=e216]
+              - img "Klarna" [ref=e219]
+              - img "Master Card" [ref=e222]
+              - img "Visa" [ref=e225]
+              - img "Google Pay" [ref=e228]
+              - img "Apple Pay" [ref=e231]
+              - img "Logo Billie" [ref=e234]
+          - generic [ref=e235]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis ***Filialpreis ohne Freundschaftskarte.
+        - generic [ref=e238]:
+          - link "XXXLutz" [ref=e239] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e240] [cursor=pointer]: XXXLutz
+            - img [ref=e242] [cursor=pointer]
+          - generic [ref=e248]: © 2025 BDSK Handels GmbH & Co. KG
+          - list [ref=e249]:
+            - listitem [ref=e250]:
+              - link "IMPRESSUM" [ref=e251] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e252]:
+              - link "DATENSCHUTZ" [ref=e253] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e254]:
+              - link "AGB" [ref=e255] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e256]:
+              - button "COOKIE-EINSTELLUNGEN" [ref=e257] [cursor=pointer]
+          - list [ref=e258]:
+            - listitem [ref=e259]:
+              - link "facebook" [ref=e260] [cursor=pointer]:
+                - /url: https://www.facebook.com/XXXLutzDeutschland
+            - listitem [ref=e261]:
+              - link "instagram" [ref=e262] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_de/
+            - listitem [ref=e263]:
+              - link "pinterest" [ref=e264] [cursor=pointer]:
+                - /url: https://www.pinterest.de/xxxlutzdeutschland/
+            - listitem [ref=e265]:
+              - link "youtube" [ref=e266] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC1w2HpXiRl5pbLGQEwnUl2w
+            - listitem [ref=e267]:
+              - link "tiktok" [ref=e268] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_de
+          - link "WACA accessibilty seal in silver" [ref=e269] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e270] [cursor=pointer]
+  - generic:
+    - log
+```

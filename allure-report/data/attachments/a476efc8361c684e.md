@@ -1,0 +1,304 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Naročite se na e-novice in si zagotovite bon v vrednosti 5€" [ref=e9] [cursor=pointer]:
+              - /url: /c/e-novice
+              - generic [ref=e10] [cursor=pointer]: Naročite se na e-novice in si zagotovite bon v vrednosti 5€
+            - link "Brezplačna poštnina za spletna naročila nad 90 €" [ref=e11] [cursor=pointer]:
+              - /url: /c/dostava
+              - generic [ref=e12] [cursor=pointer]: Brezplačna poštnina za spletna naročila nad 90 €
+          - generic [ref=e14]:
+            - link "Katalogi" [ref=e15] [cursor=pointer]:
+              - /url: /c/katalogi
+              - generic [ref=e16] [cursor=pointer]: Katalogi
+            - link "Kontakt" [ref=e17] [cursor=pointer]:
+              - /url: /poslovalnice
+              - generic [ref=e18] [cursor=pointer]: Kontakt
+            - link "Pomoč kupcem" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Pomoč kupcem
+            - switch "Visok kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Visok kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Zamenjaj navigacijo" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Meni
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Skoči na glavno vsebino" [ref=e42] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e43]:
+            - generic [ref=e44]:
+              - button "Iskanje" [ref=e46] [cursor=pointer]
+              - searchbox "Iskanje izdelkov, blagovnih znamk ali novosti" [ref=e47]
+              - generic: Iskanje izdelkov, blagovnih znamk ali novosti
+          - generic [ref=e48]:
+            - link "Prijava" [ref=e50] [cursor=pointer]:
+              - /url: /signin
+              - generic [ref=e51] [cursor=pointer]: Prijava
+            - link "Favoriten 0 izdelki" [ref=e53] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e54] [cursor=pointer]: Zaznamki
+            - link "Košarica in dostava 1 izdelek" [ref=e56] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e57] [cursor=pointer]: "1"
+              - generic [ref=e58] [cursor=pointer]: Košarica
+          - navigation [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Pohištvo" [ref=e62] [cursor=pointer]:
+                  - /url: /c/pohistvo
+              - listitem [ref=e63]:
+                - link "Kuhinje" [ref=e64] [cursor=pointer]:
+                  - /url: /kuhinje-C127
+              - listitem [ref=e65]:
+                - link "Vse za kuhinjo" [ref=e66] [cursor=pointer]:
+                  - /url: /c/vse-za-kuhinjo
+              - listitem [ref=e67]:
+                - link "Dodatki za dom" [ref=e68] [cursor=pointer]:
+                  - /url: /c/dodatki-za-dom
+              - listitem [ref=e69]:
+                - link "Božič" [ref=e70] [cursor=pointer]:
+                  - /url: /c/bozic
+              - listitem [ref=e71]:
+                - link "Svetila" [ref=e72] [cursor=pointer]:
+                  - /url: /svetila-in-luci-C116
+              - listitem [ref=e73]:
+                - link "Baby" [ref=e74] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e75]:
+                - link "Preproge" [ref=e76] [cursor=pointer]:
+                  - /url: /preproge-in-tepihi-C117
+              - listitem [ref=e77]:
+                - link "Ideje & nasveti" [ref=e78] [cursor=pointer]:
+                  - /url: /c/ideje-in-nasveti
+              - listitem [ref=e79]:
+                - link "Akcije & katalogi" [ref=e80] [cursor=pointer]:
+                  - /url: /c/akcije-in-katalogi
+              - listitem [ref=e81]:
+                - link "Samo na spletu" [ref=e82] [cursor=pointer]:
+                  - /url: /c/samo-na-spletu
+              - listitem [ref=e83]:
+                - link "B2B" [ref=e84] [cursor=pointer]:
+                  - /url: /c/b2b
+      - main [ref=e85]:
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: "Vnesi kodo:"
+            - button "SMS" [ref=e95] [cursor=pointer]
+          - generic [ref=e96]:
+            - generic [ref=e97]: 30% POPUST NA VSE POHIŠTVO, RAZEN NA ŽE NEZNIŽANO pri nakupu nad 100€.
+            - link "Poglej pogoje" [ref=e98] [cursor=pointer]:
+              - /url: /c/sms
+        - status [ref=e99]:
+          - generic [ref=e100]: cart.titletag
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - heading "Košarica" [level=1] [ref=e105]
+              - link "Nadaljuj z nakupovanjem" [ref=e106] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e107] [cursor=pointer]: Nadaljuj z nakupovanjem
+            - generic [ref=e108]:
+              - generic [ref=e109]: Verkauf durch XXXLutz
+              - list [ref=e110]:
+                - listitem [ref=e111]:
+                  - article [ref=e112]:
+                    - generic [ref=e113]:
+                      - img "UMIVALNIK - bela, Design, steklo (112/48/1,5cm) - Xora" [ref=e114]
+                      - link [ref=e115] [cursor=pointer]:
+                        - /url: /p/xora-umivalnik-001977026403
+                    - generic [ref=e116]:
+                      - generic [ref=e117]:
+                        - generic [ref=e118]: "001977026403"
+                        - link "Št. izdelka 1977026403" [ref=e119] [cursor=pointer]:
+                          - /url: /p/xora-umivalnik-001977026403
+                          - generic [ref=e120] [cursor=pointer]: Št. izdelka 1977026403
+                      - link "Xora UMIVALNIK" [ref=e122] [cursor=pointer]:
+                        - /url: /p/xora-umivalnik-001977026403
+                        - heading "Xora UMIVALNIK" [level=2] [ref=e123] [cursor=pointer]:
+                          - generic [ref=e124] [cursor=pointer]: Xora UMIVALNIK
+                      - generic [ref=e125]:
+                        - generic [ref=e126]: bela
+                        - generic [ref=e127]: 112/48/1,5 cm
+                      - paragraph [ref=e130]:
+                        - text: Prodaja in dostava s strani
+                        - generic [ref=e131]: XXXLutz
+                    - generic [ref=e134]:
+                      - generic [ref=e136]: € 380,‒
+                      - generic [ref=e137]: € 380,‒ / Kos
+                    - generic [ref=e138]:
+                      - button "Odstrani izdelek - UMIVALNIK" [ref=e139] [cursor=pointer]
+                      - generic [ref=e140]:
+                        - textbox "Količina" [ref=e141]: "1"
+                        - generic [ref=e142]: Količina
+                      - button "1" [ref=e143] [cursor=pointer]:
+                        - generic [ref=e144] [cursor=pointer]: "1"
+                      - button "Povečaj število - UMIVALNIK" [ref=e145] [cursor=pointer]
+                    - generic [ref=e147]:
+                      - button "UMIVALNIK - Shrani izdelek za kasneje" [ref=e148] [cursor=pointer]:
+                        - generic [ref=e150] [cursor=pointer]: Shrani izdelek za kasneje
+                      - button "UMIVALNIK - Odstrani izdelek" [ref=e151] [cursor=pointer]:
+                        - generic [ref=e153] [cursor=pointer]: Odstrani izdelek
+                  - generic [ref=e154]:
+                    - generic [ref=e155]:
+                      - generic [ref=e159]: Osebni prevzem
+                      - button "Izberi poslovalnico" [ref=e161] [cursor=pointer]:
+                        - generic [ref=e162] [cursor=pointer]: Izberi poslovalnico
+                      - generic [ref=e163]:
+                        - text: Stroški dostave
+                        - generic [ref=e164]: + € 0,‒
+                    - paragraph [ref=e165]:
+                      - generic [ref=e166]:
+                        - text: Pozor, prevzemno skladišče je lahko nekaj minut oddaljeno od poslovalnice!
+                        - strong [ref=e167]: Preverite naslov za prevzem
+                        - text: v Potrdilu naročila.
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - heading "Povzetek" [level=2] [ref=e171]
+              - generic [ref=e172]:
+                - generic [ref=e173]:
+                  - generic [ref=e174]: Vrednost blaga
+                  - generic [ref=e175]: € 380,‒
+                  - button "Stroški dostave" [ref=e176] [cursor=pointer]:
+                    - generic [ref=e177] [cursor=pointer]: Stroški dostave
+                  - generic [ref=e178]: gratis
+                - generic [ref=e179]:
+                  - generic [ref=e180]: Skupni znesek
+                  - generic [ref=e181]: € 380,‒
+                  - generic [ref=e182]: DDV vključen v ceno
+                - button "Na blagajno" [ref=e183] [cursor=pointer]:
+                  - generic [ref=e184] [cursor=pointer]: Na blagajno
+                - separator "ali" [ref=e185]
+                - button "Nakup s storitvijo GPay" [ref=e191] [cursor=pointer]
+            - generic [ref=e193]:
+              - button "Vnesi kodo" [ref=e194] [cursor=pointer]:
+                - generic [ref=e195] [cursor=pointer]: Vnesi kodo
+                - img [ref=e196] [cursor=pointer]
+              - generic [ref=e199]:
+                - generic [ref=e202]:
+                  - textbox "Vnesi kodo" [ref=e203]
+                  - generic: Vnesi kodo
+                - button "Uporabi" [ref=e204] [cursor=pointer]:
+                  - generic [ref=e205] [cursor=pointer]: Uporabi
+          - complementary [ref=e206]:
+            - link "Nadaljuj z nakupovanjem" [ref=e207] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e208] [cursor=pointer]: Nadaljuj z nakupovanjem
+    - contentinfo [ref=e209]:
+      - generic [ref=e210]:
+        - generic [ref=e211]:
+          - generic [ref=e212]: XXXL prednosti
+          - list [ref=e214]:
+            - listitem [ref=e215]:
+              - link "Bon v vrednosti 5€ ob prijavi na e-novice" [ref=e216] [cursor=pointer]:
+                - /url: /c/e-novice
+                - text: Bon v vrednosti 5€ ob prijavi na e-novice
+            - listitem [ref=e218]:
+              - link "Pogoji vračila v spletni trgovini" [ref=e219] [cursor=pointer]:
+                - /url: /c/vracilo
+                - text: Pogoji vračila v spletni trgovini
+            - listitem [ref=e221]:
+              - link "Varno plačevanje" [ref=e222] [cursor=pointer]:
+                - /url: /c/nacini-placila
+                - text: Varno plačevanje
+            - listitem [ref=e224]:
+              - link "Gratis najem transportnega vozila" [ref=e225] [cursor=pointer]:
+                - /url: /c/najem-transportnega-vozila
+                - text: Gratis najem transportnega vozila
+            - listitem [ref=e227]:
+              - link "Dostava in montaža" [ref=e228] [cursor=pointer]:
+                - /url: /c/montaza
+                - text: Dostava in montaža
+        - generic [ref=e231]:
+          - generic [ref=e234]:
+            - paragraph [ref=e235]: Pomoč kupcem
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - link "Kontaktni obrazec" [ref=e238] [cursor=pointer]:
+                  - /url: /kontakt
+                  - generic [ref=e239] [cursor=pointer]: Kontaktni obrazec
+                - paragraph [ref=e240]: Potrebujete še kakšen nasvet ali pomoč?
+              - generic [ref=e241]:
+                - link "Pogosta vprašanja" [ref=e242] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e243] [cursor=pointer]: Pogosta vprašanja
+                - paragraph [ref=e244]: V naših pogostih vprašanjih boste velikokrat našli pomoč.
+          - generic [ref=e245]:
+            - generic [ref=e246]: Kakovost v Lesnini
+            - link [ref=e250] [cursor=pointer]:
+              - /url: /c/bestbuy
+          - generic [ref=e251]:
+            - generic [ref=e252]: Načini plačila
+            - generic [ref=e253]:
+              - link [ref=e256] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e259] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e262] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e265] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#paypal
+              - link "googlepay.jpg" [ref=e268] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#googlepay
+                - img "googlepay.jpg" [ref=e269] [cursor=pointer]
+              - link [ref=e272] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#applepay
+              - link [ref=e275] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#gotovina
+              - link "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e278] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#predracun
+                - img "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e279] [cursor=pointer]
+          - generic [ref=e280]: "*Vse cene so v evrih in vključujejo DDV, cene ne vključujejo stroškov dostave, montaže ali dekorativnih dodatkov, prikazanih na slikah. Pridržujemo si pravico do sprememb in napak. Cene označene z ** so naše redne maloprodajne cene."
+        - generic [ref=e283]:
+          - link "XXXLutz" [ref=e284] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e285] [cursor=pointer]: XXXLutz
+            - img [ref=e287] [cursor=pointer]
+          - generic [ref=e296]: "@2025 LES-MMS d.o.o."
+          - list [ref=e297]:
+            - listitem [ref=e298]:
+              - link "O NAS" [ref=e299] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/o-nas
+            - listitem [ref=e300]:
+              - link "SPLOŠNI POGOJI" [ref=e301] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/splosni-pogoji
+            - listitem [ref=e302]:
+              - link "VARNOST IN ZASEBNOST" [ref=e303] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/agb
+            - listitem [ref=e304]:
+              - link "Izjava o dostopnosti" [ref=e305] [cursor=pointer]:
+                - /url: /c/izjava-o-dostopnosti
+            - listitem [ref=e306]:
+              - button "Piškotki" [ref=e307] [cursor=pointer]
+          - list [ref=e308]:
+            - listitem [ref=e309]:
+              - link "youtube" [ref=e310] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCg4u8_2N8P2UZ0y4eM51nqg
+            - listitem [ref=e311]:
+              - link "instagram" [ref=e312] [cursor=pointer]:
+                - /url: https://www.instagram.com/lesnina.si/?hl=en
+            - listitem [ref=e313]:
+              - link "facebook" [ref=e314] [cursor=pointer]:
+                - /url: https://www.facebook.com/lesnina.si/
+            - listitem [ref=e315]:
+              - link "tiktok" [ref=e316] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@lesnina_slovenija?lang=en
+            - listitem [ref=e317]:
+              - link "linkedin" [ref=e318] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/lesnina-xxxl/?viewAsMember=true
+          - link "WACA bronze certificate" [ref=e319] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA bronze certificate" [ref=e320] [cursor=pointer]
+  - generic:
+    - log
+```

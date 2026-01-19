@@ -1,0 +1,394 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link "19% MwSt. geschenkt" [ref=e9] [cursor=pointer]:
+            - /url: /c/aktion-aktuell
+            - generic [ref=e10] [cursor=pointer]: 19% MwSt. geschenkt
+          - generic [ref=e12]:
+            - link "gratis Click & Collect" [ref=e13] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - generic [ref=e14] [cursor=pointer]: gratis Click & Collect
+            - link "über 12.000 Produkte lagernd" [ref=e15] [cursor=pointer]:
+              - /url: /kategorien/root
+              - generic [ref=e16] [cursor=pointer]: über 12.000 Produkte lagernd
+            - link "54 Filialen in deiner Nähe" [ref=e17] [cursor=pointer]:
+              - /url: /filialen-de
+              - generic [ref=e18] [cursor=pointer]: 54 Filialen in deiner Nähe
+            - switch "Hoher Kontrast" [ref=e19]
+            - generic [ref=e20] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e21] [cursor=pointer]
+        - generic [ref=e25]:
+          - button "Navigation wechseln" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Menü
+          - link "XXXLutz" [ref=e28] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e29] [cursor=pointer]: XXXLutz
+            - img [ref=e31] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e34] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e35]:
+            - generic [ref=e36]:
+              - button "Suchen" [ref=e38] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e39]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+              - button "Bildersuche" [ref=e43] [cursor=pointer]
+          - generic [ref=e44]:
+            - link "Anmelden" [ref=e46] [cursor=pointer]:
+              - /url: /signin
+              - generic [ref=e47] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e49] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e50] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 1 Produkt" [ref=e52] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e53] [cursor=pointer]: "1"
+              - generic [ref=e54] [cursor=pointer]: Warenkorb
+          - navigation [ref=e55]:
+            - list [ref=e56]:
+              - listitem [ref=e57]:
+                - link "Produkte" [ref=e58] [cursor=pointer]:
+                  - /url: /kategorien/root
+              - listitem [ref=e59]:
+                - link "Räume" [ref=e60] [cursor=pointer]:
+                  - /url: /c/raeume
+              - listitem [ref=e61]:
+                - link "Weihnachten" [ref=e62] [cursor=pointer]:
+                  - /url: /weihnachten-C43
+              - listitem [ref=e63]:
+                - link "Küchen" [ref=e64] [cursor=pointer]:
+                  - /url: /alle-kuechen-C34
+              - listitem [ref=e65]:
+                - link "Trends" [ref=e66] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e67]:
+                - link "Werbung" [ref=e68] [cursor=pointer]:
+                  - /url: /c/xmas
+              - listitem [ref=e69]:
+                - link "SALE" [ref=e70] [cursor=pointer]:
+                  - /url: /c/sale
+              - listitem [ref=e71]:
+                - link "Beratungstermin" [ref=e72] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+      - main [ref=e73]:
+        - status [ref=e74]:
+          - generic [ref=e75]: cart.titletag
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - heading "Warenkorb" [level=1] [ref=e80]
+              - link "weiter einkaufen" [ref=e81] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e82] [cursor=pointer]: weiter einkaufen
+            - list [ref=e84]:
+              - listitem [ref=e85]:
+                - article [ref=e86]:
+                  - generic [ref=e87]:
+                    - img "Duschvorhangringe Robbie in Weiß, 12-tlg - Weiß (5/6cm) - Modern Living" [ref=e88]
+                    - link [ref=e89] [cursor=pointer]:
+                      - /url: /p/modern-living-duschvorhangringe-robbie-in-weiss-12-tlg-006995007101
+                  - generic [ref=e90]:
+                    - generic [ref=e91]: "% REDUZIERT %"
+                    - generic [ref=e92]:
+                      - generic [ref=e93]: "006995007101"
+                      - link "Artikelnr. 6995007101" [ref=e94] [cursor=pointer]:
+                        - /url: /p/modern-living-duschvorhangringe-robbie-in-weiss-12-tlg-006995007101
+                        - generic [ref=e95] [cursor=pointer]: Artikelnr. 6995007101
+                    - link "Modern Living Duschvorhangringe Robbie in Weiß, 12-tlg" [ref=e97] [cursor=pointer]:
+                      - /url: /p/modern-living-duschvorhangringe-robbie-in-weiss-12-tlg-006995007101
+                      - heading "Modern Living Duschvorhangringe Robbie in Weiß, 12-tlg" [level=2] [ref=e98] [cursor=pointer]:
+                        - generic [ref=e99] [cursor=pointer]: Modern Living Duschvorhangringe
+                        - generic [ref=e100] [cursor=pointer]: Robbie in Weiß, 12-tlg
+                    - generic [ref=e101]:
+                      - generic [ref=e102]: Weiß
+                      - generic [ref=e103]: 5/6 cm
+                  - generic [ref=e106]:
+                    - generic [ref=e107]:
+                      - generic [ref=e108]: € 4,99***
+                      - generic [ref=e109]:
+                        - text: € 2,
+                        - superscript [ref=e110]: "52"
+                    - generic [ref=e111]: € 2,52 / Stk
+                  - generic [ref=e112]:
+                    - button "Produkt entfernen - Duschvorhangringe Robbie in Weiß, 12-tlg" [ref=e113] [cursor=pointer]
+                    - generic [ref=e114]:
+                      - textbox "Menge" [ref=e115]: "1"
+                      - generic [ref=e116]: Menge
+                    - button "1" [ref=e117] [cursor=pointer]:
+                      - generic [ref=e118] [cursor=pointer]: "1"
+                    - button "Anzahl erhöhen - Duschvorhangringe Robbie in Weiß, 12-tlg" [ref=e119] [cursor=pointer]
+                  - generic [ref=e121]:
+                    - button "Duschvorhangringe Robbie in Weiß, 12-tlg - Für später merken" [ref=e122] [cursor=pointer]:
+                      - generic [ref=e124] [cursor=pointer]: Für später merken
+                    - button "Duschvorhangringe Robbie in Weiß, 12-tlg - Produkt entfernen" [ref=e125] [cursor=pointer]:
+                      - generic [ref=e127] [cursor=pointer]: Produkt entfernen
+                - generic [ref=e128]:
+                  - generic [ref=e129]:
+                    - generic [ref=e133]: Postversand
+                    - generic [ref=e134]:
+                      - generic [ref=e135]: Die geschätzte Lieferzeit richtet sich nach Ihrem Standort.
+                      - button "Lieferzeit berechnen" [ref=e140] [cursor=pointer]:
+                        - generic [ref=e143] [cursor=pointer]: Lieferzeit berechnen
+                    - generic [ref=e144]:
+                      - text: Lieferkosten
+                      - generic [ref=e145]: + € 5,99
+                  - paragraph [ref=e146]:
+                    - generic [ref=e147]: Die gesamten Lieferkosten Ihrer Bestellung finden Sie in der Zusammenfassung.
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - heading "Zusammenfassung" [level=2] [ref=e151]
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - generic [ref=e154]: Warenwert
+                  - generic [ref=e155]:
+                    - text: € 2,
+                    - superscript [ref=e156]: "52"
+                  - button "Lieferkosten" [ref=e157] [cursor=pointer]:
+                    - generic [ref=e158] [cursor=pointer]: Lieferkosten
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: +
+                    - text: € 5,
+                    - superscript [ref=e161]: "99"
+                - generic [ref=e162]:
+                  - generic [ref=e163]: Gesamt
+                  - generic [ref=e164]:
+                    - text: € 8,
+                    - superscript [ref=e165]: "51"
+                  - generic [ref=e166]: inkl. MwSt.
+                - button "zur Kasse" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e168] [cursor=pointer]: zur Kasse
+                - separator "oder" [ref=e169]
+                - generic [ref=e170]:
+                  - button "Mit GPay kaufen" [ref=e175] [cursor=pointer]
+                  - button "Mit Apple Pay kaufen" [ref=e180] [cursor=pointer]:
+                    - img [ref=e182] [cursor=pointer]:
+                      - generic [ref=e183] [cursor=pointer]:
+                        - generic [ref=e184] [cursor=pointer]: Mit
+                        - img [ref=e185] [cursor=pointer]
+                        - generic [ref=e193] [cursor=pointer]: kaufen
+            - generic [ref=e195]:
+              - button "Gutscheincode" [ref=e196] [cursor=pointer]:
+                - generic [ref=e197] [cursor=pointer]: Gutscheincode
+                - img [ref=e198] [cursor=pointer]
+              - generic [ref=e201]:
+                - generic [ref=e204]:
+                  - textbox "Code kopieren" [ref=e205]
+                  - generic: Code kopieren
+                - button "Gutschein einlösen" [ref=e206] [cursor=pointer]:
+                  - generic [ref=e207] [cursor=pointer]: Gutschein einlösen
+          - complementary [ref=e208]:
+            - link "weiter einkaufen" [ref=e209] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e210] [cursor=pointer]: weiter einkaufen
+    - contentinfo [ref=e211]:
+      - generic [ref=e212]:
+        - list [ref=e215]:
+          - listitem [ref=e216]:
+            - link "Click & Collect" [ref=e217] [cursor=pointer]:
+              - /url: /c/clickundcollect
+          - listitem [ref=e218]:
+            - link "30 Tage Rückgabe" [ref=e219] [cursor=pointer]:
+              - /url: /c/retouren
+          - listitem [ref=e220]:
+            - link "Gratis Transporter" [ref=e221] [cursor=pointer]:
+              - /url: /c/transporterleihen
+          - listitem [ref=e222]:
+            - link "Montage & Lieferung" [ref=e223] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+        - generic [ref=e224]:
+          - link "Die nächste Liste überspringen" [ref=e225] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+            - text: Abschnitt überspringen
+          - generic [ref=e226]:
+            - generic [ref=e228]:
+              - generic [ref=e229]: Über mömax
+              - list [ref=e230]:
+                - listitem [ref=e231]:
+                  - link "Presse" [ref=e232] [cursor=pointer]:
+                    - /url: https://pr.moemax.de
+                - listitem [ref=e233]:
+                  - link "Jobs bei mömax" [ref=e234] [cursor=pointer]:
+                    - /url: https://karriere.moemax.de
+                - listitem [ref=e235]:
+                  - link "Unternehmen" [ref=e236] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e237]:
+                  - link "Blog" [ref=e238] [cursor=pointer]:
+                    - /url: https://blog.moemax.de
+                - listitem [ref=e239]:
+                  - link "Aktueller Service" [ref=e240] [cursor=pointer]:
+                    - /url: /c/serviceuebersicht
+                - listitem [ref=e241]:
+                  - link "Grundsatzerklärung LkSG" [ref=e242] [cursor=pointer]:
+                    - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCWtJ6NbgSjtBlU_N73euysw/lksg_lieferkettengesetz_grundsatzerklarung_2024-25_de_en.pdf
+                - listitem [ref=e243]:
+                  - link "Jahresberichte LkSG" [ref=e244] [cursor=pointer]:
+                    - /url: /c/jahresberichte
+                - listitem [ref=e245]:
+                  - link "Verhaltenskodex für Lieferanten" [ref=e246] [cursor=pointer]:
+                    - /url: https://moemax.a.bigcontent.io/v1/static/NCQu_jutXb-aDcMsic9IzE8Q/lksg_lieferkettensorgfaltspflichtengesetz_verhaltenskodex-lieferanten_de_en.pdf
+                - listitem [ref=e247]:
+                  - link "Barrierefreiheit" [ref=e248] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+                - listitem [ref=e249]:
+                  - link "Auszeichnungen" [ref=e250] [cursor=pointer]:
+                    - /url: /c/auszeichnungen
+            - generic [ref=e252]:
+              - generic [ref=e253]: Service
+              - list [ref=e254]:
+                - listitem [ref=e255]:
+                  - link "Aktuelle Aktionen" [ref=e256] [cursor=pointer]:
+                    - /url: /c/xmas
+                - listitem [ref=e257]:
+                  - link "Prospekte" [ref=e258] [cursor=pointer]:
+                    - /url: /c/prospekte
+                - listitem [ref=e259]:
+                  - link "Aktionsbedingungen" [ref=e260] [cursor=pointer]:
+                    - /url: /c/aktionsnews
+                - listitem [ref=e261]:
+                  - link "Bonus Card" [ref=e262] [cursor=pointer]:
+                    - /url: /c/unserebonuscard
+                - listitem [ref=e263]:
+                  - link "Gutscheine online einlösen" [ref=e264] [cursor=pointer]:
+                    - /url: /c/onlinegutscheine-einloesen
+                - listitem [ref=e265]:
+                  - link "Geschenkgutscheine" [ref=e266] [cursor=pointer]:
+                    - /url: https://geschenkkarten.moemax.de/b2c/
+                - listitem [ref=e267]:
+                  - link "Lieferung" [ref=e268] [cursor=pointer]:
+                    - /url: /c/lieferungundmontage
+                - listitem [ref=e269]:
+                  - link "Leihtransporter buchen (Selbstabholung)" [ref=e270] [cursor=pointer]:
+                    - /url: /transporter
+                - listitem [ref=e271]:
+                  - link "Firmenkunden (B2B)" [ref=e272] [cursor=pointer]:
+                    - /url: /c/b2b
+                - listitem [ref=e273]:
+                  - link "Premiumschutz" [ref=e274] [cursor=pointer]:
+                    - /url: /c/helvetia-versicherungen
+                - listitem [ref=e275]:
+                  - link "Konfiguratoren" [ref=e276] [cursor=pointer]:
+                    - /url: /c/konfiguratoren
+            - generic [ref=e278]:
+              - generic [ref=e279]: Kontakt
+              - list [ref=e280]:
+                - listitem [ref=e281]:
+                  - link "Auftragsstatus" [ref=e282] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e283]:
+                  - link "Bestellhotline" [ref=e284] [cursor=pointer]:
+                    - /url: /c/bestellhotline
+                - listitem [ref=e285]:
+                  - link "Newsletter" [ref=e286] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e287]:
+                  - link "Click & Collect" [ref=e288] [cursor=pointer]:
+                    - /url: /c/clickundcollect
+                - listitem [ref=e289]:
+                  - link "FAQ" [ref=e290] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e291]:
+                  - link "Retouren & Reklamationen" [ref=e292] [cursor=pointer]:
+                    - /url: /c/retouren
+                - listitem [ref=e293]:
+                  - link "Hinweisgebersystem LkSG" [ref=e294] [cursor=pointer]:
+                    - /url: https://app.convercent.com/de-de/LandingPage/f569ee87-0d2c-ec11-a985-000d3ab9f062?_=1636105011105
+                - listitem [ref=e295]:
+                  - link "Hinweisgebersystem LkSG Verfahrensordnung" [ref=e296] [cursor=pointer]:
+                    - /url: https://moemax.a.bigcontent.io/v1/static/NCtqUiqceEaZLRlBYSmJjIRQ/lksg_hinweisgebersystem-verfahrensordnung_de_en_es_cn.pdf
+            - generic [ref=e298]:
+              - generic [ref=e299]: Filialen und Standorte
+              - list [ref=e300]:
+                - listitem [ref=e301]:
+                  - link "Standorte" [ref=e302] [cursor=pointer]:
+                    - /url: /filialen-de
+                - listitem [ref=e303]:
+                  - link "Filialschnäppchen" [ref=e304] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e305]:
+                  - link "Restaurants" [ref=e306] [cursor=pointer]:
+                    - /url: /c/unserrestaurant
+                - listitem [ref=e307]:
+                  - link "Beratungstermine" [ref=e308] [cursor=pointer]:
+                    - /url: /c/beratungstermin-vereinbaren
+                - listitem [ref=e309]:
+                  - link "Küchenberater" [ref=e310] [cursor=pointer]:
+                    - /url: /c/kuechen-beratungstermin
+                - listitem [ref=e311]:
+                  - link "Gratis Transporter" [ref=e312] [cursor=pointer]:
+                    - /url: /c/transporterleihen
+        - generic [ref=e314]:
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: Du hast noch Fragen?
+            - generic [ref=e319]:
+              - generic [ref=e320]:
+                - link "Zum Kontaktformular" [ref=e321] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e322] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e323]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e324]:
+                - link "Häufig gestellte Fragen" [ref=e325] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e326] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e327]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e328]:
+            - generic [ref=e329]: Versandpartner
+            - generic [ref=e330]:
+              - img "Rhenus Home Delivery Logo" [ref=e333]
+              - img "Hermes Logo" [ref=e336]
+              - img "DHL Logo" [ref=e339]
+          - generic [ref=e340]:
+            - generic [ref=e341]: Zahlungsmöglichkeiten
+            - generic [ref=e342]:
+              - img "Split It Logo" [ref=e345]
+              - img "Klarna Logo" [ref=e348]
+              - img "PayPal Logo" [ref=e351]
+              - img "Visa Logo" [ref=e354]
+              - img "Mastercard Logo" [ref=e357]
+              - img "Google Pay Logo" [ref=e360]
+              - img "Apple Pay Logo" [ref=e363]
+          - generic [ref=e364]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. ***UVP
+        - generic [ref=e367]:
+          - link "XXXLutz" [ref=e368] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e369] [cursor=pointer]: XXXLutz
+            - img [ref=e371] [cursor=pointer]
+          - generic [ref=e374]: © 2025 moemax Deutschland GmbH
+          - list [ref=e375]:
+            - listitem [ref=e376]:
+              - link "Impressum" [ref=e377] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e378]:
+              - link "AGB" [ref=e379] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e380]:
+              - link "Datenschutz" [ref=e381] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e382]:
+              - button "Cookie-Einstellungen" [ref=e383] [cursor=pointer]
+          - list [ref=e384]:
+            - listitem [ref=e385]:
+              - link "facebook" [ref=e386] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.de/
+            - listitem [ref=e387]:
+              - link "instagram" [ref=e388] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_de/
+            - listitem [ref=e389]:
+              - link "youtube" [ref=e390] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/MoemaxAT
+            - listitem [ref=e391]:
+              - link "tiktok" [ref=e392] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e393]:
+              - link "pinterest" [ref=e394] [cursor=pointer]:
+                - /url: https://www.pinterest.de/moemax_com/
+          - link [ref=e395] [cursor=pointer]:
+            - /url: /c/accessibility
+  - generic:
+    - log
+```

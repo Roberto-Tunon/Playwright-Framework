@@ -125,6 +125,30 @@
       "pay": "KN", 
       "file": "tests/E2E-Lutz-Payments.spec.js",
       "icon": "zap"
+    },
+    { 
+      "country": "DE", 
+      "rail": "xxxlutz", 
+      "mode": "3P", 
+      "pay": "KN", 
+      "file": "tests/E2E-Lutz-Payments.spec.js",
+      "icon": "zap"
+    },
+    { 
+      "country": "DE", 
+      "rail": "xxxlutz", 
+      "mode": "2P", 
+      "pay": "CC", 
+      "file": "tests/E2E-Lutz-Credit.spec.js",
+      "icon": "credit-card"
+    },
+    { 
+      "country": "AT", 
+      "rail": "xxxlutz", 
+      "mode": "2P", 
+      "pay": "KL", 
+      "file": "tests/E2E-Lutz-Payments.spec.js",
+      "icon": "zap"
     }
   ]
 }

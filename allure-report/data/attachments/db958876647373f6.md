@@ -1,0 +1,177 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: Bestellübersicht | XXXLutz.at
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - heading "Details" [level=2] [ref=e38] [cursor=pointer]
+                - button "bearbeiten" [ref=e40] [cursor=pointer]:
+                  - generic [ref=e41] [cursor=pointer]: bearbeiten
+                - generic [ref=e46]:
+                  - generic [ref=e47]:
+                    - generic [ref=e48]:
+                      - term [ref=e49]:
+                        - paragraph [ref=e50]: Kontakt
+                      - definition [ref=e51]:
+                        - paragraph [ref=e52]: roberto.tunon@xxxl.digital
+                        - paragraph [ref=e53]: "+4350545454"
+                    - generic [ref=e54]:
+                      - term [ref=e55]:
+                        - paragraph [ref=e56]: Lieferadresse
+                      - definition [ref=e57]:
+                        - paragraph [ref=e58]: Roberto Tuñon
+                        - paragraph [ref=e59]: Bahnhofstraße 10
+                        - paragraph [ref=e60]: "4020"
+                        - paragraph [ref=e61]: Linz
+                  - generic [ref=e63]:
+                    - term [ref=e64]:
+                      - paragraph [ref=e65]: Rechnungsadresse
+                    - definition [ref=e66]:
+                      - paragraph [ref=e67]: Theta Electronics Gold GmbH
+                      - paragraph [ref=e68]: "UID Nummer: ATU65296645"
+                      - paragraph [ref=e69]: Roberto Tuñon
+                      - paragraph [ref=e70]: Bahnhofstraße 10
+                      - paragraph [ref=e71]: "1100"
+                      - paragraph [ref=e72]: Wien
+              - generic [ref=e73]:
+                - generic [ref=e76]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e77]
+                - group "Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus." [ref=e81]:
+                  - generic [ref=e82]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+                  - paragraph [ref=e83]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+              - generic [ref=e84]:
+                - generic [ref=e87]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e88]
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - heading "Warenkorb" [level=3] [ref=e91]
+              - link "Warenkorb Bearbeiten" [ref=e92] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e93] [cursor=pointer]: Bearbeiten
+            - generic [ref=e94]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e95] [cursor=pointer]:
+                - img [ref=e99] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e100]
+              - generic [ref=e101]:
+                - generic [ref=e102]: Warenwert
+                - generic [ref=e103]:
+                  - text: € 32,
+                  - superscript [ref=e104]: "99"
+                - button "Lieferkosten" [ref=e105] [cursor=pointer]:
+                  - generic [ref=e106] [cursor=pointer]: Lieferkosten
+                - generic [ref=e107]:
+                  - generic [ref=e108]: +
+                  - text: € 4,
+                  - superscript [ref=e109]: "95"
+              - generic [ref=e110]:
+                - generic [ref=e111]: Gesamtsumme
+                - generic [ref=e112]:
+                  - text: € 37,
+                  - superscript [ref=e113]: "94"
+                - generic [ref=e114]: inkl. MwSt.
+              - generic [ref=e115]:
+                - button "Gutscheincode" [ref=e116] [cursor=pointer]:
+                  - generic [ref=e117] [cursor=pointer]: Gutscheincode
+                  - img [ref=e118] [cursor=pointer]
+                - generic [ref=e121]:
+                  - generic [ref=e124]:
+                    - textbox "Code kopieren" [ref=e125]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e126] [cursor=pointer]:
+                    - generic [ref=e127] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e128]:
+              - listitem [ref=e129]: Schnelle Lieferung
+              - listitem [ref=e130]: 30 Tage Rückgaberecht
+              - listitem [ref=e131]: Sicher bezahlen
+    - contentinfo [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e135]:
+          - generic [ref=e138]:
+            - paragraph [ref=e139]: Hilfe & Kontakt
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - link "Zum Kontaktformular" [ref=e142] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e143] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e144]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e145]:
+                - link "Häufig gestellte Fragen" [ref=e146] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e147] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e148]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e151]:
+            - generic [ref=e152]: Zahlungsmöglichkeiten
+            - generic [ref=e153]:
+              - img "Klarna" [ref=e156]
+              - img "Paypal" [ref=e159]
+              - img "Mastercard Visa" [ref=e162]
+              - img "Google Pay" [ref=e165]
+              - img "Apple Pay" [ref=e168]
+              - img "Logo Billie" [ref=e171]
+          - generic [ref=e172]: "*Vom Hersteller unverbindlich empfohlener Preis. Alle Preise sind Abholpreise. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise."
+        - generic [ref=e175]:
+          - link "XXXLutz" [ref=e176] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e177] [cursor=pointer]: XXXLutz
+            - img [ref=e179] [cursor=pointer]
+          - generic [ref=e185]: © 2025 XXXLutz KG
+          - list [ref=e186]:
+            - listitem [ref=e187]:
+              - link "Impressum" [ref=e188] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e189]:
+              - link "AGB" [ref=e190] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e191]:
+              - link "Datenschutz" [ref=e192] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e193]:
+              - button "Cookie-Einstellungen" [ref=e194] [cursor=pointer]
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - link "youtube" [ref=e197] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/XXXLutzTV
+            - listitem [ref=e198]:
+              - link "facebook" [ref=e199] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.at/
+            - listitem [ref=e200]:
+              - link "instagram" [ref=e201] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_at
+            - listitem [ref=e202]:
+              - link "pinterest" [ref=e203] [cursor=pointer]:
+                - /url: https://www.pinterest.at/xxxlutzAT/
+            - listitem [ref=e204]:
+              - link "tiktok" [ref=e205] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_at
+          - link "WACA accessibilty seal in silver" [ref=e206] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e207] [cursor=pointer]
+  - generic:
+    - log
+```

@@ -15,13 +15,12 @@ async function fillKlarna(page, pay, datosrail,rail) {
         await page.locator('//input[@id="phone"]').fill(datosrail.MKPPhoneApprove);
         await page.locator('//button[@id="onContinue"]').click();
         await page.locator('//input[@id="otp_field"]').fill('234570');
-        await page.locator('//button[@id="buy_button"]').click();
-       
-        /*
-        await page.locator('//button[@id="signInWithBankIdButton"]').click();        
-        await page.locator('//button[@data-testid="pick-plan"]').click();        
-        await page.locator('//button[@id="buy_button"]').click();
-        */
+
+        const planButton = page.getByTestId('confirm-and-pay');
+
+        if ((["AT", "DE"].includes(datosrail.Country)) || await planButton.isVisible()) {                   
+            await planButton.click();
+        }        
 
     } else if (pay === 'KL') {
         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]').click();
@@ -69,7 +68,13 @@ async function fillKlarna(page, pay, datosrail,rail) {
             await page.getByLabel('Handynummer').fill(datosrail.MKPPhoneApprove);
 
             await page.locator('//button[@id="onContinue"]').click();
-            await page.locator('//input[@id="otp_field"]').fill('234570');    
+            await page.locator('//input[@id="otp_field"]').fill('234570'); 
+            
+            const planButton = page.getByTestId('pick-plan');
+
+            if ((["AT", "DE"].includes(datosrail.Country)) || await planButton.isVisible()) {                   
+                await planButton.click();
+            }
             
             const selector = '//input[@id="banktransferkob_kp.0__label"]';
             const checkbox = page.locator(selector);
