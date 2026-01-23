@@ -92,12 +92,12 @@ async function run() {
     // Lógica por país
     if (country === 'HU') {
       // Solo Credit Card para Hungría
-      filteredPayments = allPayments.filter(p => p.id === 'credit');
+      filteredPayments = allPayments.filter(p => ['credit'].includes(p.id));
     } else if (country === 'SK') {
       // Slovakia: Añadimos Bank y Delivery a los básicos
       filteredPayments = allPayments.filter(p => ['credit', 'paypal', 'bank', 'delivery'].includes(p.id));
     } else if (country === 'RS') {
-      filteredPayments = allPayments.filter(p => p.id === 'corvus');
+      filteredPayments = allPayments.filter(p => ['corvus', 'delivery'].includes(p.id));
     } else if (['HR', 'SI', 'RO'].includes(country)) {
       const ids = ['credit', 'paypal', 'splitit', 'delivery'];
       // Solo RS y HR (si no es Lesnina) suelen llevar Corvus. Quitamos Corvus para Lesnina Croatia.

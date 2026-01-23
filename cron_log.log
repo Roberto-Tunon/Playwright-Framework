@@ -1,0 +1,192 @@
+
+🚀 BATCH START | 10 Tests in queue...
+
+[1/10] >>> Executing: DE - PP (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:12:1 › [DE] moemax - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:12:1 › [DE] moemax - Payment: PP (1P)
+Params: Country: DE, Rail: MOEMAX, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2Kℹ️ Delivery option combo not available. Continuing to login modal...
+
+[1A[2K✅ PayPal Login completed
+
+[1A[2K  1 passed (43.2s)
+✅ Result: PASSED
+
+[2/10] >>> Executing: AT - CC (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+Params: Country: AT, Rail: MOEMAX, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2K  1 passed (26.9s)
+✅ Result: PASSED
+
+[3/10] >>> Executing: AT - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2K  1 passed (29.5s)
+✅ Result: PASSED
+
+[4/10] >>> Executing: DE - PP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:12:1 › [DE] xxxlutz - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:12:1 › [DE] xxxlutz - Payment: PP (1P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2K✅ PayPal Login completed
+
+[1A[2K  1 passed (39.3s)
+✅ Result: PASSED
+
+[5/10] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:14:1 › [AT] xxxlutz - Payment: KL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:14:1 › [AT] xxxlutz - Payment: KL (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2K  1 passed (46.7s)
+✅ Result: PASSED
+
+[6/10] >>> Executing: AT - BI (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Billie.spec.js:12:1 › [AT] xxxlutz - Payment: BI (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Billie.spec.js:12:1 › [AT] xxxlutz - Payment: BI (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1 passed (51.6s)
+✅ Result: PASSED
+
+[7/10] >>> Executing: HR - CC (xxxlesnina)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HR] xxxlesnina - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HR] xxxlesnina - Payment: CC (1P)
+Params: Country: HR, Rail: XXXLESNINA, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2K  1 passed (24.4s)
+✅ Result: PASSED
+
+[8/10] >>> Executing: AT - KN (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:14:1 › [AT] xxxlutz - Payment: KN (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:14:1 › [AT] xxxlutz - Payment: KN (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2Kℹ Payment plan checkbox not visible
+
+[1A[2K  1 passed (1.2m)
+✅ Result: PASSED
+
+[9/10] >>> Executing: RO - SP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-SplitIT.spec.js:13:1 › [RO] xxxlutz - Payment: SP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-SplitIT.spec.js:13:1 › [RO] xxxlutz - Payment: SP (1P)
+Params: Country: RO, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-SplitIT.spec.js:13:1 › [RO] xxxlutz - Payment: SP (1P) ────────────
+
+    TimeoutError: locator.check: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[data-purpose="checkout.paymentMode.radiobutton."]').first()[22m
+
+
+      45 |     // await page.locator('[data-purpose="checkout.paymentOptions."]').click();   
+      46 |     const splititRadio = page.locator('input[data-purpose="checkout.paymentMode.radiobutton."]').first();
+    > 47 |     await splititRadio.check({ force: true });
+         |                        ^
+      48 |     await page.locator('[data-purpose="checkout.paymentOptions.default.submit"]').first().click(); 
+      49 |
+      50 |     if (["AT", "SI"].includes(cod_country)){
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-SplitIT.spec.js:47:24
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-SplitIT.spec.js:13:1 › [RO] xxxlutz - Payment: SP (1P) ─────────────
+❌ Result: FAILED (Continuing...)
+
+[10/10] >>> Executing: SK - PP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:12:1 › [SK] xxxlutz - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:12:1 › [SK] xxxlutz - Payment: PP (1P)
+Params: Country: SK, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2K✅ PayPal Login completed
+
+[1A[2K  1 passed (49.1s)
+✅ Result: PASSED
+
+✨ DASHBOARD UPDATED: 23/01/2026 | OK
+⏳ Processing Allure history...
+npm ERR! Cannot read property 'insert' of undefined
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/robe/.npm/_logs/2026-01-23T08_07_09_128Z-debug-0.log
+❌ Allure Error: Error: Command failed: npx allure generate allure-results --clean -o allure-report
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at checkExecSyncError (node:child_process:882:11)
+    at execSync (node:child_process:954:15)
+    at generateAllureReport (/home/robe/WKSPC_2/FE-Deployment-Regression/runner.js:291:5)
+    at /home/robe/WKSPC_2/FE-Deployment-Regression/runner.js:243:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 11259,
+  stdout: null,
+  stderr: null
+}

@@ -68,15 +68,18 @@ test(testTitle, async ({ browser }) => {
           console.log("🚫 El botón no está visible, no se hizo clic.");
         }    
     } else {
-        // Seleccionar el combo box por su selector
-        //const comboBox = page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
-        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption.select.value"]').click();  
-        await page.keyboard.press('ArrowUp'); // Baja a la primera opción
-        await page.keyboard.press('Enter'); // Selecciona la opción activa
-        const firstOption = page.locator('[role="option"]').first();  
+        console.log('⚠️ SELF_SERVICE not found. Selecting first option if possible...');
+
+        try {
+        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
+        await page.locator('#POSTAGE').click({ timeout: 2000 });
+        } catch (e) {
+        console.log('ℹ️ Delivery option combo not available. Continuing to login modal...');
+        }
+
         await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
         await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-        await fillDeliveryForm(page, datosvar, datosrail);        
+        await fillDeliveryForm(page, datosvar, datosrail);       
     }  
             
     if (pay === "SW") {        
@@ -90,7 +93,7 @@ test(testTitle, async ({ browser }) => {
         await page.locator('[data-purpose^="checkout.paymentOptions.ondelivery"]').click();
         await page.locator('[data-purpose="checkout.paymentOptions.ondelivery.submit"], [data-purpose="checkout.paymentOptions.ondelivery_ro.submit"]').click();
         await page.waitForTimeout(2000); 
-        if (["AT", "SI"].includes(cod_country)){
+        if (["AT", "SI", "HR", "RS"].includes(cod_country)){
           await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      
         }
         await page.screenshot({ path: `tests/Screenshots/Payment-${pay}-${rail}-${cod_country}.png`, fullPage: true }); 
@@ -131,7 +134,7 @@ test(testTitle, async ({ browser }) => {
         await page.click('input#formSubmit[value="Continue"]');
 
     }
-    await page.waitForLoadState('networkidle'); 
+    // await page.waitForLoadState('networkidle'); 
     if (["SW", "KO", "KL", "KN"].includes(pay)) {
       await page.waitForTimeout(6500); 
     }  

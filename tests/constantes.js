@@ -93,6 +93,8 @@ const constantes = {
       PostalCode: '8112',
       City: 'Otelfingen', 
       Product: '37313811',
+      MKPPhoneApprove: "+41758680000",
+      MKPPhoneDeny: "+41758680001",
       Phone: '442154000',
       FrameNumber: 'Iframe for card number',
       FrameDate: 'Iframe for expiry date',
@@ -139,7 +141,7 @@ const constantes = {
 
     datosSI: {      
       Cookiebutton: 'V redu je!',	
-      PostalCode: '1002',
+      PostalCode: '1211',
       City: 'Ljubljana', 
       Phone: '013061215',
       FrameNumber: 'Iframe za številko kartice',

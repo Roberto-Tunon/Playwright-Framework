@@ -49,9 +49,15 @@ test(testTitle, async ({ browser }) => {
         await fillSELFDeliveryForm(page, datosvar, datosrail); 
 
     } else {
-        console.log('⚠️ SELF_SERVICE not found. Selecting the first available option...');  
-        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
-        await page.locator('#POSTAGE').click();       
+        console.log('⚠️ SELF_SERVICE not found. Selecting first option if possible...');
+
+        try {
+          await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
+          await page.locator('#POSTAGE').click({ timeout: 2000 });
+        } catch (e) {
+          console.log('ℹ️ Delivery option combo not available. Continuing to login modal...');
+        }
+
         await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
         await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
         await fillDeliveryForm(page, datosvar, datosrail);

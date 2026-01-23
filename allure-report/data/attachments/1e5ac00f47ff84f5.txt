@@ -1,0 +1,3 @@
+Params: Country: SK, Rail: XXXLUTZ, Mode: 1P
+⚠️ SELF_SERVICE not found. Selecting first option if possible...
+✅ PayPal Login completed
