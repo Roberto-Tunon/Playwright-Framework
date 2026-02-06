@@ -1,10 +1,7 @@
 const { test, expect } = require('@playwright/test');
-const { constantes } = require('./constantes');
 const { PayQC, datosvar } = require('./constantes');
-const { fillCreditCard } = require('../utils/fillCreditCard');
 const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillSSO } = require('../utils/fillSSO');
-const { AcceptCookies } = require('../utils/AcceptCookies');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
 
 

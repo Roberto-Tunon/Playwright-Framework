@@ -1,0 +1,183 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: Bestellübersicht | XXXLutz.at
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - heading "Rechnungsadresse" [level=2] [ref=e38] [cursor=pointer]
+                - button "bearbeiten" [ref=e40] [cursor=pointer]:
+                  - generic [ref=e41] [cursor=pointer]: bearbeiten
+                - generic [ref=e46]:
+                  - generic [ref=e48]:
+                    - term [ref=e49]:
+                      - paragraph [ref=e50]: Kontakt
+                    - definition:
+                      - paragraph
+                      - paragraph
+                  - generic [ref=e52]:
+                    - term [ref=e53]:
+                      - paragraph [ref=e54]: Rechnungsadresse
+                    - definition [ref=e55]:
+                      - paragraph [ref=e56]: Roberto Tuñon
+                      - paragraph [ref=e57]: Bahnhofstraße 10
+                      - paragraph [ref=e58]: "4020"
+                      - paragraph [ref=e59]: Linz
+              - generic [ref=e60]:
+                - generic [ref=e63]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e64]
+                - group "Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus." [ref=e68]:
+                  - generic [ref=e69]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+                  - paragraph [ref=e70]: Bitte wählen Sie eine Zahlungsart für Ihre Bestellung aus.
+                  - generic [ref=e73] [cursor=pointer]:
+                    - radio "Sofortüberweisung" [ref=e74]
+                    - generic [ref=e78] [cursor=pointer]: Sofortüberweisung
+                  - generic [ref=e81] [cursor=pointer]:
+                    - radio "Kreditkarte / Debitkarte" [ref=e82]
+                    - generic [ref=e86] [cursor=pointer]: Kreditkarte / Debitkarte
+                  - generic [ref=e89] [cursor=pointer]:
+                    - radio "PayPal" [ref=e90]
+                    - generic [ref=e94] [cursor=pointer]: PayPal
+                  - generic [ref=e95]:
+                    - generic [ref=e97] [cursor=pointer]:
+                      - radio "Google Pay Einfache Zahlung über Google Pay. Nach der Kaufbestätigung werden Sie direkt zu Google Pay weitergeleitet." [checked] [active] [ref=e98]
+                      - generic [ref=e102] [cursor=pointer]:
+                        - generic [ref=e103] [cursor=pointer]: Google Pay
+                        - generic [ref=e106] [cursor=pointer]: Einfache Zahlung über Google Pay. Nach der Kaufbestätigung werden Sie direkt zu Google Pay weitergeleitet.
+                    - button "Weiter" [ref=e108] [cursor=pointer]:
+                      - generic [ref=e109] [cursor=pointer]: Weiter
+                  - generic [ref=e112] [cursor=pointer]:
+                    - radio "Apple Pay" [ref=e113]
+                    - generic [ref=e117] [cursor=pointer]: Apple Pay
+              - generic [ref=e118]:
+                - generic [ref=e121]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e122]
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - heading "Warenkorb" [level=3] [ref=e125]
+              - link "Warenkorb Bearbeiten" [ref=e126] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e127] [cursor=pointer]: Bearbeiten
+            - generic [ref=e128]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e129] [cursor=pointer]:
+                - img [ref=e133] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e134]
+              - generic [ref=e135]:
+                - generic [ref=e136]: Warenwert
+                - generic [ref=e137]:
+                  - text: € 44,
+                  - superscript [ref=e138]: "90"
+                - button "Lieferkosten" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e140] [cursor=pointer]: Lieferkosten
+                - generic [ref=e141]: gratis
+              - generic [ref=e142]:
+                - generic [ref=e143]: Gesamtsumme
+                - generic [ref=e144]:
+                  - text: € 44,
+                  - superscript [ref=e145]: "90"
+                - generic [ref=e146]: inkl. MwSt.
+              - generic [ref=e147]:
+                - button "Gutscheincode" [ref=e148] [cursor=pointer]:
+                  - generic [ref=e149] [cursor=pointer]: Gutscheincode
+                  - img [ref=e150] [cursor=pointer]
+                - generic [ref=e153]:
+                  - generic [ref=e156]:
+                    - textbox "Code kopieren" [ref=e157]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e158] [cursor=pointer]:
+                    - generic [ref=e159] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e160]:
+              - listitem [ref=e161]: Schnelle Lieferung
+              - listitem [ref=e162]: 30 Tage Rückgaberecht
+              - listitem [ref=e163]: Sicher bezahlen
+    - contentinfo [ref=e164]:
+      - generic [ref=e165]:
+        - generic [ref=e167]:
+          - generic [ref=e170]:
+            - paragraph [ref=e171]: Hilfe & Kontakt
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - link "Zum Kontaktformular" [ref=e174] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e175] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e176]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e177]:
+                - link "Häufig gestellte Fragen" [ref=e178] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e179] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e180]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e183]:
+            - generic [ref=e184]: Zahlungsmöglichkeiten
+            - generic [ref=e185]:
+              - img "Klarna" [ref=e188]
+              - img "Paypal" [ref=e191]
+              - img "Mastercard Visa" [ref=e194]
+              - img "Google Pay" [ref=e197]
+              - img "Apple Pay" [ref=e200]
+              - img "Logo Billie" [ref=e203]
+          - generic [ref=e204]: "*Vom Hersteller unverbindlich empfohlener Preis. Alle Preise sind Abholpreise. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise!"
+        - generic [ref=e207]:
+          - link "XXXLutz" [ref=e208] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e209] [cursor=pointer]: XXXLutz
+            - img [ref=e211] [cursor=pointer]
+          - generic [ref=e217]: © 2025 XXXLutz KG
+          - list [ref=e218]:
+            - listitem [ref=e219]:
+              - link "Impressum" [ref=e220] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e221]:
+              - link "AGB" [ref=e222] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e223]:
+              - link "Datenschutz" [ref=e224] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e225]:
+              - button "Cookie-Einstellungen" [ref=e226] [cursor=pointer]
+          - list [ref=e227]:
+            - listitem [ref=e228]:
+              - link "youtube" [ref=e229] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/XXXLutzTV
+            - listitem [ref=e230]:
+              - link "facebook" [ref=e231] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.at/
+            - listitem [ref=e232]:
+              - link "instagram" [ref=e233] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_at
+            - listitem [ref=e234]:
+              - link "pinterest" [ref=e235] [cursor=pointer]:
+                - /url: https://www.pinterest.at/xxxlutzAT/
+            - listitem [ref=e236]:
+              - link "tiktok" [ref=e237] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_at
+          - link "WACA accessibilty seal in silver" [ref=e238] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e239] [cursor=pointer]
+  - generic:
+    - log
+```

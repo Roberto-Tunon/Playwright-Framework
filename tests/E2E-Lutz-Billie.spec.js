@@ -1,7 +1,6 @@
-import { step, description, label, tag, parameter } from "allure-js-commons";
+import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
 const { test, expect } = require('@playwright/test');
-const { constantes } = require('./constantes');
-const { PayQC, datosvar } = require('./constantes');
+const { datosvar } = require('./constantes');
 const { fillDeliveryFormCompany } = require('../utils/fillDeliveryFormCompany');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
 const { OpenPage } = require('../utils/OpenPage');
@@ -25,9 +24,13 @@ test(testTitle, async ({ browser }) => {
     const mode = process.env.MODE || '1P';
     const datosrail = ObtenerDatos(cod_country);  
     
-    await description("E2E Test for " + process.env.COUNTRY);
-    await tag(process.env.COUNTRY);
-    await parameter("Mode", process.env.MODE);
+    await epic(rail);      
+    await feature(cod_country);             
+    await story('Billie');
+
+    await description("E2E Test for " + rail + "-" + cod_country);
+    await tag(cod_country);
+    await parameter("Rail", process.env.RAIL);
    
     await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);    
     

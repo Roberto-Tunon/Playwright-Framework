@@ -1,8 +1,7 @@
-import { step, description, label, tag, parameter } from "allure-js-commons";
-const { test, expect } = require('@playwright/test');
-const { constantes } = require('./constantes');
-const { PayQC, datosvar } = require('./constantes');
-const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
+import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
+import { DeliveryOption } from "../utils/DeliveryOption";
+const { test } = require('@playwright/test');
+const { datosvar } = require('./constantes');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
 const { OpenPage } = require('../utils/OpenPage');
 
@@ -25,43 +24,18 @@ test(testTitle, async ({ browser }) => {
     const mode = process.env.MODE || '1P';
     const datosrail = ObtenerDatos(cod_country);
 
-    await description("E2E Test for " + process.env.COUNTRY);
-    await tag(process.env.COUNTRY);
-    await parameter("Mode", process.env.MODE);
+    await epic(rail);      
+    await feature(cod_country);             
+    await story('Paypal');
+
+    await description("E2E Test for " + rail + "-" + cod_country);
+    await tag(cod_country);
+    await parameter("Rail", process.env.RAIL);
+
    
     await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
 
-    const deliverySelect = page.locator('select[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
-    const selfServiceOption = deliverySelect.locator('option[value="SELF_SERVICE"]');    
-
-    if (await selfServiceOption.count() > 0) {
-        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
-        await page.locator('#SELF_SERVICE').click();
-
-        await page.getByTestId('locationPicker.button').click();
-        await page.locator('[data-purpose="locationFinder.input.field"]').fill(datosrail.PostalCode);
-        await page.getByRole('button', { name: datosrail.City}).click();    
-        await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();
-
-        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-
-        await fillSELFDeliveryForm(page, datosvar, datosrail); 
-
-    } else {
-        console.log('⚠️ SELF_SERVICE not found. Selecting first option if possible...');
-
-        try {
-          await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
-          await page.locator('#POSTAGE').click({ timeout: 2000 });
-        } catch (e) {
-          console.log('ℹ️ Delivery option combo not available. Continuing to login modal...');
-        }
-
-        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-        await fillDeliveryForm(page, datosvar, datosrail);
-    }
+    await DeliveryOption(page, datosvar, datosrail, 'PP');  
 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal"]').first().click(); 
     await page.locator('[data-purpose="checkout.paymentOptions.paypal.submit"]').click();

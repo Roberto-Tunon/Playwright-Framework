@@ -1,0 +1,387 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link "19% MwSt. geschenkt" [ref=e9] [cursor=pointer]:
+            - /url: /c/aktion-aktuell
+            - generic [ref=e10] [cursor=pointer]: 19% MwSt. geschenkt
+          - link "-25% auf fast den gesamten Einkauf" [ref=e11] [cursor=pointer]:
+            - /url: /c/aktion
+            - generic [ref=e12] [cursor=pointer]: "-25% auf fast den gesamten Einkauf"
+        - generic [ref=e14]:
+          - link "gratis Click & Collect" [ref=e15] [cursor=pointer]:
+            - /url: /c/clickundcollect
+            - generic [ref=e16] [cursor=pointer]: gratis Click & Collect
+          - link "über 12.000 Produkte lagernd" [ref=e17] [cursor=pointer]:
+            - /url: /kategorien/root
+            - generic [ref=e18] [cursor=pointer]: über 12.000 Produkte lagernd
+          - link "54 Filialen in deiner Nähe" [ref=e19] [cursor=pointer]:
+            - /url: /filialen-de
+            - generic [ref=e20] [cursor=pointer]: 54 Filialen in deiner Nähe
+          - switch "Hoher Kontrast" [ref=e21]
+          - generic [ref=e22] [cursor=pointer]:
+            - text: Hoher Kontrast
+            - img [ref=e23] [cursor=pointer]
+      - generic [ref=e27]:
+        - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]: Menü
+        - link "XXXLutz" [ref=e30] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e31] [cursor=pointer]: XXXLutz
+          - img [ref=e33] [cursor=pointer]
+        - link "Zum Hauptinhalt springen" [ref=e36] [cursor=pointer]:
+          - /url: "#main"
+        - search [ref=e37]:
+          - generic [ref=e38]:
+            - button "Suchen" [ref=e40] [cursor=pointer]
+            - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e41]
+            - generic: Suche nach Produkten, Marken oder Neuheiten
+            - button "Bildersuche" [ref=e45] [cursor=pointer]
+        - generic [ref=e46]:
+          - link "Anmelden" [ref=e48] [cursor=pointer]:
+            - /url: /signin
+            - generic [ref=e49] [cursor=pointer]: Anmelden
+          - link "Favoriten 0 Produkte" [ref=e51] [cursor=pointer]:
+            - /url: /favourites
+            - generic [ref=e52] [cursor=pointer]: Merkliste
+          - link "Mein Warenkorb 1 Produkt" [ref=e54] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=e55] [cursor=pointer]: "1"
+            - generic [ref=e56] [cursor=pointer]: Warenkorb
+        - navigation [ref=e57]:
+          - list [ref=e58]:
+            - listitem [ref=e59]:
+              - link "Produkte" [ref=e60] [cursor=pointer]:
+                - /url: /kategorien/root
+            - listitem [ref=e61]:
+              - link "Räume" [ref=e62] [cursor=pointer]:
+                - /url: /c/raeume
+            - listitem [ref=e63]:
+              - link "Weihnachten" [ref=e64] [cursor=pointer]:
+                - /url: /weihnachten-C43
+            - listitem [ref=e65]:
+              - link "Küchen" [ref=e66] [cursor=pointer]:
+                - /url: /alle-kuechen-C34
+            - listitem [ref=e67]:
+              - link "Trends" [ref=e68] [cursor=pointer]:
+                - /url: /c/inspiration
+            - listitem [ref=e69]:
+              - link "Werbung" [ref=e70] [cursor=pointer]:
+                - /url: /c/xmas
+            - listitem [ref=e71]:
+              - link "SALE" [ref=e72] [cursor=pointer]:
+                - /url: /c/sale
+            - listitem [ref=e73]:
+              - link "Beratungstermin" [ref=e74] [cursor=pointer]:
+                - /url: /c/beratungstermin-vereinbaren
+    - main [ref=e75]:
+      - status [ref=e76]:
+        - generic [ref=e77]: cart.titletag
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - heading "Warenkorb" [level=1] [ref=e82]
+            - link "weiter einkaufen" [ref=e83] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e84] [cursor=pointer]: weiter einkaufen
+          - generic [ref=e85]:
+            - img [ref=e86]
+            - generic [ref=e88]: Aktionen
+            - generic [ref=e89]: 1 Aktion ist für Sie verfügbar
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - article [ref=e92]:
+                  - generic [ref=e93]:
+                    - img "Lowboard Larios B in Weiß - Schwarz/Weiß, MODERN, Holzwerkstoff/Kunststoff (143/61/40cm) - Mömax" [ref=e94]
+                    - link [ref=e95] [cursor=pointer]:
+                      - /url: /p/moemax-lowboard-larios-b-in-wei-002427001607
+                  - generic [ref=e96]:
+                    - generic [ref=e97]:
+                      - generic [ref=e98]: "002427001607"
+                      - link "Artikelnr. 2427001607" [ref=e99] [cursor=pointer]:
+                        - /url: /p/moemax-lowboard-larios-b-in-wei-002427001607
+                        - generic [ref=e100] [cursor=pointer]: Artikelnr. 2427001607
+                    - link "Mömax Lowboard Larios B in Weiß" [ref=e102] [cursor=pointer]:
+                      - /url: /p/moemax-lowboard-larios-b-in-wei-002427001607
+                      - heading "Mömax Lowboard Larios B in Weiß" [level=2] [ref=e103] [cursor=pointer]:
+                        - generic [ref=e104] [cursor=pointer]: Mömax Lowboard
+                        - generic [ref=e105] [cursor=pointer]: Larios B in Weiß
+                    - generic [ref=e106]:
+                      - generic [ref=e107]: Weiß
+                      - generic [ref=e108]: Holzwerkstoff
+                      - generic [ref=e109]: 143/61/40 cm
+                  - generic [ref=e112]:
+                    - generic [ref=e113]:
+                      - generic [ref=e114]: € 304,‒***
+                      - generic [ref=e115]: € 159,‒
+                    - generic [ref=e116]: € 159,‒ / Stk
+                  - generic [ref=e117]:
+                    - button "Produkt entfernen - Lowboard Larios B in Weiß" [ref=e118] [cursor=pointer]
+                    - generic [ref=e119]:
+                      - textbox "Menge" [ref=e120]: "1"
+                      - generic [ref=e121]: Menge
+                    - button "1" [ref=e122] [cursor=pointer]:
+                      - generic [ref=e123] [cursor=pointer]: "1"
+                    - button "Anzahl erhöhen - Lowboard Larios B in Weiß" [ref=e124] [cursor=pointer]
+                  - generic [ref=e126]:
+                    - button "Lowboard Larios B in Weiß - Für später merken" [ref=e127] [cursor=pointer]:
+                      - generic [ref=e129] [cursor=pointer]: Für später merken
+                    - button "Lowboard Larios B in Weiß - Produkt entfernen" [ref=e130] [cursor=pointer]:
+                      - generic [ref=e132] [cursor=pointer]: Produkt entfernen
+                - generic [ref=e133]:
+                  - generic [ref=e134]:
+                    - generic [ref=e138]: Postversand
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: Die geschätzte Lieferzeit richtet sich nach Ihrem Standort.
+                      - button "Lieferzeit berechnen" [ref=e145] [cursor=pointer]:
+                        - generic [ref=e148] [cursor=pointer]: Lieferzeit berechnen
+                    - generic [ref=e149]:
+                      - text: Lieferkosten
+                      - generic [ref=e150]: + € 19,99
+                  - paragraph [ref=e151]:
+                    - generic [ref=e152]: Die gesamten Lieferkosten Ihrer Bestellung finden Sie in der Zusammenfassung.
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - heading "Zusammenfassung" [level=2] [ref=e156]
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - generic [ref=e159]: Warenwert
+                - generic [ref=e160]: € 159,‒
+                - button "Lieferkosten" [ref=e161] [cursor=pointer]:
+                  - generic [ref=e162] [cursor=pointer]: Lieferkosten
+                - generic [ref=e163]:
+                  - generic [ref=e164]: +
+                  - text: € 19,
+                  - superscript [ref=e165]: "99"
+              - generic [ref=e166]:
+                - generic [ref=e167]: Gesamt
+                - generic [ref=e168]:
+                  - text: € 178,
+                  - superscript [ref=e169]: "99"
+                - generic [ref=e170]: inkl. MwSt.
+              - button "zur Kasse" [ref=e171] [cursor=pointer]:
+                - generic [ref=e172] [cursor=pointer]: zur Kasse
+              - img [ref=e174]
+          - generic [ref=e180]:
+            - button "Gutscheincode" [ref=e181] [cursor=pointer]:
+              - generic [ref=e182] [cursor=pointer]: Gutscheincode
+              - img [ref=e183] [cursor=pointer]
+            - generic [ref=e186]:
+              - generic [ref=e189]:
+                - textbox "Code kopieren" [ref=e190]
+                - generic: Code kopieren
+              - button "Gutschein einlösen" [ref=e191] [cursor=pointer]:
+                - generic [ref=e192] [cursor=pointer]: Gutschein einlösen
+        - complementary [ref=e193]:
+          - link "weiter einkaufen" [ref=e194] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e195] [cursor=pointer]: weiter einkaufen
+  - contentinfo [ref=e196]:
+    - generic [ref=e197]:
+      - list [ref=e200]:
+        - listitem [ref=e201]:
+          - link "Click & Collect" [ref=e202] [cursor=pointer]:
+            - /url: /c/clickundcollect
+        - listitem [ref=e203]:
+          - link "30 Tage Rückgabe" [ref=e204] [cursor=pointer]:
+            - /url: /c/retouren
+        - listitem [ref=e205]:
+          - link "Gratis Transporter" [ref=e206] [cursor=pointer]:
+            - /url: /c/transporterleihen
+        - listitem [ref=e207]:
+          - link "Montage & Lieferung" [ref=e208] [cursor=pointer]:
+            - /url: /c/lieferungundmontage
+      - generic [ref=e209]:
+        - link "Die nächste Liste überspringen" [ref=e210] [cursor=pointer]:
+          - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+          - text: Abschnitt überspringen
+        - generic [ref=e211]:
+          - generic [ref=e213]:
+            - generic [ref=e214]: Über mömax
+            - list [ref=e215]:
+              - listitem [ref=e216]:
+                - link "Presse" [ref=e217] [cursor=pointer]:
+                  - /url: https://pr.moemax.de
+              - listitem [ref=e218]:
+                - link "Jobs bei mömax" [ref=e219] [cursor=pointer]:
+                  - /url: https://karriere.moemax.de
+              - listitem [ref=e220]:
+                - link "Unternehmen" [ref=e221] [cursor=pointer]:
+                  - /url: /c/unternehmen
+              - listitem [ref=e222]:
+                - link "Blog" [ref=e223] [cursor=pointer]:
+                  - /url: https://blog.moemax.de
+              - listitem [ref=e224]:
+                - link "Aktueller Service" [ref=e225] [cursor=pointer]:
+                  - /url: /c/serviceuebersicht
+              - listitem [ref=e226]:
+                - link "Grundsatzerklärung LkSG" [ref=e227] [cursor=pointer]:
+                  - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCWtJ6NbgSjtBlU_N73euysw/lksg_lieferkettengesetz_grundsatzerklarung_2024-25_de_en.pdf
+              - listitem [ref=e228]:
+                - link "Jahresberichte LkSG" [ref=e229] [cursor=pointer]:
+                  - /url: /c/jahresberichte
+              - listitem [ref=e230]:
+                - link "Verhaltenskodex für Lieferanten" [ref=e231] [cursor=pointer]:
+                  - /url: https://moemax.a.bigcontent.io/v1/static/NCQu_jutXb-aDcMsic9IzE8Q/lksg_lieferkettensorgfaltspflichtengesetz_verhaltenskodex-lieferanten_de_en.pdf
+              - listitem [ref=e232]:
+                - link "Barrierefreiheit" [ref=e233] [cursor=pointer]:
+                  - /url: /c/barrierefreiheit
+              - listitem [ref=e234]:
+                - link "Auszeichnungen" [ref=e235] [cursor=pointer]:
+                  - /url: /c/auszeichnungen
+          - generic [ref=e237]:
+            - generic [ref=e238]: Service
+            - list [ref=e239]:
+              - listitem [ref=e240]:
+                - link "Aktuelle Aktionen" [ref=e241] [cursor=pointer]:
+                  - /url: /c/xmas
+              - listitem [ref=e242]:
+                - link "Prospekte" [ref=e243] [cursor=pointer]:
+                  - /url: /c/prospekte
+              - listitem [ref=e244]:
+                - link "Aktionsbedingungen" [ref=e245] [cursor=pointer]:
+                  - /url: /c/aktionsnews
+              - listitem [ref=e246]:
+                - link "Bonus Card" [ref=e247] [cursor=pointer]:
+                  - /url: /c/unserebonuscard
+              - listitem [ref=e248]:
+                - link "Gutscheine online einlösen" [ref=e249] [cursor=pointer]:
+                  - /url: /c/onlinegutscheine-einloesen
+              - listitem [ref=e250]:
+                - link "Geschenkgutscheine" [ref=e251] [cursor=pointer]:
+                  - /url: https://geschenkkarten.moemax.de/b2c/
+              - listitem [ref=e252]:
+                - link "Lieferung" [ref=e253] [cursor=pointer]:
+                  - /url: /c/lieferungundmontage
+              - listitem [ref=e254]:
+                - link "Leihtransporter buchen (Selbstabholung)" [ref=e255] [cursor=pointer]:
+                  - /url: /transporter
+              - listitem [ref=e256]:
+                - link "Firmenkunden (B2B)" [ref=e257] [cursor=pointer]:
+                  - /url: /c/b2b
+              - listitem [ref=e258]:
+                - link "Premiumschutz" [ref=e259] [cursor=pointer]:
+                  - /url: /c/helvetia-versicherungen
+              - listitem [ref=e260]:
+                - link "Konfiguratoren" [ref=e261] [cursor=pointer]:
+                  - /url: /c/konfiguratoren
+          - generic [ref=e263]:
+            - generic [ref=e264]: Kontakt
+            - list [ref=e265]:
+              - listitem [ref=e266]:
+                - link "Auftragsstatus" [ref=e267] [cursor=pointer]:
+                  - /url: /auftragsstatus
+              - listitem [ref=e268]:
+                - link "Bestellhotline" [ref=e269] [cursor=pointer]:
+                  - /url: /c/bestellhotline
+              - listitem [ref=e270]:
+                - link "Newsletter" [ref=e271] [cursor=pointer]:
+                  - /url: /c/newsletter
+              - listitem [ref=e272]:
+                - link "Click & Collect" [ref=e273] [cursor=pointer]:
+                  - /url: /c/clickundcollect
+              - listitem [ref=e274]:
+                - link "FAQ" [ref=e275] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e276]:
+                - link "Retouren & Reklamationen" [ref=e277] [cursor=pointer]:
+                  - /url: /c/retouren
+              - listitem [ref=e278]:
+                - link "Hinweisgebersystem LkSG" [ref=e279] [cursor=pointer]:
+                  - /url: https://app.convercent.com/de-de/LandingPage/f569ee87-0d2c-ec11-a985-000d3ab9f062?_=1636105011105
+              - listitem [ref=e280]:
+                - link "Hinweisgebersystem LkSG Verfahrensordnung" [ref=e281] [cursor=pointer]:
+                  - /url: https://moemax.a.bigcontent.io/v1/static/NCtqUiqceEaZLRlBYSmJjIRQ/lksg_hinweisgebersystem-verfahrensordnung_de_en_es_cn.pdf
+          - generic [ref=e283]:
+            - generic [ref=e284]: Filialen und Standorte
+            - list [ref=e285]:
+              - listitem [ref=e286]:
+                - link "Standorte" [ref=e287] [cursor=pointer]:
+                  - /url: /filialen-de
+              - listitem [ref=e288]:
+                - link "Filialschnäppchen" [ref=e289] [cursor=pointer]:
+                  - /url: /hs/
+              - listitem [ref=e290]:
+                - link "Restaurants" [ref=e291] [cursor=pointer]:
+                  - /url: /c/unserrestaurant
+              - listitem [ref=e292]:
+                - link "Beratungstermine" [ref=e293] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+              - listitem [ref=e294]:
+                - link "Küchenberater" [ref=e295] [cursor=pointer]:
+                  - /url: /c/kuechen-beratungstermin
+              - listitem [ref=e296]:
+                - link "Gratis Transporter" [ref=e297] [cursor=pointer]:
+                  - /url: /c/transporterleihen
+      - generic [ref=e299]:
+        - generic [ref=e302]:
+          - paragraph [ref=e303]: Du hast noch Fragen?
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - link "Zum Kontaktformular" [ref=e306] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e307] [cursor=pointer]: Zum Kontaktformular
+              - paragraph [ref=e308]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+            - generic [ref=e309]:
+              - link "Häufig gestellte Fragen" [ref=e310] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e311] [cursor=pointer]: Häufig gestellte Fragen
+              - paragraph [ref=e312]: In unseren FAQ's findest du sofort Hilfe.
+        - generic [ref=e313]:
+          - generic [ref=e314]: Versandpartner
+          - generic [ref=e315]:
+            - img "Rhenus Home Delivery Logo" [ref=e318]
+            - img "Hermes Logo" [ref=e321]
+            - img "DHL Logo" [ref=e324]
+        - generic [ref=e325]:
+          - generic [ref=e326]: Zahlungsmöglichkeiten
+          - generic [ref=e327]:
+            - img "Split It Logo" [ref=e330]
+            - img "Klarna Logo" [ref=e333]
+            - img "PayPal Logo" [ref=e336]
+            - img "Visa Logo" [ref=e339]
+            - img "Mastercard Logo" [ref=e342]
+            - img "Google Pay Logo" [ref=e345]
+            - img "Apple Pay Logo" [ref=e348]
+        - generic [ref=e349]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. ***UVP
+      - generic [ref=e352]:
+        - link "XXXLutz" [ref=e353] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e354] [cursor=pointer]: XXXLutz
+          - img [ref=e356] [cursor=pointer]
+        - generic [ref=e359]: © 2025 moemax Deutschland GmbH
+        - list [ref=e360]:
+          - listitem [ref=e361]:
+            - link "Impressum" [ref=e362] [cursor=pointer]:
+              - /url: /c/impressum
+          - listitem [ref=e363]:
+            - link "AGB" [ref=e364] [cursor=pointer]:
+              - /url: /c/agb
+          - listitem [ref=e365]:
+            - link "Datenschutz" [ref=e366] [cursor=pointer]:
+              - /url: /c/privacy
+          - listitem [ref=e367]:
+            - button "Cookie-Einstellungen" [ref=e368] [cursor=pointer]
+        - list [ref=e369]:
+          - listitem [ref=e370]:
+            - link "facebook" [ref=e371] [cursor=pointer]:
+              - /url: https://www.facebook.com/moemax.de/
+          - listitem [ref=e372]:
+            - link "instagram" [ref=e373] [cursor=pointer]:
+              - /url: https://www.instagram.com/moemax_de/
+          - listitem [ref=e374]:
+            - link "youtube" [ref=e375] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/MoemaxAT
+          - listitem [ref=e376]:
+            - link "tiktok" [ref=e377] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+          - listitem [ref=e378]:
+            - link "pinterest" [ref=e379] [cursor=pointer]:
+              - /url: https://www.pinterest.de/moemax_com/
+        - link [ref=e380] [cursor=pointer]:
+          - /url: /c/accessibility
+```

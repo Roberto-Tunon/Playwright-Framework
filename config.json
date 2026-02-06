@@ -106,9 +106,9 @@
       "country": "SI", 
       "rail": "xxxlesnina", 
       "mode": "1P", 
-      "pay": "SP", 
-      "file": "tests/E2E-Lutz-SplitIT.spec.js",
-      "icon": "smartphone"
+      "pay": "DEL", 
+      "file": "tests/E2E-Lutz-Payments.spec.js",
+      "icon": "package"
     },
     { 
       "country": "AT", 

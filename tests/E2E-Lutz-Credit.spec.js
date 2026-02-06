@@ -1,6 +1,6 @@
-import { step, description, label, tag, parameter } from "allure-js-commons";
+import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
 import { DeliveryOption } from "../utils/DeliveryOption";
-const { test, expect } = require('@playwright/test');
+const { test } = require('@playwright/test');
 const { PayQC, datosvar } = require('./constantes');
 const { fillCreditCard } = require('../utils/fillCreditCard');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
@@ -25,13 +25,17 @@ test(testTitle, async ({ browser }) => {
     const mode = process.env.MODE || '1P';
     const datosrail = ObtenerDatos(cod_country);
 
-    await description("E2E Test for " + process.env.COUNTRY);
-    await tag(process.env.COUNTRY);
-    await parameter("Mode", process.env.MODE);
+    await epic(rail);      
+    await feature(cod_country);             
+    await story('Credit Card');
+
+    await description("E2E Test for " + rail + "-" + cod_country);
+    await tag(cod_country);
+    await parameter("Rail", process.env.RAIL);
    
     await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
         
-    await DeliveryOption(page, datosvar, datosrail);
+    await DeliveryOption(page, datosvar, datosrail, 'CC');
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 
@@ -45,9 +49,9 @@ test(testTitle, async ({ browser }) => {
     await page.screenshot({ path: `tests/Screenshots/Payment-Credit-${rail}-${cod_country}.png`, fullPage: true });  
 
     await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
-    await page.waitForTimeout(6000);  // 3 seconds pause
+    await page.waitForTimeout(5000);  // 5 seconds pause
     await page.screenshot({ path: `tests/Screenshots/Final-Order-Credit-${rail}-${cod_country}.png` });
 
-    await page.pause();
     
+    await page.pause();
 });

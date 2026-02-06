@@ -190,3 +190,1024 @@ npm ERR!     /home/robe/.npm/_logs/2026-01-23T08_07_09_128Z-debug-0.log
   stdout: null,
   stderr: null
 }
+
+🚀 BATCH START | 10 Tests in queue...
+
+[1/10] >>> Executing: DE - PP (moemax)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[2/10] >>> Executing: AT - CC (moemax)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[3/10] >>> Executing: AT - CC (xxxlutz)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[4/10] >>> Executing: DE - PP (xxxlutz)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[5/10] >>> Executing: AT - KL (xxxlutz)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[6/10] >>> Executing: AT - BI (xxxlutz)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[7/10] >>> Executing: HR - CC (xxxlesnina)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[8/10] >>> Executing: CZ - ON (xxxlutz)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[9/10] >>> Executing: DE - KN (xxxlutz)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+[10/10] >>> Executing: SK - PP (xxxlutz)
+/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright-core/lib/cli/program.js:97
+    if (executable?.browserName === "chromium")
+                   ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/playwright/lib/program.js:36:22)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+❌ Result: FAILED (Continuing...)
+
+✨ DASHBOARD UPDATED: 26/01/2026
+⏳ Processing Allure history & trends...
+   -> History files copied.
+⏳ Generating Final Report...
+internal/modules/cjs/loader.js:818
+  throw err;
+  ^
+
+Error: Cannot find module 'node:path'
+Require stack:
+- /home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/allure-commandline/index.js
+- /home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/allure-commandline/bin/allure
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:85:18)
+    at Object.<anonymous> (/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/allure-commandline/index.js:2:12)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/allure-commandline/index.js',
+    '/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/allure-commandline/bin/allure'
+  ]
+}
+❌ Allure Error: Command failed: "/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/.bin/allure" generate "/home/robe/WKSPC_2/FE-Deployment-Regression/allure-results" --clean -o "/home/robe/WKSPC_2/FE-Deployment-Regression/allure-report"
+   -> Attempting global allure command...
+/bin/sh: 1: allure: not found
+❌ Critical: Allure could not be executed.
+
+🚀 BATCH START | 10 Tests in queue...
+
+[1/10] >>> Executing: DE - PP (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+Params: Country: DE, Rail: MOEMAX, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P) ──────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-PayPal.spec.js:36:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P) ───────────────
+❌ Result: FAILED (Continuing...)
+
+[2/10] >>> Executing: AT - CC (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+Params: Country: AT, Rail: MOEMAX, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P) ──────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:36:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P) ───────────────
+❌ Result: FAILED (Continuing...)
+
+[3/10] >>> Executing: AT - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P) ─────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:36:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[4/10] >>> Executing: DE - PP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P) ─────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-PayPal.spec.js:36:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[5/10] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ───────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:40:5
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ────────────
+❌ Result: FAILED (Continuing...)
+
+[6/10] >>> Executing: AT - BI (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P) ─────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Billie.spec.js:35:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Billie--AT-xxxlutz---Payment-BI-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Billie--AT-xxxlutz---Payment-BI-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Billie--AT-xxxlutz---Payment-BI-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Billie--AT-xxxlutz---Payment-BI-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[7/10] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 2P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P) ───────────
+
+    Error: No Marketplace product for Country: AT
+
+       at ../utils/OpenPage.js:21
+
+      19 |          await page.locator('[data-purpose="checkout.addtocart"]').click();       
+      20 |        } catch (e) {
+    > 21 |            throw new Error(`No Marketplace product for Country: ${cod_country}`);   
+         |                  ^
+      22 |        } 
+      23 |     } 
+      24 |     
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:21:18)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:40:5
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P) ────────────
+❌ Result: FAILED (Continuing...)
+
+[8/10] >>> Executing: SK - PP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [SK] xxxlutz - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [SK] xxxlutz - Payment: PP (1P)
+Params: Country: SK, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [SK] xxxlutz - Payment: PP (1P) ─────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-PayPal.spec.js:36:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--SK-xxxlutz---Payment-PP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-PayPal--SK-xxxlutz---Payment-PP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--SK-xxxlutz---Payment-PP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-PayPal--SK-xxxlutz---Payment-PP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [SK] xxxlutz - Payment: PP (1P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[9/10] >>> Executing: DE - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 2P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P) ─────────────
+
+    Error: No Marketplace product for Country: DE
+
+       at ../utils/OpenPage.js:21
+
+      19 |          await page.locator('[data-purpose="checkout.addtocart"]').click();       
+      20 |        } catch (e) {
+    > 21 |            throw new Error(`No Marketplace product for Country: ${cod_country}`);   
+         |                  ^
+      22 |        } 
+      23 |     } 
+      24 |     
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:21:18)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:36:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[10/10] >>> Executing: HR - CC (xxxlesnina)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HR] xxxlesnina - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HR] xxxlesnina - Payment: CC (1P)
+Params: Country: HR, Rail: XXXLESNINA, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HR] xxxlesnina - Payment: CC (1P) ──────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:31
+
+      29 |         } else {
+      30 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 31 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      32 |         }    
+      33 |     }
+      34 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:31:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:36:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--HR-xxxlesnina---Payment-CC-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--HR-xxxlesnina---Payment-CC-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--HR-xxxlesnina---Payment-CC-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--HR-xxxlesnina---Payment-CC-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HR] xxxlesnina - Payment: CC (1P) ───────────
+❌ Result: FAILED (Continuing...)
+
+✨ DASHBOARD UPDATED: 28/01/2026
+⏳ Processing Allure history & trends...
+   -> History files copied.
+⏳ Generating Final Report...
+Report successfully generated to /home/robe/WKSPC_2/FE-Deployment-Regression/allure-report
+✅ Allure Report generated with history.
+
+🚀 BATCH START | 10 Tests in queue...
+
+[1/10] >>> Executing: DE - PP (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+Params: Country: DE, Rail: MOEMAX, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P) ──────────────
+
+    TimeoutError: locator.isEnabled: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('div[data-purpose="deliveryOptions.select.deliveryOption"] [role="combobox"]')[22m
+
+
+       at ../utils/DeliveryOption.js:7
+
+       5 |     
+       6 |     const deliveryDropdown = page.locator('div[data-purpose="deliveryOptions.select.deliveryOption"] [role="combobox"]');
+    >  7 |     const isDropdownActive = await deliveryDropdown.isEnabled();
+         |                                                     ^
+       8 |     let selfServiceOption = null;
+       9 |
+      10 |     if (isDropdownActive) {
+        at DeliveryOption (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:7:53)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-PayPal.spec.js:38:25
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P) ───────────────
+❌ Result: FAILED (Continuing...)
+
+[2/10] >>> Executing: AT - CC (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+Params: Country: AT, Rail: MOEMAX, Mode: 1P
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K  1 passed (30.2s)
+✅ Result: PASSED
+
+[3/10] >>> Executing: AT - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P) ─────────────
+
+    TimeoutError: locator.click: Timeout 2000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first()[22m
+    [2m    - locator resolved to <span class="_Wo5trVdLVXLsC3RI _jL2uxmkynJfDBn_8">…</span>[22m
+    [2m  - attempting click action[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is not stable[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+
+
+      43 |     
+      44 |     if (["AT", "SI", "HR", "HU"].includes(cod_country) && rail === "xxxlutz") {
+    > 45 |             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click({ timeout: 2000 });       
+         |                                                                                                    ^
+      46 |     } 
+      47 |     
+      48 |     await page.waitForTimeout(1000);
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:45:100
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[4/10] >>> Executing: DE - PP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K✅ PayPal Login completed
+
+[1A[2K  1 passed (1.1m)
+✅ Result: PASSED
+
+[5/10] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ───────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]')[22m
+
+
+       at ../utils/fillKlarna.js:26
+
+      24 |
+      25 |     } else if (pay === 'KL') {
+    > 26 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]').click();
+         |                                                                                         ^
+      27 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount.submit"]').click(); 
+      28 |
+      29 |         if (datosrail.Country === "AT") {
+        at fillKlarna (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/fillKlarna.js:26:89)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:79:15
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ────────────
+❌ Result: FAILED (Continuing...)
+
+[6/10] >>> Executing: AT - BI (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1 passed (59.8s)
+✅ Result: PASSED
+
+[7/10] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 2P
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P) ───────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]')[22m
+
+
+       at ../utils/fillKlarna.js:26
+
+      24 |
+      25 |     } else if (pay === 'KL') {
+    > 26 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]').click();
+         |                                                                                         ^
+      27 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount.submit"]').click(); 
+      28 |
+      29 |         if (datosrail.Country === "AT") {
+        at fillKlarna (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/fillKlarna.js:26:89)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:79:15
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P) ────────────
+❌ Result: FAILED (Continuing...)
+
+[8/10] >>> Executing: RO - SP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-SplitIT.spec.js:11:1 › [RO] xxxlutz - Payment: SP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-SplitIT.spec.js:11:1 › [RO] xxxlutz - Payment: SP (1P)
+Params: Country: RO, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-SplitIT.spec.js:11:1 › [RO] xxxlutz - Payment: SP (1P) ────────────
+
+    TimeoutError: locator.check: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[data-purpose="checkout.paymentMode.radiobutton."]').first()[22m
+
+
+      47 |     // await page.locator('[data-purpose="checkout.paymentOptions."]').click();   
+      48 |     const splititRadio = page.locator('input[data-purpose="checkout.paymentMode.radiobutton."]').first();
+    > 49 |     await splititRadio.check({ force: true });
+         |                        ^
+      50 |     await page.locator('[data-purpose="checkout.paymentOptions.default.submit"]').first().click(); 
+      51 |
+      52 |     if (["AT", "SI"].includes(cod_country)){
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-SplitIT.spec.js:49:24
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-SplitIT.spec.js:11:1 › [RO] xxxlutz - Payment: SP (1P) ─────────────
+❌ Result: FAILED (Continuing...)
+
+[9/10] >>> Executing: CH - TW (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CH] xxxlutz - Payment: TW (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CH] xxxlutz - Payment: TW (1P)
+Params: Country: CH, Rail: XXXLUTZ, Mode: 1P
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K  1 passed (29.8s)
+✅ Result: PASSED
+
+[10/10] >>> Executing: DE - KN (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [DE] xxxlutz - Payment: KN (3P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [DE] xxxlutz - Payment: KN (3P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 3P
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [DE] xxxlutz - Payment: KN (3P) ───────────
+
+    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('div#SELF_SERVICE')[22m
+
+
+       at ../utils/DeliveryOption.js:11
+
+       9 |
+      10 |     if (isDropdownActive) {
+    > 11 |         await page.locator('div#SELF_SERVICE').waitFor({ state: 'attached', timeout: 5000 });
+         |                                                ^
+      12 |         //Locate the specific Self Service option using its ID
+      13 |         selfServiceOption = page.locator('div#SELF_SERVICE[role="option"]');
+      14 |     }       
+        at DeliveryOption (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:11:48)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:58:9
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--DE-xxxlutz---Payment-KN-3P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--DE-xxxlutz---Payment-KN-3P--chromium/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--DE-xxxlutz---Payment-KN-3P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--DE-xxxlutz---Payment-KN-3P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [DE] xxxlutz - Payment: KN (3P) ────────────
+❌ Result: FAILED (Continuing...)
+
+✨ DASHBOARD UPDATED: 29/01/2026
+⏳ Processing Allure history & trends...
+   -> History files copied.
+⏳ Generating Final Report...
+Report successfully generated to /home/robe/WKSPC_2/FE-Deployment-Regression/allure-report
+✅ Allure Report generated with history.

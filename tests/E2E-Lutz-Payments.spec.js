@@ -1,8 +1,7 @@
-import { step, description, label, tag, parameter } from "allure-js-commons";
+import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
+import { DeliveryOption } from "../utils/DeliveryOption";
 const { test, expect } = require('@playwright/test');
-const { constantes } = require('./constantes');
-const { PayQC, datosvar } = require('./constantes');
-const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
+const { datosvar } = require('./constantes');
 const { fillSELFDeliveryForm } = require('../utils/fillSELFDeliveryForm');
 const { fillKlarna } = require('../utils/fillKlarna');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
@@ -28,31 +27,19 @@ test(testTitle, async ({ browser }) => {
     const mode = process.env.MODE || '1P';
     const datosrail = ObtenerDatos(cod_country);   
 
-    await description("E2E Test for " + process.env.COUNTRY);
-    await tag(process.env.COUNTRY);
-    await parameter("Mode", process.env.MODE);
+    await epic(rail);      
+    await feature(cod_country);             
+    await story(pay);
+
+    await description("E2E Test for " + rail + "-" + cod_country + "-" + pay);
+    await tag(cod_country);
+    await parameter("Rail", process.env.RAIL);
+    await parameter("Pay", process.env.PAY);
+
    
-    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
+    await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);    
    
-    const deliverySelect = page.locator('select[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
-    const selfServiceOption = deliverySelect.locator('option[value="SELF_SERVICE"]');
-   
-    if ((await selfServiceOption.count() > 0) || pay === "TW") {
-
-        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
-        await page.locator('#SELF_SERVICE').click();
-
-        await page.getByTestId('locationPicker.button').click();
-        await page.locator('[data-purpose="locationFinder.input.field"]').fill(datosrail.PostalCode);
-        await page.getByRole('button', { name: datosrail.City}).click();    
-        await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();
-
-        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-
-        await fillSELFDeliveryForm(page, datosvar, datosrail); 
-
-    } else if (['ON'].includes(pay)){  
+    if (['ON'].includes(pay)){  
         const button = await page.getByTestId('locationPicker.button'); 
        
         if ((await button.isVisible()) && (await button.count() > 0)) {
@@ -68,18 +55,7 @@ test(testTitle, async ({ browser }) => {
           console.log("🚫 El botón no está visible, no se hizo clic.");
         }    
     } else {
-        console.log('⚠️ SELF_SERVICE not found. Selecting first option if possible...');
-
-        try {
-        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
-        await page.locator('#POSTAGE').click({ timeout: 2000 });
-        } catch (e) {
-        console.log('ℹ️ Delivery option combo not available. Continuing to login modal...');
-        }
-
-        await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-        await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-        await fillDeliveryForm(page, datosvar, datosrail);       
+        await DeliveryOption(page, datosvar, datosrail, pay);          
     }  
             
     if (pay === "SW") {        
@@ -90,8 +66,8 @@ test(testTitle, async ({ browser }) => {
         await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
 
     } else if (pay === "DEL") {
-        await page.locator('[data-purpose^="checkout.paymentOptions.ondelivery"]').click();
-        await page.locator('[data-purpose="checkout.paymentOptions.ondelivery.submit"], [data-purpose="checkout.paymentOptions.ondelivery_ro.submit"]').click();
+        await page.locator('[data-purpose^="checkout.paymentOptions.ondelivery"]').click();        
+        await page.locator('[data-purpose^="checkout.paymentOptions.ondelivery"][data-purpose$=".submit"]').click();
         await page.waitForTimeout(2000); 
         if (["AT", "SI", "HR", "RS"].includes(cod_country)){
           await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click();      

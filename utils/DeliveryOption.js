@@ -1,14 +1,25 @@
 const { fillDeliveryForm } = require('./fillDeliveryForm');
 const { fillSELFDeliveryForm } = require('./fillSELFDeliveryForm');
 
-async function DeliveryOption(page, datosvar, datosrail) {
+async function DeliveryOption(page, datosvar, datosrail, pay) {    
+    
+    const deliveryDropdown = page.locator('div[data-purpose="deliveryOptions.select.deliveryOption"] [role="combobox"]');
+    const isDropdownActive = await deliveryDropdown.isEnabled();
+    let selfServiceOption = null;
 
-    const deliverySelect = page.locator('select[data-purpose="deliveryOptions.select.deliveryOption.select.value"]');
-    const selfServiceOption = deliverySelect.locator('option[value="SELF_SERVICE"]');
+    if (isDropdownActive) {
+        await page.locator('div#SELF_SERVICE').waitFor({ state: 'attached', timeout: 5000 });
+        //Locate the specific Self Service option using its ID
+        selfServiceOption = page.locator('div#SELF_SERVICE[role="option"]');
+    }       
 
-    if (await selfServiceOption.count() > 0) {
-        await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
-        await page.locator('#SELF_SERVICE').click();
+    if (await selfServiceOption.count() > 0 && pay !== 'DEL') {
+        console.log('✅ Self Service (Click & Collect) found. Selecting...');
+        // Open the flyout/dropdown menu
+        await deliveryDropdown.click();        
+        // Wait for the option to be visible and click it      
+        await selfServiceOption.waitFor({ state: 'visible' });
+        await selfServiceOption.click();
 
         await page.getByTestId('locationPicker.button').click();
         await page.locator('[data-purpose="locationFinder.input.field"]').fill(datosrail.PostalCode);

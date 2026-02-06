@@ -1,0 +1,2 @@
+Params: Country: CZ, Rail: XXXLUTZ, Mode: 1P
+🚫 El botón no está visible, no se hizo clic.
