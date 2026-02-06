@@ -31,7 +31,11 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        # Creamos un archivo temporal para ignorar el Nexus privado
+        echo "@playwright:registry=https://registry.npmjs.org/" > .npmrc
+        echo "registry=https://registry.npmjs.org/" >> .npmrc
+        npm install
 
     - name: Run Playwright tests
       run: npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium
