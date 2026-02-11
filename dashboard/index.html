@@ -125,10 +125,8 @@
         }
         .main-title span {
             color: #e20015 !important;
-            /* Opcional: si quieres que resalte aún más que el resto */
-            text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
-            margin-right: 15px; /* Esto empuja "Dashboard" hacia la derecha */
-            margin-left: 0px;   /* Esto asegura que "Digital" se pegue a "XXXL" */
+            margin: 0; /* Quitamos cualquier margen para que mande tu espacio del HTML */
+            padding: 0;
         }
         .main-logo {
             height: 45px;
@@ -169,7 +167,7 @@
         <div class="d-flex align-items-center">
             <h1 class="main-title d-flex align-items-center mb-0">
                 <img src="assets/xxxlutz.png" class="main-logo" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
-                XXXL<span>Digital</span> Dashboard 🚀
+                XXXL<span>Digital</span>&nbsp;Dashboard 🚀
             </h1>
         </div>
         <div class="d-flex align-items-center header-tools">
