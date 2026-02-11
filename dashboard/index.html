@@ -107,18 +107,39 @@
             margin-bottom: 8px;
             display: block;
         }
+       /* Estilo para el título (Negro) */
+        .main-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            color: #000000;
+        }
+
+        /* Todo lo que vaya en <span> dentro del título será Rojo Lutz */
+        .main-title span {
+            color: #e20015 !important;
+        }
+        .main-title img {
+            height: 1.2em;           /* Hace que el logo escale proporcional al texto */
+            vertical-align: middle;  /* Lo alinea al centro del texto */
+            margin-top: -10px;       /* Ajuste fino manual si aún lo ves bajo */
+            margin-right: 15px;      /* Espacio entre el logo y el texto XXXL */
+        }
     </style>
 </head>
 <body>
 
 <nav class="navbar mb-4">
     <div class="container d-flex justify-content-between align-items-center">
-        <div class="brand-title">
-            <img src="assets/xxxlutz.png" style="height:45px; margin-right:15px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
+        <div class="brand-title"> 
             
-            <span>
-                XXXL<span class="text-lutz">Digital</span> Dashboard 🚀               
-            </span>
+            <div class="text-center mb-4">
+               <h1 class="main-title text-center">
+                  <img src="assets/xxxlutz.png" style="height:45px; margin-right:15px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
+                    XXXL<span>Digital</span> Dashboard 🚀
+               </h1>
+            </div>
         </div>
 
         <div class="d-flex align-items-center">
