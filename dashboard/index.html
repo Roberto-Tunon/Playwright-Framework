@@ -108,23 +108,57 @@
             display: block;
         }
        /* Estilo para el título (Negro) */
-        .main-title {
-            font-family: 'Roboto', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 900;
-            letter-spacing: -2px;
-            color: #000000;
+       /* Contenedor principal */
+        .header-container {
+            width: 100%;
+            flex-wrap: wrap; /* Por si en móvil no caben, que bajen suavemente */
         }
 
-        /* Todo lo que vaya en <span> dentro del título será Rojo Lutz */
+        /* Título (ya con tu estilo de 3.5rem y peso 900) */
+       .main-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3.5rem; /* Ajustado para que quepa bien en la barra */
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            margin: 0;
+            line-height: 1;
+        }
         .main-title span {
             color: #e20015 !important;
+            /* Opcional: si quieres que resalte aún más que el resto */
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
+            margin-right: 15px; /* Esto empuja "Dashboard" hacia la derecha */
+            margin-left: 0px;   /* Esto asegura que "Digital" se pegue a "XXXL" */
         }
-        .main-title img {
-            height: 1.2em;           /* Hace que el logo escale proporcional al texto */
-            vertical-align: middle;  /* Lo alinea al centro del texto */
-            margin-top: -10px;       /* Ajuste fino manual si aún lo ves bajo */
-            margin-right: 15px;      /* Espacio entre el logo y el texto XXXL */
+        .main-logo {
+            height: 45px;
+            width: auto;
+            margin-right: 15px;
+        }
+
+        /* Alineación de la Terminal y el Reloj */
+        .header-tools {
+            gap: 20px;
+        }
+
+        .terminal-icon {
+            height: 55px; /* Tamaño equilibrado con el logo */
+            width: auto;
+            /* Subimos la terminal un poco si el título 900 la hace parecer caída */
+            margin-top: 5px; 
+        }
+
+        .clock-container {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background: #e20015;
+            color: white;
+            padding: 0 20px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 8px rgba(226, 0, 21, 0.2);
         }
     </style>
 </head>
@@ -132,18 +166,14 @@
 
 <nav class="navbar mb-4">
     <div class="container d-flex justify-content-between align-items-center">
-        <div class="brand-title"> 
-            
-            <div class="text-center mb-4">
-               <h1 class="main-title text-center">
-                  <img src="assets/xxxlutz.png" style="height:45px; margin-right:15px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
-                    XXXL<span>Digital</span> Dashboard 🚀
-               </h1>
-            </div>
-        </div>
-
         <div class="d-flex align-items-center">
-            <img src="assets/terminal.png" style="height: 45px; width: auto; margin-right: 20px;" title="System Terminal">
+            <h1 class="main-title d-flex align-items-center mb-0">
+                <img src="assets/xxxlutz.png" class="main-logo" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
+                XXXL<span>Digital</span> Dashboard 🚀
+            </h1>
+        </div>
+        <div class="d-flex align-items-center header-tools">
+            <img src="assets/terminal.png" class="terminal-icon" title="System Terminal">
             <div class="clock-container" id="digital-clock">00:00:00</div>
         </div>
     </div>
