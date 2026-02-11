@@ -62,6 +62,16 @@
             background-color: #e20015;
             color: #ffffff;
         }
+        /* Estilo para los labels del historial */
+        #historyTable thead tr:first-child th {
+            color: #000000 !important;   /* Negro puro */
+            font-weight: 800 !important; /* Extra negrita (Montserrat) */
+            text-align: center;         /* Centrado horizontal */
+            vertical-align: middle;     /* Centrado vertical */
+            text-transform: uppercase;  /* Mayúsculas para mayor impacto */
+            font-size: 0.85rem;         /* Tamaño ligeramente mayor */
+            letter-spacing: 0.5px;      /* Espaciado sutil */
+        }
     </style>
 </head>
 <body>
@@ -70,9 +80,16 @@
     <div class="container d-flex justify-content-between align-items-center">
         <div class="brand-title">
             <img src="assets/xxxlutz.png" style="height:45px; margin-right:15px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
-            <span>XXXL<span class="text-lutz">Digital</span> Dashboard</span>
+            
+            <span>
+                XXXL<span class="text-lutz">Digital</span> Dashboard 🚀               
+            </span>
         </div>
-        <div class="clock-container" id="digital-clock"><i class="bi bi-clock-fill me-2"></i> 00:00:00</div>
+
+        <div class="d-flex align-items-center">
+            <img src="assets/terminal.png" style="height: 45px; width: auto; margin-right: 20px;" title="System Terminal">
+            <div class="clock-container" id="digital-clock">00:00:00</div>
+        </div>
     </div>
 </nav>
 
@@ -119,7 +136,7 @@
                     <span class="fw-bold text-danger"><i class="bi bi-terminal-fill me-2"></i> LIVE_CONSOLE</span>
                     <button onclick="clearLog()" class="btn-clear-log"><i class="bi bi-trash3-fill me-1"></i> CLEAR LOG</button>
                 </div>
-                <div id="output" class="console-box">> system_ready...</div>
+                <div id="output" class="console-box">> System_ready...awaiting instructions</div>
             </div>
         </div>
     </div>
@@ -134,9 +151,9 @@
                     </div>
                     <div class="table-responsive">
                         <table class="table align-middle" id="historyTable">
-                            <thead>
+                           <thead>
                                 <tr>
-                                    <th width="40" rowspan="2" class="vertical-middle text-center">
+                                    <th width="40" rowspan="2" class="text-center vertical-middle">
                                         <input type="checkbox" onclick="toggleAll(this)">
                                     </th>
                                     <th>Date/Time</th>
@@ -147,10 +164,13 @@
                                     <th>Status</th>
                                 </tr>
                                 <tr>
-                                    <th></th> <th><select id="filterShop" class="filter-select" onchange="applyFilters()"><option value="">All Shops</option></select></th>
+                                    <th></th>
+                                    <th><select id="filterShop" class="filter-select" onchange="applyFilters()"><option value="">All Shops</option></select></th>
                                     <th><select id="filterCountry" class="filter-select" onchange="applyFilters()"><option value="">All Countries</option></select></th>
                                     <th><select id="filterPayment" class="filter-select" onchange="applyFilters()"><option value="">All Payments</option></select></th>
-                                    <th></th> <th></th> </tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
                             </thead>
                             <tbody id="historyBody"></tbody>
                         </table>
@@ -203,9 +223,25 @@
         const fCountry = document.getElementById('filterCountry');
         const fPayment = document.getElementById('filterPayment');
 
+        // Limpiar opciones previas (manteniendo la primera)
+        fShop.innerHTML = '<option value="">All Shops</option>';
+        fCountry.innerHTML = '<option value="">All Countries</option>';
+        fPayment.innerHTML = '<option value="">All Payments</option>';
+
         shops.forEach(s => fShop.innerHTML += `<option value="${s}">${s}</option>`);
-        countries.forEach(c => fCountry.innerHTML += `<option value="${c}">${c}</option>`);
-        payments.forEach(p => fPayment.innerHTML += `<option value="${p}">${p}</option>`);
+        
+        // CAMBIO AQUÍ: Buscar el nombre en configData antes de añadir la opción
+        countries.forEach(c => {
+            const countryObj = configData.countries.find(conf => conf.code === c);
+            const countryName = countryObj ? countryObj.name : c; // Si no lo encuentra, usa el código
+            fCountry.innerHTML += `<option value="${c}">${countryName}</option>`;
+        });
+
+        payments.forEach(p => {
+            const paymentObj = configData.payments.find(conf => conf.id === p);
+            const paymentName = paymentObj ? paymentObj.name : p;
+            fPayment.innerHTML += `<option value="${p}">${paymentName}</option>`;
+        });
     }
 
     function applyFilters() {
