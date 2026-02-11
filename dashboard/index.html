@@ -29,7 +29,6 @@
         .bg-passed { background-color: #28a745; }
         .bg-failed { background-color: #dc3545; }
 
-        /* Ajuste de alineación solicitado */
         .btn-param-custom { justify-content: flex-start !important; gap: 10px; }
         
         .btn-clear-log { background: #e20015; color: #ffffff; border: none; font-size: 0.75rem; font-weight: 800; padding: 6px 12px; border-radius: 6px; }
@@ -40,9 +39,29 @@
         
         .history-section { margin-top: 30px; margin-bottom: 50px; }
         .history-card { border-radius: 15px; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .filter-select { font-size: 0.7rem; padding: 2px; margin-top: 5px; width: 100%; border-radius: 4px; border: 1px solid #ddd; }
         
-        .btn-report { font-size: 0.65rem; font-weight: 800; padding: 4px 8px; margin-left: 10px; text-decoration: none; }
+        /* Estilos de la tabla y filtros */
+        .filter-select { font-size: 0.75rem; padding: 4px; width: 100%; border-radius: 4px; border: 1px solid #ddd; background-color: #f8f9fa; }
+        .table thead th { border-bottom: none; font-size: 0.8rem; text-transform: uppercase; color: #6c757d; }
+        .vertical-middle { vertical-align: middle; }
+
+        /* Botón View Report Estilo Lutz */
+        .btn-report { 
+            font-size: 0.65rem; 
+            font-weight: 800; 
+            padding: 4px 10px; 
+            margin-left: 10px; 
+            text-decoration: none; 
+            background-color: #ffffff;
+            color: #e20015;
+            border: 2px solid #e20015;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .btn-report:hover {
+            background-color: #e20015;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -117,23 +136,21 @@
                         <table class="table align-middle" id="historyTable">
                             <thead>
                                 <tr>
-                                    <th width="40"><input type="checkbox" onclick="toggleAll(this)"></th>
+                                    <th width="40" rowspan="2" class="vertical-middle text-center">
+                                        <input type="checkbox" onclick="toggleAll(this)">
+                                    </th>
                                     <th>Date/Time</th>
-                                    <th>
-                                        Shop<br>
-                                        <select id="filterShop" class="filter-select" onchange="applyFilters()"><option value="">All</option></select>
-                                    </th>
-                                    <th>
-                                        Country<br>
-                                        <select id="filterCountry" class="filter-select" onchange="applyFilters()"><option value="">All</option></select>
-                                    </th>
-                                    <th>
-                                        Payment Method<br>
-                                        <select id="filterPayment" class="filter-select" onchange="applyFilters()"><option value="">All</option></select>
-                                    </th>
+                                    <th>Shop</th>
+                                    <th>Country</th>
+                                    <th>Payment Method</th>
                                     <th>Duration</th>
                                     <th>Status</th>
                                 </tr>
+                                <tr>
+                                    <th></th> <th><select id="filterShop" class="filter-select" onchange="applyFilters()"><option value="">All Shops</option></select></th>
+                                    <th><select id="filterCountry" class="filter-select" onchange="applyFilters()"><option value="">All Countries</option></select></th>
+                                    <th><select id="filterPayment" class="filter-select" onchange="applyFilters()"><option value="">All Payments</option></select></th>
+                                    <th></th> <th></th> </tr>
                             </thead>
                             <tbody id="historyBody"></tbody>
                         </table>
@@ -230,6 +247,13 @@
         const c = countryCode.toLowerCase();
         let filtered = configData.payments.filter(p => {
             if (c === 'at' || c === 'de') return ['credit', 'paypal', 'k_now', 'k_later', 'k_over', 'billie'].includes(p.id);
+            if (c === 'cz' || c === 'sk') return ['credit', 'paypal', 'bank', 'delivery'].includes(p.id);
+            if (c === 'ch') return ['credit', 'paypal', 'twint', 'k_later'].includes(p.id);
+            if (c === 'se') return ['credit', 'paypal', 'k_now', 'k_later', 'k_over', 'swish'].includes(p.id);
+            if (c === 'ro') return ['credit', 'splitit', 'delivery'].includes(p.id);
+            if (c === 'rs') return ['corvus', 'delivery'].includes(p.id);
+            if (c === 'si' || c === 'hr') return ['credit', 'paypal', 'splitit', 'delivery'].includes(p.id);
+            if (c === 'hu') return ['credit'].includes(p.id);
             return ['credit', 'paypal'].includes(p.id);
         });
         document.getElementById('paymentList').innerHTML = filtered.map(p => `<li><button class="dropdown-item d-flex align-items-center" onclick="selectPayment('${p.id}', '${p.name}')"><div class="payment-icon-container"><img src="${getPaymentIconPath(p.id)}" class="payment-icon-ui"></div><b>${p.name}</b></button></li>`).join('');
@@ -246,7 +270,7 @@
             
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td><input type="checkbox" class="row-check" value="${entry.id}"></td>
+                <td class="text-center"><input type="checkbox" class="row-check" value="${entry.id}"></td>
                 <td class="small text-muted">${entry.date}</td>
                 <td><img src="${shop.logo}" class="table-logo" title="${entry.shop}"></td>
                 <td><span class="fi fi-${entry.country.toLowerCase()} me-2"></span> <b>${country.name}</b></td>
@@ -259,7 +283,7 @@
                 <td><small class="fw-bold text-muted">${entry.duration || '--'}</small></td>
                 <td>
                     <span class="status-badge ${statusClass}">${entry.status}</span>
-                    ${entry.status === 'FAILED' ? `<a href="/playwright-report/index.html" target="_blank" class="btn btn-dark btn-report">VIEW REPORT</a>` : ''}
+                    ${entry.status === 'FAILED' ? `<a href="/playwright-report/index.html" target="_blank" class="btn-report">VIEW REPORT</a>` : ''}
                 </td>
             `;
             body.appendChild(row);
