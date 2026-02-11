@@ -63,14 +63,49 @@
             color: #ffffff;
         }
         /* Estilo para los labels del historial */
+        /* Centra los títulos (Labels) */
+       /* Labels de la cabecera del histórico */
         #historyTable thead tr:first-child th {
-            color: #000000 !important;   /* Negro puro */
-            font-weight: 800 !important; /* Extra negrita (Montserrat) */
-            text-align: center;         /* Centrado horizontal */
-            vertical-align: middle;     /* Centrado vertical */
-            text-transform: uppercase;  /* Mayúsculas para mayor impacto */
-            font-size: 0.85rem;         /* Tamaño ligeramente mayor */
-            letter-spacing: 0.5px;      /* Espaciado sutil */
+            color: #000000 !important;
+            font-weight: 800 !important;
+            text-align: center !important;
+            vertical-align: middle;
+            font-size: 1rem !important; /* Subido a 1rem para mayor legibilidad */
+            padding: 15px 10px;        /* Más espacio para que respiren */
+            white-space: nowrap;
+        }
+
+        /* Ajuste de los iconos para que no se queden pequeños respecto al nuevo texto */
+        #historyTable thead th i {
+            font-size: 1.2rem; /* Iconos un poco más grandes que el texto */
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        #historyTable tbody td {
+            text-align: center !important;
+            vertical-align: middle;
+            font-size: 0.95rem; /* Un pelín más grande también para equilibrar */
+            padding: 12px 8px;
+        }
+        /* Título principal de la sección */
+        .card h6.text-muted.small {
+            font-size: 1.3rem !important; /* Más grande y visible */
+            color: #000000 !important;    /* Negro puro en lugar de gris */
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #e20015; /* Subrayado Lutz para dar estilo */
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        /* Labels de los selectores (Shop, Country, etc) */
+        .mb-3 label.small {
+            font-size: 1.1rem !important; /* Aumento de tamaño significativo */
+            color: #000000 !important;     /* Negro fuerte */
+            font-weight: 800 !important;   /* Máxima negrita */
+            margin-bottom: 8px;
+            display: block;
         }
     </style>
 </head>
@@ -99,7 +134,7 @@
             <div class="card p-4 h-100 shadow-sm border-0" style="border-radius: 15px;">
                 <h6 class="text-muted small fw-bold mb-4">TEST PARAMETERS</h6>
                 <div class="mb-3">
-                    <label class="small fw-bold mb-2">Shop / Rail</label>
+                    <label class="small fw-bold mb-2">🛒 Shop / Rail</label>
                     <div class="dropdown">
                         <button id="shopBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select...</button>
                         <ul id="shopList" class="dropdown-menu w-100 shadow border-0"></ul>
@@ -107,15 +142,15 @@
                     <input type="hidden" id="shop">
                 </div>
                 <div class="mb-3">
-                    <label class="small fw-bold mb-2">Country</label>
+                    <label class="small fw-bold mb-2">🌍 Country</label>
                     <div class="dropdown">
                         <button id="countryBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select...</button>
                         <ul id="countryList" class="dropdown-menu w-100 shadow border-0"></ul>
                     </div>
                     <input type="hidden" id="country">
                 </div>
-                <div class="mb-4">
-                    <label class="small fw-bold mb-2">Payment Method</label>
+                <div class="mb-3">
+                    <label class="small fw-bold mb-2">🏦 Payment Method</label>
                     <div class="dropdown">
                         <button id="paymentBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select country first...</button>
                         <ul id="paymentList" class="dropdown-menu w-100 shadow border-0" style="max-height: 350px; overflow-y: auto;"></ul>
@@ -156,12 +191,12 @@
                                     <th width="40" rowspan="2" class="text-center vertical-middle">
                                         <input type="checkbox" onclick="toggleAll(this)">
                                     </th>
-                                    <th>Date/Time</th>
-                                    <th>Shop</th>
-                                    <th>Country</th>
-                                    <th>Payment Method</th>
-                                    <th>Duration</th>
-                                    <th>Status</th>
+                                    <th>🕒 Date/Time</th>
+                                    <th>🏪 Shop</th>
+                                    <th>🌍 Country</th>
+                                    <th>💳 Payment Method</th>
+                                    <th>🕒 Duration</th>
+                                    <th>🚥 Status</th>
                                 </tr>
                                 <tr>
                                     <th></th>
@@ -309,17 +344,23 @@
                 <td class="text-center"><input type="checkbox" class="row-check" value="${entry.id}"></td>
                 <td class="small text-muted">${entry.date}</td>
                 <td><img src="${shop.logo}" class="table-logo" title="${entry.shop}"></td>
-                <td><span class="fi fi-${entry.country.toLowerCase()} me-2"></span> <b>${country.name}</b></td>
                 <td>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <span class="fi fi-${entry.country.toLowerCase()} me-2"></span> <b>${country.name}</b></td>
+                    </div>
+                <td>
+                    <div class="d-flex align-items-center justify-content-center">
                         <img src="${getPaymentIconPath(entry.paymentId)}" class="payment-icon-table"> 
                         <b>${payment.name}</b>
                     </div>
                 </td>
-                <td><small class="fw-bold text-muted">${entry.duration || '--'}</small></td>
                 <td>
+                    <small class="fw-bold text-muted">${entry.duration || '--'}</small></td>
+                <td>
+                    <div class="d-flex align-items-center justify-content-center">
                     <span class="status-badge ${statusClass}">${entry.status}</span>
                     ${entry.status === 'FAILED' ? `<a href="/playwright-report/index.html" target="_blank" class="btn-report">VIEW REPORT</a>` : ''}
+                    </div>
                 </td>
             `;
             body.appendChild(row);
