@@ -1,0 +1,4 @@
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
+ℹ️ Delivery option js
+ℹ️ Delivery option dentro 1
+✅ Self Service (Click & Collect) found. Selecting...

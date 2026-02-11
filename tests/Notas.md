@@ -10,16 +10,23 @@ npm list @playwright/test
 -- Create Project from scratch
 npm init playwright@latest
 
-------------------------------------
+-------------------------------------------
 -- INTERFAZ PARA SSO Y EJECUCIONES LOCALES
-------------------------------------
+-------------------------------------------
 - node run-test.mjs
 -
-----------------------------------
--- INTERFAZ PARA BATCH Y DASHBOARD
-----------------------------------
+--------------------------------------------
+-- INTERFAZ PARA BATCH Y DASHBOARD DE ALLURE
+--------------------------------------------
 - node runner.js
-- 
+-
+----------------------------------
+-- DASHBOARD LOCAL DE EJECUCIONES
+----------------------------------
+- (First logging to SSO)
+- cd dashboard
+- node server.js
+-
 --------------------
 -- TRACEO DE ERRORES
 --------------------

@@ -1,0 +1,35 @@
+{
+  "shops": [
+  { "id": "xxxlutz", "name": "XXXLutz", "logo": "assets/xxxlutz.png" },
+    { "id": "moemax", "name": "Mömax", "logo": "assets/moemax.png" },
+    { "id": "xxxlesnina", "name": "Lesnina", "logo": "assets/xxxlesnina.png" },
+    { "id": "moebelix", "name": "Möbelix", "logo": "assets/moebelix.png" }
+  ],
+  "countries": [
+    { "code": "at", "name": "Austria", "emoji": "🇦🇹" },
+    { "code": "de", "name": "Germany", "emoji": "🇩🇪" },
+    { "code": "cz", "name": "Czech Republic", "emoji": "🇨🇿" },
+    { "code": "ch", "name": "Switzerland", "emoji": "🇨🇭" },
+    { "code": "sk", "name": "Slovakia", "emoji": "🇸🇰" },
+    { "code": "si", "name": "Slovenia", "emoji": "🇸🇮" },
+    { "code": "se", "name": "Sweden", "emoji": "🇸🇪" },
+    { "code": "ro", "name": "Romania", "emoji": "🇷🇴" },
+    { "code": "hr", "name": "Croatia", "emoji": "🇭🇷" },
+    { "code": "hu", "name": "Hungary", "emoji": "🇭🇺" },
+    { "code": "rs", "name": "Serbia", "emoji": "🇷🇸" }
+  ],
+  "payments": [
+    { "id": "credit", "name": "Credit Card", "icon": "💳", "spec": "tests/E2E-Lutz-Credit.spec.js" },
+    { "id": "paypal", "name": "PayPal", "icon": "🅿️", "spec": "tests/E2E-Lutz-PayPal.spec.js" },
+    { "id": "k_now", "name": "Klarna Pay Now", "icon": "🚀", "spec": "tests/E2E-Lutz-Payments.spec.js", "payCode": "KN" },
+    { "id": "k_later", "name": "Klarna Pay Later", "icon": "⏳", "spec": "tests/E2E-Lutz-Payments.spec.js", "payCode": "KL" },
+    { "id": "k_over", "name": "Klarna Pay Overtime", "icon": "📅", "spec": "tests/E2E-Lutz-Payments.spec.js", "payCode": "KO" },
+    { "id": "twint", "name": "Twint", "icon": "📲", "spec": "tests/E2E-Lutz-Payments.spec.js", "payCode": "TW" },
+    { "id": "swish", "name": "Swish", "icon": "🏦", "spec": "tests/E2E-Lutz-Payments.spec.js", "payCode": "SW" },
+    { "id": "bank", "name": "Online Bank", "icon": "🏦", "spec": "tests/E2E-Lutz-Payments.spec.js", "payCode": "ON" },
+    { "id": "billie", "name": "Billie", "icon": "🏢", "spec": "tests/E2E-Lutz-Billie.spec.js" },
+    { "id": "delivery", "name": "On Delivery", "icon": "📦", "spec": "tests/E2E-Lutz-Payments.spec.js", "payCode": "DEL" },
+    { "id": "corvus", "name": "Corvus", "icon": "🦅", "spec": "tests/E2E-Lutz-RS.spec.js" },
+    { "id": "splitit", "name": "SplitIT", "icon": "💳", "spec": "tests/E2E-Lutz-SplitIT.spec.js" }
+  ]
+}

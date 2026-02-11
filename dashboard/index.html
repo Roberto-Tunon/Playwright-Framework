@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXLDigital Automation Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.2/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #f0f2f5; color: #2d3436; }
+        .navbar { background-color: #fff; padding: 1rem 0; border-bottom: 4px solid #e20015; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .brand-title { font-weight: 800; font-size: 1.8rem; letter-spacing: -1px; display: flex; align-items: center; }
+        .text-lutz { color: #e20015; }
+        
+        .console-box { 
+            background-color: #0d0d0d; color: #00ff41; 
+            font-family: 'Courier New', monospace; font-size: 0.85rem; 
+            padding: 20px; height: 535px; overflow-y: auto; white-space: pre-wrap; 
+            border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+        }
+
+        .table-logo { height: 25px; width: auto; object-fit: contain; }
+        .payment-icon-table { width: 45px; height: 28px; object-fit: contain; border: 1px solid #eee; border-radius: 4px; padding: 2px; background: white; margin-right: 10px; }
+        .status-badge { padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 0.7rem; color: #fff !important; text-transform: uppercase; display: inline-block; min-width: 80px; text-align: center; }
+        .bg-passed { background-color: #28a745; }
+        .bg-failed { background-color: #dc3545; }
+
+        /* Ajuste de alineación solicitado */
+        .btn-param-custom { justify-content: flex-start !important; gap: 10px; }
+        
+        .btn-clear-log { background: #e20015; color: #ffffff; border: none; font-size: 0.75rem; font-weight: 800; padding: 6px 12px; border-radius: 6px; }
+        .clock-container { background: #e20015; color: #ffffff; padding: 6px 14px; border-radius: 6px; font-family: monospace; font-weight: 800; display: flex; align-items: center; }
+        
+        .payment-icon-container { width: 65px; height: 40px; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid #dee2e6; border-radius: 6px; margin-right: 10px; }
+        .payment-icon-ui { max-width: 80%; max-height: 80%; object-fit: contain; }
+        
+        .history-section { margin-top: 30px; margin-bottom: 50px; }
+        .history-card { border-radius: 15px; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .filter-select { font-size: 0.7rem; padding: 2px; margin-top: 5px; width: 100%; border-radius: 4px; border: 1px solid #ddd; }
+        
+        .btn-report { font-size: 0.65rem; font-weight: 800; padding: 4px 8px; margin-left: 10px; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="brand-title">
+            <img src="assets/xxxlutz.png" style="height:45px; margin-right:15px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
+            <span>XXX<span class="text-lutz">LDigital</span> Dashboard</span>
+        </div>
+        <div class="clock-container" id="digital-clock"><i class="bi bi-clock-fill me-2"></i> 00:00:00</div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="card p-4 h-100 shadow-sm border-0" style="border-radius: 15px;">
+                <h6 class="text-muted small fw-bold mb-4">TEST PARAMETERS</h6>
+                <div class="mb-3">
+                    <label class="small fw-bold mb-2">Shop / Rail</label>
+                    <div class="dropdown">
+                        <button id="shopBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select...</button>
+                        <ul id="shopList" class="dropdown-menu w-100 shadow border-0"></ul>
+                    </div>
+                    <input type="hidden" id="shop">
+                </div>
+                <div class="mb-3">
+                    <label class="small fw-bold mb-2">Country</label>
+                    <div class="dropdown">
+                        <button id="countryBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select...</button>
+                        <ul id="countryList" class="dropdown-menu w-100 shadow border-0"></ul>
+                    </div>
+                    <input type="hidden" id="country">
+                </div>
+                <div class="mb-4">
+                    <label class="small fw-bold mb-2">Payment Method</label>
+                    <div class="dropdown">
+                        <button id="paymentBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select country first...</button>
+                        <ul id="paymentList" class="dropdown-menu w-100 shadow border-0" style="max-height: 350px; overflow-y: auto;"></ul>
+                    </div>
+                    <input type="hidden" id="payment">
+                </div>
+                <div class="form-check form-switch mb-4">
+                    <input class="form-check-input" type="checkbox" id="headlessSwitch">
+                    <label class="form-check-label small fw-bold text-muted" for="headlessSwitch">Visual Mode (Show Browser)</label>
+                </div>
+                <button onclick="runTest()" id="runBtn" class="btn btn-danger w-100 p-3 fw-bold" style="background:#e20015; border:none; border-radius:12px;">EXECUTE TEST SEQUENCE 🚀</button>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm overflow-hidden" style="border-radius: 15px;">
+                <div class="p-3 bg-white border-bottom d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-danger"><i class="bi bi-terminal-fill me-2"></i> LIVE_CONSOLE</span>
+                    <button onclick="clearLog()" class="btn-clear-log"><i class="bi bi-trash3-fill me-1"></i> CLEAR LOG</button>
+                </div>
+                <div id="output" class="console-box">> system_ready...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row history-section">
+        <div class="col-12">
+            <div class="card history-card shadow-sm">
+                <div class="card-body p-0">
+                    <div class="p-4 border-bottom d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mb-0" style="font-size: 1rem;">GLOBAL EXECUTION HISTORY</h5>
+                        <button class="btn btn-outline-danger btn-sm fw-bold" onclick="deleteSelected()"><i class="bi bi-x-circle me-1"></i> DELETE SELECTED</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table align-middle" id="historyTable">
+                            <thead>
+                                <tr>
+                                    <th width="40"><input type="checkbox" onclick="toggleAll(this)"></th>
+                                    <th>Date/Time</th>
+                                    <th>
+                                        Shop<br>
+                                        <select id="filterShop" class="filter-select" onchange="applyFilters()"><option value="">All</option></select>
+                                    </th>
+                                    <th>
+                                        Country<br>
+                                        <select id="filterCountry" class="filter-select" onchange="applyFilters()"><option value="">All</option></select>
+                                    </th>
+                                    <th>
+                                        Payment Method<br>
+                                        <select id="filterPayment" class="filter-select" onchange="applyFilters()"><option value="">All</option></select>
+                                    </th>
+                                    <th>Duration</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="historyBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    let configData = null;
+    let fullHistory = [];
+
+    function updateClock() {
+        document.getElementById('digital-clock').innerHTML = `<i class="bi bi-clock-fill me-2"></i> ${new Date().toLocaleTimeString('es-ES', { hour12: false })}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    function clearLog() { document.getElementById('output').innerText = '> terminal cleared...\n'; }
+
+    async function init() {
+        try {
+            const resConfig = await fetch('/config');
+            configData = await resConfig.json();
+            
+            const resHistory = await fetch('/history');
+            fullHistory = await resHistory.json();
+
+            renderDropdowns();
+            populateFilters();
+            renderHistory(fullHistory);
+
+        } catch(e) { console.error("Error cargando datos:", e); }
+    }
+
+    function renderDropdowns() {
+        document.getElementById('shopList').innerHTML = configData.shops.map(s => `<li><button class="dropdown-item d-flex align-items-center" onclick="selectShop('${s.id}', '${s.name}', '${s.logo}')"><img src="${s.logo}" style="height:18px; margin-right:10px"> <b>${s.name}</b></button></li>`).join('');
+        document.getElementById('countryList').innerHTML = configData.countries.map(c => `<li><button class="dropdown-item d-flex align-items-center" onclick="selectCountry('${c.code}', '${c.name}')"><span class="fi fi-${c.code.toLowerCase()} me-2"></span> <b>${c.name}</b></button></li>`).join('');
+    }
+
+    function populateFilters() {
+        const shops = [...new Set(fullHistory.map(h => h.shop))];
+        const countries = [...new Set(fullHistory.map(h => h.country))];
+        const payments = [...new Set(fullHistory.map(h => h.paymentId))];
+
+        const fShop = document.getElementById('filterShop');
+        const fCountry = document.getElementById('filterCountry');
+        const fPayment = document.getElementById('filterPayment');
+
+        shops.forEach(s => fShop.innerHTML += `<option value="${s}">${s}</option>`);
+        countries.forEach(c => fCountry.innerHTML += `<option value="${c}">${c}</option>`);
+        payments.forEach(p => fPayment.innerHTML += `<option value="${p}">${p}</option>`);
+    }
+
+    function applyFilters() {
+        const shopVal = document.getElementById('filterShop').value;
+        const countryVal = document.getElementById('filterCountry').value;
+        const paymentVal = document.getElementById('filterPayment').value;
+
+        const filtered = fullHistory.filter(h => {
+            return (shopVal === "" || h.shop === shopVal) &&
+                   (countryVal === "" || h.country === countryVal) &&
+                   (paymentVal === "" || h.paymentId === paymentVal);
+        });
+        renderHistory(filtered);
+    }
+
+    function getPaymentIconPath(id) {
+        return id.startsWith('k_') ? 'assets/klarna.png' : `assets/${id}.png`;
+    }
+
+    function selectShop(id, name, logo) {
+        document.getElementById('shop').value = id;
+        document.getElementById('shopBtn').innerHTML = `<img src="${logo}" style="height:20px; margin-right:10px"> <b>${name}</b>`;
+        if (document.getElementById('country').value) updatePaymentMethods(document.getElementById('country').value);
+    }
+
+    function selectCountry(code, name) {
+        document.getElementById('country').value = code;
+        document.getElementById('countryBtn').innerHTML = `<span class="fi fi-${code.toLowerCase()} me-2"></span> <b>${name}</b>`;
+        updatePaymentMethods(code);
+    }
+
+    function selectPayment(id, name) {
+        document.getElementById('payment').value = id;
+        document.getElementById('paymentBtn').innerHTML = `<div class="payment-icon-container"><img src="${getPaymentIconPath(id)}" class="payment-icon-ui"></div><b>${name}</b>`;
+    }
+
+    function updatePaymentMethods(countryCode) {
+        if (!configData) return;
+        const c = countryCode.toLowerCase();
+        let filtered = configData.payments.filter(p => {
+            if (c === 'at' || c === 'de') return ['credit', 'paypal', 'k_now', 'k_later', 'k_over', 'billie'].includes(p.id);
+            return ['credit', 'paypal'].includes(p.id);
+        });
+        document.getElementById('paymentList').innerHTML = filtered.map(p => `<li><button class="dropdown-item d-flex align-items-center" onclick="selectPayment('${p.id}', '${p.name}')"><div class="payment-icon-container"><img src="${getPaymentIconPath(p.id)}" class="payment-icon-ui"></div><b>${p.name}</b></button></li>`).join('');
+    }
+
+    function renderHistory(data) {
+        const body = document.getElementById('historyBody');
+        body.innerHTML = "";
+        data.forEach(entry => {
+            const shop = configData.shops.find(s => s.id === entry.shop) || { logo: 'assets/default.png' };
+            const country = configData.countries.find(c => c.code === entry.country) || { name: entry.country };
+            const payment = configData.payments.find(p => p.id === entry.paymentId) || { name: entry.paymentId };
+            const statusClass = entry.status === 'PASSED' ? 'bg-passed' : 'bg-failed';
+            
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><input type="checkbox" class="row-check" value="${entry.id}"></td>
+                <td class="small text-muted">${entry.date}</td>
+                <td><img src="${shop.logo}" class="table-logo" title="${entry.shop}"></td>
+                <td><span class="fi fi-${entry.country.toLowerCase()} me-2"></span> <b>${country.name}</b></td>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <img src="${getPaymentIconPath(entry.paymentId)}" class="payment-icon-table"> 
+                        <b>${payment.name}</b>
+                    </div>
+                </td>
+                <td><small class="fw-bold text-muted">${entry.duration || '--'}</small></td>
+                <td>
+                    <span class="status-badge ${statusClass}">${entry.status}</span>
+                    ${entry.status === 'FAILED' ? `<a href="/playwright-report/index.html" target="_blank" class="btn btn-dark btn-report">VIEW REPORT</a>` : ''}
+                </td>
+            `;
+            body.appendChild(row);
+        });
+    }
+
+    async function runTest() {
+        const btn = document.getElementById('runBtn');
+        const out = document.getElementById('output');
+        const params = {
+            shop: document.getElementById('shop').value,
+            country: document.getElementById('country').value,
+            paymentId: document.getElementById('payment').value,
+            headless: !document.getElementById('headlessSwitch').checked
+        };
+
+        if(!params.shop || !params.country || !params.paymentId) { alert("Select all params!"); return; }
+
+        btn.disabled = true; btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> RUNNING...';
+        
+        try {
+            const res = await fetch('/run-test', { 
+                method: 'POST', 
+                headers: {'Content-Type': 'application/json'}, 
+                body: JSON.stringify(params) 
+            });
+            const data = await res.json();
+            out.innerText += "\n" + data.output.replace(/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,'');
+            
+            const resHistory = await fetch('/history');
+            fullHistory = await resHistory.json();
+            applyFilters();
+
+        } catch (e) { out.innerText += "\n❌ Error en conexión"; }
+        finally { btn.disabled = false; btn.innerHTML = 'EXECUTE TEST SEQUENCE 🚀'; out.scrollTop = out.scrollHeight; }
+    }
+
+    function toggleAll(source) { document.querySelectorAll('.row-check').forEach(c => c.checked = source.checked); }
+    function deleteSelected() { alert("Lógica de borrado no implementada en el server."); }
+
+    init();
+</script>
+</body>
+</html>
