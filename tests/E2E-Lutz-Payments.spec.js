@@ -2,7 +2,7 @@ import { epic, feature, story, description, tag, parameter } from "allure-js-com
 import { DeliveryOption } from "../utils/DeliveryOption";
 const { test, expect } = require('@playwright/test');
 const { datosvar } = require('./constantes');
-const { fillSELFDeliveryForm } = require('../utils/fillSELFDeliveryForm');
+const { fillDeliveryForm } = require('../utils/fillDeliveryForm');
 const { fillKlarna } = require('../utils/fillKlarna');
 const { ObtenerDatos } = require('../utils/ObtenerDatos');
 const { OpenPage } = require('../utils/OpenPage');
@@ -30,7 +30,9 @@ test(testTitle, async ({ browser }) => {
     await epic(rail);      
     await feature(cod_country);             
     await story(pay);
-
+    
+    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: ${pay}`);
+    await description("E2E Test for Country:" + cod_country.toUpperCase() + " - Rail:"+ rail.toUpperCase() + " - Mode:" + mode.toUpperCase() + " - Mode:" + pay.toUpperCase());
     await description("E2E Test for " + rail + "-" + cod_country + "-" + pay);
     await tag(cod_country);
     await parameter("Rail", process.env.RAIL);
@@ -50,7 +52,7 @@ test(testTitle, async ({ browser }) => {
               await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click(); 
               await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
               await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-              await fillSELFDeliveryForm(page, datosvar, datosrail);  
+              await fillDeliveryForm(page, datosvar, datosrail);  
         } else {
           console.log("🚫 El botón no está visible, no se hizo clic.");
         }    

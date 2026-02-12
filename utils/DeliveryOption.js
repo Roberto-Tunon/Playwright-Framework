@@ -1,5 +1,11 @@
 const { fillDeliveryForm } = require('./fillDeliveryForm');
-const { fillSELFDeliveryForm } = require('./fillSELFDeliveryForm');
+
+async function AddtoCart(page, datosvar, datosrail) {
+    await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+    await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+    await fillDeliveryForm(page, datosvar, datosrail);
+     
+}    
 
 async function DeliveryOption(page, datosvar, datosrail, pay) {           
 
@@ -28,10 +34,7 @@ async function DeliveryOption(page, datosvar, datosrail, pay) {
             await page.getByRole('button', { name: datosrail.City}).click();    
             await page.locator('[data-purpose="availability.changeSubsidiary.confirm"]').click();
 
-            await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-            await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-
-            await fillSELFDeliveryForm(page, datosvar, datosrail); 
+            await AddtoCart(page, datosvar, datosrail);            
 
         } else {
             console.log('⚠️ SELF_SERVICE not found. Selecting first option if possible...');
@@ -42,13 +45,11 @@ async function DeliveryOption(page, datosvar, datosrail, pay) {
             } catch (e) {
             console.log('ℹ️ Delivery option combo not available. Continuing to login modal...');
             }
-
-            await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
-            await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
-            await fillDeliveryForm(page, datosvar, datosrail);
-
+            await AddtoCart(page, datosvar, datosrail);           
         }       
-    }    
+    } else {
+         await AddtoCart(page, datosvar, datosrail);         
+    }   
 }
 
 module.exports = { DeliveryOption };

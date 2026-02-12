@@ -29,7 +29,8 @@ test(testTitle, async ({ browser }) => {
     await feature(cod_country);             
     await story('Credit Card');
 
-    await description("E2E Test for " + rail + "-" + cod_country);
+    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: Credit card`);
+    await description("E2E Test for Country:" + cod_country.toUpperCase() + " - Rail:"+ rail.toUpperCase() + " - Mode:" + mode.toUpperCase() + " - Mode: Credit card");
     await tag(cod_country);
     await parameter("Rail", process.env.RAIL);
    
@@ -41,7 +42,7 @@ test(testTitle, async ({ browser }) => {
 
     await fillCreditCard(page, PayQC, datosrail);
     
-    if (["AT", "SI", "HR", "HU"].includes(cod_country) && rail === "xxxlutz") {
+    if (["AT", "SI", "HR", "HU"].includes(cod_country) && (rail === "xxxlutz" || rail === "xxxlesnina")) {
             await page.locator('[data-purpose="form.checkbox.termsAndConditions"] + span').first().click({ timeout: 2000 });       
     } 
     

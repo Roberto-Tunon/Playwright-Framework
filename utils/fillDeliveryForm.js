@@ -2,13 +2,14 @@ async function fillDeliveryForm(page, datosvar, datosrail) {
     
     await page.waitForTimeout(2000);  // 2 seconds pause 
     
-    await page.locator('[data-purpose="form.input.deliveryAddress.email.field"]').fill(datosvar.user);
-    await page.locator('[data-purpose="form.input.deliveryAddress.phone.field"]').fill(datosrail.Phone); 
-    await page.locator('[data-purpose="form.input.deliveryAddress.streetname.field"]').fill(datosvar.address);  
-    await page.locator('[data-purpose="form.input.deliveryAddress.streetnumber.field"]').fill(datosvar.nummer);
-    await page.locator('[data-purpose="form.input.deliveryAddress.firstName.field"]').fill(datosvar.name);
-    await page.locator('[data-purpose="form.input.deliveryAddress.lastName.field"]').fill(datosvar.surname);
-
+    await page.locator('input[name$="Address.email"]').fill(datosvar.user);
+    await page.locator('input[name$="Address.phone"]').fill(datosrail.Phone);
+    await page.locator('input[name$="Address.streetname"]').fill(datosvar.address);
+    await page.locator('input[name$="Address.streetnumber"]').fill(datosvar.nummer);
+    await page.locator('input[name$="Address.firstName"]').fill(datosvar.name);
+    await page.locator('input[name$="Address.lastName"]').fill(datosvar.surname);
+    
+    
     if (datosrail.Country === 'RO'){ 
       await page.click('[data-purpose="postalCodeDistrictLocality.region"]');
       await page.click('role=option >> text=Bucuresti');
@@ -19,8 +20,8 @@ async function fillDeliveryForm(page, datosvar, datosrail) {
       await page.click('[data-purpose="form.select.deliveryAddress.gender"]');
       await page.click('role=option >> text=Úr');
       }
-      await page.locator('[data-purpose="form.input.deliveryAddress.postalCode.field"]').fill(datosrail.PostalCode);
-      await page.locator('[data-purpose="form.input.deliveryAddress.town.field"]').fill(datosrail.City);
+      await page.locator('input[name$="Address.postalCode"]').fill(datosrail.PostalCode);
+      await page.locator('input[name$="Address.town"]').fill(datosrail.City);            
     }
     
     await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();

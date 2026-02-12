@@ -1,0 +1,202 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: Bestellübersicht | XXXLutz.at
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e37]: "1"
+                - heading "Details" [level=2] [ref=e38]
+                - generic [ref=e42]:
+                  - generic [ref=e43]:
+                    - heading "Kontakt" [level=3] [ref=e45]
+                    - generic [ref=e47]:
+                      - textbox "E-Mail-Adresse*" [active] [ref=e48]: roberto.tunon@xxxl.digital
+                      - generic "E-Mail-Adresse" [ref=e49]: E-Mail-Adresse*
+                    - generic [ref=e50]:
+                      - generic [ref=e51]:
+                        - generic [ref=e52]:
+                          - paragraph [ref=e53]: Ländervorwahl auswählen
+                          - combobox [ref=e55] [cursor=pointer]:
+                            - generic [ref=e60] [cursor=pointer]: "+43"
+                        - textbox "Telefonnummer*" [ref=e61]
+                        - generic "Pflichtfeld": Telefonnummer*
+                      - generic [ref=e63]: Für Auslieferung und eventuelle Rückfragen
+                    - generic [ref=e64]:
+                      - heading "Adresse" [level=3] [ref=e65]
+                      - paragraph [ref=e66]: Lieferung ist nur an eine Adresse innerhalb Österreichs möglich
+                    - generic [ref=e68]:
+                      - textbox "Vorname*" [ref=e69]
+                      - generic "Vorname": Vorname*
+                    - generic [ref=e71]:
+                      - textbox "Nachname*" [ref=e72]
+                      - generic "Nachname": Nachname*
+                    - generic [ref=e74]:
+                      - textbox "Straße*" [ref=e75]
+                      - generic "Straße": Straße*
+                    - generic [ref=e77]:
+                      - textbox "Hausnummer/Stiege/Tür*" [ref=e78]
+                      - generic "Hausnummer/Stiege/Tür": Hausnummer/Stiege/Tür*
+                    - generic [ref=e79]:
+                      - generic [ref=e81]:
+                        - textbox "PLZ*" [ref=e82]
+                        - generic "PLZ": PLZ*
+                      - generic [ref=e84]:
+                        - textbox "Ort*" [ref=e85]
+                        - generic "Ort": Ort*
+                    - button "Zusätzliche Informationen (optional)" [ref=e91] [cursor=pointer]:
+                      - generic [ref=e94] [cursor=pointer]: Zusätzliche Informationen (optional)
+                    - button "Ich habe einen Preisepass" [ref=e100] [cursor=pointer]:
+                      - generic [ref=e103] [cursor=pointer]: Ich habe einen Preisepass
+                  - generic [ref=e106] [cursor=pointer]:
+                    - checkbox "Ich möchte als Firma bezahlen" [ref=e107]
+                    - generic [ref=e109] [cursor=pointer]:
+                      - img
+                    - generic [ref=e112] [cursor=pointer]: Ich möchte als Firma bezahlen
+                  - generic [ref=e114] [cursor=pointer]:
+                    - checkbox "Ich habe eine abweichende Rechnungsadresse" [ref=e115]
+                    - generic [ref=e117] [cursor=pointer]:
+                      - img
+                    - generic [ref=e121] [cursor=pointer]: Ich habe eine abweichende Rechnungsadresse
+                  - button "Weiter zu den Zahlungsarten" [ref=e122] [cursor=pointer]:
+                    - generic [ref=e123] [cursor=pointer]: Weiter zu den Zahlungsarten
+              - generic [ref=e125]:
+                - generic [ref=e128]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e129]
+              - generic [ref=e130]:
+                - generic [ref=e133]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e134]
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - heading "Warenkorb" [level=3] [ref=e137]
+              - link "Warenkorb Bearbeiten" [ref=e138] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e139] [cursor=pointer]: Bearbeiten
+            - generic [ref=e140]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e141] [cursor=pointer]:
+                - generic [ref=e143] [cursor=pointer]:
+                  - img [ref=e145] [cursor=pointer]
+                  - img [ref=e147] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e148]
+              - generic [ref=e149]:
+                - generic [ref=e150]: Warenwert
+                - generic [ref=e151]:
+                  - text: € 147,
+                  - superscript [ref=e152]: "90"
+                - button "Lieferkosten" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e154] [cursor=pointer]: Lieferkosten
+                - generic [ref=e155]:
+                  - generic [ref=e156]: +
+                  - text: € 6,
+                  - superscript [ref=e157]: "95"
+              - generic [ref=e158]:
+                - generic [ref=e159]: Gesamtsumme
+                - generic [ref=e160]:
+                  - text: € 154,
+                  - superscript [ref=e161]: "85"
+                - generic [ref=e162]: inkl. MwSt.
+              - generic [ref=e163]:
+                - button "Gutscheincode" [ref=e164] [cursor=pointer]:
+                  - generic [ref=e165] [cursor=pointer]: Gutscheincode
+                  - img [ref=e166] [cursor=pointer]
+                - generic [ref=e169]:
+                  - generic [ref=e172]:
+                    - textbox "Code kopieren" [ref=e173]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e174] [cursor=pointer]:
+                    - generic [ref=e175] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e176]:
+              - listitem [ref=e177]: Schnelle Lieferung
+              - listitem [ref=e178]: 30 Tage Rückgaberecht
+              - listitem [ref=e179]: Sicher bezahlen
+    - contentinfo [ref=e180]:
+      - generic [ref=e181]:
+        - generic [ref=e183]:
+          - generic [ref=e186]:
+            - paragraph [ref=e187]: Hilfe & Kontakt
+            - generic [ref=e188]:
+              - generic [ref=e189]:
+                - link "Zum Kontaktformular" [ref=e190] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e191] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e192]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e193]:
+                - link "Häufig gestellte Fragen" [ref=e194] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e195] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e196]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e199]:
+            - generic [ref=e200]: Zahlungsmöglichkeiten
+            - generic [ref=e201]:
+              - img "Klarna" [ref=e204]
+              - img "Paypal" [ref=e207]
+              - img "Mastercard Visa" [ref=e210]
+              - img "Google Pay" [ref=e213]
+              - img "Apple Pay" [ref=e216]
+              - img "Logo Billie" [ref=e219]
+          - generic [ref=e220]: "*Vom Hersteller unverbindlich empfohlener Preis. Alle Preise sind Abholpreise. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise. Artikel im Onlineshop immer zum Preisepass Preis – unabhängig jeglicher Rabattaktion. *** Herstellerlistenpreis"
+        - generic [ref=e223]:
+          - link "XXXLutz" [ref=e224] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e225] [cursor=pointer]: XXXLutz
+            - img [ref=e227] [cursor=pointer]
+          - generic [ref=e233]: © 2026 XXXLutz KG
+          - list [ref=e234]:
+            - listitem [ref=e235]:
+              - link "Impressum" [ref=e236] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e237]:
+              - link "AGB" [ref=e238] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e239]:
+              - link "Datenschutz" [ref=e240] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e241]:
+              - button "Cookie-Einstellungen" [ref=e242] [cursor=pointer]
+          - list [ref=e243]:
+            - listitem [ref=e244]:
+              - link "youtube" [ref=e245] [cursor=pointer]:
+                - /url: https://www.youtube.com/@XXXLutzTV
+            - listitem [ref=e246]:
+              - link "facebook" [ref=e247] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.at/
+            - listitem [ref=e248]:
+              - link "instagram" [ref=e249] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_at/
+            - listitem [ref=e250]:
+              - link "pinterest" [ref=e251] [cursor=pointer]:
+                - /url: https://www.pinterest.at/xxxlutzAT/
+            - listitem [ref=e252]:
+              - link "tiktok" [ref=e253] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_at
+          - link "WACA accessibilty seal in silver" [ref=e254] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e255] [cursor=pointer]
+  - generic:
+    - log
+```

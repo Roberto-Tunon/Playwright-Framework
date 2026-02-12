@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { constantes } = require('../constantes');
 const { PayQC, datosvar } = require('../constantes');
 const { fillCreditCard } = require('../../utils/fillCreditCard');
-const { fillSELFDeliveryForm } = require('../../utils/fillSELFDeliveryForm');
+const { fillDeliveryForm } = require('../../utils/fillDeliveryForm');
 const { fillSSO } = require('../../utils/fillSSO');
 const { AcceptCookies } = require('../../utils/AcceptCookies');
 const { ObtenerDatos } = require('../../utils/ObtenerDatos');
@@ -44,7 +44,7 @@ test('Lutz Regression with Credit Card', async ({ browser }) => {
     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
 
-    await fillSELFDeliveryForm(page, datosvar, datosrail);     
+    await fillDeliveryForm(page, datosvar, datosrail);     
 
     await page.locator('[data-purpose="checkout.paymentOptions.creditcard"]').click();
 

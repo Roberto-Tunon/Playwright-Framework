@@ -1,0 +1,3 @@
+Params: Country: HR, Rail: XXXLESNINA, Mode: 1P, Pay: Credit card
+ℹ️ Delivery option searching Self Service
+✅ Self Service (Click & Collect) found. Selecting...

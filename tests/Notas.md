@@ -24,8 +24,7 @@ npm init playwright@latest
 -- DASHBOARD LOCAL DE EJECUCIONES
 ----------------------------------
 - (First logging to SSO)
-- cd dashboard
-- node server.js
+- cd dashboard && node server.js
 -
 --------------------
 -- TRACEO DE ERRORES

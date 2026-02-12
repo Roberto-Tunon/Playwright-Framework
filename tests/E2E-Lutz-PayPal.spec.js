@@ -28,7 +28,8 @@ test(testTitle, async ({ browser }) => {
     await feature(cod_country);             
     await story('Paypal');
 
-    await description("E2E Test for " + rail + "-" + cod_country);
+    console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: PayPal`);
+    await description("E2E Test for Country:" + cod_country.toUpperCase() + " - Rail:"+ rail.toUpperCase() + " - Mode:" + mode.toUpperCase() + " - Mode: PayPal");
     await tag(cod_country);
     await parameter("Rail", process.env.RAIL);
 
