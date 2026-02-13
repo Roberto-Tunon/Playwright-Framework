@@ -1,1 +1,0 @@
-Params: Country: HU, Rail: XXXLUTZ, Mode: 1P

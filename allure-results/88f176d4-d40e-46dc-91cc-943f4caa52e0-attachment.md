@@ -1,0 +1,806 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link "PayPal 0% Finanzierung" [ref=e9] [cursor=pointer]:
+            - /url: /c/finanzierung-paypal
+            - generic [ref=e10] [cursor=pointer]: PayPal 0% Finanzierung
+          - link "15% Extrarabatt" [ref=e11] [cursor=pointer]:
+            - /url: /c/aktion-aktuell
+            - generic [ref=e12] [cursor=pointer]: 15% Extrarabatt
+        - generic [ref=e14]:
+          - link "gratis Click & Collect" [ref=e15] [cursor=pointer]:
+            - /url: /c/clickundcollect
+            - generic [ref=e16] [cursor=pointer]: gratis Click & Collect
+          - link "über 12.000 Produkte lagernd" [ref=e17] [cursor=pointer]:
+            - /url: /kategorien/root
+            - generic [ref=e18] [cursor=pointer]: über 12.000 Produkte lagernd
+          - link "54 Filialen in deiner Nähe" [ref=e19] [cursor=pointer]:
+            - /url: /filialen-de
+            - generic [ref=e20] [cursor=pointer]: 54 Filialen in deiner Nähe
+          - switch "Hoher Kontrast" [ref=e21]
+          - generic [ref=e22] [cursor=pointer]:
+            - text: Hoher Kontrast
+            - img [ref=e23] [cursor=pointer]
+      - generic [ref=e27]:
+        - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]: Menü
+        - link "Möemax" [ref=e30] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e31] [cursor=pointer]: Möemax
+          - img [ref=e33] [cursor=pointer]
+        - link "Zum Hauptinhalt springen" [ref=e36] [cursor=pointer]:
+          - /url: "#main"
+        - search [ref=e37]:
+          - generic [ref=e38]:
+            - button "Suchen" [ref=e40] [cursor=pointer]
+            - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e41]
+            - generic: Suche nach Produkten, Marken oder Neuheiten
+            - button "Bildersuche" [ref=e45] [cursor=pointer]
+        - generic [ref=e46]:
+          - button "Anmelden" [ref=e48] [cursor=pointer]:
+            - generic [ref=e49] [cursor=pointer]: Anmelden
+          - link "Favoriten 0 Produkte" [ref=e51] [cursor=pointer]:
+            - /url: /favourites
+            - generic [ref=e52] [cursor=pointer]: Merkliste
+          - link "Mein Warenkorb 0 Produkte" [ref=e54] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=e55] [cursor=pointer]: Warenkorb
+        - navigation [ref=e56]:
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - link "Produkte" [ref=e59] [cursor=pointer]:
+                - /url: /kategorien/root
+            - listitem [ref=e60]:
+              - link "Räume" [ref=e61] [cursor=pointer]:
+                - /url: /c/raeume
+            - listitem [ref=e62]:
+              - link "Küchen" [ref=e63] [cursor=pointer]:
+                - /url: /alle-kuechen-C34
+            - listitem [ref=e64]:
+              - link "Garten" [ref=e65] [cursor=pointer]:
+                - /url: /garten-outdoor-C45
+            - listitem [ref=e66]:
+              - link "Trends" [ref=e67] [cursor=pointer]:
+                - /url: /c/inspiration
+            - listitem [ref=e68]:
+              - link "Werbung" [ref=e69] [cursor=pointer]:
+                - /url: /c/dein-trendmoebelhaus
+            - listitem [ref=e70]:
+              - link "% SALE %" [ref=e71] [cursor=pointer]:
+                - /url: /c/sale
+            - listitem [ref=e72]:
+              - link "Beratungstermin" [ref=e73] [cursor=pointer]:
+                - /url: /c/beratungstermin-vereinbaren
+    - main [ref=e74]:
+      - generic [ref=e78]:
+        - generic [ref=e80]:
+          - generic [ref=e82]: 0% Finanzierung mit PayPal – nur für kurze Zeit
+          - link "Jetzt sichern" [ref=e84] [cursor=pointer]:
+            - /url: /c/finanzierung-paypal
+        - button "close" [ref=e85] [cursor=pointer]
+      - status [ref=e86]:
+        - generic [ref=e87]: Stuhl Mara Grün/Schwarz online kaufen ➤ mömax
+      - generic [ref=e88]:
+        - navigation "breadcrumbs" [ref=e90]:
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "Startseite" [ref=e93] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e94]:
+              - link "Produkte" [ref=e95] [cursor=pointer]:
+                - /url: /kategorien/root
+                - generic [ref=e96] [cursor=pointer]: Produkte
+            - listitem [ref=e97]:
+              - link "Alle Möbel" [ref=e98] [cursor=pointer]:
+                - /url: /alle-moebel-C30
+                - generic [ref=e99] [cursor=pointer]: Alle Möbel
+            - listitem [ref=e100]:
+              - link "Alle Stühle" [ref=e101] [cursor=pointer]:
+                - /url: /alle-stuehle-C30C1
+                - generic [ref=e102] [cursor=pointer]: Alle Stühle
+            - listitem [ref=e103]:
+              - link "Alle Esszimmerstühle" [ref=e104] [cursor=pointer]:
+                - /url: /alle-esszimmerstuehle-C30C1C12
+                - generic [ref=e105] [cursor=pointer]: Alle Esszimmerstühle
+            - listitem [ref=e106]:
+              - link "Alle Holzstühle" [ref=e107] [cursor=pointer]:
+                - /url: /alle-holzstuehle-C30C1C12C2
+                - generic [ref=e108] [cursor=pointer]: Alle Holzstühle
+        - generic [ref=e109]:
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - button "Produktbild 1 / 6" [ref=e114] [cursor=pointer]:
+                - img [ref=e115] [cursor=pointer]
+              - button "Produktbild 2 / 6" [ref=e116] [cursor=pointer]:
+                - img [ref=e117] [cursor=pointer]
+              - button "Produktbild 3 / 6" [ref=e118] [cursor=pointer]:
+                - img [ref=e119] [cursor=pointer]
+              - button "Produktbild 4 / 6" [ref=e120] [cursor=pointer]:
+                - img [ref=e121] [cursor=pointer]
+              - button "Produktbild 5 / 6" [ref=e122] [cursor=pointer]:
+                - img [ref=e123] [cursor=pointer]
+              - button "Produktbild 6 / 6" [ref=e124] [cursor=pointer]:
+                - img [ref=e125] [cursor=pointer]
+            - group [ref=e127] [cursor=pointer]:
+              - generic [ref=e128] [cursor=pointer]:
+                - img "Stuhl Mara Grün/Schwarz - Schwarz/Grün, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e129]
+                - img "Mömax"
+              - img "Stuhl Mara Grün/Schwarz - Schwarz/Grün, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e131]
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - generic [ref=e138]: Artikelnr. 0289027303
+              - heading "Stuhl Mara Grün/Schwarz" [level=1] [ref=e139]:
+                - generic [ref=e140]: Stuhl
+                - text: Mara Grün/Schwarz
+              - 'button "Grün Breite/Höhe/Tiefe: 52/87/64 cm" [ref=e141] [cursor=pointer]':
+                - generic [ref=e142] [cursor=pointer]:
+                  - generic [ref=e143] [cursor=pointer]: Grün
+                  - generic [ref=e144] [cursor=pointer]: "Breite/Höhe/Tiefe: 52/87/64 cm"
+              - 'link "Produktbewertung: 5 von 5 Sterne - Alle Bewertungen: 2" [ref=e145] [cursor=pointer]':
+                - /url: "#ratings-and-reviews"
+                - generic [ref=e147] [cursor=pointer]:
+                  - generic:
+                    - img
+                    - img
+                    - img
+                    - img
+                    - img
+                  - generic [ref=e148] [cursor=pointer]: (2)
+            - button "Club-Preis" [ref=e152] [cursor=pointer]
+            - generic [ref=e153]:
+              - generic [ref=e154]: € 173,‒***
+              - generic [ref=e155]:
+                - text: € 76,
+                - superscript [ref=e156]: "42"
+              - generic [ref=e157]: Online zum Bonuscard-Preis
+              - generic [ref=e158]:
+                - generic [ref=e159]: Inkl. MwSt.
+                - generic [ref=e160]:
+                  - text: •
+                  - generic [ref=e161]: exkl.
+                  - button "Lieferkosten" [ref=e162] [cursor=pointer]:
+                    - generic [ref=e163] [cursor=pointer]: Lieferkosten
+              - generic [ref=e164]: "Bonuscard-Nachlass online bereits abgezogen. In der Filiale mit Bonuscard zum gleichen Preis erhältlich. Nicht mit anderen Aktionen (zB.: Gutscheinen und Rabattaktionen) kumulierbar."
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - text: "Farben:"
+                - generic [ref=e167]: Grün
+              - group "Farben" [ref=e168]:
+                - generic [ref=e169]: Farben
+                - checkbox "Stuhl Mara Grau/Schwarz - Schwarz/Grau, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e170]
+                - img "Stuhl Mara Grau/Schwarz - Schwarz/Grau, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e172] [cursor=pointer]
+                - checkbox "Stuhl Mara Grün/Schwarz - Schwarz/Grün, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [checked] [ref=e173]
+                - img "Stuhl Mara Grün/Schwarz - Schwarz/Grün, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e175]
+                - checkbox "Stuhl Mara Rosa/Schwarz - Schwarz/Rosa, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e176]
+                - img "Stuhl Mara Rosa/Schwarz - Schwarz/Rosa, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e178] [cursor=pointer]
+            - generic [ref=e180]:
+              - text: "Größe:"
+              - generic [ref=e181]: 52/87/64 cm
+            - generic [ref=e182]:
+              - generic [ref=e183]: "Mehr von:"
+              - link "Mömax" [ref=e184] [cursor=pointer]:
+                - /url: /s/?v_brand=m%C3%B6max
+                - generic [ref=e185] [cursor=pointer]: Mömax
+            - generic [ref=e186]:
+              - button "Zu den Favoriten hinzufügen" [ref=e187] [cursor=pointer]
+              - button "Stuhl Mara Grün/Schwarz In den Warenkorb" [disabled] [ref=e188]:
+                - img [ref=e189]
+            - generic [ref=e194]:
+              - button "Postversand € 19,99" [ref=e195] [cursor=pointer]:
+                - generic [ref=e196] [cursor=pointer]:
+                  - generic [ref=e198] [cursor=pointer]: Postversand
+                  - generic [ref=e199] [cursor=pointer]: € 19,99
+              - button "Lieferzeitpunkt ansehen" [ref=e202] [cursor=pointer]
+            - button "In einer Mömax Filiale Gratis Filiale wählen" [ref=e204] [cursor=pointer]:
+              - generic [ref=e205] [cursor=pointer]:
+                - generic [ref=e207] [cursor=pointer]: In einer Mömax Filiale
+                - generic [ref=e208] [cursor=pointer]: Gratis
+              - generic [ref=e210] [cursor=pointer]: Filiale wählen
+            - generic [ref=e211]:
+              - heading "Serviceleistungen" [level=3] [ref=e212]
+              - list [ref=e213]:
+                - listitem [ref=e214]: Gratis Rücksendung
+                - listitem [ref=e215]: 30 Tage Rückgaberecht
+                - listitem [ref=e216]:
+                  - link "Sicher bezahlen" [ref=e217] [cursor=pointer]:
+                    - /url: https://www.moemax.de/c/zahlungsmoeglichkeiten
+                    - generic [ref=e218] [cursor=pointer]: Sicher bezahlen
+              - button "Über Service & Versand" [ref=e219] [cursor=pointer]:
+                - generic [ref=e220] [cursor=pointer]: Über Service & Versand
+            - generic [ref=e221]:
+              - button "Produktdetails" [ref=e222] [cursor=pointer]
+              - button "Aufbau, Sicherheit & Pflege" [ref=e223] [cursor=pointer]
+        - heading "Über diesen Artikel" [level=2] [ref=e224]
+        - region "Wie zufrieden bist du mit dieser Produktdetailseite?" [ref=e226]:
+          - heading "Wie zufrieden bist du mit dieser Produktdetailseite?" [level=2] [ref=e227]
+          - group [ref=e228]:
+            - generic [ref=e229] [cursor=pointer]:
+              - generic [ref=e230] [cursor=pointer]: Sehr unzufrieden
+              - radio "Sehr unzufrieden"
+            - generic [ref=e232] [cursor=pointer]:
+              - generic [ref=e233] [cursor=pointer]: Unzufrieden
+              - radio "Unzufrieden"
+            - generic [ref=e235] [cursor=pointer]:
+              - generic [ref=e236] [cursor=pointer]: Neutral
+              - radio "Neutral"
+            - generic [ref=e238] [cursor=pointer]:
+              - generic [ref=e239] [cursor=pointer]: Zufrieden
+              - radio "Zufrieden"
+            - generic [ref=e241] [cursor=pointer]:
+              - generic [ref=e242] [cursor=pointer]: Sehr zufrieden
+              - radio "Sehr zufrieden"
+          - button "Weiter" [disabled] [ref=e244]:
+            - generic [ref=e245]: Weiter
+        - generic [ref=e250]:
+          - button "Bewertungen (2)" [expanded] [ref=e252] [cursor=pointer]:
+            - heading "Bewertungen (2)" [level=2] [ref=e257] [cursor=pointer]
+          - region "Bewertungen (2)" [ref=e260]:
+            - generic [ref=e261]:
+              - generic [ref=e263]:
+                - generic [ref=e264]:
+                  - generic [ref=e265]: "5.0"
+                  - generic [ref=e266]:
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                    - generic [ref=e267]: 2 Bewertungen
+                - generic [ref=e268]:
+                  - list [ref=e269]:
+                    - listitem [ref=e270]:
+                      - button "2 Rezensionen mit 5 Sternen anzeigen" [ref=e271] [cursor=pointer]:
+                        - generic [ref=e272] [cursor=pointer]: "5"
+                        - generic:
+                          - img
+                        - generic [ref=e275] [cursor=pointer]: "2"
+                    - listitem [ref=e276]:
+                      - button "0 Rezensionen mit 4 Sternen anzeigen" [disabled] [ref=e277] [cursor=pointer]:
+                        - generic [ref=e278] [cursor=pointer]: "4"
+                        - generic:
+                          - img
+                        - generic [ref=e280] [cursor=pointer]: "0"
+                    - listitem [ref=e281]:
+                      - button "0 Rezensionen mit 3 Sternen anzeigen" [disabled] [ref=e282] [cursor=pointer]:
+                        - generic [ref=e283] [cursor=pointer]: "3"
+                        - generic:
+                          - img
+                        - generic [ref=e285] [cursor=pointer]: "0"
+                    - listitem [ref=e286]:
+                      - button "0 Rezensionen mit 2 Sternen anzeigen" [disabled] [ref=e287] [cursor=pointer]:
+                        - generic [ref=e288] [cursor=pointer]: "2"
+                        - generic:
+                          - img
+                        - generic [ref=e290] [cursor=pointer]: "0"
+                    - listitem [ref=e291]:
+                      - button "0 Rezensionen mit 1 Stern anzeigen" [disabled] [ref=e292] [cursor=pointer]:
+                        - generic [ref=e293] [cursor=pointer]: "1"
+                        - generic:
+                          - img
+                        - generic [ref=e295] [cursor=pointer]: "0"
+                  - generic [ref=e296]:
+                    - text: Preis
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - generic [ref=e297]:
+                    - text: Qualität
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - generic [ref=e298]:
+                    - text: Optik
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - button "Wie kann ich bewerten?" [ref=e299] [cursor=pointer]:
+                    - generic [ref=e300] [cursor=pointer]: Wie kann ich bewerten?
+              - generic [ref=e301]:
+                - article [ref=e302]:
+                  - heading "Schöner Stuhl" [level=4] [ref=e303]
+                  - generic [ref=e304]:
+                    - generic [ref=e305]:
+                      - text: "'Mali29'"
+                      - generic [ref=e306]: Verifizierter Kauf
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                    - time [ref=e308]: 10.01.2025
+                  - generic [ref=e309]:
+                    - generic [ref=e310]:
+                      - generic [ref=e311]:
+                        - generic [ref=e312]: "Größe:"
+                        - text: 52/87/64 cm
+                      - generic [ref=e313]:
+                        - generic [ref=e314]: "Farben:"
+                        - text: Grün
+                    - generic [ref=e315]:
+                      - generic [ref=e316]: Der Stuhl macht einiges her. Sieht sehr schön und qualitativ aus mit dem gewobenen Stoff. Bequem und leicht
+                      - generic [ref=e317]:
+                        - generic [ref=e318]:
+                          - text: Preis
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - generic [ref=e319]:
+                          - text: Qualität
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - generic [ref=e320]:
+                          - text: Optik
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                - heading "Bewertungen aus anderen Ländern" [level=3] [ref=e321]
+                - article [ref=e322]:
+                  - heading "Tolle Stühle!" [level=4] [ref=e323]
+                  - generic [ref=e324]:
+                    - generic [ref=e325]:
+                      - text: "'Laura2807'"
+                      - generic [ref=e326]: Verifizierter Kauf
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                    - generic [ref=e327]:
+                      - generic [ref=e328]: AT,
+                      - time [ref=e329]: 04.03.2025
+                  - generic [ref=e337]: Wir haben uns diese Stühle für unsere neue Küche bestellt und sind sehr glücklich damit. Die Stühle sind sehr bequem zum Sitzen und leicht zum Verschieben. Der Stoff ist leicht glänzend und wirkt hochwertig. Klare Kaufempfehlung!!
+        - generic [ref=e341]:
+          - heading "Aus dieser Serie" [level=2] [ref=e343]
+          - link "Die nächste Liste mit dem Titel Aus dieser Serie überspringen" [ref=e344] [cursor=pointer]:
+            - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJ3eHNfbW9lbWF4X2RlX2V4cGFuZGVyX3Nlcmllc19wcm9kdWN0c19jZWxsY29udGFpbmVyOWVjZWZmMzBfOTgzMV80M2QxXzhlMmRfMTRkNDI5NjYxNWMxIiwiY2F0YWxvZ0lkIjoibW9lbWF4LmRlLWNvbnRlbnQiLCJjYXRhbG9nVmVyc2lvbiI6Ik9ubGluZSJ9"
+            - text: Abschnitt überspringen
+          - group [ref=e345]:
+            - group [ref=e346] [cursor=pointer]:
+              - article [ref=e347] [cursor=pointer]:
+                - generic [ref=e348] [cursor=pointer]:
+                  - generic [ref=e349] [cursor=pointer]:
+                    - generic [ref=e350] [cursor=pointer]:
+                      - link "Armlehnstuhl Mara Cappuccino/Schwarz" [ref=e351] [cursor=pointer]:
+                        - /url: /p/moemax-armlehnstuhl-mara-cappuccino-schwarz-000289027402
+                        - generic [ref=e352] [cursor=pointer]:
+                          - generic [ref=e353] [cursor=pointer]: Armlehnstuhl
+                          - text: Mara Cappuccino/Schwarz
+                      - generic [ref=e354] [cursor=pointer]: Mömax
+                    - generic [ref=e355] [cursor=pointer]:
+                      - generic [ref=e356] [cursor=pointer]: Mehr Farben verfügbar
+                      - generic [ref=e357] [cursor=pointer]:
+                        - generic:
+                          - img
+                          - img
+                          - img
+                          - img
+                          - img
+                        - generic [ref=e358] [cursor=pointer]: (3)
+                  - generic [ref=e359] [cursor=pointer]:
+                    - generic [ref=e360] [cursor=pointer]: € 255,‒***
+                    - generic [ref=e361] [cursor=pointer]:
+                      - text: € 118,
+                      - superscript [ref=e362] [cursor=pointer]: "99"
+                - generic [ref=e363] [cursor=pointer]:
+                  - img "Armlehnstuhl Mara Cappuccino/Schwarz - Schlammfarben/Schwarz, LIFESTYLE, Holz/Textil (60/87/64cm) - Mömax" [ref=e365] [cursor=pointer]
+                  - generic [ref=e367]:
+                    - generic [ref=e368]: Club-Preis
+                    - button "Zu den Favoriten hinzufügen" [ref=e369] [cursor=pointer]
+              - article [ref=e370] [cursor=pointer]:
+                - generic [ref=e371] [cursor=pointer]:
+                  - generic [ref=e372] [cursor=pointer]:
+                    - generic [ref=e373] [cursor=pointer]:
+                      - link "Armlehnstuhl Mara Grün" [ref=e374] [cursor=pointer]:
+                        - /url: /p/moemax-armlehnstuhl-mara-gruen-000289027403
+                        - generic [ref=e375] [cursor=pointer]:
+                          - generic [ref=e376] [cursor=pointer]: Armlehnstuhl
+                          - text: Mara Grün
+                      - generic [ref=e377] [cursor=pointer]: Mömax
+                    - generic [ref=e378] [cursor=pointer]:
+                      - generic [ref=e379] [cursor=pointer]: Mehr Farben verfügbar
+                      - generic [ref=e380] [cursor=pointer]:
+                        - generic:
+                          - img
+                          - img
+                          - img
+                          - img
+                          - img
+                        - generic [ref=e381] [cursor=pointer]: (3)
+                  - generic [ref=e382] [cursor=pointer]:
+                    - generic [ref=e383] [cursor=pointer]: € 255,‒***
+                    - generic [ref=e384] [cursor=pointer]:
+                      - text: € 118,
+                      - superscript [ref=e385] [cursor=pointer]: "99"
+                - generic [ref=e386] [cursor=pointer]:
+                  - img "Armlehnstuhl Mara Grün - Schwarz/Grün, LIFESTYLE, Holz/Textil (60/87/64cm) - Mömax" [ref=e388] [cursor=pointer]
+                  - generic [ref=e390]:
+                    - generic [ref=e391]: Club-Preis
+                    - button "Zu den Favoriten hinzufügen" [ref=e392] [cursor=pointer]
+              - article [ref=e393] [cursor=pointer]:
+                - generic [ref=e394] [cursor=pointer]:
+                  - generic [ref=e395] [cursor=pointer]:
+                    - generic [ref=e396] [cursor=pointer]:
+                      - link "Stuhl Mara Grün/Schwarz" [ref=e397] [cursor=pointer]:
+                        - /url: /p/moemax-stuhl-mara-gruen-schwarz-000289027303
+                        - generic [ref=e398] [cursor=pointer]:
+                          - generic [ref=e399] [cursor=pointer]: Stuhl
+                          - text: Mara Grün/Schwarz
+                      - generic [ref=e400] [cursor=pointer]: Mömax
+                    - generic [ref=e401] [cursor=pointer]:
+                      - generic [ref=e402] [cursor=pointer]: Mehr Farben verfügbar
+                      - generic [ref=e403] [cursor=pointer]:
+                        - generic:
+                          - img
+                          - img
+                          - img
+                          - img
+                          - img
+                        - generic [ref=e404] [cursor=pointer]: (2)
+                  - generic [ref=e405] [cursor=pointer]:
+                    - generic [ref=e406] [cursor=pointer]: € 173,‒***
+                    - generic [ref=e407] [cursor=pointer]:
+                      - text: € 76,
+                      - superscript [ref=e408] [cursor=pointer]: "42"
+                - generic [ref=e409] [cursor=pointer]:
+                  - img "Stuhl Mara Grün/Schwarz - Schwarz/Grün, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e411] [cursor=pointer]
+                  - generic [ref=e413]:
+                    - generic [ref=e414]: Club-Preis
+                    - button "Zu den Favoriten hinzufügen" [ref=e415] [cursor=pointer]
+              - article [ref=e416] [cursor=pointer]:
+                - generic [ref=e417] [cursor=pointer]:
+                  - generic [ref=e418] [cursor=pointer]:
+                    - generic [ref=e419] [cursor=pointer]:
+                      - link "Stuhl Mara Rosa/Schwarz" [ref=e420] [cursor=pointer]:
+                        - /url: /p/moemax-stuhl-mara-rosa-schwarz-000289027304
+                        - generic [ref=e421] [cursor=pointer]:
+                          - generic [ref=e422] [cursor=pointer]: Stuhl
+                          - text: Mara Rosa/Schwarz
+                      - generic [ref=e423] [cursor=pointer]: Mömax
+                    - generic [ref=e424] [cursor=pointer]:
+                      - generic [ref=e425] [cursor=pointer]: Mehr Farben verfügbar
+                      - generic [ref=e426] [cursor=pointer]:
+                        - generic:
+                          - img
+                          - img
+                          - img
+                          - img
+                          - img
+                        - generic [ref=e427] [cursor=pointer]: (2)
+                  - generic [ref=e428] [cursor=pointer]:
+                    - generic [ref=e429] [cursor=pointer]: € 173,‒***
+                    - generic [ref=e430] [cursor=pointer]:
+                      - text: € 67,
+                      - superscript [ref=e431] [cursor=pointer]: "92"
+                - generic [ref=e432] [cursor=pointer]:
+                  - img "Stuhl Mara Rosa/Schwarz - Schwarz/Rosa, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e434] [cursor=pointer]
+                  - generic [ref=e436]:
+                    - generic [ref=e437]: Club-Preis
+                    - button "Zu den Favoriten hinzufügen" [ref=e438] [cursor=pointer]
+              - article [ref=e439] [cursor=pointer]:
+                - generic [ref=e440] [cursor=pointer]:
+                  - generic [ref=e441] [cursor=pointer]:
+                    - generic [ref=e442] [cursor=pointer]:
+                      - link "Stuhl Mara Grau/Schwarz" [ref=e443] [cursor=pointer]:
+                        - /url: /p/moemax-stuhl-mara-grau-schwarz-000289027301
+                        - generic [ref=e444] [cursor=pointer]:
+                          - generic [ref=e445] [cursor=pointer]: Stuhl
+                          - text: Mara Grau/Schwarz
+                      - generic [ref=e446] [cursor=pointer]: Mömax
+                    - generic [ref=e447] [cursor=pointer]:
+                      - generic [ref=e448] [cursor=pointer]: Mehr Farben verfügbar
+                      - generic [ref=e449] [cursor=pointer]:
+                        - generic:
+                          - img
+                          - img
+                          - img
+                          - img
+                          - img
+                        - generic [ref=e450] [cursor=pointer]: (2)
+                  - generic [ref=e451] [cursor=pointer]:
+                    - generic [ref=e452] [cursor=pointer]: € 173,‒***
+                    - generic [ref=e453] [cursor=pointer]:
+                      - text: € 67,
+                      - superscript [ref=e454] [cursor=pointer]: "92"
+                - generic [ref=e455] [cursor=pointer]:
+                  - img "Stuhl Mara Grau/Schwarz - Schwarz/Grau, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax" [ref=e457] [cursor=pointer]
+                  - generic [ref=e459]:
+                    - generic [ref=e460]: Club-Preis
+                    - button "Zu den Favoriten hinzufügen" [ref=e461] [cursor=pointer]
+              - article [ref=e462] [cursor=pointer]:
+                - generic [ref=e463] [cursor=pointer]:
+                  - generic [ref=e464] [cursor=pointer]:
+                    - generic [ref=e465] [cursor=pointer]:
+                      - link "Armlehnstuhl Mara Grau/Schwarz" [ref=e466] [cursor=pointer]:
+                        - /url: /p/moemax-armlehnstuhl-mara-grau-schwarz-000289027401
+                        - generic [ref=e467] [cursor=pointer]:
+                          - generic [ref=e468] [cursor=pointer]: Armlehnstuhl
+                          - text: Mara Grau/Schwarz
+                      - generic [ref=e469] [cursor=pointer]: Mömax
+                    - generic [ref=e470] [cursor=pointer]:
+                      - generic [ref=e471] [cursor=pointer]: Mehr Farben verfügbar
+                      - generic [ref=e472] [cursor=pointer]:
+                        - generic:
+                          - img
+                          - img
+                          - img
+                          - img
+                          - img
+                        - generic [ref=e473] [cursor=pointer]: (3)
+                  - generic [ref=e474] [cursor=pointer]:
+                    - generic [ref=e475] [cursor=pointer]: € 255,‒***
+                    - generic [ref=e476] [cursor=pointer]:
+                      - text: € 101,
+                      - superscript [ref=e477] [cursor=pointer]: "15"
+                - generic [ref=e478] [cursor=pointer]:
+                  - img "Armlehnstuhl Mara Grau/Schwarz - Schwarz/Grau, LIFESTYLE, Holz/Textil (60/87/64cm) - Mömax" [ref=e480] [cursor=pointer]
+                  - generic [ref=e482]:
+                    - generic [ref=e483]: Club-Preis
+                    - button "Zu den Favoriten hinzufügen" [ref=e484] [cursor=pointer]
+            - button "Nächste Folie" [ref=e485] [cursor=pointer]
+      - generic:
+        - article:
+          - generic:
+            - generic:
+              - link "Stuhl Mara Grün/Schwarz":
+                - /url: /p/moemax-stuhl-mara-gruen-schwarz-000289027303
+                - heading "Stuhl Mara Grün/Schwarz" [level=3]:
+                  - generic: Stuhl
+                  - generic: Mara Grün/Schwarz
+            - generic:
+              - generic: Grün
+              - generic: "Breite/Höhe/Tiefe: 52/87/64 cm"
+          - generic:
+            - img "Stuhl Mara Grün/Schwarz - Schwarz/Grün, LIFESTYLE, Holz/Textil (52/87/64cm) - Mömax"
+            - link:
+              - /url: /p/moemax-stuhl-mara-gruen-schwarz-000289027303
+          - generic:
+            - generic:
+              - generic: € 173,‒***
+              - generic:
+                - text: € 76,
+                - superscript: "42"
+          - button "Stuhl Mara Grün/Schwarz In den Warenkorb"
+  - contentinfo [ref=e486]:
+    - generic [ref=e487]:
+      - list [ref=e490]:
+        - listitem [ref=e491]:
+          - link "Click & Collect" [ref=e492] [cursor=pointer]:
+            - /url: /c/clickundcollect
+            - img [ref=e493] [cursor=pointer]
+            - text: Click & Collect
+        - listitem [ref=e494]:
+          - link "30 Tage Rückgabe" [ref=e495] [cursor=pointer]:
+            - /url: /c/retouren
+            - img [ref=e496] [cursor=pointer]
+            - text: 30 Tage Rückgabe
+        - listitem [ref=e497]:
+          - link "Gratis Transporter" [ref=e498] [cursor=pointer]:
+            - /url: /c/transporterleihen
+            - img [ref=e499] [cursor=pointer]
+            - text: Gratis Transporter
+        - listitem [ref=e500]:
+          - link "Montage & Lieferung" [ref=e501] [cursor=pointer]:
+            - /url: /c/lieferungundmontage
+            - img [ref=e502] [cursor=pointer]
+            - text: Montage & Lieferung
+      - generic [ref=e503]:
+        - link "Die nächste Liste überspringen" [ref=e504] [cursor=pointer]:
+          - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+          - text: Abschnitt überspringen
+        - generic [ref=e505]:
+          - generic [ref=e507]:
+            - generic [ref=e508]: Über mömax
+            - list [ref=e509]:
+              - listitem [ref=e510]:
+                - link "Presse" [ref=e511] [cursor=pointer]:
+                  - /url: https://pr.moemax.de
+              - listitem [ref=e512]:
+                - link "Jobs bei mömax" [ref=e513] [cursor=pointer]:
+                  - /url: https://karriere.moemax.de
+              - listitem [ref=e514]:
+                - link "Unternehmen" [ref=e515] [cursor=pointer]:
+                  - /url: /c/unternehmen
+              - listitem [ref=e516]:
+                - link "Blog" [ref=e517] [cursor=pointer]:
+                  - /url: https://blog.moemax.de
+              - listitem [ref=e518]:
+                - link "Aktueller Service" [ref=e519] [cursor=pointer]:
+                  - /url: /c/serviceuebersicht
+              - listitem [ref=e520]:
+                - link "Grundsatzerklärung LkSG" [ref=e521] [cursor=pointer]:
+                  - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCWtJ6NbgSjtBlU_N73euysw/lksg_lieferkettengesetz_grundsatzerklarung_2024-25_de_en.pdf
+              - listitem [ref=e522]:
+                - link "Jahresberichte LkSG" [ref=e523] [cursor=pointer]:
+                  - /url: /c/jahresberichte
+              - listitem [ref=e524]:
+                - link "Verhaltenskodex für Lieferanten" [ref=e525] [cursor=pointer]:
+                  - /url: https://moemax.a.bigcontent.io/v1/static/NCQu_jutXb-aDcMsic9IzE8Q/lksg_lieferkettensorgfaltspflichtengesetz_verhaltenskodex-lieferanten_de_en.pdf
+              - listitem [ref=e526]:
+                - link "Barrierefreiheit" [ref=e527] [cursor=pointer]:
+                  - /url: /c/barrierefreiheit
+              - listitem [ref=e528]:
+                - link "Auszeichnungen" [ref=e529] [cursor=pointer]:
+                  - /url: /c/auszeichnungen
+          - generic [ref=e531]:
+            - generic [ref=e532]: Service
+            - list [ref=e533]:
+              - listitem [ref=e534]:
+                - link "Aktuelle Aktionen" [ref=e535] [cursor=pointer]:
+                  - /url: /c/dein-trendmoebelhaus
+              - listitem [ref=e536]:
+                - link "Prospekte" [ref=e537] [cursor=pointer]:
+                  - /url: /c/prospekte
+              - listitem [ref=e538]:
+                - link "Deals direkt aufs Handy" [ref=e539] [cursor=pointer]:
+                  - /url: /c/rcs-anmeldung
+              - listitem [ref=e540]:
+                - link "Aktionsbedingungen" [ref=e541] [cursor=pointer]:
+                  - /url: /c/aktionsnews
+              - listitem [ref=e542]:
+                - link "Bonus Card" [ref=e543] [cursor=pointer]:
+                  - /url: /c/unserebonuscard
+              - listitem [ref=e544]:
+                - link "Gutscheine online einlösen" [ref=e545] [cursor=pointer]:
+                  - /url: /c/onlinegutscheine-einloesen
+              - listitem [ref=e546]:
+                - link "Geschenkgutscheine" [ref=e547] [cursor=pointer]:
+                  - /url: https://geschenkkarten.moemax.de/b2c/
+              - listitem [ref=e548]:
+                - link "Lieferung" [ref=e549] [cursor=pointer]:
+                  - /url: /c/lieferungundmontage
+              - listitem [ref=e550]:
+                - link "Leihtransporter buchen (Selbstabholung)" [ref=e551] [cursor=pointer]:
+                  - /url: /transporter
+              - listitem [ref=e552]:
+                - link "Firmenkunden (B2B)" [ref=e553] [cursor=pointer]:
+                  - /url: /c/b2b
+              - listitem [ref=e554]:
+                - link "Premiumschutz" [ref=e555] [cursor=pointer]:
+                  - /url: /c/helvetia-versicherungen
+              - listitem [ref=e556]:
+                - link "Konfiguratoren" [ref=e557] [cursor=pointer]:
+                  - /url: /c/konfiguratoren
+          - generic [ref=e559]:
+            - generic [ref=e560]: Kontakt
+            - list [ref=e561]:
+              - listitem [ref=e562]:
+                - link "Auftragsstatus" [ref=e563] [cursor=pointer]:
+                  - /url: /auftragsstatus
+              - listitem [ref=e564]:
+                - link "Bestellhotline" [ref=e565] [cursor=pointer]:
+                  - /url: /c/bestellhotline
+              - listitem [ref=e566]:
+                - link "Newsletter" [ref=e567] [cursor=pointer]:
+                  - /url: /c/newsletter
+              - listitem [ref=e568]:
+                - link "Click & Collect" [ref=e569] [cursor=pointer]:
+                  - /url: /c/clickundcollect
+              - listitem [ref=e570]:
+                - link "FAQ" [ref=e571] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e572]:
+                - link "Retouren & Reklamationen" [ref=e573] [cursor=pointer]:
+                  - /url: /c/retouren
+              - listitem [ref=e574]:
+                - link "Hinweisgebersystem LkSG" [ref=e575] [cursor=pointer]:
+                  - /url: https://app.convercent.com/de-de/LandingPage/f569ee87-0d2c-ec11-a985-000d3ab9f062?_=1636105011105
+              - listitem [ref=e576]:
+                - link "Hinweisgebersystem LkSG Verfahrensordnung" [ref=e577] [cursor=pointer]:
+                  - /url: https://moemax.a.bigcontent.io/v1/static/NCtqUiqceEaZLRlBYSmJjIRQ/lksg_hinweisgebersystem-verfahrensordnung_de_en_es_cn.pdf
+          - generic [ref=e579]:
+            - generic [ref=e580]: Filialen und Standorte
+            - list [ref=e581]:
+              - listitem [ref=e582]:
+                - link "Standorte" [ref=e583] [cursor=pointer]:
+                  - /url: /filialen-de
+              - listitem [ref=e584]:
+                - link "Filialschnäppchen" [ref=e585] [cursor=pointer]:
+                  - /url: /hs/
+              - listitem [ref=e586]:
+                - link "Restaurants" [ref=e587] [cursor=pointer]:
+                  - /url: /c/unserrestaurant
+              - listitem [ref=e588]:
+                - link "Beratungstermine" [ref=e589] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+              - listitem [ref=e590]:
+                - link "Küchenberater" [ref=e591] [cursor=pointer]:
+                  - /url: /c/kuechen-beratungstermin
+              - listitem [ref=e592]:
+                - link "Gratis Transporter" [ref=e593] [cursor=pointer]:
+                  - /url: /c/transporterleihen
+      - generic [ref=e595]:
+        - generic [ref=e598]:
+          - paragraph [ref=e599]: Du hast noch Fragen?
+          - generic [ref=e600]:
+            - generic [ref=e601]:
+              - link "Zum Kontaktformular" [ref=e602] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e603] [cursor=pointer]: Zum Kontaktformular
+              - paragraph [ref=e604]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+            - generic [ref=e605]:
+              - link "Häufig gestellte Fragen" [ref=e606] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e607] [cursor=pointer]: Häufig gestellte Fragen
+              - paragraph [ref=e608]: In unseren FAQ's findest du sofort Hilfe.
+        - generic [ref=e609]:
+          - generic [ref=e610]: Versandpartner
+          - generic [ref=e611]:
+            - img "Rhenus Home Delivery Logo" [ref=e614]
+            - img "Hermes Logo" [ref=e617]
+            - img "DHL Logo" [ref=e620]
+        - generic [ref=e621]:
+          - generic [ref=e622]: Zahlungsmöglichkeiten
+          - generic [ref=e623]:
+            - img "Split It Logo" [ref=e626]
+            - img "Klarna Logo" [ref=e629]
+            - img "PayPal Logo" [ref=e632]
+            - img "Visa Logo" [ref=e635]
+            - img "Mastercard Logo" [ref=e638]
+            - img "Google Pay Logo" [ref=e641]
+            - img "Apple Pay Logo" [ref=e644]
+        - generic [ref=e645]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***UVP
+      - generic [ref=e648]:
+        - link "Möemax" [ref=e649] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e650] [cursor=pointer]: Möemax
+          - img [ref=e652] [cursor=pointer]
+        - generic [ref=e655]: © 2026 moemax Deutschland GmbH
+        - list [ref=e656]:
+          - listitem [ref=e657]:
+            - link "Impressum" [ref=e658] [cursor=pointer]:
+              - /url: /c/impressum
+          - listitem [ref=e659]:
+            - link "AGB" [ref=e660] [cursor=pointer]:
+              - /url: /c/agb
+          - listitem [ref=e661]:
+            - link "Datenschutz" [ref=e662] [cursor=pointer]:
+              - /url: /c/privacy
+          - listitem [ref=e663]:
+            - button "Cookie-Einstellungen" [ref=e664] [cursor=pointer]
+        - list [ref=e665]:
+          - listitem [ref=e666]:
+            - link "facebook" [ref=e667] [cursor=pointer]:
+              - /url: https://www.facebook.com/moemax.de/
+          - listitem [ref=e668]:
+            - link "instagram" [ref=e669] [cursor=pointer]:
+              - /url: https://www.instagram.com/moemax_de/
+          - listitem [ref=e670]:
+            - link "youtube" [ref=e671] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/MoemaxAT
+          - listitem [ref=e672]:
+            - link "tiktok" [ref=e673] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+          - listitem [ref=e674]:
+            - link "pinterest" [ref=e675] [cursor=pointer]:
+              - /url: https://www.pinterest.de/moemax_com/
+        - link "WACA Bronze" [ref=e676] [cursor=pointer]:
+          - /url: /c/accessibility
+          - img "WACA Bronze" [ref=e677] [cursor=pointer]
+```

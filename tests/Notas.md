@@ -83,6 +83,7 @@ npm init playwright@latest
 - RAIL=xxxlutz COUNTRY=CZ MODE=1P PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
 - RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
 - RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KN npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- RAIL=xxxlesnina COUNTRY=SI MODE=1P PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
 
 -----------------
 -- Split IT --

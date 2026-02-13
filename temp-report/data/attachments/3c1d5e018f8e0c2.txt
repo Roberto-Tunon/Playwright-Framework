@@ -1,3 +1,0 @@
-Params: Country: DE, Rail: XXXLUTZ, Mode: 1P
-✅ Self Service (Click & Collect) found. Selecting...
-ℹ Payment plan checkbox not visible

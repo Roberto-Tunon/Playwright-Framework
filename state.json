@@ -1,168 +1,80 @@
 {
-  "version": 1,
-  "updatedAt": "2026-01-10T17:25:06.962Z",
-  "entries": {
-    "DE|MOEMAX|PP": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "failed",
-      "lastDuration": "27s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "AT|MOEMAX|CC": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "failed",
-      "lastDuration": "22s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "AT|XXXLUTZ|CC": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "failed",
-      "lastDuration": "24s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "DE|XXXLUTZ|PP": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "failed",
-      "lastDuration": "21s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "AT|XXXLUTZ|KL": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "passed",
-      "lastDuration": "56s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "AT|XXXLUTZ|BI": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "passed",
-      "lastDuration": "61s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "CH|XXXLUTZ|TW": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "failed",
-      "lastDuration": "15s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "SI|XXXLESNINA|SP": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "failed",
-      "lastDuration": "33s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "DE|XXXLUTZ|KN": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "failed",
-      "lastDuration": "60s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    },
-    "CZ|XXXLUTZ|ON": {
-      "lastSeenAt": "2026-01-10T17:25:06.962Z",
-      "lastStatus": "passed",
-      "lastDuration": "41s",
-      "lastRunLabel": "10/01/2026, 18:25"
-    }
-  },
   "DE|MOEMAX|PP": {
-    "lastSeenAt": "2026-02-11T08:19:32.021Z",
+    "lastSeenAt": "2026-02-13T09:59:40.570Z",
     "lastStatus": "failed",
-    "lastDuration": "21s",
-    "lastRunDay": "11/02/2026"
+    "lastDuration": "44s",
+    "lastRunDay": "13/02/2026"
   },
   "AT|MOEMAX|CC": {
-    "lastSeenAt": "2026-02-11T08:19:53.210Z",
+    "lastSeenAt": "2026-02-13T09:59:45.184Z",
     "lastStatus": "failed",
-    "lastDuration": "21s",
-    "lastRunDay": "11/02/2026"
+    "lastDuration": "4s",
+    "lastRunDay": "13/02/2026"
   },
   "AT|XXXLUTZ|CC": {
-    "lastSeenAt": "2026-02-11T08:20:14.776Z",
-    "lastStatus": "failed",
-    "lastDuration": "21s",
-    "lastRunDay": "11/02/2026"
+    "lastSeenAt": "2026-02-13T10:00:26.958Z",
+    "lastStatus": "passed",
+    "lastDuration": "41s",
+    "lastRunDay": "13/02/2026"
   },
   "DE|XXXLUTZ|PP": {
-    "lastSeenAt": "2026-02-11T08:20:35.211Z",
-    "lastStatus": "failed",
-    "lastDuration": "20s",
-    "lastRunDay": "11/02/2026"
+    "lastSeenAt": "2026-02-13T10:01:09.782Z",
+    "lastStatus": "passed",
+    "lastDuration": "42s",
+    "lastRunDay": "13/02/2026"
   },
   "AT|XXXLUTZ|KL": {
-    "lastSeenAt": "2026-02-11T08:20:55.249Z",
-    "lastStatus": "failed",
-    "lastDuration": "20s",
-    "lastRunDay": "11/02/2026"
-  },
-  "AT|XXXLUTZ|BI": {
-    "lastSeenAt": "2026-02-11T08:21:15.494Z",
-    "lastStatus": "failed",
-    "lastDuration": "20s",
-    "lastRunDay": "11/02/2026"
-  },
-  "HR|XXXLESNINA|CC": {
-    "lastSeenAt": "2026-01-28T08:03:34.099Z",
-    "lastStatus": "failed",
-    "lastDuration": "22s",
-    "lastRunDay": "28/01/2026"
-  },
-  "CH|XXXLUTZ|TW": {
-    "lastSeenAt": "2026-01-29T08:06:38.566Z",
-    "lastStatus": "passed",
-    "lastDuration": "30s",
-    "lastRunDay": "29/01/2026"
-  },
-  "RO|XXXLUTZ|SP": {
-    "lastSeenAt": "2026-01-29T08:06:08.052Z",
-    "lastStatus": "failed",
-    "lastDuration": "33s",
-    "lastRunDay": "29/01/2026"
-  },
-  "DE|XXXLUTZ|KN": {
-    "lastSeenAt": "2026-02-11T08:22:45.414Z",
+    "lastSeenAt": "2026-02-13T10:06:15.891Z",
     "lastStatus": "failed",
     "lastDuration": "50s",
-    "lastRunDay": "11/02/2026"
+    "lastRunDay": "13/02/2026"
   },
-  "SI|XXXLESNINA|SP": {
-    "lastSeenAt": "2026-01-26T10:00:49.041Z",
-    "lastStatus": "failed",
-    "lastDuration": "63s",
-    "lastRunDay": "26/01/2026"
-  },
-  "AT|XXXLUTZ|KN": {
-    "lastSeenAt": "2026-01-26T10:56:56.157Z",
-    "lastStatus": "failed",
-    "lastDuration": "60s",
-    "lastRunDay": "26/01/2026"
-  },
-  "SK|XXXLUTZ|PP": {
-    "lastSeenAt": "2026-02-11T08:21:35.545Z",
-    "lastStatus": "failed",
-    "lastDuration": "20s",
-    "lastRunDay": "11/02/2026"
-  },
-  "CZ|XXXLUTZ|ON": {
-    "lastSeenAt": "2026-01-27T10:05:53.294Z",
+  "AT|XXXLUTZ|BI": {
+    "lastSeenAt": "2026-02-13T10:02:45.905Z",
     "lastStatus": "passed",
-    "lastDuration": "33s",
-    "lastRunDay": "27/01/2026"
-  },
-  "HU|XXXLUTZ|CC": {
-    "lastSeenAt": "2026-01-26T10:57:49.500Z",
-    "lastStatus": "failed",
-    "lastDuration": "53s",
-    "lastRunDay": "26/01/2026"
-  },
-  "DE|XXXLUTZ|CC": {
-    "lastSeenAt": "2026-01-28T08:03:12.046Z",
-    "lastStatus": "failed",
-    "lastDuration": "20s",
-    "lastRunDay": "28/01/2026"
+    "lastDuration": "45s",
+    "lastRunDay": "13/02/2026"
   },
   "SI|XXXLESNINA|DEL": {
-    "lastSeenAt": "2026-02-11T08:23:43.011Z",
+    "lastSeenAt": "2026-02-13T10:03:12.120Z",
     "lastStatus": "failed",
-    "lastDuration": "57s",
-    "lastRunDay": "11/02/2026"
+    "lastDuration": "26s",
+    "lastRunDay": "13/02/2026"
+  },
+  "CZ|XXXLUTZ|DEL": {
+    "lastSeenAt": "2026-02-13T10:03:48.854Z",
+    "lastStatus": "failed",
+    "lastDuration": "36s",
+    "lastRunDay": "13/02/2026"
+  },
+  "HU|XXXLUTZ|CC": {
+    "lastSeenAt": "2026-02-13T09:34:41.935Z",
+    "lastStatus": "failed",
+    "lastDuration": "8s",
+    "lastRunDay": "13/02/2026"
+  },
+  "DE|XXXLUTZ|KN": {
+    "lastSeenAt": "2026-02-13T10:04:59.029Z",
+    "lastStatus": "passed",
+    "lastDuration": "70s",
+    "lastRunDay": "13/02/2026"
+  },
+  "SK|XXXLUTZ|PP": {
+    "lastSeenAt": "2026-02-13T09:37:47.722Z",
+    "lastStatus": "passed",
+    "lastDuration": "46s",
+    "lastRunDay": "13/02/2026"
+  },
+  "RO|XXXLUTZ|SP": {
+    "lastSeenAt": "2026-02-13T10:05:25.617Z",
+    "lastStatus": "failed",
+    "lastDuration": "26s",
+    "lastRunDay": "13/02/2026"
+  },
+  "HR|XXXLESNINA|CC": {
+    "lastSeenAt": "2026-02-13T10:06:57.393Z",
+    "lastStatus": "passed",
+    "lastDuration": "41s",
+    "lastRunDay": "13/02/2026"
   }
 }

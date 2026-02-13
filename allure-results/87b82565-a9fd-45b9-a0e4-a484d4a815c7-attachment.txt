@@ -1,4 +1,0 @@
-Params: Country: AT, Rail: XXXLUTZ, Mode: 2P, Pay: PayPal
-ℹ️ Delivery option searching Self Service
-✅ Self Service (Click & Collect) found. Selecting...
-✅ PayPal Login completed

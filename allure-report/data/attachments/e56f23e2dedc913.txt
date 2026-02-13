@@ -1,2 +1,0 @@
-Params: Country: DE, Rail: XXXLUTZ, Mode: 1P
-ℹ Payment plan checkbox not visible

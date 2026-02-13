@@ -1,3 +1,0 @@
-Params: Country: AT, Rail: XXXLUTZ, Mode: 1P
-⚠️ SELF_SERVICE not found. Selecting first option if possible...
-ℹ Payment plan checkbox not visible

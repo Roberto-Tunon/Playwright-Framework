@@ -1,0 +1,409 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link "Până la 12 rate fără dobândă" [ref=e9] [cursor=pointer]:
+            - /url: /c/plata-in-rate
+            - generic [ref=e10] [cursor=pointer]: Până la 12 rate fără dobândă
+          - link "Cupon 25 RON la abonare la newsletter" [ref=e11] [cursor=pointer]:
+            - /url: /c/newsletter
+            - generic [ref=e12] [cursor=pointer]: Cupon 25 RON la abonare la newsletter
+        - generic [ref=e14]:
+          - link "Status comandă" [ref=e15] [cursor=pointer]:
+            - /url: /statuscomanda
+            - generic [ref=e16] [cursor=pointer]: Status comandă
+          - link "Ajutor & Contact" [ref=e17] [cursor=pointer]:
+            - /url: /faq
+            - generic [ref=e18] [cursor=pointer]: Ajutor & Contact
+          - link "Locații" [ref=e19] [cursor=pointer]:
+            - /url: /locatii
+            - generic [ref=e20] [cursor=pointer]: Locații
+          - switch "Contrast ridicat" [ref=e21]
+          - generic [ref=e22] [cursor=pointer]:
+            - text: Contrast ridicat
+            - img [ref=e23] [cursor=pointer]
+      - generic [ref=e27]:
+        - button "Schimbă navigare" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]: Meniu
+        - link "XXXLutz" [ref=e30] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e31] [cursor=pointer]: XXXLutz
+          - img [ref=e33] [cursor=pointer]
+        - link "Sari la conținutul principal" [ref=e39] [cursor=pointer]:
+          - /url: "#main"
+        - search [ref=e40]:
+          - generic [ref=e41]:
+            - button "Caută" [ref=e43] [cursor=pointer]
+            - searchbox "Căutați în funcție de produs, marcă sau noutate" [ref=e44]
+            - generic: Căutați în funcție de produs, marcă sau noutate
+            - button "Căutare imagine" [ref=e48] [cursor=pointer]
+        - generic [ref=e49]:
+          - link "Autentificare" [ref=e51] [cursor=pointer]:
+            - /url: /signin
+            - generic [ref=e52] [cursor=pointer]: Autentificare
+          - link "Favorite 0 produse" [ref=e54] [cursor=pointer]:
+            - /url: /favourites
+            - generic [ref=e55] [cursor=pointer]: Favorite
+          - link "Coșul meu de cumpărături 1 produs" [ref=e57] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=e58] [cursor=pointer]: "1"
+            - generic [ref=e59] [cursor=pointer]: Coș
+        - navigation [ref=e60]:
+          - list [ref=e61]:
+            - listitem [ref=e62]:
+              - link "Mobilă" [ref=e63] [cursor=pointer]:
+                - /url: /c/mobila
+            - listitem [ref=e64]:
+              - link "Accesorii" [ref=e65] [cursor=pointer]:
+                - /url: /c/accesorii
+            - listitem [ref=e66]:
+              - link "Online Only" [ref=e67] [cursor=pointer]:
+                - /url: /online-only-C60
+            - listitem [ref=e68]:
+              - link "SALE" [ref=e69] [cursor=pointer]:
+                - /url: /c/xxxl-sale
+            - listitem [ref=e70]:
+              - link "Iluminat" [ref=e71] [cursor=pointer]:
+                - /url: /lampi-corpuri-de-iluminat-C10
+            - listitem [ref=e72]:
+              - link "Covoare" [ref=e73] [cursor=pointer]:
+                - /url: /covoare-si-pardoseli-C11
+            - listitem [ref=e74]:
+              - link "Oferte" [ref=e75] [cursor=pointer]:
+                - /url: /c/oferte
+            - listitem [ref=e76]:
+              - link "Bucătărie" [ref=e77] [cursor=pointer]:
+                - /url: /mobila-bucatarie-C41
+            - listitem [ref=e78]:
+              - link "Inspirații" [ref=e79] [cursor=pointer]:
+                - /url: /c/shop-the-look
+            - listitem [ref=e80]:
+              - link "Pliante" [ref=e81] [cursor=pointer]:
+                - /url: /prospecte
+            - listitem [ref=e82]:
+              - link "Blogul meu XXXL" [ref=e83] [cursor=pointer]:
+                - /url: /c/blogul-meu-xxxl
+            - listitem [ref=e84]:
+              - link "Outlet" [ref=e85] [cursor=pointer]:
+                - /url: /c/outlet
+            - listitem [ref=e86]:
+              - link "Accesorii living" [ref=e87] [cursor=pointer]:
+                - /url: /
+    - main [ref=e88]:
+      - status [ref=e89]:
+        - generic [ref=e90]: Coș - XXXLutz
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - heading "Coș de cumpărături" [level=1] [ref=e95]
+            - link "continuă cumpărăturile" [ref=e96] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e97] [cursor=pointer]: continuă cumpărăturile
+          - list [ref=e99]:
+            - listitem [ref=e100]:
+              - article [ref=e101]:
+                - generic [ref=e102]:
+                  - img "Decorațiune De Perete - maro/galben, Trend, metal (96,5/2/91,5cm) - Ambia Home" [ref=e103]
+                  - link [ref=e104] [cursor=pointer]:
+                    - /url: /p/ambia-home-decoratiune-de-perete-0085610002
+                - generic [ref=e105]:
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: "0085610002"
+                    - link "Nr. articol 85610002" [ref=e108] [cursor=pointer]:
+                      - /url: /p/ambia-home-decoratiune-de-perete-0085610002
+                      - generic [ref=e109] [cursor=pointer]: Nr. articol 85610002
+                  - link "Ambia Home Decorațiune De Perete" [ref=e111] [cursor=pointer]:
+                    - /url: /p/ambia-home-decoratiune-de-perete-0085610002
+                    - heading "Ambia Home Decorațiune De Perete" [level=2] [ref=e112] [cursor=pointer]:
+                      - generic [ref=e113] [cursor=pointer]: Ambia Home Decorațiune
+                      - generic [ref=e114] [cursor=pointer]: De Perete
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: maro, galben, verde, șampanie
+                    - generic [ref=e117]: 96,5/2/91,5 cm
+                - generic [ref=e120]:
+                  - generic [ref=e122]: 269,‒ RON
+                  - generic [ref=e123]: 269,‒ RON / Buc
+                - generic [ref=e124]:
+                  - button "Șterge produs - Decorațiune De Perete" [ref=e125] [cursor=pointer]
+                  - generic [ref=e126]:
+                    - textbox "Cantitate" [ref=e127]: "1"
+                    - generic [ref=e128]: Cantitate
+                  - button "1" [ref=e129] [cursor=pointer]:
+                    - generic [ref=e130] [cursor=pointer]: "1"
+                  - button "Mărește cantitatea - Decorațiune De Perete" [ref=e131] [cursor=pointer]
+                - generic [ref=e133]:
+                  - button "Decorațiune De Perete - Adăugați la favorite" [ref=e134] [cursor=pointer]:
+                    - generic [ref=e136] [cursor=pointer]: Adăugați la favorite
+                  - button "Decorațiune De Perete - Șterge produs" [ref=e137] [cursor=pointer]:
+                    - generic [ref=e139] [cursor=pointer]: Șterge produs
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - combobox [ref=e144] [cursor=pointer]:
+                    - generic [ref=e147] [cursor=pointer]: Livrare prin curier
+                  - generic [ref=e148]:
+                    - generic [ref=e149]: Termenul de livrare se estimează în funcție de locația dumneavoastră.
+                    - button "Calculează termenul de livrare" [ref=e154] [cursor=pointer]:
+                      - generic [ref=e157] [cursor=pointer]: Calculează termenul de livrare
+                  - generic [ref=e158]:
+                    - text: Taxă livrare
+                    - generic [ref=e159]: + 29,‒ RON
+                - paragraph [ref=e160]:
+                  - generic [ref=e161]: Costurile de livrare se percep o singură dată pe comandă și pe adresă de livrare.
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - heading "Sumar" [level=2] [ref=e165]
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - generic [ref=e168]: Valoare netă articole
+                - generic [ref=e169]: 269,‒ RON
+                - button "Taxă livrare" [ref=e170] [cursor=pointer]:
+                  - generic [ref=e171] [cursor=pointer]: Taxă livrare
+                - generic [ref=e172]:
+                  - generic [ref=e173]: +
+                  - text: 29,‒ RON
+              - generic [ref=e174]:
+                - generic [ref=e175]: Valoare articole
+                - generic [ref=e176]: 298,‒ RON
+                - generic [ref=e177]: incl. T.V.A.
+              - button [disabled] [ref=e178]:
+                - img [ref=e179]
+              - img [ref=e185]
+          - generic [ref=e191]:
+            - button "Cod cupon (opțional)" [ref=e192] [cursor=pointer]:
+              - generic [ref=e193] [cursor=pointer]: Cod cupon (opțional)
+              - img [ref=e194] [cursor=pointer]
+            - generic [ref=e197]:
+              - generic [ref=e200]:
+                - textbox "Cod cupon" [ref=e201]
+                - generic: Cod cupon
+              - button "Activează" [ref=e202] [cursor=pointer]:
+                - generic [ref=e203] [cursor=pointer]: Activează
+        - complementary [ref=e204]:
+          - link "continuă cumpărăturile" [ref=e205] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e206] [cursor=pointer]: continuă cumpărăturile
+  - contentinfo [ref=e207]:
+    - generic [ref=e208]:
+      - generic [ref=e209]:
+        - generic [ref=e210]: Avantajele magazinului online
+        - list [ref=e211]:
+          - listitem [ref=e212]:
+            - link "Peste 15.000 de produse" [ref=e213] [cursor=pointer]:
+              - /url: https://www.xxxlutz.ro/s/?s=&sort=new
+              - text: Peste 15.000 de produse
+          - listitem [ref=e215]:
+            - link "Platiți în siguranță" [ref=e216] [cursor=pointer]:
+              - /url: https://www.xxxlutz.ro/c/metodedeplata
+              - text: Platiți în siguranță
+          - listitem [ref=e218]:
+            - link "Livrăm până în interiorul casei" [ref=e219] [cursor=pointer]:
+              - /url: https://www.xxxlutz.ro/c/livrarionline
+              - text: Livrăm până în interiorul casei
+          - listitem [ref=e221]:
+            - link "14 zile drept de retur" [ref=e222] [cursor=pointer]:
+              - /url: https://www.xxxlutz.ro/c/oferte
+              - text: 14 zile drept de retur
+          - listitem [ref=e224]:
+            - link "Plata la livrare disponibilă" [ref=e225] [cursor=pointer]:
+              - /url: https://www.xxxlutz.ro/c/metodedeplata
+              - text: Plata la livrare disponibilă
+          - listitem [ref=e227]:
+            - link "Ridicați gratuit din magazinele noastre" [ref=e228] [cursor=pointer]:
+              - /url: https://www.xxxlutz.ro/c/xxxl-online
+              - text: Ridicați gratuit din magazinele noastre
+      - generic [ref=e232]:
+        - generic [ref=e233]:
+          - generic [ref=e234]: Newsletterul XXXL
+          - paragraph [ref=e235]: Abonați-vă acum și primiți 25 RON la cumpărături de minim 250 RON*
+          - alert [ref=e239]:
+            - generic [ref=e240]: Acest serviciu nu este disponibil momentan din cauza unor lucrări de mentenanță. Vă mulțumim pentru răbdare!
+          - list [ref=e242]:
+            - listitem [ref=e243]: . Aflați rapid cele mai noi promoții și oferte
+            - listitem [ref=e244]: . Descoperiți cele mai noi trenduri de amenajare
+            - listitem [ref=e245]: . Primiți bonusul Card Premium XXXL prin email
+            - listitem [ref=e246]: . Primiți un cupon de reducere de 25 RON*
+          - paragraph [ref=e247]: "*Cuponul de reducere în valoare de 25 RON poate fi utilizat o singură dată, nu se poate cumula cu alte promoții sau cupoane, și este valabil pentru cumpărături de minim 250 RON din departamentele decorațiuni, lămpi, textile și covoare. Excepție fac produsele deja reduse, cele marcate ”exclus din promoție”, ”super preț” și cele de tip bazar."
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - generic [ref=e252]:
+              - textbox "E-mail*" [ref=e253]
+              - generic "E-mail": E-mail*
+            - generic [ref=e255] [cursor=pointer]:
+              - checkbox "Da, doresc să primesc reclame de la XXXLutz pe paginile de Social Media sau să primesc reclame bazate pe comportamentul utilizatorului în alte site-uri partenere de la alți furnizori" [ref=e256]
+              - generic [ref=e258] [cursor=pointer]:
+                - img
+              - generic [ref=e262] [cursor=pointer]: Da, doresc să primesc reclame de la XXXLutz pe paginile de Social Media sau să primesc reclame bazate pe comportamentul utilizatorului în alte site-uri partenere de la alți furnizori
+            - paragraph [ref=e263]:
+              - text: Prin clic pe ”abonare la newsletter” îmi exprim acordul să primesc regulat Newsletter personalizat de la XXXLutz Mobilier SRL (”XXXLutz”) prin e-mail, așa cum este descris în
+              - strong [ref=e264]: detalii
+            - button "Arată mai mult" [ref=e267] [cursor=pointer]:
+              - generic [ref=e268] [cursor=pointer]:
+                - text: Arată mai mult
+                - img [ref=e269] [cursor=pointer]
+            - button "Abonați-vă la Newsletter" [disabled] [ref=e271]:
+              - generic [ref=e272]: Abonați-vă la Newsletter
+          - paragraph [ref=e273]:
+            - text: Detalii despre expedierea newsletter-ului și despre protecția datelor sunt disponibile în
+            - link "politica privind protecția datelor" [ref=e274] [cursor=pointer]:
+              - /url: /c/privacy
+            - text: de la XXXLutz.
+      - generic [ref=e275]:
+        - link "Săriți peste următoarea Listă" [ref=e276] [cursor=pointer]:
+          - /url: "#skip-section-List-new_footer_third_section_node_1"
+          - text: Săriți paragraful
+        - generic [ref=e277]:
+          - generic [ref=e279]:
+            - generic [ref=e280]: Online shop
+            - list [ref=e281]:
+              - listitem [ref=e282]:
+                - link "Cumpărături online" [ref=e283] [cursor=pointer]:
+                  - /url: /c/xxxl-online
+              - listitem [ref=e284]:
+                - link "Metode de plată" [ref=e285] [cursor=pointer]:
+                  - /url: /c/metodedeplata
+              - listitem [ref=e286]:
+                - link "Livrări online" [ref=e287] [cursor=pointer]:
+                  - /url: /c/livrarionline
+              - listitem [ref=e288]:
+                - link "Retururi & Reclamații" [ref=e289] [cursor=pointer]:
+                  - /url: /c/retururi-si-reclamatii
+              - listitem [ref=e290]:
+                - link "Termeni promoționali" [ref=e291] [cursor=pointer]:
+                  - /url: /c/termeni-promotionali
+              - listitem [ref=e292]:
+                - link "Platforma SOL" [ref=e293] [cursor=pointer]:
+                  - /url: https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=RO
+              - listitem [ref=e294]:
+                - link "ANPC" [ref=e295] [cursor=pointer]:
+                  - /url: http://anpc.ro
+              - listitem [ref=e296]:
+                - link "ANPC SAL" [ref=e297] [cursor=pointer]:
+                  - /url: https://reclamatiisal.anpc.ro/
+          - generic [ref=e299]:
+            - generic [ref=e300]: Servicii
+            - list [ref=e301]:
+              - listitem [ref=e302]:
+                - link "XXXL Servicii" [ref=e303] [cursor=pointer]:
+                  - /url: /c/servicii-xxxl
+              - listitem [ref=e304]:
+                - link "Interogare status comandă" [ref=e305] [cursor=pointer]:
+                  - /url: https://www.xxxlutz.ro/statuscomanda
+              - listitem [ref=e306]:
+                - link "Card Premium XXXL" [ref=e307] [cursor=pointer]:
+                  - /url: /c/card-premium-xxxl
+              - listitem [ref=e308]:
+                - link "Mașină de transport" [ref=e309] [cursor=pointer]:
+                  - /url: /c/xxxl-bus
+              - listitem [ref=e310]:
+                - link "Montaj" [ref=e311] [cursor=pointer]:
+                  - /url: /c/livrare-montaj
+              - listitem [ref=e312]:
+                - link "Protecția contra petelor" [ref=e313] [cursor=pointer]:
+                  - /url: /c/protectia-contra-petelor
+          - generic [ref=e315]:
+            - generic [ref=e316]: Filiale
+            - list [ref=e317]:
+              - listitem [ref=e318]:
+                - link "Chilipiruri în filiale" [ref=e319] [cursor=pointer]:
+                  - /url: /hs/
+              - listitem [ref=e320]:
+                - link "Locații" [ref=e321] [cursor=pointer]:
+                  - /url: /locatii
+              - listitem [ref=e322]:
+                - link "Pliante" [ref=e323] [cursor=pointer]:
+                  - /url: /prospecte
+              - listitem [ref=e324]:
+                - link "Programare consiliere" [ref=e325] [cursor=pointer]:
+                  - /url: /c/programareconsiliere
+              - listitem [ref=e326]:
+                - link "Termene și condiții magazine" [ref=e327] [cursor=pointer]:
+                  - /url: /c/termene-si-conditii-magazine
+          - generic [ref=e329]:
+            - generic [ref=e330]: Despre noi
+            - list [ref=e331]:
+              - listitem [ref=e332]:
+                - link "Companie" [ref=e333] [cursor=pointer]:
+                  - /url: /c/companie
+              - listitem [ref=e334]:
+                - link "Centrul de presă" [ref=e335] [cursor=pointer]:
+                  - /url: https://pr.xxxlutz.ro
+              - listitem [ref=e336]:
+                - link "Carieră la XXXLutz" [ref=e337] [cursor=pointer]:
+                  - /url: https://cariere.xxxlutz.ro/
+              - listitem [ref=e338]:
+                - link "Mărci XXXL" [ref=e339] [cursor=pointer]:
+                  - /url: /c/marci-xxxlutz
+              - listitem [ref=e340]:
+                - link "Blogul meu XXXL" [ref=e341] [cursor=pointer]:
+                  - /url: /c/blogul-meu-xxxl
+              - listitem [ref=e342]:
+                - link "Accessibility" [ref=e343] [cursor=pointer]:
+                  - /url: /c/accessibility-statement
+      - generic [ref=e345]:
+        - generic [ref=e348]:
+          - paragraph [ref=e349]: Help & Contact
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - link "Către formularul de contact" [ref=e352] [cursor=pointer]:
+                - /url: /centrudecontact
+                - generic [ref=e353] [cursor=pointer]: Către formularul de contact
+              - paragraph [ref=e354]: Aveți întrebări? Vom fi bucuroși să va ajutăm.
+            - generic [ref=e355]:
+              - link "Întrebări frecvente" [ref=e356] [cursor=pointer]:
+                - /url: /c/faq_overview
+                - generic [ref=e357] [cursor=pointer]: Întrebări frecvente
+              - paragraph [ref=e358]: La secțiunea de întrebări frecvente veți găsi cu ușurință răspunsurile pe care le căutați.
+        - generic [ref=e359]:
+          - generic [ref=e360]: Parteneri livrare
+          - generic [ref=e361]:
+            - img "XXXLutz ServiceTeam" [ref=e364]
+            - img "DPD" [ref=e367]
+            - img "Gebrüder Weiss Logistik" [ref=e370]
+        - generic [ref=e371]:
+          - generic [ref=e372]: Metode de plată
+          - generic [ref=e373]:
+            - img "Mastercard Visa" [ref=e376]
+            - img "GPay_Acceptance_Mark_800.png" [ref=e379]
+            - img "Logo-Apple-Pay-1280x1280.png" [ref=e382]
+            - img "Transfer Bancar" [ref=e387]
+            - img "Ramburs" [ref=e390]
+        - generic [ref=e391]: Toate prețurile sunt exprimate în RON și includ T.V.A.. Prețurile nu includ costul de livrare sau decorațiuni. Livrarea este posibilă doar în România. Prețurile echipamentelor electrice și electronice nu includ taxa pentru timbru verde. Pozele produselor sunt cu titlu de prezentare și ne rezervăm dreptul la erori, modificări ale produselor sau epuizarea stocului. Informațiile sunt prezentate sub rezerva erorilor de redactare sau tipar. **Prețurile inițiale se referă la prețurile valabile anterior promoției. Termenul de livrare afișat pe pagina produsului este o estimare a duratei de livrare de la momentul comenzii. Acesta nu reprezintă un termen fix, deoarece poate varia în funcție de furnizor, transportator, condițiile de transport și locația de livrare. Produsele de mobilier expuse pe suprafața magazinelor noastre nu pot fi achiziționate decât în cazul în care sunt semnalizate ca fiind “capăt de stoc”, nu mai pot fi comandate și stocul din depozitele noastre sau ale furnizorilor a fost epuizat.
+      - generic [ref=e394]:
+        - link "XXXLutz" [ref=e395] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e396] [cursor=pointer]: XXXLutz
+          - img [ref=e398] [cursor=pointer]
+        - generic [ref=e404]: © 2026 XXXLutz Mobilier SRL
+        - list [ref=e405]:
+          - listitem [ref=e406]:
+            - link "Impressum" [ref=e407] [cursor=pointer]:
+              - /url: /c/impressum
+          - listitem [ref=e408]:
+            - link "Termene și condiții" [ref=e409] [cursor=pointer]:
+              - /url: /c/agb
+          - listitem [ref=e410]:
+            - link "Protecția datelor" [ref=e411] [cursor=pointer]:
+              - /url: /c/privacy
+          - listitem [ref=e412]:
+            - button "Setări-cookies" [ref=e413] [cursor=pointer]
+        - list [ref=e414]:
+          - listitem [ref=e415]:
+            - link "youtube" [ref=e416] [cursor=pointer]:
+              - /url: https://www.youtube.com/c/XXXLutzRomania
+          - listitem [ref=e417]:
+            - link "facebook" [ref=e418] [cursor=pointer]:
+              - /url: https://www.facebook.com/XXXLutzRo
+          - listitem [ref=e419]:
+            - link "instagram" [ref=e420] [cursor=pointer]:
+              - /url: https://www.instagram.com/lutzromania/
+          - listitem [ref=e421]:
+            - link "pinterest" [ref=e422] [cursor=pointer]:
+              - /url: https://ro.pinterest.com/XXXLutzRO/
+        - link "WACA bronze certificate" [ref=e423] [cursor=pointer]:
+          - /url: /c/accessibility
+          - img "WACA bronze certificate" [ref=e424] [cursor=pointer]
+```

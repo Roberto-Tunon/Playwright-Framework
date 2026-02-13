@@ -1,0 +1,313 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Naročite se na e-novice in si zagotovite bon v vrednosti 5€" [ref=e9] [cursor=pointer]:
+              - /url: /c/e-novice
+              - generic [ref=e10] [cursor=pointer]: Naročite se na e-novice in si zagotovite bon v vrednosti 5€
+            - link "Brezplačna poštnina za spletna naročila nad 90 €" [ref=e11] [cursor=pointer]:
+              - /url: /c/dostava
+              - generic [ref=e12] [cursor=pointer]: Brezplačna poštnina za spletna naročila nad 90 €
+          - generic [ref=e14]:
+            - link "Katalogi" [ref=e15] [cursor=pointer]:
+              - /url: /c/katalogi
+              - generic [ref=e16] [cursor=pointer]: Katalogi
+            - link "Kontakt" [ref=e17] [cursor=pointer]:
+              - /url: /poslovalnice
+              - generic [ref=e18] [cursor=pointer]: Kontakt
+            - link "Pomoč kupcem" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Pomoč kupcem
+            - switch "Visok kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Visok kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Zamenjaj navigacijo" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Meni
+          - link "XXXLesnina" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLesnina
+            - img [ref=e33] [cursor=pointer]
+          - link "Skoči na glavno vsebino" [ref=e42] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e43]:
+            - generic [ref=e44]:
+              - button "Iskanje" [ref=e46] [cursor=pointer]
+              - searchbox "Iskanje izdelkov, blagovnih znamk ali novosti" [ref=e47]
+              - generic: Iskanje izdelkov, blagovnih znamk ali novosti
+          - generic [ref=e48]:
+            - link "Prijava" [ref=e50] [cursor=pointer]:
+              - /url: /signin
+              - generic [ref=e51] [cursor=pointer]: Prijava
+            - link "Favoriten 0 izdelki" [ref=e53] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e54] [cursor=pointer]: Zaznamki
+            - link "Košarica in dostava 1 izdelek" [ref=e56] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e57] [cursor=pointer]: "1"
+              - generic [ref=e58] [cursor=pointer]: Košarica
+          - navigation [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Pohištvo" [ref=e62] [cursor=pointer]:
+                  - /url: /c/pohistvo
+              - listitem [ref=e63]:
+                - link "Kuhinje" [ref=e64] [cursor=pointer]:
+                  - /url: /kuhinje-C127
+              - listitem [ref=e65]:
+                - link "Dnevne sobe" [ref=e66] [cursor=pointer]:
+                  - /url: /dnevne-sobe-C101
+              - listitem [ref=e67]:
+                - link "Vse za kuhinjo" [ref=e68] [cursor=pointer]:
+                  - /url: /c/vse-za-kuhinjo
+              - listitem [ref=e69]:
+                - link "Dodatki za dom" [ref=e70] [cursor=pointer]:
+                  - /url: /c/dodatki-za-dom
+              - listitem [ref=e71]:
+                - link "Svetila" [ref=e72] [cursor=pointer]:
+                  - /url: /svetila-in-luci-C116
+              - listitem [ref=e73]:
+                - link "Baby" [ref=e74] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e75]:
+                - link "Preproge" [ref=e76] [cursor=pointer]:
+                  - /url: /preproge-in-tepihi-C117
+              - listitem [ref=e77]:
+                - link "Ideje & nasveti" [ref=e78] [cursor=pointer]:
+                  - /url: /c/ideje-in-nasveti
+              - listitem [ref=e79]:
+                - link "Akcije & katalogi" [ref=e80] [cursor=pointer]:
+                  - /url: /c/akcije-in-katalogi
+              - listitem [ref=e81]:
+                - link "Samo na spletu" [ref=e82] [cursor=pointer]:
+                  - /url: /c/samo-na-spletu
+              - listitem [ref=e83]:
+                - link "B2B" [ref=e84] [cursor=pointer]:
+                  - /url: /c/b2b
+      - main [ref=e85]:
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: "Vnesi kodo:"
+            - button "LOVE" [ref=e95] [cursor=pointer]
+          - generic [ref=e96]:
+            - generic [ref=e97]: 25% popust na vse, razen na že znižano ponudbo pri nakupu nad 100 EUR
+            - link "Poglej pogoje" [ref=e98] [cursor=pointer]:
+              - /url: /c/akcije-in-katalogi#spletna-akcija
+        - status [ref=e99]:
+          - generic [ref=e100]: Košarica - XXXLesnina
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - heading "Košarica" [level=1] [ref=e105]
+              - link "Nadaljuj z nakupovanjem" [ref=e106] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e107] [cursor=pointer]: Nadaljuj z nakupovanjem
+            - generic [ref=e108]:
+              - alert [ref=e112]:
+                - generic [ref=e113]: Izberite poslovalnico za osebni prevzem.
+              - list [ref=e114]:
+                - listitem [ref=e115]:
+                  - article [ref=e116]:
+                    - generic [ref=e117]:
+                      - img "STENSKO OGLEDALO, 100/180/7,5 cm steklo - bela, Trendi, steklo/les (100/180/7,5cm) - Landscape" [ref=e118]
+                      - link [ref=e119] [cursor=pointer]:
+                        - /url: /p/landscape-stensko-ogledalo-100-180-7-5-cm-steklo-002571000202
+                    - generic [ref=e120]:
+                      - generic [ref=e121]:
+                        - generic [ref=e122]: "002571000202"
+                        - link "Št. izdelka 2571000202" [ref=e123] [cursor=pointer]:
+                          - /url: /p/landscape-stensko-ogledalo-100-180-7-5-cm-steklo-002571000202
+                          - generic [ref=e124] [cursor=pointer]: Št. izdelka 2571000202
+                      - link "Landscape STENSKO OGLEDALO, 100/180/7,5 cm steklo" [ref=e126] [cursor=pointer]:
+                        - /url: /p/landscape-stensko-ogledalo-100-180-7-5-cm-steklo-002571000202
+                        - heading "Landscape STENSKO OGLEDALO, 100/180/7,5 cm steklo" [level=2] [ref=e127] [cursor=pointer]:
+                          - generic [ref=e128] [cursor=pointer]: Landscape STENSKO
+                          - generic [ref=e129] [cursor=pointer]: OGLEDALO, 100/180/7,5 cm steklo
+                      - generic [ref=e130]:
+                        - generic [ref=e131]: bela
+                        - generic [ref=e132]: 100/180/7,5 cm
+                    - generic [ref=e135]:
+                      - generic [ref=e137]: € 169,‒
+                      - generic [ref=e138]: € 169,‒ / Kos
+                    - generic [ref=e139]:
+                      - button "Odstrani izdelek - STENSKO OGLEDALO, 100/180/7,5 cm steklo" [ref=e140] [cursor=pointer]
+                      - generic [ref=e141]:
+                        - textbox "Količina" [ref=e142]: "1"
+                        - generic [ref=e143]: Količina
+                      - button "1" [ref=e144] [cursor=pointer]:
+                        - generic [ref=e145] [cursor=pointer]: "1"
+                      - button "Povečaj število - STENSKO OGLEDALO, 100/180/7,5 cm steklo" [ref=e146] [cursor=pointer]
+                    - generic [ref=e148]:
+                      - button "STENSKO OGLEDALO, 100/180/7,5 cm steklo - Shrani izdelek za kasneje" [ref=e149] [cursor=pointer]:
+                        - generic [ref=e151] [cursor=pointer]: Shrani izdelek za kasneje
+                      - button "STENSKO OGLEDALO, 100/180/7,5 cm steklo - Odstrani izdelek" [ref=e152] [cursor=pointer]:
+                        - generic [ref=e154] [cursor=pointer]: Odstrani izdelek
+                  - generic [ref=e155]:
+                    - generic [ref=e156]:
+                      - generic [ref=e160]: Osebni prevzem
+                      - button "Izberi poslovalnico" [ref=e162] [cursor=pointer]:
+                        - generic [ref=e163] [cursor=pointer]: Izberi poslovalnico
+                      - generic [ref=e164]:
+                        - text: Stroški dostave
+                        - generic [ref=e165]: + € 0,‒
+                    - paragraph [ref=e166]:
+                      - generic [ref=e167]:
+                        - text: Pozor, prevzemno skladišče je lahko nekaj minut oddaljeno od poslovalnice!
+                        - strong [ref=e168]: Preverite naslov za prevzem
+                        - text: v Potrdilu naročila.
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - heading "Povzetek" [level=2] [ref=e172]
+              - generic [ref=e173]:
+                - generic [ref=e174]:
+                  - generic [ref=e175]: Vrednost blaga
+                  - generic [ref=e176]: € 169,‒
+                  - button "Stroški dostave" [ref=e177] [cursor=pointer]:
+                    - generic [ref=e178] [cursor=pointer]: Stroški dostave
+                  - generic [ref=e179]: gratis
+                - generic [ref=e180]:
+                  - generic [ref=e181]: Skupni znesek
+                  - generic [ref=e182]: € 169,‒
+                  - generic [ref=e183]: DDV vključen v ceno
+                - button "Na blagajno" [ref=e184] [cursor=pointer]:
+                  - generic [ref=e185] [cursor=pointer]: Na blagajno
+                - separator "ali" [ref=e186]
+                - generic [ref=e187]:
+                  - button "Nakup s storitvijo GPay" [ref=e192] [cursor=pointer]
+                  - button "Buy with Apple Pay" [ref=e197] [cursor=pointer]:
+                    - img [ref=e199] [cursor=pointer]:
+                      - generic [ref=e200] [cursor=pointer]:
+                        - generic [ref=e201] [cursor=pointer]: Buy with
+                        - img [ref=e202] [cursor=pointer]
+            - generic [ref=e211]:
+              - button "Vnesi kodo" [ref=e212] [cursor=pointer]:
+                - generic [ref=e213] [cursor=pointer]: Vnesi kodo
+                - img [ref=e214] [cursor=pointer]
+              - generic [ref=e217]:
+                - generic [ref=e220]:
+                  - textbox "Vnesi kodo" [ref=e221]
+                  - generic: Vnesi kodo
+                - button "Uporabi" [ref=e222] [cursor=pointer]:
+                  - generic [ref=e223] [cursor=pointer]: Uporabi
+          - complementary [ref=e224]:
+            - link "Nadaljuj z nakupovanjem" [ref=e225] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e226] [cursor=pointer]: Nadaljuj z nakupovanjem
+    - contentinfo [ref=e227]:
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - generic [ref=e230]: XXXL prednosti
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - link "Bon v vrednosti 5€ ob prijavi na e-novice" [ref=e234] [cursor=pointer]:
+                - /url: /c/e-novice
+                - text: Bon v vrednosti 5€ ob prijavi na e-novice
+            - listitem [ref=e236]:
+              - link "Pogoji vračila v spletni trgovini" [ref=e237] [cursor=pointer]:
+                - /url: /c/vracilo
+                - text: Pogoji vračila v spletni trgovini
+            - listitem [ref=e239]:
+              - link "Varno plačevanje" [ref=e240] [cursor=pointer]:
+                - /url: /c/nacini-placila
+                - text: Varno plačevanje
+            - listitem [ref=e242]:
+              - link "Gratis najem transportnega vozila" [ref=e243] [cursor=pointer]:
+                - /url: /c/najem-transportnega-vozila
+                - text: Gratis najem transportnega vozila
+            - listitem [ref=e245]:
+              - link "Dostava in montaža" [ref=e246] [cursor=pointer]:
+                - /url: /c/montaza
+                - text: Dostava in montaža
+        - generic [ref=e249]:
+          - generic [ref=e252]:
+            - paragraph [ref=e253]: Pomoč kupcem
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - link "Kontaktni obrazec" [ref=e256] [cursor=pointer]:
+                  - /url: /kontakt
+                  - generic [ref=e257] [cursor=pointer]: Kontaktni obrazec
+                - paragraph [ref=e258]: Potrebujete še kakšen nasvet ali pomoč?
+              - generic [ref=e259]:
+                - link "Pogosta vprašanja" [ref=e260] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e261] [cursor=pointer]: Pogosta vprašanja
+                - paragraph [ref=e262]: V naših pogostih vprašanjih boste velikokrat našli pomoč.
+          - generic [ref=e263]:
+            - generic [ref=e264]: Kakovost v Lesnini
+            - link [ref=e268] [cursor=pointer]:
+              - /url: /c/bestbuy
+          - generic [ref=e269]:
+            - generic [ref=e270]: Načini plačila
+            - generic [ref=e271]:
+              - link [ref=e274] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e277] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e280] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e283] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#paypal
+              - link "googlepay.jpg" [ref=e286] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#googlepay
+                - img "googlepay.jpg" [ref=e287] [cursor=pointer]
+              - link [ref=e290] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#applepay
+              - link [ref=e293] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#gotovina
+              - link "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e296] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#predracun
+                - img "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e297] [cursor=pointer]
+          - generic [ref=e298]: "*Vse cene so v evrih in vključujejo DDV, cene ne vključujejo stroškov dostave, montaže ali dekorativnih dodatkov, prikazanih na slikah. Pridržujemo si pravico do sprememb in napak. Cene označene z ** so naše redne maloprodajne cene."
+        - generic [ref=e301]:
+          - link "XXXLesnina" [ref=e302] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e303] [cursor=pointer]: XXXLesnina
+            - img [ref=e305] [cursor=pointer]
+          - generic [ref=e314]: "@2026 LES-MMS d.o.o."
+          - list [ref=e315]:
+            - listitem [ref=e316]:
+              - link "O NAS" [ref=e317] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/o-nas
+            - listitem [ref=e318]:
+              - link "SPLOŠNI POGOJI" [ref=e319] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/splosni-pogoji
+            - listitem [ref=e320]:
+              - link "VARNOST IN ZASEBNOST" [ref=e321] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/agb
+            - listitem [ref=e322]:
+              - link "Izjava o dostopnosti" [ref=e323] [cursor=pointer]:
+                - /url: /c/izjava-o-dostopnosti
+            - listitem [ref=e324]:
+              - button "Piškotki" [ref=e325] [cursor=pointer]
+          - list [ref=e326]:
+            - listitem [ref=e327]:
+              - link "youtube" [ref=e328] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCg4u8_2N8P2UZ0y4eM51nqg
+            - listitem [ref=e329]:
+              - link "instagram" [ref=e330] [cursor=pointer]:
+                - /url: https://www.instagram.com/lesnina.si/?hl=en
+            - listitem [ref=e331]:
+              - link "facebook" [ref=e332] [cursor=pointer]:
+                - /url: https://www.facebook.com/lesnina.si/
+            - listitem [ref=e333]:
+              - link "tiktok" [ref=e334] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@lesnina_slovenija?lang=en
+            - listitem [ref=e335]:
+              - link "linkedin" [ref=e336] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/lesnina-xxxl/?viewAsMember=true
+          - link "WACA bronze certificate" [ref=e337] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA bronze certificate" [ref=e338] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - iframe
+  - generic:
+    - log
+```
