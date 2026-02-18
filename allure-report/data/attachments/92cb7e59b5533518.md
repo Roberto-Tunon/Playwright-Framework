@@ -1,0 +1,994 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "5% Gutschein bei Newsletteranmeldung" [ref=e9] [cursor=pointer]:
+              - /url: /c/newsletter
+              - generic [ref=e10] [cursor=pointer]: 5% Gutschein bei Newsletteranmeldung
+            - link "Look & Feel Magazin" [ref=e11] [cursor=pointer]:
+              - /url: https://looknfeel.xxxlutz.at/02-26/
+              - generic [ref=e12] [cursor=pointer]: Look & Feel Magazin
+          - generic [ref=e14]:
+            - link "Angebote des Monats" [ref=e15] [cursor=pointer]:
+              - /url: /c/angebote-des-monats
+              - generic [ref=e16] [cursor=pointer]: Angebote des Monats
+            - link "47 Filialen in Ihrer Nähe" [ref=e17] [cursor=pointer]:
+              - /url: /filialen-standorte
+              - generic [ref=e18] [cursor=pointer]: 47 Filialen in Ihrer Nähe
+            - link "Hilfe & Kontakt" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Hilfe & Kontakt
+            - switch "Hoher Kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menü
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Suchen" [ref=e43] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e44]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+          - generic [ref=e45]:
+            - button "Anmelden" [ref=e47] [cursor=pointer]:
+              - generic [ref=e48] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e50] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e51] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 0 Produkte" [ref=e53] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e54] [cursor=pointer]: Warenkorb
+          - navigation [ref=e55]:
+            - list [ref=e56]:
+              - listitem [ref=e57]:
+                - link "Möbel" [ref=e58] [cursor=pointer]:
+                  - /url: /c/moebel
+              - listitem [ref=e59]:
+                - link "Küchen" [ref=e60] [cursor=pointer]:
+                  - /url: /kuechen-C41
+              - listitem [ref=e61]:
+                - link "Haushalt" [ref=e62] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+              - listitem [ref=e63]:
+                - link "Leuchten" [ref=e64] [cursor=pointer]:
+                  - /url: /lampen-leuchten-C10
+              - listitem [ref=e65]:
+                - link "Deko&Textil" [ref=e66] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+              - listitem [ref=e67]:
+                - link "Baby" [ref=e68] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e69]:
+                - link "Freizeit" [ref=e70] [cursor=pointer]:
+                  - /url: /freizeit-co-C61
+              - listitem [ref=e71]:
+                - link "Trends" [ref=e72] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e73]:
+                - link "Angebote & Aktionen" [ref=e74] [cursor=pointer]:
+                  - /url: /c/aktuelle-rabatte-und-gutscheine
+              - listitem [ref=e75]:
+                - link "XXXL Restaurant" [ref=e76] [cursor=pointer]:
+                  - /url: /c/restaurant
+              - listitem [ref=e77]:
+                - link "Beratungstermin" [ref=e78] [cursor=pointer]:
+                  - /url: /c/beratungstermin
+      - main [ref=e79]:
+        - status [ref=e80]:
+          - generic [ref=e81]: Das Online Möbelhaus - Möbel online kaufen bei | XXXLutz.at
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - link "Die nächste Liste überspringen" [ref=e84] [cursor=pointer]:
+              - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJ3eHNfeHh4bHV0el9hdF9mcm9udHBhZ2VfYmlsbGJvYXJkcyIsImNhdGFsb2dJZCI6Inh4eGx1dHouYXQtY29udGVudCIsImNhdGFsb2dWZXJzaW9uIjoiT25saW5lIn0"
+              - text: Abschnitt überspringen
+            - generic [ref=e85] [cursor=pointer]:
+              - group [ref=e86] [cursor=pointer]:
+                - generic [ref=e90] [cursor=pointer]:
+                  - link "Zum Angebot" [ref=e91] [cursor=pointer]:
+                    - /url: /c/xxxl-sparen
+                  - generic:
+                    - generic:
+                      - img "20€ ab 100€ bei Kauf von vielen Baby & Boutiqueartikeln Böden Teppiche Heimtextilien Vorhängen & Leuchten. Bis zu 20% auf fast Ihren gesamten Einkauf sparen Für bestehende und neue Preisepassinhaber zum Sofortabzug Online bereits für Sie abgezogen"
+                    - generic:
+                      - generic:
+                        - link "Zum Angebot" [ref=e92] [cursor=pointer]:
+                          - /url: /c/xxxl-sparen
+                          - generic [ref=e93] [cursor=pointer]: Zum Angebot
+                        - paragraph:
+                          - text: Ausgenommen alle Werbe- und Aktionsartikel aus
+                          - link "diesen Prospekten" [ref=e94] [cursor=pointer]:
+                            - /url: /c/unsere-prospekte
+                          - text: und Online Only Produkte. 1)
+                          - link "siehe Aktionsbedingungen" [ref=e95] [cursor=pointer]:
+                            - /url: /c/newsaktion
+                - generic [ref=e99] [cursor=pointer]:
+                  - link "XXXL Frühlingsangebote entdecken" [ref=e100] [cursor=pointer]:
+                    - /url: /c/fruehlingsmarkt
+                  - generic:
+                    - generic:
+                      - img "XXXL Frühlingsangebote; Alles für den Saisonstart"
+                    - link "XXXL Frühlingsangebote entdecken" [ref=e101] [cursor=pointer]:
+                      - /url: /c/fruehlingsmarkt
+                      - generic [ref=e102] [cursor=pointer]: XXXL Frühlingsangebote entdecken
+                - generic [ref=e106] [cursor=pointer]:
+                  - link "Jetzt entdecken" [ref=e107] [cursor=pointer]:
+                    - /url: /c/tp-balkon-terassenmoebel
+                  - generic:
+                    - generic:
+                      - img "LAT-FP-A-2026-KW07-ELAG10.jpg"
+                    - generic:
+                      - generic:
+                        - heading "Frühlingsfit" [level=2]
+                        - paragraph: Mit den XXXL Balkon- und Terrassenmöbeln
+                        - link "Jetzt entdecken" [ref=e108] [cursor=pointer]:
+                          - /url: /c/tp-balkon-terassenmoebel
+                          - generic [ref=e109] [cursor=pointer]: Jetzt entdecken
+              - generic:
+                - button "vorheriges Bild"
+                - button "nächstes Bild"
+            - generic [ref=e111]:
+              - list:
+                - listitem:
+                  - button "Gehe zu Slide 1" [ref=e112] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 2" [ref=e113] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 3" [ref=e114] [cursor=pointer]
+          - list [ref=e116]:
+            - listitem [ref=e117]:
+              - link "Kategorien" [ref=e118] [cursor=pointer]:
+                - /url: /#kategorien-raum
+                - generic [ref=e121] [cursor=pointer]: Kategorien
+            - listitem [ref=e122]:
+              - link "Aktionen" [ref=e123] [cursor=pointer]:
+                - /url: /#gutscheine-aktionen
+                - generic [ref=e126] [cursor=pointer]: Aktionen
+            - listitem [ref=e127]:
+              - link "Trends" [ref=e128] [cursor=pointer]:
+                - /url: /#inspirationen-trends
+                - generic [ref=e131] [cursor=pointer]: Trends
+            - listitem [ref=e132]:
+              - link "Filiale" [ref=e133] [cursor=pointer]:
+                - /url: /#filiale
+                - generic [ref=e136] [cursor=pointer]: Filiale
+            - listitem [ref=e137]:
+              - link "Look & Feel Magazin" [ref=e138] [cursor=pointer]:
+                - /url: /c/looknfeel-archiv
+                - generic [ref=e141] [cursor=pointer]: Look & Feel Magazin
+          - generic [ref=e142]:
+            - heading "Angebote und Aktionen" [level=2] [ref=e143]
+            - link "Zu den Angeboten" [ref=e149] [cursor=pointer]:
+              - /url: /c/angebote-des-monats
+              - generic [ref=e152] [cursor=pointer]: Zu den Angeboten
+          - generic [ref=e154]:
+            - heading "Jeder Raum ein Traum" [level=2] [ref=e155]: Jeder Raum ein Traum
+            - link "Die nächste Liste mit dem Titel <br />Jeder Raum ein Traum überspringen" [ref=e156] [cursor=pointer]:
+              - /url: "#skip-section-Liste-cmsitem_00360227"
+              - text: Abschnitt überspringen
+            - generic [ref=e157]:
+              - generic [ref=e159]:
+                - link "Wohnzimmer" [ref=e162] [cursor=pointer]:
+                  - /url: /wohnzimmer-C1
+                  - generic [ref=e163] [cursor=pointer]: Wohnzimmer
+                - link "Schlafzimmer" [ref=e167] [cursor=pointer]:
+                  - /url: /schlafzimmer-C3
+                  - generic [ref=e168] [cursor=pointer]: Schlafzimmer
+              - generic [ref=e171]:
+                - link "Badezimmer" [ref=e175] [cursor=pointer]:
+                  - /url: /badezimmer-C4
+                  - generic [ref=e176] [cursor=pointer]: Badezimmer
+                - link "Esszimmer" [ref=e180] [cursor=pointer]:
+                  - /url: /esszimmer-C12
+                  - generic [ref=e181] [cursor=pointer]: Esszimmer
+              - generic [ref=e184]:
+                - generic [ref=e186]:
+                  - link "Küchen" [ref=e187] [cursor=pointer]:
+                    - /url: /kuechen-C41
+                    - generic [ref=e188] [cursor=pointer]: Küchen
+                  - img "Küchen Herbst 2023" [ref=e190]
+                - generic [ref=e192]:
+                  - link "Garderobe" [ref=e193] [cursor=pointer]:
+                    - /url: /garderobe-C7
+                    - generic [ref=e194] [cursor=pointer]: Garderobe
+                  - img "Garderobe Herbst 2023" [ref=e196]
+          - generic [ref=e197]:
+            - heading "Produkte entdecken" [level=2] [ref=e198]
+            - link "Die nächste Liste mit dem Titel Produkte entdecken überspringen" [ref=e199] [cursor=pointer]:
+              - /url: "#skip-section-Liste-cmsitem_00360246"
+              - text: Abschnitt überspringen
+            - generic [ref=e200]:
+              - generic [ref=e202]:
+                - link "Freizeit" [ref=e206] [cursor=pointer]:
+                  - /url: /freizeit-co-C61
+                  - generic [ref=e207] [cursor=pointer]: Freizeit
+                - link "Haushalt" [ref=e211] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+                  - generic [ref=e212] [cursor=pointer]: Haushalt
+              - generic [ref=e215]:
+                - link "Wohnaccessoires" [ref=e218] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+                  - generic [ref=e219] [cursor=pointer]: Wohnaccessoires
+                - link "Leuchten" [ref=e223] [cursor=pointer]:
+                  - /url: /lampen-leuchten-C10
+                  - generic [ref=e224] [cursor=pointer]: Leuchten
+              - generic [ref=e227]:
+                - link "Baby" [ref=e230] [cursor=pointer]:
+                  - /url: /c/baby
+                  - generic [ref=e231] [cursor=pointer]: Baby
+                - generic [ref=e234]:
+                  - link "Alle Produkte" [ref=e235] [cursor=pointer]:
+                    - /url: /kategorien/root#kategorien
+                    - generic [ref=e236] [cursor=pointer]: Alle Produkte
+                  - img "Alle Kategorien" [ref=e238]
+          - heading "Besonders beliebt" [level=2] [ref=e240]: Besonders beliebt
+          - generic [ref=e242]:
+            - tablist [ref=e244]:
+              - tab "Topseller" [selected] [ref=e246] [cursor=pointer]
+              - tab "Trends" [ref=e248] [cursor=pointer]
+              - tab "Leuchten" [ref=e250] [cursor=pointer]
+            - tabpanel "Topseller" [ref=e253]:
+              - generic [ref=e255]:
+                - link "FH Test Preview" [ref=e256] [cursor=pointer]:
+                  - /url: https://fh.q.eco.xxxlutz.com/preview/?fh_location=//catalog01/de_AT&cms_page=frontpage&date_time=20260217T092659&fh_suppress=facets%2Citems&frontend=poseidon&devicetype=desktop
+                  - generic [ref=e257] [cursor=pointer]: FH Test Preview
+                - generic [ref=e259]:
+                  - link "Die nächste Liste überspringen" [ref=e260] [cursor=pointer]:
+                    - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJjbXNpdGVtXzAwMzYwMjgxIiwiY2F0YWxvZ0lkIjoieHh4bHV0ei5hdC1jb250ZW50IiwiY2F0YWxvZ1ZlcnNpb24iOiJPbmxpbmUifQ"
+                    - text: Abschnitt überspringen
+                  - group [ref=e261]:
+                    - group [ref=e262] [cursor=pointer]:
+                      - article [ref=e263] [cursor=pointer]:
+                        - generic [ref=e264] [cursor=pointer]:
+                          - generic [ref=e266] [cursor=pointer]:
+                            - link "GARDEROBENPANEEL in 66/120/5,5 cm" [ref=e267] [cursor=pointer]:
+                              - /url: /p/linea-natura-garderobenpaneel-in-66-120-5-5-cm-002748010406
+                              - generic [ref=e268] [cursor=pointer]:
+                                - generic [ref=e269] [cursor=pointer]: GARDEROBENPANEEL
+                                - text: in 66/120/5,5 cm
+                            - generic [ref=e270] [cursor=pointer]: Linea Natura
+                            - generic [ref=e271] [cursor=pointer]: XXXLutz
+                          - generic [ref=e272] [cursor=pointer]:
+                            - generic [ref=e273] [cursor=pointer]: "UVP: € 284,‒*"
+                            - generic [ref=e274] [cursor=pointer]: € 179,‒
+                          - generic [ref=e275] [cursor=pointer]:
+                            - img [ref=e276] [cursor=pointer]
+                            - text: Kostenloser Versand
+                        - generic [ref=e278] [cursor=pointer]:
+                          - img "GARDEROBENPANEEL in 66/120/5,5 cm - Eichefarben, Natur, Holz (66/120/5,5cm) - Linea Natura" [ref=e280] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e281] [cursor=pointer]
+                      - article [ref=e282] [cursor=pointer]:
+                        - generic [ref=e283] [cursor=pointer]:
+                          - generic [ref=e285] [cursor=pointer]:
+                            - link "PASTATELLERSET Vapiano 2-teilig" [ref=e286] [cursor=pointer]:
+                              - /url: /p/villeroy-boch-pastatellerset-vapiano-2-teilig-0034071093
+                              - generic [ref=e287] [cursor=pointer]:
+                                - generic [ref=e288] [cursor=pointer]: PASTATELLERSET
+                                - text: Vapiano 2-teilig
+                            - generic [ref=e289] [cursor=pointer]: Villeroy & Boch
+                            - generic [ref=e290] [cursor=pointer]: XXXLutz
+                          - generic [ref=e291] [cursor=pointer]:
+                            - generic [ref=e292] [cursor=pointer]: "UVP: € 29,90*"
+                            - generic [ref=e293] [cursor=pointer]:
+                              - text: € 19,
+                              - superscript [ref=e294] [cursor=pointer]: "99"
+                            - generic [ref=e295] [cursor=pointer]: € 10,‒ / Stk
+                        - generic [ref=e296] [cursor=pointer]:
+                          - img "PASTATELLERSET Vapiano 2-teilig - Weiß, KONVENTIONELL, Keramik (27/20cm) - Villeroy & Boch" [ref=e298] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e299] [cursor=pointer]
+                      - article [ref=e300] [cursor=pointer]:
+                        - generic [ref=e301] [cursor=pointer]:
+                          - generic [ref=e303] [cursor=pointer]:
+                            - link "GLÄSERSET Noblesse 18-teilig" [ref=e304] [cursor=pointer]:
+                              - /url: /p/nachtmann-glaeserset-noblesse-18-teilig-0045460359
+                              - generic [ref=e305] [cursor=pointer]:
+                                - generic [ref=e306] [cursor=pointer]: GLÄSERSET
+                                - text: Noblesse 18-teilig
+                            - generic [ref=e307] [cursor=pointer]: Nachtmann
+                            - generic [ref=e308] [cursor=pointer]: XXXLutz
+                          - generic [ref=e309] [cursor=pointer]:
+                            - generic [ref=e310] [cursor=pointer]: "UVP: € 116,55*"
+                            - generic [ref=e311] [cursor=pointer]:
+                              - text: € 49,
+                              - superscript [ref=e312] [cursor=pointer]: "90"
+                          - generic [ref=e313] [cursor=pointer]:
+                            - img [ref=e314] [cursor=pointer]
+                            - text: Kostenloser Versand
+                        - generic [ref=e316] [cursor=pointer]:
+                          - img "GLÄSERSET Noblesse 18-teilig - Klar, Trend, Glas - Nachtmann" [ref=e318] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e319] [cursor=pointer]
+                      - article [ref=e320] [cursor=pointer]:
+                        - generic [ref=e321] [cursor=pointer]:
+                          - generic [ref=e323] [cursor=pointer]:
+                            - link "KOMBISERVICE Basic White 30-teilig" [ref=e324] [cursor=pointer]:
+                              - /url: /p/villeroy-boch-kombiservice-basic-white-30-teilig-0034074829
+                              - generic [ref=e325] [cursor=pointer]:
+                                - generic [ref=e326] [cursor=pointer]: KOMBISERVICE
+                                - text: Basic White 30-teilig
+                            - generic [ref=e327] [cursor=pointer]: Villeroy & Boch
+                            - generic [ref=e328] [cursor=pointer]: XXXLutz
+                          - generic [ref=e329] [cursor=pointer]:
+                            - generic [ref=e330] [cursor=pointer]: "UVP: € 329,‒*"
+                            - generic [ref=e331] [cursor=pointer]: € 179,‒
+                          - generic [ref=e332] [cursor=pointer]:
+                            - img [ref=e333] [cursor=pointer]
+                            - text: Kostenloser Versand
+                        - generic [ref=e335] [cursor=pointer]:
+                          - img "KOMBISERVICE Basic White 30-teilig - Weiß, KONVENTIONELL, Keramik - Villeroy & Boch" [ref=e337] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e338] [cursor=pointer]
+                      - article [ref=e339] [cursor=pointer]:
+                        - generic [ref=e340] [cursor=pointer]:
+                          - generic [ref=e342] [cursor=pointer]:
+                            - link "LATTENROST 90/200 cm" [ref=e343] [cursor=pointer]:
+                              - /url: /p/xora-lattenrost-90-200-cm-002130011401
+                              - generic [ref=e344] [cursor=pointer]:
+                                - generic [ref=e345] [cursor=pointer]: LATTENROST
+                                - text: 90/200 cm
+                            - generic [ref=e346] [cursor=pointer]: Xora
+                            - generic [ref=e347] [cursor=pointer]: XXXLutz
+                          - generic [ref=e348] [cursor=pointer]:
+                            - generic [ref=e349] [cursor=pointer]: "UVP: € 124,‒*"
+                            - generic [ref=e350] [cursor=pointer]:
+                              - text: € 64,
+                              - superscript [ref=e351] [cursor=pointer]: "90"
+                          - generic [ref=e352] [cursor=pointer]:
+                            - img [ref=e353] [cursor=pointer]
+                            - text: Kostenloser Versand
+                        - generic [ref=e355] [cursor=pointer]:
+                          - img "LATTENROST 90/200 cm - Naturfarben, Basics, Holz (90/200cm) - Xora" [ref=e357] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e358] [cursor=pointer]
+                      - article [ref=e359] [cursor=pointer]:
+                        - generic [ref=e360] [cursor=pointer]:
+                          - generic [ref=e362] [cursor=pointer]:
+                            - link "WANDREGALSET 30-37/26-32/9-12 cm" [ref=e363] [cursor=pointer]:
+                              - /url: /p/xora-wandregalset-30-37-26-32-9-12-cm-002798014701
+                              - generic [ref=e364] [cursor=pointer]:
+                                - generic [ref=e365] [cursor=pointer]: WANDREGALSET
+                                - text: 30-37/26-32/9-12 cm
+                            - generic [ref=e366] [cursor=pointer]: Xora
+                            - generic [ref=e367] [cursor=pointer]: XXXLutz
+                          - generic [ref=e368] [cursor=pointer]:
+                            - generic [ref=e369] [cursor=pointer]: "UVP: € 50,‒*"
+                            - generic [ref=e370] [cursor=pointer]:
+                              - text: € 34,
+                              - superscript [ref=e371] [cursor=pointer]: "90"
+                        - generic [ref=e372] [cursor=pointer]:
+                          - img "WANDREGALSET 30-37/26-32/9-12 cm - Schwarz/Eiche Artisan, Basics, Holzwerkstoff (30-37/26-32/9-12cm) - Xora" [ref=e374] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e375] [cursor=pointer]
+                      - article [ref=e376] [cursor=pointer]:
+                        - generic [ref=e377] [cursor=pointer]:
+                          - generic [ref=e379] [cursor=pointer]:
+                            - link "BETTENSET 70X90/140X200 cm" [ref=e380] [cursor=pointer]:
+                              - /url: /p/boxxx-bettenset-70x90-140x200-cm-007992093001
+                              - generic [ref=e381] [cursor=pointer]:
+                                - generic [ref=e382] [cursor=pointer]: BETTENSET
+                                - text: 70X90/140X200 cm
+                            - generic [ref=e383] [cursor=pointer]: Boxxx
+                            - generic [ref=e384] [cursor=pointer]: XXXLutz
+                          - generic [ref=e385] [cursor=pointer]:
+                            - generic [ref=e386] [cursor=pointer]: "UVP: € 39,99*"
+                            - generic [ref=e387] [cursor=pointer]:
+                              - text: € 24,
+                              - superscript [ref=e388] [cursor=pointer]: "99"
+                        - generic [ref=e389] [cursor=pointer]:
+                          - img "BETTENSET 70X90/140X200 cm - Weiß, Basics, Textil (70X90/140X200cm) - Boxxx" [ref=e391] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e392] [cursor=pointer]
+                      - article [ref=e393] [cursor=pointer]:
+                        - generic [ref=e394] [cursor=pointer]:
+                          - generic [ref=e396] [cursor=pointer]:
+                            - link "ECKSOFA in Webstoff Grau" [ref=e397] [cursor=pointer]:
+                              - /url: /p/ti-me-ecksofa-in-webstoff-grau-002703009701
+                              - generic [ref=e398] [cursor=pointer]:
+                                - generic [ref=e399] [cursor=pointer]: ECKSOFA
+                                - text: in Webstoff Grau
+                            - generic [ref=e400] [cursor=pointer]: Ti'me
+                            - generic [ref=e401] [cursor=pointer]: XXXLutz
+                          - generic [ref=e402] [cursor=pointer]:
+                            - generic [ref=e403] [cursor=pointer]: "UVP: € 991,‒*"
+                            - generic [ref=e404] [cursor=pointer]: € 499,‒
+                        - generic [ref=e405] [cursor=pointer]:
+                          - img "ECKSOFA in Webstoff Grau - Schwarz/Grau, KONVENTIONELL, Kunststoff/Textil (223/148cm) - Ti'me" [ref=e407] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e408] [cursor=pointer]
+                      - article [ref=e409] [cursor=pointer]:
+                        - generic [ref=e410] [cursor=pointer]:
+                          - generic [ref=e412] [cursor=pointer]:
+                            - link "SPRITZERGLAS 544 ml 4-teilig" [ref=e413] [cursor=pointer]:
+                              - /url: /p/ritzenhoff-spritzerglas-544-ml-4-teilig-004537029901
+                              - generic [ref=e414] [cursor=pointer]:
+                                - generic [ref=e415] [cursor=pointer]: SPRITZERGLAS
+                                - text: 544 ml 4-teilig
+                            - generic [ref=e416] [cursor=pointer]: Ritzenhoff
+                            - generic [ref=e417] [cursor=pointer]: XXXLutz
+                          - generic [ref=e418] [cursor=pointer]:
+                            - generic [ref=e419] [cursor=pointer]: "UVP: € 91,80*"
+                            - generic [ref=e420] [cursor=pointer]:
+                              - text: € 39,
+                              - superscript [ref=e421] [cursor=pointer]: "90"
+                        - generic [ref=e422] [cursor=pointer]:
+                          - img "SPRITZERGLAS 544 ml 4-teilig - Flieder/Altrosa, Trend, Glas (9,3/22,5/9,3cm) - Ritzenhoff" [ref=e424] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e425] [cursor=pointer]
+                      - article [ref=e426] [cursor=pointer]:
+                        - generic [ref=e427] [cursor=pointer]:
+                          - generic [ref=e429] [cursor=pointer]:
+                            - link "STAPELSTUHL in Metall, Kunststoff, Textil Anthrazit, Schwarz" [ref=e430] [cursor=pointer]:
+                              - /url: /p/ambia-garden-stapelstuhl-in-metall-kunststoff-textil-anthrazit-schwarz-001807001501
+                              - generic [ref=e431] [cursor=pointer]:
+                                - generic [ref=e432] [cursor=pointer]: STAPELSTUHL
+                                - text: in Metall, Kunststoff, Textil Anthrazit, Schwarz
+                            - generic [ref=e433] [cursor=pointer]: Ambia Garden
+                            - generic [ref=e434] [cursor=pointer]: XXXLutz
+                          - generic [ref=e435] [cursor=pointer]:
+                            - generic [ref=e436] [cursor=pointer]: "UVP: € 34,90*"
+                            - generic [ref=e437] [cursor=pointer]:
+                              - text: € 19,
+                              - superscript [ref=e438] [cursor=pointer]: "90"
+                        - generic [ref=e439] [cursor=pointer]:
+                          - img "STAPELSTUHL in Metall, Kunststoff, Textil Anthrazit, Schwarz - Anthrazit/Schwarz, KONVENTIONELL, Kunststoff/Textil (54/93/74cm) - Ambia Garden" [ref=e441] [cursor=pointer]
+                          - button "Zu den Favoriten hinzufügen" [ref=e442] [cursor=pointer]
+                    - button "nächstes Bild" [ref=e443] [cursor=pointer]
+          - generic [ref=e444]:
+            - heading "Aktionen im Überblick" [level=2] [ref=e445]: Aktionen im Überblick
+            - generic [ref=e446]:
+              - link "Gutscheine & Aktionen" [ref=e451] [cursor=pointer]:
+                - /url: /c/xxxlutz-gutscheine
+                - generic [ref=e454] [cursor=pointer]: Gutscheine & Aktionen
+              - link "Zur Online-Lagerräumung" [ref=e460] [cursor=pointer]:
+                - /url: /c/online-sale
+                - generic [ref=e463] [cursor=pointer]: Zur Online-Lagerräumung
+          - heading "Inspirationen & Trends" [level=2] [ref=e466]
+          - generic [ref=e467]:
+            - link "Die nächste Liste überspringen" [ref=e468] [cursor=pointer]:
+              - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJjbXNpdGVtXzAwMDAzODc0IiwiY2F0YWxvZ0lkIjoieHh4bHV0ei5hdC1jb250ZW50IiwiY2F0YWxvZ1ZlcnNpb24iOiJPbmxpbmUifQ"
+              - text: Abschnitt überspringen
+            - generic [ref=e469] [cursor=pointer]:
+              - group [ref=e470] [cursor=pointer]:
+                - generic [ref=e474] [cursor=pointer]:
+                  - link "Zur Trendfarbe des Jahres" [ref=e475] [cursor=pointer]:
+                    - /url: /c/pantone-farbe
+                  - generic:
+                    - generic:
+                      - img "Gemütliches Wohnzimmer mit weißem, kuscheligem Sofa und Leuchten an der Decke - Cloud Dancer 11-4201 Pantone - Trendfarbe des Jahres 2026!"
+                    - link "Zur Trendfarbe des Jahres" [ref=e476] [cursor=pointer]:
+                      - /url: /c/pantone-farbe
+                      - generic [ref=e477] [cursor=pointer]: Zur Trendfarbe des Jahres
+                - generic [ref=e481] [cursor=pointer]:
+                  - link "Jetzt entdecken" [ref=e482] [cursor=pointer]:
+                    - /url: /c/shop-the-look-quiet-luxury
+                  - generic:
+                    - generic:
+                      - img "Wohnzimmer mit Esstischgarnitur"
+                    - generic:
+                      - generic:
+                        - heading "Quiet Luxury" [level=2]
+                        - link "Jetzt entdecken" [ref=e483] [cursor=pointer]:
+                          - /url: /c/shop-the-look-quiet-luxury
+                          - generic [ref=e484] [cursor=pointer]: Jetzt entdecken
+                - generic [ref=e488] [cursor=pointer]:
+                  - link "Jetzt entdecken" [ref=e489] [cursor=pointer]:
+                    - /url: /c/shop-the-look-colourful-living
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading "Colourful Living" [level=2]
+                        - link "Jetzt entdecken" [ref=e490] [cursor=pointer]:
+                          - /url: /c/shop-the-look-colourful-living
+                          - generic [ref=e491] [cursor=pointer]: Jetzt entdecken
+                - generic [ref=e495] [cursor=pointer]:
+                  - link "Jetzt entdecken" [ref=e496] [cursor=pointer]:
+                    - /url: /c/home-sweet-home
+                  - generic:
+                    - generic:
+                      - img "Weiße Couch mit blauen, weißen und braunen Heimtextilien"
+                    - generic:
+                      - generic:
+                        - heading "Home Sweet Home" [level=2]
+                        - link "Jetzt entdecken" [ref=e497] [cursor=pointer]:
+                          - /url: /c/home-sweet-home
+                          - generic [ref=e498] [cursor=pointer]: Jetzt entdecken
+                - generic [ref=e502] [cursor=pointer]:
+                  - link "Jetzt entdecken" [ref=e503] [cursor=pointer]:
+                    - /url: /c/lovely-place
+                  - generic:
+                    - generic:
+                      - img "Hellgraues Sofa mit Wohntextilien in weiß und kastanienbraun"
+                    - generic:
+                      - generic:
+                        - heading "Lovely Place" [level=2]
+                        - link "Jetzt entdecken" [ref=e504] [cursor=pointer]:
+                          - /url: /c/lovely-place
+                          - generic [ref=e505] [cursor=pointer]: Jetzt entdecken
+                - generic [ref=e509] [cursor=pointer]:
+                  - link "Zum Shop-the-Look" [ref=e510] [cursor=pointer]:
+                    - /url: /c/shop-the-look-urlaubsmomente
+                  - generic:
+                    - generic:
+                      - img "Heller Raum mit Fenster und Couch, umgeben von natürlichen Materialien, die den Blick auf das Meer betonen."
+                    - generic:
+                      - generic:
+                        - heading "Urlaubsmomente" [level=2]
+                        - link "Zum Shop-the-Look" [ref=e511] [cursor=pointer]:
+                          - /url: /c/shop-the-look-urlaubsmomente
+                          - generic [ref=e512] [cursor=pointer]: Zum Shop-the-Look
+                - generic [ref=e516] [cursor=pointer]:
+                  - link "Jetzt entdecken" [ref=e517] [cursor=pointer]:
+                    - /url: /c/retro-power
+                  - generic:
+                    - generic:
+                      - img "Retro Power Bunte Heimtextilien"
+                    - generic:
+                      - generic:
+                        - heading "Retro Power" [level=2]
+                        - link "Jetzt entdecken" [ref=e518] [cursor=pointer]:
+                          - /url: /c/retro-power
+                          - generic [ref=e519] [cursor=pointer]: Jetzt entdecken
+                - generic [ref=e523] [cursor=pointer]:
+                  - link "Inspirationen entdecken" [ref=e524] [cursor=pointer]:
+                    - /url: /c/calm-living
+                  - generic:
+                    - generic:
+                      - img "Gedeckter Tisch mit dezenten Farben und organischen Formen"
+                    - generic:
+                      - generic:
+                        - heading "Calm Living" [level=2]
+                        - link "Inspirationen entdecken" [ref=e525] [cursor=pointer]:
+                          - /url: /c/calm-living
+                          - generic [ref=e526] [cursor=pointer]: Inspirationen entdecken
+              - generic:
+                - button "vorheriges Bild"
+                - button "nächstes Bild"
+            - generic [ref=e528]:
+              - list:
+                - listitem:
+                  - button "Gehe zu Slide 1" [ref=e529] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 2" [ref=e530] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 3" [ref=e531] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 4" [ref=e532] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 5" [ref=e533] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 6" [ref=e534] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 7" [ref=e535] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 8" [ref=e536] [cursor=pointer]
+          - group [ref=e538]:
+            - group [ref=e539] [cursor=pointer]:
+              - link "Your Sound of Joy - XXXLutz das Radio" [ref=e542] [cursor=pointer]:
+                - /url: /c/radio
+                - img "Your Sound of Joy - XXXLutz das Radio" [ref=e543] [cursor=pointer]
+              - link "LAT-04-E-Magazin-Look&Feel-Image-Small-2600x600-KW05-ANIK.png" [ref=e546] [cursor=pointer]:
+                - /url: https://looknfeel.xxxlutz.at/02-26/
+                - img "LAT-04-E-Magazin-Look&Feel-Image-Small-2600x600-KW05-ANIK.png" [ref=e547] [cursor=pointer]
+              - link "Ökostrom zum Fixpreis XXXLutz - X-POWR - Oiso, I find des SUPA" [ref=e550] [cursor=pointer]:
+                - /url: /c/xpowr
+                - img "Ökostrom zum Fixpreis XXXLutz - X-POWR - Oiso, I find des SUPA" [ref=e551] [cursor=pointer]
+              - link "Your Sound of Joy - XXXLutz das Radio" [ref=e554] [cursor=pointer]:
+                - /url: /c/radio
+                - img "Your Sound of Joy - XXXLutz das Radio" [ref=e555] [cursor=pointer]
+              - link "LAT-04-E-Magazin-Look&Feel-Image-Small-2600x600-KW05-ANIK.png" [ref=e558] [cursor=pointer]:
+                - /url: https://looknfeel.xxxlutz.at/02-26/
+                - img "LAT-04-E-Magazin-Look&Feel-Image-Small-2600x600-KW05-ANIK.png" [ref=e559] [cursor=pointer]
+            - generic [ref=e560] [cursor=pointer]:
+              - list:
+                - listitem:
+                  - button "Gehe zu Slide 1" [ref=e561] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 2" [ref=e562] [cursor=pointer]
+                - listitem:
+                  - button "Gehe zu Slide 3" [ref=e563] [cursor=pointer]
+          - generic [ref=e564]:
+            - heading "Saisonale Highlights" [level=2] [ref=e565]: Saisonale Highlights
+            - link "Die nächste Liste mit dem Titel <br />Saisonale Highlights überspringen" [ref=e566] [cursor=pointer]:
+              - /url: "#skip-section-Liste-cmsitem_00291323"
+              - text: Abschnitt überspringen
+            - generic [ref=e567]:
+              - 'link "Zeit für Ruhe: Möbel und Accessoires für entspannte Stunden" [ref=e572] [cursor=pointer]':
+                - /url: /c/zeit-fuer-ruhe
+                - generic [ref=e575] [cursor=pointer]: "Zeit für Ruhe: Möbel und Accessoires für entspannte Stunden"
+              - 'link "Grillspaß und Gartenfreude: Der perfekte Start in die Saison" [ref=e581] [cursor=pointer]':
+                - /url: /c/grillspass-und-gartenfreude
+                - generic [ref=e584] [cursor=pointer]: "Grillspaß und Gartenfreude: Der perfekte Start in die Saison"
+          - generic [ref=e586]:
+            - link "Die nächste Liste überspringen" [ref=e587] [cursor=pointer]:
+              - /url: "#skip-section-Liste-cmsitem_00360321"
+              - text: Abschnitt überspringen
+            - generic [ref=e588]:
+              - generic [ref=e590]:
+                - link "Freizeit & Co" [ref=e591] [cursor=pointer]:
+                  - /url: /freizeit-co-C61
+                  - generic [ref=e592] [cursor=pointer]: Freizeit & Co
+                - list
+              - generic [ref=e595]:
+                - link "Einrichtungsstile" [ref=e596] [cursor=pointer]:
+                  - /url: /c/einrichtungsstile
+                  - generic [ref=e597] [cursor=pointer]: Einrichtungsstile
+                - list
+              - generic [ref=e600]:
+                - link "Garten" [ref=e601] [cursor=pointer]:
+                  - /url: /gartenmoebel-C8
+                  - generic [ref=e602] [cursor=pointer]: Garten
+                - list
+                - img "Balkon&Terrasse_Monatsthema_Mai.png" [ref=e604]
+              - generic [ref=e606]:
+                - link "Wohnserien" [ref=e607] [cursor=pointer]:
+                  - /url: /c/wohnserien
+                  - generic [ref=e608] [cursor=pointer]: Wohnserien
+                - list
+          - generic [ref=e610]:
+            - heading "Alles rund um unsere Filialen" [level=2] [ref=e611]
+            - link "Die nächste Liste mit dem Titel Alles rund um unsere Filialen überspringen" [ref=e612] [cursor=pointer]:
+              - /url: "#skip-section-Liste-cmsitem_00002748"
+              - text: Abschnitt überspringen
+            - generic [ref=e613]:
+              - link "Mehr erfahren" [ref=e618] [cursor=pointer]:
+                - /url: /c/restaurant
+                - generic [ref=e621] [cursor=pointer]: Mehr erfahren
+              - link "Filialfinder" [ref=e627] [cursor=pointer]:
+                - /url: /filialen-standorte
+                - generic [ref=e630] [cursor=pointer]: Filialfinder
+              - link "XXXL Beratungstermin" [ref=e636] [cursor=pointer]:
+                - /url: /c/beratungstermin
+                - generic [ref=e639] [cursor=pointer]: XXXL Beratungstermin
+              - link "Auftragsstatus abfragen" [ref=e645] [cursor=pointer]:
+                - /url: /auftragsstatus
+                - generic [ref=e648] [cursor=pointer]: Auftragsstatus abfragen
+              - link "Küchenplanung Jetzt Termin vereinbaren" [ref=e654] [cursor=pointer]:
+                - /url: /c/kuechenplanung
+                - generic [ref=e657] [cursor=pointer]:
+                  - text: Küchenplanung
+                  - text: Jetzt Termin vereinbaren
+          - generic [ref=e659]:
+            - generic [ref=e660]: XXXL Vorteile
+            - list [ref=e661]:
+              - listitem [ref=e662]:
+                - link "5% Newsletter Gutschein" [ref=e663] [cursor=pointer]:
+                  - /url: /c/newsletter
+                  - img [ref=e664] [cursor=pointer]
+                  - text: 5% Newsletter Gutschein
+              - listitem [ref=e665]:
+                - link "30 Tage kostenlose Rückgabe" [ref=e666] [cursor=pointer]:
+                  - /url: /c/retouren
+                  - img [ref=e667] [cursor=pointer]
+                  - text: 30 Tage kostenlose Rückgabe
+              - listitem [ref=e668]:
+                - link "Click&Collect" [ref=e669] [cursor=pointer]:
+                  - /url: /c/click-and-collect
+                  - img [ref=e670] [cursor=pointer]
+                  - text: Click&Collect
+              - listitem [ref=e671]:
+                - link "Gratis Postversand ab 49€ Bestellwert" [ref=e672] [cursor=pointer]:
+                  - /url: /c/onlinelieferung-versand
+                  - img [ref=e673] [cursor=pointer]
+                  - text: Gratis Postversand ab 49€ Bestellwert
+              - listitem [ref=e674]:
+                - link "Gratis Transporter bei Selbstabholung" [ref=e675] [cursor=pointer]:
+                  - /url: /c/xxxl-transporter
+                  - img [ref=e676] [cursor=pointer]
+                  - text: Gratis Transporter bei Selbstabholung
+              - listitem [ref=e677]:
+                - link "Montageservice bei Lieferung" [ref=e678] [cursor=pointer]:
+                  - /url: /c/lieferung-montage
+                  - img [ref=e679] [cursor=pointer]
+                  - text: Montageservice bei Lieferung
+          - generic [ref=e681]:
+            - generic [ref=e682]:
+              - generic [ref=e683]:
+                - generic [ref=e684]: XXXLutz Newsletter
+                - paragraph [ref=e685]: Jetzt anmelden und 5%* Gutschein sichern
+                - alert [ref=e689]:
+                  - generic [ref=e690]: Dieser Service steht aktuell wegen Wartungsarbeiten nicht zur Verfügung. Vielen Dank für Ihre Geduld!
+              - generic [ref=e691]:
+                - generic [ref=e692]:
+                  - generic [ref=e695]:
+                    - textbox "E-MAIL-ADRESSE*" [ref=e696]
+                    - generic "E-MAIL-ADRESSE": E-MAIL-ADRESSE*
+                  - generic [ref=e698] [cursor=pointer]:
+                    - checkbox "Ich möchte Werbung von XXXLutz auf Social Media Websites oder auf anderen Partnerwebsites von Anbietern verhaltensbasierter Werbung erhalten." [ref=e699]
+                    - generic [ref=e701] [cursor=pointer]:
+                      - img
+                    - generic [ref=e705] [cursor=pointer]: Ich möchte Werbung von XXXLutz auf Social Media Websites oder auf anderen Partnerwebsites von Anbietern verhaltensbasierter Werbung erhalten.
+                  - paragraph [ref=e706]:
+                    - text: Durch Klick auf „Zum Newsletter anmelden“ bin ich einverstanden, regelmäßig individualisierte Newsletter der XXXLutz KG („XXXLutz“) via E-Mail zu erhalten, wie in den
+                    - strong [ref=e707]: Details
+                    - text: beschrieben.
+                  - button "Mehr anzeigen" [ref=e710] [cursor=pointer]:
+                    - generic [ref=e711] [cursor=pointer]:
+                      - text: Mehr anzeigen
+                      - img [ref=e712] [cursor=pointer]
+                  - button "Zum Newsletter anmelden" [disabled] [ref=e714]:
+                    - generic [ref=e715]: Zum Newsletter anmelden
+                - paragraph [ref=e716]:
+                  - text: Details zum Newsletterversand und zum Datenschutz, finden Sie in dem
+                  - link "Datenschutzhinweis" [ref=e717] [cursor=pointer]:
+                    - /url: /c/privacy
+                  - text: von XXXLutz.
+                - paragraph [ref=e718]:
+                  - text: "*siehe"
+                  - link "Aktionsbedingungen" [ref=e719] [cursor=pointer]:
+                    - /url: /c/newsaktion
+            - img "2 Personen auf beige Sofa" [ref=e721]
+          - generic [ref=e722]:
+            - heading "Herzlich Willkommen im XXXLutz Online Shop" [level=1] [ref=e723]
+            - generic [ref=e724]:
+              - text: Attraktive Einrichtungsideen online bestellen im XXXLutz Möbelhaus – Markenmöbel in den XXXLutz Filialen, im Online Shop und auf unseren
+              - link "Social Media" [ref=e725] [cursor=pointer]:
+                - /url: https://www.xxxlutz.at/c/social-media
+              - text: Kanälen.
+          - generic [ref=e727]:
+            - tablist [ref=e729]:
+              - tab "XXXL Online Shop" [selected] [ref=e731] [cursor=pointer]
+              - tab "Beliebte Kategorien" [ref=e733] [cursor=pointer]
+              - tab "Beliebte Marken" [ref=e735] [cursor=pointer]
+              - tab "Beliebte Themen" [ref=e737] [cursor=pointer]
+            - tabpanel "XXXL Online Shop" [ref=e740]:
+              - generic [ref=e742]:
+                - generic [ref=e743]:
+                  - heading "Der Weg von Lutz zu XXXLutz" [level=1] [ref=e744]
+                  - generic [ref=e745]: "Anfangs noch Lutz genannt, wuchs der Möbelriese dank eXtra viel Auswahl, Service und Trends um die drei X, die ihn nicht nur zum XXLutz, sondern sogar zum XXXLutz machen. Mittlerweile ist „der Lutz“ zum Marktführer aufgestiegen und erfüllt nahezu jeden Wohntraum: Hier im Online Möbelhaus oder an einem der 47 XXXLutz Filial-Standorte in ganz Österreich. Abwechslungsreiche Angebote plus umfangreiche Dienstleistungen erwarten Sie im XXXLutz Shop ebenso wie tolle Rabatt-Aktionen und neueste Einrichtungsstyles. Ob Sie online kaufen oder im XXXLutz Möbelgeschäft in Ihrer Nähe vorbeischauen – wir freuen uns auf Sie!"
+                - generic [ref=e746]:
+                  - heading "XXXL Wohnideen-Vielfalt" [level=2] [ref=e747]
+                  - generic [ref=e748]:
+                    - text: "Ein Interieur so kreativ wie Sie: Dank des facettenreichen Produktportfolios im XXXLutz Online-Möbelhaus können Sie Ihr Zuhause ganz individuell gestalten. Entdecken Sie mit ca. 87.500 Marken-Möbeln eine riesige Palette an Artikeln und Looks für Ihre vier Wände. Darunter finden Sie ganz sicher auch Ihr persönliches Lieblingsstück. Von kuscheligen"
+                    - link "Sofas" [ref=e749] [cursor=pointer]:
+                      - /url: /sofas-C1C9C2
+                    - text: oder
+                    - link "Boxspringbetten" [ref=e750] [cursor=pointer]:
+                      - /url: /boxspringbetten-C3C3C1
+                    - text: über perfekt geplante
+                    - link "Küchen" [ref=e751] [cursor=pointer]:
+                      - /url: /kuechen-C41
+                    - text: von renommierten Herstellern bis hin zu zahlreichen Babyartikeln, Haushalts- und Deko-Accessoires bietet das Lutz-Sortiment alles, was das Einrichtungs-Herz begehrt.
+              - generic [ref=e753]:
+                - generic [ref=e754]:
+                  - heading "Nachhaltig wohnen am Puls der Zeit" [level=2] [ref=e755]
+                  - generic [ref=e756]:
+                    - text: Sie legen Wert auf hochwertige Materialien? Bei XXXLutz finden Sie etwa erstklassige
+                    - link "Massivholz" [ref=e757] [cursor=pointer]:
+                      - /url: /holzmoebel-C70
+                    - text: "- und regionale"
+                    - link "Zirbenholz-Möbel" [ref=e758] [cursor=pointer]:
+                      - /url: /c/zirbenholz-moebel
+                    - text: "für eine authentische Ausstattung. Bekannte Brands, Nachhaltigkeit sowie Natürlichkeit – im XXXLutz Online Shop bekommen Sie all das auf einen Klick. Mit technischen Innovationen wird das Heim außerdem im Nu zum Smart Home: Lassen Sie sich in unserem Möbelhaus von zukunftsweisenden Wohn-Highlights inspirieren."
+                - generic [ref=e759]:
+                  - heading "Beratung & Service nach Maß" [level=2] [ref=e760]
+                  - generic [ref=e761]:
+                    - text: Die XXXLutz Möbel-Experten informieren Sie gern zum Thema Küche, Wohnbereich, Schlafzimmer sowie Bad-Sanitär bei einem persönlichen
+                    - link "Beratungstermin" [ref=e762] [cursor=pointer]:
+                      - /url: https://www.xxxlutz.at/c/beratungstermin
+                    - text: "– einfach anrufen oder online vereinbaren. Profitieren Sie außerdem von unseren umfassenden Serviceleistungen: ob XXXLutz"
+                    - link "Transporter-Verleih" [ref=e763] [cursor=pointer]:
+                      - /url: /c/xxxl-transporter
+                    - text: ","
+                    - link "Lieferung" [ref=e764] [cursor=pointer]:
+                      - /url: /c/onlinelieferung
+                    - text: ","
+                    - link "Montage" [ref=e765] [cursor=pointer]:
+                      - /url: /c/lieferung-montage
+                    - text: ","
+                    - link "Click & Collect" [ref=e766] [cursor=pointer]:
+                      - /url: /c/click-and-collect
+                    - text: "oder viele weitere. Tipp: Dank XXXLutz Newsletter und Preisepass-Vorteilen sichern Sie sich die besten Angebote. Erleben Sie die Möbel-und-mehr-Lutz-Welt im XXXLutz Möbelhaus und Online Shop!"
+    - contentinfo [ref=e767]:
+      - generic [ref=e768]:
+        - generic [ref=e769]:
+          - link "Die nächste Liste überspringen" [ref=e770] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+            - text: Abschnitt überspringen
+          - generic [ref=e771]:
+            - generic [ref=e773]:
+              - generic [ref=e774]: Einkaufen bei XXXLutz
+              - list [ref=e775]:
+                - listitem [ref=e776]:
+                  - link "Online Bestellung" [ref=e777] [cursor=pointer]:
+                    - /url: /c/xxxl-onlinekauf
+                - listitem [ref=e778]:
+                  - link "Lieferung & Versand" [ref=e779] [cursor=pointer]:
+                    - /url: /c/onlinelieferung-versand
+                - listitem [ref=e780]:
+                  - link "Click&Collect" [ref=e781] [cursor=pointer]:
+                    - /url: /c/click-and-collect
+                - listitem [ref=e782]:
+                  - link "Auftragsstatusabfrage" [ref=e783] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e784]:
+                  - link "Retouren & Reklamationen" [ref=e785] [cursor=pointer]:
+                    - /url: /c/retouren
+                - listitem [ref=e786]:
+                  - link "Zahlung" [ref=e787] [cursor=pointer]:
+                    - /url: /c/zahlungsarten
+                - listitem [ref=e788]:
+                  - link "Geschenkgutscheine" [ref=e789] [cursor=pointer]:
+                    - /url: /c/geschenkgutschein
+                - listitem [ref=e790]:
+                  - link "Aktionsbedingungen" [ref=e791] [cursor=pointer]:
+                    - /url: /c/newsaktion
+                - listitem [ref=e792]:
+                  - link "Häufig gestellte Fragen (FAQ)" [ref=e793] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e794]:
+                  - link "Look & Feel Magazin" [ref=e795] [cursor=pointer]:
+                    - /url: https://looknfeel.xxxlutz.at/02-26/
+            - generic [ref=e797]:
+              - generic [ref=e798]: Service
+              - list [ref=e799]:
+                - listitem [ref=e800]:
+                  - link "XXXL Serviceübersicht" [ref=e801] [cursor=pointer]:
+                    - /url: /c/service
+                - listitem [ref=e802]:
+                  - link "Preisepass" [ref=e803] [cursor=pointer]:
+                    - /url: /c/preisepass-vorteile
+                - listitem [ref=e804]:
+                  - link "Transporter" [ref=e805] [cursor=pointer]:
+                    - /url: /c/xxxl-transporter
+                - listitem [ref=e806]:
+                  - link "Montage" [ref=e807] [cursor=pointer]:
+                    - /url: /c/lieferung-montage
+                - listitem [ref=e808]:
+                  - link "Newsletter" [ref=e809] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e810]:
+                  - link "Babykarte" [ref=e811] [cursor=pointer]:
+                    - /url: /c/babykarte
+                - listitem [ref=e812]:
+                  - link "X-POWR Stromtarif" [ref=e813] [cursor=pointer]:
+                    - /url: /c/xpowr
+                - listitem [ref=e814]:
+                  - link "B2B/Geschäftskunden" [ref=e815] [cursor=pointer]:
+                    - /url: /c/objektbau
+            - generic [ref=e817]:
+              - generic [ref=e818]: Filialen & Standorte
+              - list [ref=e819]:
+                - listitem [ref=e820]:
+                  - link "Filialfinder" [ref=e821] [cursor=pointer]:
+                    - /url: /filialen-standorte
+                - listitem [ref=e822]:
+                  - link "Küchenstudios" [ref=e823] [cursor=pointer]:
+                    - /url: /kuechenstudios
+                - listitem [ref=e824]:
+                  - link "Restaurants" [ref=e825] [cursor=pointer]:
+                    - /url: /c/restaurant
+                - listitem [ref=e826]:
+                  - link "Filialschnäppchen" [ref=e827] [cursor=pointer]:
+                    - /url: /hs
+                - listitem [ref=e828]:
+                  - link "Prospekte" [ref=e829] [cursor=pointer]:
+                    - /url: /c/unsere-prospekte
+                - listitem [ref=e830]:
+                  - link "Beratungstermin" [ref=e831] [cursor=pointer]:
+                    - /url: /c/beratungstermin
+                - listitem [ref=e832]:
+                  - link "XXXL Möbel Outlets" [ref=e833] [cursor=pointer]:
+                    - /url: /c/moebel-outlet
+            - generic [ref=e835]:
+              - generic [ref=e836]: Über Uns
+              - list [ref=e837]:
+                - listitem [ref=e838]:
+                  - link "Jobs & Karriere" [ref=e839] [cursor=pointer]:
+                    - /url: https://karriere.xxxlutz.at/
+                - listitem [ref=e840]:
+                  - link "Unternehmen" [ref=e841] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e842]:
+                  - link "XXXL Markenwelt" [ref=e843] [cursor=pointer]:
+                    - /url: /c/xxxlutz-markenwelt
+                - listitem [ref=e844]:
+                  - link "Marktplatz" [ref=e845] [cursor=pointer]:
+                    - /url: /c/marketplace
+                - listitem [ref=e846]:
+                  - link "XXXL Kodex" [ref=e847] [cursor=pointer]:
+                    - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCM_MoCXs6LC6jt9IFntebMA/xxxl-verhaltenskodex-juli-2021-doppelseite-web.pdf
+                - listitem [ref=e848]:
+                  - link "XXXL Das Radio" [ref=e849] [cursor=pointer]:
+                    - /url: /c/radio
+                - listitem [ref=e850]:
+                  - link "Barrierefreiheit" [ref=e851] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+        - generic [ref=e853]:
+          - generic [ref=e856]:
+            - paragraph [ref=e857]: Hilfe & Kontakt
+            - generic [ref=e858]:
+              - generic [ref=e859]:
+                - link "Zum Kontaktformular" [ref=e860] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e861] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e862]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e863]:
+                - link "Häufig gestellte Fragen" [ref=e864] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e865] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e866]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e869]:
+            - generic [ref=e870]: Zahlungsmöglichkeiten
+            - generic [ref=e871]:
+              - img "Klarna" [ref=e874]
+              - img "Paypal" [ref=e877]
+              - img "Mastercard Visa" [ref=e880]
+              - img "Google Pay" [ref=e883]
+              - img "Apple Pay" [ref=e886]
+              - img "Logo Billie" [ref=e889]
+          - generic [ref=e890]: "*Vom Hersteller unverbindlich empfohlener Preis. Alle Preise sind Abholpreise. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise. Artikel im Onlineshop immer zum Preisepass Preis – unabhängig jeglicher Rabattaktion. *** Herstellerlistenpreis"
+        - generic [ref=e893]:
+          - link "XXXLutz" [ref=e894] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e895] [cursor=pointer]: XXXLutz
+            - img [ref=e897] [cursor=pointer]
+          - generic [ref=e903]: © 2026 XXXLutz KG
+          - list [ref=e904]:
+            - listitem [ref=e905]:
+              - link "Impressum" [ref=e906] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e907]:
+              - link "AGB" [ref=e908] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e909]:
+              - link "Datenschutz" [ref=e910] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e911]:
+              - button "Cookie-Einstellungen" [ref=e912] [cursor=pointer]
+          - list [ref=e913]:
+            - listitem [ref=e914]:
+              - link "youtube" [ref=e915] [cursor=pointer]:
+                - /url: https://www.youtube.com/@XXXLutzTV
+            - listitem [ref=e916]:
+              - link "facebook" [ref=e917] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.at/
+            - listitem [ref=e918]:
+              - link "instagram" [ref=e919] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_at/
+            - listitem [ref=e920]:
+              - link "pinterest" [ref=e921] [cursor=pointer]:
+                - /url: https://www.pinterest.at/xxxlutzAT/
+            - listitem [ref=e922]:
+              - link "tiktok" [ref=e923] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_at
+          - link "WACA accessibilty seal in silver" [ref=e924] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e925] [cursor=pointer]
+  - dialog "dialog" [ref=e926]:
+    - generic [ref=e927]:
+      - heading "Cookies helfen Ihnen & uns" [level=3] [ref=e929]:
+        - generic [ref=e930]:
+          - img [ref=e931]
+          - text: Cookies helfen Ihnen & uns
+      - generic [ref=e944]:
+        - paragraph [ref=e945]: Wir, die XXXLutz KG, setzen Cookies und ähnliche Technologien („Cookies“) ein. Wir nutzen die Cookies und verarbeiten die durch die Cookies erhobenen Daten, um Ihnen die Website und ihre Funktionalitäten zur Verfügung zu stellen, ein optimales Einkaufserlebnis zu bieten, unsere Services bereitzustellen und zu verbessern, Ihr Nutzungsverhalten kennenzulernen und individualisierte Werbung und Inhalte auf unserer Website und Drittseiten, in unseren Newslettern und im Rahmen unseres Preisepasses zu zeigen.
+        - list [ref=e947]:
+          - listitem [ref=e948]:
+            - text: .
+            - paragraph [ref=e950]: Wenn Sie auf „Alle Cookies akzeptieren“ klicken, stimmen Sie dem Einsatz aller Cookies, die in den Cookie-Einstellungen aufgelistet sind, zu. Sie können Ihre Zustimmung in den Cookie-Einstellungen jederzeit für die Zukunft widerrufen oder ändern.
+          - listitem [ref=e951]:
+            - text: .
+            - paragraph [ref=e953]: Wenn Sie im Folgenden auf „Weiter ohne Einwilligung“ klicken, setzen wir nur Essentielle Cookies und cookielose Technologien zur Bannerausspielung.
+          - listitem [ref=e954]:
+            - text: .
+            - paragraph [ref=e956]: Wenn Sie auf „Cookie-Einstellungen“ klicken, können Sie die Cookies individuell auswählen und mehr über diese erfahren.
+        - generic [ref=e957]:
+          - button "Alle Cookies akzeptieren" [ref=e958] [cursor=pointer]:
+            - generic [ref=e959] [cursor=pointer]: Alle Cookies akzeptieren
+          - button "Weiter ohne Einwilligung" [ref=e961] [cursor=pointer]:
+            - generic [ref=e962] [cursor=pointer]: Weiter ohne Einwilligung
+        - list [ref=e964]:
+          - listitem [ref=e965]:
+            - button "Cookie Einstellungen" [active] [ref=e966] [cursor=pointer]:
+              - generic [ref=e967] [cursor=pointer]: Cookie Einstellungen
+          - listitem [ref=e968]:
+            - button "Datenschutzerklärung" [ref=e969] [cursor=pointer]:
+              - generic [ref=e970] [cursor=pointer]: Datenschutzerklärung
+          - listitem [ref=e971]:
+            - button "Impressum" [ref=e972] [cursor=pointer]:
+              - generic [ref=e973] [cursor=pointer]: Impressum
+```

@@ -1,0 +1,402 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "10€ Gutschein bei Newsletteranmeldung" [ref=e9] [cursor=pointer]:
+              - /url: /c/newsletter
+              - generic [ref=e10] [cursor=pointer]: 10€ Gutschein bei Newsletteranmeldung
+            - link "PayPal 0%-Finanzierung¹" [ref=e11] [cursor=pointer]:
+              - /url: /c/paypal-ratenkauf
+              - generic [ref=e12] [cursor=pointer]: PayPal 0%-Finanzierung¹
+          - generic [ref=e14]:
+            - link "57 Filialen in Ihrer Nähe" [ref=e15] [cursor=pointer]:
+              - /url: /filialen-standorte
+              - generic [ref=e16] [cursor=pointer]: 57 Filialen in Ihrer Nähe
+            - link "Prospekte" [ref=e17] [cursor=pointer]:
+              - /url: /c/unsere-prospekte
+              - generic [ref=e18] [cursor=pointer]: Prospekte
+            - link "Hilfe & Kontakt" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Hilfe & Kontakt
+            - switch "Hoher Kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menü
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Suchen" [ref=e43] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e44]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+          - generic [ref=e45]:
+            - button "Anmelden" [ref=e47] [cursor=pointer]:
+              - generic [ref=e48] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e50] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e51] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 1 Produkt" [ref=e53] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e54] [cursor=pointer]: "1"
+              - generic [ref=e55] [cursor=pointer]: Warenkorb
+          - navigation [ref=e56]:
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - link "Möbel" [ref=e59] [cursor=pointer]:
+                  - /url: /c/moebel
+              - listitem [ref=e60]:
+                - link "Deko & Textil" [ref=e61] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+              - listitem [ref=e62]:
+                - link "Küchen" [ref=e63] [cursor=pointer]:
+                  - /url: /c/kuechenwelt
+              - listitem [ref=e64]:
+                - link "Haushalt" [ref=e65] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+              - listitem [ref=e66]:
+                - link "Lampen" [ref=e67] [cursor=pointer]:
+                  - /url: /lampen-leuchten-C84
+              - listitem [ref=e68]:
+                - link "Baby" [ref=e69] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e70]:
+                - link "Freizeit" [ref=e71] [cursor=pointer]:
+                  - /url: /freizeit-C76
+              - listitem [ref=e72]:
+                - link "Angebote" [ref=e73] [cursor=pointer]:
+                  - /url: /c/moebel-angebote
+              - listitem [ref=e74]:
+                - link "Inspiration" [ref=e75] [cursor=pointer]:
+                  - /url: /c/wohnideen
+              - listitem [ref=e76]:
+                - link "Restaurant" [ref=e77] [cursor=pointer]:
+                  - /url: /c/restaurant
+              - listitem [ref=e78]:
+                - link "Mein XXXL BLOG" [ref=e79] [cursor=pointer]:
+                  - /url: /c/mein-xxxl-blog
+              - listitem [ref=e80]:
+                - link "Newsletter" [ref=e81] [cursor=pointer]:
+                  - /url: /c/newsletter
+      - main [ref=e82]:
+        - status [ref=e83]:
+          - generic [ref=e84]: Warenkorb - XXXLutz
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - heading "Warenkorb" [level=1] [ref=e89]
+              - link "weiter einkaufen" [ref=e90] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e91] [cursor=pointer]: weiter einkaufen
+            - generic [ref=e92]:
+              - list
+              - generic [ref=e94]:
+                - generic [ref=e95]: Verkauf durch Verkaufspartner
+                - button [ref=e96] [cursor=pointer]
+              - list [ref=e97]:
+                - listitem [ref=e98]:
+                  - article [ref=e99]:
+                    - generic [ref=e100]:
+                      - img "SITZSACK Der Sundowner - Anthrazit, Textil (60/65/95cm) - Mokebo" [ref=e101]
+                      - link [ref=e102] [cursor=pointer]:
+                        - /url: /p/mokebo-sitzsack-der-sundowner-800000423498
+                    - generic [ref=e103]:
+                      - generic [ref=e104]:
+                        - generic [ref=e105]: "800000423498"
+                        - link "Artikelnr. 800000423498" [ref=e106] [cursor=pointer]:
+                          - /url: /p/mokebo-sitzsack-der-sundowner-800000423498
+                          - generic [ref=e107] [cursor=pointer]: Artikelnr. 800000423498
+                      - link "Mokebo SITZSACK Der Sundowner" [ref=e109] [cursor=pointer]:
+                        - /url: /p/mokebo-sitzsack-der-sundowner-800000423498
+                        - heading "Mokebo SITZSACK Der Sundowner" [level=2] [ref=e110] [cursor=pointer]:
+                          - generic [ref=e111] [cursor=pointer]: Mokebo SITZSACK
+                          - generic [ref=e112] [cursor=pointer]: Der Sundowner
+                      - generic [ref=e113]:
+                        - generic [ref=e114]: Anthrazit
+                        - generic [ref=e115]: 60/65/95 cm
+                      - paragraph [ref=e118]:
+                        - text: Verkauf & Versand durch
+                        - button "mokebo GmbH" [ref=e119] [cursor=pointer]:
+                          - generic [ref=e120] [cursor=pointer]: mokebo GmbH
+                    - generic [ref=e123]:
+                      - generic [ref=e125]:
+                        - text: € 139,
+                        - superscript [ref=e126]: "99"
+                      - generic [ref=e127]: € 139,99 / Stk
+                    - generic [ref=e128]:
+                      - button "Produkt entfernen - SITZSACK Der Sundowner" [ref=e129] [cursor=pointer]
+                      - generic [ref=e130]:
+                        - textbox "Menge" [ref=e131]: "1"
+                        - generic [ref=e132]: Menge
+                      - button "1" [ref=e133] [cursor=pointer]:
+                        - generic [ref=e134] [cursor=pointer]: "1"
+                      - button "Anzahl erhöhen - SITZSACK Der Sundowner" [ref=e135] [cursor=pointer]
+                    - generic [ref=e137]:
+                      - button "SITZSACK Der Sundowner - Für später merken" [ref=e138] [cursor=pointer]:
+                        - generic [ref=e140] [cursor=pointer]: Für später merken
+                      - button "SITZSACK Der Sundowner - Produkt entfernen" [ref=e141] [cursor=pointer]:
+                        - generic [ref=e143] [cursor=pointer]: Produkt entfernen
+                  - generic [ref=e144]:
+                    - generic [ref=e145]:
+                      - combobox "Lieferart wählen" [ref=e148] [cursor=pointer]:
+                        - generic [ref=e151] [cursor=pointer]: Paketlieferung
+                      - generic [ref=e156]: Lieferzeit 3 - 4 Werktage
+                      - generic [ref=e157]:
+                        - text: Lieferkosten
+                        - generic [ref=e158]: + € 5,95
+                    - paragraph [ref=e159]:
+                      - generic [ref=e160]: Eine Lieferung an Packstationen ist nicht möglich. Für Käufe bei unseren Verkaufspartnern (Verkäufern) über unseren Markplatz können zusätzliche Versandkosten anfallen. Es werden Ihnen pro Verkäufer nur einmal die für einen Artikel höchst zutreffendsten Lieferkosten berechnet je Bestellung.
+                      - button "Mehr Informationen zu den Lieferkosten" [ref=e161] [cursor=pointer]:
+                        - generic [ref=e162] [cursor=pointer]: Mehr Informationen zu den Lieferkosten
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - heading "Zusammenfassung" [level=2] [ref=e166]
+              - generic [ref=e167]:
+                - generic [ref=e168]:
+                  - generic [ref=e169]: Warenwert
+                  - generic [ref=e170]:
+                    - text: € 139,
+                    - superscript [ref=e171]: "99"
+                  - button "Lieferkosten" [ref=e172] [cursor=pointer]:
+                    - generic [ref=e173] [cursor=pointer]: Lieferkosten
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: +
+                    - text: € 5,
+                    - superscript [ref=e176]: "95"
+                - generic [ref=e177]:
+                  - generic [ref=e178]: Gesamtsumme
+                  - generic [ref=e179]:
+                    - text: € 145,
+                    - superscript [ref=e180]: "94"
+                  - generic [ref=e181]: inkl. gesetzlicher MwSt.
+                - button "Zur Kasse" [ref=e182] [cursor=pointer]:
+                  - generic [ref=e183] [cursor=pointer]: Zur Kasse
+                - separator "oder" [ref=e184]
+                - generic [ref=e185]:
+                  - button "Mit GPay kaufen" [ref=e190] [cursor=pointer]
+                  - button "Mit Apple Pay kaufen" [ref=e195] [cursor=pointer]:
+                    - img [ref=e197] [cursor=pointer]:
+                      - generic [ref=e198] [cursor=pointer]:
+                        - generic [ref=e199] [cursor=pointer]: Mit
+                        - img [ref=e200] [cursor=pointer]
+                        - generic [ref=e208] [cursor=pointer]: kaufen
+            - generic [ref=e210]:
+              - button "Gutscheincode" [ref=e211] [cursor=pointer]:
+                - generic [ref=e212] [cursor=pointer]: Gutscheincode
+                - img [ref=e213] [cursor=pointer]
+              - generic [ref=e216]:
+                - generic [ref=e218]:
+                  - generic [ref=e219]:
+                    - textbox "Code kopieren" [disabled] [ref=e220]
+                    - generic: Code kopieren
+                  - generic [ref=e221]: Gutscheine, Rabattcodes und Aktionen sind nicht auf Produkte unserer Verkaufspartner anwendbar.
+                - button "Gutschein einlösen" [disabled] [ref=e222]:
+                  - generic [ref=e223]: Gutschein einlösen
+          - complementary [ref=e224]:
+            - link "weiter einkaufen" [ref=e225] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e226] [cursor=pointer]: weiter einkaufen
+    - contentinfo [ref=e227]:
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - link "Die nächste Liste überspringen" [ref=e230] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1_SERVICE"
+            - text: Abschnitt überspringen
+          - generic [ref=e231]:
+            - generic [ref=e233]:
+              - generic [ref=e234]: Services & Hilfe
+              - list [ref=e235]:
+                - listitem [ref=e236]:
+                  - link "Auftragsstatus" [ref=e237] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e238]:
+                  - link "Aktionsbedingungen" [ref=e239] [cursor=pointer]:
+                    - /url: /c/newsaktion
+                - listitem [ref=e240]:
+                  - link "Service Überblick" [ref=e241] [cursor=pointer]:
+                    - /url: /c/service
+                - listitem [ref=e242]:
+                  - link "Retouren & Reklamationen" [ref=e243] [cursor=pointer]:
+                    - /url: /c/retouren-reklamationen
+                - listitem [ref=e244]:
+                  - link "Versand & Lieferung" [ref=e245] [cursor=pointer]:
+                    - /url: /faq/versand-lieferung/lieferkosten
+                - listitem [ref=e246]:
+                  - link "Click & Collect" [ref=e247] [cursor=pointer]:
+                    - /url: /c/click-collect-xxxlutz
+                - listitem [ref=e248]:
+                  - link "Zahlungsarten" [ref=e249] [cursor=pointer]:
+                    - /url: /faq/zahlung-gutscheine/zahlungsarten
+                - listitem [ref=e250]:
+                  - link "Altgeräterücknahme" [ref=e251] [cursor=pointer]:
+                    - /url: /c/altgeraete-entsorgung
+                - listitem [ref=e252]:
+                  - link "Gutscheine einlösen" [ref=e253] [cursor=pointer]:
+                    - /url: /c/onlinegutscheine-einloesen
+                - listitem [ref=e254]:
+                  - link "Babybox" [ref=e255] [cursor=pointer]:
+                    - /url: /c/babybox
+            - generic [ref=e257]:
+              - generic [ref=e258]: Mein XXXLutz
+              - list [ref=e259]:
+                - listitem [ref=e260]:
+                  - link "Mein Konto" [ref=e261] [cursor=pointer]:
+                    - /url: /signin
+                - listitem [ref=e262]:
+                  - link "Freundschaftskarte" [ref=e263] [cursor=pointer]:
+                    - /url: /c/freundschaftskarte
+                - listitem [ref=e264]:
+                  - link "Newsletter" [ref=e265] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e266]:
+                  - link "Mein XXXL BLOG" [ref=e267] [cursor=pointer]:
+                    - /url: /c/mein-xxxl-blog
+                - listitem [ref=e268]:
+                  - link "Prospekte & TV" [ref=e269] [cursor=pointer]:
+                    - /url: /c/unsere-prospekte
+                - listitem [ref=e270]:
+                  - link "Filialschnäppchen" [ref=e271] [cursor=pointer]:
+                    - /url: /hs
+                - listitem [ref=e272]:
+                  - link "Lucy Homefield" [ref=e273] [cursor=pointer]:
+                    - /url: /c/ki-interior-social
+                - listitem [ref=e274]:
+                  - link "Barrierefreiheit" [ref=e275] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+            - generic [ref=e277]:
+              - generic [ref=e278]: Planung & Beratung
+              - list [ref=e279]:
+                - listitem [ref=e280]:
+                  - link "Beratungstermin vereinbaren" [ref=e281] [cursor=pointer]:
+                    - /url: /c/termin-vereinbaren
+                - listitem [ref=e282]:
+                  - link "Küchenberatung" [ref=e283] [cursor=pointer]:
+                    - /url: /c/kuechenberatung
+                - listitem [ref=e284]:
+                  - link "Küchenplaner" [ref=e285] [cursor=pointer]:
+                    - /url: /c/kitchenplanner
+                - listitem [ref=e286]:
+                  - link "Konfiguratoren" [ref=e287] [cursor=pointer]:
+                    - /url: /c/xxxlutz-konfiguratoren
+                - listitem [ref=e288]:
+                  - link "Objekteinrichtung" [ref=e289] [cursor=pointer]:
+                    - /url: /c/b2b
+                - listitem [ref=e290]:
+                  - link "Premium Marken" [ref=e291] [cursor=pointer]:
+                    - /url: /c/designermoebel
+            - generic [ref=e293]:
+              - generic [ref=e294]: Über XXXLutz
+              - list [ref=e295]:
+                - listitem [ref=e296]:
+                  - link "Standorte" [ref=e297] [cursor=pointer]:
+                    - /url: /filialen-standorte
+                - listitem [ref=e298]:
+                  - link "Restaurant" [ref=e299] [cursor=pointer]:
+                    - /url: /c/restaurant
+                - listitem [ref=e300]:
+                  - link "Küchenstudios" [ref=e301] [cursor=pointer]:
+                    - /url: /kuechenstudios
+                - listitem [ref=e302]:
+                  - link "Unternehmen" [ref=e303] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e304]:
+                  - link "Compliance & Integrität" [ref=e305] [cursor=pointer]:
+                    - /url: /c/compliance
+                - listitem [ref=e306]:
+                  - link "Partner werden" [ref=e307] [cursor=pointer]:
+                    - /url: /c/partner
+                - listitem [ref=e308]:
+                  - link "Marketplace" [ref=e309] [cursor=pointer]:
+                    - /url: /c/marketplace
+                - listitem [ref=e310]:
+                  - link "Pressecenter" [ref=e311] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.de/
+                - listitem [ref=e312]:
+                  - link "Jobs & Karriere" [ref=e313] [cursor=pointer]:
+                    - /url: https://karriere.xxxlutz.de/
+        - generic [ref=e315]:
+          - generic [ref=e318]:
+            - paragraph [ref=e319]: Hilfe & Kontakt
+            - generic [ref=e320]:
+              - generic [ref=e321]:
+                - link "Zum Kontaktformular" [ref=e322] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e323] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e324]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e325]:
+                - link "Häufig gestellte Fragen" [ref=e326] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e327] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e328]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e329]:
+            - generic [ref=e330]: Versand
+            - generic [ref=e331]:
+              - img "DHL" [ref=e334]
+              - img "Hermes" [ref=e337]
+              - img "XXXLutz Spedition" [ref=e340]
+          - generic [ref=e341]:
+            - generic [ref=e342]: Zahlungsmöglichkeiten
+            - generic [ref=e343]:
+              - img "Paypal" [ref=e346]
+              - img "Klarna" [ref=e349]
+              - img "Master Card" [ref=e352]
+              - img "Visa" [ref=e355]
+              - img "Google Pay" [ref=e358]
+              - img "Apple Pay" [ref=e361]
+              - img "Logo Billie" [ref=e364]
+          - generic [ref=e365]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. ***Filialpreis ohne Freundschaftskarte.
+        - generic [ref=e368]:
+          - link "XXXLutz" [ref=e369] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e370] [cursor=pointer]: XXXLutz
+            - img [ref=e372] [cursor=pointer]
+          - generic [ref=e378]: © 2026 BDSK Handels GmbH & Co. KG
+          - list [ref=e379]:
+            - listitem [ref=e380]:
+              - link "IMPRESSUM" [ref=e381] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e382]:
+              - link "DATENSCHUTZ" [ref=e383] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e384]:
+              - link "AGB" [ref=e385] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e386]:
+              - button "COOKIE-EINSTELLUNGEN" [ref=e387] [cursor=pointer]
+          - list [ref=e388]:
+            - listitem [ref=e389]:
+              - link "facebook" [ref=e390] [cursor=pointer]:
+                - /url: https://www.facebook.com/XXXLutzDeutschland
+            - listitem [ref=e391]:
+              - link "instagram" [ref=e392] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_de/
+            - listitem [ref=e393]:
+              - link "pinterest" [ref=e394] [cursor=pointer]:
+                - /url: https://www.pinterest.de/xxxlutzdeutschland/
+            - listitem [ref=e395]:
+              - link "youtube" [ref=e396] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC1w2HpXiRl5pbLGQEwnUl2w
+            - listitem [ref=e397]:
+              - link "tiktok" [ref=e398] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_de
+          - link "WACA accessibilty seal in silver" [ref=e399] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e400] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - iframe
+  - generic:
+    - log
+```

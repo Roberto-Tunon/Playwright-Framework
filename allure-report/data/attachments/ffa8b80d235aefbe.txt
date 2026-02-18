@@ -1,0 +1,4 @@
+Params: Country: DE, Rail: MOEMAX, Mode: 1P, Pay: PayPal
+ℹ️ Delivery option searching Self Service
+✅ Self Service (Click & Collect) found. Selecting...
+✅ PayPal Login completed

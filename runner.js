@@ -4,7 +4,7 @@ const path = require('path');
 
 /**
  * MASTER RUNNER - QA AUTOMATION (ROBERTO EDITION)
- * Final Version: Fixed Allure History, Cron-Safe & Trends enabled.
+ * Patched: TTL pruning (keep last 14 days), keep Allure history/trends, cron-safe.
  */
 
 const CONFIG_PATH = path.resolve(__dirname, 'config.json');
@@ -26,7 +26,14 @@ const { permanentRuns = [], randomPool = [] } = config;
 
 // 2. TEST SELECTION (4 FIXED + 4 RANDOM)
 const selectedRandom = [...randomPool].sort(() => 0.5 - Math.random()).slice(0, 4);
-const executionQueue = [...permanentRuns, ...selectedRandom];
+
+// Deduplicate in case permanent + random overlap
+const rawQueue = [...permanentRuns, ...selectedRandom];
+const executionQueue = dedupeQueue(rawQueue, (t) => {
+  const railKey = String(t.rail || '').toUpperCase();
+  return `${t.country}|${railKey}|${t.pay}|${t.file}`;
+});
+
 const testResults = [];
 
 // --- STATIC DICTS ---
@@ -51,6 +58,13 @@ const paymentIcons = {
 
 (async () => {
   console.log(`\n🚀 BATCH START | ${executionQueue.length} Tests in queue...`);
+  console.log(`📌 Project root: ${__dirname}`);
+  console.log(`📌 RESULTS_DIR : ${RESULTS_DIR}`);
+  console.log(`📌 REPORT_DIR  : ${REPORT_DIR}`);  
+
+  // ✅ Keep results for last 14 days so Allure shows "last known" even if not run today
+  ensureDir(RESULTS_DIR);
+  pruneAllureResultsByDays(14);
 
   for (let i = 0; i < executionQueue.length; i++) {
     const test = executionQueue[i];
@@ -64,6 +78,7 @@ const paymentIcons = {
     } catch (err) {
       status = 'failed';
       console.log(`❌ Result: FAILED (Continuing...)`);
+      console.log(`   -> ${err?.message || err}`);
     }
 
     testResults.push({
@@ -109,7 +124,7 @@ const paymentIcons = {
   const marketData = Array.from(combos).map((groupKey) => {
     const [countryCode, rail] = groupKey.split('|');
     const rowsToday = groupsToday[groupKey] || [];
-    
+
     const paymentsToday = rowsToday.map((r) => ({
       code: r.pay,
       name: paymentNames[r.pay] || r.pay,
@@ -138,13 +153,13 @@ const paymentIcons = {
     }
 
     const payments = [...paymentsToday, ...paymentsFromState];
-    const status = (rowsToday.length > 0) 
+    const status = (rowsToday.length > 0)
       ? (rowsToday.some(r => r.status === 'failed') ? 'Incident' : 'Operational')
       : (paymentsFromState.some(p => p.status === 'failed') ? 'Incident' : 'Operational');
 
-    const lastRun = rowsToday.length > 0 
-      ? new Date().toLocaleString('en-GB', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' })
-      : (paymentsFromState[0]?.lastSeenAt ? new Date(paymentsFromState[0].lastSeenAt).toLocaleString('en-GB', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' }) : '--');
+    const lastRun = rowsToday.length > 0
+      ? new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
+      : (paymentsFromState[0]?.lastSeenAt ? new Date(paymentsFromState[0].lastSeenAt).toLocaleString('en-GB', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }) : '--');
 
     return {
       id: `${countryCode}-${rail}`,
@@ -160,6 +175,8 @@ const paymentIcons = {
   }).sort((a, b) => a.country.localeCompare(b.country));
 
   updateDashboardFile(marketData, reportStats);
+
+  // Generate report with history/trends
   generateAllureReport();
 
 })().catch((e) => console.error('❌ Critical Error:', e));
@@ -168,9 +185,22 @@ const paymentIcons = {
 function runPlaywrightOnce(test) {
   return new Promise((resolve, reject) => {
     const args = ['test', test.file, '--project=chromium', '--reporter=line,allure-playwright'];
-    const env = { ...process.env, COUNTRY: test.country, PAY: test.pay, MODE: test.mode, RAIL: test.rail };
-    
-    const child = spawn(PLAYWRIGHT_BIN, args, { env, stdio: 'inherit' });
+
+    const env = {
+      ...process.env,
+      COUNTRY: test.country,
+      PAY: test.pay,
+      MODE: test.mode,
+      RAIL: test.rail,
+      // ✅ force reporter output to our repo results dir
+      ALLURE_RESULTS_DIR: RESULTS_DIR,
+    };
+
+    const child = spawn(PLAYWRIGHT_BIN, args, {
+      env,
+      stdio: 'inherit',
+      cwd: __dirname,
+    });
 
     const timer = setTimeout(() => {
       child.kill();
@@ -196,40 +226,112 @@ function generateAllureReport() {
   const HISTORY_DIR = path.join(REPORT_DIR, 'history');
   const RESULTS_HISTORY_DIR = path.join(RESULTS_DIR, 'history');
 
-  console.log('⏳ Processing Allure history & trends...');
+  console.log('\n⏳ Processing Allure history & trends...');
+
+  // Quick diagnostics
+  const files = listFilesSafe(RESULTS_DIR);
+  const hasJson = files.some(f => f.endsWith('-result.json') || f.endsWith('-container.json'));
+  console.log(`📦 allure-results files: ${files.length} (has result/container json=${hasJson})`);
+
   try {
-    // 1. Preservar histórico
+    // 1) Preserve history for trends
     if (fs.existsSync(HISTORY_DIR)) {
-      if (!fs.existsSync(RESULTS_HISTORY_DIR)) fs.mkdirSync(RESULTS_HISTORY_DIR, { recursive: true });
+      ensureDir(RESULTS_HISTORY_DIR);
       fs.readdirSync(HISTORY_DIR).forEach(file => {
         fs.copyFileSync(path.join(HISTORY_DIR, file), path.join(RESULTS_HISTORY_DIR, file));
       });
       console.log('   -> History files copied.');
+    } else {
+      console.log('   -> No previous report history found.');
     }
 
     console.log('⏳ Generating Final Report...');
-    
-    // Usamos directamente el comando 'allure' ya que al estar en node_modules/.bin, 
-    // execSync lo encontrará si especificamos el shell correctamente o usamos la ruta completa.
     const allureCmd = `"${ALLURE_BIN}" generate "${RESULTS_DIR}" --clean -o "${REPORT_DIR}"`;
-    
-    execSync(allureCmd, { 
-      stdio: 'inherit', 
-      shell: true,
-      cwd: __dirname // Nos aseguramos de ejecutarlo desde la raíz del proyecto
-    });
-    
+    console.log(`   -> ${allureCmd}`);
+
+    execSync(allureCmd, { stdio: 'inherit', shell: true, cwd: __dirname });
+
     console.log('✅ Allure Report generated with history.');
+
+    // Post summary
+    const summaryPath = path.join(REPORT_DIR, 'widgets', 'summary.json');
+    if (fs.existsSync(summaryPath)) {
+      try {
+        const s = JSON.parse(fs.readFileSync(summaryPath, 'utf-8'));
+        console.log(`📊 Summary: total=${s?.statistic?.total} passed=${s?.statistic?.passed} failed=${s?.statistic?.failed}`);
+      } catch {}
+    }
   } catch (error) {
     console.error('❌ Allure Error:', error.message);
-    // Si falla por ruta, intentamos el comando global como último recurso
     try {
-        console.log('   -> Attempting global allure command...');
-        execSync(`allure generate "${RESULTS_DIR}" --clean -o "${REPORT_DIR}"`, { stdio: 'inherit', shell: true });
+      console.log('   -> Attempting global allure command...');
+      execSync(`allure generate "${RESULTS_DIR}" --clean -o "${REPORT_DIR}"`, { stdio: 'inherit', shell: true, cwd: __dirname });
     } catch (e) {
-        console.error('❌ Critical: Allure could not be executed.');
+      console.error('❌ Critical: Allure could not be executed.');
     }
   }
+}
+
+/**
+ * ✅ TTL prune: keep last N days of results so Allure keeps "last known" for tests
+ * that are not executed every day.
+ *
+ * It deletes all files linked to a UUID (result/container/attachments) when that UUID's
+ * result.json start time is older than cutoff.
+ *
+ * Conservative: if a uuid has no readable start time, it is kept.
+ */
+function pruneAllureResultsByDays(daysToKeep = 14) {
+  ensureDir(RESULTS_DIR);
+
+  const cutoff = Date.now() - daysToKeep * 24 * 60 * 60 * 1000;
+  const files = fs.readdirSync(RESULTS_DIR);
+
+  // Map uuid -> startTime from *-result.json
+  const startByUuid = new Map();
+
+  for (const f of files) {
+    if (!f.endsWith('-result.json')) continue;
+    const p = path.join(RESULTS_DIR, f);
+    try {
+      const j = JSON.parse(fs.readFileSync(p, 'utf8'));
+      const start = j.start ?? j.time?.start ?? 0;
+      const uuid = f.replace('-result.json', '');
+      if (start) startByUuid.set(uuid, start);
+    } catch {}
+  }
+
+  let removed = 0;
+  for (const f of files) {
+    if (f === 'history') continue;
+
+    // uuid is at file start: <uuid>-result.json, <uuid>-container.json, <uuid>-attachment.*
+    const m = /^([0-9a-f-]{36})-/.exec(f);
+    if (!m) continue;
+
+    const uuid = m[1];
+    const start = startByUuid.get(uuid);
+
+    // If no start time known, keep it (conservative)
+    if (!start) continue;
+
+    if (start < cutoff) {
+      try {
+        fs.rmSync(path.join(RESULTS_DIR, f), { force: true });
+        removed++;
+      } catch {}
+    }
+  }
+
+  console.log(`🧹 Pruned allure-results older than ${daysToKeep} days. Removed files: ${removed}`);
+}
+
+function ensureDir(p) {
+  if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true });
+}
+
+function listFilesSafe(dir) {
+  try { return fs.existsSync(dir) ? fs.readdirSync(dir) : []; } catch { return []; }
 }
 
 function getCountryFlag(code) {
@@ -253,4 +355,16 @@ function readState() {
 
 function writeState(state) {
   try { fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2), 'utf-8'); } catch (e) {}
+}
+
+function dedupeQueue(arr, keyFn) {
+  const seen = new Set();
+  const out = [];
+  for (const item of arr) {
+    const k = keyFn(item);
+    if (seen.has(k)) continue;
+    seen.add(k);
+    out.push(item);
+  }
+  return out;
 }

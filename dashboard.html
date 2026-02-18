@@ -6,8 +6,10 @@
   <title>QA Shops Health Monitor | By Roberto Tuñón</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');  
+
     body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
     .market-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
     .market-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
@@ -88,51 +90,102 @@
   <main class="p-8 flex-1">
     <!-- KPIs -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
-      <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6">
-        <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600">
-          <i data-lucide="calendar" class="w-7 h-7"></i>
+      <div class="bg-white p-2 rounded-3xl border border-slate-200 border-l-4 border-l-blue-500 shadow-sm flex items-center gap-6">
+          <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center border border-blue-100">
+            <img src="./assets/icons/calendar.png" alt="Calendar" class="w-19 h-19 object-contain"
+                onerror="this.style.display='none'">
+          </div>
+          <div>
+            <p class="text-xl font-bold text-slate-400 uppercase tracking-widest">Last Run Date</p>
+           <p class="text-3xl font-black text-slate-900 tracking-tight"
+            id="stat-date"
+            style="font-family: 'Montserrat', sans-serif; letter-spacing:-0.02em;"></p>
+          </div>
+        </div>
+    
+    <div class="bg-white p-2 rounded-3xl border border-slate-200 border-l-4 border-l-purple-500 shadow-sm flex items-center gap-6">
+        <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center border border-purple-100">
+          <img src="./assets/icons/duration.png" alt="Duration" class="w-19 h-19 object-contain"
+              onerror="this.style.display='none'">
         </div>
         <div>
-          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Last Run Date</p>
-          <p class="text-xl font-black text-slate-800" id="stat-date">--/--/--</p>
+          <p class="text-xl font-bold text-slate-400 uppercase tracking-widest">Total Duration</p>
+          <p class="text-3xl font-black text-slate-900 tracking-tight"
+            id="stat-duration"
+            style="font-family: 'Montserrat', sans-serif; letter-spacing:-0.02em;">
+          </p>
         </div>
-      </div>
-
-      <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6">
-        <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600">
-          <i data-lucide="clock" class="w-7 h-7"></i>
-        </div>
-        <div>
-          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Total Duration</p>
-          <p class="text-xl font-black text-slate-800" id="stat-duration">0s</p>
-        </div>
-      </div>
+    </div>
 
       <!-- Global health with progress bar -->
-      <div id="stat-health-card" class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6 border-l-4 border-l-emerald-500">
-        <div id="stat-health-iconbox" class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600">
-          <i data-lucide="trending-up" class="w-7 h-7"></i>
+      <div id="stat-health-card" class="bg-white p-2 rounded-3xl border border-slate-200 shadow-sm flex items-center gap-6 border-l-4 border-l-emerald-500">
+        <div id="stat-health-iconbox" class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center border border-emerald-100">
+          <img src="./assets/icons/health.png" alt="Health" class="w-19 h-19 object-contain"
+              onerror="this.style.display='none'">
         </div>
         <div class="w-full">
-          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Global Health</p>
-          <p id="stat-health" class="text-xl font-black">0%</p>
+          <p class="text-xl font-bold text-slate-400 uppercase tracking-widest">Global Health</p>
+          <p id="stat-health"
+            class="font-black leading-none"
+            style="font-family: 'Montserrat', sans-serif;">
+            <span class="text-xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">
+              0
+            </span>
+            <span class="text-xl align-top opacity-80">%</span>
+          </p>
 
           <div class="mt-3 w-full h-2 bg-slate-100 rounded-full overflow-hidden">
             <div id="stat-health-bar" class="h-full rounded-full" style="width:0%"></div>
           </div>
 
-          <p class="mt-2 text-sm font-black uppercase tracking-widest text-slate-900" id="stat-health-meta">--/-- passed</p>
+          <p class="mt-2 text-2xl font-black uppercase tracking-widest text-slate-900" id="stat-health-meta">--/-- passed</p>
         </div>
       </div>
 
-      <div class="bg-slate-900 p-6 rounded-3xl shadow-2xl flex items-center gap-6 text-white overflow-hidden relative">
-        <div class="z-10">
-          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Next Run</p>
-          <p class="text-xl font-black leading-none mt-1">09:00 <span class="text-xs text-slate-400 uppercase">AM</span></p>
-          <p id="next-run-date" class="text-[10px] font-bold text-blue-400 mt-2 uppercase tracking-tight"></p>
-        </div>
-        <i data-lucide="timer" class="absolute -right-2 -bottom-2 w-16 h-16 text-slate-800 opacity-50"></i>
+      <div class="relative p-2 rounded-3xl text-white overflow-hidden shadow-2xl"
+     style="
+       background:
+         radial-gradient(900px 300px at 0% 0%, rgba(59,130,246,.35), transparent 55%),
+         radial-gradient(900px 320px at 100% 0%, rgba(236,72,153,.22), transparent 55%),
+         radial-gradient(900px 360px at 50% 120%, rgba(34,197,94,.18), transparent 60%),
+         linear-gradient(180deg, #0b1220 0%, #050812 100%);
+       border: 1px solid rgba(148,163,184,.18);
+     ">
+
+  <!-- subtle grid -->
+  <div class="absolute inset-0 opacity-20"
+       style="background-image: radial-gradient(rgba(255,255,255,.15) 1px, transparent 1px);
+              background-size: 18px 18px;">
+  </div>
+
+  <div class="relative z-10 flex items-start justify-between">
+    <div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[10px] font-black uppercase tracking-widest text-slate-200">
+        <i data-lucide="timer" class="w-4 h-4"></i>
+        Next Run
       </div>
+
+      <div class="mt-4 flex items-baseline gap-3">
+        <p class="text-3xl font-black leading-none">09:00</p>
+        <p class="text-xs font-black text-slate-300 uppercase tracking-widest">AM</p>
+      </div>
+
+      <p id="next-run-date"
+         class="mt-3 text-[11px] font-black text-blue-200 uppercase tracking-widest">
+      </p>
+
+      <div class="mt-4 flex items-center gap-2 text-[11px] font-bold text-slate-300">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        Schedule active
+      </div>
+    </div>
+
+    <div class="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center">
+      <i data-lucide="sparkles" class="w-7 h-7 text-white/90"></i>
+    </div>
+
+  </div>
+</div>
     </div>
 
     <!-- Header + Controls -->
@@ -175,16 +228,16 @@
         "flag": "🇦🇹",
         "rail": "MOEMAX",
         "status": "Incident",
-        "lastRun": "13/02, 11:06",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=AT%20MOEMAX",
         "payments": [
             {
                 "code": "CC",
                 "name": "Credit Card",
                 "status": "failed",
-                "time": "4s",
+                "time": "51s",
                 "icon": "credit-card",
-                "lastSeenAt": "2026-02-13T09:59:45.184Z",
+                "lastSeenAt": "2026-02-18T08:01:14.393Z",
                 "isStale": false
             }
         ]
@@ -196,43 +249,43 @@
         "flag": "🇦🇹",
         "rail": "XXXLUTZ",
         "status": "Incident",
-        "lastRun": "13/02, 11:06",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=AT%20XXXLUTZ",
         "payments": [
             {
                 "code": "CC",
                 "name": "Credit Card",
                 "status": "passed",
-                "time": "41s",
+                "time": "32s",
                 "icon": "credit-card",
-                "lastSeenAt": "2026-02-13T10:00:26.958Z",
+                "lastSeenAt": "2026-02-18T08:01:46.809Z",
                 "isStale": false
             },
             {
                 "code": "KL",
                 "name": "Klarna Pay Later",
                 "status": "failed",
-                "time": "51s",
+                "time": "41s",
                 "icon": "zap",
-                "lastSeenAt": "2026-02-13T10:02:00.823Z",
+                "lastSeenAt": "2026-02-18T08:03:14.171Z",
                 "isStale": false
             },
             {
                 "code": "BI",
                 "name": "Billie",
                 "status": "passed",
-                "time": "45s",
+                "time": "52s",
                 "icon": "receipt",
-                "lastSeenAt": "2026-02-13T10:02:45.905Z",
+                "lastSeenAt": "2026-02-18T08:04:07.151Z",
                 "isStale": false
             },
             {
-                "code": "KL",
-                "name": "Klarna Pay Later",
-                "status": "failed",
-                "time": "50s",
+                "code": "KN",
+                "name": "Klarna Pay Now",
+                "status": "passed",
+                "time": "70s",
                 "icon": "zap",
-                "lastSeenAt": "2026-02-13T10:06:15.891Z",
+                "lastSeenAt": "2026-02-18T08:06:55.341Z",
                 "isStale": false
             }
         ]
@@ -254,7 +307,7 @@
                 "time": "41s",
                 "icon": "credit-card",
                 "lastSeenAt": "2026-02-13T10:06:57.393Z",
-                "isStale": false
+                "isStale": true
             }
         ]
     },
@@ -265,17 +318,26 @@
         "flag": "🇨🇿",
         "rail": "XXXLUTZ",
         "status": "Incident",
-        "lastRun": "13/02, 11:06",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=CZ%20XXXLUTZ",
         "payments": [
             {
                 "code": "DEL",
                 "name": "On Delivery",
                 "status": "failed",
-                "time": "36s",
+                "time": "27s",
                 "icon": "truck",
-                "lastSeenAt": "2026-02-13T10:03:48.854Z",
+                "lastSeenAt": "2026-02-18T08:04:39.127Z",
                 "isStale": false
+            },
+            {
+                "code": "ON",
+                "name": "Online Banking",
+                "status": "passed",
+                "time": "31s",
+                "icon": "landmark",
+                "lastSeenAt": "2026-02-17T15:28:37.937Z",
+                "isStale": true
             }
         ]
     },
@@ -286,16 +348,16 @@
         "flag": "🇩🇪",
         "rail": "MOEMAX",
         "status": "Incident",
-        "lastRun": "13/02, 11:06",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=DE%20MOEMAX",
         "payments": [
             {
                 "code": "PP",
                 "name": "PayPal",
                 "status": "failed",
-                "time": "44s",
+                "time": "20s",
                 "icon": "wallet",
-                "lastSeenAt": "2026-02-13T09:59:40.570Z",
+                "lastSeenAt": "2026-02-18T08:00:22.713Z",
                 "isStale": false
             }
         ]
@@ -306,27 +368,36 @@
         "country": "Germany",
         "flag": "🇩🇪",
         "rail": "XXXLUTZ",
-        "status": "Operational",
-        "lastRun": "13/02, 11:06",
+        "status": "Incident",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=DE%20XXXLUTZ",
         "payments": [
             {
                 "code": "PP",
                 "name": "PayPal",
                 "status": "passed",
-                "time": "42s",
+                "time": "46s",
                 "icon": "wallet",
-                "lastSeenAt": "2026-02-13T10:01:09.782Z",
+                "lastSeenAt": "2026-02-18T08:02:32.995Z",
+                "isStale": false
+            },
+            {
+                "code": "CC",
+                "name": "Credit Card",
+                "status": "failed",
+                "time": "5s",
+                "icon": "credit-card",
+                "lastSeenAt": "2026-02-18T08:05:45.149Z",
                 "isStale": false
             },
             {
                 "code": "KN",
                 "name": "Klarna Pay Now",
-                "status": "passed",
-                "time": "70s",
+                "status": "failed",
+                "time": "37s",
                 "icon": "zap",
-                "lastSeenAt": "2026-02-13T10:04:59.029Z",
-                "isStale": false
+                "lastSeenAt": "2026-02-17T15:27:39.493Z",
+                "isStale": true
             }
         ]
     },
@@ -336,18 +407,18 @@
         "country": "Hungary",
         "flag": "🇭🇺",
         "rail": "XXXLUTZ",
-        "status": "Incident",
-        "lastRun": "13/02, 10:34",
+        "status": "Operational",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=HU%20XXXLUTZ",
         "payments": [
             {
                 "code": "CC",
                 "name": "Credit Card",
-                "status": "failed",
-                "time": "8s",
+                "status": "passed",
+                "time": "29s",
                 "icon": "credit-card",
-                "lastSeenAt": "2026-02-13T09:34:41.935Z",
-                "isStale": true
+                "lastSeenAt": "2026-02-18T08:05:39.931Z",
+                "isStale": false
             }
         ]
     },
@@ -358,16 +429,16 @@
         "flag": "🇷🇴",
         "rail": "XXXLUTZ",
         "status": "Incident",
-        "lastRun": "13/02, 11:06",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=RO%20XXXLUTZ",
         "payments": [
             {
                 "code": "SP",
                 "name": "SplitIT",
                 "status": "failed",
-                "time": "26s",
+                "time": "31s",
                 "icon": "divide",
-                "lastSeenAt": "2026-02-13T10:05:25.617Z",
+                "lastSeenAt": "2026-02-18T08:05:10.641Z",
                 "isStale": false
             }
         ]
@@ -378,17 +449,17 @@
         "country": "Slovakia",
         "flag": "🇸🇰",
         "rail": "XXXLUTZ",
-        "status": "Operational",
-        "lastRun": "13/02, 10:37",
+        "status": "Incident",
+        "lastRun": "17/02, 16:27",
         "reportLink": "allure-report/index.html#behaviors?search=SK%20XXXLUTZ",
         "payments": [
             {
                 "code": "PP",
                 "name": "PayPal",
-                "status": "passed",
-                "time": "46s",
+                "status": "failed",
+                "time": "27s",
                 "icon": "wallet",
-                "lastSeenAt": "2026-02-13T09:37:47.722Z",
+                "lastSeenAt": "2026-02-17T15:27:01.875Z",
                 "isStale": true
             }
         ]
@@ -400,25 +471,46 @@
         "flag": "🇸🇮",
         "rail": "XXXLESNINA",
         "status": "Incident",
-        "lastRun": "13/02, 11:06",
+        "lastRun": "18/02, 09:06",
         "reportLink": "allure-report/index.html#behaviors?search=SI%20XXXLESNINA",
         "payments": [
             {
                 "code": "DEL",
                 "name": "On Delivery",
                 "status": "failed",
-                "time": "26s",
+                "time": "4s",
                 "icon": "truck",
-                "lastSeenAt": "2026-02-13T10:03:12.120Z",
+                "lastSeenAt": "2026-02-18T08:04:11.652Z",
                 "isStale": false
+            }
+        ]
+    },
+    {
+        "id": "CH-XXXLUTZ",
+        "countryCode": "CH",
+        "country": "Switzerland",
+        "flag": "🇨🇭",
+        "rail": "XXXLUTZ",
+        "status": "Operational",
+        "lastRun": "17/02, 16:28",
+        "reportLink": "allure-report/index.html#behaviors?search=CH%20XXXLUTZ",
+        "payments": [
+            {
+                "code": "TW",
+                "name": "Twint",
+                "status": "passed",
+                "time": "26s",
+                "icon": "qr-code",
+                "lastSeenAt": "2026-02-17T15:28:06.233Z",
+                "isStale": true
             }
         ]
     }
 ];
 
     const reportStats = {
-    "lastDate": "13/02/2026",
-    "totalDuration": "8m 1s",
+    "lastDate": "18/02/2026",
+    "totalDuration": "6m 53s",
     "sync_status": "OK"
 };
 
@@ -434,41 +526,21 @@
     function railHeaderTone(railKey) {
       const key = String(railKey || '').trim().toUpperCase();
 
-      // ✅ Distinct from execution colors:
-      // - XXXLUTZ: rose (premium) not "failed red"
-      // - MOEMAX: teal (premium) not "passed green"
-      // - XXXLESNINA: soft amber
-      // - MOBELIX: sky / blue
+      // Colores de identidad del rail (NO semánticos). Manténlos "premium" y no iguales a fail/pass.
       if (key === 'XXXLUTZ') {
-        return {
-          bg: 'bg-rose-200/80',
-          border: 'border-rose-300',
-          shadow: 'shadow-rose-200/60'
-        };
+        return { top: 'border-t-rose-500', pill: 'bg-rose-50 text-rose-700 border-rose-200' };
       }
       if (key === 'MOEMAX') {
-        return {
-          bg: 'bg-teal-200/80',
-          border: 'border-teal-300',
-          shadow: 'shadow-teal-200/60'
-        };
+        return { top: 'border-t-teal-500', pill: 'bg-teal-50 text-teal-700 border-teal-200' };
       }
       if (key === 'XXXLESNINA') {
-        return {
-          bg: 'bg-amber-200/70',
-          border: 'border-amber-300',
-          shadow: 'shadow-amber-200/60'
-        };
+        return { top: 'border-t-amber-500', pill: 'bg-amber-50 text-amber-800 border-amber-200' };
       }
       if (key === 'MOBELIX') {
-        return {
-          bg: 'bg-sky-200/80',
-          border: 'border-sky-300',
-          shadow: 'shadow-sky-200/60'
-        };
+        return { top: 'border-t-sky-500', pill: 'bg-sky-50 text-sky-700 border-sky-200' };
       }
 
-      return { bg: 'bg-slate-200/40', border: 'border-slate-300', shadow: 'shadow-slate-200/50' };
+      return { top: 'border-t-slate-300', pill: 'bg-slate-50 text-slate-700 border-slate-200' };
     }
 
     function computeGlobalHealth(data) {
@@ -539,10 +611,12 @@
       const statHealth = document.getElementById('stat-health');
       if (statHealth) {
         statHealth.innerText = `${health}%`;
-        statHealth.className = `text-xl font-black ${
+        statHealth.className = `text-4xl font-black leading-none tracking-tight ${
           theme === 'emerald' ? 'text-emerald-600' :
           theme === 'amber'   ? 'text-amber-600'   : 'text-red-600'
         }`;
+        statHealth.style.fontFamily = "Montserrat, sans-serif";
+        statHealth.style.letterSpacing = "-0.03em";
       }
 
       const bar = document.getElementById('stat-health-bar');
@@ -579,7 +653,7 @@
       grid.innerHTML = dataToRender.map(m => {
         const isIncident = m.status === 'Incident';
         const statusColor = isIncident ? 'text-red-500' : 'text-emerald-500';
-        const borderTop = isIncident ? 'border-red-500' : 'border-blue-600';
+        const borderLeft = isIncident ? 'border-red-500' : 'border-slate-200';
 
         const hoverGlow = isIncident
           ? 'hover:ring-2 hover:ring-red-200 hover:shadow-red-200/60'
@@ -601,47 +675,54 @@
         });
 
         return `
-          <div class="market-card bg-white rounded-3xl p-6 border-t-4 ${borderTop} shadow-sm flex flex-col justify-between ${hoverGlow}">
+          <div class="market-card bg-white rounded-3xl p-6 border-l-4 shadow-sm flex flex-col justify-between ${hoverGlow}">
             <div>
               <!-- Rail tinted header -->
-              <div class="p-4 rounded-3xl border-2 ${tone.border} ${tone.bg} shadow-sm ${tone.shadow}">
-                <div class="flex justify-between items-start">
-                  <div class="flex items-center gap-3">
-                    <span class="text-3xl">${m.flag}</span>
-                    <div>
-                      <h3 class="font-black text-slate-900 text-lg uppercase tracking-tight">${m.country}</h3>
+              <!-- Neutral header (brand via top border only) -->
+                <div class="p-4 rounded-3xl bg-white border border-slate-200 shadow-sm border-t-4 ${tone.top}">
+                  <div class="flex justify-between items-start">
+                    <div class="flex items-center gap-3">
+                      <span class="text-3xl">${m.flag}</span>
 
-                      ${
-                        railLogoSrc
-                          ? `
-                            <img
-                              src="${railLogoSrc}"
-                              alt="${railKey}"
-                              class="h-6 mt-1 object-contain opacity-95"
-                              onerror="this.outerHTML='<span class=&quot;text-[10px] font-extrabold text-slate-700 uppercase tracking-widest&quot;>${railKey}</span>'"
-                            />
-                          `
-                          : `
-                            <span class="text-[10px] font-extrabold text-slate-700 uppercase tracking-widest">${railKey}</span>
-                          `
-                      }
+                      <div class="min-w-0">
+                        <div class="flex items-center gap-2">
+                          <h3 class="font-black text-slate-900 text-lg uppercase tracking-tight truncate">${m.country}</h3>                         
+                        </div>
+
+                        ${
+                          railLogoSrc
+                            ? `
+                              <img
+                                src="${railLogoSrc}"
+                                alt="${railKey}"
+                                class="h-6 mt-1 object-contain opacity-95"
+                                onerror="this.outerHTML=''"
+                              />
+                            `
+                            : ``
+                        }
+                      </div>
                     </div>
-                  </div>
 
-                  <a href="${m.reportLink}" target="_blank"
-                     class="p-2 rounded-xl transition-colors text-slate-600 hover:text-blue-700 hover:bg-white/60"
-                     aria-label="Open filtered report">
-                    <i data-lucide="external-link" class="w-5 h-5"></i>
-                  </a>
+                    <a href="${m.reportLink}" target="_blank"
+                      class="p-2 rounded-xl transition-colors text-slate-500 hover:text-slate-900 hover:bg-slate-50 border border-transparent hover:border-slate-200"
+                      aria-label="Open filtered report">
+                      <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                  </div>
                 </div>
-              </div>
+
 
               <div class="mt-4 flex items-center gap-2 mb-6">
                 <span class="relative flex h-2 w-2">
                   ${isIncident ? '<span class="dot-pulse absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>' : ''}
                   <span class="relative inline-flex rounded-full h-2 w-2 ${isIncident ? 'bg-red-500' : 'bg-emerald-500'}"></span>
                 </span>
-                <span class="text-[11px] font-black uppercase tracking-widest ${statusColor}">
+                <span class="text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded-full border ${
+                  isIncident
+                    ? 'text-red-700 bg-red-50 border-red-200'
+                    : 'text-emerald-700 bg-emerald-50 border-emerald-200'
+                }">
                   ${m.status}
                 </span>
               </div>
@@ -698,7 +779,7 @@
 
             <div class="mt-6 space-y-3">
               <a href="${m.reportLink}" target="_blank"
-                 class="w-full bg-slate-900 hover:bg-blue-600 text-white py-3 rounded-xl text-[10px] font-bold transition-all flex items-center justify-center gap-2 uppercase tracking-widest">
+                 class="w-full bg-slate-800 hover:bg-slate-700 text-white py-3 rounded-xl text-[10px] font-bold transition-all flex items-center justify-center gap-2 uppercase tracking-widest">
                 <i data-lucide="bar-chart-3" class="w-3 h-3"></i>
                 Report
               </a>

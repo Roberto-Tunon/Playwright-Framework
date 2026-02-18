@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,614 +6,845 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>XXXLDigital Automation Dashboard</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.2/css/flag-icons.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <style>
-    body { font-family: 'Montserrat', sans-serif; background-color: #f0f2f5; color: #2d3436; }
-    .navbar { background-color: #fff; padding: 1rem 0; border-bottom: 4px solid #e20015; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    .brand-title { font-weight: 800; font-size: 1.8rem; letter-spacing: -1px; display: flex; align-items: center; }
-    .text-lutz { color: #e20015; }
-
-    .console-box {
-      background-color: #0d0d0d; color: #00ff41;
-      font-family: 'Courier New', monospace; font-size: 0.85rem;
-      padding: 20px; height: 535px; overflow-y: auto; white-space: pre-wrap;
-      border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    :root{
+      --lutz-red:#e20015;
+      --bg:#f0f2f5;
+      --text:#2d3436;
+      --shadow:0 4px 12px rgba(0,0,0,0.05);
+      --card-shadow:0 4px 15px rgba(0,0,0,0.1);
+      --border:#dee2e6;
     }
 
-    .table-logo { height: 25px; width: auto; object-fit: contain; }
-    .payment-icon-table { width: 45px; height: 28px; object-fit: contain; border: 1px solid #eee; border-radius: 4px; padding: 2px; background: white; margin-right: 10px; }
-    .status-badge { padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 0.7rem; color: #fff !important; text-transform: uppercase; display: inline-block; min-width: 80px; text-align: center; }
-    .bg-passed { background-color: #28a745; }
-    .bg-failed { background-color: #dc3545; }
+    body{ font-family:'Montserrat',sans-serif; background-color:var(--bg); color:var(--text); }
 
-    .btn-param-custom { justify-content: flex-start !important; gap: 10px; }
-
-    .btn-clear-log { background: #e20015; color: #ffffff; border: none; font-size: 0.75rem; font-weight: 800; padding: 6px 12px; border-radius: 6px; }
-
-    .payment-icon-container { width: 65px; height: 40px; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid #dee2e6; border-radius: 6px; margin-right: 10px; }
-    .payment-icon-ui { max-width: 80%; max-height: 80%; object-fit: contain; }
-
-    .history-section { margin-top: 30px; margin-bottom: 50px; }
-    .history-card { border-radius: 15px; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-
-    /* Tabla y filtros */
-    .filter-select { font-size: 0.75rem; padding: 4px; width: 100%; border-radius: 4px; border: 1px solid #ddd; background-color: #f8f9fa; }
-    .table thead th { border-bottom: none; font-size: 0.8rem; text-transform: uppercase; color: #6c757d; }
-    .vertical-middle { vertical-align: middle; }
-
-    /* Botón View Report */
-    .btn-report {
-      font-size: 0.65rem;
-      font-weight: 800;
-      padding: 4px 10px;
-      margin-left: 10px;
-      text-decoration: none;
-      background-color: #ffffff;
-      color: #e20015;
-      border: 2px solid #e20015;
-      border-radius: 6px;
-      transition: all 0.2s ease;
+    .navbar{ background:#fff; padding:1rem 0; border-bottom:4px solid var(--lutz-red); box-shadow:var(--shadow); }
+    .brand-row{ display:flex; align-items:center; justify-content:center; flex-wrap:wrap; width:100%; gap:30px; margin-bottom:30px; }
+    .brand-left{ display:flex; align-items:center; }
+    .brand-logo{ height:45px; width:auto; margin-right:15px; object-fit:contain; }
+    .main-title{
+      font-family:'Montserrat',sans-serif;
+      font-size:3.2rem;
+      font-weight:900;
+      letter-spacing:-1.5px;
+      color:#000;
+      margin:0;
+      line-height:1.1;
+      display:flex;
+      align-items:center;
     }
-    .btn-report:hover { background-color: #e20015; color: #ffffff; }
+    .main-title span{ color:var(--lutz-red) !important; }
 
-    /* Labels del histórico */
-    #historyTable thead tr:first-child th {
-      color: #000000 !important;
-      font-weight: 800 !important;
-      text-align: center !important;
-      vertical-align: middle;
-      font-size: 1rem !important;
-      padding: 15px 10px;
-      white-space: nowrap;
-    }
-    #historyTable thead th i {
-      font-size: 1.2rem;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-    #historyTable tbody td {
-      text-align: center !important;
-      vertical-align: middle;
-      font-size: 0.95rem;
-      padding: 12px 8px;
+    .header-tools{ display:flex; align-items:center; padding:10px 20px; border-radius:12px; background:rgba(255,255,255,0.05); }
+    .header-icon{ height:65px; width:auto; margin-right:15px; object-fit:contain; }
+    .clock{
+      height:50px; min-width:180px; display:flex; align-items:center; justify-content:center;
+      background:#000; color:#fff; border:2px solid var(--lutz-red); border-radius:8px;
+      font-family:'Courier New',Courier,monospace; font-weight:900; font-size:1.8rem;
+      box-shadow:0 4px 12px rgba(226,0,21,0.3); letter-spacing:2px; line-height:1;
     }
 
-    .card h6.text-muted.small {
-      font-size: 1.3rem !important;
-      color: #000000 !important;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      border-bottom: 2px solid #e20015;
-      padding-bottom: 5px;
-      display: inline-block;
+    .card-soft{ border:none; border-radius:15px; box-shadow:var(--card-shadow); }
+    .card-radius{ border-radius:15px; }
+
+    .section-title{
+      font-size:1.3rem !important; color:#000 !important; font-weight:800; text-transform:uppercase;
+      letter-spacing:1px; border-bottom:2px solid var(--lutz-red); padding-bottom:5px; display:inline-block; margin:0;
+    }
+    .param-label{ font-size:1.1rem !important; color:#000 !important; font-weight:800 !important; margin-bottom:8px; display:block; }
+    .btn-param-custom{ justify-content:flex-start !important; gap:10px; }
+    .btn-lutz{ background:var(--lutz-red); border:none; border-radius:12px; font-weight:800; }
+
+    /* STOP button stronger */
+    .btn-stop-lutz{
+      font-weight: 900 !important;
+      color: var(--lutz-red) !important;
+      background: #ffffff !important;
+      border: 2px solid var(--lutz-red) !important;
+      border-radius: 12px;
+      letter-spacing: 0.5px;
+      transition: all .15s ease;
+    }
+    .btn-stop-lutz:hover{
+      background: var(--lutz-red) !important;
+      color: #ffffff !important;
+    }
+    .btn-stop-lutz:disabled{
+      opacity: .55;
+      cursor: not-allowed;
     }
 
-    .mb-3 label.small {
-      font-size: 1.1rem !important;
-      color: #000000 !important;
-      font-weight: 800 !important;
-      margin-bottom: 8px;
-      display: block;
+    /* Mode badges */
+    .mode-badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      height:22px;
+      min-width:34px;
+      padding:0 8px;
+      border-radius:6px;
+      font-weight:900;
+      font-size:0.75rem;
+      letter-spacing:.5px;
+      color:#fff;
+      margin-right:10px;
+    }
+    .mode-1p{ background:#0d6efd; }
+    .mode-2p{ background:#0aa2c0; }
+    .mode-3p{ background:#6f42c1; }
+
+    .console-wrap{ border-radius:15px; overflow:hidden; }
+    .console-header{
+      padding:0.75rem 1rem; background:#fff; border-bottom:1px solid var(--border);
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .btn-clear-log{ background:var(--lutz-red); color:#fff; border:none; font-size:0.75rem; font-weight:800; padding:6px 12px; border-radius:6px; }
+
+    .console-box{
+      background:#0d0d0d; color:#00ff41; font-family:'Courier New',monospace; font-size:0.85rem;
+      padding:20px; height:535px; overflow-y:auto; white-space:pre-wrap; position:relative;
+      border-bottom-left-radius:15px; border-bottom-right-radius:15px;
     }
 
-    .main-title {
-      font-family: 'Roboto', sans-serif;
-      font-size: 3.5rem;
-      font-weight: 900;
-      letter-spacing: -2px;
-      color: #000000;
-    }
-    .main-title span { color: #e20015 !important; }
-    .main-title img {
-      height: 1.2em;
-      vertical-align: middle;
-      margin-top: -10px;
-      margin-right: 15px;
-    }
+    @media (prefers-reduced-motion: reduce){ .console-line{ animation:none !important; } .console-cursor{ animation:none !important; } }
+    .console-lines{ white-space:pre-wrap; }
+    .console-line{ opacity:0; transform:translateY(4px); animation:consoleIn 180ms ease forwards; }
+    @keyframes consoleIn{ to{ opacity:1; transform:translateY(0); } }
 
-    .clock-container {
-      height: 50px;
-      min-width: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #000000 !important;
-      color: #ffffff;
-      border: 2px solid #e20015;
-      border-radius: 8px;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: 900;
-      font-size: 1.8rem;
-      box-shadow: 0 4px 12px rgba(226, 0, 21, 0.3);
-      letter-spacing: 2px;
+    .console-line .ts{ opacity:0.6; margin-right:8px; }
+    .console-line.info{ color:#9be9ff; }
+    .console-line.ok{ color:#00ff41; }
+    .console-line.warn{ color:#ffd166; }
+    .console-line.err{ color:#ff5c5c; }
+
+    .console-cursor{ display:inline-block; margin-left:6px; animation:blink 1s steps(2,start) infinite; }
+    @keyframes blink{ to{ opacity:0; } }
+    .console-spinner{ display:inline-block; width:12px; text-align:center; opacity:0.9; }
+
+    .history-section{ margin-top:30px; margin-bottom:50px; }
+    .history-header{ padding:1rem 1.5rem; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+    .filter-select{ font-size:0.75rem; padding:4px; width:100%; border-radius:4px; border:1px solid #ddd; background:#f8f9fa; }
+    #historyTable thead tr:first-child th{
+      color:#000 !important; font-weight:800 !important; text-align:center !important; vertical-align:middle;
+      font-size:1rem !important; padding:15px 10px; white-space:nowrap;
     }
+    #historyTable tbody td{ text-align:center !important; vertical-align:middle; font-size:0.95rem; padding:12px 8px; }
+    .vertical-middle{ vertical-align:middle; }
+
+    .table-logo{ height:25px; width:auto; object-fit:contain; }
+    .payment-icon-table{
+      width:45px; height:28px; object-fit:contain; border:1px solid #eee; border-radius:4px; padding:2px; background:#fff; margin-right:10px;
+    }
+    .status-badge{
+      padding:5px 12px; border-radius:6px; font-weight:800; font-size:0.7rem; color:#fff !important;
+      text-transform:uppercase; display:inline-block; min-width:80px; text-align:center;
+    }
+    .bg-passed{ background:#28a745; }
+    .bg-failed{ background:#dc3545; }
+
+    .btn-report{
+      font-size:0.65rem; font-weight:800; padding:4px 10px; margin-left:10px; text-decoration:none;
+      background:#fff; color:var(--lutz-red); border:2px solid var(--lutz-red); border-radius:6px; transition:all 0.2s ease;
+    }
+    .btn-report:hover{ background:var(--lutz-red); color:#fff; }
+
+    .payment-icon-container{
+      width:65px; height:40px; display:flex; align-items:center; justify-content:center; background:#fff;
+      border:1px solid var(--border); border-radius:6px; margin-right:10px; flex:0 0 auto;
+    }
+    .payment-icon-ui{ max-width:80%; max-height:80%; object-fit:contain; }
+
+    .payment-menu{ max-height:350px; overflow-y:auto; }
   </style>
 </head>
 
 <body>
+  <nav class="navbar mb-4">
+    <div class="brand-row">
+      <div class="brand-left">
+        <img class="brand-logo" src="assets/xxxlutz.png"
+             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'"
+             alt="XXXLutz"/>
+        <h1 class="main-title">XXXL<span>Digital</span>&nbsp;Dashboard&nbsp;</h1>
+         <img class="header-icon" src="assets/rocket.png" title="Rocket" alt="Rocket">
+         <img class="header-icon" src="assets/terminal2.png" title="System Terminal" alt="Terminal">
+      </div>
 
-<nav class="navbar mb-4">
-  <div class="brand-title d-flex align-items-center justify-content-center flex-wrap w-100" style="gap: 30px; margin-bottom: 30px;">
-
-    <div class="d-flex align-items-center">
-      <img src="assets/xxxlutz.png" style="height:45px; margin-right:15px;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/d/d4/XXXLutz_Logo.svg'">
-      <h1 class="main-title" style="margin: 0; line-height: 1.2; display: flex; align-items: center;">
-        XXXL<span style="color: #e20015;">Digital</span>&nbsp;Dashboard 🚀
-      </h1>
-    </div>
-
-    <div class="d-flex align-items-center" style="background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 12px;">
-      <img src="assets/terminal.png" style="height: 45px; width: auto; margin-right: 15px;" title="System Terminal">
-      <img src="assets/clock.png" style="height: 45px; width: auto; margin-right: 15px;" title="Clock">
-      <div class="clock-container" id="digital-clock" style="margin: 0; font-size: 1.6rem; font-family: 'Courier New', monospace; font-weight: bold; line-height: 1;">
-        00:00:00
+      <div class="header-tools"> 
+        <img class="header-icon" src="assets/clock.png" title="Clock" alt="Clock">
+        <div class="clock" id="digital-clock">00:00:00</div>
       </div>
     </div>
+  </nav>
+
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="card card-radius p-4 h-100 shadow-sm border-0">
+          <h6 class="section-title mb-4">TEST PARAMETERS</h6>
+
+          <div class="mb-3">
+            <label class="param-label">🛒 Shop / Rail</label>
+            <div class="dropdown">
+              <button id="shopBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom"
+                      data-bs-toggle="dropdown" type="button">Select...</button>
+              <ul id="shopList" class="dropdown-menu w-100 shadow border-0"></ul>
+            </div>
+            <input type="hidden" id="shop">
+          </div>
+
+          <div class="mb-3">
+            <label class="param-label">🌍 Country</label>
+            <div class="dropdown">
+              <button id="countryBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom"
+                      data-bs-toggle="dropdown" type="button">Select shop first...</button>
+              <ul id="countryList" class="dropdown-menu w-100 shadow border-0"></ul>
+            </div>
+            <input type="hidden" id="country">
+          </div>
+
+          <!-- MODE dropdown (bootstrap) -->
+          <div class="mb-3">
+            <label class="param-label">⚙️ Mode</label>
+
+            <div class="dropdown">
+              <button id="modeBtn"
+                      class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom"
+                      data-bs-toggle="dropdown"
+                      type="button"
+                      disabled>
+                <span class="mode-badge mode-1p">1P</span>
+                <b>INTERNAL</b>
+              </button>
+
+              <ul id="modeList" class="dropdown-menu w-100 shadow border-0"></ul>
+            </div>
+
+            <input type="hidden" id="mode" value="1P">
+          </div>
+
+          <div class="mb-3">
+            <label class="param-label">🏦 Payment Method</label>
+            <div class="dropdown">
+              <button id="paymentBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom"
+                      data-bs-toggle="dropdown" type="button">Select country first...</button>
+              <ul id="paymentList" class="dropdown-menu w-100 shadow border-0 payment-menu"></ul>
+            </div>
+            <input type="hidden" id="payment">
+          </div>
+
+          <div class="form-check form-switch mb-4">
+            <input class="form-check-input" type="checkbox" id="headlessSwitch">
+            <label class="form-check-label small fw-bold text-muted" for="headlessSwitch">Visual Mode (Show Browser)</label>
+          </div>
+
+          <button onclick="runTest()" id="runBtn" class="btn btn-danger w-100 p-3 btn-lutz">
+            EXECUTE TEST SEQUENCE 🚀
+          </button>
+
+          <button onclick="cancelRun()" id="cancelBtn" class="btn btn-stop-lutz w-100 p-3 mt-2" disabled>
+            STOP EXECUTION ⛔
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm console-wrap">
+          <div class="console-header">
+            <span class="fw-bold text-danger"><i class="bi bi-terminal-fill me-2"></i> LIVE_CONSOLE</span>
+            <button onclick="clearLog()" class="btn-clear-log"><i class="bi bi-trash3-fill me-1"></i> CLEAR LOG</button>
+          </div>
+
+          <div id="output" class="console-box">
+            <div id="consoleLines" class="console-lines">> System_ready...awaiting instructions</div><span id="consoleCursor" class="console-cursor">█</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row history-section">
+      <div class="col-12">
+        <div class="card card-soft">
+          <div class="card-body p-0">
+            <div class="history-header">
+              <h5 class="fw-bold mb-0" style="font-size:1rem;">GLOBAL EXECUTION HISTORY</h5>
+              <button class="btn btn-outline-danger btn-sm fw-bold" onclick="deleteSelected()">
+                <i class="bi bi-x-circle me-1"></i> DELETE SELECTED
+              </button>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table align-middle mb-0" id="historyTable">
+                <thead>
+                  <tr>
+                    <th width="40" rowspan="2" class="text-center vertical-middle">
+                      <input type="checkbox" id="toggleAllBox" onclick="toggleAll(this)">
+                    </th>
+                    <th>🕒 Date/Time</th>
+                    <th>🏪 Shop</th>
+                    <th>🌍 Country</th>
+                    <th>💳 Payment Method</th>
+                    <th>⚙️ Mode</th>
+                    <th>🕒 Duration</th>
+                    <th>🚥 Status</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th><select id="filterShop" class="filter-select" onchange="applyFilters()"><option value="">All Shops</option></select></th>
+                    <th><select id="filterCountry" class="filter-select" onchange="applyFilters()"><option value="">All Countries</option></select></th>
+                    <th><select id="filterPayment" class="filter-select" onchange="applyFilters()"><option value="">All Payments</option></select></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="historyBody"></tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-</nav>
 
-<div class="container">
-  <div class="row g-4">
-    <div class="col-lg-4">
-      <div class="card p-4 h-100 shadow-sm border-0" style="border-radius: 15px;">
-        <h6 class="text-muted small fw-bold mb-4">TEST PARAMETERS</h6>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let configData = null;
+    let fullHistory = [];
 
-        <div class="mb-3">
-          <label class="small fw-bold mb-2">🛒 Shop / Rail</label>
-          <div class="dropdown">
-            <button id="shopBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select...</button>
-            <ul id="shopList" class="dropdown-menu w-100 shadow border-0"></ul>
-          </div>
-          <input type="hidden" id="shop">
-        </div>
+    let currentAbort = null;
+    let isRunning = false;
 
-        <div class="mb-3">
-          <label class="small fw-bold mb-2">🌍 Country</label>
-          <div class="dropdown">
-            <button id="countryBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select shop first...</button>
-            <ul id="countryList" class="dropdown-menu w-100 shadow border-0"></ul>
-          </div>
-          <input type="hidden" id="country">
-        </div>
+    /* ===== Clock ===== */
+    function updateClock() {
+      const now = new Date();
+      const hh = String(now.getHours()).padStart(2, '0');
+      const mm = String(now.getMinutes()).padStart(2, '0');
+      const ss = String(now.getSeconds()).padStart(2, '0');
+      const el = document.getElementById('digital-clock');
+      if (el) el.innerText = `${hh}:${mm}:${ss}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
 
-        <div class="mb-3">
-          <label class="small fw-bold mb-2">🏦 Payment Method</label>
-          <div class="dropdown">
-            <button id="paymentBtn" class="btn btn-light border w-100 dropdown-toggle d-flex align-items-center btn-param-custom" data-bs-toggle="dropdown">Select country first...</button>
-            <ul id="paymentList" class="dropdown-menu w-100 shadow border-0" style="max-height: 350px; overflow-y: auto;"></ul>
-          </div>
-          <input type="hidden" id="payment">
-        </div>
+    /* ===== Console helpers ===== */
+    let _consoleSpinnerTimer = null;
+    let _consoleSpinnerFrame = 0;
 
-        <div class="form-check form-switch mb-4">
-          <input class="form-check-input" type="checkbox" id="headlessSwitch">
-          <label class="form-check-label small fw-bold text-muted" for="headlessSwitch">Visual Mode (Show Browser)</label>
-        </div>
+    function pad2(n){ return String(n).padStart(2,'0'); }
+    function timeStamp(){
+      const d = new Date();
+      return `${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}`;
+    }
+    function escapeHtml(str){
+      return String(str)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;");
+    }
+    function userIsNearBottom(el, threshold = 60) {
+      return el.scrollHeight - (el.scrollTop + el.clientHeight) < threshold;
+    }
+    function consoleSet(message) {
+      const box = document.getElementById("output");
+      const lines = document.getElementById("consoleLines");
+      if (!box || !lines) return;
+      lines.textContent = message;
+      box.scrollTop = box.scrollHeight;
+    }
+    function consoleAppend(message, level = "info") {
+      const box = document.getElementById("output");
+      const lines = document.getElementById("consoleLines");
+      if (!box || !lines) return;
 
-        <button onclick="runTest()" id="runBtn" class="btn btn-danger w-100 p-3 fw-bold" style="background:#e20015; border:none; border-radius:12px;">EXECUTE TEST SEQUENCE 🚀</button>
-      </div>
-    </div>
+      const shouldStick = userIsNearBottom(box);
 
-    <div class="col-lg-8">
-      <div class="card border-0 shadow-sm overflow-hidden" style="border-radius: 15px;">
-        <div class="p-3 bg-white border-bottom d-flex justify-content-between align-items-center">
-          <span class="fw-bold text-danger"><i class="bi bi-terminal-fill me-2"></i> LIVE_CONSOLE</span>
-          <button onclick="clearLog()" class="btn-clear-log"><i class="bi bi-trash3-fill me-1"></i> CLEAR LOG</button>
-        </div>
-        <div id="output" class="console-box">> System_ready...awaiting instructions</div>
-      </div>
-    </div>
-  </div>
+      const line = document.createElement("div");
+      line.className = `console-line ${level}`;
+      line.innerHTML = `<span class="ts">[${timeStamp()}]</span>${escapeHtml(message)}`;
+      lines.appendChild(line);
 
-  <div class="row history-section">
-    <div class="col-12">
-      <div class="card history-card shadow-sm">
-        <div class="card-body p-0">
-          <div class="p-4 border-bottom d-flex justify-content-between align-items-center">
-            <h5 class="fw-bold mb-0" style="font-size: 1rem;">GLOBAL EXECUTION HISTORY</h5>
-            <button class="btn btn-outline-danger btn-sm fw-bold" onclick="deleteSelected()"><i class="bi bi-x-circle me-1"></i> DELETE SELECTED</button>
-          </div>
+      if (shouldStick) box.scrollTop = box.scrollHeight;
+    }
+    async function consoleTypeLine(message, level = "info", speed = 6) {
+      const box = document.getElementById("output");
+      const lines = document.getElementById("consoleLines");
+      if (!box || !lines) return;
 
-          <div class="table-responsive">
-            <table class="table align-middle" id="historyTable">
-              <thead>
-                <tr>
-                  <th width="40" rowspan="2" class="text-center vertical-middle">
-                    <input type="checkbox" onclick="toggleAll(this)">
-                  </th>
-                  <th>🕒 Date/Time</th>
-                  <th>🏪 Shop</th>
-                  <th>🌍 Country</th>
-                  <th>💳 Payment Method</th>
-                  <th>🕒 Duration</th>
-                  <th>🚥 Status</th>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>
-                    <select id="filterShop" class="filter-select" onchange="onHistoryShopFilterChange()">
-                      <option value="">All Shops</option>
-                    </select>
-                  </th>
-                  <th>
-                    <select id="filterCountry" class="filter-select" onchange="applyFilters()">
-                      <option value="">All Countries</option>
-                    </select>
-                  </th>
-                  <th>
-                    <select id="filterPayment" class="filter-select" onchange="applyFilters()">
-                      <option value="">All Payments</option>
-                    </select>
-                  </th>
-                  <th></th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody id="historyBody"></tbody>
-            </table>
-          </div>
+      const shouldStick = userIsNearBottom(box);
 
-        </div>
-      </div>
-    </div>
-  </div>
+      const line = document.createElement("div");
+      line.className = `console-line ${level}`;
+      line.innerHTML = `<span class="ts">[${timeStamp()}]</span><span class="tw"></span>`;
+      lines.appendChild(line);
 
-</div>
+      const target = line.querySelector(".tw");
+      const text = String(message);
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      for (let i = 0; i < text.length; i++) {
+        target.textContent += text[i];
+        if (shouldStick) box.scrollTop = box.scrollHeight;
+        await new Promise(r => setTimeout(r, speed));
+      }
+    }
+    function consoleSpinnerStart(label = "Executing") {
+      const cursor = document.getElementById("consoleCursor");
+      const frames = ["|","/","-","\\"];
 
-<script>
-  let configData = null;
-  let fullHistory = [];
+      consoleSpinnerStop();
 
-  function updateClock() {
-    const now = new Date();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
-    const timeStr = `${hours}:${minutes}:${seconds}`;
-    const clockElement = document.getElementById('digital-clock');
-    if (clockElement) clockElement.innerText = timeStr;
-  }
-  setInterval(updateClock, 1000);
-  updateClock();
+      _consoleSpinnerFrame = 0;
+      _consoleSpinnerTimer = setInterval(() => {
+        if (cursor) cursor.innerHTML = `<span class="console-spinner">${frames[_consoleSpinnerFrame % frames.length]}</span>`;
+        _consoleSpinnerFrame++;
+      }, 120);
 
-  function clearLog() { document.getElementById('output').innerText = '> terminal cleared...\n'; }
-
-  async function init() {
-    try {
-      const resConfig = await fetch('/config');
-      configData = await resConfig.json();
-
-      const resHistory = await fetch('/history');
-      fullHistory = await resHistory.json();
-
-      renderDropdowns();
-      populateFilters();          // llena selects de histórico
-      renderHistory(fullHistory); // pinta tabla completa
-
-    } catch(e) { console.error("Error cargando datos:", e); }
-  }
-
-  /* ===========================
-     DROPDOWNS PRINCIPALES (Shop -> Country -> Payment)
-     =========================== */
-
-  function renderDropdowns() {
-    // Shops
-    document.getElementById('shopList').innerHTML = (configData.shops || []).map(s => `
-      <li>
-        <button class="dropdown-item d-flex align-items-center"
-                onclick="selectShop('${s.id}', '${s.name}', '${s.logo}')">
-          <img src="${s.logo}" style="height:18px; margin-right:10px">
-          <b>${s.name}</b>
-        </button>
-      </li>
-    `).join('');
-
-    // Countries: arranca vacío hasta seleccionar shop
-    document.getElementById('countryList').innerHTML = '';
-  }
-
-  function getAllowedCountriesByShop(shopId) {
-  // devolvemos SIEMPRE en mayúsculas
-  switch (shopId) {
-    case "xxxlutz":
-      return ["AT", "DE", "CH", "CZ", "HU", "SK", "RO"];
-    case "moemax":
-      return ["AT", "DE", "HU", "SI", "HR", "RO", "PL"];
-    case "moebelix":
-      return ["AT", "CZ", "HU", "SK"];
-    case "xxxlesnina":
-      return ["HR", "SI", "RS"];
-    default:
-      return (configData?.countries || []).map(c => (c.code || "").toUpperCase());
-  }
-}
-
-function updateCountryDropdownByShop(shopId) {
-  if (!configData) return;
-
-  // set de países permitidos en MAYÚSCULAS
-  const allowed = new Set(getAllowedCountriesByShop(shopId).map(x => (x || "").toUpperCase()));
-
-  // OJO: comparamos c.code en mayúsculas, pero conservamos el code original para flags y value
-  const filteredCountries = (configData.countries || [])
-    .filter(c => allowed.has((c.code || "").toUpperCase()))
-    .sort((a, b) => (a.name || "").localeCompare(b.name || ""));
-
-  document.getElementById('countryList').innerHTML = filteredCountries.map(c => `
-    <li>
-      <button class="dropdown-item d-flex align-items-center"
-              onclick="selectCountry('${c.code}', '${c.name}')">
-        <span class="fi fi-${String(c.code).toLowerCase()} me-2"></span> <b>${c.name}</b>
-      </button>
-    </li>
-  `).join('');
-
-  // Reset al cambiar shop
-  document.getElementById('country').value = '';
-  document.getElementById('countryBtn').innerHTML = 'Select...';
-
-  document.getElementById('payment').value = '';
-  document.getElementById('paymentBtn').innerHTML = 'Select country first...';
-  document.getElementById('paymentList').innerHTML = '';
-}
-
-  function getPaymentIconPath(id) {
-    return id.startsWith('k_') ? 'assets/klarna.png' : `assets/${id}.png`;
-  }
-
-  function selectShop(id, name, logo) {
-    document.getElementById('shop').value = id;
-    document.getElementById('shopBtn').innerHTML =
-      `<img src="${logo}" style="height:20px; margin-right:10px"> <b>${name}</b>`;
-
-    updateCountryDropdownByShop(id);
-  }
-
-  function selectCountry(code, name) {
-    document.getElementById('country').value = code;
-    document.getElementById('countryBtn').innerHTML =
-      `<span class="fi fi-${code.toLowerCase()} me-2"></span> <b>${name}</b>`;
-
-    updatePaymentMethods(code);
-  }
-
-  function selectPayment(id, name) {
-    document.getElementById('payment').value = id;
-    document.getElementById('paymentBtn').innerHTML =
-      `<div class="payment-icon-container"><img src="${getPaymentIconPath(id)}" class="payment-icon-ui"></div><b>${name}</b>`;
-  }
-
-  function updatePaymentMethods(countryCode) {
-    if (!configData) return;
-    const c = (countryCode || '').toLowerCase();
-
-    let filtered = (configData.payments || []).filter(p => {
-      if (c === 'at' || c === 'de') return ['credit', 'paypal', 'k_now', 'k_later', 'k_over', 'billie'].includes(p.id);
-      if (c === 'cz' || c === 'sk') return ['credit', 'paypal', 'bank', 'delivery'].includes(p.id);
-      if (c === 'ch') return ['credit', 'paypal', 'twint', 'k_later'].includes(p.id);
-      if (c === 'se') return ['credit', 'paypal', 'k_now', 'k_later', 'k_over', 'swish'].includes(p.id);
-      if (c === 'ro') return ['credit', 'splitit', 'delivery'].includes(p.id);
-      if (c === 'rs') return ['corvus', 'delivery'].includes(p.id);
-      if (c === 'si' || c === 'hr') return ['credit', 'paypal', 'splitit', 'delivery'].includes(p.id);
-      if (c === 'hu') return ['credit'].includes(p.id);
-      return ['credit', 'paypal'].includes(p.id);
-    });
-
-    document.getElementById('paymentList').innerHTML = filtered.map(p => `
-      <li>
-        <button class="dropdown-item d-flex align-items-center"
-                onclick="selectPayment('${p.id}', '${p.name}')">
-          <div class="payment-icon-container">
-            <img src="${getPaymentIconPath(p.id)}" class="payment-icon-ui">
-          </div>
-          <b>${p.name}</b>
-        </button>
-      </li>
-    `).join('');
-  }
-
-  /* ===========================
-     HISTÓRICO + FILTROS (nombres y cascada por Shop)
-     =========================== */
-
-  function populateFilters() {
-    const fShop = document.getElementById('filterShop');
-    const fCountry = document.getElementById('filterCountry');
-    const fPayment = document.getElementById('filterPayment');
-
-    // Shop options (con nombres)
-    fShop.innerHTML = '<option value="">All Shops</option>';
-    const shopsInHistory = [...new Set(fullHistory.map(h => h.shop))];
-    shopsInHistory.forEach(shopId => {
-      const shopObj = (configData.shops || []).find(s => s.id === shopId);
-      const label = shopObj ? shopObj.name : shopId;
-      fShop.innerHTML += `<option value="${shopId}">${label}</option>`;
-    });
-
-    // Inicial: opciones de country/payment basadas en todo el histórico
-    updateHistoryFilterOptions();
-  }
-
-  function updateHistoryFilterOptions() {
-    const shopVal = document.getElementById('filterShop').value;
-
-    // Base: si hay shop filtrado, limitamos países/pagos a ese shop
-    const base = fullHistory.filter(h => (shopVal === "" || h.shop === shopVal));
-
-    const countries = [...new Set(base.map(h => h.country))];
-    const payments  = [...new Set(base.map(h => h.paymentId))];
-
-    const fCountry = document.getElementById('filterCountry');
-    const fPayment = document.getElementById('filterPayment');
-
-    // Guardar selección actual para mantenerla si sigue siendo válida
-    const prevCountry = fCountry.value;
-    const prevPayment = fPayment.value;
-
-    // Reset
-    fCountry.innerHTML = '<option value="">All Countries</option>';
-    fPayment.innerHTML = '<option value="">All Payments</option>';
-
-    // Countries con nombre (no código)
-    countries.forEach(code => {
-      const countryObj = (configData.countries || []).find(c => c.code === code);
-      const countryName = countryObj ? countryObj.name : code;
-      fCountry.innerHTML += `<option value="${code}">${countryName}</option>`;
-    });
-
-    // Payments con nombre
-    payments.forEach(pid => {
-      const paymentObj = (configData.payments || []).find(p => p.id === pid);
-      const paymentName = paymentObj ? paymentObj.name : pid;
-      fPayment.innerHTML += `<option value="${pid}">${paymentName}</option>`;
-    });
-
-    // Restaurar si existe; si no, limpiar
-    if ([...fCountry.options].some(o => o.value === prevCountry)) fCountry.value = prevCountry;
-    else fCountry.value = "";
-
-    if ([...fPayment.options].some(o => o.value === prevPayment)) fPayment.value = prevPayment;
-    else fPayment.value = "";
-  }
-
-  function onHistoryShopFilterChange() {
-    // cascada: al cambiar shop, se recalculan countries/payments y se aplica filtro
-    updateHistoryFilterOptions();
-    applyFilters();
-  }
-
-  function applyFilters() {
-    const shopVal = document.getElementById('filterShop').value;
-    const countryVal = document.getElementById('filterCountry').value;
-    const paymentVal = document.getElementById('filterPayment').value;
-
-    const filtered = fullHistory.filter(h => {
-      return (shopVal === "" || h.shop === shopVal) &&
-             (countryVal === "" || h.country === countryVal) &&
-             (paymentVal === "" || h.paymentId === paymentVal);
-    });
-
-    renderHistory(filtered);
-  }
-
-  function renderHistory(data) {
-    const body = document.getElementById('historyBody');
-    body.innerHTML = "";
-
-    data.forEach(entry => {
-      const shop = (configData.shops || []).find(s => s.id === entry.shop) || { logo: 'assets/default.png' };
-      const country = (configData.countries || []).find(c => c.code === entry.country) || { name: entry.country };
-      const payment = (configData.payments || []).find(p => p.id === entry.paymentId) || { name: entry.paymentId };
-      const statusClass = entry.status === 'PASSED' ? 'bg-passed' : 'bg-failed';
-
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td class="text-center"><input type="checkbox" class="row-check" value="${entry.id}"></td>
-        <td class="small text-muted">${entry.date}</td>
-        <td><img src="${shop.logo}" class="table-logo" title="${entry.shop}"></td>
-        <td>
-          <div class="d-flex align-items-center justify-content-center">
-            <span class="fi fi-${entry.country.toLowerCase()} me-2"></span> <b>${country.name}</b>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex align-items-center justify-content-center">
-            <img src="${getPaymentIconPath(entry.paymentId)}" class="payment-icon-table">
-            <b>${payment.name}</b>
-          </div>
-        </td>
-        <td><small class="fw-bold text-muted">${entry.duration || '--'}</small></td>
-        <td>
-          <div class="d-flex align-items-center justify-content-center">
-            <span class="status-badge ${statusClass}">${entry.status}</span>
-            ${entry.status === 'FAILED' ? `<a href="/playwright-report/index.html" target="_blank" class="btn-report">VIEW REPORT</a>` : ''}
-          </div>
-        </td>
-      `;
-      body.appendChild(row);
-    });
-  }
-
-  /* ===========================
-     RUN TEST
-     =========================== */
-
-  async function runTest() {
-    const btn = document.getElementById('runBtn');
-    const out = document.getElementById('output');
-
-    const shop = document.getElementById('shop').value;
-    const country = document.getElementById('country').value;
-    const paymentId = document.getElementById('payment').value;
-    const isVisual = document.getElementById('headlessSwitch').checked;
-
-    if(!shop || !country || !paymentId) {
-      alert("⚠️ Por favor, selecciona todos los parámetros antes de continuar.");
-      return;
+      consoleAppend(`> ${label}...`, "info");
+    }
+    function consoleSpinnerStop() {
+      const cursor = document.getElementById("consoleCursor");
+      if (_consoleSpinnerTimer) clearInterval(_consoleSpinnerTimer);
+      _consoleSpinnerTimer = null;
+      if (cursor) cursor.textContent = "█";
+    }
+    function clearLog() {
+      consoleSpinnerStop();
+      consoleSet("> terminal cleared...");
     }
 
-    const visualFlag = isVisual ? '--headed' : '';
-    const cmdToDisplay = `npx playwright test --project=chromium --grep @${country} --grep @${paymentId} ${visualFlag}`.trim();
+    /* ===== Mode dropdown (bootstrap) ===== */
+    function renderModeList() {
+      const list = document.getElementById("modeList");
+      if (!list) return;
 
-    btn.disabled = true;
-    btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> EXECUTING...';
+      const items = [
+        { value: "1P", label: "INTERNAL", cls: "mode-1p" },
+        { value: "2P", label: "MIXED",    cls: "mode-2p" },
+        { value: "3P", label: "EXTERNAL", cls: "mode-3p" }
+      ];
 
-    out.innerText += `\n\n> [SYSTEM]: Iniciando secuencia de comandos...`;
-    out.innerText += `\n> [COMMAND]: ${cmdToDisplay}\n`;
-    out.scrollTop = out.scrollHeight;
+      list.innerHTML = items.map(m => `
+        <li>
+          <button class="dropdown-item d-flex align-items-center"
+                  onclick="selectMode('${m.value}', '${m.label}', '${m.cls}')">
+            <span class="mode-badge ${m.cls}">${m.value}</span>
+            <b>${m.label}</b>
+          </button>
+        </li>
+      `).join("");
+    }
 
-    try {
-      const res = await fetch('/run-test', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-          shop,
-          country,
-          paymentId,
-          headless: !isVisual
-        })
+    function selectMode(value, label, cls) {
+      document.getElementById("mode").value = value;
+      const btn = document.getElementById("modeBtn");
+      if (btn) btn.innerHTML = `<span class="mode-badge ${cls}">${value}</span><b>${label}</b>`;
+      consoleAppend(`Mode selected: ${value} (${label})`, "info");
+    }
+
+    function countrySupportsMode3(countryCode) {
+      const c = String(countryCode || "").toLowerCase();
+      return ["at","de","cz","sk","si"].includes(c);
+    }
+
+    function updateModeDropdown(countryCode) {
+      const btn = document.getElementById("modeBtn");
+      if (!btn) return;
+
+      if (countrySupportsMode3(countryCode)) {
+        btn.disabled = false;
+        const current = document.getElementById("mode").value || "1P";
+        if (current === "2P") selectMode("2P", "MIXED", "mode-2p");
+        else if (current === "3P") selectMode("3P", "EXTERNAL", "mode-3p");
+        else selectMode("1P", "INTERNAL", "mode-1p");
+      } else {
+        btn.disabled = true;
+        selectMode("1P", "INTERNAL", "mode-1p");
+      }
+    }
+
+    /* ===== Init ===== */
+    async function init() {
+      try {
+        const resConfig = await fetch('/config');
+        configData = await resConfig.json();
+
+        const resHistory = await fetch('/history');
+        fullHistory = await resHistory.json();
+
+        renderDropdowns();
+        renderModeList();
+        populateFilters();
+        renderHistory(fullHistory);
+
+        updateModeDropdown(""); // default 1P disabled until country chosen
+        consoleAppend("> System_ready...awaiting instructions", "ok");
+      } catch (e) {
+        consoleAppend("Error cargando datos: " + (e?.message || e), "err");
+      }
+    }
+
+    /* ===== Shop/Country rules (IDs from config.json) ===== */
+    function getAllowedCountriesByShop(shopId) {
+      switch (shopId) {
+        case "xxxlutz":    return ["AT","DE","CH","CZ","HU","SK","RO"];
+        case "moemax":     return ["AT","DE","HU","SI","HR","RO","PL"];
+        case "moebelix":   return ["AT","CZ","HU","SK"];
+        case "xxxlesnina": return ["HR","SI","RS"];
+        default:           return (configData?.countries || []).map(c => (c.code || "").toUpperCase());
+      }
+    }
+
+    function renderDropdowns() {
+      document.getElementById('shopList').innerHTML =
+        (configData.shops || []).map(s => `
+          <li>
+            <button class="dropdown-item d-flex align-items-center"
+              onclick="selectShop('${s.id}', '${escapeJs(s.name)}', '${escapeJs(s.logo)}')">
+              <img src="${escapeAttr(s.logo)}" style="height:18px; margin-right:10px" alt="">
+              <b>${escapeHtmlInline(s.name)}</b>
+            </button>
+          </li>
+        `).join('');
+
+      document.getElementById('countryList').innerHTML = '';
+    }
+
+    function updateCountryDropdownByShop(shopId) {
+      if (!configData) return;
+
+      const allowed = new Set(getAllowedCountriesByShop(shopId).map(x => String(x || "").toUpperCase()));
+      const filteredCountries = (configData.countries || [])
+        .filter(c => allowed.has(String(c.code || "").toUpperCase()))
+        .sort((a, b) => String(a.name || "").localeCompare(String(b.name || "")));
+
+      document.getElementById('countryList').innerHTML = filteredCountries.map(c => `
+        <li>
+          <button class="dropdown-item d-flex align-items-center"
+            onclick="selectCountry('${escapeJs(c.code)}', '${escapeJs(c.name)}')">
+            <span class="fi fi-${String(c.code).toLowerCase()} me-2"></span>
+            <b>${escapeHtmlInline(c.name)}</b>
+          </button>
+        </li>
+      `).join('');
+
+      document.getElementById('country').value = '';
+      document.getElementById('countryBtn').innerHTML = 'Select...';
+
+      document.getElementById('payment').value = '';
+      document.getElementById('paymentBtn').innerHTML = 'Select country first...';
+      document.getElementById('paymentList').innerHTML = '';
+
+      updateModeDropdown(""); // reset mode until country picked
+    }
+
+    function selectShop(id, name, logo) {
+      document.getElementById('shop').value = id;
+      document.getElementById('shopBtn').innerHTML =
+        `<img src="${escapeAttr(logo)}" style="height:20px; margin-right:10px" alt=""> <b>${escapeHtmlInline(name)}</b>`;
+      updateCountryDropdownByShop(id);
+      consoleAppend(`Shop selected: ${id}`, "info");
+    }
+
+    function selectCountry(code, name) {
+      document.getElementById('country').value = code;
+      document.getElementById('countryBtn').innerHTML =
+        `<span class="fi fi-${String(code).toLowerCase()} me-2"></span> <b>${escapeHtmlInline(name)}</b>`;
+      updatePaymentMethods(code);
+      updateModeDropdown(code);
+      consoleAppend(`Country selected: ${code}`, "info");
+    }
+
+    function getPaymentIconPath(id) {
+      return String(id).startsWith('k_') ? 'assets/klarna.png' : `assets/${id}.png`;
+    }
+
+    function selectPayment(id, name) {
+      document.getElementById('payment').value = id;
+      document.getElementById('paymentBtn').innerHTML =
+        `<div class="payment-icon-container">
+            <img src="${escapeAttr(getPaymentIconPath(id))}" class="payment-icon-ui" alt="">
+         </div><b>${escapeHtmlInline(name)}</b>`;
+      consoleAppend(`Payment selected: ${id}`, "info");
+    }
+
+    function updatePaymentMethods(countryCode) {
+      if (!configData) return;
+      const c = String(countryCode || "").toLowerCase();
+
+      const filtered = (configData.payments || []).filter(p => {
+        if (c === 'at' || c === 'de') return ['credit', 'paypal', 'k_now', 'k_later', 'k_over', 'billie'].includes(p.id);
+        if (c === 'cz' || c === 'sk') return ['credit', 'paypal', 'bank', 'delivery'].includes(p.id);
+        if (c === 'ch') return ['credit', 'paypal', 'twint', 'k_later'].includes(p.id);
+        if (c === 'se') return ['credit', 'paypal', 'k_now', 'k_later', 'k_over', 'swish'].includes(p.id);
+        if (c === 'ro') return ['credit', 'splitit', 'delivery'].includes(p.id);
+        if (c === 'rs') return ['corvus', 'delivery'].includes(p.id);
+        if (c === 'si' || c === 'hr') return ['credit', 'paypal', 'splitit', 'delivery'].includes(p.id);
+        if (c === 'hu') return ['credit'].includes(p.id);
+        return ['credit', 'paypal'].includes(p.id);
       });
 
-      const data = await res.json();
-
-      if (data.output) {
-        const cleanOutput = data.output.replace(/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g,'');
-        out.innerText += cleanOutput;
-      } else if (data.error) {
-        out.innerText += `\n❌ ERROR DEL SERVIDOR: ${data.error}`;
-      } else {
-        out.innerText += `\n⚠️ El proceso terminó sin devolver logs.`;
-      }
-
-      if (data.history) {
-        fullHistory = data.history;
-        renderHistory(fullHistory);
-        populateFilters(); // repoblar filtros y nombres
-      }
-
-    } catch (e) {
-      out.innerText += `\n❌ ERROR CRÍTICO: No se pudo conectar con el motor de automatización.`;
-      console.error("Fetch Error:", e);
-    } finally {
-      btn.disabled = false;
-      btn.innerHTML = 'EXECUTE TEST SEQUENCE 🚀';
-      out.scrollTop = out.scrollHeight;
+      document.getElementById('paymentList').innerHTML = filtered.map(p => `
+        <li>
+          <button class="dropdown-item d-flex align-items-center"
+            onclick="selectPayment('${escapeJs(p.id)}', '${escapeJs(p.name)}')">
+            <div class="payment-icon-container">
+              <img src="${escapeAttr(getPaymentIconPath(p.id))}" class="payment-icon-ui" alt="">
+            </div>
+            <b>${escapeHtmlInline(p.name)}</b>
+          </button>
+        </li>
+      `).join('');
     }
-  }
 
-  function toggleAll(source) { document.querySelectorAll('.row-check').forEach(c => c.checked = source.checked); }
-  function deleteSelected() { alert("Lógica de borrado no implementada en el server."); }
+    /* ===== History ===== */
+    function populateFilters() {
+      const shops = [...new Set(fullHistory.map(h => h.shop))];
+      const countries = [...new Set(fullHistory.map(h => h.country))];
+      const payments = [...new Set(fullHistory.map(h => h.paymentId))];
 
-  init();
-</script>
+      const fShop = document.getElementById('filterShop');
+      const fCountry = document.getElementById('filterCountry');
+      const fPayment = document.getElementById('filterPayment');
 
+      fShop.innerHTML = '<option value="">All Shops</option>';
+      fCountry.innerHTML = '<option value="">All Countries</option>';
+      fPayment.innerHTML = '<option value="">All Payments</option>';
+
+      shops.forEach(s => fShop.innerHTML += `<option value="${escapeAttr(s)}">${escapeHtmlInline(s)}</option>`);
+      countries.forEach(code => {
+        const countryObj = (configData.countries || []).find(conf => conf.code === code);
+        const countryName = countryObj ? countryObj.name : code;
+        fCountry.innerHTML += `<option value="${escapeAttr(code)}">${escapeHtmlInline(countryName)}</option>`;
+      });
+      payments.forEach(pid => {
+        const paymentObj = (configData.payments || []).find(conf => conf.id === pid);
+        const paymentName = paymentObj ? paymentObj.name : pid;
+        fPayment.innerHTML += `<option value="${escapeAttr(pid)}">${escapeHtmlInline(paymentName)}</option>`;
+      });
+    }
+
+    function applyFilters() {
+      const shopVal = document.getElementById('filterShop').value;
+      const countryVal = document.getElementById('filterCountry').value;
+      const paymentVal = document.getElementById('filterPayment').value;
+
+      const filtered = fullHistory.filter(h => {
+        return (shopVal === "" || h.shop === shopVal) &&
+               (countryVal === "" || h.country === countryVal) &&
+               (paymentVal === "" || h.paymentId === paymentVal);
+      });
+
+      const toggleAllBox = document.getElementById("toggleAllBox");
+      if (toggleAllBox) toggleAllBox.checked = false;
+
+      renderHistory(filtered);
+    }
+
+    function renderHistory(data) {
+      const body = document.getElementById('historyBody');
+      body.innerHTML = "";
+
+      data.forEach(entry => {
+        const shop = (configData.shops || []).find(s => s.id === entry.shop) || { logo: 'assets/default.png' };
+        const country = (configData.countries || []).find(c => c.code === entry.country) || { name: entry.country };
+        const payment = (configData.payments || []).find(p => p.id === entry.paymentId) || { name: entry.paymentId };
+        const statusClass = entry.status === 'PASSED' ? 'bg-passed' : 'bg-failed';
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td class="text-center"><input type="checkbox" class="row-check" value="${escapeAttr(entry.id)}"></td>
+          <td class="small text-muted">${escapeHtmlInline(entry.date)}</td>
+          <td><img src="${escapeAttr(shop.logo)}" class="table-logo" title="${escapeAttr(entry.shop)}" alt=""></td>
+          <td>
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="fi fi-${String(entry.country).toLowerCase()} me-2"></span>
+              <b>${escapeHtmlInline(country.name)}</b>
+            </div>
+          </td>
+          <td>
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="${escapeAttr(getPaymentIconPath(entry.paymentId))}" class="payment-icon-table" alt="">
+              <b>${escapeHtmlInline(payment.name)}</b>
+            </div>
+          </td>
+          <td><small class="fw-bold text-muted">${escapeHtmlInline(entry.mode || '1P')}</small></td>
+          <td><small class="fw-bold text-muted">${escapeHtmlInline(entry.duration || '--')}</small></td>
+          <td>
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="status-badge ${statusClass}">${escapeHtmlInline(entry.status)}</span>
+              ${entry.status === 'FAILED'
+                ? `<a href="/reports/index.html" target="_blank" class="btn-report">VIEW REPORT</a>`
+                : ''
+              }
+            </div>
+          </td>
+        `;
+        body.appendChild(row);
+      });
+    }
+
+    /* ===== Run / Cancel ===== */
+    async function runTest() {
+      if (isRunning) return;
+
+      const btn = document.getElementById('runBtn');
+      const cancelBtn = document.getElementById('cancelBtn');
+
+      const shop = document.getElementById('shop').value;
+      const country = document.getElementById('country').value;
+      const paymentId = document.getElementById('payment').value;
+      const isVisual = document.getElementById('headlessSwitch').checked;
+
+      const mode = document.getElementById('mode').value || "1P";
+
+      if(!shop || !country || !paymentId) {
+        alert("⚠️ Por favor, selecciona todos los parámetros antes de continuar.");
+        return;
+      }
+
+      // Spec for console display
+      const paymentSpec = (configData?.payments || []).find(p => p.id === paymentId)?.spec || "<spec>";
+
+      isRunning = true;
+      btn.disabled = true;
+      cancelBtn.disabled = false;
+      btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> EXECUTING...';
+
+      const controller = new AbortController();
+      currentAbort = controller;
+
+      const UI_TIMEOUT_MS = 65000;
+      const uiTimer = setTimeout(() => {
+        consoleAppend(`⚠️ UI timeout (${Math.round(UI_TIMEOUT_MS/1000)}s). Releasing UI...`, "warn");
+        controller.abort();
+      }, UI_TIMEOUT_MS);
+
+      const cmdToDisplay = `RAIL=${shop} COUNTRY=${country.toUpperCase()} MODE=${mode} npx playwright test ${paymentSpec} --project=chromium`;
+      consoleSpinnerStart("Starting test sequence");
+      consoleAppend("[SYSTEM] Iniciando ejecución...", "info");
+      await consoleTypeLine(`[COMMAND] ${cmdToDisplay}`, "ok", 3);
+
+      try {
+        const res = await fetch('/run-test', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          signal: controller.signal,
+          body: JSON.stringify({
+            shop,
+            country,
+            paymentId,
+            headless: !isVisual,
+            mode
+          })
+        });
+
+        const data = await res.json().catch(() => ({}));
+
+        if (!res.ok) {
+          consoleAppend("SERVER ERROR: " + (data?.error || `HTTP ${res.status}`), "err");
+          return;
+        }
+
+        if (data.output) {
+          String(data.output).split("\n").forEach(line => {
+            const t = line.trim();
+            if (!t) return;
+
+            const lvl =
+              /PASSED|passed|pass\b/i.test(t) ? "ok" :
+              /FAILED|failed|fail\b|error/i.test(t) ? "err" :
+              /warn/i.test(t) ? "warn" : "info";
+
+            consoleAppend(t, lvl);
+          });
+        } else {
+          consoleAppend("⚠️ No logs returned.", "warn");
+        }
+
+        if (data.history) {
+          fullHistory = data.history;
+          populateFilters();
+          applyFilters();
+          consoleAppend("History refreshed.", "info");
+        }
+
+      } catch (e) {
+        if (e?.name === "AbortError") {
+          consoleAppend("⛔ Client cancelled / UI released.", "warn");
+        } else {
+          consoleAppend("❌ Network/critical error: " + (e?.message || e), "err");
+        }
+      } finally {
+        clearTimeout(uiTimer);
+        consoleSpinnerStop();
+
+        isRunning = false;
+        currentAbort = null;
+
+        btn.disabled = false;
+        cancelBtn.disabled = true;
+        btn.innerHTML = 'EXECUTE TEST SEQUENCE 🚀';
+        consoleAppend("Done.", "ok");
+      }
+    }
+
+    async function cancelRun() {
+      if (currentAbort) currentAbort.abort();
+      try { await fetch("/cancel-run", { method: "POST" }); } catch {}
+      consoleAppend("⛔ Cancel requested (server kill).", "warn");
+    }
+
+    /* ===== Delete Selected ===== */
+    function toggleAll(source) { document.querySelectorAll('.row-check').forEach(c => c.checked = source.checked); }
+
+    async function deleteSelected() {
+      const ids = [...document.querySelectorAll('.row-check:checked')].map(c => c.value);
+      if (ids.length === 0) { alert("No rows selected."); return; }
+      if (!confirm(`Delete ${ids.length} selected run(s)?`)) return;
+
+      try {
+        const res = await fetch('/delete-history', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ ids })
+        });
+        const data = await res.json();
+        if (!res.ok) { alert(data?.error || "Delete failed"); return; }
+        fullHistory = data.history || [];
+        populateFilters();
+        applyFilters();
+        consoleAppend(`Deleted ${ids.length} run(s) from history.`, "warn");
+      } catch (e) {
+        alert("Delete failed (network error).");
+      }
+    }
+
+    /* ===== Escaping helpers ===== */
+    function escapeHtmlInline(str) {
+      return String(str ?? "")
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#39;");
+    }
+    function escapeAttr(str) { return escapeHtmlInline(str); }
+    function escapeJs(str) {
+      return String(str ?? "")
+        .replaceAll("\\","\\\\")
+        .replaceAll("'","\\'")
+        .replaceAll("\n"," ")
+        .replaceAll("\r"," ");
+    }
+
+    init();
+  </script>
 </body>
 </html>

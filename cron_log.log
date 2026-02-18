@@ -2088,3 +2088,883 @@ Running 1 test using 1 worker
 [1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P)
 Params: Country: DE, Rail: XXXLUTZ, Mode: 2P
 
+
+🚀 BATCH START | 12 Tests in queue...
+
+[1/12] >>> Executing: DE - PP (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+Params: Country: DE, Rail: MOEMAX, Mode: 1P, Pay: PayPal
+
+[1A[2K✅ PayPal Login completed
+
+[1A[2K  1 passed (53.4s)
+✅ Result: PASSED
+
+[2/12] >>> Executing: AT - CC (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+Params: Country: AT, Rail: MOEMAX, Mode: 1P, Pay: Credit card
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P) ──────────────
+
+    Error: locator.waitFor: Error: strict mode violation: locator('[data-purpose="modal.body"]').locator('button') resolved to 5 elements:
+        1) <button title="" type="button" data-purpose="cookieBar.button.accept" class="_RKGxPSNkkhFdPoOb _CFJQZFib6j__S2ha _oSi4WMES6MkfHPZa _ZUlkHi02mJ9vK0_d _VJVwF2EW9ujsPrZk">…</button> aka getByRole('button', { name: 'Alle Cookies akzeptieren' })
+        2) <button title="" type="button" class="_RKGxPSNkkhFdPoOb _CFJQZFib6j__S2ha _oSi4WMES6MkfHPZa _ZUlkHi02mJ9vK0_d _VJVwF2EW9ujsPrZk">…</button> aka getByRole('button', { name: 'Weiter ohne Einwilligung' })
+        3) <button href="" type="button" class="_gabOlFmyxjGgXIub _DAKhbCQvTytuk_cm _Z7HwqFkwXzBisYOf _i9jylX3wlLMtqSr9 _VXmgzJaGIK7mBRxY">…</button> aka getByRole('button', { name: 'Cookie Einstellungen' })
+        4) <button type="button" href="/c/privacy" class="_gabOlFmyxjGgXIub _DAKhbCQvTytuk_cm _Z7HwqFkwXzBisYOf _i9jylX3wlLMtqSr9 _VXmgzJaGIK7mBRxY">…</button> aka getByRole('button', { name: 'Datenschutzerklärung' })
+        5) <button type="button" href="/c/impressum" class="_gabOlFmyxjGgXIub _DAKhbCQvTytuk_cm _Z7HwqFkwXzBisYOf _i9jylX3wlLMtqSr9 _VXmgzJaGIK7mBRxY">…</button> aka getByRole('button', { name: 'Impressum' })
+
+    Call log:
+    [2m  - waiting for locator('[data-purpose="modal.body"]').locator('button') to be visible[22m
+
+
+       at ../utils/AcceptCookies.js:20
+
+      18 |     if (await modal.isVisible()) {
+      19 |       const button = modal.locator('button');
+    > 20 |       await button.waitFor({ state: 'visible' });
+         |                    ^
+      21 |       await button.click();
+      22 |     }
+      23 |    
+        at AcceptCookies (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/AcceptCookies.js:20:20)
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:12:5)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:37:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P) ───────────────
+❌ Result: FAILED (Continuing...)
+
+[3/12] >>> Executing: AT - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: Credit card
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P) ─────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="cart.button.login.modal.bottom"]')[22m
+
+
+       at ../utils/DeliveryOption.js:4
+
+      2 |
+      3 | async function AddtoCart(page, datosvar, datosrail) {
+    > 4 |     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        |                                                                           ^
+      5 |     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+      6 |     await fillDeliveryForm(page, datosvar, datosrail);
+      7 |      
+        at AddtoCart (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:4:75)
+        at DeliveryOption (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:51:16)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:39:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--AT-xxxlutz---Payment-CC-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[4/12] >>> Executing: DE - PP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 1P, Pay: PayPal
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P) ─────────────
+
+    Error: locator.waitFor: Error: strict mode violation: locator('[data-purpose="modal.body"]').locator('button') resolved to 5 elements:
+        1) <button title="" type="button" data-purpose="cookieBar.button.accept" class="_folLoNiclPJxs5Zr _bAFTfGEQIEdc3Eef _Y5qexhqQy7AVNJPT _X85v_fyKknVjby55 _zElFoOJ1f7NHzakT">…</button> aka getByRole('button', { name: 'Alle Cookies akzeptieren' })
+        2) <button href="#" type="button" class="_hFcMxBf8ze99u9om _vxF9oihIa1dUG0OW _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Weiter ohne Einwilligung' })
+        3) <button href="" type="button" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Cookie Einstellungen' })
+        4) <button type="button" href="/c/privacy" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Datenschutzerklärung' })
+        5) <button type="button" href="/c/impressum" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Impressum' })
+
+    Call log:
+    [2m  - waiting for locator('[data-purpose="modal.body"]').locator('button') to be visible[22m
+
+
+       at ../utils/AcceptCookies.js:20
+
+      18 |     if (await modal.isVisible()) {
+      19 |       const button = modal.locator('button');
+    > 20 |       await button.waitFor({ state: 'visible' });
+         |                    ^
+      21 |       await button.click();
+      22 |     }
+      23 |    
+        at AcceptCookies (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/AcceptCookies.js:20:20)
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:12:5)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-PayPal.spec.js:37:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-PayPal--DE-xxxlutz---Payment-PP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[5/12] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: KL
+
+[1A[2Kℹ️ Delivery option searching Self Service
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ───────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]')[22m
+
+
+       at ../utils/fillKlarna.js:26
+
+      24 |
+      25 |     } else if (pay === 'KL') {
+    > 26 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]').click();
+         |                                                                                         ^
+      27 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount.submit"]').click(); 
+      28 |
+      29 |         if (datosrail.Country === "AT") {
+        at fillKlarna (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/fillKlarna.js:26:89)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:81:15
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ────────────
+❌ Result: FAILED (Continuing...)
+
+[6/12] >>> Executing: AT - BI (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P)
+[1A[2K  1 passed (54.7s)
+✅ Result: PASSED
+
+[7/12] >>> Executing: SI - DEL (xxxlesnina)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P)
+Params: Country: SI, Rail: XXXLESNINA, Mode: 1P, Pay: DEL
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P) ───────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="login.modal.button.submit.guest"]')[22m
+
+
+       at ../utils/DeliveryOption.js:5
+
+      3 | async function AddtoCart(page, datosvar, datosrail) {
+      4 |     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+    > 5 |     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+        |                                                                            ^
+      6 |     await fillDeliveryForm(page, datosvar, datosrail);
+      7 |      
+      8 | }    
+        at AddtoCart (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:5:76)
+        at DeliveryOption (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:51:10)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:60:9
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P) ────────
+❌ Result: FAILED (Continuing...)
+
+[8/12] >>> Executing: CZ - DEL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P)
+Params: Country: CZ, Rail: XXXLUTZ, Mode: 1P, Pay: DEL
+
+[1A[2Kℹ️ Delivery option searching Self Service
+
+[1A[2K⚠️ SELF_SERVICE not found. Selecting first option if possible...
+
+[1A[2Kℹ️ Delivery option combo not available. Continuing to login modal...
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P) ──────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="login.modal.button.submit.guest"]')[22m
+
+
+       at ../utils/DeliveryOption.js:5
+
+      3 | async function AddtoCart(page, datosvar, datosrail) {
+      4 |     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+    > 5 |     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+        |                                                                            ^
+      6 |     await fillDeliveryForm(page, datosvar, datosrail);
+      7 |      
+      8 | }    
+        at AddtoCart (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:5:76)
+        at DeliveryOption (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:48:13)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:60:9
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P) ───────────
+❌ Result: FAILED (Continuing...)
+
+[9/12] >>> Executing: DE - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 2P, Pay: Credit card
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P) ─────────────
+
+    Error: locator.waitFor: Error: strict mode violation: locator('[data-purpose="modal.body"]').locator('button') resolved to 5 elements:
+        1) <button title="" type="button" data-purpose="cookieBar.button.accept" class="_folLoNiclPJxs5Zr _bAFTfGEQIEdc3Eef _Y5qexhqQy7AVNJPT _X85v_fyKknVjby55 _zElFoOJ1f7NHzakT">…</button> aka getByRole('button', { name: 'Alle Cookies akzeptieren' })
+        2) <button href="#" type="button" class="_hFcMxBf8ze99u9om _vxF9oihIa1dUG0OW _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Weiter ohne Einwilligung' })
+        3) <button href="" type="button" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Cookie Einstellungen' })
+        4) <button type="button" href="/c/privacy" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Datenschutzerklärung' })
+        5) <button type="button" href="/c/impressum" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Impressum' })
+
+    Call log:
+    [2m  - waiting for locator('[data-purpose="modal.body"]').locator('button') to be visible[22m
+
+
+       at ../utils/AcceptCookies.js:20
+
+      18 |     if (await modal.isVisible()) {
+      19 |       const button = modal.locator('button');
+    > 20 |       await button.waitFor({ state: 'visible' });
+         |                    ^
+      21 |       await button.click();
+      22 |     }
+      23 |    
+        at AcceptCookies (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/AcceptCookies.js:20:20)
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:12:5)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:37:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P) ──────────────
+❌ Result: FAILED (Continuing...)
+
+[10/12] >>> Executing: CH - TW (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CH] xxxlutz - Payment: TW (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CH] xxxlutz - Payment: TW (1P)
+Params: Country: CH, Rail: XXXLUTZ, Mode: 1P, Pay: TW
+
+[1A[2K  1 passed (22.7s)
+✅ Result: PASSED
+
+[11/12] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 2P, Pay: KL
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P) ───────────
+
+    Error: locator.waitFor: Error: strict mode violation: locator('[data-purpose="modal.body"]').locator('button') resolved to 5 elements:
+        1) <button title="" type="button" data-purpose="cookieBar.button.accept" class="_folLoNiclPJxs5Zr _bAFTfGEQIEdc3Eef _Y5qexhqQy7AVNJPT _X85v_fyKknVjby55 _zElFoOJ1f7NHzakT">…</button> aka getByRole('button', { name: 'Alle Cookies akzeptieren' })
+        2) <button title="" type="button" class="_folLoNiclPJxs5Zr _bAFTfGEQIEdc3Eef _Y5qexhqQy7AVNJPT _X85v_fyKknVjby55 _zElFoOJ1f7NHzakT">…</button> aka getByRole('button', { name: 'Weiter ohne Einwilligung' })
+        3) <button href="" type="button" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Cookie Einstellungen' })
+        4) <button type="button" href="/c/privacy" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Datenschutzerklärung' })
+        5) <button type="button" href="/c/impressum" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Impressum' })
+
+    Call log:
+    [2m  - waiting for locator('[data-purpose="modal.body"]').locator('button') to be visible[22m
+
+
+       at ../utils/AcceptCookies.js:20
+
+      18 |     if (await modal.isVisible()) {
+      19 |       const button = modal.locator('button');
+    > 20 |       await button.waitFor({ state: 'visible' });
+         |                    ^
+      21 |       await button.click();
+      22 |     }
+      23 |    
+        at AcceptCookies (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/AcceptCookies.js:20:20)
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:12:5)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:42:5
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-2P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (2P) ────────────
+❌ Result: FAILED (Continuing...)
+
+[12/12] >>> Executing: HU - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HU] xxxlutz - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HU] xxxlutz - Payment: CC (1P)
+Params: Country: HU, Rail: XXXLUTZ, Mode: 1P, Pay: Credit card
+
+[1A[2K  1 passed (27.6s)
+✅ Result: PASSED
+
+✨ DASHBOARD UPDATED: 17/02/2026
+⏳ Processing Allure history & trends...
+   -> History files copied.
+⏳ Generating Final Report...
+Report successfully generated to /home/robe/WKSPC_2/FE-Deployment-Regression/allure-report
+✅ Allure Report generated with history.
+
+🚀 BATCH START | 12 Tests in queue...
+📌 Project root: /home/robe/WKSPC_2/FE-Deployment-Regression
+📌 RESULTS_DIR : /home/robe/WKSPC_2/FE-Deployment-Regression/allure-results
+📌 REPORT_DIR  : /home/robe/WKSPC_2/FE-Deployment-Regression/allure-report
+🧹 Pruned allure-results older than 14 days. Removed files: 0
+
+[1/12] >>> Executing: DE - PP (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P)
+Params: Country: DE, Rail: MOEMAX, Mode: 1P, Pay: PayPal
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P) ──────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:30
+
+      28 |         } else {
+      29 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 30 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      31 |         }    
+      32 |     }
+      33 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:30:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-PayPal.spec.js:37:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-PayPal--DE-moemax---Payment-PP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] moemax - Payment: PP (1P) ───────────────
+❌ Result: FAILED (Continuing...)
+   -> Exit 1
+
+[2/12] >>> Executing: AT - CC (moemax)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P)
+Params: Country: AT, Rail: MOEMAX, Mode: 1P, Pay: Credit card
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P) ──────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.addtocart"]')[22m
+
+
+       at ../utils/OpenPage.js:30
+
+      28 |         } else {
+      29 |             await page.goto(`https://${rail}-${cod_country}.qa.xxxl-dev.at/api/${cod_country}/testing/products/mailableselfservice`);                
+    > 30 |             await page.locator('[data-purpose="checkout.addtocart"]').click();
+         |                                                                       ^
+      31 |         }    
+      32 |     }
+      33 |     await page.locator('[data-purpose="sidebar.button.submit"]').click(); 
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:30:71)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:37:5
+
+    Error: browserContext._wrapApiCall: ENOENT: no such file or directory, open '/home/robe/WKSPC_2/FE-Deployment-Regression/test-results/.playwright-artifacts-0/traces/57728737c9ff8479f616-08fb75a3a222da6f388e.trace'
+
+    Error: ENOENT: no such file or directory, open '/home/robe/WKSPC_2/FE-Deployment-Regression/test-results/.playwright-artifacts-0/2ef481d4628b1d47bd753952450625ca.zip'
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--AT-moemax---Payment-CC-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] moemax - Payment: CC (1P) ───────────────
+❌ Result: FAILED (Continuing...)
+   -> Exit 1
+
+[3/12] >>> Executing: AT - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [AT] xxxlutz - Payment: CC (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: Credit card
+
+[1A[2K  1 passed (31.8s)
+✅ Result: PASSED
+
+[4/12] >>> Executing: DE - PP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-PayPal.spec.js:11:1 › [DE] xxxlutz - Payment: PP (1P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 1P, Pay: PayPal
+
+[1A[2Kℹ️ Delivery option searching Self Service
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K✅ PayPal Login completed
+
+[1A[2K  1 passed (45.3s)
+✅ Result: PASSED
+
+[5/12] >>> Executing: AT - KL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: KL
+
+[1A[2Kℹ️ Delivery option searching Self Service
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ───────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]')[22m
+
+
+       at ../utils/fillKlarna.js:26
+
+      24 |
+      25 |     } else if (pay === 'KL') {
+    > 26 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount"]').click();
+         |                                                                                         ^
+      27 |         await page.locator('[data-purpose="checkout.paymentOptions.klarna_onaccount.submit"]').click(); 
+      28 |
+      29 |         if (datosrail.Country === "AT") {
+        at fillKlarna (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/fillKlarna.js:26:89)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:81:15
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--AT-xxxlutz---Payment-KL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KL (1P) ────────────
+❌ Result: FAILED (Continuing...)
+   -> Exit 1
+
+[6/12] >>> Executing: AT - BI (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Billie.spec.js:11:1 › [AT] xxxlutz - Payment: BI (1P)
+[1A[2K  1 passed (52.3s)
+✅ Result: PASSED
+
+[7/12] >>> Executing: SI - DEL (xxxlesnina)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P)
+Params: Country: SI, Rail: XXXLESNINA, Mode: 1P, Pay: DEL
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P) ───────
+
+    Error: locator.waitFor: Error: strict mode violation: locator('[data-purpose="modal.body"]').locator('button') resolved to 5 elements:
+        1) <button title="" type="button" data-purpose="cookieBar.button.accept" class="_folLoNiclPJxs5Zr _bAFTfGEQIEdc3Eef _Y5qexhqQy7AVNJPT _X85v_fyKknVjby55 _zElFoOJ1f7NHzakT">…</button> aka getByRole('button', { name: 'Sprejmi vse' })
+        2) <button title="" type="button" class="_folLoNiclPJxs5Zr _bAFTfGEQIEdc3Eef _Y5qexhqQy7AVNJPT _X85v_fyKknVjby55 _zElFoOJ1f7NHzakT">…</button> aka getByRole('button', { name: 'Nadaljuj brez soglasja' })
+        3) <button href="" type="button" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Nastavitve piškotkov' })
+        4) <button type="button" href="/c/agb" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Politika zasebnosti' })
+        5) <button type="button" href="/c/o-nas" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'O nas' })
+
+    Call log:
+    [2m  - waiting for locator('[data-purpose="modal.body"]').locator('button') to be visible[22m
+
+
+       at ../utils/AcceptCookies.js:20
+
+      18 |     if (await modal.isVisible()) {
+      19 |       const button = modal.locator('button');
+    > 20 |       await button.waitFor({ state: 'visible' });
+         |                    ^
+      21 |       await button.click();
+      22 |     }
+      23 |    
+        at AcceptCookies (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/AcceptCookies.js:20:20)
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:12:5)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:42:5
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--SI-xxxlesnina---Payment-DEL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [SI] xxxlesnina - Payment: DEL (1P) ────────
+❌ Result: FAILED (Continuing...)
+   -> Exit 1
+
+[8/12] >>> Executing: CZ - DEL (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P)
+Params: Country: CZ, Rail: XXXLUTZ, Mode: 1P, Pay: DEL
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P) ──────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-purpose="cart.button.login.modal.bottom"]')[22m
+
+
+       at ../utils/DeliveryOption.js:4
+
+      2 |
+      3 | async function AddtoCart(page, datosvar, datosrail) {
+    > 4 |     await page.locator('[data-purpose="cart.button.login.modal.bottom"]').click();
+        |                                                                           ^
+      5 |     await page.locator('[data-purpose="login.modal.button.submit.guest"]').click();
+      6 |     await fillDeliveryForm(page, datosvar, datosrail);
+      7 |      
+        at AddtoCart (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:4:75)
+        at DeliveryOption (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/DeliveryOption.js:51:16)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Payments.spec.js:60:9
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Payments--CZ-xxxlutz---Payment-DEL-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [CZ] xxxlutz - Payment: DEL (1P) ───────────
+❌ Result: FAILED (Continuing...)
+   -> Exit 1
+
+[9/12] >>> Executing: RO - SP (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-SplitIT.spec.js:11:1 › [RO] xxxlutz - Payment: SP (1P)
+[1A[2K  1) [chromium] › tests/E2E-Lutz-SplitIT.spec.js:11:1 › [RO] xxxlutz - Payment: SP (1P) ────────────
+
+    TimeoutError: locator.check: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[data-purpose="checkout.paymentMode.radiobutton."]').first()[22m
+
+
+      47 |     // await page.locator('[data-purpose="checkout.paymentOptions."]').click();   
+      48 |     const splititRadio = page.locator('input[data-purpose="checkout.paymentMode.radiobutton."]').first();
+    > 49 |     await splititRadio.check({ force: true });
+         |                        ^
+      50 |     await page.locator('[data-purpose="checkout.paymentOptions.default.submit"]').first().click(); 
+      51 |
+      52 |     if (["AT", "SI"].includes(cod_country)){
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-SplitIT.spec.js:49:24
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-SplitIT--RO-xxxlutz---Payment-SP-1P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-SplitIT.spec.js:11:1 › [RO] xxxlutz - Payment: SP (1P) ─────────────
+❌ Result: FAILED (Continuing...)
+   -> Exit 1
+
+[10/12] >>> Executing: HU - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HU] xxxlutz - Payment: CC (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [HU] xxxlutz - Payment: CC (1P)
+Params: Country: HU, Rail: XXXLUTZ, Mode: 1P, Pay: Credit card
+
+[1A[2K  1 passed (28.7s)
+✅ Result: PASSED
+
+[11/12] >>> Executing: DE - CC (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P)
+[1A[2K[chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P)
+Params: Country: DE, Rail: XXXLUTZ, Mode: 2P, Pay: Credit card
+
+[1A[2K  1) [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P) ─────────────
+
+    Error: locator.waitFor: Error: strict mode violation: locator('[data-purpose="modal.body"]').locator('button') resolved to 5 elements:
+        1) <button title="" type="button" data-purpose="cookieBar.button.accept" class="_folLoNiclPJxs5Zr _bAFTfGEQIEdc3Eef _Y5qexhqQy7AVNJPT _X85v_fyKknVjby55 _zElFoOJ1f7NHzakT">…</button> aka getByRole('button', { name: 'Alle Cookies akzeptieren' })
+        2) <button href="#" type="button" class="_hFcMxBf8ze99u9om _vxF9oihIa1dUG0OW _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Weiter ohne Einwilligung' })
+        3) <button href="" type="button" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Cookie Einstellungen' })
+        4) <button type="button" href="/c/privacy" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Datenschutzerklärung' })
+        5) <button type="button" href="/c/impressum" class="_hFcMxBf8ze99u9om _JOrDVd9mdAp5xFk5 _hYbfPIwrgmAdieFd _vsGJCuFa1Kf4hGoo _k024Lm16L06KuVPm">…</button> aka getByRole('button', { name: 'Impressum' })
+
+    Call log:
+    [2m  - waiting for locator('[data-purpose="modal.body"]').locator('button') to be visible[22m
+
+
+       at ../utils/AcceptCookies.js:20
+
+      18 |     if (await modal.isVisible()) {
+      19 |       const button = modal.locator('button');
+    > 20 |       await button.waitFor({ state: 'visible' });
+         |                    ^
+      21 |       await button.click();
+      22 |     }
+      23 |    
+        at AcceptCookies (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/AcceptCookies.js:20:20)
+        at OpenPage (/home/robe/WKSPC_2/FE-Deployment-Regression/utils/OpenPage.js:12:5)
+        at /home/robe/WKSPC_2/FE-Deployment-Regression/tests/E2E-Lutz-Credit.spec.js:37:5
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/error-context.md
+
+    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/E2E-Lutz-Credit--DE-xxxlutz---Payment-CC-2P--chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/E2E-Lutz-Credit.spec.js:12:1 › [DE] xxxlutz - Payment: CC (2P) ──────────────
+❌ Result: FAILED (Continuing...)
+   -> Exit 1
+
+[12/12] >>> Executing: AT - KN (xxxlutz)
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KN (1P)
+[1A[2K[chromium] › tests/E2E-Lutz-Payments.spec.js:13:1 › [AT] xxxlutz - Payment: KN (1P)
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: KN
+
+[1A[2Kℹ️ Delivery option searching Self Service
+
+[1A[2K✅ Self Service (Click & Collect) found. Selecting...
+
+[1A[2Kℹ Payment plan checkbox not visible
+
+[1A[2K  1 passed (1.2m)
+✅ Result: PASSED
+
+✨ DASHBOARD UPDATED: 18/02/2026
+
+⏳ Processing Allure history & trends...
+📦 allure-results files: 252 (has result/container json=true)
+   -> History files copied.
+⏳ Generating Final Report...
+   -> "/home/robe/WKSPC_2/FE-Deployment-Regression/node_modules/.bin/allure" generate "/home/robe/WKSPC_2/FE-Deployment-Regression/allure-results" --clean -o "/home/robe/WKSPC_2/FE-Deployment-Regression/allure-report"
+Report successfully generated to /home/robe/WKSPC_2/FE-Deployment-Regression/allure-report
+✅ Allure Report generated with history.
+📊 Summary: total=21 passed=11 failed=10
