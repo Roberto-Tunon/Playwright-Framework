@@ -1,0 +1,960 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "10€ Gutschein bei Newsletteranmeldung" [ref=e9] [cursor=pointer]:
+              - /url: /c/newsletter
+              - generic [ref=e10] [cursor=pointer]: 10€ Gutschein bei Newsletteranmeldung
+            - link "PayPal 0%-Finanzierung¹" [ref=e11] [cursor=pointer]:
+              - /url: /c/paypal-ratenkauf
+              - generic [ref=e12] [cursor=pointer]: PayPal 0%-Finanzierung¹
+          - generic [ref=e14]:
+            - link "58 Filialen in Ihrer Nähe" [ref=e15] [cursor=pointer]:
+              - /url: /filialen-standorte
+              - generic [ref=e16] [cursor=pointer]: 58 Filialen in Ihrer Nähe
+            - link "Prospekte" [ref=e17] [cursor=pointer]:
+              - /url: /c/unsere-prospekte
+              - generic [ref=e18] [cursor=pointer]: Prospekte
+            - link "Hilfe & Kontakt" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Hilfe & Kontakt
+            - switch "Hoher Kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menü
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Suchen" [ref=e43] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e44]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+          - generic [ref=e45]:
+            - button "Anmelden" [ref=e47] [cursor=pointer]:
+              - generic [ref=e48] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e50] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e51] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 0 Produkte" [ref=e53] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e54] [cursor=pointer]: Warenkorb
+          - navigation [ref=e55]:
+            - list [ref=e56]:
+              - listitem [ref=e57]:
+                - link "Möbel" [ref=e58] [cursor=pointer]:
+                  - /url: /c/moebel
+              - listitem [ref=e59]:
+                - link "Garten" [ref=e60] [cursor=pointer]:
+                  - /url: /c/garten
+              - listitem [ref=e61]:
+                - link "Küchen" [ref=e62] [cursor=pointer]:
+                  - /url: /c/kuechenwelt
+              - listitem [ref=e63]:
+                - link "Deko & Textil" [ref=e64] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+              - listitem [ref=e65]:
+                - link "Haushalt" [ref=e66] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+              - listitem [ref=e67]:
+                - link "Lampen" [ref=e68] [cursor=pointer]:
+                  - /url: /lampen-leuchten-C84
+              - listitem [ref=e69]:
+                - link "Kinder & Baby" [ref=e70] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e71]:
+                - link "Angebote" [ref=e72] [cursor=pointer]:
+                  - /url: /c/moebel-angebote
+              - listitem [ref=e73]:
+                - link "Inspiration" [ref=e74] [cursor=pointer]:
+                  - /url: /c/wohnideen
+              - listitem [ref=e75]:
+                - link "Ostermarkt" [ref=e76] [cursor=pointer]:
+                  - /url: /c/oster-fruehlingsmarkt
+              - listitem [ref=e77]:
+                - link "Restaurant" [ref=e78] [cursor=pointer]:
+                  - /url: /c/restaurant
+              - listitem [ref=e79]:
+                - link "Newsletter" [ref=e80] [cursor=pointer]:
+                  - /url: /c/newsletter
+      - main [ref=e81]:
+        - status [ref=e82]:
+          - generic [ref=e83]: Mein Möbelhaus - Mein Online Shop ✓ - XXXLutz.de
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - link "Die nächste Liste überspringen" [ref=e86] [cursor=pointer]:
+              - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJ3eHNfeHh4bHV0el9kZV9mcm9udHBhZ2VfYmlsbGJvYXJkcyIsImNhdGFsb2dJZCI6Inh4eGx1dHouZGUtY29udGVudCIsImNhdGFsb2dWZXJzaW9uIjoiT25saW5lIn0"
+              - text: Abschnitt überspringen
+            - group [ref=e88] [cursor=pointer]:
+              - generic [ref=e92] [cursor=pointer]:
+                - link "Prospekte ansehen" [ref=e93] [cursor=pointer]:
+                  - /url: /c/unsere-prospekte
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img "XXXLutz Deutschland Nr. 1 beim Preis"
+                    - generic:
+                      - heading "Highlights aus unserer Werbung" [level=2]:
+                        - generic:
+                          - text: Highlights aus
+                          - text: unserer Werbung
+                      - link "Prospekte ansehen" [ref=e94] [cursor=pointer]:
+                        - /url: /c/unsere-prospekte
+                        - generic [ref=e95] [cursor=pointer]: Prospekte ansehen
+          - list [ref=e97]:
+            - listitem [ref=e98]:
+              - link "Garten" [ref=e99] [cursor=pointer]:
+                - /url: /#garten
+                - generic [ref=e103] [cursor=pointer]: Garten
+            - listitem [ref=e104]:
+              - link "Kategorien" [ref=e105] [cursor=pointer]:
+                - /url: /#kategorien-raum
+                - generic [ref=e108] [cursor=pointer]: Kategorien
+            - listitem [ref=e109]:
+              - link "Aktionen" [ref=e110] [cursor=pointer]:
+                - /url: /#gutscheine-aktionen
+                - generic [ref=e113] [cursor=pointer]: Aktionen
+            - listitem [ref=e114]:
+              - link "Trends" [ref=e115] [cursor=pointer]:
+                - /url: /#inspirationen-trends
+                - generic [ref=e118] [cursor=pointer]: Trends
+            - listitem [ref=e119]:
+              - link "Filiale" [ref=e120] [cursor=pointer]:
+                - /url: /#filiale
+                - generic [ref=e123] [cursor=pointer]: Filiale
+          - generic [ref=e124]:
+            - heading "Exklusive Angebote für Sie" [level=2] [ref=e125]
+            - link "XXXLutz Deutschland Nr. 1 beim Preis - 35% + 19% MwSt. geschenkt, auf viele Artikel in Ihrer Filiale und in allen Abteilungen exklusiv für Freundschaftskarteninhaberinnen und -inhaber" [ref=e129] [cursor=pointer]:
+              - /url: /c/moebel-angebote
+              - img "XXXLutz Deutschland Nr. 1 beim Preis - 35% + 19% MwSt. geschenkt, auf viele Artikel in Ihrer Filiale und in allen Abteilungen exklusiv für Freundschaftskarteninhaberinnen und -inhaber" [ref=e130] [cursor=pointer]
+          - generic [ref=e131]:
+            - 'heading "Wohn(t)räume: Möbel für jeden Raum" [level=2] [ref=e132]': "Wohn(t)räume: Möbel für jeden Raum"
+            - 'link "Die nächste Liste mit dem Titel <br />Wohn(t)räume: Möbel für jeden Raum überspringen" [ref=e133] [cursor=pointer]':
+              - /url: "#skip-section-Liste-clone_cmsitem_00201904_00008130_00010849_00010794_00016760"
+              - text: Abschnitt überspringen
+            - generic [ref=e134]:
+              - generic [ref=e136]:
+                - link "Garten" [ref=e140] [cursor=pointer]:
+                  - /url: /c/garten
+                  - generic [ref=e141] [cursor=pointer]: Garten
+                - link "Wohnzimmer" [ref=e146] [cursor=pointer]:
+                  - /url: /wohnzimmer-C1
+                  - generic [ref=e147] [cursor=pointer]: Wohnzimmer
+              - generic [ref=e150]:
+                - link "Schlafzimmer" [ref=e154] [cursor=pointer]:
+                  - /url: /schlafzimmer-C3
+                  - generic [ref=e155] [cursor=pointer]: Schlafzimmer
+                - link "Esszimmer" [ref=e160] [cursor=pointer]:
+                  - /url: /esszimmer-C12
+                  - generic [ref=e161] [cursor=pointer]: Esszimmer
+              - generic [ref=e164]:
+                - link "Badezimmer" [ref=e168] [cursor=pointer]:
+                  - /url: /badezimmer-C4
+                  - generic [ref=e169] [cursor=pointer]: Badezimmer
+                - generic [ref=e173]:
+                  - link "Küchen" [ref=e174] [cursor=pointer]:
+                    - /url: /kuechen-C41
+                    - generic [ref=e175] [cursor=pointer]: Küchen
+                  - img "Küchen Herbst 2023" [ref=e177]
+          - generic [ref=e178]:
+            - heading "Kategorien im Rampenlicht" [level=2] [ref=e179]
+            - link "Die nächste Liste mit dem Titel Kategorien im Rampenlicht überspringen" [ref=e180] [cursor=pointer]:
+              - /url: "#skip-section-Liste-clone_cmsitem_00201904_00008130_00010849_00010794_00010796_00016762"
+              - text: Abschnitt überspringen
+            - generic [ref=e181]:
+              - generic [ref=e183]:
+                - generic [ref=e186]:
+                  - link "Gartenzubehör" [ref=e187] [cursor=pointer]:
+                    - /url: /gartenzubehoer-C38
+                    - generic [ref=e188] [cursor=pointer]: Gartenzubehör
+                  - img "Hochbeet mit Karotten, Gemüse und Gartenkräutern" [ref=e190]
+                - link "Haushalt" [ref=e194] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+                  - generic [ref=e195] [cursor=pointer]: Haushalt
+              - generic [ref=e198]:
+                - link "Wohnaccessoires" [ref=e202] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+                  - generic [ref=e203] [cursor=pointer]: Wohnaccessoires
+                - link "Baby" [ref=e208] [cursor=pointer]:
+                  - /url: /c/baby
+                  - generic [ref=e209] [cursor=pointer]: Baby
+              - generic [ref=e212]:
+                - generic [ref=e215]:
+                  - link "Teppiche & Böden" [ref=e216] [cursor=pointer]:
+                    - /url: /teppiche-boeden-C11
+                    - generic [ref=e217] [cursor=pointer]: Teppiche & Böden
+                  - img "Teppich Beige" [ref=e219]
+                - generic [ref=e222]:
+                  - link "Alle Produkte" [ref=e223] [cursor=pointer]:
+                    - /url: /kategorien/root#kategorien
+                    - generic [ref=e224] [cursor=pointer]: Alle Produkte
+                  - img "Alle Kategorien" [ref=e226]
+          - generic [ref=e227]:
+            - heading "Hallo Frühling! Alles fürs Outdoor-Paradies ☀️" [level=2] [ref=e228]: Hallo Frühling! Alles fürs Outdoor-Paradies ☀️
+            - generic [ref=e229]:
+              - generic [ref=e231]:
+                - img "Gemütliche Outdoor-Lounge mit grauen Polstern, Holztisch, Kissen und Palmen auf einem sonnigen Balkon" [ref=e232]
+                - list:
+                  - listitem [ref=e233]:
+                    - button "WASSERGLAS Single Cornflower 390 ml 2-teilig" [ref=e234] [cursor=pointer]
+                  - listitem [ref=e235]:
+                    - button "OUTDOOR-KISSEN Blätter" [ref=e236] [cursor=pointer]
+                  - listitem [ref=e237]:
+                    - button "LOUNGEGARNITUR 253/253 cm Akazie massiv Aluminium" [ref=e238] [cursor=pointer]
+                  - listitem [ref=e239]:
+                    - button "STRANDTUCH Gelb 90/180 cm" [ref=e240] [cursor=pointer]
+                  - listitem [ref=e241]:
+                    - button "KUNSTPFLANZE Palme" [ref=e242] [cursor=pointer]
+                - button "Ausblenden" [ref=e243] [cursor=pointer]:
+                  - generic [ref=e244] [cursor=pointer]: Ausblenden
+              - generic [ref=e246]:
+                - generic [ref=e249]:
+                  - link "Garten" [ref=e250] [cursor=pointer]:
+                    - /url: /c/garten#kategorien
+                    - generic [ref=e251] [cursor=pointer]: Garten
+                  - list
+                  - img "Gemütliche Outdoor-Sitzgruppe aus Holz mit hellen Polstern, Couchtisch und Pflanzen in modernem Terrassenbereich" [ref=e253]
+                - generic [ref=e256]:
+                  - link "Gartenzubehör" [ref=e257] [cursor=pointer]:
+                    - /url: /gartenzubehoer-C38
+                    - generic [ref=e258] [cursor=pointer]: Gartenzubehör
+                  - list
+                  - img "Holz-Hochbeet mit frischem Salat und Gemüse auf Rasen vor einer Terrasse" [ref=e260]
+          - 'heading "Besonders beliebt: Produkte zum Verlieben" [level=2] [ref=e262]': "Besonders beliebt: Produkte zum Verlieben"
+          - generic [ref=e264]:
+            - tablist [ref=e266]:
+              - tab "Garten" [selected] [ref=e268] [cursor=pointer]
+              - tab "Topseller" [ref=e270] [cursor=pointer]
+              - tab "Trends" [ref=e272] [cursor=pointer]
+            - tabpanel "Garten" [ref=e275]:
+              - generic [ref=e278]:
+                - link "Gartensortiment entdecken" [ref=e280] [cursor=pointer]:
+                  - /url: /c/garten#kategorien
+                  - generic [ref=e281] [cursor=pointer]: Gartensortiment entdecken
+                - link "Die nächste Liste überspringen" [ref=e282] [cursor=pointer]:
+                  - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJjbXNpdGVtXzAwMjk4OTY5IiwiY2F0YWxvZ0lkIjoieHh4bHV0ei5kZS1jb250ZW50IiwiY2F0YWxvZ1ZlcnNpb24iOiJPbmxpbmUifQ"
+                  - text: Abschnitt überspringen
+                - group [ref=e283]:
+                  - group [ref=e284] [cursor=pointer]:
+                    - article [ref=e285] [cursor=pointer]:
+                      - generic [ref=e286] [cursor=pointer]:
+                        - generic [ref=e288] [cursor=pointer]:
+                          - link "STAPELSTUHL Stahl Anthrazit, Schwarz" [ref=e289] [cursor=pointer]:
+                            - /url: /p/ambia-garden-stapelstuhl-stahl-anthrazit-schwarz-001807001501
+                            - generic [ref=e290] [cursor=pointer]:
+                              - generic [ref=e291] [cursor=pointer]: STAPELSTUHL
+                              - text: Stahl Anthrazit, Schwarz
+                          - generic [ref=e292] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e293] [cursor=pointer]: XXXLutz
+                        - generic [ref=e294] [cursor=pointer]:
+                          - generic [ref=e295] [cursor=pointer]: 60,90 €***
+                          - generic [ref=e296] [cursor=pointer]:
+                            - text: 19,
+                            - superscript [ref=e297] [cursor=pointer]: "90"
+                            - text: €
+                      - generic [ref=e298] [cursor=pointer]:
+                        - img "STAPELSTUHL Stahl Anthrazit, Schwarz - Anthrazit/Schwarz, KONVENTIONELL, Kunststoff/Textil (54/93/74cm) - Ambia Garden" [ref=e300] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e301] [cursor=pointer]
+                    - article [ref=e302] [cursor=pointer]:
+                      - generic [ref=e303] [cursor=pointer]:
+                        - generic [ref=e305] [cursor=pointer]:
+                          - link "GARTENSESSEL Aluminium Grau" [ref=e306] [cursor=pointer]:
+                            - /url: /p/ambia-garden-gartensessel-aluminium-grau-001713011501
+                            - generic [ref=e307] [cursor=pointer]:
+                              - generic [ref=e308] [cursor=pointer]: GARTENSESSEL
+                              - text: Aluminium Grau
+                          - generic [ref=e309] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e310] [cursor=pointer]: XXXLutz
+                        - generic [ref=e311] [cursor=pointer]:
+                          - generic [ref=e312] [cursor=pointer]: 337,00 €***
+                          - generic [ref=e313] [cursor=pointer]:
+                            - text: 99,
+                            - superscript [ref=e314] [cursor=pointer]: "90"
+                            - text: €
+                      - generic [ref=e315] [cursor=pointer]:
+                        - img "GARTENSESSEL Aluminium Grau - Grau, Design, Textil/Metall (56,5/105/69,5cm) - Ambia Garden" [ref=e317] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e318] [cursor=pointer]
+                    - article [ref=e319] [cursor=pointer]:
+                      - generic [ref=e320] [cursor=pointer]:
+                        - generic [ref=e322] [cursor=pointer]:
+                          - link "HÄNGESESSEL 99/200/106 cm Stahl" [ref=e323] [cursor=pointer]:
+                            - /url: /p/ambia-garden-haengesessel-99-200-106-cm-stahl-002004004801
+                            - generic [ref=e324] [cursor=pointer]:
+                              - generic [ref=e325] [cursor=pointer]: HÄNGESESSEL
+                              - text: 99/200/106 cm Stahl
+                          - generic [ref=e326] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e327] [cursor=pointer]: XXXLutz
+                        - generic [ref=e328] [cursor=pointer]:
+                          - generic [ref=e329] [cursor=pointer]: 460,00 €***
+                          - generic [ref=e330] [cursor=pointer]:
+                            - text: 149,
+                            - superscript [ref=e331] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e332] [cursor=pointer]:
+                        - img "HÄNGESESSEL 99/200/106 cm Stahl - Anthrazit/Naturfarben, Design, Kunststoff/Textil (99/200/106cm) - Ambia Garden" [ref=e334] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e335] [cursor=pointer]
+                    - article [ref=e336] [cursor=pointer]:
+                      - generic [ref=e337] [cursor=pointer]:
+                        - generic [ref=e339] [cursor=pointer]:
+                          - link "LOUNGEGARNITUR Aluminium" [ref=e340] [cursor=pointer]:
+                            - /url: /p/ambia-garden-loungegarnitur-aluminium-000037002309
+                            - generic [ref=e341] [cursor=pointer]:
+                              - generic [ref=e342] [cursor=pointer]: LOUNGEGARNITUR
+                              - text: Aluminium
+                          - generic [ref=e343] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e344] [cursor=pointer]: XXXLutz
+                        - generic [ref=e345] [cursor=pointer]:
+                          - generic [ref=e346] [cursor=pointer]: 1.075,00 €***
+                          - generic [ref=e347] [cursor=pointer]:
+                            - text: 349,
+                            - superscript [ref=e348] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e349] [cursor=pointer]:
+                        - img "LOUNGEGARNITUR Aluminium - Grau, MODERN, Kunststoff/Textil (182cm) - Ambia Garden" [ref=e351] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e352] [cursor=pointer]
+                    - article [ref=e353] [cursor=pointer]:
+                      - generic [ref=e354] [cursor=pointer]:
+                        - generic [ref=e356] [cursor=pointer]:
+                          - link "GARTENTISCHGRUPPE Stahl" [ref=e357] [cursor=pointer]:
+                            - /url: /p/ambia-garden-gartentischgruppe-stahl-002277016009
+                            - generic [ref=e358] [cursor=pointer]:
+                              - generic [ref=e359] [cursor=pointer]: GARTENTISCHGRUPPE
+                              - text: Stahl
+                          - generic [ref=e360] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e361] [cursor=pointer]: XXXLutz
+                        - generic [ref=e362] [cursor=pointer]:
+                          - generic [ref=e363] [cursor=pointer]: 1.229,00 €***
+                          - generic [ref=e364] [cursor=pointer]:
+                            - text: 399,
+                            - superscript [ref=e365] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e366] [cursor=pointer]:
+                        - img "GARTENTISCHGRUPPE Stahl - Anthrazit/Grau, Basics, Kunststoff/Metall - Ambia Garden" [ref=e368] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e369] [cursor=pointer]
+                    - article [ref=e370] [cursor=pointer]:
+                      - generic [ref=e371] [cursor=pointer]:
+                        - generic [ref=e373] [cursor=pointer]:
+                          - link "GARTENSESSEL Stahl Naturfarben, Dunkelgrau" [ref=e374] [cursor=pointer]:
+                            - /url: /p/ambia-garden-gartensessel-stahl-naturfarben-dunkelgrau-002492000601
+                            - generic [ref=e375] [cursor=pointer]:
+                              - generic [ref=e376] [cursor=pointer]: GARTENSESSEL
+                              - text: Stahl Naturfarben, Dunkelgrau
+                          - generic [ref=e377] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e378] [cursor=pointer]: XXXLutz
+                        - generic [ref=e379] [cursor=pointer]:
+                          - generic [ref=e380] [cursor=pointer]: 138,00 €***
+                          - generic [ref=e381] [cursor=pointer]:
+                            - text: 49,
+                            - superscript [ref=e382] [cursor=pointer]: "90"
+                            - text: €
+                      - generic [ref=e383] [cursor=pointer]:
+                        - img "GARTENSESSEL Stahl Naturfarben, Dunkelgrau - Dunkelgrau/Anthrazit, KONVENTIONELL, Kunststoff/Textil (56/81/60cm) - Ambia Garden" [ref=e385] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e386] [cursor=pointer]
+                    - article [ref=e387] [cursor=pointer]:
+                      - generic [ref=e388] [cursor=pointer]:
+                        - generic [ref=e390] [cursor=pointer]:
+                          - link "LOUNGEGARNITUR 253/253 cm Akazie massiv Aluminium" [ref=e391] [cursor=pointer]:
+                            - /url: /p/amatio-loungegarnitur-253-253-cm-akazie-massiv-aluminium-002845001909
+                            - generic [ref=e392] [cursor=pointer]:
+                              - generic [ref=e393] [cursor=pointer]: LOUNGEGARNITUR
+                              - text: 253/253 cm Akazie massiv Aluminium
+                          - generic [ref=e394] [cursor=pointer]: Amatio
+                          - generic [ref=e395] [cursor=pointer]: XXXLutz
+                        - generic [ref=e396] [cursor=pointer]:
+                          - generic [ref=e397] [cursor=pointer]: 1.614,00 €***
+                          - generic [ref=e398] [cursor=pointer]:
+                            - text: 629,
+                            - superscript [ref=e399] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e400] [cursor=pointer]:
+                        - img "LOUNGEGARNITUR 253/253 cm Akazie massiv Aluminium - Anthrazit/Hellgrau, Design, Holz/Textil (253/253cm) - Amatio" [ref=e402] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e403] [cursor=pointer]
+                    - article [ref=e404] [cursor=pointer]:
+                      - generic [ref=e405] [cursor=pointer]:
+                        - generic [ref=e407] [cursor=pointer]:
+                          - link "DREIBEINLIEGE 59/45/193 cm" [ref=e408] [cursor=pointer]:
+                            - /url: /p/ambia-garden-dreibeinliege-59-45-193-cm-002672014804
+                            - generic [ref=e409] [cursor=pointer]:
+                              - generic [ref=e410] [cursor=pointer]: DREIBEINLIEGE
+                              - text: 59/45/193 cm
+                          - generic [ref=e411] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e412] [cursor=pointer]: XXXLutz
+                        - generic [ref=e413] [cursor=pointer]:
+                          - generic [ref=e414] [cursor=pointer]: 123,00 €***
+                          - generic [ref=e415] [cursor=pointer]:
+                            - text: 29,
+                            - superscript [ref=e416] [cursor=pointer]: "90"
+                            - text: €
+                      - generic [ref=e417] [cursor=pointer]:
+                        - img "DREIBEINLIEGE 59/45/193 cm - Anthrazit/Hellgrau, Design, Textil/Metall (59/45/193cm) - Ambia Garden" [ref=e419] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e420] [cursor=pointer]
+                    - article [ref=e421] [cursor=pointer]:
+                      - generic [ref=e422] [cursor=pointer]:
+                        - generic [ref=e424] [cursor=pointer]:
+                          - link "LOUNGEGARNITUR 159/273,5 cm Akazie massiv Eisen" [ref=e425] [cursor=pointer]:
+                            - /url: /p/ambia-garden-loungegarnitur-159-273-5-cm-akazie-massiv-eisen-002014022509
+                            - generic [ref=e426] [cursor=pointer]:
+                              - generic [ref=e427] [cursor=pointer]: LOUNGEGARNITUR
+                              - text: 159/273,5 cm Akazie massiv Eisen
+                          - generic [ref=e428] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e429] [cursor=pointer]: XXXLutz
+                        - generic [ref=e430] [cursor=pointer]:
+                          - generic [ref=e431] [cursor=pointer]: 1.075,00 €***
+                          - generic [ref=e432] [cursor=pointer]:
+                            - text: 349,
+                            - superscript [ref=e433] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e434] [cursor=pointer]:
+                        - img "LOUNGEGARNITUR 159/273,5 cm Akazie massiv Eisen - Schwarz/Grau, Basics, Holz/Textil (159/273,5cm) - Ambia Garden" [ref=e436] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e437] [cursor=pointer]
+                    - article [ref=e438] [cursor=pointer]:
+                      - generic [ref=e439] [cursor=pointer]:
+                        - generic [ref=e441] [cursor=pointer]:
+                          - link "GARTENTISCH ausziehbar 75-126/70/75 cm Holz, Metall rechteckig" [ref=e442] [cursor=pointer]:
+                            - /url: /p/ambia-garden-gartentisch-ausziehbar-75-126-70-75-cm-holz-metall-rechteckig-002589002637
+                            - generic [ref=e443] [cursor=pointer]:
+                              - generic [ref=e444] [cursor=pointer]: GARTENTISCH
+                              - text: ausziehbar 75-126/70/75 cm Holz, Metall rechteckig
+                          - generic [ref=e445] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e446] [cursor=pointer]: XXXLutz
+                        - generic [ref=e447] [cursor=pointer]:
+                          - generic [ref=e448] [cursor=pointer]: 429,00 €***
+                          - generic [ref=e449] [cursor=pointer]:
+                            - text: 199,
+                            - superscript [ref=e450] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e451] [cursor=pointer]:
+                        - img "GARTENTISCH ausziehbar 75-126/70/75 cm Holz, Metall rechteckig - Dunkelgrau/Naturfarben, Design, Holz/Metall (75-126/70/75cm) - Ambia Garden" [ref=e453] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e454] [cursor=pointer]
+                    - article [ref=e455] [cursor=pointer]:
+                      - generic [ref=e456] [cursor=pointer]:
+                        - generic [ref=e458] [cursor=pointer]:
+                          - link "LOUNGEGARNITUR 191,5/120 cm Eisen" [ref=e459] [cursor=pointer]:
+                            - /url: /p/ambia-garden-loungegarnitur-191-5-120-cm-eisen-000334002209
+                            - generic [ref=e460] [cursor=pointer]:
+                              - generic [ref=e461] [cursor=pointer]: LOUNGEGARNITUR
+                              - text: 191,5/120 cm Eisen
+                          - generic [ref=e462] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e463] [cursor=pointer]: XXXLutz
+                        - generic [ref=e464] [cursor=pointer]:
+                          - generic [ref=e465] [cursor=pointer]: 998,00 €***
+                          - generic [ref=e466] [cursor=pointer]:
+                            - text: 299,
+                            - superscript [ref=e467] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e468] [cursor=pointer]:
+                        - img "LOUNGEGARNITUR 191,5/120 cm Eisen - Schwarz/Grau, Design, Glas/Textil (191,5/120cm) - Ambia Garden" [ref=e470] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e471] [cursor=pointer]
+                    - article [ref=e472] [cursor=pointer]:
+                      - generic [ref=e473] [cursor=pointer]:
+                        - generic [ref=e475] [cursor=pointer]:
+                          - link "STAPELSESSEL Eukalyptusholz Aluminium Anthrazit, Naturfarben, Schwarz" [ref=e476] [cursor=pointer]:
+                            - /url: /p/ambia-garden-stapelsessel-eukalyptusholz-aluminium-anthrazit-naturfarben-schwarz-002755004701
+                            - generic [ref=e477] [cursor=pointer]:
+                              - generic [ref=e478] [cursor=pointer]: STAPELSESSEL
+                              - text: Eukalyptusholz Aluminium Anthrazit, Naturfarben, Schwarz
+                          - generic [ref=e479] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e480] [cursor=pointer]: XXXLutz
+                        - generic [ref=e481] [cursor=pointer]:
+                          - generic [ref=e482] [cursor=pointer]: 154,00 €***
+                          - generic [ref=e483] [cursor=pointer]:
+                            - text: 54,
+                            - superscript [ref=e484] [cursor=pointer]: "90"
+                            - text: €
+                      - generic [ref=e485] [cursor=pointer]:
+                        - img "STAPELSESSEL Eukalyptusholz Aluminium Anthrazit, Naturfarben, Schwarz - Anthrazit/Schwarz, Basics, Holz/Textil (55/88/65,5cm) - Ambia Garden" [ref=e487] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e488] [cursor=pointer]
+                    - article [ref=e489] [cursor=pointer]:
+                      - generic [ref=e490] [cursor=pointer]:
+                        - generic [ref=e492] [cursor=pointer]:
+                          - link "GARTENTISCH 180-280/100/75 cm Metall, Glas rechteckig" [ref=e493] [cursor=pointer]:
+                            - /url: /p/ambia-garden-gartentisch-180-280-100-75-cm-metall-glas-rechteckig-000815000817
+                            - generic [ref=e494] [cursor=pointer]:
+                              - generic [ref=e495] [cursor=pointer]: GARTENTISCH
+                              - text: 180-280/100/75 cm Metall, Glas rechteckig
+                          - generic [ref=e496] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e497] [cursor=pointer]: XXXLutz
+                        - generic [ref=e498] [cursor=pointer]:
+                          - generic [ref=e499] [cursor=pointer]: 1.460,00 €***
+                          - generic [ref=e500] [cursor=pointer]:
+                            - text: 599,
+                            - superscript [ref=e501] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e502] [cursor=pointer]:
+                        - img "GARTENTISCH 180-280/100/75 cm Metall, Glas rechteckig - Dunkelgrau/Anthrazit, Design, Glas/Metall (180-280/100/75cm) - Ambia Garden" [ref=e504] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e505] [cursor=pointer]
+                    - article [ref=e506] [cursor=pointer]:
+                      - generic [ref=e507] [cursor=pointer]:
+                        - generic [ref=e509] [cursor=pointer]:
+                          - link "LOUNGEGARNITUR 198/198 cm Akazie massiv Aluminium" [ref=e510] [cursor=pointer]:
+                            - /url: /p/ambia-garden-loungegarnitur-198-198-cm-akazie-massiv-aluminium-002905001709
+                            - generic [ref=e511] [cursor=pointer]:
+                              - generic [ref=e512] [cursor=pointer]: LOUNGEGARNITUR
+                              - text: 198/198 cm Akazie massiv Aluminium
+                          - generic [ref=e513] [cursor=pointer]: Ambia Garden
+                          - generic [ref=e514] [cursor=pointer]: XXXLutz
+                        - generic [ref=e515] [cursor=pointer]:
+                          - generic [ref=e516] [cursor=pointer]: 1.383,00 €***
+                          - generic [ref=e517] [cursor=pointer]:
+                            - text: 419,
+                            - superscript [ref=e518] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e519] [cursor=pointer]:
+                        - img "LOUNGEGARNITUR 198/198 cm Akazie massiv Aluminium - Grau/Akaziefarben, Design, Holz/Textil (198/198cm) - Ambia Garden" [ref=e521] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e522] [cursor=pointer]
+                    - article [ref=e523] [cursor=pointer]:
+                      - generic [ref=e524] [cursor=pointer]:
+                        - generic [ref=e526] [cursor=pointer]:
+                          - link "GARTENKLAPPSESSEL Aluminium Anthrazit, Braun" [ref=e527] [cursor=pointer]:
+                            - /url: /p/xora-gartenklappsessel-aluminium-anthrazit-braun-002672021402
+                            - generic [ref=e528] [cursor=pointer]:
+                              - generic [ref=e529] [cursor=pointer]: GARTENKLAPPSESSEL
+                              - text: Aluminium Anthrazit, Braun
+                          - generic [ref=e530] [cursor=pointer]: Xora
+                          - generic [ref=e531] [cursor=pointer]: XXXLutz
+                        - generic [ref=e532] [cursor=pointer]:
+                          - generic [ref=e533] [cursor=pointer]: 91,90 €***
+                          - generic [ref=e534] [cursor=pointer]:
+                            - text: 29,
+                            - superscript [ref=e535] [cursor=pointer]: "90"
+                            - text: €
+                      - generic [ref=e536] [cursor=pointer]:
+                        - img "GARTENKLAPPSESSEL Aluminium Anthrazit, Braun - Dunkelgrau/Anthrazit, Basics, Textil/Metall (56/106/64cm) - Xora" [ref=e538] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e539] [cursor=pointer]
+                    - article [ref=e540] [cursor=pointer]:
+                      - generic [ref=e541] [cursor=pointer]:
+                        - generic [ref=e543] [cursor=pointer]:
+                          - link "GARTENTISCH 200-300/100/76 cm Metall, Keramik rechteckig" [ref=e544] [cursor=pointer]:
+                            - /url: /p/amatio-gartentisch-200-300-100-76-cm-metall-keramik-rechteckig-000069016607
+                            - generic [ref=e545] [cursor=pointer]:
+                              - generic [ref=e546] [cursor=pointer]: GARTENTISCH
+                              - text: 200-300/100/76 cm Metall, Keramik rechteckig
+                          - generic [ref=e547] [cursor=pointer]: Amatio
+                          - generic [ref=e548] [cursor=pointer]: XXXLutz
+                        - generic [ref=e549] [cursor=pointer]:
+                          - generic [ref=e550] [cursor=pointer]: 1.768,00 €***
+                          - generic [ref=e551] [cursor=pointer]:
+                            - text: 699,
+                            - superscript [ref=e552] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e553] [cursor=pointer]:
+                        - img "GARTENTISCH 200-300/100/76 cm Metall, Keramik rechteckig - Anthrazit/Grau, MODERN, Keramik/Metall (200-300/100/76cm) - Amatio" [ref=e555] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e556] [cursor=pointer]
+                    - article [ref=e557] [cursor=pointer]:
+                      - generic [ref=e558] [cursor=pointer]:
+                        - generic [ref=e560] [cursor=pointer]:
+                          - link "DINING-LOUNGESET 202/236 cm Aluminium" [ref=e561] [cursor=pointer]:
+                            - /url: /p/dieter-knoll-dining-loungeset-202-236-cm-aluminium-000639008409
+                            - generic [ref=e562] [cursor=pointer]:
+                              - generic [ref=e563] [cursor=pointer]: DINING-LOUNGESET
+                              - text: 202/236 cm Aluminium
+                          - generic [ref=e564] [cursor=pointer]: Dieter Knoll
+                          - generic [ref=e565] [cursor=pointer]: XXXLutz
+                        - generic [ref=e566] [cursor=pointer]:
+                          - generic [ref=e567] [cursor=pointer]: 1.752,00 €***
+                          - generic [ref=e568] [cursor=pointer]:
+                            - text: 957,
+                            - superscript [ref=e569] [cursor=pointer]: "12"
+                            - text: €
+                      - generic [ref=e570] [cursor=pointer]:
+                        - img "DINING-LOUNGESET 202/236 cm Aluminium - Dunkelgrau/Anthrazit, Design, Textil/Stein (202/236cm) - Dieter Knoll" [ref=e572] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e573] [cursor=pointer]
+                    - article [ref=e574] [cursor=pointer]:
+                      - generic [ref=e575] [cursor=pointer]:
+                        - generic [ref=e577] [cursor=pointer]:
+                          - link "LOUNGEGARNITUR 180/248 cm Aluminium" [ref=e578] [cursor=pointer]:
+                            - /url: /p/amatio-loungegarnitur-180-248-cm-aluminium-000761002159
+                            - generic [ref=e579] [cursor=pointer]:
+                              - generic [ref=e580] [cursor=pointer]: LOUNGEGARNITUR
+                              - text: 180/248 cm Aluminium
+                          - generic [ref=e581] [cursor=pointer]: Amatio
+                          - generic [ref=e582] [cursor=pointer]: XXXLutz
+                        - generic [ref=e583] [cursor=pointer]:
+                          - generic [ref=e584] [cursor=pointer]: 2.506,00 €***
+                          - generic [ref=e585] [cursor=pointer]:
+                            - text: 999,
+                            - superscript [ref=e586] [cursor=pointer]: "00"
+                            - text: €
+                      - generic [ref=e587] [cursor=pointer]:
+                        - img "LOUNGEGARNITUR 180/248 cm Aluminium - Anthrazit, Design, Glas/Textil (180/248cm) - Amatio" [ref=e589] [cursor=pointer]
+                        - button "Zu den Favoriten hinzufügen" [ref=e590] [cursor=pointer]
+                  - button "nächstes Bild" [ref=e591] [cursor=pointer]
+          - generic [ref=e592]:
+            - 'heading "Preishits: voll im Trend" [level=2] [ref=e593]': "Preishits: voll im Trend"
+            - 'link "Die nächste Liste mit dem Titel <br />Preishits: voll im Trend überspringen" [ref=e594] [cursor=pointer]':
+              - /url: "#skip-section-Liste-clone_cmsitem_00201904_00008130_00010849_00016774"
+              - text: Abschnitt überspringen
+            - generic [ref=e595]:
+              - generic [ref=e598]:
+                - link "Einrichtungsstile" [ref=e599] [cursor=pointer]:
+                  - /url: /c/einrichtungsstile
+                  - generic [ref=e600] [cursor=pointer]: Einrichtungsstile
+                - list
+              - generic [ref=e604]:
+                - link "Ostermarkt" [ref=e605] [cursor=pointer]:
+                  - /url: /c/oster-fruehlingsmarkt
+                  - generic [ref=e606] [cursor=pointer]: Ostermarkt
+                - list
+              - generic [ref=e610]:
+                - link "Wohnserien" [ref=e611] [cursor=pointer]:
+                  - /url: /c/wohnserien
+                  - generic [ref=e612] [cursor=pointer]: Wohnserien
+                - list
+              - generic [ref=e616]:
+                - link "Wohntrends 2026" [ref=e617] [cursor=pointer]:
+                  - /url: /c/wohntrends
+                  - generic [ref=e618] [cursor=pointer]: Wohntrends 2026
+                - list
+          - generic [ref=e620]:
+            - link "Die nächste Liste überspringen" [ref=e621] [cursor=pointer]:
+              - /url: "#skip-section-Liste-clone_cmsitem_00286096_00010103_00010104_00010214_00010069_00010851_00016772"
+              - text: Abschnitt überspringen
+            - generic [ref=e622]:
+              - generic [ref=e624]:
+                - link "Outdoor Must-Haves" [ref=e625] [cursor=pointer]:
+                  - /url: /c/outdoor-must-haves-saison
+                  - generic [ref=e626] [cursor=pointer]: Outdoor Must-Haves
+                - list
+              - generic [ref=e629]:
+                - link "Alles fürs Osterfest" [ref=e630] [cursor=pointer]:
+                  - /url: /c/ostern-saison
+                  - generic [ref=e631] [cursor=pointer]: Alles fürs Osterfest
+                - list
+          - generic [ref=e633]:
+            - heading "XXXL Sparvorteile für Sie 🤩" [level=2] [ref=e634]: XXXL Sparvorteile für Sie 🤩
+            - generic [ref=e635]:
+              - link "Gutscheine & Aktionen" [ref=e640] [cursor=pointer]:
+                - /url: /c/xxxl-gutscheine
+                - generic [ref=e643] [cursor=pointer]: Gutscheine & Aktionen
+              - link "Lagerräumungsverkauf - Bis zu -77%" [ref=e649] [cursor=pointer]:
+                - /url: /c/online-lagerraeumungsverkauf
+                - generic [ref=e652] [cursor=pointer]: Lagerräumungsverkauf - Bis zu -77%
+          - generic [ref=e654]:
+            - heading "Alles rund um Ihre Filialen 🏠" [level=2] [ref=e655]: Alles rund um Ihre Filialen 🏠
+            - generic [ref=e658]:
+              - link "Filialfinder" [ref=e661] [cursor=pointer]:
+                - /url: /filialen-standorte
+                - generic [ref=e662] [cursor=pointer]: Filialfinder
+              - generic [ref=e665]:
+                - link "Filialschnäppchen" [ref=e666] [cursor=pointer]:
+                  - /url: /hs
+                  - generic [ref=e667] [cursor=pointer]: Filialschnäppchen
+                - img "Filialschnäppchen" [ref=e669]
+              - generic [ref=e671]:
+                - link "Auftragsstatus" [ref=e672] [cursor=pointer]:
+                  - /url: /auftragsstatus
+                  - generic [ref=e673] [cursor=pointer]: Auftragsstatus
+                - img "Postbote lässt für Paket unterschreiben" [ref=e675]
+              - link "XXXL Restaurant" [ref=e678] [cursor=pointer]:
+                - /url: /c/restaurant
+                - generic [ref=e679] [cursor=pointer]: XXXL Restaurant
+          - heading "Ihre Vorteile, wenn Sie bei XXXLutz bestellen" [level=2] [ref=e682]
+          - list [ref=e685]:
+            - listitem [ref=e686]:
+              - link "10€ Newsletter Gutschein" [ref=e687] [cursor=pointer]:
+                - /url: /c/newsletter
+                - text: 10€ Newsletter Gutschein
+            - listitem [ref=e689]:
+              - link "30 Tage kostenloses Rückgaberecht" [ref=e690] [cursor=pointer]:
+                - /url: /c/retouren-reklamationen
+                - text: 30 Tage kostenloses Rückgaberecht
+            - listitem [ref=e692]:
+              - link "Click & Collect" [ref=e693] [cursor=pointer]:
+                - /url: /c/click-collect-xxxlutz
+                - text: Click & Collect
+            - listitem [ref=e695]:
+              - link "Gratis Transporter bei Selbstabholung" [ref=e696] [cursor=pointer]:
+                - /url: /c/xxxl-transporter
+                - text: Gratis Transporter bei Selbstabholung
+            - listitem [ref=e698]:
+              - link "Montageservice bei Lieferung" [ref=e699] [cursor=pointer]:
+                - /url: /c/lieferung-montage
+                - text: Montageservice bei Lieferung
+          - generic [ref=e701]:
+            - heading "Herzlich Willkommen im XXXLutz Online Shop" [level=1] [ref=e702]
+            - generic [ref=e703]:
+              - text: Attraktive Einrichtungsideen online bestellen im XXXLutz Möbelhaus – Markenmöbel in den XXXLutz Filialen, im Online Shop und auf unseren
+              - link "Social Media" [ref=e704] [cursor=pointer]:
+                - /url: https://www.xxxlutz.de/c/social-media
+              - text: Kanälen.
+          - generic [ref=e706]:
+            - tablist [ref=e708]:
+              - tab "XXXLutz Online Shop" [selected] [ref=e710] [cursor=pointer]
+              - tab "Beliebte Kategorien" [ref=e712] [cursor=pointer]
+              - tab "Beliebte Marken" [ref=e714] [cursor=pointer]
+              - tab "Beliebte Themen" [ref=e716] [cursor=pointer]
+            - tabpanel "XXXLutz Online Shop" [ref=e719]:
+              - generic [ref=e721]:
+                - generic [ref=e722]:
+                  - heading "Alles zum Thema Interieur – 24 Stunden am Tag online shoppen!" [level=2] [ref=e723]
+                  - generic [ref=e724]:
+                    - text: "Rund um die Uhr genießen Sie im XXXLutz Online Shop ein Einkaufserlebnis der Extraklasse. Daher auch drei X, die aus einem XXLutz den Möbelhändler XXXLutz machen. Wählen Sie aus mehr als 700.000 Artikeln in unserem Online Shop. Profitieren Sie zudem von zahlreichen Angeboten und Aktionen sowie bester Flexibilität beim Shopping: Sie können vielseitige Wohnideen online bestellen, reservieren und einfach in einer Filiale Ihrer Wahl abholen."
+                    - text: Unsere Service-Leistungen sorgen schließlich für einen rundum bequemen Einkauf. Die 30-tägige Möglichkeit zum Rückversand ist ein weiterer Vorteil für Sie. Bestellen Sie außerdem komfortabel auf Rechnung und freuen Sie sich auf ein besonders sicheres Einkaufsvergnügen. Unsere weiteren Zahlungsarten – Sofortüberweisung, Kreditkarte, Google Pay, Apple Pay oder PayPal – runden das Shopping-Erlebnis in unserem Online-Möbelhaus ab.
+                - generic [ref=e726]:
+                  - generic [ref=e727]:
+                    - 'heading "Immer gut beraten: XXXLutz Service der Extraklasse" [level=2] [ref=e728]'
+                    - generic [ref=e729]:
+                      - text: "Auf den Service des XXXLutz Möbel-Shops ist Verlass. Wir garantieren Ihnen einen traumhaften Einkauf in Ihrem Online-Möbelhaus: Entscheiden Sie sich zwischen schnellem Paketversand oder Selbstabholung Ihrer Ware. Verfolgen Sie Ihren"
+                      - link "Auftragsstatus" [ref=e730] [cursor=pointer]:
+                        - /url: https://www.xxxlutz.de/auftragsstatus
+                      - text: stets online mit. Nutzen Sie den Aufbauservice unserer geschulten Montage-Teams. Zudem steht Ihnen unser Näh- und Bodenverlegeservice in den Filialen zur Verfügung.
+                      - text: Vereinbaren Sie gerne vorab online einen persönlichen
+                      - link "Termin zur Beratung" [ref=e731] [cursor=pointer]:
+                        - /url: https://www.xxxlutz.de/c/termin-vereinbaren
+                      - text: für Wohnzimmermöbel, das Schlafzimmer oder Ihr Bad und lassen Sie sich anschließend individuell im Möbelladen von einem unserer fachkundigen Mitarbeiter zur Umsetzung Ihrer Wünsche informieren. Wer sich für die XXXL Freundschaftskarte entscheidet, erhält zahlreiche weitere Vorteile – darunter exklusive Angebote und Gewinnspiele für Stammkunden oder die Möglichkeit, sich einen Transporter zu leihen. Dank der XXXL Freundschaftskarten-App sind Sie auch unterwegs immer über unsere Aktionen informiert.
+                  - 'link "XXXL Service: Immer gut beraten!" [ref=e736] [cursor=pointer]':
+                    - /url: /c/service
+                    - generic [ref=e739] [cursor=pointer]:
+                      - text: "XXXL Service:"
+                      - text: Immer gut beraten!
+                - generic [ref=e742]:
+                  - generic [ref=e743]:
+                    - heading "Wir freuen uns auf Sie im XXXL Restaurant!" [level=2] [ref=e744]
+                    - generic [ref=e745]:
+                      - text: "Einkaufserlebnis der Extraklasse: In Ihrem XXXLutz Einrichtungshaus können Sie entspannt Interieur-Ideen shoppen und den Rundgang mit einem Besuch im XXXL Restaurant verbinden. Unser Wochenmenü bietet abwechslungsreiche Gerichte mit Zutaten der Saison – von frischen Salatvariationen und Suppen bis hin zu köstlichen Hauptspeisen. Nichts geht auch über einen aromatischen Kaffee und ein leckeres Stück Kuchen. Somit können Sie sich die Planung Ihres Wohnkonzepts in Ruhe durch den Kopf gehen lassen oder neue Inspirationen sammeln."
+                      - text: "Beliebt ist außerdem unser reichhaltiges Frühstück mit frischen Brötchen sowie Wurst- und Käsespezialitäten. Überzeugen Sie sich selbst von unserer Speisekarte: Die XXXLutz Möbelhäuser sorgen dafür, dass der Morgen perfekt beginnt. So sind Sie bestens gestärkt, um individuelle Interieur-Trends für Ihre vier Wände zu entdecken."
+                      - strong [ref=e746]: "Tipp:"
+                      - text: In unseren Prospekten finden Sie regelmäßig attraktive Rabatt-Coupons!
+                  - 'link "XXXL Restaurant: Monatsangebote" [ref=e751] [cursor=pointer]':
+                    - /url: /c/restaurant
+                    - generic [ref=e754] [cursor=pointer]:
+                      - text: "XXXL Restaurant:"
+                      - text: Monatsangebote
+          - link "XXXLutz Siegel - DEUTSCHLANDTEST.DE und faz.net/begehrteste-Arbeitgeber" [ref=e760] [cursor=pointer]:
+            - /url: /c/auszeichnungen
+            - img "XXXLutz Siegel - DEUTSCHLANDTEST.DE und faz.net/begehrteste-Arbeitgeber"
+          - strong [ref=e763]:
+            - link "1)+2)+S) Siehe Aktionsbedingungen." [ref=e764] [cursor=pointer]:
+              - /url: /c/newsaktion#filiale
+    - contentinfo [ref=e765]:
+      - generic [ref=e766]:
+        - generic [ref=e767]:
+          - link "Die nächste Liste überspringen" [ref=e768] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1_SERVICE"
+            - text: Abschnitt überspringen
+          - generic [ref=e769]:
+            - generic [ref=e771]:
+              - generic [ref=e772]: Services & Hilfe
+              - list [ref=e773]:
+                - listitem [ref=e774]:
+                  - link "Auftragsstatus" [ref=e775] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e776]:
+                  - link "Aktionsbedingungen" [ref=e777] [cursor=pointer]:
+                    - /url: /c/newsaktion
+                - listitem [ref=e778]:
+                  - link "Service Überblick" [ref=e779] [cursor=pointer]:
+                    - /url: /c/service
+                - listitem [ref=e780]:
+                  - link "Retouren & Reklamationen" [ref=e781] [cursor=pointer]:
+                    - /url: /c/retouren-reklamationen
+                - listitem [ref=e782]:
+                  - link "Versand & Lieferung" [ref=e783] [cursor=pointer]:
+                    - /url: /faq/versand-lieferung/lieferkosten
+                - listitem [ref=e784]:
+                  - link "Click & Collect" [ref=e785] [cursor=pointer]:
+                    - /url: /c/click-collect-xxxlutz
+                - listitem [ref=e786]:
+                  - link "Zahlungsarten" [ref=e787] [cursor=pointer]:
+                    - /url: /faq/zahlung-gutscheine/zahlungsarten
+                - listitem [ref=e788]:
+                  - link "Altgeräterücknahme" [ref=e789] [cursor=pointer]:
+                    - /url: /c/altgeraete-entsorgung
+                - listitem [ref=e790]:
+                  - link "Gutscheine einlösen" [ref=e791] [cursor=pointer]:
+                    - /url: /c/onlinegutscheine-einloesen
+                - listitem [ref=e792]:
+                  - link "Babybox" [ref=e793] [cursor=pointer]:
+                    - /url: /c/babybox
+            - generic [ref=e795]:
+              - generic [ref=e796]: Mein XXXLutz
+              - list [ref=e797]:
+                - listitem [ref=e798]:
+                  - link "Mein Konto" [ref=e799] [cursor=pointer]:
+                    - /url: /signin
+                - listitem [ref=e800]:
+                  - link "Freundschaftskarte" [ref=e801] [cursor=pointer]:
+                    - /url: /c/freundschaftskarte
+                - listitem [ref=e802]:
+                  - link "Newsletter" [ref=e803] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e804]:
+                  - link "Mein XXXL BLOG" [ref=e805] [cursor=pointer]:
+                    - /url: /c/mein-xxxl-blog
+                - listitem [ref=e806]:
+                  - link "Prospekte & TV" [ref=e807] [cursor=pointer]:
+                    - /url: /c/unsere-prospekte
+                - listitem [ref=e808]:
+                  - link "Filialschnäppchen" [ref=e809] [cursor=pointer]:
+                    - /url: /hs
+                - listitem [ref=e810]:
+                  - link "Lucy Homefield" [ref=e811] [cursor=pointer]:
+                    - /url: /c/ki-interior-social
+                - listitem [ref=e812]:
+                  - link "Barrierefreiheit" [ref=e813] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+            - generic [ref=e815]:
+              - generic [ref=e816]: Planung & Beratung
+              - list [ref=e817]:
+                - listitem [ref=e818]:
+                  - link "Beratungstermin vereinbaren" [ref=e819] [cursor=pointer]:
+                    - /url: /c/termin-vereinbaren
+                - listitem [ref=e820]:
+                  - link "Küchenberatung" [ref=e821] [cursor=pointer]:
+                    - /url: /c/kuechenberatung
+                - listitem [ref=e822]:
+                  - link "Küchenplaner" [ref=e823] [cursor=pointer]:
+                    - /url: /c/kitchenplanner
+                - listitem [ref=e824]:
+                  - link "Konfiguratoren" [ref=e825] [cursor=pointer]:
+                    - /url: /c/xxxlutz-konfiguratoren
+                - listitem [ref=e826]:
+                  - link "Objekteinrichtung" [ref=e827] [cursor=pointer]:
+                    - /url: /c/b2b
+                - listitem [ref=e828]:
+                  - link "Premium Marken" [ref=e829] [cursor=pointer]:
+                    - /url: /c/designermoebel
+            - generic [ref=e831]:
+              - generic [ref=e832]: Über XXXLutz
+              - list [ref=e833]:
+                - listitem [ref=e834]:
+                  - link "Standorte" [ref=e835] [cursor=pointer]:
+                    - /url: /filialen-standorte
+                - listitem [ref=e836]:
+                  - link "Restaurant" [ref=e837] [cursor=pointer]:
+                    - /url: /c/restaurant
+                - listitem [ref=e838]:
+                  - link "Küchenstudios" [ref=e839] [cursor=pointer]:
+                    - /url: /kuechenstudios
+                - listitem [ref=e840]:
+                  - link "Unternehmen" [ref=e841] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e842]:
+                  - link "Compliance & Integrität" [ref=e843] [cursor=pointer]:
+                    - /url: /c/compliance
+                - listitem [ref=e844]:
+                  - link "Partner werden" [ref=e845] [cursor=pointer]:
+                    - /url: /c/partner
+                - listitem [ref=e846]:
+                  - link "Marketplace" [ref=e847] [cursor=pointer]:
+                    - /url: /c/marketplace
+                - listitem [ref=e848]:
+                  - link "Pressecenter" [ref=e849] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.de/
+                - listitem [ref=e850]:
+                  - link "Jobs & Karriere" [ref=e851] [cursor=pointer]:
+                    - /url: https://karriere.xxxlutz.de/
+        - generic [ref=e853]:
+          - generic [ref=e856]:
+            - paragraph [ref=e857]: Hilfe & Kontakt
+            - generic [ref=e858]:
+              - generic [ref=e859]:
+                - link "Zum Kontaktformular" [ref=e860] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e861] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e862]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e863]:
+                - link "Häufig gestellte Fragen" [ref=e864] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e865] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e866]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e867]:
+            - generic [ref=e868]: Versand
+            - generic [ref=e869]:
+              - img "DHL" [ref=e872]
+              - img "Hermes" [ref=e875]
+              - img "XXXLutz Spedition" [ref=e878]
+          - generic [ref=e879]:
+            - generic [ref=e880]: Zahlungsmöglichkeiten
+            - generic [ref=e881]:
+              - img "Paypal" [ref=e884]
+              - img "Klarna" [ref=e887]
+              - img "Master Card" [ref=e890]
+              - img "Visa" [ref=e893]
+              - img "Google Pay" [ref=e896]
+              - img "Apple Pay" [ref=e899]
+              - img "Logo Billie" [ref=e902]
+          - generic [ref=e903]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. ***Filialpreis ohne Freundschaftskarte.
+        - generic [ref=e906]:
+          - link "XXXLutz" [ref=e907] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e908] [cursor=pointer]: XXXLutz
+            - img [ref=e910] [cursor=pointer]
+          - generic [ref=e916]: © 2026 BDSK Handels GmbH & Co. KG
+          - list [ref=e917]:
+            - listitem [ref=e918]:
+              - link "IMPRESSUM" [ref=e919] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e920]:
+              - link "DATENSCHUTZ" [ref=e921] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e922]:
+              - link "AGB" [ref=e923] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e924]:
+              - button "COOKIE-EINSTELLUNGEN" [ref=e925] [cursor=pointer]
+          - list [ref=e926]:
+            - listitem [ref=e927]:
+              - link "facebook" [ref=e928] [cursor=pointer]:
+                - /url: https://www.facebook.com/XXXLutzDeutschland
+            - listitem [ref=e929]:
+              - link "instagram" [ref=e930] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_de/
+            - listitem [ref=e931]:
+              - link "pinterest" [ref=e932] [cursor=pointer]:
+                - /url: https://www.pinterest.de/xxxlutzdeutschland/
+            - listitem [ref=e933]:
+              - link "youtube" [ref=e934] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC1w2HpXiRl5pbLGQEwnUl2w
+            - listitem [ref=e935]:
+              - link "tiktok" [ref=e936] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_de
+          - link [ref=e937] [cursor=pointer]:
+            - /url: /accessibility
+  - dialog "dialog" [ref=e938]:
+    - generic [ref=e939]:
+      - heading "Cookies helfen Ihnen & uns" [level=3] [ref=e941]:
+        - generic [ref=e942]:
+          - img [ref=e943]
+          - text: Cookies helfen Ihnen & uns
+      - generic [ref=e956]:
+        - paragraph [ref=e957]: Wir, die BDSK Handels GmbH & Co. KG, setzen Cookies und ähnliche Technologien („Cookies“) ein. Wir nutzen die Cookies und verarbeiten die durch die Cookies erhobenen Daten, um Ihnen die Website und ihre Funktionalitäten zur Verfügung zu stellen, ein optimales Einkaufserlebnis zu bieten, unsere Services bereitzustellen und zu verbessern, Ihr Nutzungsverhalten kennenzulernen und individualisierte Werbung und Inhalte auf unserer Website und Drittseiten, in unseren Newslettern und im Rahmen unserer Freundschaftskarte zu zeigen.
+        - list [ref=e959]:
+          - listitem [ref=e960]:
+            - text: .
+            - paragraph [ref=e962]: Wenn Sie auf „Alle Cookies akzeptieren“ klicken, stimmen Sie dem Einsatz aller Cookies, die in den Cookie-Einstellungen aufgelistet sind, zu. Sie können Ihre Zustimmung in den Cookie-Einstellungen jederzeit für die Zukunft widerrufen oder ändern.
+          - listitem [ref=e963]:
+            - text: .
+            - paragraph [ref=e965]: Wenn Sie im Folgenden auf „Weiter ohne Einwilligung“ klicken, setzen wir nur Essentielle Cookies und cookielose Technologien zur Bannerausspielung.
+          - listitem [ref=e966]:
+            - text: .
+            - paragraph [ref=e968]: Wenn Sie auf „Cookie-Einstellungen“ klicken, können Sie die Cookies individuell auswählen und mehr über diese erfahren.
+        - generic [ref=e969]:
+          - button "Alle Cookies akzeptieren" [active] [ref=e970] [cursor=pointer]:
+            - generic [ref=e971] [cursor=pointer]: Alle Cookies akzeptieren
+          - button "Weiter ohne Einwilligung" [ref=e973] [cursor=pointer]:
+            - generic [ref=e974] [cursor=pointer]: Weiter ohne Einwilligung
+        - list [ref=e976]:
+          - listitem [ref=e977]:
+            - button "Cookie Einstellungen" [ref=e978] [cursor=pointer]:
+              - generic [ref=e979] [cursor=pointer]: Cookie Einstellungen
+          - listitem [ref=e980]:
+            - button "Datenschutzerklärung" [ref=e981] [cursor=pointer]:
+              - generic [ref=e982] [cursor=pointer]: Datenschutzerklärung
+          - listitem [ref=e983]:
+            - button "Impressum" [ref=e984] [cursor=pointer]:
+              - generic [ref=e985] [cursor=pointer]: Impressum
+  - img [ref=e986]
+```

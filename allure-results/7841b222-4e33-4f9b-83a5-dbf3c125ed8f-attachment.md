@@ -1,0 +1,568 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link "Osobní odběr ZDARMA" [ref=e9] [cursor=pointer]:
+            - /url: /c/xxxl-online-nakup
+            - generic [ref=e10] [cursor=pointer]: Osobní odběr ZDARMA
+          - link "-15 % na vše Online Only + doprava ZDARMA" [ref=e11] [cursor=pointer]:
+            - /url: /c/online-only
+            - generic [ref=e12] [cursor=pointer]: "-15 % na vše Online Only + doprava ZDARMA"
+        - generic [ref=e14]:
+          - link "Prospekty" [ref=e15] [cursor=pointer]:
+            - /url: /c/letaky
+            - generic [ref=e16] [cursor=pointer]: Prospekty
+          - link "Stav objednávky" [ref=e17] [cursor=pointer]:
+            - /url: /stavobjednavky
+            - generic [ref=e18] [cursor=pointer]: Stav objednávky
+          - link "FAQ & kontakty" [ref=e19] [cursor=pointer]:
+            - /url: /faq
+            - generic [ref=e20] [cursor=pointer]: FAQ & kontakty
+          - switch "Vysoký kontrast" [ref=e21]
+          - generic [ref=e22] [cursor=pointer]:
+            - text: Vysoký kontrast
+            - img [ref=e23] [cursor=pointer]
+      - generic [ref=e27]:
+        - button "Změnit navigaci" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]: Menu
+        - link "XXXLutz" [ref=e30] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e31] [cursor=pointer]: XXXLutz
+          - img [ref=e33] [cursor=pointer]
+        - link "K hlavnímu obsahu" [ref=e39] [cursor=pointer]:
+          - /url: "#main"
+        - search [ref=e40]:
+          - generic [ref=e41]:
+            - button "Hledat" [ref=e43] [cursor=pointer]
+            - searchbox "Hledat produkty, značky nebo novinky" [ref=e44]
+            - generic: Hledat produkty, značky nebo novinky
+            - button "Vyhledávání dle obrázků" [ref=e48] [cursor=pointer]
+        - generic [ref=e49]:
+          - link "Přihlásit se" [ref=e51] [cursor=pointer]:
+            - /url: /signin
+            - generic [ref=e52] [cursor=pointer]: Přihlásit se
+          - link "Oblíbené 0 produkty" [ref=e54] [cursor=pointer]:
+            - /url: /favourites
+            - generic [ref=e55] [cursor=pointer]: Seznam oblíbených
+          - link "Můj nákupní košík 0 produkty" [ref=e57] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=e58] [cursor=pointer]: Košík
+        - navigation [ref=e59]:
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - link "Nábytek" [ref=e62] [cursor=pointer]:
+                - /url: /c/nabytek
+            - listitem [ref=e63]:
+              - link "Online Only" [ref=e64] [cursor=pointer]:
+                - /url: /c/online-only
+            - listitem [ref=e65]:
+              - link "Doplňky" [ref=e66] [cursor=pointer]:
+                - /url: /c/bytove-doplnky
+            - listitem [ref=e67]:
+              - link "Vaření" [ref=e68] [cursor=pointer]:
+                - /url: /c/vareni-stolovani
+            - listitem [ref=e69]:
+              - link "Světla" [ref=e70] [cursor=pointer]:
+                - /url: /svitidla-a-lampy-C10
+            - listitem [ref=e71]:
+              - link "Děti" [ref=e72] [cursor=pointer]:
+                - /url: /c/baby
+            - listitem [ref=e73]:
+              - link "AKCE" [ref=e74] [cursor=pointer]:
+                - /url: /c/akce
+            - listitem [ref=e75]:
+              - link "SLEVA %" [ref=e76] [cursor=pointer]:
+                - /url: /c/sleva
+            - listitem [ref=e77]:
+              - link "Trendy" [ref=e78] [cursor=pointer]:
+                - /url: /c/inspirace
+            - listitem [ref=e79]:
+              - link "Kuchyně" [ref=e80] [cursor=pointer]:
+                - /url: /c/xxxlutz-kuchyne
+            - listitem [ref=e81]:
+              - link "Prodejny & restaurace" [ref=e82] [cursor=pointer]:
+                - /url: /pobocky
+            - listitem [ref=e83]:
+              - link "Služby" [ref=e84] [cursor=pointer]:
+                - /url: /c/xxxl-sluzby
+    - main [ref=e85]:
+      - status [ref=e86]:
+        - generic [ref=e87]: Košík - XXXLutz
+      - generic [ref=e88]:
+        - alert [ref=e93]: Produkt 0031080078 byl z nákupního košíku smazán (bohužel už není k dispozici).
+        - generic [ref=e94]:
+          - img "Můj nákupní košík" [ref=e95]:
+            - img [ref=e96]
+          - heading "Žádné produkty v nákupním košíku" [level=1] [ref=e98]
+          - paragraph [ref=e99]: Začněte nakupovat a naplňte svůj nákupní košík nejnovějšími trendy v oblasti vybavení domácnosti nebo se přihlaste pro zobrazení již uložených položek v nákupním košíku.
+          - link "Nakupovat dále?" [ref=e100] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e101] [cursor=pointer]: Nakupovat dále?
+          - paragraph [ref=e102]:
+            - text: Hledáte své uložené výrobky?
+            - link "Přihlaste se" [ref=e103] [cursor=pointer]:
+              - /url: /signin
+        - generic [ref=e108]:
+          - heading "Mohlo by se vám také líbit" [level=2] [ref=e110]
+          - link "Přeskočit příští Seznam s názvem Mohlo by se vám také líbit" [ref=e111] [cursor=pointer]:
+            - /url: "#skip-section-Seznam-eyJpdGVtSWQiOiJjel9nZW5lcmFsX3N1Z2dlc3Rpb25femVyb19yZXN1bHRzX2NvbnRhaW5lciIsImNhdGFsb2dJZCI6Inh4eGx1dHouY3otY29udGVudCIsImNhdGFsb2dWZXJzaW9uIjoiT25saW5lIn0"
+            - text: Přeskočit úsek
+          - group [ref=e112]:
+            - group [ref=e113] [cursor=pointer]:
+              - article [ref=e114] [cursor=pointer]:
+                - generic [ref=e115] [cursor=pointer]:
+                  - generic [ref=e117] [cursor=pointer]:
+                    - link "MATRACE ZE STUDENÉ PĚNY, 90/200 cm" [ref=e118] [cursor=pointer]:
+                      - /url: /p/matrace-ze-studene-peny-90-200-cm-000478008101
+                      - generic [ref=e119] [cursor=pointer]:
+                        - generic [ref=e120] [cursor=pointer]: MATRACE
+                        - text: ZE STUDENÉ PĚNY, 90/200 cm
+                    - generic [ref=e121] [cursor=pointer]: XXXLutz
+                  - generic [ref=e122] [cursor=pointer]:
+                    - generic [ref=e123] [cursor=pointer]:
+                      - generic [ref=e124] [cursor=pointer]: místo 5 691,‒ Kč*
+                      - generic [ref=e125] [cursor=pointer]:
+                        - generic [ref=e126] [cursor=pointer]: 4 599,‒ Kč
+                        - generic [ref=e127] [cursor=pointer]:
+                          - generic [ref=e128] [cursor=pointer]: vč. DPH
+                          - generic [ref=e129] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e130] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e131] [cursor=pointer]:
+                              - generic [ref=e132] [cursor=pointer]: Cena za dopravu
+                    - generic [ref=e133] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e134] [cursor=pointer]
+                      - button "MATRACE ZE STUDENÉ PĚNY, 90/200 cm Vložit do košíku" [ref=e135] [cursor=pointer]
+                - img "MATRACE ZE STUDENÉ PĚNY, 90/200 cm - šedá/bílá, Basics, textil (90/200cm) - Swedish Line" [ref=e138] [cursor=pointer]
+              - article [ref=e139] [cursor=pointer]:
+                - generic [ref=e140] [cursor=pointer]:
+                  - generic [ref=e142] [cursor=pointer]:
+                    - link "KARTON NA STĚHOVÁNÍ" [ref=e143] [cursor=pointer]:
+                      - /url: /p/boxxx-karton-na-stehovan-0031990006
+                      - generic [ref=e144] [cursor=pointer]:
+                        - generic [ref=e145] [cursor=pointer]: KARTON
+                        - text: NA STĚHOVÁNÍ
+                    - generic [ref=e146] [cursor=pointer]: Boxxx
+                    - generic [ref=e147] [cursor=pointer]: XXXLutz
+                  - generic [ref=e148] [cursor=pointer]:
+                    - generic [ref=e150] [cursor=pointer]:
+                      - generic [ref=e151] [cursor=pointer]: 89,‒ Kč
+                      - generic [ref=e152] [cursor=pointer]:
+                        - generic [ref=e153] [cursor=pointer]: vč. DPH
+                        - generic [ref=e154] [cursor=pointer]:
+                          - text: •
+                          - generic [ref=e155] [cursor=pointer]: plus
+                          - button "Cena za dopravu" [ref=e156] [cursor=pointer]:
+                            - generic [ref=e157] [cursor=pointer]: Cena za dopravu
+                    - generic [ref=e158] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e159] [cursor=pointer]
+                      - button "KARTON NA STĚHOVÁNÍ Vložit do košíku" [ref=e160] [cursor=pointer]
+                - img "KARTON NA STĚHOVÁNÍ - hnědá, Basics, karton (59/39/39cm) - Boxxx" [ref=e163] [cursor=pointer]
+              - article [ref=e164] [cursor=pointer]:
+                - generic [ref=e165] [cursor=pointer]:
+                  - generic [ref=e166] [cursor=pointer]:
+                    - generic [ref=e167] [cursor=pointer]:
+                      - link "ŠATNÍ STOJAN" [ref=e168] [cursor=pointer]:
+                        - /url: /p/carryhome-atni-stojan-000537000602
+                        - generic [ref=e169] [cursor=pointer]:
+                          - generic [ref=e170] [cursor=pointer]: ŠATNÍ
+                          - text: STOJAN
+                      - generic [ref=e171] [cursor=pointer]: Carryhome
+                      - generic [ref=e172] [cursor=pointer]: XXXLutz
+                    - generic [ref=e174] [cursor=pointer]: K dispozici více barev
+                  - generic [ref=e175] [cursor=pointer]:
+                    - generic [ref=e176] [cursor=pointer]:
+                      - generic [ref=e177] [cursor=pointer]: místo 1 035,‒ Kč*
+                      - generic [ref=e178] [cursor=pointer]:
+                        - generic [ref=e179] [cursor=pointer]: 729,‒ Kč
+                        - generic [ref=e180] [cursor=pointer]:
+                          - generic [ref=e181] [cursor=pointer]: vč. DPH
+                          - generic [ref=e182] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e183] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e184] [cursor=pointer]:
+                              - generic [ref=e185] [cursor=pointer]: Cena za dopravu
+                    - generic [ref=e186] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e187] [cursor=pointer]
+                      - button "ŠATNÍ STOJAN Vložit do košíku" [ref=e188] [cursor=pointer]
+                - img "ŠATNÍ STOJAN - černá, Design, kov (50/171/50cm) - Carryhome" [ref=e191] [cursor=pointer]
+              - article [ref=e192] [cursor=pointer]:
+                - generic [ref=e193] [cursor=pointer]:
+                  - generic [ref=e194] [cursor=pointer]:
+                    - generic [ref=e195] [cursor=pointer]:
+                      - link "ŠATNÍ SKŘÍŇ S OTOČNÝMI DVEŘMI, bílá, vysoce lesklá bílá, 292,8/218,6/59,6 cm" [ref=e196] [cursor=pointer]:
+                        - /url: /p/xora-atni-skrin-s-otocnymi-dvermi-bila-vysoce-leskla-bila-292-8-218-6-59-6-cm-000588000507
+                        - generic [ref=e197] [cursor=pointer]:
+                          - generic [ref=e198] [cursor=pointer]: ŠATNÍ
+                          - text: SKŘÍŇ S OTOČNÝMI DVEŘMI, bílá, vysoce lesklá bílá, 292,8/218,6/59,6 cm
+                      - generic [ref=e199] [cursor=pointer]: Xora
+                      - generic [ref=e200] [cursor=pointer]: XXXLutz
+                    - generic [ref=e202] [cursor=pointer]: K dispozici více variant
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204] [cursor=pointer]:
+                      - generic [ref=e205] [cursor=pointer]: místo 54 806,‒ Kč*
+                      - generic [ref=e206] [cursor=pointer]:
+                        - generic [ref=e207] [cursor=pointer]: 22 999,‒ Kč
+                        - generic [ref=e208] [cursor=pointer]:
+                          - generic [ref=e209] [cursor=pointer]: vč. DPH
+                          - generic [ref=e210] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e211] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e212] [cursor=pointer]:
+                              - generic [ref=e213] [cursor=pointer]: Cena za dopravu
+                    - generic [ref=e214] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e215] [cursor=pointer]
+                      - button "ŠATNÍ SKŘÍŇ S OTOČNÝMI DVEŘMI, bílá, vysoce lesklá bílá, 292,8/218,6/59,6 cm Vložit do košíku" [ref=e216] [cursor=pointer]
+                - img "ŠATNÍ SKŘÍŇ S OTOČNÝMI DVEŘMI, bílá, vysoce lesklá bílá, 292,8/218,6/59,6 cm - bílá/barvy hliníku, Konvenční, kov/kompozitní dřevo (292,8/218,6/59,6cm) - Xora" [ref=e219] [cursor=pointer]
+              - article [ref=e220] [cursor=pointer]:
+                - generic [ref=e221] [cursor=pointer]:
+                  - generic [ref=e223] [cursor=pointer]:
+                    - link "VYSOKÁ POSTEL, 90/200 cm" [ref=e224] [cursor=pointer]:
+                      - /url: /p/carryhome-vysoka-postel-90-200-cm-002522009203
+                      - generic [ref=e225] [cursor=pointer]:
+                        - generic [ref=e226] [cursor=pointer]: VYSOKÁ
+                        - text: POSTEL, 90/200 cm
+                    - generic [ref=e227] [cursor=pointer]: Carryhome
+                    - generic [ref=e228] [cursor=pointer]: XXXLutz
+                  - generic [ref=e229] [cursor=pointer]:
+                    - generic [ref=e230] [cursor=pointer]:
+                      - generic [ref=e231] [cursor=pointer]: místo 26 487,‒ Kč*
+                      - generic [ref=e232] [cursor=pointer]:
+                        - generic [ref=e233] [cursor=pointer]: 19 299,‒ Kč
+                        - generic [ref=e234] [cursor=pointer]:
+                          - generic [ref=e235] [cursor=pointer]: vč. DPH
+                          - generic [ref=e236] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e237] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e238] [cursor=pointer]:
+                              - generic [ref=e239] [cursor=pointer]: Cena za dopravu
+                    - generic [ref=e240] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e241] [cursor=pointer]
+                      - button "VYSOKÁ POSTEL, 90/200 cm Vložit do košíku" [ref=e242] [cursor=pointer]
+                - img "VYSOKÁ POSTEL, 90/200 cm - bílá/barvy dubu, Konvenční, kompozitní dřevo (90/200cm) - Carryhome" [ref=e245] [cursor=pointer]
+              - article [ref=e246] [cursor=pointer]:
+                - generic [ref=e247] [cursor=pointer]:
+                  - generic [ref=e248] [cursor=pointer]:
+                    - generic [ref=e249] [cursor=pointer]:
+                      - link "ROHOVÁ SEDAČKA, textil, šedá" [ref=e250] [cursor=pointer]:
+                        - /url: /p/carryhome-rohova-sedacka-textil-sed-002300011402
+                        - generic [ref=e251] [cursor=pointer]:
+                          - generic [ref=e252] [cursor=pointer]: ROHOVÁ
+                          - text: SEDAČKA, textil, šedá
+                      - generic [ref=e253] [cursor=pointer]: Carryhome
+                      - generic [ref=e254] [cursor=pointer]: XXXLutz
+                    - generic [ref=e256] [cursor=pointer]: konfigurovatelné
+                  - generic [ref=e257] [cursor=pointer]:
+                    - generic [ref=e258] [cursor=pointer]:
+                      - generic [ref=e259] [cursor=pointer]: místo 53 509,‒ Kč*
+                      - generic [ref=e260] [cursor=pointer]:
+                        - generic [ref=e261] [cursor=pointer]: 35 999,‒ Kč
+                        - generic [ref=e262] [cursor=pointer]:
+                          - generic [ref=e263] [cursor=pointer]: vč. DPH
+                          - generic [ref=e264] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e265] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e266] [cursor=pointer]:
+                              - generic [ref=e267] [cursor=pointer]: Cena za dopravu
+                    - generic [ref=e268] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e269] [cursor=pointer]
+                      - button "ROHOVÁ SEDAČKA, textil, šedá Vložit do košíku" [ref=e270] [cursor=pointer]
+                - img "ROHOVÁ SEDAČKA, textil, šedá - šedá/bílá, Design, textil/plast (173/294cm) - Carryhome" [ref=e273] [cursor=pointer]
+              - article [ref=e274] [cursor=pointer]:
+                - generic [ref=e275] [cursor=pointer]:
+                  - generic [ref=e276] [cursor=pointer]:
+                    - generic [ref=e277] [cursor=pointer]:
+                      - link "STOLNÍ DESKA divoký dub masivní" [ref=e278] [cursor=pointer]:
+                        - /url: /p/valdera-stolni-deska-divoky-dub-masivn-002730000905
+                        - generic [ref=e279] [cursor=pointer]:
+                          - generic [ref=e280] [cursor=pointer]: STOLNÍ
+                          - text: DESKA divoký dub masivní
+                      - generic [ref=e281] [cursor=pointer]: Valdera
+                      - generic [ref=e282] [cursor=pointer]: XXXLutz
+                    - generic [ref=e284] [cursor=pointer]: K dispozici více variant
+                  - generic [ref=e285] [cursor=pointer]:
+                    - generic [ref=e286] [cursor=pointer]:
+                      - generic [ref=e287] [cursor=pointer]: místo 16 299,‒ Kč*
+                      - generic [ref=e288] [cursor=pointer]:
+                        - generic [ref=e289] [cursor=pointer]: 10 499,‒ Kč
+                        - generic [ref=e290] [cursor=pointer]:
+                          - generic [ref=e291] [cursor=pointer]: vč. DPH
+                          - generic [ref=e292] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e293] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e294] [cursor=pointer]:
+                              - generic [ref=e295] [cursor=pointer]: Cena za dopravu
+                    - generic [ref=e296] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e297] [cursor=pointer]
+                      - button "STOLNÍ DESKA divoký dub masivní Vložit do košíku" [ref=e298] [cursor=pointer]
+                - img "STOLNÍ DESKA divoký dub masivní - barvy dubu, Natur, dřevo (160/90/6cm) - Valdera" [ref=e301] [cursor=pointer]
+              - article [ref=e302] [cursor=pointer]:
+                - generic [ref=e303] [cursor=pointer]:
+                  - generic [ref=e305] [cursor=pointer]:
+                    - link "HERNÍ ŽIDLE, vzhled kůže, mikrovlákno, netkaná textilie, černá, bílá" [ref=e306] [cursor=pointer]:
+                      - /url: /p/novel-herni-zidle-vzhled-kuze-mikrovlakno-netkana-textilie-cerna-bil-001884002101
+                      - generic [ref=e307] [cursor=pointer]:
+                        - generic [ref=e308] [cursor=pointer]: HERNÍ
+                        - text: ŽIDLE, vzhled kůže, mikrovlákno, netkaná textilie, černá, bílá
+                    - generic [ref=e309] [cursor=pointer]: Novel
+                    - generic [ref=e310] [cursor=pointer]: XXXLutz
+                  - generic [ref=e311] [cursor=pointer]:
+                    - generic [ref=e312] [cursor=pointer]:
+                      - generic [ref=e313] [cursor=pointer]: místo 6 499,‒ Kč*
+                      - generic [ref=e314] [cursor=pointer]:
+                        - generic [ref=e315] [cursor=pointer]: 4 599,‒ Kč
+                        - generic [ref=e316] [cursor=pointer]:
+                          - generic [ref=e317] [cursor=pointer]: vč. DPH
+                          - generic [ref=e318] [cursor=pointer]: •Doprava ZDARMA
+                    - generic [ref=e319] [cursor=pointer]:
+                      - button "Přidat mezi oblíbené" [ref=e320] [cursor=pointer]
+                      - button "HERNÍ ŽIDLE, vzhled kůže, mikrovlákno, netkaná textilie, černá, bílá Vložit do košíku" [ref=e321] [cursor=pointer]
+                - img "HERNÍ ŽIDLE, vzhled kůže, mikrovlákno, netkaná textilie, černá, bílá - bílá/černá, Design, kov/textil (65/114/67cm) - Novel" [ref=e324] [cursor=pointer]
+            - button "další obrázek" [ref=e325] [cursor=pointer]
+  - contentinfo [ref=e326]:
+    - generic [ref=e327]:
+      - generic [ref=e328]:
+        - generic [ref=e329]: Výhody XXXLutz
+        - list [ref=e331]:
+          - listitem [ref=e332]:
+            - link "Osobní odběr ZDARMA" [ref=e333] [cursor=pointer]:
+              - /url: /c/click-collect
+              - text: Osobní odběr ZDARMA
+          - listitem [ref=e335]:
+            - link "Větší nákup – doprava ZDARMA" [ref=e336] [cursor=pointer]:
+              - /url: /c/xxxl-online-nakup
+              - text: Větší nákup – doprava ZDARMA
+          - listitem [ref=e338]:
+            - link "Rychlé dodání a výnos až do bytu" [ref=e339] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-dopravy
+              - text: Rychlé dodání a výnos až do bytu
+          - listitem [ref=e341]:
+            - link "Bezpečná platba" [ref=e342] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby
+              - text: Bezpečná platba
+          - listitem [ref=e344]:
+            - link "Zapůjčení dodávky výhodně" [ref=e345] [cursor=pointer]:
+              - /url: /c/xxxl-dodavka
+              - text: Zapůjčení dodávky výhodně
+          - listitem [ref=e347]:
+            - link "12 prodejen po celé České republice" [ref=e348] [cursor=pointer]:
+              - /url: /pobocky
+              - text: 12 prodejen po celé České republice
+          - listitem [ref=e350]:
+            - link "Zákaznický servis e-shopu PO–NE" [ref=e351] [cursor=pointer]:
+              - /url: /kontaktnicentrum
+              - text: Zákaznický servis e-shopu PO–NE
+      - generic [ref=e353]:
+        - link "Přeskočit příští Seznam" [ref=e354] [cursor=pointer]:
+          - /url: "#skip-section-Seznam-new_footer_third_section_node_1"
+          - text: Přeskočit úsek
+        - generic [ref=e355]:
+          - generic [ref=e357]:
+            - generic [ref=e358]: E-shop
+            - list [ref=e359]:
+              - listitem [ref=e360]:
+                - link "Nákup online" [ref=e361] [cursor=pointer]:
+                  - /url: /c/xxxl-online-nakup
+              - listitem [ref=e362]:
+                - link "Možnosti platby" [ref=e363] [cursor=pointer]:
+                  - /url: /c/xxxl-zpusoby-platby
+              - listitem [ref=e364]:
+                - link "Způsoby dopravy" [ref=e365] [cursor=pointer]:
+                  - /url: /c/xxxl-zpusoby-dopravy
+              - listitem [ref=e366]:
+                - link "Vrácení zboží & reklamace" [ref=e367] [cursor=pointer]:
+                  - /url: /c/xxxl-reklamace
+              - listitem [ref=e368]:
+                - link "Click & Collect" [ref=e369] [cursor=pointer]:
+                  - /url: /c/click-collect
+              - listitem [ref=e370]:
+                - link "FAQ" [ref=e371] [cursor=pointer]:
+                  - /url: /faq
+              - listitem [ref=e372]:
+                - link "Newsletter" [ref=e373] [cursor=pointer]:
+                  - /url: /c/newsletter
+              - listitem [ref=e374]:
+                - link "Všechny kategorie produktů" [ref=e375] [cursor=pointer]:
+                  - /url: /kategorie/root
+          - generic [ref=e377]:
+            - generic [ref=e378]: Služby
+            - list [ref=e379]:
+              - listitem [ref=e380]:
+                - link "XXXL Služby" [ref=e381] [cursor=pointer]:
+                  - /url: /c/xxxl-sluzby
+              - listitem [ref=e382]:
+                - link "Bydlení na míru" [ref=e383] [cursor=pointer]:
+                  - /url: /c/nabytek-na-miru-domluvit-poradenstvi
+              - listitem [ref=e384]:
+                - link "XXXL HIT karta" [ref=e385] [cursor=pointer]:
+                  - /url: /c/xxxl-hitkarta
+              - listitem [ref=e386]:
+                - link "Doprava a montáž" [ref=e387] [cursor=pointer]:
+                  - /url: /c/doprava-montaz
+              - listitem [ref=e388]:
+                - link "XXXL Rádce" [ref=e389] [cursor=pointer]:
+                  - /url: /c/poradenstvi
+              - listitem [ref=e390]:
+                - link "B2B program" [ref=e391] [cursor=pointer]:
+                  - /url: /c/b2b-program
+              - listitem [ref=e392]:
+                - link "Stav objednávky" [ref=e393] [cursor=pointer]:
+                  - /url: /stavobjednavky
+          - generic [ref=e395]:
+            - generic [ref=e396]: Prodejny
+            - list [ref=e397]:
+              - listitem [ref=e398]:
+                - link "Prodejny" [ref=e399] [cursor=pointer]:
+                  - /url: /pobocky
+              - listitem [ref=e400]:
+                - link "Výprodejové trháky" [ref=e401] [cursor=pointer]:
+                  - /url: /hs/
+              - listitem [ref=e402]:
+                - link "Restaurace" [ref=e403] [cursor=pointer]:
+                  - /url: /c/xxxl-restaurace
+              - listitem [ref=e404]:
+                - link "XXXL Dodávka" [ref=e405] [cursor=pointer]:
+                  - /url: /c/xxxl-dodavka
+              - listitem [ref=e406]:
+                - link "Reklamační řád" [ref=e407] [cursor=pointer]:
+                  - /url: /c/reklamacni-rad
+              - listitem [ref=e408]:
+                - link "Financování" [ref=e409] [cursor=pointer]:
+                  - /url: /c/financovani-home-credit
+              - listitem [ref=e410]:
+                - link "Prospekty" [ref=e411] [cursor=pointer]:
+                  - /url: /c/letaky
+              - listitem [ref=e412]:
+                - link "Vrácení zboží & reklamace" [ref=e413] [cursor=pointer]:
+                  - /url: /c/xxxl-reklamace
+          - generic [ref=e415]:
+            - generic [ref=e416]: O nás
+            - list [ref=e417]:
+              - listitem [ref=e418]:
+                - link "Firma XXXLutz" [ref=e419] [cursor=pointer]:
+                  - /url: /c/spolecnost-xxxlutz
+              - listitem [ref=e420]:
+                - link "Rodina Putz" [ref=e421] [cursor=pointer]:
+                  - /url: /c/rodina-putz
+              - listitem [ref=e422]:
+                - link "XXXL Etický Kodex" [ref=e423] [cursor=pointer]:
+                  - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCRi2vtWcvdYADEQm2UQyCDw/xxxl_unternehmenscharta_2015_cz.pdf
+              - listitem [ref=e424]:
+                - link "Kariéra" [ref=e425] [cursor=pointer]:
+                  - /url: https://kariera.xxxlutz.cz
+              - listitem [ref=e426]:
+                - link "Ozvěte se" [ref=e427] [cursor=pointer]:
+                  - /url: /c/speak-up
+              - listitem [ref=e428]:
+                - link "Tiskové centrum" [ref=e429] [cursor=pointer]:
+                  - /url: https://pr.xxxlutz.cz/
+              - listitem [ref=e430]:
+                - link "XXXL Svět značek" [ref=e431] [cursor=pointer]:
+                  - /url: /c/xxxl-svet-znacek
+              - listitem [ref=e432]:
+                - link "Slovníček pojmů" [ref=e433] [cursor=pointer]:
+                  - /url: /c/nabytek-slovnik
+      - generic [ref=e435]:
+        - generic [ref=e438]:
+          - paragraph [ref=e439]: Chcete se na něco zeptat?
+          - generic [ref=e440]:
+            - generic [ref=e441]:
+              - link "Ke kontaktnímu formuláři" [ref=e442] [cursor=pointer]:
+                - /url: /kontaktnicentrum
+                - generic [ref=e443] [cursor=pointer]: Ke kontaktnímu formuláři
+              - paragraph [ref=e444]: Kontaktujte nás.
+            - generic [ref=e445]:
+              - link "Často kladené otázky (FAQ)" [ref=e446] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e447] [cursor=pointer]: Často kladené otázky (FAQ)
+              - paragraph [ref=e448]: V FAQ najdete okamžitou odpověď na spoustu otázek, které vás zajímají.
+        - generic [ref=e449]:
+          - generic [ref=e450]: Způsoby dopravy v e-shopu
+          - generic [ref=e451]:
+            - link "Gebruder Weiss" [ref=e454] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-dopravy#doprava
+              - img "Gebruder Weiss" [ref=e455] [cursor=pointer]
+            - link "DPD" [ref=e458] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-dopravy#doprava
+              - img "DPD" [ref=e459] [cursor=pointer]
+        - generic [ref=e460]:
+          - generic [ref=e461]: Způsoby platby v e-shopu
+          - generic [ref=e462]:
+            - link "Mastercard" [ref=e465] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby#pkarta
+              - img "Mastercard" [ref=e466] [cursor=pointer]
+            - link "VISA" [ref=e469] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby#pkarta
+              - img "VISA" [ref=e470] [cursor=pointer]
+            - link "Diners card" [ref=e473] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby#pkarta
+              - img "Diners card" [ref=e474] [cursor=pointer]
+            - link "bankovi prevod" [ref=e477] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby#sepa
+              - img "bankovi prevod" [ref=e478] [cursor=pointer]
+            - link "PAYPAL" [ref=e481] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby#paypal
+              - img "PAYPAL" [ref=e482] [cursor=pointer]
+            - link "DOBIRKA" [ref=e485] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby#dobirka
+              - img "DOBIRKA" [ref=e486] [cursor=pointer]
+            - link "GPay" [ref=e489] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby
+              - img "GPay" [ref=e490] [cursor=pointer]
+            - link "Apple Pay" [ref=e493] [cursor=pointer]:
+              - /url: /c/xxxl-zpusoby-platby#applepay
+              - img "Apple Pay" [ref=e494] [cursor=pointer]
+        - generic [ref=e495]: "* nezávazně doporučená spotřebitelská cena. / ** dosavadní prodejní cena. / ***Nejnižší cena za posledních 30 dní. / Konečná cena včetně slevy. / Všechny uvedené ceny jsou včetně DPH. / Doprava a montáž nejsou součástí uvedených cen. / Dodání v rámci České republiky. / Změny a chyby vyhrazeny."
+      - generic [ref=e498]:
+        - link "XXXLutz" [ref=e499] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e500] [cursor=pointer]: XXXLutz
+          - img [ref=e502] [cursor=pointer]
+        - generic [ref=e508]: ©2026 XLCZ Nábytek s.r.o.
+        - list [ref=e509]:
+          - listitem [ref=e510]:
+            - link "Kontakty" [ref=e511] [cursor=pointer]:
+              - /url: /c/kontakty
+          - listitem [ref=e512]:
+            - link "Impresum" [ref=e513] [cursor=pointer]:
+              - /url: /c/impresum
+          - listitem [ref=e514]:
+            - link "Podmínky akce" [ref=e515] [cursor=pointer]:
+              - /url: /c/podminkyakce
+          - listitem [ref=e516]:
+            - link "VOP" [ref=e517] [cursor=pointer]:
+              - /url: /c/vop
+          - listitem
+          - listitem [ref=e518]:
+            - link "Ochrana údajů" [ref=e519] [cursor=pointer]:
+              - /url: /c/ochrana-osobnich-udaju
+          - listitem [ref=e520]:
+            - button "Nastavení souborů cookie" [ref=e521] [cursor=pointer]
+          - listitem [ref=e522]:
+            - link "PROHLÁŠENÍ O PŘÍSTUPNOSTI" [ref=e523] [cursor=pointer]:
+              - /url: /accessibility
+          - listitem
+        - list [ref=e524]:
+          - listitem [ref=e525]:
+            - link "youtube" [ref=e526] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC7OGMgj1vp41BjM5CBct_sQ
+          - listitem [ref=e527]:
+            - link "pinterest" [ref=e528] [cursor=pointer]:
+              - /url: https://www.pinterest.at/lutznabytek/
+          - listitem [ref=e529]:
+            - link "instagram" [ref=e530] [cursor=pointer]:
+              - /url: https://www.instagram.com/accounts/login/?next=/lutznabytek/
+          - listitem [ref=e531]:
+            - link "facebook" [ref=e532] [cursor=pointer]:
+              - /url: https://www.facebook.com/lutznabytek/
+          - listitem [ref=e533]:
+            - link "tiktok" [ref=e534] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@xxxlutz_czsk
+        - link "WACA bronz tanusítvány" [ref=e535] [cursor=pointer]:
+          - /url: /accessibility
+          - img "WACA bronz tanusítvány" [ref=e536] [cursor=pointer]
+```

@@ -1,0 +1,386 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link "Gratis Postversand ab 49 €" [ref=e9] [cursor=pointer]:
+            - /url: /kategorien/root
+            - generic [ref=e10] [cursor=pointer]: Gratis Postversand ab 49 €
+          - generic [ref=e12]:
+            - link "gratis Click & Collect" [ref=e13] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - generic [ref=e14] [cursor=pointer]: gratis Click & Collect
+            - link "über 12.000 Produkte lagernd" [ref=e15] [cursor=pointer]:
+              - /url: /kategorien/root
+              - generic [ref=e16] [cursor=pointer]: über 12.000 Produkte lagernd
+            - link "22 Filialen in deiner Nähe" [ref=e17] [cursor=pointer]:
+              - /url: /filialen-at
+              - generic [ref=e18] [cursor=pointer]: 22 Filialen in deiner Nähe
+            - switch "Hoher Kontrast" [ref=e19]
+            - generic [ref=e20] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e21] [cursor=pointer]
+        - generic [ref=e25]:
+          - button "Navigation wechseln" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Menü
+          - link "Möemax" [ref=e28] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e29] [cursor=pointer]: Möemax
+            - img [ref=e31] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e34] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e35]:
+            - generic [ref=e36]:
+              - button "Suchen" [ref=e38] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e39]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+              - button "Bildersuche" [ref=e43] [cursor=pointer]
+          - generic [ref=e44]:
+            - button "Anmelden" [ref=e46] [cursor=pointer]:
+              - generic [ref=e47] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e49] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e50] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 1 Produkt" [ref=e52] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e53] [cursor=pointer]: "1"
+              - generic [ref=e54] [cursor=pointer]: Warenkorb
+          - navigation [ref=e55]:
+            - list [ref=e56]:
+              - listitem [ref=e57]:
+                - link "Produkte" [ref=e58] [cursor=pointer]:
+                  - /url: /kategorien/root
+              - listitem [ref=e59]:
+                - link "Räume" [ref=e60] [cursor=pointer]:
+                  - /url: /c/raeume
+              - listitem [ref=e61]:
+                - link "Küchen" [ref=e62] [cursor=pointer]:
+                  - /url: /alle-kuechen-C34
+              - listitem [ref=e63]:
+                - link "Garten" [ref=e64] [cursor=pointer]:
+                  - /url: /garten-outdoor-C45
+              - listitem [ref=e65]:
+                - link "Trends" [ref=e66] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e67]:
+                - link "Werbung" [ref=e68] [cursor=pointer]:
+                  - /url: /c/dein-trendmoebelhaus
+              - listitem [ref=e69]:
+                - link "% SALE %" [ref=e70] [cursor=pointer]:
+                  - /url: /c/sale
+              - listitem [ref=e71]:
+                - link "Beratungstermin" [ref=e72] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+      - main [ref=e73]:
+        - status [ref=e74]:
+          - generic [ref=e75]: Warenkorb - Mömax
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - heading "Warenkorb" [level=1] [ref=e80]
+              - link "weiter einkaufen" [ref=e81] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e82] [cursor=pointer]: weiter einkaufen
+            - generic [ref=e83]:
+              - alert [ref=e87]:
+                - generic [ref=e88]: Bitte wählen Sie eine Abholfiliale aus.
+              - list [ref=e89]:
+                - listitem [ref=e90]:
+                  - article [ref=e91]:
+                    - generic [ref=e92]:
+                      - img "Boxspringbett Josie-b Beige Ca. 160x200cm - Beige/Schwarz, KONVENTIONELL, Holz/Holzwerkstoff (160/200cm) - Mömax" [ref=e93]
+                      - link [ref=e94] [cursor=pointer]:
+                        - /url: /p/moemax-boxspringbett-josie-b-beige-ca-160x200cm-001523000202
+                    - generic [ref=e95]:
+                      - generic [ref=e96]:
+                        - generic [ref=e97]: "001523000202"
+                        - link "Artikelnr. 1523000202" [ref=e98] [cursor=pointer]:
+                          - /url: /p/moemax-boxspringbett-josie-b-beige-ca-160x200cm-001523000202
+                          - generic [ref=e99] [cursor=pointer]: Artikelnr. 1523000202
+                      - link "Mömax Boxspringbett Josie-b Beige Ca. 160x200cm" [ref=e101] [cursor=pointer]:
+                        - /url: /p/moemax-boxspringbett-josie-b-beige-ca-160x200cm-001523000202
+                        - heading "Mömax Boxspringbett Josie-b Beige Ca. 160x200cm" [level=2] [ref=e102] [cursor=pointer]:
+                          - generic [ref=e103] [cursor=pointer]: Mömax Boxspringbett
+                          - generic [ref=e104] [cursor=pointer]: Josie-b Beige Ca. 160x200cm
+                      - generic [ref=e105]:
+                        - generic [ref=e106]: Beige
+                        - generic [ref=e107]: 160/200 cm
+                    - generic [ref=e110]:
+                      - generic [ref=e111]:
+                        - generic [ref=e112]: € 2.408,‒***
+                        - generic [ref=e113]: € 1.179,‒
+                      - generic [ref=e114]: € 1.179,‒ / Stk
+                    - generic [ref=e115]:
+                      - button "Produkt entfernen - Boxspringbett Josie-b Beige Ca. 160x200cm" [ref=e116] [cursor=pointer]
+                      - generic [ref=e117]:
+                        - textbox "Menge" [ref=e118]: "1"
+                        - generic [ref=e119]: Menge
+                      - button "1" [ref=e120] [cursor=pointer]:
+                        - generic [ref=e121] [cursor=pointer]: "1"
+                      - button "Anzahl erhöhen - Boxspringbett Josie-b Beige Ca. 160x200cm" [ref=e122] [cursor=pointer]
+                    - generic [ref=e124]:
+                      - button "Boxspringbett Josie-b Beige Ca. 160x200cm - Für später merken" [ref=e125] [cursor=pointer]:
+                        - generic [ref=e127] [cursor=pointer]: Für später merken
+                      - button "Boxspringbett Josie-b Beige Ca. 160x200cm - Produkt entfernen" [ref=e128] [cursor=pointer]:
+                        - generic [ref=e130] [cursor=pointer]: Produkt entfernen
+                  - generic [ref=e131]:
+                    - generic [ref=e132]:
+                      - combobox [ref=e135] [cursor=pointer]:
+                        - generic [ref=e138] [cursor=pointer]: Selbstabholung
+                      - button "Filiale wählen" [ref=e140] [cursor=pointer]:
+                        - generic [ref=e141] [cursor=pointer]: Filiale wählen
+                      - generic [ref=e142]:
+                        - text: Lieferkosten
+                        - generic [ref=e143]: + € 0,‒
+                    - paragraph [ref=e144]:
+                      - generic [ref=e145]: Die Abhol-/Lageradresse der Filiale entspricht nicht immer der Adresse der Filiale.
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - heading "Zusammenfassung" [level=2] [ref=e149]
+              - generic [ref=e150]:
+                - generic [ref=e151]:
+                  - generic [ref=e152]: Warenwert
+                  - generic [ref=e153]: € 1.179,‒
+                  - button "Lieferkosten" [ref=e154] [cursor=pointer]:
+                    - generic [ref=e155] [cursor=pointer]: Lieferkosten
+                  - generic [ref=e156]: gratis
+                - generic [ref=e157]:
+                  - generic [ref=e158]: Gesamt
+                  - generic [ref=e159]: € 1.179,‒
+                  - generic [ref=e160]: inkl. MwSt.
+                - button "zur Kasse" [ref=e161] [cursor=pointer]:
+                  - generic [ref=e162] [cursor=pointer]: zur Kasse
+                - separator "oder" [ref=e163]
+                - generic [ref=e164]:
+                  - button "Mit Apple Pay kaufen" [ref=e169] [cursor=pointer]:
+                    - img [ref=e171] [cursor=pointer]:
+                      - generic [ref=e172] [cursor=pointer]:
+                        - generic [ref=e173] [cursor=pointer]: Mit
+                        - img [ref=e174] [cursor=pointer]
+                        - generic [ref=e182] [cursor=pointer]: kaufen
+                  - button "Mit GPay kaufen" [ref=e187] [cursor=pointer]
+            - generic [ref=e189]:
+              - button "Gutscheincode" [ref=e190] [cursor=pointer]:
+                - generic [ref=e191] [cursor=pointer]: Gutscheincode
+                - img [ref=e192] [cursor=pointer]
+              - generic [ref=e195]:
+                - generic [ref=e198]:
+                  - textbox "Code kopieren" [ref=e199]
+                  - generic: Code kopieren
+                - button "Gutschein einlösen" [ref=e200] [cursor=pointer]:
+                  - generic [ref=e201] [cursor=pointer]: Gutschein einlösen
+          - complementary [ref=e202]:
+            - link "weiter einkaufen" [ref=e203] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e204] [cursor=pointer]: weiter einkaufen
+    - contentinfo [ref=e205]:
+      - generic [ref=e206]:
+        - list [ref=e208]:
+          - listitem [ref=e209]:
+            - link "Click & Collect" [ref=e210] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e211] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e212]:
+            - link "30 Tage Rückgabe" [ref=e213] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e214] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e215]:
+            - link "Gratis Transporter" [ref=e216] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e217] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e218]:
+            - link "Montage & Lieferung" [ref=e219] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e220] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e221]:
+          - link "Die nächste Liste überspringen" [ref=e222] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+            - text: Abschnitt überspringen
+          - generic [ref=e223]:
+            - generic [ref=e225]:
+              - generic [ref=e226]: Über uns
+              - list [ref=e227]:
+                - listitem [ref=e228]:
+                  - link "Presse" [ref=e229] [cursor=pointer]:
+                    - /url: https://pr.moemax.at
+                - listitem [ref=e230]:
+                  - link "Jobs bei mömax" [ref=e231] [cursor=pointer]:
+                    - /url: https://karriere.moemax.at
+                - listitem [ref=e232]:
+                  - link "Unternehmen" [ref=e233] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e234]:
+                  - link "Blog" [ref=e235] [cursor=pointer]:
+                    - /url: https://blog.moemax.de
+                - listitem [ref=e236]:
+                  - link "Aktueller Service" [ref=e237] [cursor=pointer]:
+                    - /url: /c/serviceuebersicht
+                - listitem [ref=e238]:
+                  - link "Barrierefreiheit" [ref=e239] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+                - listitem [ref=e240]:
+                  - link "Auszeichnungen" [ref=e241] [cursor=pointer]:
+                    - /url: /c/auszeichnungen
+            - generic [ref=e243]:
+              - generic [ref=e244]: Service
+              - list [ref=e245]:
+                - listitem [ref=e246]:
+                  - link "Aktuelle Aktionen" [ref=e247] [cursor=pointer]:
+                    - /url: /c/dein-trendmoebelhaus
+                - listitem [ref=e248]:
+                  - link "Prospekte" [ref=e249] [cursor=pointer]:
+                    - /url: /c/prospekte
+                - listitem [ref=e250]:
+                  - link "Aktionsbedingungen" [ref=e251] [cursor=pointer]:
+                    - /url: /c/aktionsnews
+                - listitem [ref=e252]:
+                  - link "Bonus Card" [ref=e253] [cursor=pointer]:
+                    - /url: /c/unserebonuscard
+                - listitem [ref=e254]:
+                  - link "Gutscheine online einlösen" [ref=e255] [cursor=pointer]:
+                    - /url: /c/onlinegutscheine-einloesen
+                - listitem [ref=e256]:
+                  - link "Geschenkgutscheine" [ref=e257] [cursor=pointer]:
+                    - /url: https://geschenkkarten.moemax.at/b2c/
+                - listitem [ref=e258]:
+                  - link "Lieferung & Montage" [ref=e259] [cursor=pointer]:
+                    - /url: /c/lieferungundmontage
+                - listitem [ref=e260]:
+                  - link "Leihtransporter buchen (Selbstabholung)" [ref=e261] [cursor=pointer]:
+                    - /url: /transporter
+                - listitem [ref=e262]:
+                  - link "Firmenkunden (B2B)" [ref=e263] [cursor=pointer]:
+                    - /url: /c/b2b
+                - listitem [ref=e264]:
+                  - link "Premiumschutz" [ref=e265] [cursor=pointer]:
+                    - /url: /c/helvetia-versicherungen
+                - listitem [ref=e266]:
+                  - link "Konfiguratoren" [ref=e267] [cursor=pointer]:
+                    - /url: /c/konfiguratoren
+            - generic [ref=e269]:
+              - generic [ref=e270]: Kontakt
+              - list [ref=e271]:
+                - listitem [ref=e272]:
+                  - link "Auftragsstatus" [ref=e273] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e274]:
+                  - link "Bestellhotline" [ref=e275] [cursor=pointer]:
+                    - /url: /c/bestellhotline
+                - listitem [ref=e276]:
+                  - link "Newsletter" [ref=e277] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e278]:
+                  - link "Click & Collect" [ref=e279] [cursor=pointer]:
+                    - /url: /c/clickundcollect
+                - listitem [ref=e280]:
+                  - link "Versand" [ref=e281] [cursor=pointer]:
+                    - /url: /c/lieferungundmontage
+                - listitem [ref=e282]:
+                  - link "FAQ" [ref=e283] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e284]:
+                  - link "Retouren & Reklamationen" [ref=e285] [cursor=pointer]:
+                    - /url: /c/retouren
+            - generic [ref=e287]:
+              - generic [ref=e288]: Filialen und Standorte
+              - list [ref=e289]:
+                - listitem [ref=e290]:
+                  - link "Standorte" [ref=e291] [cursor=pointer]:
+                    - /url: /filialen-at
+                - listitem [ref=e292]:
+                  - link "Filialschnäppchen" [ref=e293] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e294]:
+                  - link "Restaurants" [ref=e295] [cursor=pointer]:
+                    - /url: /c/unserrestaurant
+                - listitem [ref=e296]:
+                  - link "Beratungstermin" [ref=e297] [cursor=pointer]:
+                    - /url: /c/beratungstermin-vereinbaren
+                - listitem [ref=e298]:
+                  - link "Küchenberater" [ref=e299] [cursor=pointer]:
+                    - /url: /c/kuechen-beratungstermin
+                - listitem [ref=e300]:
+                  - link "Gratis Transporter" [ref=e301] [cursor=pointer]:
+                    - /url: /c/transporterleihen
+        - generic [ref=e303]:
+          - generic [ref=e306]:
+            - paragraph [ref=e307]: Du hast noch Fragen?
+            - generic [ref=e308]:
+              - generic [ref=e309]:
+                - link "Zum Kontaktformular" [ref=e310] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e311] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e312]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e313]:
+                - link "Häufig gestellte Fragen" [ref=e314] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e315] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e316]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e317]:
+            - generic [ref=e318]: Versandpartner
+            - generic [ref=e319]:
+              - img "Gebrüder Weiss Logo" [ref=e322]
+              - img "Post Logo" [ref=e325]
+          - generic [ref=e326]:
+            - generic [ref=e327]: Zahlungsmöglichkeiten
+            - generic [ref=e328]:
+              - img "Klarna Logo" [ref=e331]
+              - img "PayPal Logo" [ref=e334]
+              - img "Visa Logo" [ref=e337]
+              - img "Mastercard Logo" [ref=e340]
+              - img "Split It Logo" [ref=e343]
+              - img "Google Pay Logo" [ref=e346]
+              - img "Apple Pay Logo" [ref=e349]
+          - generic [ref=e350]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Österreich möglich. Änderungen und Irrtümer vorbehalten. *Vom Hersteller unverbindlich empfohlener Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***Herstellerlistenpreis
+        - generic [ref=e353]:
+          - link "Möemax" [ref=e354] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e355] [cursor=pointer]: Möemax
+            - img [ref=e357] [cursor=pointer]
+          - generic [ref=e360]: © 2026 moemax GmbH
+          - list [ref=e361]:
+            - listitem [ref=e362]:
+              - link "Impressum" [ref=e363] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e364]:
+              - link "AGB" [ref=e365] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e366]:
+              - link "Datenschutz" [ref=e367] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e368]:
+              - button "Cookie-Einstellungen" [ref=e369] [cursor=pointer]
+          - list [ref=e370]:
+            - listitem [ref=e371]:
+              - link "facebook" [ref=e372] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.at/
+            - listitem [ref=e373]:
+              - link "instagram" [ref=e374] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_at/
+            - listitem [ref=e375]:
+              - link "youtube" [ref=e376] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCIeEQdLnz8qzEzrkz1k1Ymw
+            - listitem [ref=e377]:
+              - link "tiktok" [ref=e378] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e379]:
+              - link "pinterest" [ref=e380] [cursor=pointer]:
+                - /url: https://www.pinterest.at/moemax_oesterreich/
+          - link "WACA Bronze" [ref=e381] [cursor=pointer]:
+            - /url: /c/accessibility
+            - img "WACA Bronze" [ref=e382] [cursor=pointer]
+  - generic:
+    - log
+  - iframe [ref=e383]:
+    - region "Sie finden Ihre Antwort in der FAQ nicht? Unser HR Team kann Ihnen für spezifische Fragen helfen!" [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - button "Sie finden Ihre Antwort in der FAQ nicht? Unser HR Team kann Ihnen für spezifische Fragen helfen!":
+          - paragraph [ref=f1e8] [cursor=pointer]: Sie finden Ihre Antwort in der FAQ nicht? Unser HR Team kann Ihnen für spezifische Fragen helfen!
+```

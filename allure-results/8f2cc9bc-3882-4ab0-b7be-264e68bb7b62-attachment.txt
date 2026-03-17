@@ -1,0 +1,3 @@
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: KL
+ℹ️ Delivery option searching Self Service
+⚠️ SELF_SERVICE not found. Selecting first option if possible...

@@ -1,1 +1,0 @@
-Params: Country: DE, Rail: MOEMAX, Mode: 1P, Pay: Credit card

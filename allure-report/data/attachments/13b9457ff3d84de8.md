@@ -1,0 +1,613 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link "Gratis Postversand ab 49 €" [ref=e9] [cursor=pointer]:
+            - /url: /kategorien/root
+            - generic [ref=e10] [cursor=pointer]: Gratis Postversand ab 49 €
+          - generic [ref=e12]:
+            - link "gratis Click & Collect" [ref=e13] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - generic [ref=e14] [cursor=pointer]: gratis Click & Collect
+            - link "über 12.000 Produkte lagernd" [ref=e15] [cursor=pointer]:
+              - /url: /kategorien/root
+              - generic [ref=e16] [cursor=pointer]: über 12.000 Produkte lagernd
+            - link "22 Filialen in deiner Nähe" [ref=e17] [cursor=pointer]:
+              - /url: /filialen-at
+              - generic [ref=e18] [cursor=pointer]: 22 Filialen in deiner Nähe
+            - switch "Hoher Kontrast" [ref=e19]
+            - generic [ref=e20] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e21] [cursor=pointer]
+        - generic [ref=e25]:
+          - button "Navigation wechseln" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Menü
+          - link "Möemax" [ref=e28] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e29] [cursor=pointer]: Möemax
+            - img [ref=e31] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e34] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e35]:
+            - generic [ref=e36]:
+              - button "Suchen" [ref=e38] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e39]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+              - button "Bildersuche" [ref=e43] [cursor=pointer]
+          - generic [ref=e44]:
+            - button "Anmelden" [ref=e46] [cursor=pointer]:
+              - generic [ref=e47] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e49] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e50] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 0 Produkte" [ref=e52] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e53] [cursor=pointer]: Warenkorb
+          - navigation [ref=e54]:
+            - list [ref=e55]:
+              - listitem [ref=e56]:
+                - link "Produkte" [ref=e57] [cursor=pointer]:
+                  - /url: /kategorien/root
+              - listitem [ref=e58]:
+                - link "Räume" [ref=e59] [cursor=pointer]:
+                  - /url: /c/raeume
+              - listitem [ref=e60]:
+                - link "Küchen" [ref=e61] [cursor=pointer]:
+                  - /url: /alle-kuechen-C34
+              - listitem [ref=e62]:
+                - link "Garten" [ref=e63] [cursor=pointer]:
+                  - /url: /garten-outdoor-C45
+              - listitem [ref=e64]:
+                - link "Trends" [ref=e65] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e66]:
+                - link "Werbung" [ref=e67] [cursor=pointer]:
+                  - /url: /c/dein-trendmoebelhaus
+              - listitem [ref=e68]:
+                - link "% SALE %" [ref=e69] [cursor=pointer]:
+                  - /url: /c/sale
+              - listitem [ref=e70]:
+                - link "Beratungstermin" [ref=e71] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+      - main [ref=e72]:
+        - status [ref=e73]:
+          - generic [ref=e74]: Wohnwand Weiß und Eichenfarbe online bestellen
+        - generic [ref=e75]:
+          - navigation "breadcrumbs" [ref=e77]:
+            - list [ref=e78]:
+              - listitem [ref=e79]:
+                - link "Startseite" [ref=e80] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e81]:
+                - link "Produkte" [ref=e82] [cursor=pointer]:
+                  - /url: /kategorien/root
+                  - generic [ref=e83] [cursor=pointer]: Produkte
+              - listitem [ref=e84]:
+                - link "Alle Möbel" [ref=e85] [cursor=pointer]:
+                  - /url: /alle-moebel-C30
+                  - generic [ref=e86] [cursor=pointer]: Alle Möbel
+              - listitem [ref=e87]:
+                - link "Alle Schränke" [ref=e88] [cursor=pointer]:
+                  - /url: /alle-schraenke-C30C6
+                  - generic [ref=e89] [cursor=pointer]: Alle Schränke
+              - listitem [ref=e90]:
+                - link "Alle Wohnzimmerschränke" [ref=e91] [cursor=pointer]:
+                  - /url: /alle-wohnzimmerschraenke-C30C6C10
+                  - generic [ref=e92] [cursor=pointer]: Alle Wohnzimmerschränke
+              - listitem [ref=e93]:
+                - link "Alle Wohnwand" [ref=e94] [cursor=pointer]:
+                  - /url: /alle-wohnwand-C30C6C10C1
+                  - generic [ref=e95] [cursor=pointer]: Alle Wohnwand
+          - generic [ref=e96]:
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - button "Produktbild 1 / 4" [ref=e101] [cursor=pointer]:
+                  - img [ref=e102] [cursor=pointer]
+                - button "Produktbild 2 / 4" [ref=e103] [cursor=pointer]:
+                  - img [ref=e104] [cursor=pointer]
+                - button "Produktbild 3 / 4" [ref=e105] [cursor=pointer]:
+                  - img [ref=e106] [cursor=pointer]
+                - button "Produktbild 4 / 4" [ref=e107] [cursor=pointer]:
+                  - img [ref=e108] [cursor=pointer]
+              - group [ref=e110] [cursor=pointer]:
+                - generic [ref=e111] [cursor=pointer]:
+                  - img "Wohnwand Fun Plus Weiß/Eiche inkl. Beleuchtung - Chromfarben/Eichefarben, MODERN, Holzwerkstoff/Metall (325/205/47cm) - Mömax" [ref=e112]
+                  - img "Mömax"
+                - img "Wohnwand Fun Plus Weiß/Eiche inkl. Beleuchtung - Chromfarben/Eichefarben, MODERN, Holzwerkstoff/Metall (325/205/47cm) - Mömax" [ref=e114]
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119]: Artikelnr. 2737032301
+                - heading "Wohnwand Fun Plus Weiß/Eiche inkl. Beleuchtung" [level=1] [ref=e120]:
+                  - generic [ref=e121]: Wohnwand
+                  - text: Fun Plus Weiß/Eiche inkl. Beleuchtung
+                - 'button "Weiß, Eichefarben Holzwerkstoff Breite/Höhe/Tiefe: 325/205/47 cm" [ref=e122] [cursor=pointer]':
+                  - generic [ref=e123] [cursor=pointer]:
+                    - generic [ref=e124] [cursor=pointer]: Weiß, Eichefarben
+                    - generic [ref=e125] [cursor=pointer]: Holzwerkstoff
+                    - generic [ref=e126] [cursor=pointer]: "Breite/Höhe/Tiefe: 325/205/47 cm"
+                - 'link "Produktbewertung: 4 von 5 Sterne - Alle Bewertungen: 2" [ref=e127] [cursor=pointer]':
+                  - /url: "#ratings-and-reviews"
+                  - generic [ref=e129] [cursor=pointer]:
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                    - generic [ref=e130] [cursor=pointer]: (2)
+              - generic [ref=e131]:
+                - generic [ref=e132]: € 899,‒
+                - generic [ref=e133]:
+                  - generic [ref=e134]: Inkl. MwSt.
+                  - generic [ref=e135]:
+                    - text: •
+                    - generic [ref=e136]: exkl.
+                    - button "Lieferkosten" [ref=e137] [cursor=pointer]:
+                      - generic [ref=e138] [cursor=pointer]: Lieferkosten
+              - generic [ref=e139]:
+                - generic [ref=e140]: "Mehr von:"
+                - link "Mömax" [ref=e141] [cursor=pointer]:
+                  - /url: /s/?v_brand=m%C3%B6max
+                  - generic [ref=e142] [cursor=pointer]: Mömax
+              - generic [ref=e143]:
+                - button "Zu den Favoriten hinzufügen" [ref=e144] [cursor=pointer]
+                - button "Wohnwand Fun Plus Weiß/Eiche inkl. Beleuchtung In den Warenkorb" [ref=e145] [cursor=pointer]:
+                  - generic [ref=e146] [cursor=pointer]: In den Warenkorb
+              - generic [ref=e147]:
+                - button "Lieferung € 49,‒ Lieferung & Montage € 598,‒" [ref=e148] [cursor=pointer]:
+                  - generic [ref=e149] [cursor=pointer]:
+                    - generic [ref=e151] [cursor=pointer]: Lieferung
+                    - generic [ref=e152] [cursor=pointer]: € 49,‒
+                  - generic [ref=e154] [cursor=pointer]:
+                    - generic [ref=e156] [cursor=pointer]: Lieferung & Montage
+                    - generic [ref=e157] [cursor=pointer]: € 598,‒
+                - button "Lieferzeitpunkt ansehen" [ref=e159] [cursor=pointer]
+              - button "In einer Mömax Filiale Gratis Filiale wählen" [ref=e161] [cursor=pointer]:
+                - generic [ref=e162] [cursor=pointer]:
+                  - generic [ref=e164] [cursor=pointer]: In einer Mömax Filiale
+                  - generic [ref=e165] [cursor=pointer]: Gratis
+                - generic [ref=e167] [cursor=pointer]: Filiale wählen
+              - generic [ref=e168]:
+                - heading "Serviceleistungen" [level=3] [ref=e169]
+                - list [ref=e170]:
+                  - listitem [ref=e171]:
+                    - link "Click & Collect" [ref=e172] [cursor=pointer]:
+                      - /url: https://www.moemax.at/c/clickundcollect
+                      - generic [ref=e173] [cursor=pointer]: Click & Collect
+                  - listitem [ref=e174]:
+                    - link "Gratis Selbstabholung in der Filiale" [ref=e175] [cursor=pointer]:
+                      - /url: https://www.moemax.at/c/filialen-at
+                      - generic [ref=e176] [cursor=pointer]: Gratis Selbstabholung in der Filiale
+                  - listitem [ref=e177]:
+                    - link "Umfangreiches Filialnetz" [ref=e178] [cursor=pointer]:
+                      - /url: https://www.moemax.at/c/filialen-at
+                      - generic [ref=e179] [cursor=pointer]: Umfangreiches Filialnetz
+                - button "Über Service & Versand" [ref=e180] [cursor=pointer]:
+                  - generic [ref=e181] [cursor=pointer]: Über Service & Versand
+              - generic [ref=e182]:
+                - button "Produktdetails" [ref=e183] [cursor=pointer]
+                - button "Aufbau, Sicherheit & Pflege" [ref=e184] [cursor=pointer]
+              - generic [ref=e185]:
+                - heading "Kann ergänzt werden mit" [level=3] [ref=e186]
+                - article [ref=e187]:
+                  - link "Couchtisch Raven in Schwarz Rund" [ref=e189] [cursor=pointer]:
+                    - /url: /p/based-couchtisch-raven-in-schwarz-rund-001811002301
+                    - heading "Couchtisch Raven in Schwarz Rund" [level=4] [ref=e190] [cursor=pointer]:
+                      - generic [ref=e191] [cursor=pointer]: Couchtisch
+                      - generic [ref=e192] [cursor=pointer]: Raven in Schwarz Rund
+                  - generic [ref=e193]:
+                    - img "Couchtisch Raven in Schwarz Rund - Schwarz, MODERN, Glas/Metall (80/42cm) - Based" [ref=e194]
+                    - link [ref=e195] [cursor=pointer]:
+                      - /url: /p/based-couchtisch-raven-in-schwarz-rund-001811002301
+                  - generic [ref=e196]:
+                    - generic [ref=e197]: "UVP: € 431,‒*"
+                    - generic [ref=e198]: € 179,‒
+                  - link "Produkt anzeigen Couchtisch Raven in Schwarz Rund" [ref=e199] [cursor=pointer]:
+                    - /url: /p/based-couchtisch-raven-in-schwarz-rund-001811002301
+                    - generic [ref=e200] [cursor=pointer]: Produkt anzeigen
+                - article [ref=e201]:
+                  - link "Couchtisch Aiko in Schwarz Rund" [ref=e203] [cursor=pointer]:
+                    - /url: /p/based-couchtisch-aiko-in-schwarz-rund-002465001001
+                    - heading "Couchtisch Aiko in Schwarz Rund" [level=4] [ref=e204] [cursor=pointer]:
+                      - generic [ref=e205] [cursor=pointer]: Couchtisch
+                      - generic [ref=e206] [cursor=pointer]: Aiko in Schwarz Rund
+                  - generic [ref=e207]:
+                    - img "Couchtisch Aiko in Schwarz Rund - Schwarz, MODERN, Glas/Metall (75/45cm) - Based" [ref=e208]
+                    - link [ref=e209] [cursor=pointer]:
+                      - /url: /p/based-couchtisch-aiko-in-schwarz-rund-002465001001
+                  - generic [ref=e210]:
+                    - generic [ref=e211]: "UVP: € 324,‒*"
+                    - generic [ref=e212]:
+                      - text: € 99,
+                      - superscript [ref=e213]: "90"
+                  - link "Produkt anzeigen Couchtisch Aiko in Schwarz Rund" [ref=e214] [cursor=pointer]:
+                    - /url: /p/based-couchtisch-aiko-in-schwarz-rund-002465001001
+                    - generic [ref=e215] [cursor=pointer]: Produkt anzeigen
+                - button "Weitere Produkte anzeigen" [ref=e216] [cursor=pointer]:
+                  - generic [ref=e217] [cursor=pointer]: Weitere Produkte anzeigen
+          - generic [ref=e219]:
+            - heading "Wohnwand in Weiß und Eichenfarbe - schick und harmonisch" [level=2] [ref=e220]
+            - generic [ref=e221]:
+              - button "Komplett ansehen" [ref=e222] [cursor=pointer]:
+                - generic [ref=e223] [cursor=pointer]:
+                  - text: Komplett ansehen
+                  - img [ref=e224] [cursor=pointer]
+              - generic [ref=e229]:
+                - paragraph [ref=e230]:
+                  - text: Diese schicke
+                  - strong [ref=e231]: Wohnwand in Weiß und Eichenfarbe
+                  - text: bietet viel Stauraum und punktet mit einer harmonischen Optik. Die ca.
+                  - strong [ref=e232]: 325 x 205 x 47 cm (B x H x T)
+                  - text: große Wohnwand aus
+                  - strong [ref=e233]: MDF
+                  - text: in
+                  - strong [ref=e234]: Weiß Matt
+                  - text: mit Absetzungen in
+                  - strong [ref=e235]: Hirnholz NB
+                  - text: verfügt über insgesamt 14 verstellbare Einlegeböden.
+                - paragraph [ref=e236]:
+                  - text: Die integrierte
+                  - strong [ref=e237]: LED-Beleuchtung
+                  - text: verleiht der Wohnwand einen ganz besonderen Glanz.
+                  - strong [ref=e238]: Griffleisten
+                  - text: und eckige
+                  - strong [ref=e239]: Füße
+                  - text: in
+                  - strong [ref=e240]: Chromfarbe
+                  - text: unterstreichen das attraktive Erscheinungsbild.
+                - paragraph [ref=e241]:
+                  - text: Die Wohnwand beinhaltet insgesamt
+                  - strong [ref=e242]: 2 Vitrinen, 1 Wandboard sowie 1 TV-Elemen
+                  - text: t. Hier findet Ihr Fernseher optimal Platz. Eine nützliche Ergänzung für Ihr Wohnzimmer.
+          - region "Wie zufrieden bist du mit dieser Produktdetailseite?" [ref=e244]:
+            - heading "Wie zufrieden bist du mit dieser Produktdetailseite?" [level=2] [ref=e245]
+            - group [ref=e246]:
+              - generic [ref=e247] [cursor=pointer]:
+                - generic [ref=e248] [cursor=pointer]: Sehr unzufrieden
+                - radio "Sehr unzufrieden"
+              - generic [ref=e250] [cursor=pointer]:
+                - generic [ref=e251] [cursor=pointer]: Unzufrieden
+                - radio "Unzufrieden"
+              - generic [ref=e253] [cursor=pointer]:
+                - generic [ref=e254] [cursor=pointer]: Neutral
+                - radio "Neutral"
+              - generic [ref=e256] [cursor=pointer]:
+                - generic [ref=e257] [cursor=pointer]: Zufrieden
+                - radio "Zufrieden"
+              - generic [ref=e259] [cursor=pointer]:
+                - generic [ref=e260] [cursor=pointer]: Sehr zufrieden
+                - radio "Sehr zufrieden"
+            - button "Weiter" [disabled] [ref=e262]:
+              - generic [ref=e263]: Weiter
+          - generic [ref=e268]:
+            - button "Bewertungen (2)" [expanded] [ref=e270] [cursor=pointer]:
+              - heading "Bewertungen (2)" [level=2] [ref=e275] [cursor=pointer]
+            - region "Bewertungen (2)" [ref=e278]:
+              - generic [ref=e279]:
+                - generic [ref=e281]:
+                  - generic [ref=e282]:
+                    - generic [ref=e283]: "4.0"
+                    - generic [ref=e284]:
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e285]: 2 Bewertungen
+                  - generic [ref=e286]:
+                    - list [ref=e287]:
+                      - listitem [ref=e288]:
+                        - button "0 Rezensionen mit 5 Sternen anzeigen" [disabled] [ref=e289] [cursor=pointer]:
+                          - generic [ref=e290] [cursor=pointer]: "5"
+                          - generic:
+                            - img
+                          - generic [ref=e292] [cursor=pointer]: "0"
+                      - listitem [ref=e293]:
+                        - button "2 Rezensionen mit 4 Sternen anzeigen" [ref=e294] [cursor=pointer]:
+                          - generic [ref=e295] [cursor=pointer]: "4"
+                          - generic:
+                            - img
+                          - generic [ref=e298] [cursor=pointer]: "2"
+                      - listitem [ref=e299]:
+                        - button "0 Rezensionen mit 3 Sternen anzeigen" [disabled] [ref=e300] [cursor=pointer]:
+                          - generic [ref=e301] [cursor=pointer]: "3"
+                          - generic:
+                            - img
+                          - generic [ref=e303] [cursor=pointer]: "0"
+                      - listitem [ref=e304]:
+                        - button "0 Rezensionen mit 2 Sternen anzeigen" [disabled] [ref=e305] [cursor=pointer]:
+                          - generic [ref=e306] [cursor=pointer]: "2"
+                          - generic:
+                            - img
+                          - generic [ref=e308] [cursor=pointer]: "0"
+                      - listitem [ref=e309]:
+                        - button "0 Rezensionen mit 1 Stern anzeigen" [disabled] [ref=e310] [cursor=pointer]:
+                          - generic [ref=e311] [cursor=pointer]: "1"
+                          - generic:
+                            - img
+                          - generic [ref=e313] [cursor=pointer]: "0"
+                    - button "Wie kann ich bewerten?" [ref=e314] [cursor=pointer]:
+                      - generic [ref=e315] [cursor=pointer]: Wie kann ich bewerten?
+                - generic [ref=e316]:
+                  - heading "Bewertungen aus anderen Ländern" [level=3] [ref=e317]
+                  - article [ref=e318]:
+                    - heading "schlicht & schön" [level=4] [ref=e319]
+                    - generic [ref=e320]:
+                      - generic [ref=e321]:
+                        - text: M e l
+                        - generic [ref=e322]: Verifizierter Kauf
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e323]:
+                        - generic [ref=e324]: DE,
+                        - time [ref=e325]: 05.08.2025
+                    - generic [ref=e329]:
+                      - button "Weiterlesen" [ref=e330] [cursor=pointer]:
+                        - generic [ref=e331] [cursor=pointer]:
+                          - text: Weiterlesen
+                          - img [ref=e332] [cursor=pointer]
+                      - generic [ref=e337]: Ich mag die schlichten Fronten mit den holzfarbenen Akzenten, doch die Qualität bzw die Optik an den Kannten könnte für den Preis besser sein. Den Preis sollte man im Auge behalten, ich würde mich noch mehr ärgern, wenn ich den vollen Preis bezahlt hätte. Den hohen Schrank sollte man auch unbedingt an der Wand befestigen, da die Tür sehr schwer ist.
+                  - article [ref=e338]:
+                    - heading "fast perfekt" [level=4] [ref=e339]
+                    - generic [ref=e340]:
+                      - generic [ref=e341]:
+                        - text: daniel____alb
+                        - generic [ref=e342]: Verifizierter Kauf
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e343]:
+                        - generic [ref=e344]: DE,
+                        - time [ref=e345]: 02.04.2025
+                    - generic [ref=e349]:
+                      - button "Weiterlesen" [ref=e350] [cursor=pointer]:
+                        - generic [ref=e351] [cursor=pointer]:
+                          - text: Weiterlesen
+                          - img [ref=e352] [cursor=pointer]
+                      - generic [ref=e357]: leider war die Beschichtung des Wandregals mehr als mangelhaft verklebt. es ist eine unschöne kante sichtbar und diese ist zudem zerkratzt - Qualitätssicherung gleich 0,0!!! da wir das Regal so oder so nicht aufhängen wollten nicht weiter tragisch, andernfalls hätten wir es reklamiert.
+    - contentinfo [ref=e358]:
+      - generic [ref=e359]:
+        - list [ref=e361]:
+          - listitem [ref=e362]:
+            - link "Click & Collect" [ref=e363] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e364] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e365]:
+            - link "30 Tage Rückgabe" [ref=e366] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e367] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e368]:
+            - link "Gratis Transporter" [ref=e369] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e370] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e371]:
+            - link "Montage & Lieferung" [ref=e372] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e373] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e374]:
+          - link "Die nächste Liste überspringen" [ref=e375] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+            - text: Abschnitt überspringen
+          - generic [ref=e376]:
+            - generic [ref=e378]:
+              - generic [ref=e379]: Über uns
+              - list [ref=e380]:
+                - listitem [ref=e381]:
+                  - link "Presse" [ref=e382] [cursor=pointer]:
+                    - /url: https://pr.moemax.at
+                - listitem [ref=e383]:
+                  - link "Jobs bei mömax" [ref=e384] [cursor=pointer]:
+                    - /url: https://karriere.moemax.at
+                - listitem [ref=e385]:
+                  - link "Unternehmen" [ref=e386] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e387]:
+                  - link "Blog" [ref=e388] [cursor=pointer]:
+                    - /url: https://blog.moemax.de
+                - listitem [ref=e389]:
+                  - link "Aktueller Service" [ref=e390] [cursor=pointer]:
+                    - /url: /c/serviceuebersicht
+                - listitem [ref=e391]:
+                  - link "Barrierefreiheit" [ref=e392] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+                - listitem [ref=e393]:
+                  - link "Auszeichnungen" [ref=e394] [cursor=pointer]:
+                    - /url: /c/auszeichnungen
+            - generic [ref=e396]:
+              - generic [ref=e397]: Service
+              - list [ref=e398]:
+                - listitem [ref=e399]:
+                  - link "Aktuelle Aktionen" [ref=e400] [cursor=pointer]:
+                    - /url: /c/dein-trendmoebelhaus
+                - listitem [ref=e401]:
+                  - link "Prospekte" [ref=e402] [cursor=pointer]:
+                    - /url: /c/prospekte
+                - listitem [ref=e403]:
+                  - link "Aktionsbedingungen" [ref=e404] [cursor=pointer]:
+                    - /url: /c/aktionsnews
+                - listitem [ref=e405]:
+                  - link "Bonus Card" [ref=e406] [cursor=pointer]:
+                    - /url: /c/unserebonuscard
+                - listitem [ref=e407]:
+                  - link "Gutscheine online einlösen" [ref=e408] [cursor=pointer]:
+                    - /url: /c/onlinegutscheine-einloesen
+                - listitem [ref=e409]:
+                  - link "Geschenkgutscheine" [ref=e410] [cursor=pointer]:
+                    - /url: https://geschenkkarten.moemax.at/b2c/
+                - listitem [ref=e411]:
+                  - link "Lieferung & Montage" [ref=e412] [cursor=pointer]:
+                    - /url: /c/lieferungundmontage
+                - listitem [ref=e413]:
+                  - link "Leihtransporter buchen (Selbstabholung)" [ref=e414] [cursor=pointer]:
+                    - /url: /transporter
+                - listitem [ref=e415]:
+                  - link "Firmenkunden (B2B)" [ref=e416] [cursor=pointer]:
+                    - /url: /c/b2b
+                - listitem [ref=e417]:
+                  - link "Premiumschutz" [ref=e418] [cursor=pointer]:
+                    - /url: /c/helvetia-versicherungen
+                - listitem [ref=e419]:
+                  - link "Konfiguratoren" [ref=e420] [cursor=pointer]:
+                    - /url: /c/konfiguratoren
+            - generic [ref=e422]:
+              - generic [ref=e423]: Kontakt
+              - list [ref=e424]:
+                - listitem [ref=e425]:
+                  - link "Auftragsstatus" [ref=e426] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e427]:
+                  - link "Bestellhotline" [ref=e428] [cursor=pointer]:
+                    - /url: /c/bestellhotline
+                - listitem [ref=e429]:
+                  - link "Newsletter" [ref=e430] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e431]:
+                  - link "Click & Collect" [ref=e432] [cursor=pointer]:
+                    - /url: /c/clickundcollect
+                - listitem [ref=e433]:
+                  - link "Versand" [ref=e434] [cursor=pointer]:
+                    - /url: /c/lieferungundmontage
+                - listitem [ref=e435]:
+                  - link "FAQ" [ref=e436] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e437]:
+                  - link "Retouren & Reklamationen" [ref=e438] [cursor=pointer]:
+                    - /url: /c/retouren
+            - generic [ref=e440]:
+              - generic [ref=e441]: Filialen und Standorte
+              - list [ref=e442]:
+                - listitem [ref=e443]:
+                  - link "Standorte" [ref=e444] [cursor=pointer]:
+                    - /url: /filialen-at
+                - listitem [ref=e445]:
+                  - link "Filialschnäppchen" [ref=e446] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e447]:
+                  - link "Restaurants" [ref=e448] [cursor=pointer]:
+                    - /url: /c/unserrestaurant
+                - listitem [ref=e449]:
+                  - link "Beratungstermin" [ref=e450] [cursor=pointer]:
+                    - /url: /c/beratungstermin-vereinbaren
+                - listitem [ref=e451]:
+                  - link "Küchenberater" [ref=e452] [cursor=pointer]:
+                    - /url: /c/kuechen-beratungstermin
+                - listitem [ref=e453]:
+                  - link "Gratis Transporter" [ref=e454] [cursor=pointer]:
+                    - /url: /c/transporterleihen
+        - generic [ref=e456]:
+          - generic [ref=e459]:
+            - paragraph [ref=e460]: Du hast noch Fragen?
+            - generic [ref=e461]:
+              - generic [ref=e462]:
+                - link "Zum Kontaktformular" [ref=e463] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e464] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e465]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e466]:
+                - link "Häufig gestellte Fragen" [ref=e467] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e468] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e469]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e470]:
+            - generic [ref=e471]: Versandpartner
+            - generic [ref=e472]:
+              - img "Gebrüder Weiss Logo" [ref=e475]
+              - img "Post Logo" [ref=e478]
+          - generic [ref=e479]:
+            - generic [ref=e480]: Zahlungsmöglichkeiten
+            - generic [ref=e481]:
+              - img "Klarna Logo" [ref=e484]
+              - img "PayPal Logo" [ref=e487]
+              - img "Visa Logo" [ref=e490]
+              - img "Mastercard Logo" [ref=e493]
+              - img "Split It Logo" [ref=e496]
+              - img "Google Pay Logo" [ref=e499]
+              - img "Apple Pay Logo" [ref=e502]
+          - generic [ref=e503]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Österreich möglich. Änderungen und Irrtümer vorbehalten. *Vom Hersteller unverbindlich empfohlener Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***Herstellerlistenpreis
+        - generic [ref=e506]:
+          - link "Möemax" [ref=e507] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e508] [cursor=pointer]: Möemax
+            - img [ref=e510] [cursor=pointer]
+          - generic [ref=e513]: © 2026 moemax GmbH
+          - list [ref=e514]:
+            - listitem [ref=e515]:
+              - link "Impressum" [ref=e516] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e517]:
+              - link "AGB" [ref=e518] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e519]:
+              - link "Datenschutz" [ref=e520] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e521]:
+              - button "Cookie-Einstellungen" [ref=e522] [cursor=pointer]
+          - list [ref=e523]:
+            - listitem [ref=e524]:
+              - link "facebook" [ref=e525] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.at/
+            - listitem [ref=e526]:
+              - link "instagram" [ref=e527] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_at/
+            - listitem [ref=e528]:
+              - link "youtube" [ref=e529] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCIeEQdLnz8qzEzrkz1k1Ymw
+            - listitem [ref=e530]:
+              - link "tiktok" [ref=e531] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e532]:
+              - link "pinterest" [ref=e533] [cursor=pointer]:
+                - /url: https://www.pinterest.at/moemax_oesterreich/
+          - link "WACA Bronze" [ref=e534] [cursor=pointer]:
+            - /url: /c/accessibility
+            - img "WACA Bronze" [ref=e535] [cursor=pointer]
+  - dialog "dialog" [ref=e536]:
+    - generic [ref=e537]:
+      - heading "Cookies helfen Ihnen & uns" [level=3] [ref=e539]:
+        - generic [ref=e540]:
+          - img [ref=e541]
+          - text: Cookies helfen Ihnen & uns
+      - generic [ref=e554]:
+        - paragraph [ref=e555]: Wir von Mömax setzen Cookies und ähnliche Technologien („Cookies“) ein. Wir nutzen die Cookies und verarbeiten die durch die Cookies erhobenen Daten, um Ihnen die Website und ihre Funktionalitäten zur Verfügung zu stellen, ein optimales Einkaufserlebnis zu bieten, unsere Services bereitzustellen und zu verbessern, Ihr Nutzungsverhalten kennenzulernen und individualisierte Werbung und Inhalte auf unserer Website und Drittseiten, in unseren Newslettern und im Rahmen unserer Bonuscard zu zeigen.
+        - list [ref=e557]:
+          - listitem [ref=e558]:
+            - text: .
+            - paragraph [ref=e560]: Wenn Sie auf „Alle Cookies akzeptieren“ klicken, stimmen Sie dem Einsatz aller Cookies, die in den Cookie-Einstellungen aufgelistet sind, zu. Sie können Ihre Zustimmung in den Cookie-Einstellungen jederzeit für die Zukunft widerrufen oder ändern.
+          - listitem [ref=e561]:
+            - text: .
+            - paragraph [ref=e563]: Wenn Sie im Folgenden auf „Weiter ohne Einwilligung“ klicken, setzen wir nur Essentielle Cookies und cookielose Technologien zur Bannerausspielung.
+          - listitem [ref=e564]:
+            - text: .
+            - paragraph [ref=e566]: Wenn Sie auf „Cookie-Einstellungen“ klicken, können Sie die Cookies individuell auswählen und mehr über diese erfahren.
+        - generic [ref=e567]:
+          - button "Alle Cookies akzeptieren" [ref=e568] [cursor=pointer]:
+            - generic [ref=e569] [cursor=pointer]: Alle Cookies akzeptieren
+          - button "Weiter ohne Einwilligung" [ref=e571] [cursor=pointer]:
+            - generic [ref=e572] [cursor=pointer]: Weiter ohne Einwilligung
+        - list [ref=e574]:
+          - listitem [ref=e575]:
+            - button "Cookie Einstellungen" [active] [ref=e576] [cursor=pointer]:
+              - generic [ref=e577] [cursor=pointer]: Cookie Einstellungen
+          - listitem [ref=e578]:
+            - button "Datenschutzerklärung" [ref=e579] [cursor=pointer]:
+              - generic [ref=e580] [cursor=pointer]: Datenschutzerklärung
+          - listitem [ref=e581]:
+            - button "Impressum" [ref=e582] [cursor=pointer]:
+              - generic [ref=e583] [cursor=pointer]: Impressum
+```

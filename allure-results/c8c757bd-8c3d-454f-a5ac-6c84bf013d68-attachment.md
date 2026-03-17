@@ -1,0 +1,315 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link "Gratis Postversand ab 49 €" [ref=e9] [cursor=pointer]:
+            - /url: /kategorien/root
+            - generic [ref=e10] [cursor=pointer]: Gratis Postversand ab 49 €
+          - generic [ref=e12]:
+            - link "gratis Click & Collect" [ref=e13] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - generic [ref=e14] [cursor=pointer]: gratis Click & Collect
+            - link "über 12.000 Produkte lagernd" [ref=e15] [cursor=pointer]:
+              - /url: /kategorien/root
+              - generic [ref=e16] [cursor=pointer]: über 12.000 Produkte lagernd
+            - link "22 Filialen in deiner Nähe" [ref=e17] [cursor=pointer]:
+              - /url: /filialen-at
+              - generic [ref=e18] [cursor=pointer]: 22 Filialen in deiner Nähe
+            - switch "Hoher Kontrast" [ref=e19]
+            - generic [ref=e20] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e21] [cursor=pointer]
+        - generic [ref=e25]:
+          - button "Navigation wechseln" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Menü
+          - link "Möemax" [ref=e28] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e29] [cursor=pointer]: Möemax
+            - img [ref=e31] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e34] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e35]:
+            - generic [ref=e36]:
+              - button "Suchen" [ref=e38] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e39]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+              - button "Bildersuche" [ref=e43] [cursor=pointer]
+          - generic [ref=e44]:
+            - button "Anmelden" [ref=e46] [cursor=pointer]:
+              - generic [ref=e47] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e49] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e50] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 0 Produkte" [ref=e52] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e53] [cursor=pointer]: Warenkorb
+          - navigation [ref=e54]:
+            - list [ref=e55]:
+              - listitem [ref=e56]:
+                - link "Produkte" [ref=e57] [cursor=pointer]:
+                  - /url: /kategorien/root
+              - listitem [ref=e58]:
+                - link "Räume" [ref=e59] [cursor=pointer]:
+                  - /url: /c/raeume
+              - listitem [ref=e60]:
+                - link "Küchen" [ref=e61] [cursor=pointer]:
+                  - /url: /alle-kuechen-C34
+              - listitem [ref=e62]:
+                - link "Garten" [ref=e63] [cursor=pointer]:
+                  - /url: /garten-outdoor-C45
+              - listitem [ref=e64]:
+                - link "Trends" [ref=e65] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e66]:
+                - link "Werbung" [ref=e67] [cursor=pointer]:
+                  - /url: /c/dein-trendmoebelhaus
+              - listitem [ref=e68]:
+                - link "% SALE %" [ref=e69] [cursor=pointer]:
+                  - /url: /c/sale
+              - listitem [ref=e70]:
+                - link "Beratungstermin" [ref=e71] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+      - main:
+        - status [ref=e72]
+    - contentinfo [ref=e73]:
+      - generic [ref=e74]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "Click & Collect" [ref=e78] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e79] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e80]:
+            - link "30 Tage Rückgabe" [ref=e81] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e82] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e83]:
+            - link "Gratis Transporter" [ref=e84] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e85] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e86]:
+            - link "Montage & Lieferung" [ref=e87] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e88] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e89]:
+          - link "Die nächste Liste überspringen" [ref=e90] [cursor=pointer]:
+            - /url: "#skip-section-Liste-cmsitem_00408654"
+            - text: Abschnitt überspringen
+          - generic [ref=e92]:
+            - link "Die nächste Liste überspringen" [ref=e93] [cursor=pointer]:
+              - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+              - text: Abschnitt überspringen
+            - generic [ref=e94]:
+              - generic [ref=e96]:
+                - generic [ref=e97]: Über uns
+                - list [ref=e98]:
+                  - listitem [ref=e99]:
+                    - link "Presse" [ref=e100] [cursor=pointer]:
+                      - /url: https://pr.moemax.at
+                  - listitem [ref=e101]:
+                    - link "Jobs bei mömax" [ref=e102] [cursor=pointer]:
+                      - /url: https://karriere.moemax.at
+                  - listitem [ref=e103]:
+                    - link "Unternehmen" [ref=e104] [cursor=pointer]:
+                      - /url: /c/unternehmen
+                  - listitem [ref=e105]:
+                    - link "Blog" [ref=e106] [cursor=pointer]:
+                      - /url: https://blog.moemax.de
+                  - listitem [ref=e107]:
+                    - link "Aktueller Service" [ref=e108] [cursor=pointer]:
+                      - /url: /c/serviceuebersicht
+                  - listitem [ref=e109]:
+                    - link "Barrierefreiheit" [ref=e110] [cursor=pointer]:
+                      - /url: /c/barrierefreiheit
+                  - listitem [ref=e111]:
+                    - link "Auszeichnungen" [ref=e112] [cursor=pointer]:
+                      - /url: /c/auszeichnungen
+              - generic [ref=e114]:
+                - generic [ref=e115]: Service
+                - list [ref=e116]:
+                  - listitem [ref=e117]:
+                    - link "Aktuelle Aktionen" [ref=e118] [cursor=pointer]:
+                      - /url: /c/dein-trendmoebelhaus
+                  - listitem [ref=e119]:
+                    - link "Prospekte" [ref=e120] [cursor=pointer]:
+                      - /url: /c/prospekte
+                  - listitem [ref=e121]:
+                    - link "Aktionsbedingungen" [ref=e122] [cursor=pointer]:
+                      - /url: /c/aktionsnews
+                  - listitem [ref=e123]:
+                    - link "Bonus Card" [ref=e124] [cursor=pointer]:
+                      - /url: /c/unserebonuscard
+                  - listitem [ref=e125]:
+                    - link "Gutscheine online einlösen" [ref=e126] [cursor=pointer]:
+                      - /url: /c/onlinegutscheine-einloesen
+                  - listitem [ref=e127]:
+                    - link "Geschenkgutscheine" [ref=e128] [cursor=pointer]:
+                      - /url: https://geschenkkarten.moemax.at/b2c/
+                  - listitem [ref=e129]:
+                    - link "Lieferung & Montage" [ref=e130] [cursor=pointer]:
+                      - /url: /c/lieferungundmontage
+                  - listitem [ref=e131]:
+                    - link "Leihtransporter buchen (Selbstabholung)" [ref=e132] [cursor=pointer]:
+                      - /url: /transporter
+                  - listitem [ref=e133]:
+                    - link "Firmenkunden (B2B)" [ref=e134] [cursor=pointer]:
+                      - /url: /c/b2b
+                  - listitem [ref=e135]:
+                    - link "Premiumschutz" [ref=e136] [cursor=pointer]:
+                      - /url: /c/helvetia-versicherungen
+                  - listitem [ref=e137]:
+                    - link "Konfiguratoren" [ref=e138] [cursor=pointer]:
+                      - /url: /c/konfiguratoren
+              - generic [ref=e140]:
+                - generic [ref=e141]: Kontakt
+                - list [ref=e142]:
+                  - listitem [ref=e143]:
+                    - link "Auftragsstatus" [ref=e144] [cursor=pointer]:
+                      - /url: /auftragsstatus
+                  - listitem [ref=e145]:
+                    - link "Bestellhotline" [ref=e146] [cursor=pointer]:
+                      - /url: /c/bestellhotline
+                  - listitem [ref=e147]:
+                    - link "Newsletter" [ref=e148] [cursor=pointer]:
+                      - /url: /c/newsletter
+                  - listitem [ref=e149]:
+                    - link "Click & Collect" [ref=e150] [cursor=pointer]:
+                      - /url: /c/clickundcollect
+                  - listitem [ref=e151]:
+                    - link "Versand" [ref=e152] [cursor=pointer]:
+                      - /url: /c/lieferungundmontage
+                  - listitem [ref=e153]:
+                    - link "FAQ" [ref=e154] [cursor=pointer]:
+                      - /url: /faq
+                  - listitem [ref=e155]:
+                    - link "Retouren & Reklamationen" [ref=e156] [cursor=pointer]:
+                      - /url: /c/retouren
+              - generic [ref=e158]:
+                - generic [ref=e159]: Filialen und Standorte
+                - list [ref=e160]:
+                  - listitem [ref=e161]:
+                    - link "Standorte" [ref=e162] [cursor=pointer]:
+                      - /url: /filialen-at
+                  - listitem [ref=e163]:
+                    - link "Filialschnäppchen" [ref=e164] [cursor=pointer]:
+                      - /url: /hs/
+                  - listitem [ref=e165]:
+                    - link "Restaurants" [ref=e166] [cursor=pointer]:
+                      - /url: /c/unserrestaurant
+                  - listitem [ref=e167]:
+                    - link "Beratungstermin" [ref=e168] [cursor=pointer]:
+                      - /url: /c/beratungstermin-vereinbaren
+                  - listitem [ref=e169]:
+                    - link "Küchenberater" [ref=e170] [cursor=pointer]:
+                      - /url: /c/kuechen-beratungstermin
+                  - listitem [ref=e171]:
+                    - link "Gratis Transporter" [ref=e172] [cursor=pointer]:
+                      - /url: /c/transporterleihen
+        - generic [ref=e174]:
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: Du hast noch Fragen?
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - link "Zum Kontaktformular" [ref=e181] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e182] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e183]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e184]:
+                - link "Häufig gestellte Fragen" [ref=e185] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e186] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e187]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e188]:
+            - generic [ref=e189]: Versandpartner
+            - generic [ref=e190]:
+              - img "Gebrüder Weiss Logo" [ref=e193]
+              - img "Post Logo" [ref=e196]
+          - generic [ref=e197]:
+            - generic [ref=e198]: Zahlungsmöglichkeiten
+            - generic [ref=e199]:
+              - img "Klarna Logo" [ref=e202]
+              - img "PayPal Logo" [ref=e205]
+              - img "Visa Logo" [ref=e208]
+              - img "Mastercard Logo" [ref=e211]
+              - img "Split It Logo" [ref=e214]
+              - img "Google Pay Logo" [ref=e217]
+              - img "Apple Pay Logo" [ref=e220]
+          - generic [ref=e221]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Österreich möglich. Änderungen und Irrtümer vorbehalten. *Vom Hersteller unverbindlich empfohlener Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***Herstellerlistenpreis
+        - generic [ref=e224]:
+          - link "Möemax" [ref=e225] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e226] [cursor=pointer]: Möemax
+            - img [ref=e228] [cursor=pointer]
+          - generic [ref=e231]: © 2026 moemax GmbH
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - link "Impressum" [ref=e234] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e235]:
+              - link "AGB" [ref=e236] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e237]:
+              - link "Datenschutz" [ref=e238] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e239]:
+              - button "Cookie-Einstellungen" [ref=e240] [cursor=pointer]
+          - list [ref=e241]:
+            - listitem [ref=e242]:
+              - link "facebook" [ref=e243] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.at/
+            - listitem [ref=e244]:
+              - link "instagram" [ref=e245] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_at/
+            - listitem [ref=e246]:
+              - link "youtube" [ref=e247] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCIeEQdLnz8qzEzrkz1k1Ymw
+            - listitem [ref=e248]:
+              - link "tiktok" [ref=e249] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e250]:
+              - link "pinterest" [ref=e251] [cursor=pointer]:
+                - /url: https://www.pinterest.at/moemax_oesterreich/
+          - link "WACA Bronze" [ref=e252] [cursor=pointer]:
+            - /url: /c/accessibility
+            - img "WACA Bronze" [ref=e253] [cursor=pointer]
+  - dialog "dialog" [ref=e254]:
+    - generic [ref=e255]:
+      - heading "Cookies helfen Ihnen & uns" [level=3] [ref=e257]:
+        - generic [ref=e258]:
+          - img [ref=e259]
+          - text: Cookies helfen Ihnen & uns
+      - generic [ref=e272]:
+        - paragraph [ref=e273]: Wir von Mömax setzen Cookies und ähnliche Technologien („Cookies“) ein. Wir nutzen die Cookies und verarbeiten die durch die Cookies erhobenen Daten, um Ihnen die Website und ihre Funktionalitäten zur Verfügung zu stellen, ein optimales Einkaufserlebnis zu bieten, unsere Services bereitzustellen und zu verbessern, Ihr Nutzungsverhalten kennenzulernen und individualisierte Werbung und Inhalte auf unserer Website und Drittseiten, in unseren Newslettern und im Rahmen unserer Bonuscard zu zeigen.
+        - list [ref=e275]:
+          - listitem [ref=e276]:
+            - text: .
+            - paragraph [ref=e278]: Wenn Sie auf „Alle Cookies akzeptieren“ klicken, stimmen Sie dem Einsatz aller Cookies, die in den Cookie-Einstellungen aufgelistet sind, zu. Sie können Ihre Zustimmung in den Cookie-Einstellungen jederzeit für die Zukunft widerrufen oder ändern.
+          - listitem [ref=e279]:
+            - text: .
+            - paragraph [ref=e281]: Wenn Sie im Folgenden auf „Weiter ohne Einwilligung“ klicken, setzen wir nur Essentielle Cookies und cookielose Technologien zur Bannerausspielung.
+          - listitem [ref=e282]:
+            - text: .
+            - paragraph [ref=e284]: Wenn Sie auf „Cookie-Einstellungen“ klicken, können Sie die Cookies individuell auswählen und mehr über diese erfahren.
+        - generic [ref=e285]:
+          - button "Alle Cookies akzeptieren" [ref=e286] [cursor=pointer]:
+            - generic [ref=e287] [cursor=pointer]: Alle Cookies akzeptieren
+          - button "Weiter ohne Einwilligung" [ref=e289] [cursor=pointer]:
+            - generic [ref=e290] [cursor=pointer]: Weiter ohne Einwilligung
+        - list [ref=e292]:
+          - listitem [ref=e293]:
+            - button "Cookie Einstellungen" [active] [ref=e294] [cursor=pointer]:
+              - generic [ref=e295] [cursor=pointer]: Cookie Einstellungen
+          - listitem [ref=e296]:
+            - button "Datenschutzerklärung" [ref=e297] [cursor=pointer]:
+              - generic [ref=e298] [cursor=pointer]: Datenschutzerklärung
+          - listitem [ref=e299]:
+            - button "Impressum" [ref=e300] [cursor=pointer]:
+              - generic [ref=e301] [cursor=pointer]: Impressum
+```

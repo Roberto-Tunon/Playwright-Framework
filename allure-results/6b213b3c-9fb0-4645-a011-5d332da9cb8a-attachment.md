@@ -1,0 +1,290 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link "10€ Gutschein bei Newsletteranmeldung" [ref=e9] [cursor=pointer]:
+            - /url: /c/newsletter
+            - generic [ref=e10] [cursor=pointer]: 10€ Gutschein bei Newsletteranmeldung
+          - link "PayPal 0%-Finanzierung¹" [ref=e11] [cursor=pointer]:
+            - /url: /c/paypal-ratenkauf
+            - generic [ref=e12] [cursor=pointer]: PayPal 0%-Finanzierung¹
+        - generic [ref=e14]:
+          - link "57 Filialen in Ihrer Nähe" [ref=e15] [cursor=pointer]:
+            - /url: /filialen-standorte
+            - generic [ref=e16] [cursor=pointer]: 57 Filialen in Ihrer Nähe
+          - link "Prospekte" [ref=e17] [cursor=pointer]:
+            - /url: /c/unsere-prospekte
+            - generic [ref=e18] [cursor=pointer]: Prospekte
+          - link "Hilfe & Kontakt" [ref=e19] [cursor=pointer]:
+            - /url: /faq
+            - generic [ref=e20] [cursor=pointer]: Hilfe & Kontakt
+          - switch "Hoher Kontrast" [ref=e21]
+          - generic [ref=e22] [cursor=pointer]:
+            - text: Hoher Kontrast
+            - img [ref=e23] [cursor=pointer]
+      - generic [ref=e27]:
+        - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]: Menü
+        - link "XXXLutz" [ref=e30] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e31] [cursor=pointer]: XXXLutz
+          - img [ref=e33] [cursor=pointer]
+        - link "Zum Hauptinhalt springen" [ref=e39] [cursor=pointer]:
+          - /url: "#main"
+        - search [ref=e40]:
+          - generic [ref=e41]:
+            - button "Suchen" [ref=e43] [cursor=pointer]
+            - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e44]
+            - generic: Suche nach Produkten, Marken oder Neuheiten
+        - generic [ref=e45]:
+          - button "Anmelden" [ref=e47] [cursor=pointer]:
+            - generic [ref=e48] [cursor=pointer]: Anmelden
+          - link "Favoriten 0 Produkte" [ref=e50] [cursor=pointer]:
+            - /url: /favourites
+            - generic [ref=e51] [cursor=pointer]: Merkliste
+          - link "Mein Warenkorb 1 Produkt" [ref=e53] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=e54] [cursor=pointer]: "1"
+            - generic [ref=e55] [cursor=pointer]: Warenkorb
+        - navigation [ref=e56]:
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - link "Möbel" [ref=e59] [cursor=pointer]:
+                - /url: /c/moebel
+            - listitem [ref=e60]:
+              - link "Deko & Textil" [ref=e61] [cursor=pointer]:
+                - /url: /c/wohnaccessoires
+            - listitem [ref=e62]:
+              - link "Küchen" [ref=e63] [cursor=pointer]:
+                - /url: /c/kuechenwelt
+            - listitem [ref=e64]:
+              - link "Haushalt" [ref=e65] [cursor=pointer]:
+                - /url: /c/kochen-essen
+            - listitem [ref=e66]:
+              - link "Lampen" [ref=e67] [cursor=pointer]:
+                - /url: /lampen-leuchten-C84
+            - listitem [ref=e68]:
+              - link "Kinder & Baby" [ref=e69] [cursor=pointer]:
+                - /url: /c/baby
+            - listitem [ref=e70]:
+              - link "Freizeit" [ref=e71] [cursor=pointer]:
+                - /url: /freizeit-C76
+            - listitem [ref=e72]:
+              - link "Angebote" [ref=e73] [cursor=pointer]:
+                - /url: /c/moebel-angebote
+            - listitem [ref=e74]:
+              - link "Inspiration" [ref=e75] [cursor=pointer]:
+                - /url: /c/wohnideen
+            - listitem [ref=e76]:
+              - link "Oster-Frühlingsmarkt" [ref=e77] [cursor=pointer]:
+                - /url: /c/xxxlutz-sommermarkt
+            - listitem [ref=e78]:
+              - link "Restaurant" [ref=e79] [cursor=pointer]:
+                - /url: /c/restaurant
+            - listitem [ref=e80]:
+              - link "Mein XXXL BLOG" [ref=e81] [cursor=pointer]:
+                - /url: /c/mein-xxxl-blog
+            - listitem [ref=e82]:
+              - link "Newsletter" [ref=e83] [cursor=pointer]:
+                - /url: /c/newsletter
+    - main [ref=e84]:
+      - generic [ref=e88]:
+        - generic [ref=e90]:
+          - generic [ref=e92]: PayPal Ratenzahlung – Profitieren Sie von der PayPal 0%-Finanzierung¹
+          - link "¹Vorbehaltlich Kreditwürdigkeitsprüfung. Siehe Aktionsbedingungen" [ref=e94] [cursor=pointer]:
+            - /url: /c/newsaktion
+        - button "close" [ref=e95] [cursor=pointer]
+      - status [ref=e96]:
+        - generic [ref=e97]: CARRYHOME Boxspringbett 140x200 cm Bettkasten
+      - generic [ref=e99]: Der gewünschte Inhalt konnte nicht geladen werden.
+  - contentinfo [ref=e100]:
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - link "Die nächste Liste überspringen" [ref=e103] [cursor=pointer]:
+          - /url: "#skip-section-Liste-new_footer_third_section_node_1_SERVICE"
+          - text: Abschnitt überspringen
+        - generic [ref=e104]:
+          - generic [ref=e106]:
+            - generic [ref=e107]: Services & Hilfe
+            - list [ref=e108]:
+              - listitem [ref=e109]:
+                - link "Auftragsstatus" [ref=e110] [cursor=pointer]:
+                  - /url: /auftragsstatus
+              - listitem [ref=e111]:
+                - link "Aktionsbedingungen" [ref=e112] [cursor=pointer]:
+                  - /url: /c/newsaktion
+              - listitem [ref=e113]:
+                - link "Service Überblick" [ref=e114] [cursor=pointer]:
+                  - /url: /c/service
+              - listitem [ref=e115]:
+                - link "Retouren & Reklamationen" [ref=e116] [cursor=pointer]:
+                  - /url: /c/retouren-reklamationen
+              - listitem [ref=e117]:
+                - link "Versand & Lieferung" [ref=e118] [cursor=pointer]:
+                  - /url: /faq/versand-lieferung/lieferkosten
+              - listitem [ref=e119]:
+                - link "Click & Collect" [ref=e120] [cursor=pointer]:
+                  - /url: /c/click-collect-xxxlutz
+              - listitem [ref=e121]:
+                - link "Zahlungsarten" [ref=e122] [cursor=pointer]:
+                  - /url: /faq/zahlung-gutscheine/zahlungsarten
+              - listitem [ref=e123]:
+                - link "Altgeräterücknahme" [ref=e124] [cursor=pointer]:
+                  - /url: /c/altgeraete-entsorgung
+              - listitem [ref=e125]:
+                - link "Gutscheine einlösen" [ref=e126] [cursor=pointer]:
+                  - /url: /c/onlinegutscheine-einloesen
+              - listitem [ref=e127]:
+                - link "Babybox" [ref=e128] [cursor=pointer]:
+                  - /url: /c/babybox
+          - generic [ref=e130]:
+            - generic [ref=e131]: Mein XXXLutz
+            - list [ref=e132]:
+              - listitem [ref=e133]:
+                - link "Mein Konto" [ref=e134] [cursor=pointer]:
+                  - /url: /signin
+              - listitem [ref=e135]:
+                - link "Freundschaftskarte" [ref=e136] [cursor=pointer]:
+                  - /url: /c/freundschaftskarte
+              - listitem [ref=e137]:
+                - link "Newsletter" [ref=e138] [cursor=pointer]:
+                  - /url: /c/newsletter
+              - listitem [ref=e139]:
+                - link "Mein XXXL BLOG" [ref=e140] [cursor=pointer]:
+                  - /url: /c/mein-xxxl-blog
+              - listitem [ref=e141]:
+                - link "Prospekte & TV" [ref=e142] [cursor=pointer]:
+                  - /url: /c/unsere-prospekte
+              - listitem [ref=e143]:
+                - link "Filialschnäppchen" [ref=e144] [cursor=pointer]:
+                  - /url: /hs
+              - listitem [ref=e145]:
+                - link "Lucy Homefield" [ref=e146] [cursor=pointer]:
+                  - /url: /c/ki-interior-social
+              - listitem [ref=e147]:
+                - link "Barrierefreiheit" [ref=e148] [cursor=pointer]:
+                  - /url: /c/barrierefreiheit
+          - generic [ref=e150]:
+            - generic [ref=e151]: Planung & Beratung
+            - list [ref=e152]:
+              - listitem [ref=e153]:
+                - link "Beratungstermin vereinbaren" [ref=e154] [cursor=pointer]:
+                  - /url: /c/termin-vereinbaren
+              - listitem [ref=e155]:
+                - link "Küchenberatung" [ref=e156] [cursor=pointer]:
+                  - /url: /c/kuechenberatung
+              - listitem [ref=e157]:
+                - link "Küchenplaner" [ref=e158] [cursor=pointer]:
+                  - /url: /c/kitchenplanner
+              - listitem [ref=e159]:
+                - link "Konfiguratoren" [ref=e160] [cursor=pointer]:
+                  - /url: /c/xxxlutz-konfiguratoren
+              - listitem [ref=e161]:
+                - link "Objekteinrichtung" [ref=e162] [cursor=pointer]:
+                  - /url: /c/b2b
+              - listitem [ref=e163]:
+                - link "Premium Marken" [ref=e164] [cursor=pointer]:
+                  - /url: /c/designermoebel
+          - generic [ref=e166]:
+            - generic [ref=e167]: Über XXXLutz
+            - list [ref=e168]:
+              - listitem [ref=e169]:
+                - link "Standorte" [ref=e170] [cursor=pointer]:
+                  - /url: /filialen-standorte
+              - listitem [ref=e171]:
+                - link "Restaurant" [ref=e172] [cursor=pointer]:
+                  - /url: /c/restaurant
+              - listitem [ref=e173]:
+                - link "Küchenstudios" [ref=e174] [cursor=pointer]:
+                  - /url: /kuechenstudios
+              - listitem [ref=e175]:
+                - link "Unternehmen" [ref=e176] [cursor=pointer]:
+                  - /url: /c/unternehmen
+              - listitem [ref=e177]:
+                - link "Compliance & Integrität" [ref=e178] [cursor=pointer]:
+                  - /url: /c/compliance
+              - listitem [ref=e179]:
+                - link "Partner werden" [ref=e180] [cursor=pointer]:
+                  - /url: /c/partner
+              - listitem [ref=e181]:
+                - link "Marketplace" [ref=e182] [cursor=pointer]:
+                  - /url: /c/marketplace
+              - listitem [ref=e183]:
+                - link "Pressecenter" [ref=e184] [cursor=pointer]:
+                  - /url: https://pr.xxxlutz.de/
+              - listitem [ref=e185]:
+                - link "Jobs & Karriere" [ref=e186] [cursor=pointer]:
+                  - /url: https://karriere.xxxlutz.de/
+      - generic [ref=e188]:
+        - generic [ref=e191]:
+          - paragraph [ref=e192]: Hilfe & Kontakt
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - link "Zum Kontaktformular" [ref=e195] [cursor=pointer]:
+                - /url: /kontaktcenter
+                - generic [ref=e196] [cursor=pointer]: Zum Kontaktformular
+              - paragraph [ref=e197]: Kontaktieren Sie uns persönlich.
+            - generic [ref=e198]:
+              - link "Häufig gestellte Fragen" [ref=e199] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e200] [cursor=pointer]: Häufig gestellte Fragen
+              - paragraph [ref=e201]: In unseren FAQ's finden Sie sofort Hilfe.
+        - generic [ref=e202]:
+          - generic [ref=e203]: Versand
+          - generic [ref=e204]:
+            - img "DHL" [ref=e207]
+            - img "Hermes" [ref=e210]
+            - img "XXXLutz Spedition" [ref=e213]
+        - generic [ref=e214]:
+          - generic [ref=e215]: Zahlungsmöglichkeiten
+          - generic [ref=e216]:
+            - img "Paypal" [ref=e219]
+            - img "Klarna" [ref=e222]
+            - img "Master Card" [ref=e225]
+            - img "Visa" [ref=e228]
+            - img "Google Pay" [ref=e231]
+            - img "Apple Pay" [ref=e234]
+            - img "Logo Billie" [ref=e237]
+        - generic [ref=e238]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. ***Filialpreis ohne Freundschaftskarte.
+      - generic [ref=e241]:
+        - link "XXXLutz" [ref=e242] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e243] [cursor=pointer]: XXXLutz
+          - img [ref=e245] [cursor=pointer]
+        - generic [ref=e251]: © 2026 BDSK Handels GmbH & Co. KG
+        - list [ref=e252]:
+          - listitem [ref=e253]:
+            - link "IMPRESSUM" [ref=e254] [cursor=pointer]:
+              - /url: /c/impressum
+          - listitem [ref=e255]:
+            - link "DATENSCHUTZ" [ref=e256] [cursor=pointer]:
+              - /url: /c/privacy
+          - listitem [ref=e257]:
+            - link "AGB" [ref=e258] [cursor=pointer]:
+              - /url: /c/agb
+          - listitem [ref=e259]:
+            - button "COOKIE-EINSTELLUNGEN" [ref=e260] [cursor=pointer]
+        - list [ref=e261]:
+          - listitem [ref=e262]:
+            - link "facebook" [ref=e263] [cursor=pointer]:
+              - /url: https://www.facebook.com/XXXLutzDeutschland
+          - listitem [ref=e264]:
+            - link "instagram" [ref=e265] [cursor=pointer]:
+              - /url: https://www.instagram.com/xxxlutz_de/
+          - listitem [ref=e266]:
+            - link "pinterest" [ref=e267] [cursor=pointer]:
+              - /url: https://www.pinterest.de/xxxlutzdeutschland/
+          - listitem [ref=e268]:
+            - link "youtube" [ref=e269] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC1w2HpXiRl5pbLGQEwnUl2w
+          - listitem [ref=e270]:
+            - link "tiktok" [ref=e271] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@xxxlutz_de
+        - link "WACA accessibilty seal in silver" [ref=e272] [cursor=pointer]:
+          - /url: /accessibility
+          - img "WACA accessibilty seal in silver" [ref=e273] [cursor=pointer]
+```

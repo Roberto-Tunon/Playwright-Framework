@@ -1,0 +1,301 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Naročite se na e-novice in si zagotovite bon v vrednosti 5€" [ref=e9] [cursor=pointer]:
+              - /url: /c/e-novice
+              - generic [ref=e10] [cursor=pointer]: Naročite se na e-novice in si zagotovite bon v vrednosti 5€
+            - link "Brezplačna poštnina za spletna naročila nad 90 €" [ref=e11] [cursor=pointer]:
+              - /url: /c/dostava
+              - generic [ref=e12] [cursor=pointer]: Brezplačna poštnina za spletna naročila nad 90 €
+          - generic [ref=e14]:
+            - link "Katalogi" [ref=e15] [cursor=pointer]:
+              - /url: /c/katalogi
+              - generic [ref=e16] [cursor=pointer]: Katalogi
+            - link "Kontakt" [ref=e17] [cursor=pointer]:
+              - /url: /poslovalnice
+              - generic [ref=e18] [cursor=pointer]: Kontakt
+            - link "Pomoč kupcem" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Pomoč kupcem
+            - switch "Visok kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Visok kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Zamenjaj navigacijo" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Meni
+          - link "XXXLesnina" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLesnina
+            - img [ref=e33] [cursor=pointer]
+          - link "Skoči na glavno vsebino" [ref=e42] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e43]:
+            - generic [ref=e44]:
+              - button "Iskanje" [ref=e46] [cursor=pointer]
+              - searchbox "Iskanje izdelkov, blagovnih znamk ali novosti" [ref=e47]
+              - generic: Iskanje izdelkov, blagovnih znamk ali novosti
+          - generic [ref=e48]:
+            - link "Prijava" [ref=e50] [cursor=pointer]:
+              - /url: /signin
+              - generic [ref=e51] [cursor=pointer]: Prijava
+            - link "Favoriten 0 izdelki" [ref=e53] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e54] [cursor=pointer]: Zaznamki
+            - link "Košarica in dostava 1 izdelek" [ref=e56] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e57] [cursor=pointer]: "1"
+              - generic [ref=e58] [cursor=pointer]: Košarica
+          - navigation [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Pohištvo" [ref=e62] [cursor=pointer]:
+                  - /url: /c/pohistvo
+              - listitem [ref=e63]:
+                - link "Kuhinje" [ref=e64] [cursor=pointer]:
+                  - /url: /kuhinje-C127
+              - listitem [ref=e65]:
+                - link "Vrtno & žari" [ref=e66] [cursor=pointer]:
+                  - /url: /vrtno-pohistvo-C108
+              - listitem [ref=e67]:
+                - link "Vse za kuhinjo" [ref=e68] [cursor=pointer]:
+                  - /url: /c/vse-za-kuhinjo
+              - listitem [ref=e69]:
+                - link "Dodatki za dom" [ref=e70] [cursor=pointer]:
+                  - /url: /c/dodatki-za-dom
+              - listitem [ref=e71]:
+                - link "Svetila" [ref=e72] [cursor=pointer]:
+                  - /url: /svetila-in-luci-C116
+              - listitem [ref=e73]:
+                - link "Baby" [ref=e74] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e75]:
+                - link "Preproge" [ref=e76] [cursor=pointer]:
+                  - /url: /preproge-in-tepihi-C117
+              - listitem [ref=e77]:
+                - link "Ideje & nasveti" [ref=e78] [cursor=pointer]:
+                  - /url: /c/ideje-in-nasveti
+              - listitem [ref=e79]:
+                - link "Akcije & katalogi" [ref=e80] [cursor=pointer]:
+                  - /url: /c/akcije-in-katalogi
+              - listitem [ref=e81]:
+                - link "Samo na spletu" [ref=e82] [cursor=pointer]:
+                  - /url: /c/samo-na-spletu
+              - listitem [ref=e83]:
+                - link "B2B" [ref=e84] [cursor=pointer]:
+                  - /url: /c/b2b
+      - main [ref=e85]:
+        - status [ref=e86]:
+          - generic [ref=e87]: Košarica - XXXLesnina
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - heading "Košarica" [level=1] [ref=e92]
+              - link "Nadaljuj z nakupovanjem" [ref=e93] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e94] [cursor=pointer]: Nadaljuj z nakupovanjem
+            - generic [ref=e95]:
+              - alert [ref=e99]:
+                - generic [ref=e100]: Izberite poslovalnico za osebni prevzem.
+              - list [ref=e101]:
+                - listitem [ref=e102]:
+                  - article [ref=e103]:
+                    - generic [ref=e104]:
+                      - img "UMIVAL. ENOTA Z UMIVALNIKOM - barve hrasta/bela, Moderno, leseni material/keramika (90cm) - Ti'me" [ref=e105]
+                      - link [ref=e106] [cursor=pointer]:
+                        - /url: /p/ti-me-umival-enota-z-umivalnikom-000780000701
+                    - generic [ref=e107]:
+                      - generic [ref=e108]:
+                        - generic [ref=e109]: "000780000701"
+                        - link "Št. izdelka 0780000701" [ref=e110] [cursor=pointer]:
+                          - /url: /p/ti-me-umival-enota-z-umivalnikom-000780000701
+                          - generic [ref=e111] [cursor=pointer]: Št. izdelka 0780000701
+                      - link "Ti'me UMIVAL. ENOTA Z UMIVALNIKOM" [ref=e113] [cursor=pointer]:
+                        - /url: /p/ti-me-umival-enota-z-umivalnikom-000780000701
+                        - heading "Ti'me UMIVAL. ENOTA Z UMIVALNIKOM" [level=2] [ref=e114] [cursor=pointer]:
+                          - generic [ref=e115] [cursor=pointer]: Ti'me UMIVAL.
+                          - generic [ref=e116] [cursor=pointer]: ENOTA Z UMIVALNIKOM
+                      - generic [ref=e117]:
+                        - generic [ref=e118]: barve grafita, barve hrasta
+                        - generic [ref=e119]: 90 cm
+                    - generic [ref=e122]:
+                      - generic [ref=e124]: 589,‒ €
+                      - generic [ref=e125]: 589,‒ € / Kos
+                    - generic [ref=e126]:
+                      - button "Odstrani izdelek - UMIVAL. ENOTA Z UMIVALNIKOM" [ref=e127] [cursor=pointer]
+                      - generic [ref=e128]:
+                        - textbox "Količina" [ref=e129]: "1"
+                        - generic [ref=e130]: Količina
+                      - button "1" [ref=e131] [cursor=pointer]:
+                        - generic [ref=e132] [cursor=pointer]: "1"
+                      - button "Povečaj število - UMIVAL. ENOTA Z UMIVALNIKOM" [ref=e133] [cursor=pointer]
+                    - generic [ref=e135]:
+                      - button "UMIVAL. ENOTA Z UMIVALNIKOM - Shrani izdelek za kasneje" [ref=e136] [cursor=pointer]:
+                        - generic [ref=e138] [cursor=pointer]: Shrani izdelek za kasneje
+                      - button "UMIVAL. ENOTA Z UMIVALNIKOM - Odstrani izdelek" [ref=e139] [cursor=pointer]:
+                        - generic [ref=e141] [cursor=pointer]: Odstrani izdelek
+                  - generic [ref=e142]:
+                    - generic [ref=e143]:
+                      - generic [ref=e147]: Osebni prevzem
+                      - button "Izberi poslovalnico" [ref=e149] [cursor=pointer]:
+                        - generic [ref=e150] [cursor=pointer]: Izberi poslovalnico
+                      - generic [ref=e151]:
+                        - text: Stroški dostave
+                        - generic [ref=e152]: + 0,‒ €
+                    - paragraph [ref=e153]:
+                      - generic [ref=e154]:
+                        - text: Pozor, prevzemno skladišče je lahko nekaj minut oddaljeno od poslovalnice!
+                        - strong [ref=e155]: Preverite naslov za prevzem
+                        - text: v Potrdilu naročila.
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - heading "Povzetek" [level=2] [ref=e159]
+              - generic [ref=e160]:
+                - generic [ref=e161]:
+                  - generic [ref=e162]: Vrednost blaga
+                  - generic [ref=e163]: 589,‒ €
+                  - button "Stroški dostave" [ref=e164] [cursor=pointer]:
+                    - generic [ref=e165] [cursor=pointer]: Stroški dostave
+                  - generic [ref=e166]: gratis
+                - generic [ref=e167]:
+                  - generic [ref=e168]: Skupni znesek
+                  - generic [ref=e169]: 589,‒ €
+                  - generic [ref=e170]: DDV vključen v ceno
+                - button "Na blagajno" [ref=e171] [cursor=pointer]:
+                  - generic [ref=e172] [cursor=pointer]: Na blagajno
+                - separator "ali" [ref=e173]
+                - generic [ref=e174]:
+                  - button "Nakup s storitvijo GPay" [ref=e179] [cursor=pointer]
+                  - button "Buy with Apple Pay" [ref=e184] [cursor=pointer]:
+                    - img [ref=e186] [cursor=pointer]:
+                      - generic [ref=e187] [cursor=pointer]:
+                        - generic [ref=e188] [cursor=pointer]: Buy with
+                        - img [ref=e189] [cursor=pointer]
+            - generic [ref=e198]:
+              - button "Vnesi kodo" [ref=e199] [cursor=pointer]:
+                - generic [ref=e200] [cursor=pointer]: Vnesi kodo
+                - img [ref=e201] [cursor=pointer]
+              - generic [ref=e203]:
+                - generic [ref=e206]:
+                  - textbox "Vnesi kodo" [ref=e207]
+                  - generic: Vnesi kodo
+                - button "Uporabi" [ref=e208] [cursor=pointer]:
+                  - generic [ref=e209] [cursor=pointer]: Uporabi
+          - complementary [ref=e210]:
+            - link "Nadaljuj z nakupovanjem" [ref=e211] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e212] [cursor=pointer]: Nadaljuj z nakupovanjem
+    - contentinfo [ref=e213]:
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]: XXXL prednosti
+          - list [ref=e218]:
+            - listitem [ref=e219]:
+              - link "Bon v vrednosti 5€ ob prijavi na e-novice" [ref=e220] [cursor=pointer]:
+                - /url: /c/e-novice
+                - text: Bon v vrednosti 5€ ob prijavi na e-novice
+            - listitem [ref=e222]:
+              - link "Pogoji vračila v spletni trgovini" [ref=e223] [cursor=pointer]:
+                - /url: /c/vracilo
+                - text: Pogoji vračila v spletni trgovini
+            - listitem [ref=e225]:
+              - link "Varno plačevanje" [ref=e226] [cursor=pointer]:
+                - /url: /c/nacini-placila
+                - text: Varno plačevanje
+            - listitem [ref=e228]:
+              - link "Gratis najem transportnega vozila" [ref=e229] [cursor=pointer]:
+                - /url: /c/najem-transportnega-vozila
+                - text: Gratis najem transportnega vozila
+            - listitem [ref=e231]:
+              - link "Dostava in montaža" [ref=e232] [cursor=pointer]:
+                - /url: /c/montaza
+                - text: Dostava in montaža
+        - generic [ref=e235]:
+          - generic [ref=e238]:
+            - paragraph [ref=e239]: Pomoč kupcem
+            - generic [ref=e240]:
+              - generic [ref=e241]:
+                - link "Kontaktni obrazec" [ref=e242] [cursor=pointer]:
+                  - /url: /kontakt
+                  - generic [ref=e243] [cursor=pointer]: Kontaktni obrazec
+                - paragraph [ref=e244]: Potrebujete še kakšen nasvet ali pomoč?
+              - generic [ref=e245]:
+                - link "Pogosta vprašanja" [ref=e246] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e247] [cursor=pointer]: Pogosta vprašanja
+                - paragraph [ref=e248]: V naših pogostih vprašanjih boste velikokrat našli pomoč.
+          - generic [ref=e249]:
+            - generic [ref=e250]: Kakovost v Lesnini
+            - link [ref=e254] [cursor=pointer]:
+              - /url: /c/bestbuy
+          - generic [ref=e255]:
+            - generic [ref=e256]: Načini plačila
+            - generic [ref=e257]:
+              - link [ref=e260] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e263] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e266] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+              - link [ref=e269] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#paypal
+              - link "googlepay.jpg" [ref=e272] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#googlepay
+                - img "googlepay.jpg" [ref=e273] [cursor=pointer]
+              - link [ref=e276] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#applepay
+              - link [ref=e279] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#gotovina
+              - link "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e282] [cursor=pointer]:
+                - /url: /c/placevanje-v-spletni-trgovini#predracun
+                - img "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e283] [cursor=pointer]
+          - generic [ref=e284]: "*Vse cene so v evrih in vključujejo DDV, cene ne vključujejo stroškov dostave, montaže ali dekorativnih dodatkov, prikazanih na slikah. Pridržujemo si pravico do sprememb in napak. Cene označene z ** so naše redne maloprodajne cene."
+        - generic [ref=e287]:
+          - link "XXXLesnina" [ref=e288] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e289] [cursor=pointer]: XXXLesnina
+            - img [ref=e291] [cursor=pointer]
+          - generic [ref=e300]: "@2026 LES-MMS d.o.o."
+          - list [ref=e301]:
+            - listitem [ref=e302]:
+              - link "O NAS" [ref=e303] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/o-nas
+            - listitem [ref=e304]:
+              - link "SPLOŠNI POGOJI" [ref=e305] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/splosni-pogoji
+            - listitem [ref=e306]:
+              - link "VARNOST IN ZASEBNOST" [ref=e307] [cursor=pointer]:
+                - /url: https://www.xxxlesnina.si/c/agb
+            - listitem [ref=e308]:
+              - link "Izjava o dostopnosti" [ref=e309] [cursor=pointer]:
+                - /url: /c/izjava-o-dostopnosti
+            - listitem [ref=e310]:
+              - button "Piškotki" [ref=e311] [cursor=pointer]
+          - list [ref=e312]:
+            - listitem [ref=e313]:
+              - link "youtube" [ref=e314] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCg4u8_2N8P2UZ0y4eM51nqg
+            - listitem [ref=e315]:
+              - link "instagram" [ref=e316] [cursor=pointer]:
+                - /url: https://www.instagram.com/lesnina.si/?hl=en
+            - listitem [ref=e317]:
+              - link "facebook" [ref=e318] [cursor=pointer]:
+                - /url: https://www.facebook.com/lesnina.si/
+            - listitem [ref=e319]:
+              - link "tiktok" [ref=e320] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@lesnina_slovenija?lang=en
+            - listitem [ref=e321]:
+              - link "linkedin" [ref=e322] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/lesnina-xxxl/?viewAsMember=true
+          - link "WACA bronze certificate" [ref=e323] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA bronze certificate" [ref=e324] [cursor=pointer]
+  - generic:
+    - log
+```

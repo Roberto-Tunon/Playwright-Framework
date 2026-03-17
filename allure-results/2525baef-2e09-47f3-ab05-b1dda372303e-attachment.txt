@@ -1,0 +1,4 @@
+Params: Country: DE, Rail: XXXLUTZ, Mode: 1P, Pay: KN
+ℹ️ Delivery option searching Self Service
+⚠️ SELF_SERVICE not found. Selecting first option if possible...
+ℹ Payment plan checkbox not visible

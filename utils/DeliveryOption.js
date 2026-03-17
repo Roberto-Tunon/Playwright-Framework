@@ -21,7 +21,7 @@ async function DeliveryOption(page, datosvar, datosrail, pay) {
         //Locate the specific Self Service option using its ID
         selfServiceOption = page.locator('div#SELF_SERVICE[role="option"]');          
 
-        if (await selfServiceOption.count() > 0 && pay !== 'DEL') {
+        if (await selfServiceOption.count() > 0 && !['DEL', 'KN', 'KL'].includes(pay)) {
             console.log('✅ Self Service (Click & Collect) found. Selecting...');
             // Open the flyout/dropdown menu
             await deliveryDropdown.click();        
@@ -41,7 +41,7 @@ async function DeliveryOption(page, datosvar, datosrail, pay) {
 
             try {
             await page.locator('[data-purpose="deliveryOptions.select.deliveryOption"]').click({ timeout: 2000 });
-            await page.locator('#POSTAGE').click({ timeout: 2000 });
+            await page.locator('#DELIVERY').click({ timeout: 2000 });
             } catch (e) {
             console.log('ℹ️ Delivery option combo not available. Continuing to login modal...');
             }

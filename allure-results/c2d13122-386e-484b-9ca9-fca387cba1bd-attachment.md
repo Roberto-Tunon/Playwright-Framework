@@ -1,0 +1,507 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link "PayPal 0% Finanzierung" [ref=e9] [cursor=pointer]:
+            - /url: /c/finanzierung-paypal
+            - generic [ref=e10] [cursor=pointer]: PayPal 0% Finanzierung
+          - generic [ref=e12]:
+            - link "gratis Click & Collect" [ref=e13] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - generic [ref=e14] [cursor=pointer]: gratis Click & Collect
+            - link "über 12.000 Produkte lagernd" [ref=e15] [cursor=pointer]:
+              - /url: /kategorien/root
+              - generic [ref=e16] [cursor=pointer]: über 12.000 Produkte lagernd
+            - link "54 Filialen in deiner Nähe" [ref=e17] [cursor=pointer]:
+              - /url: /filialen-de
+              - generic [ref=e18] [cursor=pointer]: 54 Filialen in deiner Nähe
+            - switch "Hoher Kontrast" [ref=e19]
+            - generic [ref=e20] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e21] [cursor=pointer]
+        - generic [ref=e25]:
+          - button "Navigation wechseln" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: Menü
+          - link "Möemax" [ref=e28] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e29] [cursor=pointer]: Möemax
+            - img [ref=e31] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e34] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e35]:
+            - generic [ref=e36]:
+              - button "Suchen" [ref=e38] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e39]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+              - button "Bildersuche" [ref=e43] [cursor=pointer]
+          - generic [ref=e44]:
+            - button "Anmelden" [ref=e46] [cursor=pointer]:
+              - generic [ref=e47] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e49] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e50] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 0 Produkte" [ref=e52] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e53] [cursor=pointer]: Warenkorb
+          - navigation [ref=e54]:
+            - list [ref=e55]:
+              - listitem [ref=e56]:
+                - link "Produkte" [ref=e57] [cursor=pointer]:
+                  - /url: /kategorien/root
+              - listitem [ref=e58]:
+                - link "Räume" [ref=e59] [cursor=pointer]:
+                  - /url: /c/raeume
+              - listitem [ref=e60]:
+                - link "Küchen" [ref=e61] [cursor=pointer]:
+                  - /url: /alle-kuechen-C34
+              - listitem [ref=e62]:
+                - link "Garten" [ref=e63] [cursor=pointer]:
+                  - /url: /garten-outdoor-C45
+              - listitem [ref=e64]:
+                - link "Trends" [ref=e65] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e66]:
+                - link "Werbung" [ref=e67] [cursor=pointer]:
+                  - /url: /c/dein-trendmoebelhaus
+              - listitem [ref=e68]:
+                - link "% SALE %" [ref=e69] [cursor=pointer]:
+                  - /url: /c/sale
+              - listitem [ref=e70]:
+                - link "Beratungstermin" [ref=e71] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+      - main [ref=e72]:
+        - status [ref=e73]:
+          - generic [ref=e74]: mömax Onlineshop » Möbeltrends online kaufen - moemax.de
+        - generic [ref=e75]:
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "PayPal 0% Finanzierung" [ref=e79] [cursor=pointer]:
+                - /url: /c/finanzierung-paypal
+                - generic [ref=e83] [cursor=pointer]: PayPal 0% Finanzierung
+          - generic [ref=e84]:
+            - link "Die nächste Liste überspringen" [ref=e85] [cursor=pointer]:
+              - /url: "#skip-section-Liste-cmsitem_00415630"
+              - text: Abschnitt überspringen
+            - generic [ref=e86]:
+              - generic [ref=e88]:
+                - generic [ref=e94]:
+                  - link "Jetzt entdecken" [ref=e95] [cursor=pointer]:
+                    - /url: /alle-garten-outdoor-C45
+                  - generic:
+                    - generic:
+                      - paragraph:
+                        - generic: Try to reload the page.
+                        - generic: The video could not be loaded, either because the server or network failed or because the format is not supported.
+                    - generic:
+                      - generic:
+                        - heading "Gartensaison 2026 ist eröffnet!" [level=2]
+                        - link "Jetzt entdecken" [ref=e96] [cursor=pointer]:
+                          - /url: /alle-garten-outdoor-C45
+                          - generic [ref=e97] [cursor=pointer]: Jetzt entdecken
+                - generic [ref=e99]:
+                  - generic [ref=e102]:
+                    - link "Alle Möbel" [ref=e103] [cursor=pointer]:
+                      - /url: /alle-moebel-C30
+                      - generic [ref=e104] [cursor=pointer]: Alle Möbel
+                    - list
+                  - generic [ref=e108]:
+                    - link "Alle Küchen" [ref=e109] [cursor=pointer]:
+                      - /url: /alle-kuechen-C34
+                      - generic [ref=e110] [cursor=pointer]: Alle Küchen
+                    - list
+                  - generic [ref=e114]:
+                    - link "Alle Wohnaccessoires" [ref=e115] [cursor=pointer]:
+                      - /url: /alle-wohnaccessoires-C37C3
+                      - generic [ref=e116] [cursor=pointer]: Alle Wohnaccessoires
+                    - list
+                  - generic [ref=e120]:
+                    - link "Alle Kochen & Essen" [ref=e121] [cursor=pointer]:
+                      - /url: /alle-kochen-essen-C35
+                      - generic [ref=e122] [cursor=pointer]: Alle Kochen & Essen
+                    - list
+              - generic [ref=e128]:
+                - link "Die nächste Liste überspringen" [ref=e129] [cursor=pointer]:
+                  - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJjbXNpdGVtXzAwNDE1NjU4IiwiY2F0YWxvZ0lkIjoibW9lbWF4LmRlLWNvbnRlbnQiLCJjYXRhbG9nVmVyc2lvbiI6Ik9ubGluZSJ9"
+                  - text: Abschnitt überspringen
+                - generic [ref=e130] [cursor=pointer]:
+                  - group [ref=e131] [cursor=pointer]:
+                    - generic [ref=e135] [cursor=pointer]:
+                      - link "Jetzt entdecken" [ref=e136] [cursor=pointer]:
+                        - /url: /c/candy-colors
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading "Candy Colors" [level=2]
+                            - paragraph: Themenwelt Frühling/Sommer
+                            - link "Jetzt entdecken" [ref=e137] [cursor=pointer]:
+                              - /url: /c/candy-colors
+                              - generic [ref=e138] [cursor=pointer]: Jetzt entdecken
+                    - generic [ref=e142] [cursor=pointer]:
+                      - link "Jetzt entdecken" [ref=e143] [cursor=pointer]:
+                        - /url: /c/shiny-silver
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading "Shiny Silver" [level=2]
+                            - paragraph: Themenwelt Frühling/Sommer
+                            - link "Jetzt entdecken" [ref=e144] [cursor=pointer]:
+                              - /url: /c/shiny-silver
+                              - generic [ref=e145] [cursor=pointer]: Jetzt entdecken
+                  - generic:
+                    - button "Vorherige Folie"
+                    - button "Nächste Folie"
+                - generic [ref=e147]:
+                  - list:
+                    - listitem:
+                      - button "Gehe zu Slide 1" [ref=e148] [cursor=pointer]
+                    - listitem:
+                      - button "Gehe zu Slide 2" [ref=e149] [cursor=pointer]
+          - generic [ref=e154]:
+            - generic [ref=e157]:
+              - link "Urban Nature - Raum für Ruhe" [ref=e158] [cursor=pointer]:
+                - /url: /c/urban-nature
+                - generic [ref=e159] [cursor=pointer]: Urban Nature - Raum für Ruhe
+              - list
+              - img "Ruheoase Schlafzimmer" [ref=e161]
+            - generic [ref=e164]:
+              - link "Valentinstag" [ref=e165] [cursor=pointer]:
+                - /url: /c/valentinstag
+                - generic [ref=e166] [cursor=pointer]: Valentinstag
+              - list
+              - img "Valentinstag" [ref=e168]
+            - generic [ref=e171]:
+              - link "Ostern bei mömax" [ref=e172] [cursor=pointer]:
+                - /url: /c/ostern
+                - generic [ref=e173] [cursor=pointer]: Ostern bei mömax
+              - list
+              - img "Ostern bei mömax" [ref=e175]
+            - generic [ref=e178]:
+              - link "Wohn(t)räume in Japandi" [ref=e179] [cursor=pointer]:
+                - /url: /c/wohntraeume-japandi
+                - generic [ref=e180] [cursor=pointer]: Wohn(t)räume in Japandi
+              - list
+          - list [ref=e183]:
+            - listitem [ref=e184]:
+              - link "Beratungstermin" [ref=e185] [cursor=pointer]:
+                - /url: /c/beratungstermin-vereinbaren
+                - generic [ref=e188] [cursor=pointer]: Beratungstermin
+            - listitem [ref=e189]:
+              - link "Auftragsstatus abfragen" [ref=e190] [cursor=pointer]:
+                - /url: /auftragsstatus
+                - generic [ref=e193] [cursor=pointer]: Auftragsstatus abfragen
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: mömax Newsletter
+                - paragraph [ref=e199]:
+                  - text: Jetzt anmelden und 10€* Gutschein sichern.
+                  - text: (Mindestbestellwert € 25,-)
+              - generic [ref=e200]:
+                - generic [ref=e201]:
+                  - generic [ref=e204]:
+                    - textbox "E-MAIL-ADRESSE*" [ref=e205]
+                    - generic "E-MAIL-ADRESSE": E-MAIL-ADRESSE*
+                  - generic [ref=e207] [cursor=pointer]:
+                    - checkbox "Ich möchte Werbung von mömax auf Social Media Websites oder auf anderen Partnerwebsites von Anbietern verhaltensbasierter Werbung erhalten." [ref=e208]
+                    - generic [ref=e210] [cursor=pointer]:
+                      - img
+                    - generic [ref=e214] [cursor=pointer]: Ich möchte Werbung von mömax auf Social Media Websites oder auf anderen Partnerwebsites von Anbietern verhaltensbasierter Werbung erhalten.
+                  - paragraph [ref=e215]:
+                    - text: „Ja, ich möchte regelmäßig Informationen zu Aktionen, Angeboten sowie Gutscheinen der mömax Deutschland GmbH via E-Mail-Newsletter erhalten, wie in den Datenschutzhinweisen beschrieben. Mit Anmeldung bestätige ich, dass ich über 16 Jahre alt bin. Ich kann die Bestellung des Newsletters jederzeit widerrufen. Es gilt der
+                    - link "Datenschutzhinweis" [ref=e216] [cursor=pointer]:
+                      - /url: /c/privacy
+                    - text: von mömax Deutschland GmbH. *siehe
+                    - link "Aktionsbedingungen" [ref=e217] [cursor=pointer]:
+                      - /url: /c/aktionsnews
+                    - text: “
+                  - button "Jetzt anmelden" [ref=e218] [cursor=pointer]:
+                    - generic [ref=e219] [cursor=pointer]: Jetzt anmelden
+                - paragraph [ref=e220]: Details zum Newsletterversand und zum Datenschutz findest du im Datenschutzhinweis von mömax.
+            - img "Látványkép" [ref=e222]
+          - generic [ref=e223]:
+            - heading "Möbeltrends im mömax Onlineshop entdecken" [level=1] [ref=e224]
+            - generic [ref=e225]:
+              - paragraph [ref=e228]:
+                - text: Fragst du dich, wo du einfach und bequem Möbel online shoppen kannst? Suchst du nach Inspiration, um dein Zuhause in eine echte Wohlfühloase zu verwandeln? Dann bist du bei uns im mömax Onlineshop genau richtig! Entdecke in unserem Online-Möbelhaus unser vielfältiges Sortiment und finde den Stil, der zu dir passt! Unser Sortiment bietet dir nicht nur eine spannende Auswahl an
+                - link "Boxspringbetten" [ref=e229] [cursor=pointer]:
+                  - /url: /alle-boxspringbetten-C30C5C1
+                - text: ","
+                - link "Leuchten" [ref=e230] [cursor=pointer]:
+                  - /url: /alle-lampen-leuchten-C33
+                - text: und
+                - link "Wohnlandschaften" [ref=e231] [cursor=pointer]:
+                  - /url: /alle-wohnlandschaften-C30C10C1
+                - text: – wir schenken dir damit neue Gemütlichkeit für dein Zuhause! Entdecke die Stimmung des skandinavischen Stils für dein Wohnzimmer. Reise mit unseren Themenwelten im romantisch-verspielten Landhausstil mitten in die französische Provence oder mache eine Zeitreise in die Vergangenheit mit mömax Möbeln im Retrostil. Gestalte deine Einrichtung genauso einzigartig, wie du bist, und überrasche damit deine Gäste! Schaffe mit Accessoires, Farben und liebevollen Details eine wohnliche Atmosphäre zum Entspannen. Wir wünschen dir viel Spaß beim Einrichten!
+              - generic [ref=e233]:
+                - text: Möbel online zu kaufen ist nicht nur bequem – im mömax Onlineshop ist es auch noch besonders stressfrei. Egal ob
+                - link "Gartenmöbel" [ref=e234] [cursor=pointer]:
+                  - /url: /alle-garten-outdoor-C45
+                - text: oder
+                - link "Küchenblock" [ref=e235] [cursor=pointer]:
+                  - /url: /alle-kueche-online-kaufen-C34C2
+                - text: "! Lass dir Zeit mit deiner Entscheidung und genieße 30 Tage Rückgaberecht. Natürlich kannst du zwischen vielen Zahlungsmöglichkeiten wie PayPal, Sofortüberweisung oder Kauf auf Rechnung wählen. Freu dich auf die entspannte Lieferung deiner Wunschmöbel direkt zu dir nach Hause. Unsere Spezialisten unterstützen dich mit unserem Montageservice gerne beim Aufbau. Oder besuche uns doch in einer unserer mömax Filialen in deiner Nähe und nutze die persönliche Abholung vor Ort. Echte Stylehunter bekommen mit dem mömax Newsletter jede Woche die neuesten Trends direkt in ihr Postfach geschickt. Und für Bastelfreunde bietet der mömax Blog zahlreiche Ideen und Inspirationen, die deinem Zuhause den ganz persönlichen Touch verleihen."
+          - generic [ref=e236]:
+            - link "Die nächste Liste überspringen" [ref=e237] [cursor=pointer]:
+              - /url: "#skip-section-Liste-cmsitem_00453802"
+              - text: Abschnitt überspringen
+            - generic [ref=e241]:
+              - list
+              - img "Auszeichnung Preis Championgs" [ref=e245]
+    - contentinfo [ref=e246]:
+      - generic [ref=e247]:
+        - list [ref=e250]:
+          - listitem [ref=e251]:
+            - link "Click & Collect" [ref=e252] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e253] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e254]:
+            - link "30 Tage Rückgabe" [ref=e255] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e256] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e257]:
+            - link "Gratis Transporter" [ref=e258] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e259] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e260]:
+            - link "Montage & Lieferung" [ref=e261] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e262] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e263]:
+          - link "Die nächste Liste überspringen" [ref=e264] [cursor=pointer]:
+            - /url: "#skip-section-Liste-cmsitem_00083415"
+            - text: Abschnitt überspringen
+          - generic [ref=e266]:
+            - link "Die nächste Liste überspringen" [ref=e267] [cursor=pointer]:
+              - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+              - text: Abschnitt überspringen
+            - generic [ref=e268]:
+              - generic [ref=e270]:
+                - generic [ref=e271]: Über mömax
+                - list [ref=e272]:
+                  - listitem [ref=e273]:
+                    - link "Presse" [ref=e274] [cursor=pointer]:
+                      - /url: https://pr.moemax.de
+                  - listitem [ref=e275]:
+                    - link "Jobs bei mömax" [ref=e276] [cursor=pointer]:
+                      - /url: https://karriere.moemax.de
+                  - listitem [ref=e277]:
+                    - link "Unternehmen" [ref=e278] [cursor=pointer]:
+                      - /url: /c/unternehmen
+                  - listitem [ref=e279]:
+                    - link "Blog" [ref=e280] [cursor=pointer]:
+                      - /url: https://blog.moemax.de
+                  - listitem [ref=e281]:
+                    - link "Aktueller Service" [ref=e282] [cursor=pointer]:
+                      - /url: /c/serviceuebersicht
+                  - listitem [ref=e283]:
+                    - link "Grundsatzerklärung LkSG" [ref=e284] [cursor=pointer]:
+                      - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCWtJ6NbgSjtBlU_N73euysw/lksg_lieferkettengesetz_grundsatzerklarung_2024-25_de_en.pdf
+                  - listitem [ref=e285]:
+                    - link "Jahresberichte LkSG" [ref=e286] [cursor=pointer]:
+                      - /url: /c/jahresberichte
+                  - listitem [ref=e287]:
+                    - link "Verhaltenskodex für Lieferanten" [ref=e288] [cursor=pointer]:
+                      - /url: https://moemax.a.bigcontent.io/v1/static/NCQu_jutXb-aDcMsic9IzE8Q/lksg_lieferkettensorgfaltspflichtengesetz_verhaltenskodex-lieferanten_de_en.pdf
+                  - listitem [ref=e289]:
+                    - link "Barrierefreiheit" [ref=e290] [cursor=pointer]:
+                      - /url: /c/barrierefreiheit
+                  - listitem [ref=e291]:
+                    - link "Auszeichnungen" [ref=e292] [cursor=pointer]:
+                      - /url: /c/auszeichnungen
+              - generic [ref=e294]:
+                - generic [ref=e295]: Service
+                - list [ref=e296]:
+                  - listitem [ref=e297]:
+                    - link "Aktuelle Aktionen" [ref=e298] [cursor=pointer]:
+                      - /url: /c/dein-trendmoebelhaus
+                  - listitem [ref=e299]:
+                    - link "Prospekte" [ref=e300] [cursor=pointer]:
+                      - /url: /c/prospekte
+                  - listitem [ref=e301]:
+                    - link "Deals direkt aufs Handy" [ref=e302] [cursor=pointer]:
+                      - /url: /c/rcs-anmeldung
+                  - listitem [ref=e303]:
+                    - link "Aktionsbedingungen" [ref=e304] [cursor=pointer]:
+                      - /url: /c/aktionsnews
+                  - listitem [ref=e305]:
+                    - link "Bonus Card" [ref=e306] [cursor=pointer]:
+                      - /url: /c/unserebonuscard
+                  - listitem [ref=e307]:
+                    - link "Gutscheine online einlösen" [ref=e308] [cursor=pointer]:
+                      - /url: /c/onlinegutscheine-einloesen
+                  - listitem [ref=e309]:
+                    - link "Geschenkgutscheine" [ref=e310] [cursor=pointer]:
+                      - /url: https://geschenkkarten.moemax.de/b2c/
+                  - listitem [ref=e311]:
+                    - link "Lieferung" [ref=e312] [cursor=pointer]:
+                      - /url: /c/lieferungundmontage
+                  - listitem [ref=e313]:
+                    - link "Leihtransporter buchen (Selbstabholung)" [ref=e314] [cursor=pointer]:
+                      - /url: /transporter
+                  - listitem [ref=e315]:
+                    - link "Firmenkunden (B2B)" [ref=e316] [cursor=pointer]:
+                      - /url: /c/b2b
+                  - listitem [ref=e317]:
+                    - link "Premiumschutz" [ref=e318] [cursor=pointer]:
+                      - /url: /c/helvetia-versicherungen
+                  - listitem [ref=e319]:
+                    - link "Konfiguratoren" [ref=e320] [cursor=pointer]:
+                      - /url: /c/konfiguratoren
+              - generic [ref=e322]:
+                - generic [ref=e323]: Kontakt
+                - list [ref=e324]:
+                  - listitem [ref=e325]:
+                    - link "Auftragsstatus" [ref=e326] [cursor=pointer]:
+                      - /url: /auftragsstatus
+                  - listitem [ref=e327]:
+                    - link "Bestellhotline" [ref=e328] [cursor=pointer]:
+                      - /url: /c/bestellhotline
+                  - listitem [ref=e329]:
+                    - link "Newsletter" [ref=e330] [cursor=pointer]:
+                      - /url: /c/newsletter
+                  - listitem [ref=e331]:
+                    - link "Click & Collect" [ref=e332] [cursor=pointer]:
+                      - /url: /c/clickundcollect
+                  - listitem [ref=e333]:
+                    - link "FAQ" [ref=e334] [cursor=pointer]:
+                      - /url: /faq
+                  - listitem [ref=e335]:
+                    - link "Retouren & Reklamationen" [ref=e336] [cursor=pointer]:
+                      - /url: /c/retouren
+                  - listitem [ref=e337]:
+                    - link "Hinweisgebersystem LkSG" [ref=e338] [cursor=pointer]:
+                      - /url: https://app.convercent.com/de-de/LandingPage/f569ee87-0d2c-ec11-a985-000d3ab9f062?_=1636105011105
+                  - listitem [ref=e339]:
+                    - link "Hinweisgebersystem LkSG Verfahrensordnung" [ref=e340] [cursor=pointer]:
+                      - /url: https://moemax.a.bigcontent.io/v1/static/NCtqUiqceEaZLRlBYSmJjIRQ/lksg_hinweisgebersystem-verfahrensordnung_de_en_es_cn.pdf
+              - generic [ref=e342]:
+                - generic [ref=e343]: Filialen und Standorte
+                - list [ref=e344]:
+                  - listitem [ref=e345]:
+                    - link "Standorte" [ref=e346] [cursor=pointer]:
+                      - /url: /filialen-de
+                  - listitem [ref=e347]:
+                    - link "Filialschnäppchen" [ref=e348] [cursor=pointer]:
+                      - /url: /hs/
+                  - listitem [ref=e349]:
+                    - link "Restaurants" [ref=e350] [cursor=pointer]:
+                      - /url: /c/unserrestaurant
+                  - listitem [ref=e351]:
+                    - link "Beratungstermine" [ref=e352] [cursor=pointer]:
+                      - /url: /c/beratungstermin-vereinbaren
+                  - listitem [ref=e353]:
+                    - link "Küchenberater" [ref=e354] [cursor=pointer]:
+                      - /url: /c/kuechen-beratungstermin
+                  - listitem [ref=e355]:
+                    - link "Gratis Transporter" [ref=e356] [cursor=pointer]:
+                      - /url: /c/transporterleihen
+        - generic [ref=e358]:
+          - generic [ref=e361]:
+            - paragraph [ref=e362]: Du hast noch Fragen?
+            - generic [ref=e363]:
+              - generic [ref=e364]:
+                - link "Zum Kontaktformular" [ref=e365] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e366] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e367]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e368]:
+                - link "Häufig gestellte Fragen" [ref=e369] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e370] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e371]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e372]:
+            - generic [ref=e373]: Versandpartner
+            - generic [ref=e374]:
+              - img "Rhenus Home Delivery Logo" [ref=e377]
+              - img "Hermes Logo" [ref=e380]
+              - img "DHL Logo" [ref=e383]
+          - generic [ref=e384]:
+            - generic [ref=e385]: Zahlungsmöglichkeiten
+            - generic [ref=e386]:
+              - img "Split It Logo" [ref=e389]
+              - img "Klarna Logo" [ref=e392]
+              - img "PayPal Logo" [ref=e395]
+              - img "Visa Logo" [ref=e398]
+              - img "Mastercard Logo" [ref=e401]
+              - img "Google Pay Logo" [ref=e404]
+              - img "Apple Pay Logo" [ref=e407]
+          - generic [ref=e408]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***UVP
+        - generic [ref=e411]:
+          - link "Möemax" [ref=e412] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e413] [cursor=pointer]: Möemax
+            - img [ref=e415] [cursor=pointer]
+          - generic [ref=e418]: © 2026 moemax Deutschland GmbH
+          - list [ref=e419]:
+            - listitem [ref=e420]:
+              - link "Impressum" [ref=e421] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e422]:
+              - link "AGB" [ref=e423] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e424]:
+              - link "Datenschutz" [ref=e425] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e426]:
+              - button "Cookie-Einstellungen" [ref=e427] [cursor=pointer]
+          - list [ref=e428]:
+            - listitem [ref=e429]:
+              - link "facebook" [ref=e430] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.de/
+            - listitem [ref=e431]:
+              - link "instagram" [ref=e432] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_de/
+            - listitem [ref=e433]:
+              - link "youtube" [ref=e434] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/MoemaxAT
+            - listitem [ref=e435]:
+              - link "tiktok" [ref=e436] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e437]:
+              - link "pinterest" [ref=e438] [cursor=pointer]:
+                - /url: https://www.pinterest.de/moemax_com/
+          - link "WACA Bronze" [ref=e439] [cursor=pointer]:
+            - /url: /c/accessibility
+            - img "WACA Bronze" [ref=e440] [cursor=pointer]
+  - dialog "dialog" [ref=e441]:
+    - generic [ref=e442]:
+      - heading "Cookies helfen Ihnen & uns" [level=3] [ref=e444]:
+        - generic [ref=e445]:
+          - img [ref=e446]
+          - text: Cookies helfen Ihnen & uns
+      - generic [ref=e459]:
+        - paragraph [ref=e460]: Wir von Mömax setzen Cookies und ähnliche Technologien („Cookies“) ein. Wir nutzen die Cookies und verarbeiten die durch die Cookies erhobenen Daten, um Ihnen die Website und ihre Funktionalitäten zur Verfügung zu stellen, ein optimales Einkaufserlebnis zu bieten, unsere Services bereitzustellen und zu verbessern, Ihr Nutzungsverhalten kennenzulernen und individualisierte Werbung und Inhalte auf unserer Website und Drittseiten, in unseren Newslettern und im Rahmen unserer Bonuscard zu zeigen.
+        - list [ref=e462]:
+          - listitem [ref=e463]:
+            - text: .
+            - paragraph [ref=e465]: Wenn Sie auf „Alle Cookies akzeptieren“ klicken, stimmen Sie dem Einsatz aller Cookies, die in den Cookie-Einstellungen aufgelistet sind, zu. Sie können Ihre Zustimmung in den Cookie-Einstellungen jederzeit für die Zukunft widerrufen oder ändern.
+          - listitem [ref=e466]:
+            - text: .
+            - paragraph [ref=e468]: Wenn Sie im Folgenden auf „Weiter ohne Einwilligung“ klicken, setzen wir nur Essentielle Cookies und cookielose Technologien zur Bannerausspielung.
+          - listitem [ref=e469]:
+            - text: .
+            - paragraph [ref=e471]: Wenn Sie auf „Cookie-Einstellungen“ klicken, können Sie die Cookies individuell auswählen und mehr über diese erfahren.
+        - generic [ref=e472]:
+          - button "Alle Cookies akzeptieren" [active] [ref=e473] [cursor=pointer]:
+            - generic [ref=e474] [cursor=pointer]: Alle Cookies akzeptieren
+          - button "Weiter ohne Einwilligung" [ref=e476] [cursor=pointer]:
+            - generic [ref=e477] [cursor=pointer]: Weiter ohne Einwilligung
+        - list [ref=e479]:
+          - listitem [ref=e480]:
+            - button "Cookie Einstellungen" [ref=e481] [cursor=pointer]:
+              - generic [ref=e482] [cursor=pointer]: Cookie Einstellungen
+          - listitem [ref=e483]:
+            - button "Datenschutzerklärung" [ref=e484] [cursor=pointer]:
+              - generic [ref=e485] [cursor=pointer]: Datenschutzerklärung
+          - listitem [ref=e486]:
+            - button "Impressum" [ref=e487] [cursor=pointer]:
+              - generic [ref=e488] [cursor=pointer]: Impressum
+```
