@@ -64,9 +64,9 @@ npm init playwright@latest
 -----------------
 -- CREDIT CARD --
 -----------------
-- RAIL=xxxlutz COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
-- RAIL=xxxlesnina COUNTRY=HR MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
-- RAIL=moemax COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.ts --project chromium --headed 
+- RAIL=xxxlesnina COUNTRY=HR MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.ts --project chromium --headed 
+- RAIL=moemax COUNTRY=AT MODE=1P npx playwright test tests/E2E-Lutz-Credit.spec.ts --project chromium --headed 
 
 ---------------------
 -- CREDIT CARD 3DS --

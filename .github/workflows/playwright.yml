@@ -36,7 +36,7 @@ jobs:
         npx playwright install --with-deps chromium
 
     - name: Run Playwright tests
-      run: npx playwright test tests/E2E-Lutz-Credit.spec.js --project chromium
+      run: npx playwright test tests/E2E-Lutz-Credit.spec.ts --project chromium
       env:
         # Aquí pasamos tus variables de ejecución
         RAIL: ${{ github.event.inputs.rail }}

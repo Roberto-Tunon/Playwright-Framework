@@ -17,7 +17,7 @@
       "rail": "moemax", 
       "mode": "1P", 
       "pay": "CC", 
-      "file": "tests/E2E-Lutz-Credit.spec.js",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
       "icon": "credit-card"
     },
     { 
@@ -25,7 +25,7 @@
       "rail": "xxxlutz", 
       "mode": "1P", 
       "pay": "CC", 
-      "file": "tests/E2E-Lutz-Credit.spec.js",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
       "icon": "credit-card"
     },
     { 
@@ -91,7 +91,7 @@
       "rail": "xxxlesnina", 
       "mode": "1P", 
       "pay": "CC", 
-      "file": "tests/E2E-Lutz-Credit.spec.js",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
       "icon": "credit-card"
     },
      { 
@@ -107,7 +107,7 @@
       "rail": "xxxlutz", 
       "mode": "1P", 
       "pay": "CC", 
-      "file": "tests/E2E-Lutz-Credit.spec.js",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
       "icon": "credit-card"
     },
     { 
@@ -147,7 +147,7 @@
       "rail": "xxxlutz", 
       "mode": "2P", 
       "pay": "CC", 
-      "file": "tests/E2E-Lutz-Credit.spec.js",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
       "icon": "credit-card"
     },
     { 

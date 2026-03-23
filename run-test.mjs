@@ -73,7 +73,7 @@ async function run() {
 
     // 4. PAYMENT METHODS LOGIC
     const allPayments = [
-      { name: 'tests/E2E-Lutz-Credit.spec.js',   message: '💳 Credit Card',          id: 'credit' },
+      { name: 'tests/E2E-Lutz-Credit.spec.ts',   message: '💳 Credit Card',          id: 'credit' },
       { name: 'tests/E2E-Lutz-PayPal.spec.js',   message: '🅿️  PayPal',               id: 'paypal' },
       { name: 'tests/E2E-Lutz-Payments.spec.js', message: '🚀 Klarna Pay Now',    id: 'k_now',    payCode: 'KN' },
       { name: 'tests/E2E-Lutz-Payments.spec.js', message: '⏳ Klarna Pay Later',  id: 'k_later',  payCode: 'KL' },
