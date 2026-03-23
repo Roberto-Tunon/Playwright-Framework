@@ -74,17 +74,17 @@ async function run() {
     // 4. PAYMENT METHODS LOGIC
     const allPayments = [
       { name: 'tests/E2E-Lutz-Credit.spec.ts',   message: '💳 Credit Card',          id: 'credit' },
-      { name: 'tests/E2E-Lutz-PayPal.spec.js',   message: '🅿️  PayPal',               id: 'paypal' },
-      { name: 'tests/E2E-Lutz-Payments.spec.js', message: '🚀 Klarna Pay Now',    id: 'k_now',    payCode: 'KN' },
-      { name: 'tests/E2E-Lutz-Payments.spec.js', message: '⏳ Klarna Pay Later',  id: 'k_later',  payCode: 'KL' },
-      { name: 'tests/E2E-Lutz-Payments.spec.js', message: '📅 Klarna Pay Overtime', id: 'k_over',   payCode: 'KO' },
-      { name: 'tests/E2E-Lutz-Payments.spec.js', message: '📲 Twint',             id: 'twint',    payCode: 'TW' },
-      { name: 'tests/E2E-Lutz-Payments.spec.js', message: '🏦 Swish',             id: 'swish',    payCode: 'SW' },
-      { name: 'tests/E2E-Lutz-Payments.spec.js', message: '🏦 Online Bank',        id: 'bank',     payCode: 'ON' },
-      { name: 'tests/E2E-Lutz-Billie.spec.js',   message: '🏢 Billie',            id: 'billie' },
-      { name: 'tests/E2E-Lutz-Payments.spec.js', message: '📦 On Delivery',        id: 'delivery', payCode: 'DEL' },
-      { name: 'tests/E2E-Lutz-RS.spec.js',       message: '🦅 Corvus',            id: 'corvus' },
-      { name: 'tests/E2E-Lutz-SplitIT.spec.js',  message: '💳 SplitIT',           id: 'splitit' }
+      { name: 'tests/E2E-Lutz-PayPal.spec.ts',   message: '🅿️  PayPal',               id: 'paypal' },
+      { name: 'tests/E2E-Lutz-Payments.spec.ts', message: '🚀 Klarna Pay Now',    id: 'k_now',    payCode: 'KN' },
+      { name: 'tests/E2E-Lutz-Payments.spec.ts', message: '⏳ Klarna Pay Later',  id: 'k_later',  payCode: 'KL' },
+      { name: 'tests/E2E-Lutz-Payments.spec.ts', message: '📅 Klarna Pay Overtime', id: 'k_over',   payCode: 'KO' },
+      { name: 'tests/E2E-Lutz-Payments.spec.ts', message: '📲 Twint',             id: 'twint',    payCode: 'TW' },
+      { name: 'tests/E2E-Lutz-Payments.spec.ts', message: '🏦 Swish',             id: 'swish',    payCode: 'SW' },
+      { name: 'tests/E2E-Lutz-Payments.spec.ts', message: '🏦 Online Bank',        id: 'bank',     payCode: 'ON' },
+      { name: 'tests/E2E-Lutz-Billie.spec.ts',   message: '🏢 Billie',            id: 'billie' },
+      { name: 'tests/E2E-Lutz-Payments.spec.ts', message: '📦 On Delivery',        id: 'delivery', payCode: 'DEL' },
+      { name: 'tests/E2E-Lutz-RS.spec.ts',       message: '🦅 Corvus',            id: 'corvus' },
+      { name: 'tests/E2E-Lutz-SplitIT.spec.ts',  message: '💳 SplitIT',           id: 'splitit' }
     ];
 
     let filteredPayments = [];

@@ -76,30 +76,30 @@ npm init playwright@latest
 ----------------------
 -- SPECIAL PAYMENTS --
 ----------------------
-- PAY=KO npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- RAIL=xxxlutz COUNTRY=SE MODE=1P PAY=SW npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- RAIL=xxxlutz COUNTRY=CH MODE=1P PAY=TW npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- RAIL=xxxlutz COUNTRY=CZ MODE=1P PAY=ON npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- RAIL=xxxlutz COUNTRY=CZ MODE=1P PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KN npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
-- RAIL=xxxlesnina COUNTRY=SI MODE=1P PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.js --project chromium --headed 
+- PAY=KO npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=SE MODE=1P PAY=SW npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CH MODE=1P PAY=TW npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CZ MODE=1P PAY=ON npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=CZ MODE=1P PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KL npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT MODE=1P PAY=KN npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
+- RAIL=xxxlesnina COUNTRY=SI MODE=1P PAY=DEL npx playwright test tests/E2E-Lutz-Payments.spec.ts --project chromium --headed 
 
 -----------------
 -- Split IT --
 -----------------
-- RAIL=xxxlutz COUNTRY=RO npx playwright test tests/E2E-Lutz-SplitIT.spec.js --project chromium --headed 
-- RAIL=xxxlesnina COUNTRY=SI MODE=1P PAY=SP npx playwright test tests/E2E-Lutz-SplitIT.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=RO npx playwright test tests/E2E-Lutz-SplitIT.spec.ts --project chromium --headed 
+- RAIL=xxxlesnina COUNTRY=SI MODE=1P PAY=SP npx playwright test tests/E2E-Lutz-SplitIT.spec.ts --project chromium --headed 
 
 --------------------------
 -- RS Lesnina CorvusPay --
 --------------------------
-- npx playwright test tests/E2E-Lutz-RS.spec.js --project chromium --headed 
+- npx playwright test tests/E2E-Lutz-RS.spec.ts --project chromium --headed 
   
 --------------------------
 -- Billie --
 --------------------------
-- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Billie.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Billie.spec.ts --project chromium --headed 
 
 --------------------------
 -- Riverty --

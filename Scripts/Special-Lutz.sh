@@ -3,7 +3,7 @@ MODES=("KO" "SW" "TW" "ON" "DEL" "KL" "KN")
 
 # Opciones de Playwright
 PROJECT="chromium"
-SPEC="tests/PowerSellers-Lutz-Payments.spec.js"
+SPEC="tests/PowerSellers-Lutz-Payments.spec.ts"
 
 # Itera sobre combinaciones
 for PAY in "${MODES[@]}"; do
