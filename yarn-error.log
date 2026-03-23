@@ -1,0 +1,52 @@
+Arguments: 
+  /home/robe/.nvm/versions/node/v22.14.0/bin/node /mnt/c/Program Files (x86)/Yarn/bin/yarn.js add --dev @types/node
+
+PATH: 
+  /home/robe/.local/bin:/home/robe/.asdf/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/robe/.vscode-server/bin/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/bin/remote-cli:/home/robe/.local/bin:/home/robe/.local/bin:/home/robe/.nvm/versions/node/v22.14.0/bin:/home/robe/.asdf/bin:/home/robe/.asdf/shims:/home/robe/.asdf/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft VS Code:/mnt/c/Program Files (x86)/Micro Focus/Reflection/:/mnt/c/Program Files/Micro Focus/Reflection/:/mnt/c/Users/ROBE/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ROBE/AppData/Local/Programs/Python/Python310/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Webex/Plugins:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Users/ROBE_LAdmin/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Go/bin:/mnt/c/nano-2.5.3-win32:/mnt/c/Program Files/ServiceNow/agent-client-collector/bin:/mnt/c/Program Files/ServiceNow/agent-client-collector/embedded/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Users/ROBE/AppData/Local/Volta/bin:/mnt/c/Users/ROBE/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ROBE/AppData/Local/Programs/oh-my-posh/bin:/mnt/c/Users/ROBE/AppData/Local/nvs/:/mnt/c/Users/ROBE/AppData/Roaming/npm:/mnt/c/Users/ROBE/go/bin:/snap/bin:/home/robe/.console-ninja/.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  22.14.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  AggregateError [ETIMEDOUT]: 
+      at internalConnectMultiple (node:net:1139:18)
+      at internalConnectMultiple (node:net:1215:5)
+      at Timeout.internalConnectMultipleTimeout (node:net:1739:5)
+      at listOnTimeout (node:internal/timers:596:11)
+      at process.processTimers (node:internal/timers:529:7)
+
+npm manifest: 
+  {
+    "name": "fe-deployment-regression",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+      "@playwright/test": "^1.55.1",
+      "@types/node": "^22.9.0",
+      "@types/yargs": "^17.0.33",
+      "allure-commandline": "^2.36.0",
+      "allure-playwright": "^3.4.3"
+    },
+    "dependencies": {
+      "enquirer": "^2.4.1",
+      "inquirer": "^13.1.0",
+      "yargs": "^17.7.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

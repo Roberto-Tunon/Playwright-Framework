@@ -71,7 +71,7 @@ npm init playwright@latest
 ---------------------
 -- CREDIT CARD 3DS --
 ---------------------
-- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Credit-3DS.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Credit-3DS.spec.ts --project chromium --headed 
 
 ----------------------
 -- SPECIAL PAYMENTS --
@@ -104,7 +104,7 @@ npm init playwright@latest
 --------------------------
 -- Riverty --
 --------------------------
-- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Riverty-logged.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Riverty-logged.spec.ts --project chromium --headed 
 -------------------------
 
 

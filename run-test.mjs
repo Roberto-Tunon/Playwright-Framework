@@ -19,7 +19,7 @@ async function run() {
     if (action === 'login') {
       console.log('\n🔑 Opening browser for manual login...');
       try {
-        execSync('npx playwright test tests/auth.spec.js --project chromium --headed', { stdio: 'inherit' });
+        execSync('npx playwright test tests/auth.spec.ts --project chromium --headed', { stdio: 'inherit' });
         console.log('\n✅ Session saved to auth.json. You can now run your tests!');
       } catch (e) {
         console.log('\n❌ Error: Login failed or the window was closed prematurely.');
