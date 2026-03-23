@@ -1,2 +1,0 @@
-Params: Country: DE, Rail: MOEMAX, Mode: 1P, Pay: PayPal
-✅ PayPal Login completed

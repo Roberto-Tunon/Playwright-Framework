@@ -119,5 +119,5 @@ test(testTitle, async ({ browser }) => {
     await page.waitForTimeout(1500);
     await page.screenshot({ path: `tests/Screenshots/Final-Order-${pay}-${rail}-${cod_country}.png` });
     await page.pause();
-    
+   
 });
