@@ -40,15 +40,13 @@ test(testTitle, async ({ browser }: { browser: Browser }) => {
 
   await page.waitForTimeout(1000);
   await page.screenshot({ path: `tests/Screenshots/Payment-Paypal-${rail}-${cod_country}.png`, fullPage: true });
-  await page.waitForTimeout(1000);
-
+  
   const link = page.locator('a[href*="widerrufsbelehrung"],a[href="#oou"],a[href="#koepvillkor"], a[href="#preklic"]');
   await link.focus();
 
   await page.waitForTimeout(1000);
   await page.keyboard.press("Tab");
-  await page.keyboard.press("Enter");
-  await page.waitForTimeout(6000);
+  await page.keyboard.press("Enter"); 
 
   // Esperar la ventana de PayPal (popup)
   let popup: Page | undefined;
