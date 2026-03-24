@@ -1,0 +1,441 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Osobní odběr ZDARMA" [ref=e9] [cursor=pointer]:
+              - /url: /c/xxxl-online-nakup
+              - generic [ref=e10] [cursor=pointer]: Osobní odběr ZDARMA
+            - link "-15 % na vše Online Only + doprava ZDARMA" [ref=e11] [cursor=pointer]:
+              - /url: /c/online-only
+              - generic [ref=e12] [cursor=pointer]: "-15 % na vše Online Only + doprava ZDARMA"
+          - generic [ref=e14]:
+            - link "Prospekty" [ref=e15] [cursor=pointer]:
+              - /url: /c/letaky
+              - generic [ref=e16] [cursor=pointer]: Prospekty
+            - link "Stav objednávky" [ref=e17] [cursor=pointer]:
+              - /url: /stavobjednavky
+              - generic [ref=e18] [cursor=pointer]: Stav objednávky
+            - link "FAQ & kontakty" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: FAQ & kontakty
+            - switch "Vysoký kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Vysoký kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Změnit navigaci" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menu
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "K hlavnímu obsahu" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Hledat" [ref=e43] [cursor=pointer]
+              - searchbox "Hledat produkty, značky nebo novinky" [ref=e44]
+              - generic: Hledat produkty, značky nebo novinky
+              - button "Vyhledávání dle obrázků" [ref=e48] [cursor=pointer]
+          - generic [ref=e49]:
+            - button "Přihlásit se" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52] [cursor=pointer]: Přihlásit se
+            - link "Oblíbené 0 produkty" [ref=e54] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e55] [cursor=pointer]: Seznam oblíbených
+            - link "Můj nákupní košík 1 produkt" [ref=e57] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e58] [cursor=pointer]: "1"
+              - generic [ref=e59] [cursor=pointer]: Košík
+          - navigation [ref=e60]:
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - link "Nábytek" [ref=e63] [cursor=pointer]:
+                  - /url: /c/nabytek
+              - listitem [ref=e64]:
+                - link "Zahrada" [ref=e65] [cursor=pointer]:
+                  - /url: /zahradni-nabytek-C8
+              - listitem [ref=e66]:
+                - link "Online Only" [ref=e67] [cursor=pointer]:
+                  - /url: /c/online-only
+              - listitem [ref=e68]:
+                - link "Doplňky" [ref=e69] [cursor=pointer]:
+                  - /url: /c/bytove-doplnky
+              - listitem [ref=e70]:
+                - link "Vaření" [ref=e71] [cursor=pointer]:
+                  - /url: /c/vareni-stolovani
+              - listitem [ref=e72]:
+                - link "Světla" [ref=e73] [cursor=pointer]:
+                  - /url: /svitidla-a-lampy-C10
+              - listitem [ref=e74]:
+                - link "Děti" [ref=e75] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e76]:
+                - link "AKCE" [ref=e77] [cursor=pointer]:
+                  - /url: /c/akce
+              - listitem [ref=e78]:
+                - link "SLEVA %" [ref=e79] [cursor=pointer]:
+                  - /url: /c/sleva
+              - listitem [ref=e80]:
+                - link "Trendy" [ref=e81] [cursor=pointer]:
+                  - /url: /c/inspirace
+              - listitem [ref=e82]:
+                - link "Kuchyně" [ref=e83] [cursor=pointer]:
+                  - /url: /c/xxxlutz-kuchyne
+              - listitem [ref=e84]:
+                - link "Prodejny & restaurace" [ref=e85] [cursor=pointer]:
+                  - /url: /pobocky
+              - listitem [ref=e86]:
+                - link "Služby" [ref=e87] [cursor=pointer]:
+                  - /url: /c/xxxl-sluzby
+      - main [ref=e88]:
+        - status [ref=e89]:
+          - generic [ref=e90]: Košík - XXXLutz
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - heading "Nákupní košík" [level=1] [ref=e95]
+              - link "dále nakupovat" [ref=e96] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e97] [cursor=pointer]: dále nakupovat
+            - generic [ref=e98]:
+              - alert [ref=e102]:
+                - generic [ref=e103]: Vyberte prosím pobočku pro osobní odběr.
+              - generic [ref=e104]: Prodej přes XXXLutz
+              - list [ref=e105]:
+                - listitem [ref=e106]:
+                  - article [ref=e107]:
+                    - generic [ref=e108]:
+                      - img "ŠLEHACÍ METLA - barvy nerez oceli, Basics, kov (29,5/7/7cm) - Tescoma" [ref=e109]
+                      - link [ref=e110] [cursor=pointer]:
+                        - /url: /p/tescoma-lehaci-metla-0083850089
+                    - generic [ref=e111]:
+                      - generic [ref=e112]:
+                        - generic [ref=e113]: "0083850089"
+                        - link "Číslo produktu 83850089" [ref=e114] [cursor=pointer]:
+                          - /url: /p/tescoma-lehaci-metla-0083850089
+                          - generic [ref=e115] [cursor=pointer]: Číslo produktu 83850089
+                      - link "Tescoma ŠLEHACÍ METLA" [ref=e117] [cursor=pointer]:
+                        - /url: /p/tescoma-lehaci-metla-0083850089
+                        - heading "Tescoma ŠLEHACÍ METLA" [level=2] [ref=e118] [cursor=pointer]:
+                          - generic [ref=e119] [cursor=pointer]: Tescoma ŠLEHACÍ
+                          - generic [ref=e120] [cursor=pointer]: METLA
+                      - generic [ref=e121]:
+                        - generic [ref=e122]: barvy nerez oceli
+                        - generic [ref=e123]: 29,5/7/7 cm
+                      - paragraph [ref=e126]:
+                        - text: Prodej a doprava od
+                        - generic [ref=e127]: XXXLutz
+                    - generic [ref=e130]:
+                      - generic [ref=e132]: 339,‒ Kč
+                      - generic [ref=e133]: 339,‒ Kč / Ks
+                    - generic [ref=e134]:
+                      - button "Odstranit produkt - ŠLEHACÍ METLA" [ref=e135] [cursor=pointer]
+                      - generic [ref=e136]:
+                        - textbox "Množství" [ref=e137]: "1"
+                        - generic [ref=e138]: Množství
+                      - button "1" [ref=e139] [cursor=pointer]:
+                        - generic [ref=e140] [cursor=pointer]: "1"
+                      - button "Zvýšit počet - ŠLEHACÍ METLA" [ref=e141] [cursor=pointer]
+                    - generic [ref=e143]:
+                      - button "ŠLEHACÍ METLA - Přidat mezi oblíbené" [ref=e144] [cursor=pointer]:
+                        - generic [ref=e146] [cursor=pointer]: Přidat mezi oblíbené
+                      - button "ŠLEHACÍ METLA - Odstranit produkt" [ref=e147] [cursor=pointer]:
+                        - generic [ref=e149] [cursor=pointer]: Odstranit produkt
+                  - generic [ref=e150]:
+                    - generic [ref=e151]:
+                      - generic [ref=e155]: Osobní odběr
+                      - button "Zvolit pobočku" [ref=e157] [cursor=pointer]:
+                        - generic [ref=e158] [cursor=pointer]: Zvolit pobočku
+                      - generic [ref=e159]:
+                        - text: Cena za dopravu
+                        - generic [ref=e160]: + 0,‒ Kč
+                    - paragraph [ref=e161]:
+                      - generic [ref=e162]: U každé položky s osobním odběrem si prosím zkontrolujte výběr pobočky, ze které si chcete zboží vyzvednout.
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - heading "Shrnutí" [level=2] [ref=e166]
+              - generic [ref=e167]:
+                - generic [ref=e168]:
+                  - generic [ref=e169]: Cena zboží
+                  - generic [ref=e170]: 339,‒ Kč
+                  - button "Cena za dopravu" [ref=e171] [cursor=pointer]:
+                    - generic [ref=e172] [cursor=pointer]: Cena za dopravu
+                  - generic [ref=e173]: ZDARMA
+                - generic [ref=e174]:
+                  - generic [ref=e175]: Cena celkem
+                  - generic [ref=e176]: 339,‒ Kč
+                  - generic [ref=e177]: zahrnutá DPH
+                - button "K pokladně" [ref=e178] [cursor=pointer]:
+                  - generic [ref=e179] [cursor=pointer]: K pokladně
+                - separator "nebo" [ref=e180]
+                - generic [ref=e181]:
+                  - button "Koupit s GPay" [ref=e186] [cursor=pointer]
+                  - button "Koupit s Apple Pay" [ref=e191] [cursor=pointer]:
+                    - img [ref=e193] [cursor=pointer]:
+                      - generic [ref=e194] [cursor=pointer]:
+                        - generic [ref=e195] [cursor=pointer]: Koupit s
+                        - img [ref=e196] [cursor=pointer]
+            - generic [ref=e205]:
+              - button "Kód poukazu" [ref=e206] [cursor=pointer]:
+                - generic [ref=e207] [cursor=pointer]: Kód poukazu
+                - img [ref=e208] [cursor=pointer]
+              - generic [ref=e210]:
+                - generic [ref=e213]:
+                  - textbox "Kód poukazu" [ref=e214]
+                  - generic: Kód poukazu
+                - button "Uplatnit" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e216] [cursor=pointer]: Uplatnit
+          - complementary [ref=e217]:
+            - link "dále nakupovat" [ref=e218] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e219] [cursor=pointer]: dále nakupovat
+    - contentinfo [ref=e220]:
+      - generic [ref=e221]:
+        - generic [ref=e222]:
+          - generic [ref=e223]: Výhody XXXLutz
+          - list [ref=e225]:
+            - listitem [ref=e226]:
+              - link "Osobní odběr ZDARMA" [ref=e227] [cursor=pointer]:
+                - /url: /c/click-collect
+                - text: Osobní odběr ZDARMA
+            - listitem [ref=e229]:
+              - link "Větší nákup – doprava ZDARMA" [ref=e230] [cursor=pointer]:
+                - /url: /c/xxxl-online-nakup
+                - text: Větší nákup – doprava ZDARMA
+            - listitem [ref=e232]:
+              - link "Rychlé dodání a výnos až do bytu" [ref=e233] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-dopravy
+                - text: Rychlé dodání a výnos až do bytu
+            - listitem [ref=e235]:
+              - link "Bezpečná platba" [ref=e236] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby
+                - text: Bezpečná platba
+            - listitem [ref=e238]:
+              - link "Zapůjčení dodávky výhodně" [ref=e239] [cursor=pointer]:
+                - /url: /c/xxxl-dodavka
+                - text: Zapůjčení dodávky výhodně
+            - listitem [ref=e241]:
+              - link "12 prodejen po celé České republice" [ref=e242] [cursor=pointer]:
+                - /url: /pobocky
+                - text: 12 prodejen po celé České republice
+            - listitem [ref=e244]:
+              - link "Zákaznický servis e-shopu PO–NE" [ref=e245] [cursor=pointer]:
+                - /url: /kontaktnicentrum
+                - text: Zákaznický servis e-shopu PO–NE
+        - generic [ref=e247]:
+          - link "Přeskočit příští Seznam" [ref=e248] [cursor=pointer]:
+            - /url: "#skip-section-Seznam-new_footer_third_section_node_1"
+            - text: Přeskočit úsek
+          - generic [ref=e249]:
+            - generic [ref=e251]:
+              - generic [ref=e252]: E-shop
+              - list [ref=e253]:
+                - listitem [ref=e254]:
+                  - link "Nákup online" [ref=e255] [cursor=pointer]:
+                    - /url: /c/xxxl-online-nakup
+                - listitem [ref=e256]:
+                  - link "Možnosti platby" [ref=e257] [cursor=pointer]:
+                    - /url: /c/xxxl-zpusoby-platby
+                - listitem [ref=e258]:
+                  - link "Způsoby dopravy" [ref=e259] [cursor=pointer]:
+                    - /url: /c/xxxl-zpusoby-dopravy
+                - listitem [ref=e260]:
+                  - link "Vrácení zboží & reklamace" [ref=e261] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamace
+                - listitem [ref=e262]:
+                  - link "Click & Collect" [ref=e263] [cursor=pointer]:
+                    - /url: /c/click-collect
+                - listitem [ref=e264]:
+                  - link "FAQ" [ref=e265] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e266]:
+                  - link "Newsletter" [ref=e267] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e268]:
+                  - link "Všechny kategorie produktů" [ref=e269] [cursor=pointer]:
+                    - /url: /kategorie/root
+            - generic [ref=e271]:
+              - generic [ref=e272]: Služby
+              - list [ref=e273]:
+                - listitem [ref=e274]:
+                  - link "XXXL Služby" [ref=e275] [cursor=pointer]:
+                    - /url: /c/xxxl-sluzby
+                - listitem [ref=e276]:
+                  - link "Bydlení na míru" [ref=e277] [cursor=pointer]:
+                    - /url: /c/nabytek-na-miru-domluvit-poradenstvi
+                - listitem [ref=e278]:
+                  - link "XXXL HIT karta" [ref=e279] [cursor=pointer]:
+                    - /url: /c/xxxl-hitkarta
+                - listitem [ref=e280]:
+                  - link "Doprava a montáž" [ref=e281] [cursor=pointer]:
+                    - /url: /c/doprava-montaz
+                - listitem [ref=e282]:
+                  - link "XXXL Rádce" [ref=e283] [cursor=pointer]:
+                    - /url: /c/poradenstvi
+                - listitem [ref=e284]:
+                  - link "B2B program" [ref=e285] [cursor=pointer]:
+                    - /url: /c/b2b-program
+                - listitem [ref=e286]:
+                  - link "Stav objednávky" [ref=e287] [cursor=pointer]:
+                    - /url: /stavobjednavky
+            - generic [ref=e289]:
+              - generic [ref=e290]: Prodejny
+              - list [ref=e291]:
+                - listitem [ref=e292]:
+                  - link "Prodejny" [ref=e293] [cursor=pointer]:
+                    - /url: /pobocky
+                - listitem [ref=e294]:
+                  - link "Výprodejové trháky" [ref=e295] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e296]:
+                  - link "Restaurace" [ref=e297] [cursor=pointer]:
+                    - /url: /c/xxxl-restaurace
+                - listitem [ref=e298]:
+                  - link "XXXL Dodávka" [ref=e299] [cursor=pointer]:
+                    - /url: /c/xxxl-dodavka
+                - listitem [ref=e300]:
+                  - link "Reklamační řád" [ref=e301] [cursor=pointer]:
+                    - /url: /c/reklamacni-rad
+                - listitem [ref=e302]:
+                  - link "Financování" [ref=e303] [cursor=pointer]:
+                    - /url: /c/financovani-home-credit
+                - listitem [ref=e304]:
+                  - link "Prospekty" [ref=e305] [cursor=pointer]:
+                    - /url: /c/letaky
+                - listitem [ref=e306]:
+                  - link "Vrácení zboží & reklamace" [ref=e307] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamace
+            - generic [ref=e309]:
+              - generic [ref=e310]: O nás
+              - list [ref=e311]:
+                - listitem [ref=e312]:
+                  - link "Firma XXXLutz" [ref=e313] [cursor=pointer]:
+                    - /url: /c/spolecnost-xxxlutz
+                - listitem [ref=e314]:
+                  - link "Rodina Putz" [ref=e315] [cursor=pointer]:
+                    - /url: /c/rodina-putz
+                - listitem [ref=e316]:
+                  - link "XXXL Etický Kodex" [ref=e317] [cursor=pointer]:
+                    - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCRi2vtWcvdYADEQm2UQyCDw/xxxl_unternehmenscharta_2015_cz.pdf
+                - listitem [ref=e318]:
+                  - link "Kariéra" [ref=e319] [cursor=pointer]:
+                    - /url: https://kariera.xxxlutz.cz
+                - listitem [ref=e320]:
+                  - link "Ozvěte se" [ref=e321] [cursor=pointer]:
+                    - /url: /c/speak-up
+                - listitem [ref=e322]:
+                  - link "Tiskové centrum" [ref=e323] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.cz/
+                - listitem [ref=e324]:
+                  - link "XXXL Svět značek" [ref=e325] [cursor=pointer]:
+                    - /url: /c/xxxl-svet-znacek
+                - listitem [ref=e326]:
+                  - link "Slovníček pojmů" [ref=e327] [cursor=pointer]:
+                    - /url: /c/nabytek-slovnik
+        - generic [ref=e329]:
+          - generic [ref=e332]:
+            - paragraph [ref=e333]: Chcete se na něco zeptat?
+            - generic [ref=e334]:
+              - generic [ref=e335]:
+                - link "Ke kontaktnímu formuláři" [ref=e336] [cursor=pointer]:
+                  - /url: /kontaktnicentrum
+                  - generic [ref=e337] [cursor=pointer]: Ke kontaktnímu formuláři
+                - paragraph [ref=e338]: Kontaktujte nás.
+              - generic [ref=e339]:
+                - link "Často kladené otázky (FAQ)" [ref=e340] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e341] [cursor=pointer]: Často kladené otázky (FAQ)
+                - paragraph [ref=e342]: V FAQ najdete okamžitou odpověď na spoustu otázek, které vás zajímají.
+          - generic [ref=e343]:
+            - generic [ref=e344]: Způsoby dopravy v e-shopu
+            - generic [ref=e345]:
+              - link "Gebruder Weiss" [ref=e348] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-dopravy#doprava
+                - img "Gebruder Weiss" [ref=e349] [cursor=pointer]
+              - link "DPD" [ref=e352] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-dopravy#doprava
+                - img "DPD" [ref=e353] [cursor=pointer]
+          - generic [ref=e354]:
+            - generic [ref=e355]: Způsoby platby v e-shopu
+            - generic [ref=e356]:
+              - link "Mastercard" [ref=e359] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#pkarta
+                - img "Mastercard" [ref=e360] [cursor=pointer]
+              - link "VISA" [ref=e363] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#pkarta
+                - img "VISA" [ref=e364] [cursor=pointer]
+              - link "Diners card" [ref=e367] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#pkarta
+                - img "Diners card" [ref=e368] [cursor=pointer]
+              - link "bankovi prevod" [ref=e371] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#sepa
+                - img "bankovi prevod" [ref=e372] [cursor=pointer]
+              - link "PAYPAL" [ref=e375] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#paypal
+                - img "PAYPAL" [ref=e376] [cursor=pointer]
+              - link "DOBIRKA" [ref=e379] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#dobirka
+                - img "DOBIRKA" [ref=e380] [cursor=pointer]
+              - link "GPay" [ref=e383] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby
+                - img "GPay" [ref=e384] [cursor=pointer]
+              - link "Apple Pay" [ref=e387] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#applepay
+                - img "Apple Pay" [ref=e388] [cursor=pointer]
+          - generic [ref=e389]: "* nezávazně doporučená spotřebitelská cena. / ** dosavadní prodejní cena. / ***Nejnižší cena za posledních 30 dní. / Konečná cena včetně slevy. / Všechny uvedené ceny jsou včetně DPH. / Doprava a montáž nejsou součástí uvedených cen. / Dodání v rámci České republiky. / Změny a chyby vyhrazeny."
+        - generic [ref=e392]:
+          - link "XXXLutz" [ref=e393] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e394] [cursor=pointer]: XXXLutz
+            - img [ref=e396] [cursor=pointer]
+          - generic [ref=e402]: ©2026 XLCZ Nábytek s.r.o.
+          - list [ref=e403]:
+            - listitem [ref=e404]:
+              - link "Kontakty" [ref=e405] [cursor=pointer]:
+                - /url: /c/kontakty
+            - listitem [ref=e406]:
+              - link "Impresum" [ref=e407] [cursor=pointer]:
+                - /url: /c/impresum
+            - listitem [ref=e408]:
+              - link "Podmínky akce" [ref=e409] [cursor=pointer]:
+                - /url: /c/podminkyakce
+            - listitem [ref=e410]:
+              - link "VOP" [ref=e411] [cursor=pointer]:
+                - /url: /c/vop
+            - listitem
+            - listitem [ref=e412]:
+              - link "Ochrana údajů" [ref=e413] [cursor=pointer]:
+                - /url: /c/ochrana-osobnich-udaju
+            - listitem [ref=e414]:
+              - button "Nastavení souborů cookie" [ref=e415] [cursor=pointer]
+            - listitem [ref=e416]:
+              - link "PROHLÁŠENÍ O PŘÍSTUPNOSTI" [ref=e417] [cursor=pointer]:
+                - /url: /accessibility
+            - listitem
+          - list [ref=e418]:
+            - listitem [ref=e419]:
+              - link "youtube" [ref=e420] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC7OGMgj1vp41BjM5CBct_sQ
+            - listitem [ref=e421]:
+              - link "pinterest" [ref=e422] [cursor=pointer]:
+                - /url: https://www.pinterest.at/lutznabytek/
+            - listitem [ref=e423]:
+              - link "instagram" [ref=e424] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_cz/
+            - listitem [ref=e425]:
+              - link "facebook" [ref=e426] [cursor=pointer]:
+                - /url: https://www.facebook.com/lutznabytek/
+            - listitem [ref=e427]:
+              - link "tiktok" [ref=e428] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_czsk
+          - link [ref=e429] [cursor=pointer]:
+            - /url: /accessibility
+  - generic:
+    - log
+```

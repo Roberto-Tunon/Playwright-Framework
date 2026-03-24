@@ -1,0 +1,8 @@
+---------------------------------------------------------
+   STEPS TO CAPTURE THE SESSION:
+   1. Enter your email/username and password.
+   2. Complete the Authenticator (MFA) verification.
+   3. Once you reach the Home page (Dashboard), click
+      the "RESUME" button (▶️ icon) in the Inspector.
+---------------------------------------------------------
+✅ Session successfully saved to auth.json!

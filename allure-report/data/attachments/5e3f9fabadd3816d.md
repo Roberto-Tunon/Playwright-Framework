@@ -1,0 +1,452 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Osobný odber ZADARMO" [ref=e9] [cursor=pointer]:
+              - /url: /c/xxxl-online-nakup
+              - generic [ref=e10] [cursor=pointer]: Osobný odber ZADARMO
+            - link "-15 % na všetko Online Only + doprava ZDARMA" [ref=e11] [cursor=pointer]:
+              - /url: /c/online-only
+              - generic [ref=e12] [cursor=pointer]: "-15 % na všetko Online Only + doprava ZDARMA"
+          - generic [ref=e14]:
+            - link "Prospekty" [ref=e15] [cursor=pointer]:
+              - /url: /c/letaky
+              - generic [ref=e16] [cursor=pointer]: Prospekty
+            - link "Stav objednávky" [ref=e17] [cursor=pointer]:
+              - /url: /stavobjednavky
+              - generic [ref=e18] [cursor=pointer]: Stav objednávky
+            - link "FAQ & kontakty" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: FAQ & kontakty
+            - switch "Vysoký kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Vysoký kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Zmeniť navigáciu" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menu
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Prejsť na hlavný obsah" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Hľadať" [ref=e43] [cursor=pointer]
+              - searchbox "Hľadať produkty, značky alebo novinky" [ref=e44]
+              - generic: Hľadať produkty, značky alebo novinky
+              - button "Vyhľadávanie podľa obrázkov" [ref=e48] [cursor=pointer]
+          - generic [ref=e49]:
+            - button "Prihlásiť sa" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52] [cursor=pointer]: Prihlásiť sa
+            - link "Obľúbené 0 produkty" [ref=e54] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e55] [cursor=pointer]: Zoznam obľúbených
+            - link "Nákupný košík 1 produkt" [ref=e57] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e58] [cursor=pointer]: "1"
+              - generic [ref=e59] [cursor=pointer]: Košík
+          - navigation [ref=e60]:
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - link "Miestnosti" [ref=e63] [cursor=pointer]:
+                  - /url: /c/miestnosti
+              - listitem [ref=e64]:
+                - link "Nábytok" [ref=e65] [cursor=pointer]:
+                  - /url: /c/nabytok
+              - listitem [ref=e66]:
+                - link "Záhrada" [ref=e67] [cursor=pointer]:
+                  - /url: /zahradny-nabytok-C8
+              - listitem [ref=e68]:
+                - link "Online Only" [ref=e69] [cursor=pointer]:
+                  - /url: /c/online-only
+              - listitem [ref=e70]:
+                - link "Doplnky" [ref=e71] [cursor=pointer]:
+                  - /url: /c/bytove-doplnky
+              - listitem [ref=e72]:
+                - link "Varenie" [ref=e73] [cursor=pointer]:
+                  - /url: /c/varenie-stolovanie
+              - listitem [ref=e74]:
+                - link "Svetlá" [ref=e75] [cursor=pointer]:
+                  - /url: /svietidla-a-lampy-C10
+              - listitem [ref=e76]:
+                - link "Deti" [ref=e77] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e78]:
+                - link "AKCIE" [ref=e79] [cursor=pointer]:
+                  - /url: /c/akcie
+              - listitem [ref=e80]:
+                - link "ZĽAVA %" [ref=e81] [cursor=pointer]:
+                  - /url: /c/zlava
+              - listitem [ref=e82]:
+                - link "Trendy" [ref=e83] [cursor=pointer]:
+                  - /url: /c/inspiracie
+              - listitem [ref=e84]:
+                - link "Kuchyne" [ref=e85] [cursor=pointer]:
+                  - /url: /c/xxxlutz-kuchyne
+              - listitem [ref=e86]:
+                - link "Pobočky" [ref=e87] [cursor=pointer]:
+                  - /url: /pobocky
+              - listitem [ref=e88]:
+                - link "Služby" [ref=e89] [cursor=pointer]:
+                  - /url: /c/xxxl-sluzby
+      - main [ref=e90]:
+        - status [ref=e91]:
+          - generic [ref=e92]: Košík - XXXLutz
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - heading "Nákupný košík" [level=1] [ref=e97]
+              - link "Ďalej nakupovať" [ref=e98] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e99] [cursor=pointer]: Ďalej nakupovať
+            - generic [ref=e100]:
+              - alert [ref=e104]:
+                - generic [ref=e105]: Vyberte prosím pobočku pre osobný odber.
+              - generic [ref=e106]: Predaj cez XXXLutz
+              - list [ref=e107]:
+                - listitem [ref=e108]:
+                  - article [ref=e109]:
+                    - generic [ref=e110]:
+                      - img "ROHOVÁ SEDAČKA, textil, sivá, svetlosivá - sivá/svetlosivá, Design, textil/plast (302/187cm) - Carryhome" [ref=e111]
+                      - link [ref=e112] [cursor=pointer]:
+                        - /url: /p/carryhome-rohova-sedacka-textil-siva-svetlosiv-002991001701
+                    - generic [ref=e113]:
+                      - generic [ref=e114]: Super cena
+                      - generic [ref=e115]:
+                        - generic [ref=e116]: "002991001701"
+                        - link "Číslo výrobku 2991001701" [ref=e117] [cursor=pointer]:
+                          - /url: /p/carryhome-rohova-sedacka-textil-siva-svetlosiv-002991001701
+                          - generic [ref=e118] [cursor=pointer]: Číslo výrobku 2991001701
+                      - link "Carryhome ROHOVÁ SEDAČKA, textil, sivá, svetlosivá" [ref=e120] [cursor=pointer]:
+                        - /url: /p/carryhome-rohova-sedacka-textil-siva-svetlosiv-002991001701
+                        - heading "Carryhome ROHOVÁ SEDAČKA, textil, sivá, svetlosivá" [level=2] [ref=e121] [cursor=pointer]:
+                          - generic [ref=e122] [cursor=pointer]: Carryhome ROHOVÁ
+                          - generic [ref=e123] [cursor=pointer]: SEDAČKA, textil, sivá, svetlosivá
+                      - generic [ref=e124]:
+                        - generic [ref=e125]: sivá, svetlosivá
+                        - generic [ref=e126]: 302/187 cm
+                      - paragraph [ref=e129]:
+                        - text: Predaj a doručenie od
+                        - generic [ref=e130]: XXXLutz
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - text: 649,
+                        - superscript [ref=e136]: "00"
+                        - text: €
+                      - generic [ref=e137]: 649,00 € / Ks
+                    - generic [ref=e138]:
+                      - button "Odstrániť výrobok - ROHOVÁ SEDAČKA, textil, sivá, svetlosivá" [ref=e139] [cursor=pointer]
+                      - generic [ref=e140]:
+                        - textbox "Množstvo" [ref=e141]: "1"
+                        - generic [ref=e142]: Množstvo
+                      - button "1" [ref=e143] [cursor=pointer]:
+                        - generic [ref=e144] [cursor=pointer]: "1"
+                      - button "Zvýšiť počet - ROHOVÁ SEDAČKA, textil, sivá, svetlosivá" [ref=e145] [cursor=pointer]
+                    - generic [ref=e147]:
+                      - button "ROHOVÁ SEDAČKA, textil, sivá, svetlosivá - Pridať medzi obľúbené" [ref=e148] [cursor=pointer]:
+                        - generic [ref=e150] [cursor=pointer]: Pridať medzi obľúbené
+                      - button "ROHOVÁ SEDAČKA, textil, sivá, svetlosivá - Odstrániť výrobok" [ref=e151] [cursor=pointer]:
+                        - generic [ref=e153] [cursor=pointer]: Odstrániť výrobok
+                  - generic [ref=e154]:
+                    - generic [ref=e155]:
+                      - combobox "Vyberte spôsob doručenia" [ref=e158] [cursor=pointer]:
+                        - generic [ref=e161] [cursor=pointer]: Osobný odber
+                      - button "Vybrať pobočku" [ref=e163] [cursor=pointer]:
+                        - generic [ref=e164] [cursor=pointer]: Vybrať pobočku
+                      - generic [ref=e165]:
+                        - text: Cena za dopravu
+                        - generic [ref=e166]: + 0,00 €
+                    - paragraph [ref=e167]:
+                      - generic [ref=e168]: U každej položky s osobným odberom si prosím skontrolujte výber pobočky, z ktorej si chcete tovar vyzdvihnúť.
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - heading "Zhrnutie" [level=2] [ref=e172]
+              - generic [ref=e173]:
+                - generic [ref=e174]:
+                  - generic [ref=e175]: Cena tovaru
+                  - generic [ref=e176]:
+                    - text: 649,
+                    - superscript [ref=e177]: "00"
+                    - text: €
+                  - button "Cena za dopravu" [ref=e178] [cursor=pointer]:
+                    - generic [ref=e179] [cursor=pointer]: Cena za dopravu
+                  - generic [ref=e180]: ZDARMA
+                - generic [ref=e181]:
+                  - generic [ref=e182]: Cena celkom
+                  - generic [ref=e183]:
+                    - text: 649,
+                    - superscript [ref=e184]: "00"
+                    - text: €
+                  - generic [ref=e185]: zahrnutá DPH
+                - button "K pokladni" [ref=e186] [cursor=pointer]:
+                  - generic [ref=e187] [cursor=pointer]: K pokladni
+                - separator "alebo" [ref=e188]
+                - generic [ref=e189]:
+                  - button "Kúpiť cez GPay" [ref=e194] [cursor=pointer]
+                  - button "Kúpiť cez Apple Pay" [ref=e199] [cursor=pointer]:
+                    - img [ref=e201] [cursor=pointer]:
+                      - generic [ref=e202] [cursor=pointer]:
+                        - generic [ref=e203] [cursor=pointer]: Kúpiť cez
+                        - img [ref=e204] [cursor=pointer]
+            - generic [ref=e213]:
+              - button "Kód poukazu" [ref=e214] [cursor=pointer]:
+                - generic [ref=e215] [cursor=pointer]: Kód poukazu
+                - img [ref=e216] [cursor=pointer]
+              - generic [ref=e218]:
+                - generic [ref=e221]:
+                  - textbox "Kód poukazu" [ref=e222]
+                  - generic: Kód poukazu
+                - button "Uplatniť" [ref=e223] [cursor=pointer]:
+                  - generic [ref=e224] [cursor=pointer]: Uplatniť
+          - complementary [ref=e225]:
+            - link "Ďalej nakupovať" [ref=e226] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e227] [cursor=pointer]: Ďalej nakupovať
+    - contentinfo [ref=e228]:
+      - generic [ref=e229]:
+        - generic [ref=e230]:
+          - generic [ref=e231]: Výhody XXXLutz
+          - list [ref=e233]:
+            - listitem [ref=e234]:
+              - link "Osobný odber ZDARMA" [ref=e235] [cursor=pointer]:
+                - /url: /c/click-collect
+                - text: Osobný odber ZDARMA
+            - listitem [ref=e237]:
+              - link "Väčší nákup – doprava ZDARMA" [ref=e238] [cursor=pointer]:
+                - /url: /c/xxxl-online-nakup
+                - text: Väčší nákup – doprava ZDARMA
+            - listitem [ref=e240]:
+              - link "Rýchle dodanie a výnos až do bytu" [ref=e241] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - text: Rýchle dodanie a výnos až do bytu
+            - listitem [ref=e243]:
+              - link "Bezpečná platba" [ref=e244] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby
+                - text: Bezpečná platba
+            - listitem [ref=e246]:
+              - link "Zapožičanie dodávky výhodne" [ref=e247] [cursor=pointer]:
+                - /url: /c/xxxl-dodavka
+                - text: Zapožičanie dodávky výhodne
+            - listitem [ref=e249]:
+              - link "5 pobočiek po celej Slovenskej republike" [ref=e250] [cursor=pointer]:
+                - /url: /pobocky
+                - text: 5 pobočiek po celej Slovenskej republike
+            - listitem [ref=e252]:
+              - link "Zákaznícky servis e-shopu PO-NE" [ref=e253] [cursor=pointer]:
+                - /url: /kontaktnecentrum
+                - text: Zákaznícky servis e-shopu PO-NE
+        - generic [ref=e255]:
+          - link "Preskočiť ďalšiu časť Zoznam" [ref=e256] [cursor=pointer]:
+            - /url: "#skip-section-Zoznam-new_footer_third_section_node_1"
+            - text: Preskočiť odsek
+          - generic [ref=e257]:
+            - generic [ref=e259]:
+              - generic [ref=e260]: E-shop
+              - list [ref=e261]:
+                - listitem [ref=e262]:
+                  - link "Nákup online" [ref=e263] [cursor=pointer]:
+                    - /url: /c/xxxl-online-nakup
+                - listitem [ref=e264]:
+                  - link "Možnosti platby" [ref=e265] [cursor=pointer]:
+                    - /url: /c/xxxl-sposoby-platby
+                - listitem [ref=e266]:
+                  - link "Spôsoby dopravy" [ref=e267] [cursor=pointer]:
+                    - /url: /c/xxxl-sposoby-dopravy
+                - listitem [ref=e268]:
+                  - link "Vrátenie tovaru & reklamácia" [ref=e269] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamacia
+                - listitem [ref=e270]:
+                  - link "Click & Collect" [ref=e271] [cursor=pointer]:
+                    - /url: /c/click-collect
+                - listitem [ref=e272]:
+                  - link "FAQ" [ref=e273] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e274]:
+                  - link "Newsletter" [ref=e275] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e276]:
+                  - link "Všetky kategórie produktov" [ref=e277] [cursor=pointer]:
+                    - /url: /kategorie/root
+            - generic [ref=e279]:
+              - generic [ref=e280]: Služby
+              - list [ref=e281]:
+                - listitem [ref=e282]:
+                  - link "XXXL Služby" [ref=e283] [cursor=pointer]:
+                    - /url: /c/xxxl-sluzby
+                - listitem [ref=e284]:
+                  - link "XXXL HIT karta" [ref=e285] [cursor=pointer]:
+                    - /url: /c/xxxl-hitkarta
+                - listitem [ref=e286]:
+                  - link "Doprava a montáž" [ref=e287] [cursor=pointer]:
+                    - /url: /c/doprava-montaz
+                - listitem [ref=e288]:
+                  - link "Bývanie na mieru" [ref=e289] [cursor=pointer]:
+                    - /url: /c/nabytok-na-mieru-dohodnut-poradenstvo
+                - listitem [ref=e290]:
+                  - link "B2B program" [ref=e291] [cursor=pointer]:
+                    - /url: /c/b2b-program
+                - listitem [ref=e292]:
+                  - link "XXXL Radca" [ref=e293] [cursor=pointer]:
+                    - /url: /c/poradenstvo
+                - listitem [ref=e294]:
+                  - link "Stav objednávky" [ref=e295] [cursor=pointer]:
+                    - /url: /stavobjednavky
+            - generic [ref=e297]:
+              - generic [ref=e298]: Predajne
+              - list [ref=e299]:
+                - listitem [ref=e300]:
+                  - link "Pobočky" [ref=e301] [cursor=pointer]:
+                    - /url: /pobocky
+                - listitem [ref=e302]:
+                  - link "Výpredajové trháky" [ref=e303] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e304]:
+                  - link "XXXL Dodávka" [ref=e305] [cursor=pointer]:
+                    - /url: /c/xxxl-dodavka
+                - listitem [ref=e306]:
+                  - link "Reklamačný poriadok" [ref=e307] [cursor=pointer]:
+                    - /url: /c/reklamacny-poriadok
+                - listitem [ref=e308]:
+                  - link "Financovanie" [ref=e309] [cursor=pointer]:
+                    - /url: /c/financovanie
+                - listitem [ref=e310]:
+                  - link "Prospekty" [ref=e311] [cursor=pointer]:
+                    - /url: /c/letaky
+                - listitem [ref=e312]:
+                  - link "Vrátenie tovaru & reklamácia" [ref=e313] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamacia
+            - generic [ref=e315]:
+              - generic [ref=e316]: O nás
+              - list [ref=e317]:
+                - listitem [ref=e318]:
+                  - link "Firma XXXLutz" [ref=e319] [cursor=pointer]:
+                    - /url: /c/spolocnost-xxxlutz
+                - listitem [ref=e320]:
+                  - link "Rodina Putz" [ref=e321] [cursor=pointer]:
+                    - /url: /c/rodina-putz
+                - listitem [ref=e322]:
+                  - link "Ozvite sa" [ref=e323] [cursor=pointer]:
+                    - /url: /c/speak-up
+                - listitem [ref=e324]:
+                  - link "Tlačové centrum" [ref=e325] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.sk/
+                - listitem [ref=e326]:
+                  - link "Kariéra v XXXLutz" [ref=e327] [cursor=pointer]:
+                    - /url: https://kariera.xxxlutz.sk/
+                - listitem [ref=e328]:
+                  - link "XXXL Svet značiek" [ref=e329] [cursor=pointer]:
+                    - /url: /c/xxxl-svet-znaciek
+        - generic [ref=e331]:
+          - generic [ref=e334]:
+            - paragraph [ref=e335]: Chcete sa na niečo spýtať?
+            - generic [ref=e336]:
+              - generic [ref=e337]:
+                - link "Ku kontaktnému formuláru" [ref=e338] [cursor=pointer]:
+                  - /url: /kontaktnecentrum
+                  - generic [ref=e339] [cursor=pointer]: Ku kontaktnému formuláru
+                - paragraph [ref=e340]: Kontaktujte nás
+              - generic [ref=e341]:
+                - link "Často kladené otázky" [ref=e342] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e343] [cursor=pointer]: Často kladené otázky
+                - paragraph [ref=e344]: Ak potrebujete poradiť okamžite, navštívte sekciu s často kladenými otázkami.
+          - generic [ref=e345]:
+            - generic [ref=e346]: Spôsoby platby v e-shope
+            - generic [ref=e347]:
+              - link "Mastercard" [ref=e350] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "Mastercard" [ref=e351] [cursor=pointer]
+              - link "VISA" [ref=e354] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "VISA" [ref=e355] [cursor=pointer]
+              - link "Diners card" [ref=e358] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "Diners card" [ref=e359] [cursor=pointer]
+              - link "PAYPAL" [ref=e362] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#paypal
+                - img "PAYPAL" [ref=e363] [cursor=pointer]
+              - link "bankovi prevod" [ref=e366] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#bank
+                - img "bankovi prevod" [ref=e367] [cursor=pointer]
+              - link "DOBIERKA" [ref=e370] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#dobierka
+                - img "DOBIERKA" [ref=e371] [cursor=pointer]
+              - link "GPay" [ref=e374] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby
+                - img "GPay" [ref=e375] [cursor=pointer]
+              - link "Apple Pay" [ref=e378] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#applepay
+                - img "Apple Pay" [ref=e379] [cursor=pointer]
+          - generic [ref=e380]:
+            - generic [ref=e381]: Spôsoby dopravy v e-shope
+            - generic [ref=e382]:
+              - link "Gebruder Weiss" [ref=e385] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "Gebruder Weiss" [ref=e386] [cursor=pointer]
+              - link "SPS" [ref=e389] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "SPS" [ref=e390] [cursor=pointer]
+              - link "DPD" [ref=e393] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "DPD" [ref=e394] [cursor=pointer]
+          - generic [ref=e395]: "* nezáväzne odporúčaná spotrebiteľská cena. /** doterajšia predajná cena. / ***Najnižšia cena za posledných 30 dní. / Všetky uvedené ceny sú vrátane DPH. / Doprava a montáž nie sú súčasťou uvedených cien. / Dodanie v rámci Slovenskej republiky. / Zmeny a chyby vyhradené."
+        - generic [ref=e398]:
+          - link "XXXLutz" [ref=e399] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e400] [cursor=pointer]: XXXLutz
+            - img [ref=e402] [cursor=pointer]
+          - generic [ref=e408]: © 2026 XLSK Nábytok s.r.o.
+          - list [ref=e409]:
+            - listitem [ref=e410]:
+              - link "Kontakty" [ref=e411] [cursor=pointer]:
+                - /url: /c/kontakty
+            - listitem [ref=e412]:
+              - link "Impresum" [ref=e413] [cursor=pointer]:
+                - /url: /c/impresum
+            - listitem [ref=e414]:
+              - link "Podmienky akcie" [ref=e415] [cursor=pointer]:
+                - /url: /c/podmienkyakcie
+            - listitem [ref=e416]:
+              - link "VOP" [ref=e417] [cursor=pointer]:
+                - /url: /c/vop
+            - listitem
+            - listitem [ref=e418]:
+              - link "Ochrana údajov" [ref=e419] [cursor=pointer]:
+                - /url: /c/ochrana-osobnych-udajov
+            - listitem [ref=e420]:
+              - button "Nastavenia cookie" [ref=e421] [cursor=pointer]
+            - listitem [ref=e422]:
+              - link "Vyhlásenie o prístupnosti" [ref=e423] [cursor=pointer]:
+                - /url: /accessibility
+            - listitem [ref=e424]:
+              - link "Accessibility" [ref=e425] [cursor=pointer]:
+                - /url: /c/accessibility-statement
+          - list [ref=e426]:
+            - listitem [ref=e427]:
+              - link "youtube" [ref=e428] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCe5Dy_RRyw-KGdHu0rbL2hw
+            - listitem [ref=e429]:
+              - link "pinterest" [ref=e430] [cursor=pointer]:
+                - /url: https://www.pinterest.com/Lutznabytok/
+            - listitem [ref=e431]:
+              - link "instagram" [ref=e432] [cursor=pointer]:
+                - /url: https://www.instagram.com/lutz.nabytok/
+            - listitem [ref=e433]:
+              - link "facebook" [ref=e434] [cursor=pointer]:
+                - /url: https://www.facebook.com/lutznabytok/
+            - listitem [ref=e435]:
+              - link "tiktok" [ref=e436] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_czsk
+          - link "WACA bronz tanusítvány" [ref=e437] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA bronz tanusítvány" [ref=e438] [cursor=pointer]
+  - generic:
+    - log
+```

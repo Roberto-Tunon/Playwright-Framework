@@ -2,11 +2,14 @@ import { Page } from '@playwright/test';
 import { DatosRail } from '../tests/constantes';
 
 export async function AcceptCookiesLogin(page: Page, datos: DatosRail): Promise<void> {
+  
+const acceptCookiesButton = page.locator('[data-purpose="cookieBar.button.accept"]');
 
-  await page.waitForTimeout(500);
-
-  const acceptCookiesButton = page.locator('[data-purpose="cookieBar.button.accept"]');
-  if (await acceptCookiesButton.isVisible()) {
-    await acceptCookiesButton.click();
+  try {
+      await acceptCookiesButton.waitFor({ state: 'visible', timeout: 3000 });
+      await acceptCookiesButton.click();
+  } catch {
+    // No modal window, go on
   }
+
 }

@@ -1,23 +1,21 @@
 import { Page } from '@playwright/test';
 import { DatosRail } from '../tests/constantes';
-
+ 
 export async function AcceptCookies(page: Page, datos: DatosRail): Promise<void> {
-
-  await page.waitForTimeout(1000);
-
+ 
   const acceptCookiesButton = page.locator('[data-purpose="cookieBar.button.accept"]');
-  if (await acceptCookiesButton.isVisible()) {
+  try {
+    await acceptCookiesButton.waitFor({ state: 'visible', timeout: 3000 });
     await acceptCookiesButton.click();
+  } catch {
+    // El banner de cookies no apareció, continuamos
   }
-
-  await page.waitForTimeout(1000);
-
-  // await page.getByRole('button', { name: datos.Cookiebutton }).click();
-
+    
   const modal = page.locator('[data-purpose="modal.body"]');
-  if (await modal.isVisible()) {
-    const button = modal.locator('button');
-    await button.waitFor({ state: 'visible' });
-    await button.click();
+  try {
+    await modal.waitFor({ state: 'visible', timeout: 3000 });
+    await modal.locator('button').click();
+  } catch {
+    // El modal no apareció, continuamos
   }
 }
