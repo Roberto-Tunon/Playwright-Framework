@@ -46,7 +46,7 @@ test(testTitle, async ({ browser }: { browser: Browser }) => {
 
   await page.locator('[data-purpose="checkout.summary.button.submit"]').first().click();
   await page.waitForTimeout(2000);
-
+  
   await page.click("#buy-button__text");
   await page.waitForTimeout(2000);
 

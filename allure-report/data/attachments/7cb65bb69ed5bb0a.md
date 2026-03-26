@@ -1,0 +1,708 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link "Naročite se na e-novice in si zagotovite bon v vrednosti 5€" [ref=e9] [cursor=pointer]:
+            - /url: /c/e-novice
+            - generic [ref=e10] [cursor=pointer]: Naročite se na e-novice in si zagotovite bon v vrednosti 5€
+          - link "Brezplačna poštnina za spletna naročila nad 90 €" [ref=e11] [cursor=pointer]:
+            - /url: /c/dostava
+            - generic [ref=e12] [cursor=pointer]: Brezplačna poštnina za spletna naročila nad 90 €
+        - generic [ref=e14]:
+          - link "Katalogi" [ref=e15] [cursor=pointer]:
+            - /url: /c/katalogi
+            - generic [ref=e16] [cursor=pointer]: Katalogi
+          - link "Kontakt" [ref=e17] [cursor=pointer]:
+            - /url: /poslovalnice
+            - generic [ref=e18] [cursor=pointer]: Kontakt
+          - link "Pomoč kupcem" [ref=e19] [cursor=pointer]:
+            - /url: /faq
+            - generic [ref=e20] [cursor=pointer]: Pomoč kupcem
+          - switch "Visok kontrast" [ref=e21]
+          - generic [ref=e22] [cursor=pointer]:
+            - text: Visok kontrast
+            - img [ref=e23] [cursor=pointer]
+      - generic [ref=e27]:
+        - button "Zamenjaj navigacijo" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]: Meni
+        - link "XXXLesnina" [ref=e30] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e31] [cursor=pointer]: XXXLesnina
+          - img [ref=e33] [cursor=pointer]
+        - link "Skoči na glavno vsebino" [ref=e42] [cursor=pointer]:
+          - /url: "#main"
+        - search [ref=e43]:
+          - generic [ref=e44]:
+            - button "Iskanje" [ref=e46] [cursor=pointer]
+            - searchbox "Iskanje izdelkov, blagovnih znamk ali novosti" [ref=e47]
+            - generic: Iskanje izdelkov, blagovnih znamk ali novosti
+        - generic [ref=e48]:
+          - link "Prijava" [ref=e50] [cursor=pointer]:
+            - /url: /signin
+            - generic [ref=e51] [cursor=pointer]: Prijava
+          - link "Favoriten 0 izdelki" [ref=e53] [cursor=pointer]:
+            - /url: /favourites
+            - generic [ref=e54] [cursor=pointer]: Zaznamki
+          - link "Košarica in dostava 0 izdelki" [ref=e56] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=e57] [cursor=pointer]: Košarica
+        - navigation [ref=e58]:
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - link "Pohištvo" [ref=e61] [cursor=pointer]:
+                - /url: /c/pohistvo
+            - listitem [ref=e62]:
+              - link "Kuhinje" [ref=e63] [cursor=pointer]:
+                - /url: /kuhinje-C127
+            - listitem [ref=e64]:
+              - link "Vrtno & žari" [ref=e65] [cursor=pointer]:
+                - /url: /vrtno-pohistvo-C108
+            - listitem [ref=e66]:
+              - link "Vse za kuhinjo" [ref=e67] [cursor=pointer]:
+                - /url: /c/vse-za-kuhinjo
+            - listitem [ref=e68]:
+              - link "Dodatki za dom" [ref=e69] [cursor=pointer]:
+                - /url: /c/dodatki-za-dom
+            - listitem [ref=e70]:
+              - link "Svetila" [ref=e71] [cursor=pointer]:
+                - /url: /svetila-in-luci-C116
+            - listitem [ref=e72]:
+              - link "Baby" [ref=e73] [cursor=pointer]:
+                - /url: /c/baby
+            - listitem [ref=e74]:
+              - link "Preproge" [ref=e75] [cursor=pointer]:
+                - /url: /preproge-in-tepihi-C117
+            - listitem [ref=e76]:
+              - link "Ideje & nasveti" [ref=e77] [cursor=pointer]:
+                - /url: /c/ideje-in-nasveti
+            - listitem [ref=e78]:
+              - link "Akcije & katalogi" [ref=e79] [cursor=pointer]:
+                - /url: /c/akcije-in-katalogi
+            - listitem [ref=e80]:
+              - link "Samo na spletu" [ref=e81] [cursor=pointer]:
+                - /url: /c/samo-na-spletu
+            - listitem [ref=e82]:
+              - link "B2B" [ref=e83] [cursor=pointer]:
+                - /url: /c/b2b
+    - main [ref=e84]:
+      - status [ref=e85]:
+        - generic [ref=e86]: Xora arhivska omara, 80 X 216 X 35 CM
+      - generic [ref=e87]:
+        - navigation "breadcrumbs" [ref=e89]:
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - link "Začetna stran" [ref=e92] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e93]:
+              - link "Vse kategorije" [ref=e94] [cursor=pointer]:
+                - /url: /kategorije/root
+                - generic [ref=e95] [cursor=pointer]: Vse kategorije
+            - listitem [ref=e96]:
+              - link "Pisarniško pohištvo" [ref=e97] [cursor=pointer]:
+                - /url: /pisarnisko-pohistvo-C105
+                - generic [ref=e98] [cursor=pointer]: Pisarniško pohištvo
+            - listitem [ref=e99]:
+              - link "Pisarniške omare" [ref=e100] [cursor=pointer]:
+                - /url: /pisarniske-omare-C105C4
+                - generic [ref=e101] [cursor=pointer]: Pisarniške omare
+        - generic [ref=e102]:
+          - generic [ref=e105]:
+            - button "Slika izdelka 1 / 1" [ref=e107] [cursor=pointer]:
+              - img [ref=e108] [cursor=pointer]
+            - group [ref=e110] [cursor=pointer]:
+              - generic [ref=e111] [cursor=pointer]:
+                - img "ARHIVSKA OMARA svetlo siva - svetlo siva, Basics, leseni material (80/216/35cm) - Xora" [ref=e112]
+                - img "Xora"
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]: Št. izdelka 0887041404
+              - heading "Xora ARHIVSKA OMARA svetlo siva" [level=1] [ref=e116]:
+                - generic [ref=e117]: Xora ARHIVSKA
+                - text: OMARA svetlo siva
+              - 'button "svetlo siva širina/višina/globina: 80/216/35 cm" [ref=e118] [cursor=pointer]':
+                - generic [ref=e119] [cursor=pointer]:
+                  - generic [ref=e120] [cursor=pointer]: svetlo siva
+                  - generic [ref=e121] [cursor=pointer]: "širina/višina/globina: 80/216/35 cm"
+            - generic [ref=e122]:
+              - generic [ref=e123]: 339,‒ €
+              - generic [ref=e124]:
+                - generic [ref=e125]: DDV je vključen v ceno.
+                - generic [ref=e126]:
+                  - text: •
+                  - generic [ref=e127]: "Dodatno:"
+                  - button "Stroški dostave" [ref=e128] [cursor=pointer]:
+                    - generic [ref=e129] [cursor=pointer]: Stroški dostave
+            - generic [ref=e130]:
+              - generic [ref=e131]: "Več o:"
+              - link "Xora" [ref=e132] [cursor=pointer]:
+                - /url: /c/xora
+                - generic [ref=e133] [cursor=pointer]: Xora
+            - generic [ref=e134]:
+              - button "Dodaj med priljubljene" [ref=e135] [cursor=pointer]
+              - button "ARHIVSKA OMARA svetlo siva Dodaj v košarico" [disabled] [ref=e136]:
+                - img [ref=e137]
+            - generic [ref=e142]:
+              - heading "Čas dostave in osebnega prevzema" [level=2] [ref=e143]
+              - paragraph [ref=e144]: "Za prikaz časov izberite in shranite lokacijo:"
+              - status [ref=e145]
+              - generic [ref=e147]:
+                - combobox "P. št. / Kraj" [ref=e148]
+                - generic: P. št. / Kraj
+                - button "Pridobi trenutno lokacijo" [ref=e150] [cursor=pointer]
+            - generic [ref=e151]:
+              - heading "Servisne storitve" [level=2] [ref=e152]
+              - button "O storitvah in pošiljanju" [ref=e153] [cursor=pointer]:
+                - generic [ref=e154] [cursor=pointer]: O storitvah in pošiljanju
+            - button "Podrobnosti izdelka" [ref=e156] [cursor=pointer]
+        - generic [ref=e158]:
+          - heading "Xora arhivska omara, 80 X 216 X 35 CM" [level=2] [ref=e159]
+          - generic [ref=e160]:
+            - button "Pokaži več" [ref=e161] [cursor=pointer]:
+              - generic [ref=e162] [cursor=pointer]:
+                - text: Pokaži več
+                - img [ref=e163] [cursor=pointer]
+            - generic [ref=e168]:
+              - paragraph [ref=e169]:
+                - text: Arhivska omara je odlična rešitev za vsak delovni prostor, kjer potrebujete funkcionalnost in varnost. S
+                - strong [ref=e170]: svetlo sivo barvo
+                - text: in
+                - strong [ref=e171]: enostavnim dizajnom
+                - text: se bo odlično vključila v vsak pisarniški prostor. Omara vključuje
+                - strong [ref=e172]: 2 x vrata
+                - text: in
+                - strong [ref=e173]: 5 nastavljivih polic
+                - text: ", ki omogočajo prilagodljivo shranjevanje dokumentov, in je"
+                - strong [ref=e174]: zaklepna
+                - text: ", kar zagotavlja varnost vaših poslovnih informacij."
+                - strong [ref=e175]: Preprosta montaža
+                - text: in kvaliteta materialov zagotavljata dolgo življenjsko dobo in enostavno vzdrževanje.
+              - paragraph [ref=e176]:
+                - strong [ref=e177]: "Ključne prednosti:"
+              - list [ref=e178]:
+                - listitem [ref=e179]:
+                  - text: .
+                  - paragraph [ref=e180]:
+                    - strong [ref=e181]: Zasnova z 2 x vrati
+                    - text: ", ki omogočata preprost dostop"
+                - listitem [ref=e182]:
+                  - text: .
+                  - paragraph [ref=e183]:
+                    - strong [ref=e184]: 5 nastavljivih polic
+                    - text: ", kar omogoča prilagoditev za različne velikosti dokumentov"
+                - listitem [ref=e185]:
+                  - text: .
+                  - paragraph [ref=e186]:
+                    - strong [ref=e187]: Zaklepanje za večjo varnost
+                    - text: vaših poslovnih dokumentov
+                - listitem [ref=e188]:
+                  - text: .
+                  - paragraph [ref=e189]:
+                    - strong [ref=e190]: Enostavno vzdrževanje
+                    - text: – površina je primerna za
+                    - strong [ref=e191]: suho brisanje
+                - listitem [ref=e192]:
+                  - text: .
+                  - paragraph [ref=e193]:
+                    - strong [ref=e194]: Visoka nosilnost polic
+                    - text: do
+                    - strong [ref=e195]: 5 kg
+                    - text: na polico
+              - paragraph [ref=e196]:
+                - strong [ref=e197]: "Lastnosti:"
+              - list [ref=e198]:
+                - listitem [ref=e199]:
+                  - text: .
+                  - paragraph [ref=e200]:
+                    - strong [ref=e201]: "Dimenzije (Š x V x D):"
+                    - strong [ref=e202]: 80 x 216 x 35 cm
+                - listitem [ref=e203]:
+                  - text: .
+                  - paragraph [ref=e204]:
+                    - strong [ref=e205]: "Material:"
+                    - text: Lesene površine iz
+                    - strong [ref=e206]: foliranih ivernih plošč
+                - listitem [ref=e207]:
+                  - text: .
+                  - paragraph [ref=e208]:
+                    - strong [ref=e209]: "Barva:"
+                    - strong [ref=e210]: Svetlo siva
+                - listitem [ref=e211]:
+                  - text: .
+                  - paragraph [ref=e212]:
+                    - strong [ref=e213]: "Število vrat:"
+                    - strong [ref=e214]: 2 x
+                - listitem [ref=e215]:
+                  - text: .
+                  - paragraph [ref=e216]:
+                    - strong [ref=e217]: "Vrsta vrat:"
+                    - strong [ref=e218]: Drevent vrata
+                - listitem [ref=e219]:
+                  - text: .
+                  - paragraph [ref=e220]:
+                    - strong [ref=e221]: "Število polic:"
+                    - strong [ref=e222]: 5 nastavljivih
+                - listitem [ref=e223]:
+                  - text: .
+                  - paragraph [ref=e224]:
+                    - strong [ref=e225]: "Nosilnost polic:"
+                    - text: do
+                    - strong [ref=e226]: 5 kg
+                    - text: na polico
+                - listitem [ref=e227]:
+                  - text: .
+                  - paragraph [ref=e228]:
+                    - strong [ref=e229]: "Zaklepanje:"
+                    - strong [ref=e230]: Da
+                    - text: ", omara ima možnost zaklepanja"
+                - listitem [ref=e231]:
+                  - text: .
+                  - paragraph [ref=e232]:
+                    - strong [ref=e233]: "Površinska obdelava:"
+                    - strong [ref=e234]: Dekor folija
+                - listitem [ref=e235]:
+                  - text: .
+                  - paragraph [ref=e236]:
+                    - strong [ref=e237]: "Teža:"
+                    - strong [ref=e238]: 3250 g
+                    - text: (pakiranje)
+                - listitem [ref=e239]:
+                  - text: .
+                  - paragraph [ref=e240]:
+                    - strong [ref=e241]: "Pakiranje:"
+                    - strong [ref=e242]: V karton
+        - generic [ref=e246]:
+          - heading "Sorodni izdelki" [level=2] [ref=e248]
+          - link "Preskoči Seznam z naslovom Sorodni izdelki, ki sledi" [ref=e249] [cursor=pointer]:
+            - /url: "#skip-section-Seznam-eyJpdGVtSWQiOiJ3eHNfeHh4bHV0el9zaV9leHBhbmRlcl9yZWxhdGVkX3Byb2R1Y3RzX2NlbGxjb250YWluZXIxZmI5YjhlYl8zZTRlXzQ2M2ZfYWJjNF8wYTM0NDQ5YjliMGMiLCJjYXRhbG9nSWQiOiJ4eHhsdXR6LnNpLWNvbnRlbnQiLCJjYXRhbG9nVmVyc2lvbiI6Ik9ubGluZSJ9"
+            - text: Preskoči odsek
+          - group [ref=e250]:
+            - group [ref=e251] [cursor=pointer]:
+              - article [ref=e252] [cursor=pointer]:
+                - generic [ref=e253] [cursor=pointer]:
+                  - generic [ref=e255] [cursor=pointer]:
+                    - link "ARHIVSKA OMARA barve hrasta" [ref=e256] [cursor=pointer]:
+                      - /url: /p/livetastic-arhivska-omara-barve-hrasta-002686002802
+                      - generic [ref=e257] [cursor=pointer]:
+                        - generic [ref=e258] [cursor=pointer]: ARHIVSKA
+                        - text: OMARA barve hrasta
+                    - generic [ref=e259] [cursor=pointer]: Livetastic
+                  - generic [ref=e261] [cursor=pointer]: 529,‒ €
+                  - generic [ref=e262] [cursor=pointer]:
+                    - img [ref=e263] [cursor=pointer]
+                    - text: Artikel je na voljo samo na spletu
+                - generic [ref=e266] [cursor=pointer]:
+                  - img "ARHIVSKA OMARA barve hrasta - barve hrasta, Design, leseni material/les (90/190/42cm) - Livetastic" [ref=e268] [cursor=pointer]
+                  - generic [ref=e270]:
+                    - generic [ref=e271]: SAMO NA SPLETU
+                    - button "Dodaj med priljubljene" [ref=e272] [cursor=pointer]
+              - article [ref=e273] [cursor=pointer]:
+                - generic [ref=e274] [cursor=pointer]:
+                  - generic [ref=e275] [cursor=pointer]:
+                    - generic [ref=e276] [cursor=pointer]:
+                      - link "PREDALNIK NA KOLESCIH bela" [ref=e277] [cursor=pointer]:
+                        - /url: /p/carryhome-predalnik-na-kolescih-bela-000887049824
+                        - generic [ref=e278] [cursor=pointer]:
+                          - generic [ref=e279] [cursor=pointer]: PREDALNIK
+                          - text: NA KOLESCIH bela
+                      - generic [ref=e280] [cursor=pointer]: Carryhome
+                    - generic [ref=e282] [cursor=pointer]: Na voljo je več barv
+                  - generic [ref=e283] [cursor=pointer]:
+                    - generic [ref=e285] [cursor=pointer]: redna cena 139,‒ €
+                    - generic [ref=e286] [cursor=pointer]:
+                      - text: 99,
+                      - superscript [ref=e287] [cursor=pointer]: "90"
+                      - text: €
+                  - generic [ref=e288] [cursor=pointer]:
+                    - img [ref=e289] [cursor=pointer]
+                    - text: Artikel je na voljo samo na spletu
+                - generic [ref=e292] [cursor=pointer]:
+                  - img "PREDALNIK NA KOLESCIH bela - srebrne barve/bela, Basics, umetna masa/leseni material (46/48/54cm) - Carryhome" [ref=e294] [cursor=pointer]
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: Akcija
+                    - button "Dodaj med priljubljene" [ref=e298] [cursor=pointer]
+              - article [ref=e299] [cursor=pointer]:
+                - generic [ref=e300] [cursor=pointer]:
+                  - generic [ref=e301] [cursor=pointer]:
+                    - generic [ref=e302] [cursor=pointer]:
+                      - link "PREDALNIK NA KOLESCIH bela" [ref=e303] [cursor=pointer]:
+                        - /url: /p/mid-you-predalnik-na-kolescih-bela-000850018101
+                        - generic [ref=e304] [cursor=pointer]:
+                          - generic [ref=e305] [cursor=pointer]: PREDALNIK
+                          - text: NA KOLESCIH bela
+                      - generic [ref=e306] [cursor=pointer]: MID.YOU
+                    - generic [ref=e308] [cursor=pointer]: Na voljo je več variant
+                  - generic [ref=e309] [cursor=pointer]:
+                    - generic [ref=e311] [cursor=pointer]: redna cena 109,‒ €
+                    - generic [ref=e312] [cursor=pointer]:
+                      - text: 89,
+                      - superscript [ref=e313] [cursor=pointer]: "90"
+                      - text: €
+                  - generic [ref=e314] [cursor=pointer]:
+                    - img [ref=e315] [cursor=pointer]
+                    - text: Artikel je na voljo samo na spletu
+                - generic [ref=e318] [cursor=pointer]:
+                  - img "PREDALNIK NA KOLESCIH bela - srebrne barve/bela, Konvencionalno, kovina/umetna masa (40/76,5/33cm) - MID.YOU" [ref=e320] [cursor=pointer]
+                  - generic [ref=e322]:
+                    - generic [ref=e323]: Akcija
+                    - button "Dodaj med priljubljene" [ref=e324] [cursor=pointer]
+              - article [ref=e325] [cursor=pointer]:
+                - generic [ref=e326] [cursor=pointer]:
+                  - generic [ref=e328] [cursor=pointer]:
+                    - link "ARHIVSKA OMARA barve hrasta, kašmir" [ref=e329] [cursor=pointer]:
+                      - /url: /p/stylife-arhivska-omara-barve-hrasta-kasmir-002737047401
+                      - generic [ref=e330] [cursor=pointer]:
+                        - generic [ref=e331] [cursor=pointer]: ARHIVSKA
+                        - text: OMARA barve hrasta, kašmir
+                    - generic [ref=e332] [cursor=pointer]: Stylife
+                  - generic [ref=e333] [cursor=pointer]:
+                    - generic [ref=e335] [cursor=pointer]: redna cena 499,‒ €
+                    - generic [ref=e336] [cursor=pointer]: 349,‒ €
+                - generic [ref=e337] [cursor=pointer]:
+                  - img "ARHIVSKA OMARA barve hrasta, kašmir - kašmir/barve hrasta, Konvencionalno, leseni material (75/200/38cm) - Stylife" [ref=e339] [cursor=pointer]
+                  - generic [ref=e341]:
+                    - generic [ref=e342]: Akcija
+                    - button "Dodaj med priljubljene" [ref=e343] [cursor=pointer]
+              - article [ref=e344] [cursor=pointer]:
+                - generic [ref=e345] [cursor=pointer]:
+                  - generic [ref=e347] [cursor=pointer]:
+                    - link "PREDALNIK NA KOLESCIH bela" [ref=e348] [cursor=pointer]:
+                      - /url: /p/ti-me-predalnik-na-kolescih-bela-001787058208
+                      - generic [ref=e349] [cursor=pointer]:
+                        - generic [ref=e350] [cursor=pointer]: PREDALNIK
+                        - text: NA KOLESCIH bela
+                    - generic [ref=e351] [cursor=pointer]: Ti'me
+                  - generic [ref=e352] [cursor=pointer]:
+                    - generic [ref=e354] [cursor=pointer]: redna cena 129,‒ €
+                    - generic [ref=e355] [cursor=pointer]:
+                      - text: 89,
+                      - superscript [ref=e356] [cursor=pointer]: "90"
+                      - text: €
+                - generic [ref=e357] [cursor=pointer]:
+                  - img "PREDALNIK NA KOLESCIH bela - črna/bela, Design, umetna masa/leseni material (46/58/40cm) - Ti'me" [ref=e359] [cursor=pointer]
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: Akcija
+                    - button "Dodaj med priljubljene" [ref=e363] [cursor=pointer]
+              - article [ref=e364] [cursor=pointer]:
+                - generic [ref=e365] [cursor=pointer]:
+                  - generic [ref=e367] [cursor=pointer]:
+                    - link "ARHIVSKA OMARA bela" [ref=e368] [cursor=pointer]:
+                      - /url: /p/livetastic-arhivska-omara-bela-002478009308
+                      - generic [ref=e369] [cursor=pointer]:
+                        - generic [ref=e370] [cursor=pointer]: ARHIVSKA
+                        - text: OMARA bela
+                    - generic [ref=e371] [cursor=pointer]: Livetastic
+                  - generic [ref=e372] [cursor=pointer]:
+                    - generic [ref=e374] [cursor=pointer]: redna cena 249,‒ €
+                    - generic [ref=e375] [cursor=pointer]: 199,‒ €
+                  - generic [ref=e376] [cursor=pointer]:
+                    - img [ref=e377] [cursor=pointer]
+                    - text: Artikel je na voljo samo na spletu
+                - generic [ref=e380] [cursor=pointer]:
+                  - img "ARHIVSKA OMARA bela - bela, Konvencionalno, leseni material (80/191/40cm) - Livetastic" [ref=e382] [cursor=pointer]
+                  - generic [ref=e384]:
+                    - generic [ref=e385]: Akcija
+                    - button "Dodaj med priljubljene" [ref=e386] [cursor=pointer]
+              - article [ref=e387] [cursor=pointer]:
+                - generic [ref=e388] [cursor=pointer]:
+                  - generic [ref=e390] [cursor=pointer]:
+                    - link "PREDALNIK NA KOLESCIH bela" [ref=e391] [cursor=pointer]:
+                      - /url: /p/xora-predalnik-na-kolescih-bela-000887034125
+                      - generic [ref=e392] [cursor=pointer]:
+                        - generic [ref=e393] [cursor=pointer]: PREDALNIK
+                        - text: NA KOLESCIH bela
+                    - generic [ref=e394] [cursor=pointer]: Xora
+                  - generic [ref=e395] [cursor=pointer]:
+                    - generic [ref=e397] [cursor=pointer]: redna cena 109,‒ €
+                    - generic [ref=e398] [cursor=pointer]:
+                      - text: 89,
+                      - superscript [ref=e399] [cursor=pointer]: "90"
+                      - text: €
+                  - generic [ref=e400] [cursor=pointer]:
+                    - img [ref=e401] [cursor=pointer]
+                    - text: Artikel je na voljo samo na spletu
+                - generic [ref=e404] [cursor=pointer]:
+                  - img "PREDALNIK NA KOLESCIH bela - bela, Design, leseni material (40/60/45cm) - Xora" [ref=e406] [cursor=pointer]
+                  - generic [ref=e408]:
+                    - generic [ref=e409]: Akcija
+                    - button "Dodaj med priljubljene" [ref=e410] [cursor=pointer]
+              - article [ref=e411] [cursor=pointer]:
+                - generic [ref=e412] [cursor=pointer]:
+                  - generic [ref=e414] [cursor=pointer]:
+                    - link "PREDALNIK NA KOLESCIH barve hrasta" [ref=e415] [cursor=pointer]:
+                      - /url: /p/linea-natura-predalnik-na-kolescih-barve-hrasta-002748012702
+                      - generic [ref=e416] [cursor=pointer]:
+                        - generic [ref=e417] [cursor=pointer]: PREDALNIK
+                        - text: NA KOLESCIH barve hrasta
+                    - generic [ref=e418] [cursor=pointer]: Linea Natura
+                  - generic [ref=e419] [cursor=pointer]:
+                    - generic [ref=e421] [cursor=pointer]: redna cena 199,‒ €
+                    - generic [ref=e422] [cursor=pointer]: 149,‒ €
+                - generic [ref=e423] [cursor=pointer]:
+                  - img "PREDALNIK NA KOLESCIH barve hrasta - barve hrasta, Moderno, umetna masa/les (40/57/42cm) - Linea Natura" [ref=e425] [cursor=pointer]
+                  - generic [ref=e427]:
+                    - generic [ref=e428]: Akcija
+                    - button "Dodaj med priljubljene" [ref=e429] [cursor=pointer]
+              - article [ref=e430] [cursor=pointer]:
+                - generic [ref=e431] [cursor=pointer]:
+                  - generic [ref=e432] [cursor=pointer]:
+                    - generic [ref=e433] [cursor=pointer]:
+                      - link "KNJIŽNA OMARA 223/222/34 cm bela, barve bora" [ref=e434] [cursor=pointer]:
+                        - /url: /p/mid-you-knjizna-omara-223-222-34-cm-bela-barve-bora-001089019103
+                        - generic [ref=e435] [cursor=pointer]:
+                          - generic [ref=e436] [cursor=pointer]: KNJIŽNA
+                          - text: OMARA 223/222/34 cm bela, barve bora
+                      - generic [ref=e437] [cursor=pointer]: MID.YOU
+                    - generic [ref=e439] [cursor=pointer]: Na voljo je več velikosti
+                  - generic [ref=e441] [cursor=pointer]: 699,‒ €
+                  - generic [ref=e442] [cursor=pointer]:
+                    - img [ref=e443] [cursor=pointer]
+                    - text: Artikel je na voljo samo na spletu
+                - generic [ref=e446] [cursor=pointer]:
+                  - img "KNJIŽNA OMARA 223/222/34 cm bela, barve bora - barve bora/bela, Design, les (223/222/34cm) - MID.YOU" [ref=e448] [cursor=pointer]
+                  - generic [ref=e450]:
+                    - generic [ref=e451]: SAMO NA SPLETU
+                    - button "Dodaj med priljubljene" [ref=e452] [cursor=pointer]
+              - article [ref=e453] [cursor=pointer]:
+                - generic [ref=e454] [cursor=pointer]:
+                  - generic [ref=e456] [cursor=pointer]:
+                    - link "KNJIŽNA OMARA 223/222/34 cm bela, barve medu" [ref=e457] [cursor=pointer]:
+                      - /url: /p/mid-you-knjizna-omara-223-222-34-cm-bela-barve-medu-001089018904
+                      - generic [ref=e458] [cursor=pointer]:
+                        - generic [ref=e459] [cursor=pointer]: KNJIŽNA
+                        - text: OMARA 223/222/34 cm bela, barve medu
+                    - generic [ref=e460] [cursor=pointer]: MID.YOU
+                  - generic [ref=e462] [cursor=pointer]: 869,‒ €
+                  - generic [ref=e463] [cursor=pointer]:
+                    - img [ref=e464] [cursor=pointer]
+                    - text: Artikel je na voljo samo na spletu
+                - generic [ref=e467] [cursor=pointer]:
+                  - img "KNJIŽNA OMARA 223/222/34 cm bela, barve medu - bela/barve medu, Design, les (223/222/34cm) - MID.YOU" [ref=e469] [cursor=pointer]
+                  - generic [ref=e471]:
+                    - generic [ref=e472]: SAMO NA SPLETU
+                    - button "Dodaj med priljubljene" [ref=e473] [cursor=pointer]
+            - button "Naslednja slika" [ref=e474] [cursor=pointer]
+      - generic:
+        - article:
+          - generic:
+            - generic:
+              - link "ARHIVSKA OMARA svetlo siva":
+                - /url: /p/xora-arhivska-omara-svetlo-siva-000887041404
+                - heading "ARHIVSKA OMARA svetlo siva" [level=3]:
+                  - generic: ARHIVSKA
+                  - generic: OMARA svetlo siva
+            - generic:
+              - generic: svetlo siva
+              - generic: "širina/višina/globina: 80/216/35 cm"
+          - generic:
+            - img "ARHIVSKA OMARA svetlo siva - svetlo siva, Basics, leseni material (80/216/35cm) - Xora"
+            - link:
+              - /url: /p/xora-arhivska-omara-svetlo-siva-000887041404
+          - generic:
+            - generic:
+              - generic: 339,‒ €
+          - button "ARHIVSKA OMARA svetlo siva Dodaj v košarico"
+  - contentinfo [ref=e475]:
+    - generic [ref=e476]:
+      - generic [ref=e477]:
+        - generic [ref=e478]: XXXL prednosti
+        - list [ref=e480]:
+          - listitem [ref=e481]:
+            - link "Bon v vrednosti 5€ ob prijavi na e-novice" [ref=e482] [cursor=pointer]:
+              - /url: /c/e-novice
+              - text: Bon v vrednosti 5€ ob prijavi na e-novice
+          - listitem [ref=e484]:
+            - link "Pogoji vračila v spletni trgovini" [ref=e485] [cursor=pointer]:
+              - /url: /c/vracilo
+              - text: Pogoji vračila v spletni trgovini
+          - listitem [ref=e487]:
+            - link "Varno plačevanje" [ref=e488] [cursor=pointer]:
+              - /url: /c/nacini-placila
+              - text: Varno plačevanje
+          - listitem [ref=e490]:
+            - link "Gratis najem transportnega vozila" [ref=e491] [cursor=pointer]:
+              - /url: /c/najem-transportnega-vozila
+              - text: Gratis najem transportnega vozila
+          - listitem [ref=e493]:
+            - link "Dostava in montaža" [ref=e494] [cursor=pointer]:
+              - /url: /c/montaza
+              - text: Dostava in montaža
+      - generic [ref=e496]:
+        - link "Preskoči Seznam, ki sledi" [ref=e497] [cursor=pointer]:
+          - /url: "#skip-section-Seznam-new_footer_third_section_node_1"
+          - text: Preskoči odsek
+        - generic [ref=e498]:
+          - generic [ref=e500]:
+            - generic [ref=e501]: Spletna trgovina
+            - list [ref=e502]:
+              - listitem [ref=e503]:
+                - link "Status naročila" [ref=e504] [cursor=pointer]:
+                  - /url: /statusnarocila
+              - listitem [ref=e505]:
+                - link "Načini plačila" [ref=e506] [cursor=pointer]:
+                  - /url: /c/nacini-placila
+              - listitem [ref=e507]:
+                - link "Dostava" [ref=e508] [cursor=pointer]:
+                  - /url: /c/dostava
+              - listitem [ref=e509]:
+                - link "Vračila in reklamacije" [ref=e510] [cursor=pointer]:
+                  - /url: /c/vracilo
+              - listitem [ref=e511]:
+                - link "Akcije in znižanja" [ref=e512] [cursor=pointer]:
+                  - /url: /c/akcije-in-katalogi
+              - listitem [ref=e513]:
+                - link "Unovčevanje ugodnosti" [ref=e514] [cursor=pointer]:
+                  - /url: /c/unovcevanje-ugodnosti
+              - listitem [ref=e515]:
+                - link "Vse kategorije" [ref=e516] [cursor=pointer]:
+                  - /url: /kategorije/root
+              - listitem [ref=e517]:
+                - link "Splošni pogoji poslovanja spletne trgovine" [ref=e518] [cursor=pointer]:
+                  - /url: /c/splosni-pogoji-nakup-v-spletni-trgovini
+          - generic [ref=e520]:
+            - generic [ref=e521]: Storitve
+            - list [ref=e522]:
+              - listitem [ref=e523]:
+                - link "Storitve v poslovalnicah" [ref=e524] [cursor=pointer]:
+                  - /url: /c/storitve
+              - listitem [ref=e525]:
+                - link "Najem transportnega vozila" [ref=e526] [cursor=pointer]:
+                  - /url: /c/najem-transportnega-vozila
+              - listitem [ref=e527]:
+                - link "Financiranja in krediti" [ref=e528] [cursor=pointer]:
+                  - /url: /c/potrosniski-krediti
+              - listitem [ref=e529]:
+                - link "XXXL kartica ugodnosti" [ref=e530] [cursor=pointer]:
+                  - /url: /c/xxxl-kartica-ugodnosti
+              - listitem [ref=e531]:
+                - link "Načrtovanje kuhinj" [ref=e532] [cursor=pointer]:
+                  - /url: /c/nacrtovanje-kuhinj
+              - listitem [ref=e533]:
+                - link "E-novice" [ref=e534] [cursor=pointer]:
+                  - /url: /c/e-novice
+              - listitem [ref=e535]:
+                - link "Odpoklicani izdelki" [ref=e536] [cursor=pointer]:
+                  - /url: /c/odpoklicani-izdelki
+          - generic [ref=e538]:
+            - generic [ref=e539]: Poslovalnice
+            - list [ref=e540]:
+              - listitem [ref=e541]:
+                - link "Poslovalnice" [ref=e542] [cursor=pointer]:
+                  - /url: /poslovalnice
+              - listitem [ref=e543]:
+                - link "XXXL Restavracije" [ref=e544] [cursor=pointer]:
+                  - /url: /c/restavracije
+              - listitem [ref=e545]:
+                - link "Franšizne prodajalne" [ref=e546] [cursor=pointer]:
+                  - /url: /c/partnerji
+              - listitem [ref=e547]:
+                - link "Plačevanje v poslovalnicah" [ref=e548] [cursor=pointer]:
+                  - /url: /c/placevanje-v-poslovalnicah
+              - listitem [ref=e549]:
+                - link "Odprodajna ponudba poslovalnic" [ref=e550] [cursor=pointer]:
+                  - /url: /hs
+          - generic [ref=e552]:
+            - generic [ref=e553]: O nas
+            - list [ref=e554]:
+              - listitem [ref=e555]:
+                - link "Zgodovina Lesnine" [ref=e556] [cursor=pointer]:
+                  - /url: /c/zgodovina
+              - listitem [ref=e557]:
+                - link "Medijsko središče" [ref=e558] [cursor=pointer]:
+                  - /url: https://pr.xxxlesnina.si/
+              - listitem [ref=e559]:
+                - link "Zaposlitev" [ref=e560] [cursor=pointer]:
+                  - /url: https://www.superdelo.si/
+              - listitem [ref=e561]:
+                - link "Nagrade in certifikati" [ref=e562] [cursor=pointer]:
+                  - /url: /c/kakovost-v-lesnini
+              - listitem [ref=e563]:
+                - link "XXXL svet blagovnih znamk" [ref=e564] [cursor=pointer]:
+                  - /url: /c/blagovne-znamke
+              - listitem [ref=e565]:
+                - link "Izjava o dostopnosti" [ref=e566] [cursor=pointer]:
+                  - /url: /c/accessibility-statement
+      - generic [ref=e568]:
+        - generic [ref=e571]:
+          - paragraph [ref=e572]: Pomoč kupcem
+          - generic [ref=e573]:
+            - generic [ref=e574]:
+              - link "Kontaktni obrazec" [ref=e575] [cursor=pointer]:
+                - /url: /kontakt
+                - generic [ref=e576] [cursor=pointer]: Kontaktni obrazec
+              - paragraph [ref=e577]: Potrebujete še kakšen nasvet ali pomoč?
+            - generic [ref=e578]:
+              - link "Pogosta vprašanja" [ref=e579] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e580] [cursor=pointer]: Pogosta vprašanja
+              - paragraph [ref=e581]: V naših pogostih vprašanjih boste velikokrat našli pomoč.
+        - generic [ref=e582]:
+          - generic [ref=e583]: Kakovost v Lesnini
+          - link [ref=e587] [cursor=pointer]:
+            - /url: /c/bestbuy
+        - generic [ref=e588]:
+          - generic [ref=e589]: Načini plačila
+          - generic [ref=e590]:
+            - link [ref=e593] [cursor=pointer]:
+              - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+            - link [ref=e596] [cursor=pointer]:
+              - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+            - link [ref=e599] [cursor=pointer]:
+              - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#placilnakartica
+            - link [ref=e602] [cursor=pointer]:
+              - /url: /c/placevanje-v-spletni-trgovini#paypal
+            - link "googlepay.jpg" [ref=e605] [cursor=pointer]:
+              - /url: https://www.xxxlesnina.si/c/placevanje-v-spletni-trgovini#googlepay
+              - img "googlepay.jpg" [ref=e606] [cursor=pointer]
+            - link [ref=e609] [cursor=pointer]:
+              - /url: /c/placevanje-v-spletni-trgovini#applepay
+            - link [ref=e612] [cursor=pointer]:
+              - /url: /c/placevanje-v-spletni-trgovini#gotovina
+            - link "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e615] [cursor=pointer]:
+              - /url: /c/placevanje-v-spletni-trgovini#predracun
+              - img "NC2k7jpKeLeZkk0Ynfbgu1qw (1).jpeg" [ref=e616] [cursor=pointer]
+        - generic [ref=e617]: "*Vse cene so v evrih in vključujejo DDV, cene ne vključujejo stroškov dostave, montaže ali dekorativnih dodatkov, prikazanih na slikah. Pridržujemo si pravico do sprememb in napak. Cene označene z ** so naše redne maloprodajne cene."
+      - generic [ref=e620]:
+        - link "XXXLesnina" [ref=e621] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e622] [cursor=pointer]: XXXLesnina
+          - img [ref=e624] [cursor=pointer]
+        - generic [ref=e633]: "@2026 LES-MMS d.o.o."
+        - list [ref=e634]:
+          - listitem [ref=e635]:
+            - link "O NAS" [ref=e636] [cursor=pointer]:
+              - /url: https://www.xxxlesnina.si/c/o-nas
+          - listitem [ref=e637]:
+            - link "SPLOŠNI POGOJI" [ref=e638] [cursor=pointer]:
+              - /url: https://www.xxxlesnina.si/c/splosni-pogoji
+          - listitem [ref=e639]:
+            - link "VARNOST IN ZASEBNOST" [ref=e640] [cursor=pointer]:
+              - /url: https://www.xxxlesnina.si/c/agb
+          - listitem [ref=e641]:
+            - link "Izjava o dostopnosti" [ref=e642] [cursor=pointer]:
+              - /url: /c/izjava-o-dostopnosti
+          - listitem [ref=e643]:
+            - button "Piškotki" [ref=e644] [cursor=pointer]
+        - list [ref=e645]:
+          - listitem [ref=e646]:
+            - link "youtube" [ref=e647] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCg4u8_2N8P2UZ0y4eM51nqg
+          - listitem [ref=e648]:
+            - link "instagram" [ref=e649] [cursor=pointer]:
+              - /url: https://www.instagram.com/lesnina.si/?hl=en
+          - listitem [ref=e650]:
+            - link "facebook" [ref=e651] [cursor=pointer]:
+              - /url: https://www.facebook.com/lesnina.si/
+          - listitem [ref=e652]:
+            - link "tiktok" [ref=e653] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@lesnina_slovenija?lang=en
+          - listitem [ref=e654]:
+            - link "linkedin" [ref=e655] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/lesnina-xxxl/?viewAsMember=true
+        - link "WACA bronze certificate" [ref=e656] [cursor=pointer]:
+          - /url: /accessibility
+          - img "WACA bronze certificate" [ref=e657] [cursor=pointer]
+```
