@@ -52,14 +52,14 @@ npm init playwright@latest
 -- MKP --
 ------------ 
 
-- COUNTRY=DE MODE=3P PAY=KN npx playwright test tests/MKP/E2E-Lutz-MKP.spec.js --project chromium --headed --debug
-- COUNTRY=DE MODE=2P PAY=KL npx playwright test tests/MKP/E2E-Lutz-MKP.spec.js --project chromium --headed 
+- COUNTRY=DE MODE=3P PAY=KN npx playwright test tests/MKP/E2E-Lutz-MKP.spec.ts --project chromium --headed --debug
+- COUNTRY=DE MODE=2P PAY=KL npx playwright test tests/MKP/E2E-Lutz-MKP.spec.ts --project chromium --headed 
   
 ------------
 -- PAYPAL --
 ------------
-- RAIL=xxxlutz COUNTRY=DE MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
-- RAIL=moemax COUNTRY=DE MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.js --project chromium --headed 
+- RAIL=xxxlutz COUNTRY=DE MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.ts --project chromium --headed 
+- RAIL=moemax COUNTRY=DE MODE=1P npx playwright test tests/E2E-Lutz-PayPal.spec.ts --project chromium --headed 
 
 -----------------
 -- CREDIT CARD --

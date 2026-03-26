@@ -1,0 +1,1285 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Gratis Postversand ab 49 €" [ref=e9] [cursor=pointer]:
+              - /url: /kategorien/root
+              - generic [ref=e10] [cursor=pointer]: Gratis Postversand ab 49 €
+            - link "bis zu-20% sparen" [ref=e11] [cursor=pointer]:
+              - /url: /c/pink-shopping
+              - generic [ref=e12] [cursor=pointer]: bis zu-20% sparen
+          - generic [ref=e14]:
+            - link "gratis Click & Collect" [ref=e15] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - generic [ref=e16] [cursor=pointer]: gratis Click & Collect
+            - link "über 12.000 Produkte lagernd" [ref=e17] [cursor=pointer]:
+              - /url: /kategorien/root
+              - generic [ref=e18] [cursor=pointer]: über 12.000 Produkte lagernd
+            - link "22 Filialen in deiner Nähe" [ref=e19] [cursor=pointer]:
+              - /url: /filialen-at
+              - generic [ref=e20] [cursor=pointer]: 22 Filialen in deiner Nähe
+            - switch "Hoher Kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menü
+          - link "Möemax" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: Möemax
+            - img [ref=e33] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e36] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e37]:
+            - generic [ref=e38]:
+              - button "Suchen" [ref=e40] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e41]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+              - button "Bildersuche" [ref=e45] [cursor=pointer]
+          - generic [ref=e46]:
+            - button "Anmelden" [ref=e48] [cursor=pointer]:
+              - generic [ref=e49] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e51] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e52] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 0 Produkte" [ref=e54] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e55] [cursor=pointer]: Warenkorb
+          - navigation [ref=e56]:
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - link "Produkte" [ref=e59] [cursor=pointer]:
+                  - /url: /kategorien/root
+              - listitem [ref=e60]:
+                - link "Räume" [ref=e61] [cursor=pointer]:
+                  - /url: /c/raeume
+              - listitem [ref=e62]:
+                - link "Küchen" [ref=e63] [cursor=pointer]:
+                  - /url: /alle-kuechen-C34
+              - listitem [ref=e64]:
+                - link "Garten" [ref=e65] [cursor=pointer]:
+                  - /url: /garten-outdoor-C45
+              - listitem [ref=e66]:
+                - link "Trends" [ref=e67] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e68]:
+                - link "Werbung" [ref=e69] [cursor=pointer]:
+                  - /url: /c/pink-shopping
+              - listitem [ref=e70]:
+                - link "% SALE %" [ref=e71] [cursor=pointer]:
+                  - /url: /c/sale
+              - listitem [ref=e72]:
+                - link "Beratungstermin" [ref=e73] [cursor=pointer]:
+                  - /url: /c/beratungstermin-vereinbaren
+      - main [ref=e74]:
+        - status [ref=e75]:
+          - generic [ref=e76]: Mömax Schrank Weiß 80x40x195 » kaufen
+        - generic [ref=e77]:
+          - navigation "breadcrumbs" [ref=e79]:
+            - list [ref=e80]:
+              - listitem [ref=e81]:
+                - link "Startseite" [ref=e82] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e83]:
+                - link "Produkte" [ref=e84] [cursor=pointer]:
+                  - /url: /kategorien/root
+                  - generic [ref=e85] [cursor=pointer]: Produkte
+              - listitem [ref=e86]:
+                - link "Alle Möbel" [ref=e87] [cursor=pointer]:
+                  - /url: /alle-moebel-C30
+                  - generic [ref=e88] [cursor=pointer]: Alle Möbel
+              - listitem [ref=e89]:
+                - link "Alle Schränke" [ref=e90] [cursor=pointer]:
+                  - /url: /alle-schraenke-C30C6
+                  - generic [ref=e91] [cursor=pointer]: Alle Schränke
+          - generic [ref=e92]:
+            - generic [ref=e95]:
+              - group [ref=e96]:
+                - group [ref=e97]:
+                  - button "Produktbild 1 / 14" [ref=e98] [cursor=pointer]:
+                    - img [ref=e99] [cursor=pointer]
+                  - button "Produktbild 2 / 14" [ref=e100] [cursor=pointer]:
+                    - img [ref=e101] [cursor=pointer]
+                  - button "Produktbild 3 / 14" [ref=e102] [cursor=pointer]:
+                    - img [ref=e103] [cursor=pointer]
+                  - button "Produktbild 4 / 14" [ref=e104] [cursor=pointer]:
+                    - img [ref=e105] [cursor=pointer]
+                  - button "Produktbild 5 / 14" [ref=e106] [cursor=pointer]:
+                    - img [ref=e107] [cursor=pointer]
+                  - button "Produktbild 6 / 14" [ref=e108] [cursor=pointer]:
+                    - img [ref=e109] [cursor=pointer]
+                  - button "Produktbild 7 / 14" [ref=e110] [cursor=pointer]:
+                    - img [ref=e111] [cursor=pointer]
+                  - button "Produktbild 8 / 14" [ref=e112] [cursor=pointer]:
+                    - img [ref=e113] [cursor=pointer]
+                  - button "Produktbild 9 / 14" [ref=e114] [cursor=pointer]:
+                    - img [ref=e115] [cursor=pointer]
+                  - button "Produktbild 10 / 14" [ref=e116] [cursor=pointer]:
+                    - img [ref=e117] [cursor=pointer]
+                  - button "Produktbild 11 / 14" [ref=e118] [cursor=pointer]:
+                    - img [ref=e119] [cursor=pointer]
+                  - button "Produktbild 12 / 14" [ref=e120] [cursor=pointer]:
+                    - img [ref=e121] [cursor=pointer]
+                  - button "Produktbild 13 / 14" [ref=e122] [cursor=pointer]:
+                    - img [ref=e123] [cursor=pointer]
+                  - button "Produktbild 14 / 14" [ref=e124] [cursor=pointer]:
+                    - img [ref=e125] [cursor=pointer]
+                - button "next" [ref=e126] [cursor=pointer]
+              - group [ref=e128] [cursor=pointer]:
+                - generic [ref=e129] [cursor=pointer]:
+                  - img "Schrank Multistauraum Weiß - Schwarz/Weiß, MODERN, Holzwerkstoff/Kunststoff (80/195/40cm) - Based" [ref=e130]
+                  - img "Based"
+                - img "Schrank Multistauraum Weiß - Schwarz/Weiß, MODERN, Holzwerkstoff/Kunststoff (80/195/40cm) - Based" [ref=e132]
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - generic [ref=e147]: Artikelnr. 2427019437
+                - heading "Schrank Multistauraum Weiß" [level=1] [ref=e148]:
+                  - generic [ref=e149]: Schrank
+                  - text: Multistauraum Weiß
+                - 'button "Weiß Holzwerkstoff Breite/Höhe/Tiefe: 80/195/40 cm" [ref=e150] [cursor=pointer]':
+                  - generic [ref=e151] [cursor=pointer]:
+                    - generic [ref=e152] [cursor=pointer]: Weiß
+                    - generic [ref=e153] [cursor=pointer]: Holzwerkstoff
+                    - generic [ref=e154] [cursor=pointer]: "Breite/Höhe/Tiefe: 80/195/40 cm"
+                - 'link "Produktbewertung: 4.1 von 5 Sterne - Alle Bewertungen: 79" [ref=e155] [cursor=pointer]':
+                  - /url: "#ratings-and-reviews"
+                  - generic [ref=e157] [cursor=pointer]:
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                    - generic [ref=e158] [cursor=pointer]: (79)
+              - generic [ref=e159]:
+                - generic [ref=e160]: "UVP: € 259,‒*"
+                - generic [ref=e161]: € 139,‒
+                - generic [ref=e162]:
+                  - generic [ref=e163]: Inkl. MwSt.
+                  - generic [ref=e164]:
+                    - text: •
+                    - generic [ref=e165]: exkl.
+                    - button "Lieferkosten" [ref=e166] [cursor=pointer]:
+                      - generic [ref=e167] [cursor=pointer]: Lieferkosten
+              - generic [ref=e168]:
+                - generic [ref=e169]: "Farbe:"
+                - text: Weiß
+                - group "Farbe" [ref=e170]:
+                  - generic [ref=e171]: Farbe
+                  - checkbox [ref=e172]
+                  - checkbox [ref=e174]
+                  - checkbox [checked] [ref=e176]
+                  - button "Mehr in anderen Kombinationen" [ref=e178] [cursor=pointer]:
+                    - img [ref=e179] [cursor=pointer]
+                    - text: Mehr in anderen Kombinationen
+              - generic [ref=e181]:
+                - generic [ref=e182]: Größe
+                - button "80/195/40 cm" [ref=e183] [cursor=pointer]
+              - generic [ref=e184]:
+                - generic [ref=e185]: "Material:"
+                - generic [ref=e186]: Holzwerkstoff
+              - generic [ref=e187]:
+                - generic [ref=e188]: "Mehr von:"
+                - link "Based" [ref=e189] [cursor=pointer]:
+                  - /url: /s/?v_brand=based
+                  - generic [ref=e190] [cursor=pointer]: Based
+              - generic [ref=e191]:
+                - button "Zu den Favoriten hinzufügen" [ref=e192] [cursor=pointer]
+                - button "Schrank Multistauraum Weiß In den Warenkorb" [ref=e193] [cursor=pointer]:
+                  - generic [ref=e194] [cursor=pointer]: In den Warenkorb
+              - generic [ref=e195]:
+                - button "Lieferung € 49,‒ Lieferung & Montage € 248,‒" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197] [cursor=pointer]:
+                    - generic [ref=e199] [cursor=pointer]: Lieferung
+                    - generic [ref=e200] [cursor=pointer]: € 49,‒
+                  - generic [ref=e202] [cursor=pointer]:
+                    - generic [ref=e204] [cursor=pointer]: Lieferung & Montage
+                    - generic [ref=e205] [cursor=pointer]: € 248,‒
+                - button "Lieferzeitpunkt ansehen" [ref=e207] [cursor=pointer]
+              - button "In einer Mömax Filiale Gratis Filiale wählen" [ref=e209] [cursor=pointer]:
+                - generic [ref=e210] [cursor=pointer]:
+                  - generic [ref=e212] [cursor=pointer]: In einer Mömax Filiale
+                  - generic [ref=e213] [cursor=pointer]: Gratis
+                - generic [ref=e215] [cursor=pointer]: Filiale wählen
+              - generic [ref=e216]:
+                - heading "Serviceleistungen" [level=2] [ref=e217]
+                - list [ref=e218]:
+                  - listitem [ref=e219]:
+                    - link "Click & Collect" [ref=e220] [cursor=pointer]:
+                      - /url: https://www.moemax.at/c/clickundcollect
+                      - generic [ref=e221] [cursor=pointer]: Click & Collect
+                  - listitem [ref=e222]:
+                    - link "Gratis Selbstabholung in der Filiale" [ref=e223] [cursor=pointer]:
+                      - /url: https://www.moemax.at/c/filialen-at
+                      - generic [ref=e224] [cursor=pointer]: Gratis Selbstabholung in der Filiale
+                  - listitem [ref=e225]:
+                    - link "Umfangreiches Filialnetz" [ref=e226] [cursor=pointer]:
+                      - /url: https://www.moemax.at/c/filialen-at
+                      - generic [ref=e227] [cursor=pointer]: Umfangreiches Filialnetz
+                - button "Über Service & Versand" [ref=e228] [cursor=pointer]:
+                  - generic [ref=e229] [cursor=pointer]: Über Service & Versand
+              - generic [ref=e230]:
+                - button "Produktdetails" [ref=e231] [cursor=pointer]
+                - button "Aufbau, Sicherheit & Pflege" [ref=e232] [cursor=pointer]
+              - generic [ref=e233]:
+                - heading "Kann ergänzt werden mit" [level=2] [ref=e234]
+                - article [ref=e235]:
+                  - link "Aufbewahrungsbox Poppi Mit Steindesign" [ref=e237] [cursor=pointer]:
+                    - /url: /p/based-aufbewahrungsbox-poppi-mit-steindesign-000644001406
+                    - heading "Aufbewahrungsbox Poppi Mit Steindesign" [level=4] [ref=e238] [cursor=pointer]:
+                      - generic [ref=e239] [cursor=pointer]: Aufbewahrungsbox
+                      - generic [ref=e240] [cursor=pointer]: Poppi Mit Steindesign
+                  - generic [ref=e241]:
+                    - img "Aufbewahrungsbox Poppi Mit Steindesign - Multicolor, Karton/Textil (32/32/32cm) - Based" [ref=e242]
+                    - link [ref=e243] [cursor=pointer]:
+                      - /url: /p/based-aufbewahrungsbox-poppi-mit-steindesign-000644001406
+                  - generic [ref=e244]:
+                    - generic [ref=e245]: "UVP: € 11,‒*"
+                    - generic [ref=e246]:
+                      - text: € 4,
+                      - superscript [ref=e247]: "99"
+                  - link "Produkt anzeigen Aufbewahrungsbox Poppi Mit Steindesign" [ref=e248] [cursor=pointer]:
+                    - /url: /p/based-aufbewahrungsbox-poppi-mit-steindesign-000644001406
+                    - generic [ref=e249] [cursor=pointer]: Produkt anzeigen
+                - article [ref=e250]:
+                  - link "Aufbewahrungsbox Poppi Mit Schriftzug" [ref=e252] [cursor=pointer]:
+                    - /url: /p/based-aufbewahrungsbox-poppi-mit-schriftzug-000644001407
+                    - heading "Aufbewahrungsbox Poppi Mit Schriftzug" [level=4] [ref=e253] [cursor=pointer]:
+                      - generic [ref=e254] [cursor=pointer]: Aufbewahrungsbox
+                      - generic [ref=e255] [cursor=pointer]: Poppi Mit Schriftzug
+                  - generic [ref=e256]:
+                    - img "Aufbewahrungsbox Poppi Mit Schriftzug - Weiß/Grau, Karton/Textil (32/32/32cm) - Based" [ref=e257]
+                    - link [ref=e258] [cursor=pointer]:
+                      - /url: /p/based-aufbewahrungsbox-poppi-mit-schriftzug-000644001407
+                  - generic [ref=e259]:
+                    - generic [ref=e260]: "UVP: € 11,‒*"
+                    - generic [ref=e261]:
+                      - text: € 4,
+                      - superscript [ref=e262]: "99"
+                  - link "Produkt anzeigen Aufbewahrungsbox Poppi Mit Schriftzug" [ref=e263] [cursor=pointer]:
+                    - /url: /p/based-aufbewahrungsbox-poppi-mit-schriftzug-000644001407
+                    - generic [ref=e264] [cursor=pointer]: Produkt anzeigen
+                - button "Weitere Produkte anzeigen" [ref=e265] [cursor=pointer]:
+                  - generic [ref=e266] [cursor=pointer]: Weitere Produkte anzeigen
+          - generic [ref=e268]:
+            - generic [ref=e269]:
+              - heading "Die wichtigsten Infos auf einen Blick" [level=3] [ref=e270]
+              - list [ref=e272]:
+                - listitem [ref=e273]: ". Breite/Höhe/Tiefe: 80/195/40 cm"
+                - listitem [ref=e274]: . 5 Einlegeböden
+                - listitem [ref=e275]: . 2 Drehtüren
+            - generic [ref=e277]:
+              - generic [ref=e279]:
+                - img "Schrank Multistauraum Weiß Griffe Schwarz Kunststoff" [ref=e286]
+                - generic [ref=e287]:
+                  - heading "Stilvolle schwarze Griffakzente" [level=3] [ref=e288]
+                  - generic [ref=e289]: Dieser Multistauraum in elegantem Weiß überzeugt durch schlichte Optik und praktische Funktionalität. Ein besonderes Highlight sind die schwarzen Bügelgriffe aus robustem Kunststoff. Sie bieten nicht nur einen modernen Kontrast zur weißen Oberfläche, sondern liegen dank ihrer abgerundeten Form angenehm in der Hand. Die Griffe sind pflegeleicht, langlebig und machen das Öffnen und Schließen der Türen besonders komfortabel – ideal für den täglichen Gebrauch.
+              - generic [ref=e291]:
+                - img "Schrank Multistauraum weiß Holz verstellbare Einlegeböden" [ref=e298]
+                - generic [ref=e299]:
+                  - heading "Flexible Innenaufteilung" [level=3] [ref=e300]
+                  - generic [ref=e301]: "In dekorativer Weiß-Holz-Nachbildung vereint dieser Multistauraum modernes Design mit praktischer Funktionalität. Besonders durchdacht: Die fünf verstellbaren Einlegeböden im Inneren. Sie lassen sich individuell anpassen und bieten so maximale Flexibilität – ob für große Ordner, kleine Boxen oder verschiedenste Haushaltsgegenstände. So schaffen Sie Ordnung ganz nach Ihrem Bedarf und nutzen den Stauraum optimal aus."
+          - generic [ref=e303]:
+            - 'heading "Multistauraum Schrank: Ihr neuer Ordnungshüter" [level=2] [ref=e304]'
+            - generic [ref=e305]:
+              - button "Komplett ansehen" [ref=e306] [cursor=pointer]:
+                - generic [ref=e307] [cursor=pointer]:
+                  - text: Komplett ansehen
+                  - img [ref=e308] [cursor=pointer]
+              - generic [ref=e313]:
+                - text: Der
+                - strong [ref=e314]: Schrank MULTISTAURAUM
+                - text: in
+                - strong [ref=e315]: Weiß
+                - text: ist ein praktisches Möbelstück für Ihr Zuhause. Mit seinen Abmessungen von ca. 80 x 195 x 40 cm (B x H x T) bietet er viel Stauraum. Der Schrank ist aus
+                - strong [ref=e316]: Holzwerkstoff
+                - text: gefertigt und mit einer
+                - strong [ref=e317]: Dekorfolie
+                - text: in
+                - strong [ref=e318]: Weiß matt
+                - text: versehen. Die Oberfläche ist eine Nachbildung. Die Griffe sind
+                - strong [ref=e319]: Bügelgriffe in Schwarz
+                - text: aus Kunststoff. Der Schrank verfügt über zwei Drehtüren mit Anschlag links und rechts und
+                - strong [ref=e320]: fünf verstellbare Einlegeböden
+                - text: . Als besonderes Merkmal sind Beimöbel erhältlich.
+          - region "Wie zufrieden bist du mit dieser Produktdetailseite?" [ref=e322]:
+            - heading "Wie zufrieden bist du mit dieser Produktdetailseite?" [level=2] [ref=e323]
+            - group [ref=e324]:
+              - generic [ref=e325] [cursor=pointer]:
+                - generic [ref=e326] [cursor=pointer]: Sehr unzufrieden
+                - radio "Sehr unzufrieden"
+              - generic [ref=e328] [cursor=pointer]:
+                - generic [ref=e329] [cursor=pointer]: Unzufrieden
+                - radio "Unzufrieden"
+              - generic [ref=e331] [cursor=pointer]:
+                - generic [ref=e332] [cursor=pointer]: Neutral
+                - radio "Neutral"
+              - generic [ref=e334] [cursor=pointer]:
+                - generic [ref=e335] [cursor=pointer]: Zufrieden
+                - radio "Zufrieden"
+              - generic [ref=e337] [cursor=pointer]:
+                - generic [ref=e338] [cursor=pointer]: Sehr zufrieden
+                - radio "Sehr zufrieden"
+            - button "Weiter" [disabled] [ref=e340]:
+              - generic [ref=e341]: Weiter
+          - generic [ref=e346]:
+            - button "Bewertungen (79)" [expanded] [ref=e348] [cursor=pointer]:
+              - heading "Bewertungen (79)" [level=2] [ref=e353] [cursor=pointer]
+            - region "Bewertungen (79)" [ref=e356]:
+              - generic [ref=e357]:
+                - generic [ref=e359]:
+                  - generic [ref=e360]:
+                    - generic [ref=e361]: "4.1"
+                    - generic [ref=e362]:
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e363]: 79 Bewertungen
+                  - generic [ref=e364]:
+                    - list [ref=e365]:
+                      - listitem [ref=e366]:
+                        - button "41 Rezensionen mit 5 Sternen anzeigen" [ref=e367] [cursor=pointer]:
+                          - generic [ref=e368] [cursor=pointer]: "5"
+                          - generic:
+                            - img
+                          - generic [ref=e371] [cursor=pointer]: "41"
+                      - listitem [ref=e372]:
+                        - button "17 Rezensionen mit 4 Sternen anzeigen" [ref=e373] [cursor=pointer]:
+                          - generic [ref=e374] [cursor=pointer]: "4"
+                          - generic:
+                            - img
+                          - generic [ref=e377] [cursor=pointer]: "17"
+                      - listitem [ref=e378]:
+                        - button "11 Rezensionen mit 3 Sternen anzeigen" [ref=e379] [cursor=pointer]:
+                          - generic [ref=e380] [cursor=pointer]: "3"
+                          - generic:
+                            - img
+                          - generic [ref=e383] [cursor=pointer]: "11"
+                      - listitem [ref=e384]:
+                        - button "6 Rezensionen mit 2 Sternen anzeigen" [ref=e385] [cursor=pointer]:
+                          - generic [ref=e386] [cursor=pointer]: "2"
+                          - generic:
+                            - img
+                          - generic [ref=e389] [cursor=pointer]: "6"
+                      - listitem [ref=e390]:
+                        - button "4 Rezensionen mit 1 Stern anzeigen" [ref=e391] [cursor=pointer]:
+                          - generic [ref=e392] [cursor=pointer]: "1"
+                          - generic:
+                            - img
+                          - generic [ref=e395] [cursor=pointer]: "4"
+                    - generic [ref=e396]:
+                      - text: Preis
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                    - generic [ref=e397]:
+                      - text: Qualität
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                    - generic [ref=e398]:
+                      - text: Optik
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                    - button "Wie kann ich bewerten?" [ref=e399] [cursor=pointer]:
+                      - generic [ref=e400] [cursor=pointer]: Wie kann ich bewerten?
+                - generic [ref=e401]:
+                  - article [ref=e402]:
+                    - heading "Aufbewahrung für meine Schätze" [level=3] [ref=e403]
+                    - generic [ref=e404]:
+                      - generic [ref=e405]:
+                        - text: Mader
+                        - button "Informationen zum verifizierten Kauf" [ref=e406] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e407]: Vor 2 Wochen
+                    - generic [ref=e408]:
+                      - generic [ref=e409]:
+                        - generic [ref=e410]:
+                          - generic [ref=e411]: "Größe:"
+                          - text: 80/195/40 cm
+                        - generic [ref=e412]:
+                          - generic [ref=e413]: "Farben:"
+                          - text: Eiche Artisan
+                      - generic [ref=e414]:
+                        - generic [ref=e415]: Der Kasten ist stabil und groß genug für meine Sachen.
+                        - generic [ref=e416]:
+                          - generic [ref=e417]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e418]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e419]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                  - article [ref=e420]:
+                    - heading "Sehr guter Schrank" [level=3] [ref=e421]
+                    - generic [ref=e422]:
+                      - generic [ref=e423]:
+                        - text: Josef1
+                        - button "Informationen zum verifizierten Kauf" [ref=e424] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e425]: Vor 4 Wochen
+                    - generic [ref=e426]:
+                      - generic [ref=e427]:
+                        - generic [ref=e428]:
+                          - generic [ref=e429]: "Größe:"
+                          - text: 80/195/40 cm
+                        - generic [ref=e430]:
+                          - generic [ref=e431]: "Farben:"
+                          - text: Weiß
+                      - generic [ref=e432]:
+                        - generic [ref=e433]: Preis Leistung völlig in Ordnung! Guter Schrank.
+                        - generic [ref=e434]:
+                          - generic [ref=e435]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e436]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e437]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                  - article [ref=e438]:
+                    - heading "Verpackung ist sehr schlecht" [level=3] [ref=e439]
+                    - generic [ref=e440]:
+                      - generic [ref=e441]:
+                        - text: Olafs
+                        - button "Informationen zum verifizierten Kauf" [ref=e442] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e443]: Vor 1 Monat
+                    - generic [ref=e444]:
+                      - generic [ref=e445]:
+                        - generic [ref=e446]:
+                          - generic [ref=e447]: "Größe:"
+                          - text: 80/195/40 cm
+                        - generic [ref=e448]:
+                          - generic [ref=e449]: "Farben:"
+                          - text: Weiß
+                      - generic [ref=e450]:
+                        - generic [ref=e451]: Die Verpackung war schon mit Klebeband ausgebessert, aber der Schrank hatte auch leichte Beschädigungen überall. Also nicht zu empfehlen wenn die Verpackung so bleibt.
+                        - generic [ref=e452]:
+                          - generic [ref=e453]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e454]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e455]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                        - list [ref=e456]:
+                          - listitem [ref=e457]:
+                            - generic [ref=e458]: Antwort von Mömax
+                            - generic [ref=e459]: Vor 1 Monat
+                            - generic [ref=e460]: Es tut uns sehr leid, dass die Verpackung bereits ausgebessert wirkte und der Schrank beschädigt bei Ihnen angekommen ist. Das entspricht selbstverständlich nicht unserem Qualitätsanspruch. Eine sichere und unversehrte Lieferung hat für uns höchste Priorität. Bitte entschuldigen Sie die entstandenen Unannehmlichkeiten. Wir werden den geschilderten Fall intern prüfen, insbesondere im Hinblick auf Verpackung und Versandabwicklung. Wenden Sie sich gerne mit Fotos der Beschädigungen an unseren Kundenservice, damit wir schnell eine zufriedenstellende Lösung für Sie finden können.
+                  - article [ref=e461]:
+                    - heading "Optik hui, Qualität naja" [level=3] [ref=e462]
+                    - generic [ref=e463]:
+                      - generic [ref=e464]:
+                        - text: Armenson
+                        - button "Informationen zum verifizierten Kauf" [ref=e465] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e466]: Vor 2 Monaten
+                    - generic [ref=e467]:
+                      - generic [ref=e468]:
+                        - generic [ref=e469]:
+                          - generic [ref=e470]: "Größe:"
+                          - text: 80 cm
+                        - generic [ref=e471]:
+                          - generic [ref=e472]: "Farben:"
+                          - text: Graphitfarben
+                      - generic [ref=e473]:
+                        - generic [ref=e474]:
+                          - button "Weiterlesen" [ref=e475] [cursor=pointer]:
+                            - generic [ref=e476] [cursor=pointer]:
+                              - text: Weiterlesen
+                              - img [ref=e477] [cursor=pointer]
+                          - generic [ref=e482]: Das Pressholz ist gleich mal durch gebrochen. Habe kleine Räder montiert gehabt, zum Glück auch an die Wand befestigt. Nach 3 Tagen (!) war der Boden durch. Habe jetzt ein richtiges Holz gekauft (gleiche Größe wie der Boden) das als Boden getauscht und die Räder montiert. Jetzt passt es. Die Rückwand ist auch nervig zu montieren. Sonst ist der Schrank schön, aber aufpassen auf das Gewicht pro Fach.
+                        - generic [ref=e483]:
+                          - generic [ref=e484]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e485]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e486]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                  - article [ref=e487]:
+                    - heading "Sehr Gut" [level=3] [ref=e488]
+                    - generic [ref=e489]:
+                      - generic [ref=e490]:
+                        - text: Florian Schuhmann
+                        - button "Informationen zum verifizierten Kauf" [ref=e491] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e492]: Vor 3 Monaten
+                    - generic [ref=e493]:
+                      - generic [ref=e494]:
+                        - generic [ref=e495]:
+                          - generic [ref=e496]: "Größe:"
+                          - text: 80/147/40 cm
+                        - generic [ref=e497]:
+                          - generic [ref=e498]: "Farben:"
+                          - text: Weiß
+                      - generic [ref=e499]:
+                        - generic [ref=e500]: Schlichter, Schöner, Funktionaler Schrank. War sehr einfach aufzubauen. Preis-Leistung Top.
+                        - generic [ref=e501]:
+                          - generic [ref=e502]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e503]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e504]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                  - article [ref=e505]:
+                    - heading "Stauraumschrank zu Superpreis" [level=3] [ref=e506]
+                    - generic [ref=e507]:
+                      - generic [ref=e508]:
+                        - text: Niki Str
+                        - button "Informationen zum verifizierten Kauf" [ref=e509] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e510]: Vor 4 Monaten
+                    - generic [ref=e511]:
+                      - generic [ref=e512]:
+                        - generic [ref=e513]:
+                          - generic [ref=e514]: "Größe:"
+                          - text: 45/195/40 cm
+                        - generic [ref=e515]:
+                          - generic [ref=e516]: "Farben:"
+                          - text: Eiche Artisan
+                      - generic [ref=e517]:
+                        - generic [ref=e518]: Schneller Aufbau, Preis-Leistungsverhältnis mehr als angemessen und erfüllt absolut meine Erwartungen!
+                        - generic [ref=e519]:
+                          - generic [ref=e520]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e521]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e522]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                  - article [ref=e523]:
+                    - heading "Platzwunder" [level=3] [ref=e524]
+                    - generic [ref=e525]:
+                      - generic [ref=e526]:
+                        - text: Mon
+                        - button "Informationen zum verifizierten Kauf" [ref=e527] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e528]: Vor 5 Monaten
+                    - generic [ref=e529]:
+                      - generic [ref=e530]:
+                        - generic [ref=e531]:
+                          - generic [ref=e532]: "Größe:"
+                          - text: 80/195/40 cm
+                        - generic [ref=e533]:
+                          - generic [ref=e534]: "Farben:"
+                          - text: Eiche Artisan
+                      - generic [ref=e535]:
+                        - generic [ref=e536]: Gut verarbeitet, viel platz für Putzzeug.
+                        - generic [ref=e537]:
+                          - generic [ref=e538]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e539]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e540]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                  - article [ref=e541]:
+                    - heading "Qualität" [level=3] [ref=e542]
+                    - generic [ref=e543]:
+                      - generic [ref=e544]:
+                        - text: Rona
+                        - button "Informationen zum verifizierten Kauf" [ref=e545] [cursor=pointer]
+                      - generic:
+                        - img
+                        - img
+                        - img
+                        - img
+                        - img
+                      - generic [ref=e546]: Vor 5 Monaten
+                    - generic [ref=e547]:
+                      - generic [ref=e548]:
+                        - generic [ref=e549]:
+                          - generic [ref=e550]: "Größe:"
+                          - text: 50/195/40 cm
+                        - generic [ref=e551]:
+                          - generic [ref=e552]: "Farben:"
+                          - text: Weiß
+                      - generic [ref=e553]:
+                        - generic [ref=e554]: Alles ok und Mitarbeiter sehr Nett 1160 Mömax
+                        - generic [ref=e555]:
+                          - generic [ref=e556]:
+                            - text: Preis
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e557]:
+                            - text: Qualität
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                          - generic [ref=e558]:
+                            - text: Optik
+                            - generic:
+                              - img
+                              - img
+                              - img
+                              - img
+                              - img
+                - button "Mehr laden" [ref=e559] [cursor=pointer]:
+                  - generic [ref=e560] [cursor=pointer]: Mehr laden
+          - generic [ref=e564]:
+            - heading "Optisch ähnliche Produkte" [level=2] [ref=e566]
+            - link "Die nächste Liste mit dem Titel Optisch ähnliche Produkte überspringen" [ref=e567] [cursor=pointer]:
+              - /url: "#skip-section-Liste-eyJpdGVtSWQiOiJjbXNpdGVtXzAwMTE0OTkwIiwiY2F0YWxvZ0lkIjoibW9lbWF4LmF0LWNvbnRlbnQiLCJjYXRhbG9nVmVyc2lvbiI6Ik9ubGluZSJ9"
+              - text: Abschnitt überspringen
+            - group [ref=e568]:
+              - group [ref=e569] [cursor=pointer]:
+                - article [ref=e570] [cursor=pointer]:
+                  - generic [ref=e571] [cursor=pointer]:
+                    - generic [ref=e572] [cursor=pointer]:
+                      - generic [ref=e573] [cursor=pointer]:
+                        - link "Mehrzweckschrank Arran Kaschmir" [ref=e574] [cursor=pointer]:
+                          - /url: /p/moemax-mehrzweckschrank-arran-kaschmir-000834016110
+                          - generic [ref=e575] [cursor=pointer]:
+                            - generic [ref=e576] [cursor=pointer]: Mehrzweckschrank
+                            - text: Arran Kaschmir
+                        - generic [ref=e577] [cursor=pointer]: Mömax
+                      - generic [ref=e578] [cursor=pointer]:
+                        - generic [ref=e579] [cursor=pointer]: Mehr Größen verfügbar
+                        - generic [ref=e580] [cursor=pointer]:
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                          - generic [ref=e581] [cursor=pointer]: (2)
+                    - generic [ref=e582] [cursor=pointer]:
+                      - generic [ref=e583] [cursor=pointer]: € 528,‒***
+                      - generic [ref=e584] [cursor=pointer]: € 279,‒
+                  - generic [ref=e585] [cursor=pointer]:
+                    - img "Mehrzweckschrank Arran Kaschmir - Kaschmir, MODERN, Holzwerkstoff (80/206/40cm) - Mömax" [ref=e587] [cursor=pointer]
+                    - button "Zu den Favoriten hinzufügen" [ref=e588] [cursor=pointer]
+                - article [ref=e589] [cursor=pointer]:
+                  - generic [ref=e590] [cursor=pointer]:
+                    - generic [ref=e592] [cursor=pointer]:
+                      - link "Aktenschrank \"serie 1500\" , Hellgrau" [ref=e593] [cursor=pointer]:
+                        - /url: /p/mid-you-aktenschrank-serie-1500-hellgrau-000895001411
+                        - generic [ref=e594] [cursor=pointer]:
+                          - generic [ref=e595] [cursor=pointer]: Aktenschrank
+                          - text: "\"serie 1500\" , Hellgrau"
+                      - generic [ref=e596] [cursor=pointer]: MID.YOU
+                    - generic [ref=e598] [cursor=pointer]: € 314,‒
+                    - generic [ref=e599] [cursor=pointer]:
+                      - img [ref=e600] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e603] [cursor=pointer]:
+                      - img [ref=e604] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e606] [cursor=pointer]:
+                    - img "Aktenschrank \"serie 1500\" , Hellgrau - Hellgrau, KONVENTIONELL, Holzwerkstoff (160/84,2/41cm) - MID.YOU" [ref=e608] [cursor=pointer]
+                    - generic [ref=e610]:
+                      - generic [ref=e611]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e612] [cursor=pointer]
+                - article [ref=e613] [cursor=pointer]:
+                  - generic [ref=e614] [cursor=pointer]:
+                    - generic [ref=e616] [cursor=pointer]:
+                      - link "Midischrank Bbk140w01" [ref=e617] [cursor=pointer]:
+                        - /url: /p/mid-you-midischrank-bbk140w01-002543018701
+                        - generic [ref=e618] [cursor=pointer]:
+                          - generic [ref=e619] [cursor=pointer]: Midischrank
+                          - text: Bbk140w01
+                      - generic [ref=e620] [cursor=pointer]: MID.YOU
+                    - generic [ref=e622] [cursor=pointer]: € 105,‒
+                    - generic [ref=e623] [cursor=pointer]:
+                      - img [ref=e624] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e627] [cursor=pointer]:
+                      - img [ref=e628] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e630] [cursor=pointer]:
+                    - img "Midischrank Bbk140w01 - Silberfarben/Weiß, Trend, Holzwerkstoff/Kunststoff (60/80/30cm) - MID.YOU" [ref=e632] [cursor=pointer]
+                    - generic [ref=e634]:
+                      - generic [ref=e635]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e636] [cursor=pointer]
+                - article [ref=e637] [cursor=pointer]:
+                  - generic [ref=e638] [cursor=pointer]:
+                    - generic [ref=e639] [cursor=pointer]:
+                      - generic [ref=e640] [cursor=pointer]:
+                        - link "Aktenschrank Office Edition Weiß" [ref=e641] [cursor=pointer]:
+                          - /url: /p/mid-you-aktenschrank-office-edition-wei-001067006510
+                          - generic [ref=e642] [cursor=pointer]:
+                            - generic [ref=e643] [cursor=pointer]: Aktenschrank
+                            - text: Office Edition Weiß
+                        - generic [ref=e644] [cursor=pointer]: MID.YOU
+                      - generic [ref=e646] [cursor=pointer]: Mehr Farben verfügbar
+                    - generic [ref=e648] [cursor=pointer]: € 405,‒
+                    - generic [ref=e649] [cursor=pointer]:
+                      - img [ref=e650] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e653] [cursor=pointer]:
+                      - img [ref=e654] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e656] [cursor=pointer]:
+                    - img "Aktenschrank Office Edition Weiß - Weiß, MODERN, Holzwerkstoff (84,5/114/33cm) - MID.YOU" [ref=e658] [cursor=pointer]
+                    - generic [ref=e660]:
+                      - generic [ref=e661]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e662] [cursor=pointer]
+                - article [ref=e663] [cursor=pointer]:
+                  - generic [ref=e664] [cursor=pointer]:
+                    - generic [ref=e665] [cursor=pointer]:
+                      - generic [ref=e666] [cursor=pointer]:
+                        - link "Mehrzweckschrank Projekt X Ca. 65x193 Cm Weiß" [ref=e667] [cursor=pointer]:
+                          - /url: /p/mid-you-mehrzweckschrank-projekt-x-ca-65x193-cm-wei-001849000404
+                          - generic [ref=e668] [cursor=pointer]:
+                            - generic [ref=e669] [cursor=pointer]: Mehrzweckschrank
+                            - text: Projekt X Ca. 65x193 Cm Weiß
+                        - generic [ref=e670] [cursor=pointer]: MID.YOU
+                      - generic [ref=e671] [cursor=pointer]:
+                        - generic [ref=e672] [cursor=pointer]: Mehr Größen verfügbar
+                        - generic [ref=e673] [cursor=pointer]:
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                          - generic [ref=e674] [cursor=pointer]: (3)
+                    - generic [ref=e676] [cursor=pointer]: € 439,‒
+                    - generic [ref=e677] [cursor=pointer]:
+                      - img [ref=e678] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e681] [cursor=pointer]:
+                      - img [ref=e682] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e684] [cursor=pointer]:
+                    - img "Mehrzweckschrank Projekt X Ca. 65x193 Cm Weiß - Chromfarben/Schwarz, MODERN, Glas/Holzwerkstoff (65/193/37cm) - MID.YOU" [ref=e686] [cursor=pointer]
+                    - generic [ref=e688]:
+                      - generic [ref=e689]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e690] [cursor=pointer]
+                - article [ref=e691] [cursor=pointer]:
+                  - generic [ref=e692] [cursor=pointer]:
+                    - generic [ref=e694] [cursor=pointer]:
+                      - link "Aktenschrank Serie 200 Weiß" [ref=e695] [cursor=pointer]:
+                        - /url: /p/mid-you-aktenschrank-serie-200-wei-000895000214
+                        - generic [ref=e696] [cursor=pointer]:
+                          - generic [ref=e697] [cursor=pointer]: Aktenschrank
+                          - text: Serie 200 Weiß
+                      - generic [ref=e698] [cursor=pointer]: MID.YOU
+                    - generic [ref=e700] [cursor=pointer]: € 303,‒
+                    - generic [ref=e701] [cursor=pointer]:
+                      - img [ref=e702] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e705] [cursor=pointer]:
+                      - img [ref=e706] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e708] [cursor=pointer]:
+                    - img "Aktenschrank Serie 200 Weiß - Weiß, Basics, Holzwerkstoff (65,1/182,4/34,5cm) - MID.YOU" [ref=e710] [cursor=pointer]
+                    - generic [ref=e712]:
+                      - generic [ref=e713]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e714] [cursor=pointer]
+                - article [ref=e715] [cursor=pointer]:
+                  - generic [ref=e716] [cursor=pointer]:
+                    - generic [ref=e718] [cursor=pointer]:
+                      - link "Aktenschrank Niels H650 Anthrazit" [ref=e719] [cursor=pointer]:
+                        - /url: /p/mid-you-aktenschrank-niels-h650-anthrazit-000895010414
+                        - generic [ref=e720] [cursor=pointer]:
+                          - generic [ref=e721] [cursor=pointer]: Aktenschrank
+                          - text: Niels H650 Anthrazit
+                      - generic [ref=e722] [cursor=pointer]: MID.YOU
+                    - generic [ref=e724] [cursor=pointer]: € 325,‒
+                    - generic [ref=e725] [cursor=pointer]:
+                      - img [ref=e726] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e729] [cursor=pointer]:
+                      - img [ref=e730] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e732] [cursor=pointer]:
+                    - img "Aktenschrank Niels H650 Anthrazit - Anthrazit, MODERN, Holzwerkstoff (65,1/163,6/41cm) - MID.YOU" [ref=e734] [cursor=pointer]
+                    - generic [ref=e736]:
+                      - generic [ref=e737]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e738] [cursor=pointer]
+                - article [ref=e739] [cursor=pointer]:
+                  - generic [ref=e740] [cursor=pointer]:
+                    - generic [ref=e741] [cursor=pointer]:
+                      - generic [ref=e742] [cursor=pointer]:
+                        - link "Aktenschrank Office Edition Sw Set 16 Weiß" [ref=e743] [cursor=pointer]:
+                          - /url: /p/mid-you-aktenschrank-office-edition-sw-set-16-wei-001067008407
+                          - generic [ref=e744] [cursor=pointer]:
+                            - generic [ref=e745] [cursor=pointer]: Aktenschrank
+                            - text: Office Edition Sw Set 16 Weiß
+                        - generic [ref=e746] [cursor=pointer]: MID.YOU
+                      - generic [ref=e748] [cursor=pointer]: Mehr Farben verfügbar
+                    - generic [ref=e750] [cursor=pointer]: € 995,‒
+                    - generic [ref=e751] [cursor=pointer]:
+                      - img [ref=e752] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e755] [cursor=pointer]:
+                      - img [ref=e756] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e758] [cursor=pointer]:
+                    - img "Aktenschrank Office Edition Sw Set 16 Weiß - Weiß, MODERN, Holzwerkstoff (172,6/113,6/33cm) - MID.YOU" [ref=e760] [cursor=pointer]
+                    - generic [ref=e762]:
+                      - generic [ref=e763]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e764] [cursor=pointer]
+                - article [ref=e765] [cursor=pointer]:
+                  - generic [ref=e766] [cursor=pointer]:
+                    - generic [ref=e767] [cursor=pointer]:
+                      - generic [ref=e768] [cursor=pointer]:
+                        - link "Aktenschrank Ribera In Weiß" [ref=e769] [cursor=pointer]:
+                          - /url: /p/premium-living-aktenschrank-ribera-in-wei-001258027309
+                          - generic [ref=e770] [cursor=pointer]:
+                            - generic [ref=e771] [cursor=pointer]: Aktenschrank
+                            - text: Ribera In Weiß
+                        - generic [ref=e772] [cursor=pointer]: Premium Living
+                      - generic [ref=e774] [cursor=pointer]:
+                        - generic:
+                          - img
+                          - img
+                          - img
+                          - img
+                          - img
+                        - generic [ref=e775] [cursor=pointer]: (1)
+                    - generic [ref=e776] [cursor=pointer]:
+                      - generic [ref=e777] [cursor=pointer]: € 620,‒***
+                      - generic [ref=e778] [cursor=pointer]:
+                        - text: € 298,
+                        - superscript [ref=e779] [cursor=pointer]: "97"
+                    - generic [ref=e780] [cursor=pointer]:
+                      - img [ref=e781] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e783] [cursor=pointer]:
+                    - img "Aktenschrank Ribera In Weiß - Weiß, MODERN, Holzwerkstoff (81/120/40cm) - Premium Living" [ref=e785] [cursor=pointer]
+                    - generic [ref=e787]:
+                      - generic [ref=e788]: Club-Preis
+                      - button "Zu den Favoriten hinzufügen" [ref=e789] [cursor=pointer]
+                - article [ref=e790] [cursor=pointer]:
+                  - generic [ref=e791] [cursor=pointer]:
+                    - generic [ref=e792] [cursor=pointer]:
+                      - generic [ref=e793] [cursor=pointer]:
+                        - link "Aktenschrank Office Edition Sw Set 10 Weiß" [ref=e794] [cursor=pointer]:
+                          - /url: /p/mid-you-aktenschrank-office-edition-sw-set-10-wei-001067008207
+                          - generic [ref=e795] [cursor=pointer]:
+                            - generic [ref=e796] [cursor=pointer]: Aktenschrank
+                            - text: Office Edition Sw Set 10 Weiß
+                        - generic [ref=e797] [cursor=pointer]: MID.YOU
+                      - generic [ref=e799] [cursor=pointer]: Mehr Varianten verfügbar
+                    - generic [ref=e801] [cursor=pointer]: € 895,‒
+                    - generic [ref=e802] [cursor=pointer]:
+                      - img [ref=e803] [cursor=pointer]
+                      - text: Artikel nur online verfügbar
+                    - generic [ref=e806] [cursor=pointer]:
+                      - img [ref=e807] [cursor=pointer]
+                      - text: Kostenloser Versand
+                  - generic [ref=e809] [cursor=pointer]:
+                    - img "Aktenschrank Office Edition Sw Set 10 Weiß - Weiß, MODERN, Holzwerkstoff (212,9/185,6/33cm) - MID.YOU" [ref=e811] [cursor=pointer]
+                    - generic [ref=e813]:
+                      - generic [ref=e814]: ONLINE PLUS
+                      - button "Zu den Favoriten hinzufügen" [ref=e815] [cursor=pointer]
+              - button "Nächste Folie" [ref=e816] [cursor=pointer]
+    - contentinfo [ref=e817]:
+      - generic [ref=e818]:
+        - list [ref=e820]:
+          - listitem [ref=e821]:
+            - link "Click & Collect" [ref=e822] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e823] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e824]:
+            - link "30 Tage Rückgabe" [ref=e825] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e826] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e827]:
+            - link "Gratis Transporter" [ref=e828] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e829] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e830]:
+            - link "Montage & Lieferung" [ref=e831] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e832] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e833]:
+          - link "Die nächste Liste überspringen" [ref=e834] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+            - text: Abschnitt überspringen
+          - generic [ref=e835]:
+            - generic [ref=e837]:
+              - generic [ref=e838]: Über uns
+              - list [ref=e839]:
+                - listitem [ref=e840]:
+                  - link "Presse" [ref=e841] [cursor=pointer]:
+                    - /url: https://pr.moemax.at
+                - listitem [ref=e842]:
+                  - link "Jobs bei mömax" [ref=e843] [cursor=pointer]:
+                    - /url: https://karriere.moemax.at
+                - listitem [ref=e844]:
+                  - link "Unternehmen" [ref=e845] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e846]:
+                  - link "Blog" [ref=e847] [cursor=pointer]:
+                    - /url: https://blog.moemax.de
+                - listitem [ref=e848]:
+                  - link "Aktueller Service" [ref=e849] [cursor=pointer]:
+                    - /url: /c/serviceuebersicht
+                - listitem [ref=e850]:
+                  - link "Barrierefreiheit" [ref=e851] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+                - listitem [ref=e852]:
+                  - link "Auszeichnungen" [ref=e853] [cursor=pointer]:
+                    - /url: /c/auszeichnungen
+            - generic [ref=e855]:
+              - generic [ref=e856]: Service
+              - list [ref=e857]:
+                - listitem [ref=e858]:
+                  - link "Aktuelle Aktionen" [ref=e859] [cursor=pointer]:
+                    - /url: /c/pink-shopping
+                - listitem [ref=e860]:
+                  - link "Prospekte" [ref=e861] [cursor=pointer]:
+                    - /url: /c/prospekte
+                - listitem [ref=e862]:
+                  - link "Aktionsbedingungen" [ref=e863] [cursor=pointer]:
+                    - /url: /c/aktionsnews
+                - listitem [ref=e864]:
+                  - link "Bonus Card" [ref=e865] [cursor=pointer]:
+                    - /url: /c/unserebonuscard
+                - listitem [ref=e866]:
+                  - link "Gutscheine online einlösen" [ref=e867] [cursor=pointer]:
+                    - /url: /c/onlinegutscheine-einloesen
+                - listitem [ref=e868]:
+                  - link "Geschenkgutscheine" [ref=e869] [cursor=pointer]:
+                    - /url: https://geschenkkarten.moemax.at/b2c/
+                - listitem [ref=e870]:
+                  - link "Lieferung & Montage" [ref=e871] [cursor=pointer]:
+                    - /url: /c/lieferungundmontage
+                - listitem [ref=e872]:
+                  - link "Leihtransporter buchen (Selbstabholung)" [ref=e873] [cursor=pointer]:
+                    - /url: /transporter
+                - listitem [ref=e874]:
+                  - link "Firmenkunden (B2B)" [ref=e875] [cursor=pointer]:
+                    - /url: /c/b2b
+                - listitem [ref=e876]:
+                  - link "Premiumschutz" [ref=e877] [cursor=pointer]:
+                    - /url: /c/helvetia-versicherungen
+                - listitem [ref=e878]:
+                  - link "Konfiguratoren" [ref=e879] [cursor=pointer]:
+                    - /url: /c/konfiguratoren
+            - generic [ref=e881]:
+              - generic [ref=e882]: Kontakt
+              - list [ref=e883]:
+                - listitem [ref=e884]:
+                  - link "Auftragsstatus" [ref=e885] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e886]:
+                  - link "Bestellhotline" [ref=e887] [cursor=pointer]:
+                    - /url: /c/bestellhotline
+                - listitem [ref=e888]:
+                  - link "Newsletter" [ref=e889] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e890]:
+                  - link "Click & Collect" [ref=e891] [cursor=pointer]:
+                    - /url: /c/clickundcollect
+                - listitem [ref=e892]:
+                  - link "Versand" [ref=e893] [cursor=pointer]:
+                    - /url: /c/lieferungundmontage
+                - listitem [ref=e894]:
+                  - link "FAQ" [ref=e895] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e896]:
+                  - link "Retouren & Reklamationen" [ref=e897] [cursor=pointer]:
+                    - /url: /c/retouren
+            - generic [ref=e899]:
+              - generic [ref=e900]: Filialen und Standorte
+              - list [ref=e901]:
+                - listitem [ref=e902]:
+                  - link "Standorte" [ref=e903] [cursor=pointer]:
+                    - /url: /filialen-at
+                - listitem [ref=e904]:
+                  - link "Filialschnäppchen" [ref=e905] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e906]:
+                  - link "Restaurants" [ref=e907] [cursor=pointer]:
+                    - /url: /c/unserrestaurant
+                - listitem [ref=e908]:
+                  - link "Beratungstermin" [ref=e909] [cursor=pointer]:
+                    - /url: /c/beratungstermin-vereinbaren
+                - listitem [ref=e910]:
+                  - link "Küchenberater" [ref=e911] [cursor=pointer]:
+                    - /url: /c/kuechen-beratungstermin
+                - listitem [ref=e912]:
+                  - link "Gratis Transporter" [ref=e913] [cursor=pointer]:
+                    - /url: /c/transporterleihen
+        - generic [ref=e915]:
+          - generic [ref=e918]:
+            - paragraph [ref=e919]: Du hast noch Fragen?
+            - generic [ref=e920]:
+              - generic [ref=e921]:
+                - link "Zum Kontaktformular" [ref=e922] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e923] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e924]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e925]:
+                - link "Häufig gestellte Fragen" [ref=e926] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e927] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e928]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e929]:
+            - generic [ref=e930]: Versandpartner
+            - generic [ref=e931]:
+              - img "Gebrüder Weiss Logo" [ref=e934]
+              - img "Post Logo" [ref=e937]
+          - generic [ref=e938]:
+            - generic [ref=e939]: Zahlungsmöglichkeiten
+            - generic [ref=e940]:
+              - img "Klarna Logo" [ref=e943]
+              - img "PayPal Logo" [ref=e946]
+              - img "Visa Logo" [ref=e949]
+              - img "Mastercard Logo" [ref=e952]
+              - img "Split It Logo" [ref=e955]
+              - img "Google Pay Logo" [ref=e958]
+              - img "Apple Pay Logo" [ref=e961]
+          - generic [ref=e962]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Österreich möglich. Änderungen und Irrtümer vorbehalten. *Vom Hersteller unverbindlich empfohlener Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***Herstellerlistenpreis
+        - generic [ref=e965]:
+          - link "Möemax" [ref=e966] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e967] [cursor=pointer]: Möemax
+            - img [ref=e969] [cursor=pointer]
+          - generic [ref=e972]: © 2026 moemax GmbH
+          - list [ref=e973]:
+            - listitem [ref=e974]:
+              - link "Impressum" [ref=e975] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e976]:
+              - link "AGB" [ref=e977] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e978]:
+              - link "Datenschutz" [ref=e979] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e980]:
+              - button "Cookie-Einstellungen" [ref=e981] [cursor=pointer]
+          - list [ref=e982]:
+            - listitem [ref=e983]:
+              - link "facebook" [ref=e984] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.at/
+            - listitem [ref=e985]:
+              - link "instagram" [ref=e986] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_at/
+            - listitem [ref=e987]:
+              - link "youtube" [ref=e988] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCIeEQdLnz8qzEzrkz1k1Ymw
+            - listitem [ref=e989]:
+              - link "tiktok" [ref=e990] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e991]:
+              - link "pinterest" [ref=e992] [cursor=pointer]:
+                - /url: https://www.pinterest.at/moemax_oesterreich/
+          - link "WACA Bronze" [ref=e993] [cursor=pointer]:
+            - /url: /c/accessibility
+            - img "WACA Bronze" [ref=e994] [cursor=pointer]
+  - dialog "dialog" [ref=e995]:
+    - generic [ref=e996]:
+      - heading "Cookies helfen Ihnen & uns" [level=3] [ref=e998]:
+        - generic [ref=e999]:
+          - img [ref=e1000]
+          - text: Cookies helfen Ihnen & uns
+      - generic [ref=e1013]:
+        - paragraph [ref=e1014]: Wir von Mömax setzen Cookies und ähnliche Technologien („Cookies“) ein. Wir nutzen die Cookies und verarbeiten die durch die Cookies erhobenen Daten, um Ihnen die Website und ihre Funktionalitäten zur Verfügung zu stellen, ein optimales Einkaufserlebnis zu bieten, unsere Services bereitzustellen und zu verbessern, Ihr Nutzungsverhalten kennenzulernen und individualisierte Werbung und Inhalte auf unserer Website und Drittseiten, in unseren Newslettern und im Rahmen unserer Bonuscard zu zeigen.
+        - list [ref=e1016]:
+          - listitem [ref=e1017]:
+            - text: .
+            - paragraph [ref=e1019]: Wenn Sie auf „Alle Cookies akzeptieren“ klicken, stimmen Sie dem Einsatz aller Cookies, die in den Cookie-Einstellungen aufgelistet sind, zu. Sie können Ihre Zustimmung in den Cookie-Einstellungen jederzeit für die Zukunft widerrufen oder ändern.
+          - listitem [ref=e1020]:
+            - text: .
+            - paragraph [ref=e1022]: Wenn Sie im Folgenden auf „Weiter ohne Einwilligung“ klicken, setzen wir nur Essentielle Cookies und cookielose Technologien zur Bannerausspielung.
+          - listitem [ref=e1023]:
+            - text: .
+            - paragraph [ref=e1025]: Wenn Sie auf „Cookie-Einstellungen“ klicken, können Sie die Cookies individuell auswählen und mehr über diese erfahren.
+        - generic [ref=e1026]:
+          - button "Alle Cookies akzeptieren" [ref=e1027] [cursor=pointer]:
+            - generic [ref=e1028] [cursor=pointer]: Alle Cookies akzeptieren
+          - button "Weiter ohne Einwilligung" [ref=e1030] [cursor=pointer]:
+            - generic [ref=e1031] [cursor=pointer]: Weiter ohne Einwilligung
+        - list [ref=e1033]:
+          - listitem [ref=e1034]:
+            - button "Cookie Einstellungen" [active] [ref=e1035] [cursor=pointer]:
+              - generic [ref=e1036] [cursor=pointer]: Cookie Einstellungen
+          - listitem [ref=e1037]:
+            - button "Datenschutzerklärung" [ref=e1038] [cursor=pointer]:
+              - generic [ref=e1039] [cursor=pointer]: Datenschutzerklärung
+          - listitem [ref=e1040]:
+            - button "Impressum" [ref=e1041] [cursor=pointer]:
+              - generic [ref=e1042] [cursor=pointer]: Impressum
+```
