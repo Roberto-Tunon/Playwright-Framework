@@ -17,7 +17,7 @@ test(testTitle, async ({ browser }: { browser: Browser }) => {
   const page: Page = await context.newPage();
   await page.setViewportSize({ width: 1920, height: 1080 });
 
-  const pay: string = process.env.PAY ?? "default";
+  const pay: string = process.env.PAY ?? "default";  
   const cod_country: string = process.env.COUNTRY ?? "default";
   const rail: string = process.env.RAIL ?? "default";
   const mode: string = process.env.MODE ?? "1P";
