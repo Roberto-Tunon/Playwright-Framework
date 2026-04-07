@@ -13,6 +13,11 @@ on:
 jobs:
   Setup:
     runs-on: ubuntu-latest
+    
+    # Force Node.js 24 for GitHub Actions
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    
     timeout-minutes: 30
     
     steps:
@@ -88,8 +93,11 @@ jobs:
 
   Tests:
     runs-on: ubuntu-latest
-    needs: Setup
-    timeout-minutes: 60
+    needs: Setup    
+    # Force Node.js 24 for GitHub Actions
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+        timeout-minutes: 60
     
     steps:
       # Step 5: Clone the repository again (needed for new job)
