@@ -1,10 +1,10 @@
 # GitHub Actions Setup - Daily Regression Tests
 
-## ¿Qué hemos configurado?
+## What have we configured?
 
-Se ha creado un **workflow de GitHub Actions** que reemplaza tu cronjob actual. El script `runner.js` se ejecutará **todos los días a las 9:00 UTC** automáticamente.
+A **GitHub Actions workflow** has been created that replaces your current cronjob. The `runner.js` script will run **every day at 9:00 UTC** automatically.
 
-## Ubicación del archivo
+## File location
 
 ```
 .github/workflows/daily-regression-tests.yml
@@ -12,91 +12,91 @@ Se ha creado un **workflow de GitHub Actions** que reemplaza tu cronjob actual. 
 
 ---
 
-## 📋 ¿Cómo funciona?
+## 📋 How does it work?
 
-### 1. **Trigger (Disparador)**
+### 1. **Trigger (Scheduler)**
 ```yaml
 schedule:
   - cron: '0 9 * * *'
 ```
-- Se ejecuta a las **9:00 UTC** cada día
-- El primer `0` = minuto 0
-- El segundo `9` = hora 9
-- Los `* * *` = todos los días, todos los meses, todos los días de la semana
+- Runs at **9:00 UTC** every day
+- First `0` = minute 0
+- Second `9` = hour 9
+- `* * *` = every day, every month, every day of the week
 
-### 2. **Pasos del workflow**
+### 2. **Workflow steps**
 
-| Paso | Acción |
+| Step | Action |
 |------|--------|
-| **Checkout** | Descarga el código del repositorio |
-| **Setup Node.js** | Configura Node.js v18 + caché de npm |
-| **Install dependencies** | Ejecuta `npm ci` (instalación limpia) |
-| **Install Playwright browsers** | Descarga los navegadores necesarios |
-| **Run tests** | Ejecuta `node runner.js` |
-| **Upload results** | Sube los reportes de Allure y dashboard |
+| **Checkout** | Downloads the repository code |
+| **Setup Node.js** | Configures Node.js v18 + npm cache |
+| **Install dependencies** | Runs `npm ci` (clean install) |
+| **Install Playwright browsers** | Downloads required browsers |
+| **Run tests** | Executes `node runner.js` |
+| **Upload results** | Uploads Allure reports and dashboard |
 
 ---
 
-## 🕐 Ajustar la hora de ejecución
+## 🕐 Adjust execution time
 
-Si quieres que se ejecute a diferente hora, edita la línea de cron:
+If you want to run at a different time, edit the cron line:
 
 ```yaml
-# Ejemplos:
-cron: '0 9 * * *'     # 9:00 UTC (actual)
+# Examples:
+cron: '0 9 * * *'     # 9:00 UTC (current)
 cron: '0 14 * * *'    # 14:00 UTC
 cron: '30 8 * * *'    # 8:30 UTC
-cron: '0 9 * * 1-5'   # Solo lunes a viernes a las 9:00 UTC
+cron: '0 9 * * 1-5'   # Monday to Friday at 9:00 UTC
 ```
 
-> **Nota:** GitHub usa **UTC**. Si tu cronjob estaba en otra zona horaria, ajusta la hora.
+> **Note:** GitHub uses **UTC**. If your cronjob was in a different timezone, adjust the time accordingly.
 
 ---
 
-## ✅ Verificar que funciona
+## ✅ Verify it works
 
-1. Abre tu repositorio en GitHub
-2. Ve a la pestaña **Actions**
-3. Busca el workflow **"Daily Regression Tests"**
-4. Verás un calendario con las ejecuciones programadas
+1. Open your repository on GitHub
+2. Go to the **Actions** tab
+3. Find the **"Daily Regression Tests"** workflow
+4. You'll see a calendar with scheduled executions
 
-### Para probar manualmente:
+### To test manually:
 
-Haz clic en el workflow → **Run workflow** → **Run workflow**
+Click on the workflow → **Run workflow** → **Run workflow**
 
-Esto ejecutará las pruebas inmediatamente sin esperar a las 9:00.
-
----
-
-## 📊 Ver resultados
-
-Después de cada ejecución:
-
-1. **Dentro** del job → pestaña **Summary**
-2. **Sección** "Artifacts" → descarga:
-   - `allure-results/` → datos brutos de Allure
-   - `allure-report/` → reporte HTML generado
+This will run the tests immediately without waiting for 9:00.
 
 ---
 
-## 🔄 Diferencias: Cronjob vs GitHub Actions
+## 📊 View results
 
-| Aspecto | Cronjob | GitHub Actions |
-|---------|---------|-----------------|
-| **Dónde se ejecuta** | Tu máquina local | Servidores de GitHub |
-| **Configuración** | `crontab -e` en terminal | `.github/workflows/*.yml` en repo |
-| **Logs** | Terminal local / archivos | GitHub UI → Actions tab |
-| **Fallos** | Necesitas monitoreo externo | Notificaciones del repo |
-| **Escalabilidad** | Limitado a tu máquina | Ilimitado (gratuito hasta cierto punto) |
-| **Git-friendly** | No | Sí, versionado con el código |
+After each execution:
+
+1. **Inside** the job → **Summary** tab
+2. **Artifacts** section → download:
+   - `allure-results/` → raw Allure data
+   - `allure-report/` → generated HTML report
 
 ---
 
-## 🛠️ Personalización avanzada
+## 🔄 Differences: Cronjob vs GitHub Actions
 
-### 1. **Notificaciones por email en caso de fallo**
+| Aspect | Cronjob | GitHub Actions |
+|--------|---------|-----------------|
+| **Where it runs** | Your local machine | GitHub servers |
+| **Configuration** | `crontab -e` in terminal | `.github/workflows/*.yml` in repo |
+| **Logs** | Local terminal / files | GitHub UI → Actions tab |
+| **Failures** | Need external monitoring | Automatic repo notifications |
+| **Scalability** | Limited to your machine | Unlimited (free tier available) |
+| **Git-friendly** | No | Yes, versioned with code |
 
-Agrega al final del archivo `yml`:
+---
+
+## 🛠️ Advanced customization
+
+### 1. **Email notifications on failure**
+
+Add to the end of the `yml` file:
 
 ```yaml
 - name: Send notification on failure
@@ -110,60 +110,60 @@ Agrega al final del archivo `yml`:
     subject: "❌ Regression Tests Failed"
     to: your-email@example.com
     from: ${{ secrets.MAIL_FROM }}
-    body: "Ver detalles: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+    body: "View details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 ```
 
-### 2. **Ejecutar solo en ciertos días**
+### 2. **Run only on specific days**
 
 ```yaml
-# Solo lunes a viernes
+# Monday to Friday only
 cron: '0 9 * * 1-5'
 
-# Solo martes y jueves
+# Tuesday and Thursday only
 cron: '0 9 * * 2,4'
 ```
 
-### 3. **Guardar historial de reportes**
+### 3. **Save report history**
 
-Actualmente se guardan 30 días. Para cambiar:
+Currently saved for 30 days. To change:
 
 ```yaml
-retention-days: 60  # En la sección de artifacts
+retention-days: 60  # In the artifacts section
 ```
 
 ---
 
-## ⚙️ Monitoreo y alertas
+## ⚙️ Monitoring and alerts
 
-### GitHub proporciona:
-- ✅ Email automático si el workflow falla
-- ✅ Historial completo de ejecuciones
-- ✅ Logs detallados de cada paso
+### GitHub provides:
+- ✅ Automatic email if workflow fails
+- ✅ Complete execution history
+- ✅ Detailed logs for each step
 
-### Próximos pasos opcionales:
-- Integrar con Slack / Discord para notificaciones
-- Publicar resultados de Allure en una página web
-- Crear un dashboard que muestre tendencias
-
----
-
-## 📝 Notas importantes
-
-1. **Permisos**: GitHub Actions necesita permiso para escribir en el repositorio. Esto está habilitado por defecto.
-
-2. **Costo**: GitHub regala 2000 minutos/mes de Actions para repositorios públicos. Las pruebas usan máximo ~10-15 min, así que no hay problema.
-
-3. **Zona horaria**: GitHub siempre usa **UTC**. Si necesitas que sea a las 9:00 tu hora local, ajusta el cron.
-
-4. **Secretos**: Si necesitas credenciales o tokens, úsalos bajo `${{ secrets.VARIABLE_NAME }}` (ver configuración del repo → Settings → Secrets).
+### Optional next steps:
+- Integrate with Slack / Discord for notifications
+- Publish Allure results on a web page
+- Create a dashboard showing trends
 
 ---
 
-## 🚀 Próximos pasos
+## 📝 Important notes
 
-1. Haz push de los cambios
-2. Abre GitHub → Actions y verifica que el workflow aparece
-3. Espera a las 9:00 UTC o ejecuta manualmente para probar
-4. Monitorea los primeros reportes
+1. **Permissions**: GitHub Actions needs permission to write to the repository. This is enabled by default.
 
-¡Listo! Por ahora tu cronjob está reemplazado por una solución más robusta y fácil de mantener. 🎉
+2. **Cost**: GitHub provides 2000 free minutes/month of Actions for public repositories. Tests use ~10-15 minutes max, so no problem.
+
+3. **Timezone**: GitHub always uses **UTC**. If you need 9:00 in your local time, adjust the cron accordingly.
+
+4. **Secrets**: If you need credentials or tokens, use them under `${{ secrets.VARIABLE_NAME }}` (see repo Settings → Secrets).
+
+---
+
+## 🚀 Next steps
+
+1. Push your changes
+2. Open GitHub → Actions and verify the workflow appears
+3. Wait until 9:00 UTC or run manually to test
+4. Monitor the first reports
+
+Done! Your cronjob is now replaced with a more robust and maintainable solution. 🎉
