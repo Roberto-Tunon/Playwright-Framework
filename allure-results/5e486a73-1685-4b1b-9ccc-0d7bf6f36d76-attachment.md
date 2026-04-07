@@ -1,0 +1,247 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Möemax" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: Möemax
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e12] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e13]:
+        - status [ref=e14]:
+          - generic [ref=e15]: Bestellübersicht | Mömax
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - navigation "breadcrumbs" [ref=e19]:
+              - list [ref=e20]:
+                - listitem [ref=e21]:
+                  - link "Startseite" [ref=e23] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e24]:
+                  - link "Warenkorb" [ref=e26] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e27] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e28]
+            - paragraph [ref=e29]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e30]:
+              - generic [ref=e31]:
+                - heading "Rechnungsadresse" [level=2] [ref=e35] [cursor=pointer]
+                - button "bearbeiten" [ref=e37] [cursor=pointer]:
+                  - generic [ref=e38] [cursor=pointer]: bearbeiten
+                - generic [ref=e43]:
+                  - generic [ref=e45]:
+                    - term [ref=e46]:
+                      - paragraph [ref=e47]: Kontakt
+                    - definition:
+                      - paragraph
+                      - paragraph
+                  - generic [ref=e49]:
+                    - term [ref=e50]:
+                      - paragraph [ref=e51]: Rechnungsadresse
+                    - definition [ref=e52]:
+                      - paragraph [ref=e53]: Roberto Tuñon
+                      - paragraph [ref=e54]: Bahnhofstraße 10
+                      - paragraph [ref=e55]: "10178"
+                      - paragraph [ref=e56]: Berlin
+              - generic [ref=e57]:
+                - heading "Zahlungsarten" [level=2] [ref=e61] [cursor=pointer]
+                - button "bearbeiten" [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64] [cursor=pointer]: bearbeiten
+                - paragraph [ref=e68]: PayPal
+              - generic [ref=e69]:
+                - generic [ref=e72]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e73]
+                - generic [ref=e76]:
+                  - paragraph [ref=e77]: Roberto Tuñon, bitte überprüfen Sie alle Angaben auf Richtigkeit und klicken Sie auf den Zahlungsbutton am Ende des Formulars.
+                  - button "Kommentar hinzufügen (optional)" [ref=e80] [cursor=pointer]:
+                    - generic [ref=e81] [cursor=pointer]: Kommentar hinzufügen (optional)
+                  - article [ref=e83]:
+                    - img "Relaxsessel Melinda Grün Cord - Schwarz/Grün, KONVENTIONELL, Holz/Kunststoff (76/103/96cm) - Mömax" [ref=e85]
+                    - generic [ref=e86]: Club-Preis
+                    - heading "Mömax Relaxsessel Melinda Grün Cord" [level=4] [ref=e88]:
+                      - generic [ref=e89]: Mömax Relaxsessel
+                      - generic [ref=e90]: Melinda Grün Cord
+                    - generic [ref=e91]:
+                      - generic [ref=e92]: Grün
+                      - generic [ref=e93]: 76/103/96 cm
+                    - generic [ref=e95]: "Preis für 1 Stk.:"
+                    - generic [ref=e96]:
+                      - generic [ref=e97]: 738,00 €***
+                      - generic [ref=e98]:
+                        - text: 222,
+                        - superscript [ref=e99]: "00"
+                        - text: €
+                    - generic [ref=e100]:
+                      - generic [ref=e101]:
+                        - generic [ref=e102]: Selbstabholung
+                        - generic [ref=e103]: Gratis!
+                      - generic [ref=e104]:
+                        - generic [ref=e105]: Abholbereit in 22-23 Wochen
+                        - generic [ref=e106]: mömax Berlin Schöneweide
+                  - generic [ref=e107]:
+                    - generic [ref=e108]: Warenwert
+                    - generic [ref=e109]:
+                      - text: 222,
+                      - superscript [ref=e110]: "00"
+                      - text: €
+                    - button "Lieferkosten" [ref=e111] [cursor=pointer]:
+                      - generic [ref=e112] [cursor=pointer]: Lieferkosten
+                    - generic [ref=e113]: gratis
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: Gesamt
+                    - generic [ref=e116]:
+                      - text: 222,
+                      - superscript [ref=e117]: "00"
+                      - text: €
+                    - generic [ref=e118]: inkl. MwSt.
+                  - generic [ref=e120]:
+                    - generic [ref=e121]:
+                      - text: Mit Ihrer Bestellung erklären Sie sich mit unseren
+                      - link "AGB" [ref=e122] [cursor=pointer]:
+                        - /url: "#agb"
+                      - text: und
+                      - link "Widerrufsbelehrung" [ref=e123] [cursor=pointer]:
+                        - /url: "#widerrufsbelehrung"
+                      - text: einverstanden.
+                    - iframe [active] [ref=e130]:
+                      - link "Pay with PayPal" [ref=f1e5] [cursor=pointer]:
+                        - generic [ref=f1e7] [cursor=pointer]: Pay with
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - heading "Warenkorb" [level=3] [ref=e133]
+              - link "Warenkorb Bearbeiten" [ref=e134] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e135] [cursor=pointer]: Bearbeiten
+            - generic [ref=e136]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e137] [cursor=pointer]:
+                - img [ref=e141] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e142]
+              - generic [ref=e143]:
+                - generic [ref=e144]: Warenwert
+                - generic [ref=e145]:
+                  - text: 222,
+                  - superscript [ref=e146]: "00"
+                  - text: €
+                - button "Lieferkosten" [ref=e147] [cursor=pointer]:
+                  - generic [ref=e148] [cursor=pointer]: Lieferkosten
+                - generic [ref=e149]: gratis
+              - generic [ref=e150]:
+                - generic [ref=e151]: Gesamt
+                - generic [ref=e152]:
+                  - text: 222,
+                  - superscript [ref=e153]: "00"
+                  - text: €
+                - generic [ref=e154]: inkl. MwSt.
+              - generic [ref=e156]:
+                - button "Gutscheincode" [ref=e157] [cursor=pointer]:
+                  - generic [ref=e158] [cursor=pointer]: Gutscheincode
+                  - img [ref=e159] [cursor=pointer]
+                - generic [ref=e161]:
+                  - generic [ref=e164]:
+                    - textbox "Code kopieren" [ref=e165]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e166] [cursor=pointer]:
+                    - generic [ref=e167] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e168]:
+              - listitem [ref=e169]: Umfangreiches Filialnetz
+              - listitem [ref=e170]: 30 Tage Rückgaberecht
+              - listitem [ref=e171]: Sicher bezahlen
+    - contentinfo [ref=e172]:
+      - generic [ref=e173]:
+        - list [ref=e176]:
+          - listitem [ref=e177]:
+            - link "Click & Collect" [ref=e178] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e179] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e180]:
+            - link "30 Tage Rückgabe" [ref=e181] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e182] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e183]:
+            - link "Gratis Transporter" [ref=e184] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e185] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e186]:
+            - link "Montage & Lieferung" [ref=e187] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e188] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e190]:
+          - generic [ref=e193]:
+            - paragraph [ref=e194]: Du hast noch Fragen?
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - link "Zum Kontaktformular" [ref=e197] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e198] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e199]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e200]:
+                - link "Häufig gestellte Fragen" [ref=e201] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e202] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e203]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e204]:
+            - generic [ref=e205]: Versandpartner
+            - generic [ref=e206]:
+              - img "Rhenus Home Delivery Logo" [ref=e209]
+              - img "Hermes Logo" [ref=e212]
+              - img "DHL Logo" [ref=e215]
+          - generic [ref=e216]:
+            - generic [ref=e217]: Zahlungsmöglichkeiten
+            - generic [ref=e218]:
+              - img "Split It Logo" [ref=e221]
+              - img "Klarna Logo" [ref=e224]
+              - img "PayPal Logo" [ref=e227]
+              - img "Visa Logo" [ref=e230]
+              - img "Mastercard Logo" [ref=e233]
+              - img "Google Pay Logo" [ref=e236]
+              - img "Apple Pay Logo" [ref=e239]
+          - generic [ref=e240]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***UVP
+        - generic [ref=e243]:
+          - link "Möemax" [ref=e244] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e245] [cursor=pointer]: Möemax
+            - img [ref=e247] [cursor=pointer]
+          - generic [ref=e250]: © 2026 moemax Deutschland GmbH
+          - list [ref=e251]:
+            - listitem [ref=e252]:
+              - link "Impressum" [ref=e253] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e254]:
+              - link "AGB" [ref=e255] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e256]:
+              - link "Datenschutz" [ref=e257] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e258]:
+              - button "Cookie-Einstellungen" [ref=e259] [cursor=pointer]
+          - list [ref=e260]:
+            - listitem [ref=e261]:
+              - link "facebook" [ref=e262] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.de/
+            - listitem [ref=e263]:
+              - link "instagram" [ref=e264] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_de/
+            - listitem [ref=e265]:
+              - link "youtube" [ref=e266] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/MoemaxAT
+            - listitem [ref=e267]:
+              - link "tiktok" [ref=e268] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e269]:
+              - link "pinterest" [ref=e270] [cursor=pointer]:
+                - /url: https://www.pinterest.de/moemax_com/
+          - link "WACA Bronze" [ref=e271] [cursor=pointer]:
+            - /url: /c/accessibility
+            - img "WACA Bronze" [ref=e272] [cursor=pointer]
+  - generic:
+    - log
+```

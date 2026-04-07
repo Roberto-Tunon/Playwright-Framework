@@ -1,0 +1,397 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "10€ Gutschein bei Newsletteranmeldung" [ref=e9] [cursor=pointer]:
+              - /url: /c/newsletter
+              - generic [ref=e10] [cursor=pointer]: 10€ Gutschein bei Newsletteranmeldung
+            - link "PayPal 0%-Finanzierung¹" [ref=e11] [cursor=pointer]:
+              - /url: /c/paypal-ratenkauf
+              - generic [ref=e12] [cursor=pointer]: PayPal 0%-Finanzierung¹
+          - generic [ref=e14]:
+            - link "58 Filialen in Ihrer Nähe" [ref=e15] [cursor=pointer]:
+              - /url: /filialen-standorte
+              - generic [ref=e16] [cursor=pointer]: 58 Filialen in Ihrer Nähe
+            - link "Prospekte" [ref=e17] [cursor=pointer]:
+              - /url: /c/unsere-prospekte
+              - generic [ref=e18] [cursor=pointer]: Prospekte
+            - link "Hilfe & Kontakt" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: Hilfe & Kontakt
+            - switch "Hoher Kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Hoher Kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Navigation wechseln" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menü
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Suchen" [ref=e43] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e44]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+          - generic [ref=e45]:
+            - button "Anmelden" [ref=e47] [cursor=pointer]:
+              - generic [ref=e48] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e50] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e51] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 1 Produkt" [ref=e53] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e54] [cursor=pointer]: "1"
+              - generic [ref=e55] [cursor=pointer]: Warenkorb
+          - navigation [ref=e56]:
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - link "Möbel" [ref=e59] [cursor=pointer]:
+                  - /url: /c/moebel
+              - listitem [ref=e60]:
+                - link "Garten" [ref=e61] [cursor=pointer]:
+                  - /url: /c/garten
+              - listitem [ref=e62]:
+                - link "Küchen" [ref=e63] [cursor=pointer]:
+                  - /url: /c/kuechenwelt
+              - listitem [ref=e64]:
+                - link "Deko & Textil" [ref=e65] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+              - listitem [ref=e66]:
+                - link "Haushalt" [ref=e67] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+              - listitem [ref=e68]:
+                - link "Lampen" [ref=e69] [cursor=pointer]:
+                  - /url: /lampen-leuchten-C84
+              - listitem [ref=e70]:
+                - link "Kinder & Baby" [ref=e71] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e72]:
+                - link "Angebote" [ref=e73] [cursor=pointer]:
+                  - /url: /c/moebel-angebote
+              - listitem [ref=e74]:
+                - link "Inspiration" [ref=e75] [cursor=pointer]:
+                  - /url: /c/wohnideen
+              - listitem [ref=e76]:
+                - link "Ostermarkt" [ref=e77] [cursor=pointer]:
+                  - /url: /c/oster-fruehlingsmarkt
+              - listitem [ref=e78]:
+                - link "Restaurant" [ref=e79] [cursor=pointer]:
+                  - /url: /c/restaurant
+              - listitem [ref=e80]:
+                - link "Newsletter" [ref=e81] [cursor=pointer]:
+                  - /url: /c/newsletter
+      - main [ref=e82]:
+        - status [ref=e83]:
+          - generic [ref=e84]: Warenkorb - XXXLutz
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - heading "Warenkorb" [level=1] [ref=e89]
+              - link "weiter einkaufen" [ref=e90] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e91] [cursor=pointer]: weiter einkaufen
+            - generic [ref=e92]:
+              - alert [ref=e96]:
+                - generic [ref=e97]: Bitte wählen Sie eine Abholfiliale aus.
+              - generic [ref=e98]: Verkauf durch XXXLutz
+              - list [ref=e99]:
+                - listitem [ref=e100]:
+                  - article [ref=e101]:
+                    - generic [ref=e102]:
+                      - img "HIGHBOARD 128/130/42,3 cm - Eichefarben/Silberfarben, Natur, Glas/Holz (128/130/42,3cm) - Voglauer" [ref=e103]
+                      - link [ref=e104] [cursor=pointer]:
+                        - /url: /p/voglauer-highboard-128-130-42-3-cm-000142004023
+                    - generic [ref=e105]:
+                      - generic [ref=e106]: High End
+                      - generic [ref=e107]:
+                        - generic [ref=e108]: "000142004023"
+                        - link "Artikelnr. 0142004023" [ref=e109] [cursor=pointer]:
+                          - /url: /p/voglauer-highboard-128-130-42-3-cm-000142004023
+                          - generic [ref=e110] [cursor=pointer]: Artikelnr. 0142004023
+                      - link "Voglauer HIGHBOARD 128/130/42,3 cm" [ref=e112] [cursor=pointer]:
+                        - /url: /p/voglauer-highboard-128-130-42-3-cm-000142004023
+                        - heading "Voglauer HIGHBOARD 128/130/42,3 cm" [level=2] [ref=e113] [cursor=pointer]:
+                          - generic [ref=e114] [cursor=pointer]: Voglauer HIGHBOARD
+                          - generic [ref=e115] [cursor=pointer]: 128/130/42,3 cm
+                      - generic [ref=e116]:
+                        - generic [ref=e117]: Eichefarben
+                        - generic [ref=e118]: Holz, Glas
+                        - generic [ref=e119]: 128/130/42,3 cm
+                      - paragraph [ref=e122]:
+                        - text: Verkauf & Versand durch
+                        - generic [ref=e123]: XXXLutz
+                    - generic [ref=e126]:
+                      - generic [ref=e128]:
+                        - text: 2.699,
+                        - superscript [ref=e129]: "00"
+                        - text: €
+                      - generic [ref=e130]: 2.699,00 € / Stk
+                    - generic [ref=e131]:
+                      - button "Produkt entfernen - HIGHBOARD 128/130/42,3 cm" [ref=e132] [cursor=pointer]
+                      - generic [ref=e133]:
+                        - textbox "Menge" [ref=e134]: "1"
+                        - generic [ref=e135]: Menge
+                      - button "1" [ref=e136] [cursor=pointer]:
+                        - generic [ref=e137] [cursor=pointer]: "1"
+                      - button "Anzahl erhöhen - HIGHBOARD 128/130/42,3 cm" [ref=e138] [cursor=pointer]
+                    - generic [ref=e140]:
+                      - button "HIGHBOARD 128/130/42,3 cm - Für später merken" [ref=e141] [cursor=pointer]:
+                        - generic [ref=e143] [cursor=pointer]: Für später merken
+                      - button "HIGHBOARD 128/130/42,3 cm - Produkt entfernen" [ref=e144] [cursor=pointer]:
+                        - generic [ref=e146] [cursor=pointer]: Produkt entfernen
+                  - generic [ref=e147]:
+                    - generic [ref=e148]:
+                      - generic [ref=e152]: Selbstabholung
+                      - button "Filiale wählen" [ref=e154] [cursor=pointer]:
+                        - generic [ref=e155] [cursor=pointer]: Filiale wählen
+                      - generic [ref=e156]:
+                        - text: Lieferkosten
+                        - generic [ref=e157]: + 0,00 €
+                    - paragraph [ref=e158]:
+                      - generic [ref=e159]: Bitte prüfen Sie die genaue Abholadresse Ihrer Artikel in Ihrer Bestellbestätigung.
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - heading "Zusammenfassung" [level=2] [ref=e163]
+              - generic [ref=e164]:
+                - generic [ref=e165]:
+                  - generic [ref=e166]: Warenwert
+                  - generic [ref=e167]:
+                    - text: 2.699,
+                    - superscript [ref=e168]: "00"
+                    - text: €
+                  - button "Lieferkosten" [ref=e169] [cursor=pointer]:
+                    - generic [ref=e170] [cursor=pointer]: Lieferkosten
+                  - generic [ref=e171]: gratis
+                - generic [ref=e172]:
+                  - generic [ref=e173]: Gesamtsumme
+                  - generic [ref=e174]:
+                    - text: 2.699,
+                    - superscript [ref=e175]: "00"
+                    - text: €
+                  - generic [ref=e176]: inkl. gesetzlicher MwSt.
+                - button "Zur Kasse" [ref=e177] [cursor=pointer]:
+                  - generic [ref=e178] [cursor=pointer]: Zur Kasse
+                - separator "oder" [ref=e179]
+                - generic [ref=e180]:
+                  - button "Mit GPay kaufen" [ref=e185] [cursor=pointer]
+                  - button "Mit Apple Pay kaufen" [ref=e190] [cursor=pointer]:
+                    - img [ref=e192] [cursor=pointer]:
+                      - generic [ref=e193] [cursor=pointer]:
+                        - generic [ref=e194] [cursor=pointer]: Mit
+                        - img [ref=e195] [cursor=pointer]
+                        - generic [ref=e203] [cursor=pointer]: kaufen
+            - generic [ref=e205]:
+              - button "Gutscheincode" [ref=e206] [cursor=pointer]:
+                - generic [ref=e207] [cursor=pointer]: Gutscheincode
+                - img [ref=e208] [cursor=pointer]
+              - generic [ref=e210]:
+                - generic [ref=e213]:
+                  - textbox "Code kopieren" [ref=e214]
+                  - generic: Code kopieren
+                - button "Gutschein einlösen" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e216] [cursor=pointer]: Gutschein einlösen
+          - complementary [ref=e217]:
+            - link "weiter einkaufen" [ref=e218] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e219] [cursor=pointer]: weiter einkaufen
+    - contentinfo [ref=e220]:
+      - generic [ref=e221]:
+        - generic [ref=e222]:
+          - link "Die nächste Liste überspringen" [ref=e223] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1_SERVICE"
+            - text: Abschnitt überspringen
+          - generic [ref=e224]:
+            - generic [ref=e226]:
+              - generic [ref=e227]: Services & Hilfe
+              - list [ref=e228]:
+                - listitem [ref=e229]:
+                  - link "Auftragsstatus" [ref=e230] [cursor=pointer]:
+                    - /url: /auftragsstatus
+                - listitem [ref=e231]:
+                  - link "Aktionsbedingungen" [ref=e232] [cursor=pointer]:
+                    - /url: /c/newsaktion
+                - listitem [ref=e233]:
+                  - link "Service Überblick" [ref=e234] [cursor=pointer]:
+                    - /url: /c/service
+                - listitem [ref=e235]:
+                  - link "Retouren & Reklamationen" [ref=e236] [cursor=pointer]:
+                    - /url: /c/retouren-reklamationen
+                - listitem [ref=e237]:
+                  - link "Versand & Lieferung" [ref=e238] [cursor=pointer]:
+                    - /url: /faq/versand-lieferung/lieferkosten
+                - listitem [ref=e239]:
+                  - link "Click & Collect" [ref=e240] [cursor=pointer]:
+                    - /url: /c/click-collect-xxxlutz
+                - listitem [ref=e241]:
+                  - link "Zahlungsarten" [ref=e242] [cursor=pointer]:
+                    - /url: /faq/zahlung-gutscheine/zahlungsarten
+                - listitem [ref=e243]:
+                  - link "Altgeräterücknahme" [ref=e244] [cursor=pointer]:
+                    - /url: /c/altgeraete-entsorgung
+                - listitem [ref=e245]:
+                  - link "Gutscheine einlösen" [ref=e246] [cursor=pointer]:
+                    - /url: /c/onlinegutscheine-einloesen
+                - listitem [ref=e247]:
+                  - link "Babybox" [ref=e248] [cursor=pointer]:
+                    - /url: /c/babybox
+            - generic [ref=e250]:
+              - generic [ref=e251]: Mein XXXLutz
+              - list [ref=e252]:
+                - listitem [ref=e253]:
+                  - link "Mein Konto" [ref=e254] [cursor=pointer]:
+                    - /url: /signin
+                - listitem [ref=e255]:
+                  - link "Freundschaftskarte" [ref=e256] [cursor=pointer]:
+                    - /url: /c/freundschaftskarte
+                - listitem [ref=e257]:
+                  - link "Newsletter" [ref=e258] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e259]:
+                  - link "Mein XXXL BLOG" [ref=e260] [cursor=pointer]:
+                    - /url: /c/mein-xxxl-blog
+                - listitem [ref=e261]:
+                  - link "Prospekte & TV" [ref=e262] [cursor=pointer]:
+                    - /url: /c/unsere-prospekte
+                - listitem [ref=e263]:
+                  - link "Filialschnäppchen" [ref=e264] [cursor=pointer]:
+                    - /url: /hs
+                - listitem [ref=e265]:
+                  - link "Lucy Homefield" [ref=e266] [cursor=pointer]:
+                    - /url: /c/ki-interior-social
+                - listitem [ref=e267]:
+                  - link "Barrierefreiheit" [ref=e268] [cursor=pointer]:
+                    - /url: /c/barrierefreiheit
+            - generic [ref=e270]:
+              - generic [ref=e271]: Planung & Beratung
+              - list [ref=e272]:
+                - listitem [ref=e273]:
+                  - link "Beratungstermin vereinbaren" [ref=e274] [cursor=pointer]:
+                    - /url: /c/termin-vereinbaren
+                - listitem [ref=e275]:
+                  - link "Küchenberatung" [ref=e276] [cursor=pointer]:
+                    - /url: /c/kuechenberatung
+                - listitem [ref=e277]:
+                  - link "Küchenplaner" [ref=e278] [cursor=pointer]:
+                    - /url: /c/kitchenplanner
+                - listitem [ref=e279]:
+                  - link "Konfiguratoren" [ref=e280] [cursor=pointer]:
+                    - /url: /c/xxxlutz-konfiguratoren
+                - listitem [ref=e281]:
+                  - link "Objekteinrichtung" [ref=e282] [cursor=pointer]:
+                    - /url: /c/b2b
+                - listitem [ref=e283]:
+                  - link "Premium Marken" [ref=e284] [cursor=pointer]:
+                    - /url: /c/designermoebel
+            - generic [ref=e286]:
+              - generic [ref=e287]: Über XXXLutz
+              - list [ref=e288]:
+                - listitem [ref=e289]:
+                  - link "Standorte" [ref=e290] [cursor=pointer]:
+                    - /url: /filialen-standorte
+                - listitem [ref=e291]:
+                  - link "Restaurant" [ref=e292] [cursor=pointer]:
+                    - /url: /c/restaurant
+                - listitem [ref=e293]:
+                  - link "Küchenstudios" [ref=e294] [cursor=pointer]:
+                    - /url: /kuechenstudios
+                - listitem [ref=e295]:
+                  - link "Unternehmen" [ref=e296] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e297]:
+                  - link "Compliance & Integrität" [ref=e298] [cursor=pointer]:
+                    - /url: /c/compliance
+                - listitem [ref=e299]:
+                  - link "Partner werden" [ref=e300] [cursor=pointer]:
+                    - /url: /c/partner
+                - listitem [ref=e301]:
+                  - link "Marketplace" [ref=e302] [cursor=pointer]:
+                    - /url: /c/marketplace
+                - listitem [ref=e303]:
+                  - link "Pressecenter" [ref=e304] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.de/
+                - listitem [ref=e305]:
+                  - link "Jobs & Karriere" [ref=e306] [cursor=pointer]:
+                    - /url: https://karriere.xxxlutz.de/
+        - generic [ref=e308]:
+          - generic [ref=e311]:
+            - paragraph [ref=e312]: Hilfe & Kontakt
+            - generic [ref=e313]:
+              - generic [ref=e314]:
+                - link "Zum Kontaktformular" [ref=e315] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e316] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e317]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e318]:
+                - link "Häufig gestellte Fragen" [ref=e319] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e320] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e321]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e322]:
+            - generic [ref=e323]: Versand
+            - generic [ref=e324]:
+              - img "DHL" [ref=e327]
+              - img "Hermes" [ref=e330]
+              - img "XXXLutz Spedition" [ref=e333]
+          - generic [ref=e334]:
+            - generic [ref=e335]: Zahlungsmöglichkeiten
+            - generic [ref=e336]:
+              - img "Paypal" [ref=e339]
+              - img "Klarna" [ref=e342]
+              - img "Master Card" [ref=e345]
+              - img "Visa" [ref=e348]
+              - img "Google Pay" [ref=e351]
+              - img "Apple Pay" [ref=e354]
+              - img "Logo Billie" [ref=e357]
+          - generic [ref=e358]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. ***Filialpreis ohne Freundschaftskarte.
+        - generic [ref=e361]:
+          - link "XXXLutz" [ref=e362] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e363] [cursor=pointer]: XXXLutz
+            - img [ref=e365] [cursor=pointer]
+          - generic [ref=e371]: © 2026 BDSK Handels GmbH & Co. KG
+          - list [ref=e372]:
+            - listitem [ref=e373]:
+              - link "IMPRESSUM" [ref=e374] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e375]:
+              - link "DATENSCHUTZ" [ref=e376] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e377]:
+              - link "AGB" [ref=e378] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e379]:
+              - button "COOKIE-EINSTELLUNGEN" [ref=e380] [cursor=pointer]
+          - list [ref=e381]:
+            - listitem [ref=e382]:
+              - link "facebook" [ref=e383] [cursor=pointer]:
+                - /url: https://www.facebook.com/XXXLutzDeutschland
+            - listitem [ref=e384]:
+              - link "instagram" [ref=e385] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_de/
+            - listitem [ref=e386]:
+              - link "pinterest" [ref=e387] [cursor=pointer]:
+                - /url: https://www.pinterest.de/xxxlutzdeutschland/
+            - listitem [ref=e388]:
+              - link "youtube" [ref=e389] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC1w2HpXiRl5pbLGQEwnUl2w
+            - listitem [ref=e390]:
+              - link "tiktok" [ref=e391] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_de
+          - link [ref=e392] [cursor=pointer]:
+            - /url: /accessibility
+  - generic:
+    - generic:
+      - generic:
+        - iframe
+  - generic:
+    - log
+```

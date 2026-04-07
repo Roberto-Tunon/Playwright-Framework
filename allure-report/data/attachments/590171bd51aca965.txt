@@ -1,0 +1,3 @@
+Params: Country: CH, Rail: XXXLUTZ, Mode: 1P, Pay: TW
+ℹ️ Delivery option searching Self Service
+✅ Self Service (Click & Collect) found. Selecting...

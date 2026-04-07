@@ -1,0 +1,383 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link "10% Gutschein bei Newsletteranmeldung" [ref=e9] [cursor=pointer]:
+            - /url: /c/newsletter
+            - generic [ref=e10] [cursor=pointer]: 10% Gutschein bei Newsletteranmeldung
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - link "Hilfe & Kontakt" [ref=e13] [cursor=pointer]:
+                - /url: /faq
+                - generic [ref=e14] [cursor=pointer]: Hilfe & Kontakt
+              - link "Filialfinder" [ref=e15] [cursor=pointer]:
+                - /url: /filialen-standorte
+                - generic [ref=e16] [cursor=pointer]: Filialfinder
+              - link "Flyer & Prospekte" [ref=e17] [cursor=pointer]:
+                - /url: /c/unsere-prospekte
+                - generic [ref=e18] [cursor=pointer]: Flyer & Prospekte
+              - switch "Hoher Kontrast" [ref=e19]
+              - generic [ref=e20] [cursor=pointer]:
+                - text: Hoher Kontrast
+                - img [ref=e21] [cursor=pointer]
+            - button "DE" [ref=e26] [cursor=pointer]:
+              - generic [ref=e27] [cursor=pointer]: DE
+        - generic [ref=e28]:
+          - button "Navigation wechseln" [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: Menü
+          - link "XXXLutz" [ref=e31] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e32] [cursor=pointer]: XXXLutz
+            - img [ref=e34] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e40] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e41]:
+            - generic [ref=e42]:
+              - button "Suchen" [ref=e44] [cursor=pointer]
+              - searchbox "Suche nach Produkten, Marken oder Neuheiten" [ref=e45]
+              - generic: Suche nach Produkten, Marken oder Neuheiten
+          - generic [ref=e46]:
+            - button "Anmelden" [ref=e48] [cursor=pointer]:
+              - generic [ref=e49] [cursor=pointer]: Anmelden
+            - link "Favoriten 0 Produkte" [ref=e51] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e52] [cursor=pointer]: Merkliste
+            - link "Mein Warenkorb 1 Produkt" [ref=e54] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e55] [cursor=pointer]: "1"
+              - generic [ref=e56] [cursor=pointer]: Warenkorb
+          - navigation [ref=e57]:
+            - list [ref=e58]:
+              - listitem [ref=e59]:
+                - link "Möbel" [ref=e60] [cursor=pointer]:
+                  - /url: /c/moebel
+              - listitem [ref=e61]:
+                - link "Garten" [ref=e62] [cursor=pointer]:
+                  - /url: /gartenmoebel-C8
+              - listitem [ref=e63]:
+                - link "Küche" [ref=e64] [cursor=pointer]:
+                  - /url: /c/kuechenwelt
+              - listitem [ref=e65]:
+                - link "Kochen & Essen" [ref=e66] [cursor=pointer]:
+                  - /url: /c/kochen-essen
+              - listitem [ref=e67]:
+                - link "Deko & Textil" [ref=e68] [cursor=pointer]:
+                  - /url: /c/wohnaccessoires
+              - listitem [ref=e69]:
+                - link "Lampen" [ref=e70] [cursor=pointer]:
+                  - /url: /lampen-leuchten-C10
+              - listitem [ref=e71]:
+                - link "Baby" [ref=e72] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e73]:
+                - link "Freizeit & Co" [ref=e74] [cursor=pointer]:
+                  - /url: /freizeit-co-C61
+              - listitem [ref=e75]:
+                - link "Angebote" [ref=e76] [cursor=pointer]:
+                  - /url: /c/aus-unserer-werbung
+              - listitem [ref=e77]:
+                - link "Trends" [ref=e78] [cursor=pointer]:
+                  - /url: /c/inspiration
+              - listitem [ref=e79]:
+                - link "Sale %" [ref=e80] [cursor=pointer]:
+                  - /url: /c/xxxl-ausverkauf
+      - main [ref=e81]:
+        - generic [ref=e85]:
+          - generic [ref=e87]:
+            - generic [ref=e89]: Neu hier? Jetzt Kundenkonto anlegen und viele Vorteile geniessen
+            - link "Jetzt registrieren" [ref=e91] [cursor=pointer]:
+              - /url: /signin
+          - button "close" [ref=e92] [cursor=pointer]
+        - status [ref=e93]:
+          - generic [ref=e94]: Warenkorb - XXXLutz.ch
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - heading "Warenkorb" [level=1] [ref=e99]
+              - link "weiter einkaufen" [ref=e100] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e101] [cursor=pointer]: weiter einkaufen
+            - generic [ref=e102]:
+              - generic [ref=e103]: Verkauf durch XXXLutz
+              - list [ref=e104]:
+                - listitem [ref=e105]:
+                  - article [ref=e106]:
+                    - generic [ref=e107]:
+                      - img "ECKSOFA Flachgewebe Limette - Chromfarben/Limette, Design, Holz/Textil (132/240cm) - Koinor" [ref=e108]
+                      - link [ref=e109] [cursor=pointer]:
+                        - /url: /p/koinor-ecksofa-flachgewebe-limette-001171013402
+                    - generic [ref=e110]:
+                      - generic [ref=e111]:
+                        - generic [ref=e112]: "001171013402"
+                        - link "Artikelnr. 1171013402" [ref=e113] [cursor=pointer]:
+                          - /url: /p/koinor-ecksofa-flachgewebe-limette-001171013402
+                          - generic [ref=e114] [cursor=pointer]: Artikelnr. 1171013402
+                      - link "Koinor ECKSOFA Flachgewebe Limette" [ref=e116] [cursor=pointer]:
+                        - /url: /p/koinor-ecksofa-flachgewebe-limette-001171013402
+                        - heading "Koinor ECKSOFA Flachgewebe Limette" [level=2] [ref=e117] [cursor=pointer]:
+                          - generic [ref=e118] [cursor=pointer]: Koinor ECKSOFA
+                          - generic [ref=e119] [cursor=pointer]: Flachgewebe Limette
+                      - generic [ref=e120]:
+                        - generic [ref=e121]: Limette
+                        - generic [ref=e122]: 132/240 cm
+                      - paragraph [ref=e125]:
+                        - text: Verkauf & Versand durch
+                        - generic [ref=e126]: XXXLutz
+                    - generic [ref=e129]:
+                      - generic [ref=e131]: CHF 7’149.‒
+                      - generic [ref=e132]: CHF 7’149.‒ / Stk
+                    - generic [ref=e133]:
+                      - button "Produkt entfernen - ECKSOFA Flachgewebe Limette" [ref=e134] [cursor=pointer]
+                      - generic [ref=e135]:
+                        - textbox "Menge" [ref=e136]: "1"
+                        - generic [ref=e137]: Menge
+                      - button "1" [ref=e138] [cursor=pointer]:
+                        - generic [ref=e139] [cursor=pointer]: "1"
+                      - button "Anzahl erhöhen - ECKSOFA Flachgewebe Limette" [ref=e140] [cursor=pointer]
+                    - generic [ref=e142]:
+                      - button "ECKSOFA Flachgewebe Limette - Für später merken" [ref=e143] [cursor=pointer]:
+                        - generic [ref=e145] [cursor=pointer]: Für später merken
+                      - button "ECKSOFA Flachgewebe Limette - Produkt entfernen" [ref=e146] [cursor=pointer]:
+                        - generic [ref=e148] [cursor=pointer]: Produkt entfernen
+                  - generic [ref=e149]:
+                    - generic [ref=e150]:
+                      - combobox "Lieferart wählen" [ref=e153] [cursor=pointer]:
+                        - generic [ref=e156] [cursor=pointer]: Selbstabholung
+                      - generic [ref=e160]:
+                        - generic [ref=e161]: Abholbereit in 8-9 Wochen
+                        - button "XXXLutz Abhollager Otelfingen" [ref=e166] [cursor=pointer]:
+                          - generic [ref=e170] [cursor=pointer]: XXXLutz Abhollager Otelfingen
+                      - generic [ref=e171]:
+                        - text: Lieferkosten
+                        - generic [ref=e172]: + CHF 0.‒
+                    - paragraph [ref=e173]:
+                      - generic [ref=e174]: Bitte prüfen Sie die genaue Abholadresse Ihrer Artikel in Ihrer Abholbestätigung.
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - heading "Zusammenfassung" [level=2] [ref=e178]
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - generic [ref=e181]: Warenwert
+                  - generic [ref=e182]: CHF 7’149.‒
+                  - button "Lieferkosten" [ref=e183] [cursor=pointer]:
+                    - generic [ref=e184] [cursor=pointer]: Lieferkosten
+                  - generic [ref=e185]: gratis
+                - generic [ref=e186]:
+                  - generic [ref=e187]: Gesamtsumme
+                  - generic [ref=e188]: CHF 7’149.‒
+                  - generic [ref=e189]: inkl. MwSt.
+                - button "zur Kasse" [ref=e190] [cursor=pointer]:
+                  - generic [ref=e191] [cursor=pointer]: zur Kasse
+                - separator "oder" [ref=e192]
+                - generic [ref=e193]:
+                  - button "Mit GPay kaufen" [ref=e198] [cursor=pointer]
+                  - button "Mit Apple Pay kaufen" [ref=e203] [cursor=pointer]:
+                    - img [ref=e205] [cursor=pointer]:
+                      - generic [ref=e206] [cursor=pointer]:
+                        - generic [ref=e207] [cursor=pointer]: Mit
+                        - img [ref=e208] [cursor=pointer]
+                        - generic [ref=e216] [cursor=pointer]: kaufen
+            - generic [ref=e218]:
+              - button "Gutscheincode" [ref=e219] [cursor=pointer]:
+                - generic [ref=e220] [cursor=pointer]: Gutscheincode
+                - img [ref=e221] [cursor=pointer]
+              - generic [ref=e223]:
+                - generic [ref=e226]:
+                  - textbox "Code kopieren" [ref=e227]
+                  - generic: Code kopieren
+                - button "Gutschein einlösen" [ref=e228] [cursor=pointer]:
+                  - generic [ref=e229] [cursor=pointer]: Gutschein einlösen
+          - complementary [ref=e230]:
+            - link "weiter einkaufen" [ref=e231] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e232] [cursor=pointer]: weiter einkaufen
+    - contentinfo [ref=e233]:
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - generic [ref=e236]: Ihre Vorteile
+          - list [ref=e237]:
+            - listitem [ref=e238]:
+              - link "10% Newsletter Gutschein" [ref=e239] [cursor=pointer]:
+                - /url: /c/newsletter
+                - text: 10% Newsletter Gutschein
+            - listitem [ref=e241]:
+              - link "Click & Collect" [ref=e242] [cursor=pointer]:
+                - /url: /c/click-and-collect
+                - text: Click & Collect
+            - listitem [ref=e244]:
+              - link "Gratis Postversand ab 99.– CHF Bestellwert" [ref=e245] [cursor=pointer]:
+                - /url: /c/onlinelieferung
+                - text: Gratis Postversand ab 99.– CHF Bestellwert
+            - listitem [ref=e247]:
+              - link "Gratis-Transporter bei Selbstabholung" [ref=e248] [cursor=pointer]:
+                - /url: /c/xxxl-transporter
+                - text: Gratis-Transporter bei Selbstabholung
+            - listitem [ref=e250]:
+              - link "Montageservice bei Lieferung" [ref=e251] [cursor=pointer]:
+                - /url: /c/lieferung-montage
+                - text: Montageservice bei Lieferung
+        - generic [ref=e253]:
+          - link "Die nächste Liste überspringen" [ref=e254] [cursor=pointer]:
+            - /url: "#skip-section-Liste-new_footer_third_section_node_1"
+            - text: Abschnitt überspringen
+          - generic [ref=e255]:
+            - generic [ref=e257]:
+              - generic [ref=e258]: Einkaufen bei XXXLutz
+              - list [ref=e259]:
+                - listitem [ref=e260]:
+                  - link "Mein Konto" [ref=e261] [cursor=pointer]:
+                    - /url: /signin
+                - listitem [ref=e262]:
+                  - link "Online Bestellung" [ref=e263] [cursor=pointer]:
+                    - /url: /c/xxxl-onlinekauf
+                - listitem [ref=e264]:
+                  - link "Lieferung & Versand" [ref=e265] [cursor=pointer]:
+                    - /url: /c/onlinelieferung
+                - listitem [ref=e266]:
+                  - link "Retoure & Reklamation" [ref=e267] [cursor=pointer]:
+                    - /url: /faq/retoure-reklamation/ware-retournieren
+                - listitem [ref=e268]:
+                  - link "Häufig gestellte Fragen (FAQ)" [ref=e269] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e270]:
+                  - link "Zahlungsarten" [ref=e271] [cursor=pointer]:
+                    - /url: /c/zahlungsarten
+                - listitem [ref=e272]:
+                  - link "Aktionsbedingungen" [ref=e273] [cursor=pointer]:
+                    - /url: /c/newsaktion
+                - listitem [ref=e274]:
+                  - link "Auftragsstatusabfrage" [ref=e275] [cursor=pointer]:
+                    - /url: /auftragsstatus
+            - generic [ref=e277]:
+              - generic [ref=e278]: Service
+              - list [ref=e279]:
+                - listitem [ref=e280]:
+                  - link "XXXL Service" [ref=e281] [cursor=pointer]:
+                    - /url: /c/service
+                - listitem [ref=e282]:
+                  - link "Premiumcard" [ref=e283] [cursor=pointer]:
+                    - /url: /c/premiumcard-vorteile
+                - listitem [ref=e284]:
+                  - link "Transporter leihen" [ref=e285] [cursor=pointer]:
+                    - /url: /c/xxxl-transporter
+                - listitem [ref=e286]:
+                  - link "Montage" [ref=e287] [cursor=pointer]:
+                    - /url: /c/lieferung-montage
+                - listitem [ref=e288]:
+                  - link "Click & Collect" [ref=e289] [cursor=pointer]:
+                    - /url: /c/click-and-collect
+                - listitem [ref=e290]:
+                  - link "Newsletter" [ref=e291] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e292]:
+                  - link "Geschenkkarte kaufen" [ref=e293] [cursor=pointer]:
+                    - /url: /c/geschenkkarte
+                - listitem [ref=e294]:
+                  - link "Konfiguratoren" [ref=e295] [cursor=pointer]:
+                    - /url: /c/xxxlutz-konfiguratoren
+            - generic [ref=e297]:
+              - generic [ref=e298]: Filialen & Standorte
+              - list [ref=e299]:
+                - listitem [ref=e300]:
+                  - link "Filialfinder" [ref=e301] [cursor=pointer]:
+                    - /url: /filialen-standorte
+                - listitem [ref=e302]:
+                  - link "Filialschnäppchen" [ref=e303] [cursor=pointer]:
+                    - /url: /hs
+                - listitem [ref=e304]:
+                  - link "Prospekte" [ref=e305] [cursor=pointer]:
+                    - /url: /c/unsere-prospekte
+                - listitem [ref=e306]:
+                  - link "Restaurant" [ref=e307] [cursor=pointer]:
+                    - /url: /c/restaurant
+                - listitem [ref=e308]:
+                  - link "Küchenberatung" [ref=e309] [cursor=pointer]:
+                    - /url: /c/kuechenberatung
+            - generic [ref=e311]:
+              - generic [ref=e312]: Über Uns
+              - list [ref=e313]:
+                - listitem [ref=e314]:
+                  - link "Jobs & Karriere" [ref=e315] [cursor=pointer]:
+                    - /url: https://karriere.xxxlutz.ch/
+                - listitem [ref=e316]:
+                  - link "Unternehmen" [ref=e317] [cursor=pointer]:
+                    - /url: /c/unternehmen
+                - listitem [ref=e318]:
+                  - link "XXXL Markenwelt" [ref=e319] [cursor=pointer]:
+                    - /url: /c/xxxlutz-markenwelt
+                - listitem [ref=e320]:
+                  - link "Pressecenter" [ref=e321] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.ch/
+        - generic [ref=e323]:
+          - generic [ref=e326]:
+            - paragraph [ref=e327]: Hilfe & Kontakt
+            - generic [ref=e328]:
+              - generic [ref=e329]:
+                - link "Zum Kontaktformular" [ref=e330] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e331] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e332]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e333]:
+                - link "Häufig gestellte Fragen" [ref=e334] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e335] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e336]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e337]:
+            - generic [ref=e338]: Versandpartner & Gütesiegel
+            - generic [ref=e339]:
+              - img "XXXLutz Serviceteam" [ref=e342]
+              - img "Die Post" [ref=e345]
+              - link "Swiss Online Garantie" [ref=e348] [cursor=pointer]:
+                - /url: https://www.swiss-online-garantie.ch/onlineshops/das-guetesiegel/
+                - img "Swiss Online Garantie" [ref=e349] [cursor=pointer]
+          - generic [ref=e350]:
+            - generic [ref=e351]: Zahlungsmöglichkeiten
+            - generic [ref=e352]:
+              - img "PayPal" [ref=e355]
+              - img "Mastercard" [ref=e358]
+              - img "Visa" [ref=e361]
+              - img "TWINT" [ref=e364]
+              - img "Klarna" [ref=e367]
+              - img "Google Pay" [ref=e370]
+              - img "Apple Pay" [ref=e373]
+          - generic [ref=e374]: Alle Preise sind Abholpreise in CHF.
+        - generic [ref=e377]:
+          - link "XXXLutz" [ref=e378] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e379] [cursor=pointer]: XXXLutz
+            - img [ref=e381] [cursor=pointer]
+          - generic [ref=e387]: © 2026 XLCH AG
+          - list [ref=e388]:
+            - listitem [ref=e389]:
+              - link "Impressum" [ref=e390] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e391]:
+              - link "AGB" [ref=e392] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e393]:
+              - link "Datenschutz" [ref=e394] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e395]:
+              - button "Cookie-Einstellungen" [ref=e396] [cursor=pointer]
+          - list [ref=e397]:
+            - listitem [ref=e398]:
+              - link "youtube" [ref=e399] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCKoWfx5OKxyHCeS9QnkdUYg
+            - listitem [ref=e400]:
+              - link "facebook" [ref=e401] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.ch/
+            - listitem [ref=e402]:
+              - link "instagram" [ref=e403] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_ch/
+            - listitem [ref=e404]:
+              - link "pinterest" [ref=e405] [cursor=pointer]:
+                - /url: https://ch.pinterest.com/xxxlutzch/
+          - link [ref=e406] [cursor=pointer]:
+            - /url: /accessibility
+  - generic:
+    - log
+```

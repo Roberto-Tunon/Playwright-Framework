@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e11]: Adyen Test Account
+      - generic [ref=e13]:
+        - generic [ref=e14]: Warenkorb
+        - generic [ref=e16]:
+          - generic [ref=e18]:
+            - generic [ref=e20]: SCHREIBTISCH 80/80/68-76 cm Silberfarben, Weiß
+            - generic [ref=e22]: 389,00 €
+          - generic [ref=e24]:
+            - generic [ref=e26]: Lieferkosten
+            - generic [ref=e28]: 49,95 €
+        - generic [ref=e29]:
+          - generic [ref=e31]: Gesamtsumme
+          - generic [ref=e33]: 438,95 €
+    - generic [ref=e34]:
+      - generic [ref=e36]: Schliesse jetzt deinen Einkauf ab
+      - generic [ref=e37]:
+        - iframe [ref=e42]:
+          - generic [ref=f1e5]:
+            - img [ref=f1e7]
+            - generic [ref=f1e9]: TestDrive
+            - iframe [ref=f1e19]:
+              - generic [ref=f2e4]:
+                - heading "Jetzt kaufen, erst in 30 Tagen bezahlen" [level=2] [ref=f2e5]
+                - list [ref=f2e7]:
+                  - listitem [ref=f2e8]: Billie verlangt keinerlei Gebühren.
+                  - listitem [ref=f2e9]: Keine Registrierung erforderlich.
+                  - listitem [ref=f2e10]: Europas beliebteste B2B-Zahlungsmethode.
+                - generic [ref=f2e11]:
+                  - text: Indem ich fortfahre, akzeptiere ich die
+                  - link "AGB des Händlers zu Billie x Klarna Services" [ref=f2e12] [cursor=pointer]:
+                    - /url: https://www.billie.io/agb/billie-klarna
+                  - text: und bestätige, dass ich die Datenschutzerklärung von
+                  - link "Billie und Billie Partners" [ref=f2e13] [cursor=pointer]:
+                    - /url: https://www.billie.io/partner-privacy-policy
+                  - text: gelesen habe.
+                  - link "Impressum" [ref=f2e14] [cursor=pointer]:
+                    - /url: https://www.billie.io/impressum
+                  - text: .
+        - generic [ref=e45]:
+          - generic [ref=e47]: Gesamtsumme
+          - generic [ref=e49]: 438,95 €
+        - generic [ref=e50]:
+          - button "Zurück" [ref=e51] [cursor=pointer]:
+            - generic [ref=e55] [cursor=pointer]: Zurück
+          - button [disabled] [ref=e57]:
+            - img [ref=e61]
+  - iframe [active] [ref=e66]:
+    - generic [ref=f3e1]:
+      - generic [ref=f3e4]:
+        - button [ref=f3e10] [cursor=pointer]:
+          - img [ref=f3e13] [cursor=pointer]
+        - iframe [active] [ref=f3e21]:
+          - generic [active] [ref=f4e1]:
+            - generic [ref=f4e5]:
+              - generic [ref=f4e7]:
+                - img [ref=f4e8]
+                - paragraph [ref=f4e10]: Angaben werden überprüft
+              - generic [ref=f4e11]:
+                - img [ref=f4e13]
+                - generic [ref=f4e16]: Der neue Standard für B2B-Zahlungen
+            - alert [ref=f4e17]: Klarna | Modal
+      - generic [ref=f3e25]:
+        - button [ref=f3e31] [cursor=pointer]:
+          - img [ref=f3e34] [cursor=pointer]
+        - generic [ref=f3e42]:
+          - heading "Ein Fehler ist aufgetreten" [level=1] [ref=f3e43]
+          - paragraph [ref=f3e46]: Wir haben zurzeit technische Schwierigkeiten mit dieser Zahlungsart. Bitte wähle eine andere Zahlungsart.
+        - button "Schließen" [ref=f3e51] [cursor=pointer]:
+          - generic [ref=f3e54] [cursor=pointer]: Schließen
+  - iframe
+```

@@ -1,0 +1,69 @@
+name: Daily Regression Tests
+
+# Trigger: Se ejecuta diariamente a las 9:00 UTC
+on:
+  schedule:
+    # Formato cron: minuto hora día mes día-semana
+    # 0 9 * * * = Todos los días a las 9:00 UTC
+    - cron: '0 9 * * *'
+  
+  # Permite ejecutar manualmente desde la UI
+  workflow_dispatch:
+
+jobs:
+  regression-tests:
+    runs-on: ubuntu-latest
+    
+    # Timeout para evitar que quede colgado
+    timeout-minutes: 60
+    
+    steps:
+      # Paso 1: Clonar el repositorio
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+      
+      # Paso 2: Configurar Node.js
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'  # Cachea node_modules para más velocidad
+      
+      # Paso 3: Instalar dependencias
+      - name: 📦 Install dependencies
+        run: npm ci  # ci = clean install (más confiable que npm install en CI)
+      
+      # Paso 4: Instalar navegadores de Playwright
+      - name: 🌐 Install Playwright browsers
+        run: npx playwright install --with-deps
+      
+      # Paso 5: Ejecutar las pruebas
+      - name: 🚀 Run regression tests
+        run: node runner.js
+      
+      # Paso 6: Subir reportes de Allure (si existen)
+      - name: 📊 Upload Allure results
+        if: always()  # Se ejecuta aunque falle el paso anterior
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results/
+          retention-days: 30  # Mantiene los resultados 30 días
+      
+      # Paso 7: Subir reporte HTML (dashboard)
+      - name: 📈 Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report/
+          retention-days: 30
+      
+      # Paso 8: Notificación en caso de fallo (opcional)
+      - name: 💬 Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Las pruebas de regresión fallaron"
+          echo "⏰ Hora de ejecución: $(date)"
+          echo "📍 Repositorio: ${{ github.repository }}"
+          echo "🔗 Ver detalles: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

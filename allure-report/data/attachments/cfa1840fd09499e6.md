@@ -1,0 +1,804 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Osobní odběr ZDARMA" [ref=e9] [cursor=pointer]:
+              - /url: /c/xxxl-online-nakup
+              - generic [ref=e10] [cursor=pointer]: Osobní odběr ZDARMA
+            - link "-15 % na vše Online Only + doprava ZDARMA" [ref=e11] [cursor=pointer]:
+              - /url: /c/online-only
+              - generic [ref=e12] [cursor=pointer]: "-15 % na vše Online Only + doprava ZDARMA"
+          - generic [ref=e14]:
+            - link "Prospekty" [ref=e15] [cursor=pointer]:
+              - /url: /c/letaky
+              - generic [ref=e16] [cursor=pointer]: Prospekty
+            - link "Stav objednávky" [ref=e17] [cursor=pointer]:
+              - /url: /stavobjednavky
+              - generic [ref=e18] [cursor=pointer]: Stav objednávky
+            - link "FAQ & kontakty" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: FAQ & kontakty
+            - switch "Vysoký kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Vysoký kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Změnit navigaci" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menu
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "K hlavnímu obsahu" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Hledat" [ref=e43] [cursor=pointer]
+              - searchbox "Hledat produkty, značky nebo novinky" [ref=e44]
+              - generic: Hledat produkty, značky nebo novinky
+              - button "Vyhledávání dle obrázků" [ref=e48] [cursor=pointer]
+          - generic [ref=e49]:
+            - button "Přihlásit se" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52] [cursor=pointer]: Přihlásit se
+            - link "Oblíbené 0 produkty" [ref=e54] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e55] [cursor=pointer]: Seznam oblíbených
+            - link "Můj nákupní košík 0 produkty" [ref=e57] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e58] [cursor=pointer]: Košík
+          - navigation [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Nábytek" [ref=e62] [cursor=pointer]:
+                  - /url: /c/nabytek
+              - listitem [ref=e63]:
+                - link "Zahrada" [ref=e64] [cursor=pointer]:
+                  - /url: /zahradni-nabytek-C8
+              - listitem [ref=e65]:
+                - link "Online Only" [ref=e66] [cursor=pointer]:
+                  - /url: /c/online-only
+              - listitem [ref=e67]:
+                - link "Doplňky" [ref=e68] [cursor=pointer]:
+                  - /url: /c/bytove-doplnky
+              - listitem [ref=e69]:
+                - link "Vaření" [ref=e70] [cursor=pointer]:
+                  - /url: /c/vareni-stolovani
+              - listitem [ref=e71]:
+                - link "Světla" [ref=e72] [cursor=pointer]:
+                  - /url: /svitidla-a-lampy-C10
+              - listitem [ref=e73]:
+                - link "Děti" [ref=e74] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e75]:
+                - link "AKCE" [ref=e76] [cursor=pointer]:
+                  - /url: /c/akce
+              - listitem [ref=e77]:
+                - link "SLEVA %" [ref=e78] [cursor=pointer]:
+                  - /url: /c/sleva
+              - listitem [ref=e79]:
+                - link "Trendy" [ref=e80] [cursor=pointer]:
+                  - /url: /c/inspirace
+              - listitem [ref=e81]:
+                - link "Kuchyně" [ref=e82] [cursor=pointer]:
+                  - /url: /c/xxxlutz-kuchyne
+              - listitem [ref=e83]:
+                - link "Prodejny & restaurace" [ref=e84] [cursor=pointer]:
+                  - /url: /pobocky
+              - listitem [ref=e85]:
+                - link "Služby" [ref=e86] [cursor=pointer]:
+                  - /url: /c/xxxl-sluzby
+      - main [ref=e87]:
+        - status [ref=e88]:
+          - generic [ref=e89]: Landscape VYSOKÁ KOMODA, akácie, barvy sheesham, měděné barvy, 115/145/40 cm najít online ➤ XXXLutz.cz
+        - generic [ref=e90]:
+          - navigation "breadcrumbs" [ref=e92]:
+            - list [ref=e93]:
+              - listitem [ref=e94]:
+                - link "Hlavní stránka" [ref=e95] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e96]:
+                - link "Produkty" [ref=e97] [cursor=pointer]:
+                  - /url: /kategorie/root
+                  - generic [ref=e98] [cursor=pointer]: Produkty
+              - listitem [ref=e99]:
+                - link "Drobný nábytek" [ref=e100] [cursor=pointer]:
+                  - /url: /drobny-nabytek-C2
+                  - generic [ref=e101] [cursor=pointer]: Drobný nábytek
+              - listitem [ref=e102]:
+                - link "Komody" [ref=e103] [cursor=pointer]:
+                  - /url: /komody-C2C1
+                  - generic [ref=e104] [cursor=pointer]: Komody
+              - listitem [ref=e105]:
+                - link "Vysoké komody" [ref=e106] [cursor=pointer]:
+                  - /url: /vysoke-komody-C2C1C3
+                  - generic [ref=e107] [cursor=pointer]: Vysoké komody
+          - generic [ref=e108]:
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - button "Obrázek produktu 1 / 6" [ref=e113] [cursor=pointer]:
+                  - img [ref=e114] [cursor=pointer]
+                - button "Obrázek produktu 2 / 6" [ref=e115] [cursor=pointer]:
+                  - img [ref=e116] [cursor=pointer]
+                - button "Obrázek produktu 3 / 6" [ref=e117] [cursor=pointer]:
+                  - img [ref=e118] [cursor=pointer]
+                - button "Obrázek produktu 4 / 6" [ref=e119] [cursor=pointer]:
+                  - img [ref=e120] [cursor=pointer]
+                - button "Obrázek produktu 5 / 6" [ref=e121] [cursor=pointer]:
+                  - img [ref=e122] [cursor=pointer]
+                - button "Obrázek produktu 6 / 6" [ref=e123] [cursor=pointer]:
+                  - img [ref=e124] [cursor=pointer]
+              - group [ref=e126] [cursor=pointer]:
+                - generic [ref=e127] [cursor=pointer]:
+                  - img "VYSOKÁ KOMODA, akácie, barvy sheesham, měděné barvy, 115/145/40 cm - měděné barvy/barvy sheesham, Lifestyle, kov/dřevo (115/145/40cm) - Landscape" [ref=e128]
+                  - img "Landscape"
+                - img "VYSOKÁ KOMODA, akácie, barvy sheesham, měděné barvy, 115/145/40 cm - měděné barvy/barvy sheesham, Lifestyle, kov/dřevo (115/145/40cm) - Landscape" [ref=e130]
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - generic [ref=e137]: Číslo produktu 1630001803
+                - heading "Landscape VYSOKÁ KOMODA, akácie, barvy sheesham, měděné barvy, 115/145/40 cm" [level=1] [ref=e138]:
+                  - generic [ref=e139]: Landscape VYSOKÁ
+                  - text: KOMODA, akácie, barvy sheesham, měděné barvy, 115/145/40 cm
+                - 'button "barvy sheesham, měděné barvy dřevo šířka/výška/hloubka: 115/145/40 cm" [ref=e140] [cursor=pointer]':
+                  - generic [ref=e141] [cursor=pointer]:
+                    - generic [ref=e142] [cursor=pointer]: barvy sheesham, měděné barvy
+                    - generic [ref=e143] [cursor=pointer]: dřevo
+                    - generic [ref=e144] [cursor=pointer]: "šířka/výška/hloubka: 115/145/40 cm"
+              - generic [ref=e145]:
+                - generic [ref=e146]: 17 999,‒ Kč
+                - generic [ref=e147]:
+                  - generic [ref=e148]: vč. DPH
+                  - generic [ref=e149]:
+                    - text: •
+                    - generic [ref=e150]: plus
+                    - button "Cena za dopravu" [ref=e151] [cursor=pointer]:
+                      - generic [ref=e152] [cursor=pointer]: Cena za dopravu
+              - generic [ref=e153]:
+                - generic [ref=e154]: "Více z:"
+                - link "Landscape" [ref=e155] [cursor=pointer]:
+                  - /url: /c/landscape
+                  - generic [ref=e156] [cursor=pointer]: Landscape
+              - generic [ref=e157]:
+                - button "Přidat mezi oblíbené" [ref=e158] [cursor=pointer]
+                - button "VYSOKÁ KOMODA, akácie, barvy sheesham, měděné barvy, 115/145/40 cm Vložit do košíku" [ref=e159] [cursor=pointer]:
+                  - generic [ref=e160] [cursor=pointer]: Vložit do košíku
+              - generic [ref=e161]:
+                - generic [ref=e162]: Prodej a doprava od
+                - generic [ref=e163]: XXXLutz
+              - generic [ref=e164]:
+                - button "Dodání spedicí 999,‒ Kč" [ref=e165] [cursor=pointer]:
+                  - generic [ref=e166] [cursor=pointer]:
+                    - generic [ref=e168] [cursor=pointer]: Dodání spedicí
+                    - generic [ref=e169] [cursor=pointer]: 999,‒ Kč
+                - button "Zobrazit čas doručení" [ref=e172] [cursor=pointer]
+              - button "V prodejně XXXLutz Zdarma Zvolit pobočku" [ref=e174] [cursor=pointer]:
+                - generic [ref=e175] [cursor=pointer]:
+                  - generic [ref=e177] [cursor=pointer]: V prodejně XXXLutz
+                  - generic [ref=e178] [cursor=pointer]: Zdarma
+                - generic [ref=e180] [cursor=pointer]: Zvolit pobočku
+              - generic [ref=e181]:
+                - heading "Nabízené služby" [level=2] [ref=e182]
+                - list [ref=e183]:
+                  - listitem [ref=e184]:
+                    - link "Osobní odběr ZDARMA" [ref=e185] [cursor=pointer]:
+                      - /url: /c/click-collect
+                      - generic [ref=e186] [cursor=pointer]: Osobní odběr ZDARMA
+                  - listitem [ref=e187]:
+                    - link "Spedice od 29.999 Kč – doprava ZDARMA" [ref=e188] [cursor=pointer]:
+                      - /url: /c/xxxl-zpusoby-dopravy
+                      - generic [ref=e189] [cursor=pointer]: Spedice od 29.999 Kč – doprava ZDARMA
+                  - listitem [ref=e190]:
+                    - link "30 dnů na vrácení" [ref=e191] [cursor=pointer]:
+                      - /url: /c/xxxl-reklamace
+                      - generic [ref=e192] [cursor=pointer]: 30 dnů na vrácení
+                - button "Více informací o službách a dodání" [ref=e193] [cursor=pointer]:
+                  - generic [ref=e194] [cursor=pointer]: Více informací o službách a dodání
+              - generic [ref=e195]:
+                - button "Detaily výrobku" [ref=e196] [cursor=pointer]
+                - button "Sestavení, bezpečnost a údržba" [ref=e197] [cursor=pointer]
+          - generic [ref=e199]:
+            - 'heading "Komoda z masivu: styl, kvalita a umělecký dekor" [level=2] [ref=e200]'
+            - generic [ref=e201]:
+              - button "Zobrazit více" [ref=e202] [cursor=pointer]:
+                - generic [ref=e203] [cursor=pointer]:
+                  - text: Zobrazit více
+                  - img [ref=e204] [cursor=pointer]
+              - generic [ref=e209]:
+                - paragraph [ref=e210]:
+                  - text: S touto komodou highboard objevíte, jak chutná elegance! Nábytek je vyroben částečně z
+                  - strong [ref=e211]: masivu
+                  - text: exotického dřeva sheesham, které se velmi cení pro svoji pevnost a tvrdost. Přírodní kresba dřeva činí z každého kusu nábytku opravdový originál.
+                - paragraph [ref=e212]:
+                  - text: "Zde však získáte ještě něco navíc: dekor ve stylu oblíbeného"
+                  - strong [ref=e213]: orientálního umění
+                  - text: vytváří ozdobný rám na přední straně skříňky. Ta se s rozměry cca 115 x 145 x 40 cm (Š x V x H) ideálně hodí jako doplněk do jídelny nebo obývacího pokoje.
+                - paragraph [ref=e214]:
+                  - text: "Výborně poslouží jako kredenc: do"
+                  - strong [ref=e215]: 3 zásuvek
+                  - text: si dáte příbory, prostor za prosklenými dvířky využijete na skleničky a porcelán, na polici za dřevěnými dvířky uložíte ubrusy a prostírání. Kovové knoflíkové úchytky dodávají jemný nádech oblíbeného stylu retro.
+                  - strong [ref=e216]: Zaoblené rohy
+                  - text: "a hrany oceníte, pokud máte děti nebo prostě jen patříte mezi milovníky uhlazenosti. Dřevěná komoda highboard: pro prvotřídní požitek z kvality a designu!"
+          - generic [ref=e220]:
+            - 'heading "Série Barcelona: inspirujte se" [level=3] [ref=e221]'
+            - 'link "Přeskočit příští Seznam s názvem Série Barcelona: inspirujte se" [ref=e222] [cursor=pointer]':
+              - /url: "#skip-section-Seznam-cmsitem_00437662"
+              - text: Přeskočit úsek
+            - generic [ref=e223]:
+              - link "Serie Barcelona" [ref=e226] [cursor=pointer]:
+                - /url: /s/?s=0016300018
+                - img "Serie Barcelona" [ref=e227] [cursor=pointer]
+              - link "Serie Barcelona" [ref=e230] [cursor=pointer]:
+                - /url: /s/?s=0016300018
+                - img "Serie Barcelona" [ref=e231] [cursor=pointer]
+              - link "Serie Barcelona" [ref=e234] [cursor=pointer]:
+                - /url: /s/?s=0016300018
+                - img "Serie Barcelona" [ref=e235] [cursor=pointer]
+          - generic [ref=e239]:
+            - heading "Podobné produkty" [level=2] [ref=e241]
+            - link "Přeskočit příští Seznam s názvem Podobné produkty" [ref=e242] [cursor=pointer]:
+              - /url: "#skip-section-Seznam-eyJpdGVtSWQiOiJjel9WaXN1YWxSZWNvcyIsImNhdGFsb2dJZCI6Inh4eGx1dHouY3otY29udGVudCIsImNhdGFsb2dWZXJzaW9uIjoiT25saW5lIn0"
+              - text: Přeskočit úsek
+            - group [ref=e243]:
+              - group [ref=e244] [cursor=pointer]:
+                - article [ref=e245] [cursor=pointer]:
+                  - generic [ref=e246] [cursor=pointer]:
+                    - generic [ref=e248] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, mangové dřevo, přírodní barvy, 90/120/40 cm" [ref=e249] [cursor=pointer]:
+                        - /url: /p/livetastic-vysoka-komoda-mangove-drevo-prirodni-barvy-90-120-40-cm-002611001202
+                        - generic [ref=e250] [cursor=pointer]:
+                          - generic [ref=e251] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, mangové dřevo, přírodní barvy, 90/120/40 cm
+                      - generic [ref=e252] [cursor=pointer]: Livetastic
+                      - generic [ref=e253] [cursor=pointer]: XXXLutz
+                    - generic [ref=e254] [cursor=pointer]:
+                      - generic [ref=e256] [cursor=pointer]:
+                        - generic [ref=e257] [cursor=pointer]: 17 499,‒ Kč
+                        - generic [ref=e258] [cursor=pointer]:
+                          - generic [ref=e259] [cursor=pointer]: vč. DPH
+                          - generic [ref=e260] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e261] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e262] [cursor=pointer]:
+                              - generic [ref=e263] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e264] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e265] [cursor=pointer]
+                        - button "VYSOKÁ KOMODA, mangové dřevo, přírodní barvy, 90/120/40 cm Vložit do košíku" [ref=e266] [cursor=pointer]
+                  - generic [ref=e267] [cursor=pointer]:
+                    - img "VYSOKÁ KOMODA, mangové dřevo, přírodní barvy, 90/120/40 cm - přírodní barvy, Natur, dřevo (90/120/40cm) - Livetastic" [ref=e269] [cursor=pointer]
+                    - generic [ref=e272]: ONLINE ONLY
+                - article [ref=e273] [cursor=pointer]:
+                  - generic [ref=e274] [cursor=pointer]:
+                    - generic [ref=e276] [cursor=pointer]:
+                      - link "VITRÍNA, bílá, 100/150/40 cm" [ref=e277] [cursor=pointer]:
+                        - /url: /p/mid-you-vitrina-bila-100-150-40-cm-002478022702
+                        - generic [ref=e278] [cursor=pointer]:
+                          - generic [ref=e279] [cursor=pointer]: VITRÍNA,
+                          - text: bílá, 100/150/40 cm
+                      - generic [ref=e280] [cursor=pointer]: MID.YOU
+                      - generic [ref=e281] [cursor=pointer]: XXXLutz
+                    - generic [ref=e282] [cursor=pointer]:
+                      - generic [ref=e284] [cursor=pointer]:
+                        - generic [ref=e285] [cursor=pointer]: 10 999,‒ Kč
+                        - generic [ref=e286] [cursor=pointer]:
+                          - generic [ref=e287] [cursor=pointer]: vč. DPH
+                          - generic [ref=e288] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e289] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e290] [cursor=pointer]:
+                              - generic [ref=e291] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e292] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e293] [cursor=pointer]
+                        - button "VITRÍNA, bílá, 100/150/40 cm Vložit do košíku" [ref=e294] [cursor=pointer]
+                  - generic [ref=e295] [cursor=pointer]:
+                    - img "VITRÍNA, bílá, 100/150/40 cm - bílá/barvy zlata, Design, kov/kompozitní dřevo (100/150/40cm) - MID.YOU" [ref=e297] [cursor=pointer]
+                    - generic [ref=e300]: ONLINE ONLY
+                - article [ref=e301] [cursor=pointer]:
+                  - generic [ref=e302] [cursor=pointer]:
+                    - generic [ref=e304] [cursor=pointer]:
+                      - link "VITRÍNA, akácie, černá, světle hnědá, 120/150/42 cm" [ref=e305] [cursor=pointer]:
+                        - /url: /p/mid-you-vitrina-akacie-cerna-svetle-hneda-120-150-42-cm-002611000104
+                        - generic [ref=e306] [cursor=pointer]:
+                          - generic [ref=e307] [cursor=pointer]: VITRÍNA,
+                          - text: akácie, černá, světle hnědá, 120/150/42 cm
+                      - generic [ref=e308] [cursor=pointer]: MID.YOU
+                      - generic [ref=e309] [cursor=pointer]: XXXLutz
+                    - generic [ref=e310] [cursor=pointer]:
+                      - generic [ref=e312] [cursor=pointer]:
+                        - generic [ref=e313] [cursor=pointer]: 26 299,‒ Kč
+                        - generic [ref=e314] [cursor=pointer]:
+                          - generic [ref=e315] [cursor=pointer]: vč. DPH
+                          - generic [ref=e316] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e317] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e318] [cursor=pointer]:
+                              - generic [ref=e319] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e320] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e321] [cursor=pointer]
+                        - button "VITRÍNA, akácie, černá, světle hnědá, 120/150/42 cm Vložit do košíku" [ref=e322] [cursor=pointer]
+                  - generic [ref=e323] [cursor=pointer]:
+                    - img "VITRÍNA, akácie, černá, světle hnědá, 120/150/42 cm - černá/světle hnědá, Moderní, kov/dřevo (120/150/42cm) - MID.YOU" [ref=e325] [cursor=pointer]
+                    - generic [ref=e328]: ONLINE ONLY
+                - article [ref=e329] [cursor=pointer]:
+                  - generic [ref=e330] [cursor=pointer]:
+                    - generic [ref=e332] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, sheesham, přírodní barvy, 140/120/40 cm" [ref=e333] [cursor=pointer]:
+                        - /url: /p/livetastic-vysoka-komoda-sheesham-prirodni-barvy-140-120-40-cm-002367004310
+                        - generic [ref=e334] [cursor=pointer]:
+                          - generic [ref=e335] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, sheesham, přírodní barvy, 140/120/40 cm
+                      - generic [ref=e336] [cursor=pointer]: Livetastic
+                      - generic [ref=e337] [cursor=pointer]: XXXLutz
+                    - generic [ref=e338] [cursor=pointer]:
+                      - generic [ref=e340] [cursor=pointer]:
+                        - generic [ref=e341] [cursor=pointer]: 22 999,‒ Kč
+                        - generic [ref=e342] [cursor=pointer]:
+                          - generic [ref=e343] [cursor=pointer]: vč. DPH
+                          - generic [ref=e344] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e345] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e346] [cursor=pointer]:
+                              - generic [ref=e347] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e348] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e349] [cursor=pointer]
+                        - button "VYSOKÁ KOMODA, sheesham, přírodní barvy, 140/120/40 cm Vložit do košíku" [ref=e350] [cursor=pointer]
+                  - generic [ref=e351] [cursor=pointer]:
+                    - img "VYSOKÁ KOMODA, sheesham, přírodní barvy, 140/120/40 cm - přírodní barvy, Lifestyle, kov/dřevo (140/120/40cm) - Livetastic" [ref=e353] [cursor=pointer]
+                    - generic [ref=e356]: ONLINE ONLY
+                - article [ref=e357] [cursor=pointer]:
+                  - generic [ref=e358] [cursor=pointer]:
+                    - generic [ref=e360] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, dub San Remo, 157/137/38 cm" [ref=e361] [cursor=pointer]:
+                        - /url: /p/mid-you-vysoka-komoda-dub-san-remo-157-137-38-cm-001107038907
+                        - generic [ref=e362] [cursor=pointer]:
+                          - generic [ref=e363] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, dub San Remo, 157/137/38 cm
+                      - generic [ref=e364] [cursor=pointer]: MID.YOU
+                      - generic [ref=e365] [cursor=pointer]: XXXLutz
+                    - generic [ref=e366] [cursor=pointer]:
+                      - generic [ref=e368] [cursor=pointer]:
+                        - generic [ref=e369] [cursor=pointer]: 11 999,‒ Kč
+                        - generic [ref=e370] [cursor=pointer]:
+                          - generic [ref=e371] [cursor=pointer]: vč. DPH
+                          - generic [ref=e372] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e373] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e374] [cursor=pointer]:
+                              - generic [ref=e375] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e376] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e377] [cursor=pointer]
+                        - button "VYSOKÁ KOMODA, dub San Remo, 157/137/38 cm Vložit do košíku" [ref=e378] [cursor=pointer]
+                  - generic [ref=e379] [cursor=pointer]:
+                    - img "VYSOKÁ KOMODA, dub San Remo, 157/137/38 cm - barvy stříbra/dub San Remo, Lifestyle, kompozitní dřevo/plast (157/137/38cm) - MID.YOU" [ref=e381] [cursor=pointer]
+                    - generic [ref=e384]: ONLINE ONLY
+                - article [ref=e385] [cursor=pointer]:
+                  - generic [ref=e386] [cursor=pointer]:
+                    - generic [ref=e388] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, sukový dub, dub, bílá, barvy dubu, 102/115/40 cm" [ref=e389] [cursor=pointer]:
+                        - /url: /p/vysoka-komoda-sukovy-dub-dub-bila-barvy-dubu-102-115-40-cm-000196018505
+                        - generic [ref=e390] [cursor=pointer]:
+                          - generic [ref=e391] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, sukový dub, dub, bílá, barvy dubu, 102/115/40 cm
+                      - generic [ref=e392] [cursor=pointer]: XXXLutz
+                    - generic [ref=e393] [cursor=pointer]:
+                      - generic [ref=e395] [cursor=pointer]:
+                        - generic [ref=e396] [cursor=pointer]: 16 990,‒ Kč
+                        - generic [ref=e397] [cursor=pointer]:
+                          - generic [ref=e398] [cursor=pointer]: vč. DPH
+                          - generic [ref=e399] [cursor=pointer]: K dostání jen na pobočce
+                      - button "Přidat mezi oblíbené" [ref=e401] [cursor=pointer]
+                  - generic [ref=e402] [cursor=pointer]:
+                    - img "VYSOKÁ KOMODA, sukový dub, dub, bílá, barvy dubu, 102/115/40 cm - bílá/barvy dubu, Design, dřevo/kompozitní dřevo (102/115/40cm)" [ref=e404] [cursor=pointer]
+                    - generic [ref=e407]: Poslední kusy
+                - article [ref=e408] [cursor=pointer]:
+                  - generic [ref=e409] [cursor=pointer]:
+                    - generic [ref=e411] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, bílá, Sonoma dub, 77/115/30 cm" [ref=e412] [cursor=pointer]:
+                        - /url: /p/mid-you-vysoka-komoda-bila-sonoma-dub-77-115-30-cm-000528030901
+                        - generic [ref=e413] [cursor=pointer]:
+                          - generic [ref=e414] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, bílá, Sonoma dub, 77/115/30 cm
+                      - generic [ref=e415] [cursor=pointer]: MID.YOU
+                      - generic [ref=e416] [cursor=pointer]: XXXLutz
+                    - generic [ref=e417] [cursor=pointer]:
+                      - generic [ref=e419] [cursor=pointer]:
+                        - generic [ref=e420] [cursor=pointer]: 5 499,‒ Kč
+                        - generic [ref=e421] [cursor=pointer]:
+                          - generic [ref=e422] [cursor=pointer]: vč. DPH
+                          - generic [ref=e423] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e424] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e425] [cursor=pointer]:
+                              - generic [ref=e426] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e427] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e428] [cursor=pointer]
+                        - button "VYSOKÁ KOMODA, bílá, Sonoma dub, 77/115/30 cm Vložit do košíku" [ref=e429] [cursor=pointer]
+                  - generic [ref=e430] [cursor=pointer]:
+                    - img "VYSOKÁ KOMODA, bílá, Sonoma dub, 77/115/30 cm - bílá/Sonoma dub, Basics, kompozitní dřevo/plast (77/115/30cm) - MID.YOU" [ref=e432] [cursor=pointer]
+                    - generic [ref=e435]: ONLINE ONLY
+                - article [ref=e436] [cursor=pointer]:
+                  - generic [ref=e437] [cursor=pointer]:
+                    - generic [ref=e439] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, akácie, bílá, 100/145/40 cm" [ref=e440] [cursor=pointer]:
+                        - /url: /p/livetastic-vysoka-komoda-akacie-bila-100-145-40-cm-002362065209
+                        - generic [ref=e441] [cursor=pointer]:
+                          - generic [ref=e442] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, akácie, bílá, 100/145/40 cm
+                      - generic [ref=e443] [cursor=pointer]: Livetastic
+                      - generic [ref=e444] [cursor=pointer]: XXXLutz
+                    - generic [ref=e445] [cursor=pointer]:
+                      - generic [ref=e447] [cursor=pointer]:
+                        - generic [ref=e448] [cursor=pointer]: 18 199,‒ Kč
+                        - generic [ref=e449] [cursor=pointer]:
+                          - generic [ref=e450] [cursor=pointer]: vč. DPH
+                          - generic [ref=e451] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e452] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e453] [cursor=pointer]:
+                              - generic [ref=e454] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e455] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e456] [cursor=pointer]
+                        - button "VYSOKÁ KOMODA, akácie, bílá, 100/145/40 cm Vložit do košíku" [ref=e457] [cursor=pointer]
+                  - generic [ref=e458] [cursor=pointer]:
+                    - img "VYSOKÁ KOMODA, akácie, bílá, 100/145/40 cm - bílá/tmavě hnědá, Trend, kov/dřevo (100/145/40cm) - Livetastic" [ref=e460] [cursor=pointer]
+                    - generic [ref=e463]: ONLINE ONLY
+                - article [ref=e464] [cursor=pointer]:
+                  - generic [ref=e465] [cursor=pointer]:
+                    - generic [ref=e467] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, mangové dřevo, 135/132/40 cm" [ref=e468] [cursor=pointer]:
+                        - /url: /p/mid-you-vysoka-komoda-mangove-drevo-135-132-40-cm-002367014501
+                        - generic [ref=e469] [cursor=pointer]:
+                          - generic [ref=e470] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, mangové dřevo, 135/132/40 cm
+                      - generic [ref=e471] [cursor=pointer]: MID.YOU
+                      - generic [ref=e472] [cursor=pointer]: XXXLutz
+                    - generic [ref=e473] [cursor=pointer]:
+                      - generic [ref=e475] [cursor=pointer]:
+                        - generic [ref=e476] [cursor=pointer]: 24 999,‒ Kč
+                        - generic [ref=e477] [cursor=pointer]:
+                          - generic [ref=e478] [cursor=pointer]: vč. DPH
+                          - generic [ref=e479] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e480] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e481] [cursor=pointer]:
+                              - generic [ref=e482] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e483] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e484] [cursor=pointer]
+                        - button "VYSOKÁ KOMODA, mangové dřevo, 135/132/40 cm Vložit do košíku" [ref=e485] [cursor=pointer]
+                  - generic [ref=e486] [cursor=pointer]:
+                    - img "VYSOKÁ KOMODA, mangové dřevo, 135/132/40 cm - Natur, kov/dřevo (135/132/40cm) - MID.YOU" [ref=e488] [cursor=pointer]
+                    - generic [ref=e491]: ONLINE ONLY
+                - article [ref=e492] [cursor=pointer]:
+                  - generic [ref=e493] [cursor=pointer]:
+                    - generic [ref=e495] [cursor=pointer]:
+                      - link "VYSOKÁ KOMODA, šedá, bílá, 110/134,2/43 cm" [ref=e496] [cursor=pointer]:
+                        - /url: /p/hom-in-vysoka-komoda-seda-bila-110-134-2-43-cm-000003000140
+                        - generic [ref=e497] [cursor=pointer]:
+                          - generic [ref=e498] [cursor=pointer]: VYSOKÁ
+                          - text: KOMODA, šedá, bílá, 110/134,2/43 cm
+                      - generic [ref=e499] [cursor=pointer]: "Hom`in"
+                      - generic [ref=e500] [cursor=pointer]: XXXLutz
+                    - generic [ref=e501] [cursor=pointer]:
+                      - generic [ref=e503] [cursor=pointer]:
+                        - generic [ref=e504] [cursor=pointer]: 7 899,‒ Kč
+                        - generic [ref=e505] [cursor=pointer]:
+                          - generic [ref=e506] [cursor=pointer]: vč. DPH
+                          - generic [ref=e507] [cursor=pointer]:
+                            - text: •
+                            - generic [ref=e508] [cursor=pointer]: plus
+                            - button "Cena za dopravu" [ref=e509] [cursor=pointer]:
+                              - generic [ref=e510] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e511] [cursor=pointer]:
+                        - button "Přidat mezi oblíbené" [ref=e512] [cursor=pointer]
+                        - button "VYSOKÁ KOMODA, šedá, bílá, 110/134,2/43 cm Vložit do košíku" [ref=e513] [cursor=pointer]
+                  - 'img "VYSOKÁ KOMODA, šedá, bílá, 110/134,2/43 cm - šedá/bílá, Lifestyle, kov/kompozitní dřevo (110/134,2/43cm) - Hom`in" [ref=e516] [cursor=pointer]'
+              - button "další obrázek" [ref=e517] [cursor=pointer]
+    - contentinfo [ref=e518]:
+      - generic [ref=e519]:
+        - generic [ref=e520]:
+          - generic [ref=e521]: Výhody XXXLutz
+          - list [ref=e523]:
+            - listitem [ref=e524]:
+              - link "Osobní odběr ZDARMA" [ref=e525] [cursor=pointer]:
+                - /url: /c/click-collect
+                - text: Osobní odběr ZDARMA
+            - listitem [ref=e527]:
+              - link "Větší nákup – doprava ZDARMA" [ref=e528] [cursor=pointer]:
+                - /url: /c/xxxl-online-nakup
+                - text: Větší nákup – doprava ZDARMA
+            - listitem [ref=e530]:
+              - link "Rychlé dodání a výnos až do bytu" [ref=e531] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-dopravy
+                - text: Rychlé dodání a výnos až do bytu
+            - listitem [ref=e533]:
+              - link "Bezpečná platba" [ref=e534] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby
+                - text: Bezpečná platba
+            - listitem [ref=e536]:
+              - link "Zapůjčení dodávky výhodně" [ref=e537] [cursor=pointer]:
+                - /url: /c/xxxl-dodavka
+                - text: Zapůjčení dodávky výhodně
+            - listitem [ref=e539]:
+              - link "12 prodejen po celé České republice" [ref=e540] [cursor=pointer]:
+                - /url: /pobocky
+                - text: 12 prodejen po celé České republice
+            - listitem [ref=e542]:
+              - link "Zákaznický servis e-shopu PO–NE" [ref=e543] [cursor=pointer]:
+                - /url: /kontaktnicentrum
+                - text: Zákaznický servis e-shopu PO–NE
+        - generic [ref=e545]:
+          - link "Přeskočit příští Seznam" [ref=e546] [cursor=pointer]:
+            - /url: "#skip-section-Seznam-new_footer_third_section_node_1"
+            - text: Přeskočit úsek
+          - generic [ref=e547]:
+            - generic [ref=e549]:
+              - generic [ref=e550]: E-shop
+              - list [ref=e551]:
+                - listitem [ref=e552]:
+                  - link "Nákup online" [ref=e553] [cursor=pointer]:
+                    - /url: /c/xxxl-online-nakup
+                - listitem [ref=e554]:
+                  - link "Možnosti platby" [ref=e555] [cursor=pointer]:
+                    - /url: /c/xxxl-zpusoby-platby
+                - listitem [ref=e556]:
+                  - link "Způsoby dopravy" [ref=e557] [cursor=pointer]:
+                    - /url: /c/xxxl-zpusoby-dopravy
+                - listitem [ref=e558]:
+                  - link "Vrácení zboží & reklamace" [ref=e559] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamace
+                - listitem [ref=e560]:
+                  - link "Click & Collect" [ref=e561] [cursor=pointer]:
+                    - /url: /c/click-collect
+                - listitem [ref=e562]:
+                  - link "FAQ" [ref=e563] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e564]:
+                  - link "Newsletter" [ref=e565] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e566]:
+                  - link "Všechny kategorie produktů" [ref=e567] [cursor=pointer]:
+                    - /url: /kategorie/root
+            - generic [ref=e569]:
+              - generic [ref=e570]: Služby
+              - list [ref=e571]:
+                - listitem [ref=e572]:
+                  - link "XXXL Služby" [ref=e573] [cursor=pointer]:
+                    - /url: /c/xxxl-sluzby
+                - listitem [ref=e574]:
+                  - link "Bydlení na míru" [ref=e575] [cursor=pointer]:
+                    - /url: /c/nabytek-na-miru-domluvit-poradenstvi
+                - listitem [ref=e576]:
+                  - link "XXXL HIT karta" [ref=e577] [cursor=pointer]:
+                    - /url: /c/xxxl-hitkarta
+                - listitem [ref=e578]:
+                  - link "Doprava a montáž" [ref=e579] [cursor=pointer]:
+                    - /url: /c/doprava-montaz
+                - listitem [ref=e580]:
+                  - link "XXXL Rádce" [ref=e581] [cursor=pointer]:
+                    - /url: /c/poradenstvi
+                - listitem [ref=e582]:
+                  - link "B2B program" [ref=e583] [cursor=pointer]:
+                    - /url: /c/b2b-program
+                - listitem [ref=e584]:
+                  - link "Stav objednávky" [ref=e585] [cursor=pointer]:
+                    - /url: /stavobjednavky
+            - generic [ref=e587]:
+              - generic [ref=e588]: Prodejny
+              - list [ref=e589]:
+                - listitem [ref=e590]:
+                  - link "Prodejny" [ref=e591] [cursor=pointer]:
+                    - /url: /pobocky
+                - listitem [ref=e592]:
+                  - link "Výprodejové trháky" [ref=e593] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e594]:
+                  - link "Restaurace" [ref=e595] [cursor=pointer]:
+                    - /url: /c/xxxl-restaurace
+                - listitem [ref=e596]:
+                  - link "XXXL Dodávka" [ref=e597] [cursor=pointer]:
+                    - /url: /c/xxxl-dodavka
+                - listitem [ref=e598]:
+                  - link "Reklamační řád" [ref=e599] [cursor=pointer]:
+                    - /url: /c/reklamacni-rad
+                - listitem [ref=e600]:
+                  - link "Financování" [ref=e601] [cursor=pointer]:
+                    - /url: /c/financovani-home-credit
+                - listitem [ref=e602]:
+                  - link "Prospekty" [ref=e603] [cursor=pointer]:
+                    - /url: /c/letaky
+                - listitem [ref=e604]:
+                  - link "Vrácení zboží & reklamace" [ref=e605] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamace
+            - generic [ref=e607]:
+              - generic [ref=e608]: O nás
+              - list [ref=e609]:
+                - listitem [ref=e610]:
+                  - link "Firma XXXLutz" [ref=e611] [cursor=pointer]:
+                    - /url: /c/spolecnost-xxxlutz
+                - listitem [ref=e612]:
+                  - link "Rodina Putz" [ref=e613] [cursor=pointer]:
+                    - /url: /c/rodina-putz
+                - listitem [ref=e614]:
+                  - link "XXXL Etický Kodex" [ref=e615] [cursor=pointer]:
+                    - /url: https://xxxlutz.a.bigcontent.io/v1/static/NCRi2vtWcvdYADEQm2UQyCDw/xxxl_unternehmenscharta_2015_cz.pdf
+                - listitem [ref=e616]:
+                  - link "Kariéra" [ref=e617] [cursor=pointer]:
+                    - /url: https://kariera.xxxlutz.cz
+                - listitem [ref=e618]:
+                  - link "Ozvěte se" [ref=e619] [cursor=pointer]:
+                    - /url: /c/speak-up
+                - listitem [ref=e620]:
+                  - link "Tiskové centrum" [ref=e621] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.cz/
+                - listitem [ref=e622]:
+                  - link "XXXL Svět značek" [ref=e623] [cursor=pointer]:
+                    - /url: /c/xxxl-svet-znacek
+                - listitem [ref=e624]:
+                  - link "Slovníček pojmů" [ref=e625] [cursor=pointer]:
+                    - /url: /c/nabytek-slovnik
+        - generic [ref=e627]:
+          - generic [ref=e630]:
+            - paragraph [ref=e631]: Chcete se na něco zeptat?
+            - generic [ref=e632]:
+              - generic [ref=e633]:
+                - link "Ke kontaktnímu formuláři" [ref=e634] [cursor=pointer]:
+                  - /url: /kontaktnicentrum
+                  - generic [ref=e635] [cursor=pointer]: Ke kontaktnímu formuláři
+                - paragraph [ref=e636]: Kontaktujte nás.
+              - generic [ref=e637]:
+                - link "Často kladené otázky (FAQ)" [ref=e638] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e639] [cursor=pointer]: Často kladené otázky (FAQ)
+                - paragraph [ref=e640]: V FAQ najdete okamžitou odpověď na spoustu otázek, které vás zajímají.
+          - generic [ref=e641]:
+            - generic [ref=e642]: Způsoby dopravy v e-shopu
+            - generic [ref=e643]:
+              - link "Gebruder Weiss" [ref=e646] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-dopravy#doprava
+                - img "Gebruder Weiss" [ref=e647] [cursor=pointer]
+              - link "DPD" [ref=e650] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-dopravy#doprava
+                - img "DPD" [ref=e651] [cursor=pointer]
+          - generic [ref=e652]:
+            - generic [ref=e653]: Způsoby platby v e-shopu
+            - generic [ref=e654]:
+              - link "Mastercard" [ref=e657] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#pkarta
+                - img "Mastercard" [ref=e658] [cursor=pointer]
+              - link "VISA" [ref=e661] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#pkarta
+                - img "VISA" [ref=e662] [cursor=pointer]
+              - link "Diners card" [ref=e665] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#pkarta
+                - img "Diners card" [ref=e666] [cursor=pointer]
+              - link "bankovi prevod" [ref=e669] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#sepa
+                - img "bankovi prevod" [ref=e670] [cursor=pointer]
+              - link "PAYPAL" [ref=e673] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#paypal
+                - img "PAYPAL" [ref=e674] [cursor=pointer]
+              - link "DOBIRKA" [ref=e677] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#dobirka
+                - img "DOBIRKA" [ref=e678] [cursor=pointer]
+              - link "GPay" [ref=e681] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby
+                - img "GPay" [ref=e682] [cursor=pointer]
+              - link "Apple Pay" [ref=e685] [cursor=pointer]:
+                - /url: /c/xxxl-zpusoby-platby#applepay
+                - img "Apple Pay" [ref=e686] [cursor=pointer]
+          - generic [ref=e687]: "* nezávazně doporučená spotřebitelská cena. / ** dosavadní prodejní cena. / ***Nejnižší cena za posledních 30 dní. / Konečná cena včetně slevy. / Všechny uvedené ceny jsou včetně DPH. / Doprava a montáž nejsou součástí uvedených cen. / Dodání v rámci České republiky. / Změny a chyby vyhrazeny."
+        - generic [ref=e690]:
+          - link "XXXLutz" [ref=e691] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e692] [cursor=pointer]: XXXLutz
+            - img [ref=e694] [cursor=pointer]
+          - generic [ref=e700]: ©2026 XLCZ Nábytek s.r.o.
+          - list [ref=e701]:
+            - listitem [ref=e702]:
+              - link "Kontakty" [ref=e703] [cursor=pointer]:
+                - /url: /c/kontakty
+            - listitem [ref=e704]:
+              - link "Impresum" [ref=e705] [cursor=pointer]:
+                - /url: /c/impresum
+            - listitem [ref=e706]:
+              - link "Podmínky akce" [ref=e707] [cursor=pointer]:
+                - /url: /c/podminkyakce
+            - listitem [ref=e708]:
+              - link "VOP" [ref=e709] [cursor=pointer]:
+                - /url: /c/vop
+            - listitem
+            - listitem [ref=e710]:
+              - link "Ochrana údajů" [ref=e711] [cursor=pointer]:
+                - /url: /c/ochrana-osobnich-udaju
+            - listitem [ref=e712]:
+              - button "Nastavení souborů cookie" [ref=e713] [cursor=pointer]
+            - listitem [ref=e714]:
+              - link "PROHLÁŠENÍ O PŘÍSTUPNOSTI" [ref=e715] [cursor=pointer]:
+                - /url: /accessibility
+            - listitem
+          - list [ref=e716]:
+            - listitem [ref=e717]:
+              - link "youtube" [ref=e718] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC7OGMgj1vp41BjM5CBct_sQ
+            - listitem [ref=e719]:
+              - link "pinterest" [ref=e720] [cursor=pointer]:
+                - /url: https://www.pinterest.at/lutznabytek/
+            - listitem [ref=e721]:
+              - link "instagram" [ref=e722] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_cz/
+            - listitem [ref=e723]:
+              - link "facebook" [ref=e724] [cursor=pointer]:
+                - /url: https://www.facebook.com/lutznabytek/
+            - listitem [ref=e725]:
+              - link "tiktok" [ref=e726] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_czsk
+          - link [ref=e727] [cursor=pointer]:
+            - /url: /accessibility
+    - alert [ref=e731]:
+      - generic [ref=e732]:
+        - generic [ref=e733] [cursor=pointer]:
+          - paragraph [ref=e734] [cursor=pointer]: 🛍 SLEVA 30 % na téměř vše
+          - generic [ref=e735] [cursor=pointer]:
+            - text: Končí za 13 dny/dní a
+            - time [ref=e736] [cursor=pointer]:
+              - generic [ref=e737] [cursor=pointer]:
+                - generic [ref=e738] [cursor=pointer]: "15"
+                - generic [ref=e739] [cursor=pointer]: "14"
+                - generic [ref=e740] [cursor=pointer]: "13"
+              - generic [ref=e741] [cursor=pointer]: ":"
+              - generic [ref=e742] [cursor=pointer]:
+                - generic [ref=e743] [cursor=pointer]: "29"
+                - generic [ref=e744] [cursor=pointer]: "28"
+                - generic [ref=e745] [cursor=pointer]: "27"
+              - generic [ref=e746] [cursor=pointer]: ":"
+              - generic [ref=e747] [cursor=pointer]:
+                - generic [ref=e748] [cursor=pointer]: "06"
+                - generic [ref=e749] [cursor=pointer]: "05"
+                - generic [ref=e750] [cursor=pointer]: "04"
+          - generic [ref=e751] [cursor=pointer]: Končí za 13 dny/dní a
+          - time [ref=e752] [cursor=pointer]: 14h:28min
+        - generic [ref=e753] [cursor=pointer]:
+          - button "Sbalit vyskakovací okno se slevou" [ref=e754] [cursor=pointer]
+          - button "Zavřít" [ref=e755] [cursor=pointer]
+        - generic [ref=e756]:
+          - paragraph [ref=e758]: Právě teď! 👏
+          - paragraph [ref=e759]:
+            - link "Podmínky akce" [ref=e760] [cursor=pointer]:
+              - /url: /c/podminkyakce
+  - dialog "dialog" [ref=e761]:
+    - generic [ref=e762]:
+      - heading "Cookies pomáhají vám i nám" [level=3] [ref=e764]:
+        - generic [ref=e765]:
+          - img [ref=e766]
+          - text: Cookies pomáhají vám i nám
+      - generic [ref=e779]:
+        - paragraph [ref=e780]: My, společnost XLCZ Nábytek s.r.o., používáme soubory cookies a podobné technologie („cookies“). Cookies využíváme a údaje jimi získané zpracováváme proto, abychom vám mohli zpřístupnit naše webové stránky a jejich funkce, zajistili optimální nákupní zážitek, poskytovali a zlepšovali naše služby, poznali vaše uživatelské chování a zobrazovali individualizovanou reklamu a obsah na našich webových stránkách i stránkách třetích stran, v našich newsletterech a v rámci naší věrnostní karty.
+        - list [ref=e782]:
+          - listitem [ref=e783]:
+            - text: .
+            - paragraph [ref=e785]: Kliknutím na „Přijmout všechny cookies“ souhlasíte s použitím všech cookies uvedených v nastavení cookies. Svůj souhlas můžete kdykoli v budoucnu odvolat nebo upravit v nastavení cookies.
+          - listitem [ref=e786]:
+            - text: .
+            - paragraph [ref=e788]: Pokud níže kliknete na „Odmítnout vše“, nastavíme pouze nezbytné cookies a technologie bez použití cookies pro zobrazování bannerů.
+          - listitem [ref=e789]:
+            - text: .
+            - paragraph [ref=e791]: Kliknutím na „Nastavení cookies“ si můžete cookies individuálně vybrat a dozvědět se o nich více.
+        - generic [ref=e792]:
+          - button "Přijmout všechny cookies" [active] [ref=e793] [cursor=pointer]:
+            - generic [ref=e794] [cursor=pointer]: Přijmout všechny cookies
+          - button "Odmítnout vše" [ref=e796] [cursor=pointer]:
+            - generic [ref=e797] [cursor=pointer]: Odmítnout vše
+        - list [ref=e799]:
+          - listitem [ref=e800]:
+            - button "Nastavení cookies" [ref=e801] [cursor=pointer]:
+              - generic [ref=e802] [cursor=pointer]: Nastavení cookies
+          - listitem [ref=e803]:
+            - button "Ochrana osobních údajů" [ref=e804] [cursor=pointer]:
+              - generic [ref=e805] [cursor=pointer]: Ochrana osobních údajů
+          - listitem [ref=e806]:
+            - button "Impresum" [ref=e807] [cursor=pointer]:
+              - generic [ref=e808] [cursor=pointer]: Impresum
+```

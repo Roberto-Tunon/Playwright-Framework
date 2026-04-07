@@ -1,0 +1,249 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: Bestellübersicht | XXXLutz.at
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e37]: "1"
+                - heading "Details" [level=2] [ref=e38]
+                - generic [ref=e42]:
+                  - generic [ref=e43]:
+                    - heading "Kontakt" [level=3] [ref=e45]
+                    - generic [ref=e47]:
+                      - textbox "E-Mail-Adresse*" [ref=e48]: roberto.tunon@xxxl.digital
+                      - generic "E-Mail-Adresse" [ref=e49]: E-Mail-Adresse*
+                    - generic [ref=e50]:
+                      - generic [ref=e51]:
+                        - generic [ref=e52]:
+                          - paragraph [ref=e53]: Ländervorwahl auswählen
+                          - combobox [ref=e55] [cursor=pointer]:
+                            - generic [ref=e60] [cursor=pointer]: "+43"
+                        - textbox "Telefonnummer*" [ref=e61]: "050545454"
+                        - generic "Pflichtfeld" [ref=e62]: Telefonnummer*
+                      - generic [ref=e64]: Für Auslieferung und eventuelle Rückfragen
+                    - generic [ref=e65]:
+                      - heading "Adresse" [level=3] [ref=e66]
+                      - paragraph [ref=e67]: Lieferung ist nur an eine Adresse innerhalb Österreichs möglich
+                    - generic [ref=e69]:
+                      - textbox "Vorname*" [ref=e70]: Roberto
+                      - generic "Vorname" [ref=e71]: Vorname*
+                    - generic [ref=e73]:
+                      - textbox "Nachname*" [ref=e74]: Tuñon
+                      - generic "Nachname" [ref=e75]: Nachname*
+                    - generic [ref=e77]:
+                      - textbox "Straße*" [ref=e78]: Bahnhofstraße
+                      - generic "Straße" [ref=e79]: Straße*
+                    - generic [ref=e81]:
+                      - textbox "Hausnummer/Stiege/Tür*" [ref=e82]: "10"
+                      - generic "Hausnummer/Stiege/Tür" [ref=e83]: Hausnummer/Stiege/Tür*
+                    - generic [ref=e84]:
+                      - generic [ref=e86]:
+                        - textbox "PLZ*" [ref=e87]: "4020"
+                        - generic "PLZ" [ref=e88]: PLZ*
+                      - generic [ref=e90]:
+                        - textbox "Ort*" [ref=e91]: Linz
+                        - generic "Ort" [ref=e92]: Ort*
+                    - button "Zusätzliche Informationen (optional)" [ref=e98] [cursor=pointer]:
+                      - generic [ref=e101] [cursor=pointer]: Zusätzliche Informationen (optional)
+                  - generic [ref=e102]:
+                    - generic [ref=e104] [cursor=pointer]:
+                      - checkbox "Ich möchte als Firma bezahlen" [checked] [ref=e105]
+                      - img [ref=e108] [cursor=pointer]
+                      - generic [ref=e112] [cursor=pointer]: Ich möchte als Firma bezahlen
+                    - generic [ref=e113]:
+                      - generic [ref=e115]:
+                        - textbox "Name der Firma*" [ref=e116]: Theta Electronics Gold GmbH
+                        - generic "Name der Firma" [ref=e117]: Name der Firma*
+                      - generic [ref=e119]:
+                        - textbox "UID Nummer*" [ref=e120]: ATU65296645
+                        - generic "UID Nummer" [ref=e121]: UID Nummer*
+                  - generic [ref=e123] [cursor=pointer]:
+                    - checkbox "Ich habe eine abweichende Rechnungsadresse" [checked] [ref=e124]
+                    - img [ref=e127] [cursor=pointer]
+                    - generic [ref=e132] [cursor=pointer]: Ich habe eine abweichende Rechnungsadresse
+                  - generic [ref=e133]:
+                    - heading "Kontakt" [level=3] [ref=e135]
+                    - generic [ref=e136]:
+                      - generic [ref=e137]:
+                        - textbox "E-Mail-Adresse*" [ref=e138]: roberto.tunon@xxxl.digital
+                        - generic "E-Mail-Adresse" [ref=e139]: E-Mail-Adresse*
+                      - generic [ref=e141]:
+                        - text: Sie erhalten eine Bestellbestätigung an
+                        - generic [ref=e142]: roberto.tunon@xxxl.digital
+                    - generic [ref=e144]:
+                      - generic [ref=e145]:
+                        - paragraph [ref=e146]: Ländervorwahl auswählen
+                        - combobox [ref=e148] [cursor=pointer]:
+                          - generic [ref=e153] [cursor=pointer]: "+43"
+                      - textbox "Telefonnummer*" [ref=e154]: "06762600456"
+                      - generic "Pflichtfeld" [ref=e155]: Telefonnummer*
+                    - heading "Rechnungsadresse" [level=3] [ref=e157]
+                    - generic [ref=e159]:
+                      - textbox "Vorname*" [ref=e160]: Roberto
+                      - generic "Vorname" [ref=e161]: Vorname*
+                    - generic [ref=e163]:
+                      - textbox "Nachname*" [ref=e164]: Tuñon
+                      - generic "Nachname" [ref=e165]: Nachname*
+                    - generic [ref=e167]:
+                      - textbox "Straße*" [ref=e168]: Bahnhofstraße
+                      - generic "Straße" [ref=e169]: Straße*
+                    - generic [ref=e171]:
+                      - textbox "Hausnummer/Stiege/Tür*" [ref=e172]: "10"
+                      - generic "Hausnummer/Stiege/Tür" [ref=e173]: Hausnummer/Stiege/Tür*
+                    - generic [ref=e175]:
+                      - combobox "Land" [ref=e176] [cursor=pointer]:
+                        - generic [ref=e177] [cursor=pointer]: Österreich
+                      - generic [ref=e178]: Land*
+                    - generic [ref=e179]:
+                      - generic [ref=e182]:
+                        - textbox "PLZ*" [ref=e183]: "1100"
+                        - generic "PLZ" [ref=e184]: PLZ*
+                      - generic [ref=e186]:
+                        - textbox "Ort*" [ref=e187]: Wien
+                        - generic "Ort" [ref=e188]: Ort*
+                    - button "Ich habe einen Preisepass" [ref=e194] [cursor=pointer]:
+                      - generic [ref=e197] [cursor=pointer]: Ich habe einen Preisepass
+                  - button [disabled] [ref=e198]:
+                    - img [ref=e199]
+                  - generic [ref=e204]: Adressprüfung wird geladen
+              - generic [ref=e205]:
+                - generic [ref=e208]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e209]
+              - generic [ref=e210]:
+                - generic [ref=e213]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e214]
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - heading "Warenkorb" [level=3] [ref=e217]
+              - link "Warenkorb Bearbeiten" [ref=e218] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e219] [cursor=pointer]: Bearbeiten
+            - generic [ref=e220]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e221] [cursor=pointer]:
+                - img [ref=e225] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e226]
+              - generic [ref=e227]:
+                - generic [ref=e228]: Warenwert
+                - generic [ref=e229]: € 499,‒
+                - button "Lieferkosten" [ref=e230] [cursor=pointer]:
+                  - generic [ref=e231] [cursor=pointer]: Lieferkosten
+                - generic [ref=e232]:
+                  - generic [ref=e233]: +
+                  - text: € 49,
+                  - superscript [ref=e234]: "95"
+              - generic [ref=e235]:
+                - generic [ref=e236]: Gesamtsumme
+                - generic [ref=e237]:
+                  - text: € 548,
+                  - superscript [ref=e238]: "95"
+                - generic [ref=e239]: inkl. MwSt.
+              - generic [ref=e241]:
+                - button "Gutscheincode" [ref=e242] [cursor=pointer]:
+                  - generic [ref=e243] [cursor=pointer]: Gutscheincode
+                  - img [ref=e244] [cursor=pointer]
+                - generic [ref=e246]:
+                  - generic [ref=e249]:
+                    - textbox "Code kopieren" [ref=e250]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e251] [cursor=pointer]:
+                    - generic [ref=e252] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e253]:
+              - listitem [ref=e254]: Schnelle Lieferung
+              - listitem [ref=e255]: 30 Tage Rückgaberecht
+              - listitem [ref=e256]: Sicher bezahlen
+    - contentinfo [ref=e257]:
+      - generic [ref=e258]:
+        - generic [ref=e260]:
+          - generic [ref=e263]:
+            - paragraph [ref=e264]: Hilfe & Kontakt
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - link "Zum Kontaktformular" [ref=e267] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e268] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e269]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e270]:
+                - link "Häufig gestellte Fragen" [ref=e271] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e272] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e273]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e276]:
+            - generic [ref=e277]: Zahlungsmöglichkeiten
+            - generic [ref=e278]:
+              - img "Klarna" [ref=e281]
+              - img "Paypal" [ref=e284]
+              - img "Mastercard Visa" [ref=e287]
+              - img "Google Pay" [ref=e290]
+              - img "Apple Pay" [ref=e293]
+              - img "Logo Billie" [ref=e296]
+          - generic [ref=e297]: "*Vom Hersteller unverbindlich empfohlener Preis. Alle Preise sind Abholpreise. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise. Artikel im Onlineshop immer zum Preisepass Preis – unabhängig jeglicher Rabattaktion. *** Herstellerlistenpreis"
+        - generic [ref=e300]:
+          - link "XXXLutz" [ref=e301] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e302] [cursor=pointer]: XXXLutz
+            - img [ref=e304] [cursor=pointer]
+          - generic [ref=e310]: © 2026 XXXLutz KG
+          - list [ref=e311]:
+            - listitem [ref=e312]:
+              - link "Impressum" [ref=e313] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e314]:
+              - link "AGB" [ref=e315] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e316]:
+              - link "Datenschutz" [ref=e317] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e318]:
+              - button "Cookie-Einstellungen" [ref=e319] [cursor=pointer]
+          - list [ref=e320]:
+            - listitem [ref=e321]:
+              - link "youtube" [ref=e322] [cursor=pointer]:
+                - /url: https://www.youtube.com/@XXXLutzTV
+            - listitem [ref=e323]:
+              - link "facebook" [ref=e324] [cursor=pointer]:
+                - /url: https://www.facebook.com/xxxlutz.at/
+            - listitem [ref=e325]:
+              - link "instagram" [ref=e326] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_at/
+            - listitem [ref=e327]:
+              - link "pinterest" [ref=e328] [cursor=pointer]:
+                - /url: https://www.pinterest.at/xxxlutzAT/
+            - listitem [ref=e329]:
+              - link "tiktok" [ref=e330] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_at
+          - link "WACA accessibilty seal in silver" [ref=e331] [cursor=pointer]:
+            - /url: /accessibility
+            - img "WACA accessibilty seal in silver" [ref=e332] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - iframe
+  - generic:
+    - log
+```
