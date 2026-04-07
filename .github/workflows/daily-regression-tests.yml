@@ -1,69 +1,123 @@
 name: Daily Regression Tests
 
-# Trigger: Se ejecuta diariamente a las 9:00 UTC
+# Trigger: Runs daily at 9:00 UTC
 on:
   schedule:
-    # Formato cron: minuto hora día mes día-semana
-    # 0 9 * * * = Todos los días a las 9:00 UTC
+    # Cron format: minute hour day month day-of-week
+    # 0 9 * * * = Every day at 9:00 UTC
     - cron: '0 9 * * *'
   
-  # Permite ejecutar manualmente desde la UI
+  # Allow manual trigger from the UI
   workflow_dispatch:
 
 jobs:
   regression-tests:
     runs-on: ubuntu-latest
     
-    # Timeout para evitar que quede colgado
+    # Force Node.js 24 (required for new versions of Actions)
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    
+    # Timeout to prevent hanging
     timeout-minutes: 60
     
     steps:
-      # Paso 1: Clonar el repositorio
+      # Step 1: Clone the repository
       - name: 📥 Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 1
       
-      # Paso 2: Configurar Node.js
+      # Step 2: Setup Node.js
       - name: 🔧 Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: '18'
-          cache: 'npm'  # Cachea node_modules para más velocidad
+          cache: 'npm'  # Cache node_modules for faster installation
       
-      # Paso 3: Instalar dependencias
+      # Verify Node.js installation
+      - name: ✓ Verify Node.js installation
+        run: |
+          echo "=========================================="
+          echo "STEP 2: Node.js configured ✓"
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
+          echo "=========================================="
+          echo ""
+      
+      # Step 3: Install dependencies
       - name: 📦 Install dependencies
-        run: npm ci  # ci = clean install (más confiable que npm install en CI)
+        run: |
+          echo "=========================================="
+          echo "STEP 3: Installing npm dependencies..."
+          echo "=========================================="
+          npm ci
+          echo "✅ Dependencies installed successfully"
+          echo ""
       
-      # Paso 4: Instalar navegadores de Playwright
+      # Step 4: Install Playwright browsers
       - name: 🌐 Install Playwright browsers
-        run: npx playwright install --with-deps
+        run: |
+          echo "=========================================="
+          echo "STEP 4: Installing Playwright browsers..."
+          echo "=========================================="
+          npx playwright install --with-deps
+          echo "✅ Browsers installed successfully"
+          echo ""
       
-      # Paso 5: Ejecutar las pruebas
+      # Step 5: Run the regression tests
       - name: 🚀 Run regression tests
-        run: node runner.js
+        run: |
+          echo "=========================================="
+          echo "STEP 5: STARTING REGRESSION TESTS ⏱️"
+          echo "=========================================="
+          node runner.js
+          echo ""
+          echo "✅ Tests completed"
       
-      # Paso 6: Subir reportes de Allure (si existen)
+      # Step 6: Upload Allure results (if they exist)
       - name: 📊 Upload Allure results
-        if: always()  # Se ejecuta aunque falle el paso anterior
-        uses: actions/upload-artifact@v4
+        if: always()  # Runs even if the previous step fails
+        uses: actions/upload-artifact@v4.6.1
         with:
           name: allure-results
           path: allure-results/
-          retention-days: 30  # Mantiene los resultados 30 días
+          retention-days: 30  # Keep results for 30 days
       
-      # Paso 7: Subir reporte HTML (dashboard)
+      # Step 7: Upload HTML report (dashboard)
       - name: 📈 Upload Allure report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.6.1
         with:
           name: allure-report
           path: allure-report/
           retention-days: 30
       
-      # Paso 8: Notificación en caso de fallo (opcional)
+      # Step 8: Failure notification (optional)
       - name: 💬 Notify on failure
         if: failure()
         run: |
-          echo "❌ Las pruebas de regresión fallaron"
-          echo "⏰ Hora de ejecución: $(date)"
-          echo "📍 Repositorio: ${{ github.repository }}"
-          echo "🔗 Ver detalles: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "❌ Regression tests failed"
+          echo "⏰ Execution time: $(date)"
+          echo "📍 Repository: ${{ github.repository }}"
+          echo "🔗 View details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+      
+      # Step 9: Success summary
+      - name: ✅ Success Summary
+        if: success()
+        run: |
+          echo ""
+          echo "=========================================="
+          echo "✅ WORKFLOW COMPLETED SUCCESSFULLY"
+          echo "=========================================="
+          echo "📦 Step 1: Checkout ✓"
+          echo "🔧 Step 2: Node.js setup ✓"
+          echo "📦 Step 3: Dependencies ✓"
+          echo "🌐 Step 4: Playwright browsers ✓"
+          echo "🚀 Step 5: Tests executed ✓"
+          echo "📊 Step 6: Allure results uploaded ✓"
+          echo "📈 Step 7: Allure report uploaded ✓"
+          echo "=========================================="
+          echo "⏱️  Total time: $(date)"
+          echo "🎉 All steps completed successfully"
+          echo "=========================================="
