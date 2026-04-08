@@ -1,0 +1,1 @@
+Params: Country: CH, Rail: XXXLUTZ, Mode: 1P, Pay: TW
