@@ -4,8 +4,8 @@ name: Daily Regression Tests
 on:
   schedule:
     # Cron format: minute hour day month day-of-week
-    # 0 9 * * * = Every day at 9:00 UTC
-    - cron: '0 9 * * *'
+    # 0 7 * * * = Every day at 7:00 UTC = 9:00 Madrid (CEST/CET)
+    - cron: '0 7 * * *'
   
   # Allow manual trigger from the UI
   workflow_dispatch:
@@ -128,6 +128,10 @@ jobs:
       - name: 📦 Install dependencies
         run: npm ci
       
+      # Install Playwright browsers
+      - name: 🌐 Install Playwright browsers
+        run: npx playwright install --with-deps
+      
       # Step 7: Run the regression tests
       - name: 🚀 Run regression tests
         run: |
@@ -138,16 +142,7 @@ jobs:
           echo ""
           echo "✅ Tests completed"
       
-      # Step 8: Upload Allure results
-      - name: 📊 Upload Allure results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results
-          path: allure-results/
-          retention-days: 30
-      
-      # Step 9: Upload HTML report
+      # Step 8: Upload HTML report
       - name: 📈 Upload Allure report
         if: always()
         uses: actions/upload-artifact@v4
@@ -156,7 +151,15 @@ jobs:
           path: allure-report/
           retention-days: 30
       
-      # Step 10: Failure notification
+      # Step 9: Publish to GitHub Pages
+      - name: 🌐 Publish report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+      
+      # Step 11: Failure notification
       - name: 💬 Notify on failure
         if: failure()
         run: |
@@ -165,7 +168,7 @@ jobs:
           echo "📍 Repository: ${{ github.repository }}"
           echo "🔗 View details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       
-      # Step 11: Success summary
+      # Step 12: Success summary
       - name: ✅ Tests Job Complete
         if: success()
         run: |
@@ -174,8 +177,8 @@ jobs:
           echo "✅ TESTS JOB COMPLETED SUCCESSFULLY"
           echo "=========================================="
           echo "🚀 Step 5: Tests executed ✓"
-          echo "📊 Step 6: Allure results uploaded ✓"
-          echo "📈 Step 7: Allure report uploaded ✓"
+          echo "📊 Step 6: Allure report uploaded ✓"
+          echo "🌐 Step 7: Published to GitHub Pages ✓"
           echo "=========================================="
           echo "⏱️  Completed at: $(date)"
           echo "🎉 All tests passed!"
