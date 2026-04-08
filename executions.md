@@ -28,7 +28,7 @@
       3. KN
       4. KL
       5. KO
-      6.    
+   
 2. 🇦🇹 Austria
    1. 1P
    2. 2P
@@ -74,7 +74,7 @@
       2. PP
       3. SP
     
-9. 🇭🇷 Croatia
+9.  🇭🇷 Croatia
    1. 1P   
       1. CC
       2. PP
