@@ -1,0 +1,20 @@
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: PayPal
+
+============================================================
+📌 Opening XXXLUTZ-AT
+============================================================
+
+
+📍 Step 1: Navigate to store
+✅ Store page loaded
+
+📍 Step 2: Accept cookies
+✅ Cookies accepted
+
+📍 Step 4: Add standard product
+✅ Standard product added
+
+📍 Step 5: Proceed to checkout
+✅ Checkout initiated
+ℹ️ Delivery option searching Self Service
+✅ Self Service (Click & Collect) found. Selecting...
