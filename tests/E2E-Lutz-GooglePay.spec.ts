@@ -1,6 +1,7 @@
 import { test, Browser, BrowserContext, Page } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
 import { DeliveryOption, OpenPage, ObtenerDatos } from "../pageObjects";
+import { datosvar } from "./constantes";
 
 const testTitle = `[${process.env.COUNTRY ?? "N/A"}] ${process.env.RAIL} - Payment: ${process.env.PAY ?? "GooglePay"} (${process.env.MODE})`;
 

@@ -1,5 +1,6 @@
 import { test, Browser, BrowserContext, Page } from "@playwright/test";
 import { fill3DSCreditCard, fillDeliveryFormCompany, OpenPage, ObtenerDatos } from "../pageObjects";
+import { datosvar, PayQC } from "./constantes";
 
 test("Shopping with 3DS Credit Card", async ({ browser }: { browser: Browser }) => {
 

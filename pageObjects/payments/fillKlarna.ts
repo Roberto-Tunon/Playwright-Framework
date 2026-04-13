@@ -84,7 +84,7 @@ export async function fillKlarna(page: Page, pay: string, datosrail: DatosRail, 
           await page.locator('//button[@data-testid="pick-plan"]').click();
         }
       } catch (e) {
-        console.log('ℹ Payment plan checkbox not visible');
+        console.log('Payment plan checkbox not visible');
       }
 
       await page.locator('//button[@id="buy_button"]').click();
@@ -93,8 +93,11 @@ export async function fillKlarna(page: Page, pay: string, datosrail: DatosRail, 
       const klarnaUrl = 'https://x.klarnacdn.net/xs2a/widget-app/v1/index.html';
 
       const frame = page.frames().find((f: Frame) => f.url().includes(klarnaUrl));
-      if (!frame) throw new Error('❌ Klarna XS2A frame not found');
+      if (!frame) throw new Error('Klarna XS2A frame not found');
       await frame.locator('//input[@id="bias.apis.forms.elements.UsernameElement"]').fill('34567');
       await frame.locator('//input[@id="bias.apis.forms.elements.PasswordElement"]').fill('245677');
       await page.keyboard.press('Tab');
       await page.keyboard.press('Enter');
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { test, Browser, BrowserContext, Page } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
 import { AcceptCookiesLogin, loginUserIDP, OpenPage, ObtenerDatos } from "../pageObjects";
+import { datosvar } from "./constantes";
 
 test("Shopping with logged user Riverty", async ({ browser }: { browser: Browser }) => {
 
