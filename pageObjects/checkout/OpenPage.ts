@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
-import { DatosVar, DatosRail } from '../tests/constantes';
-import { fillSSO } from './fillSSO';
+import { DatosVar, DatosRail } from '../../tests/constantes';
+import { fillSSO } from '../auth/fillSSO';
 import { AcceptCookies } from './AcceptCookies';
 
 export async function OpenPage(

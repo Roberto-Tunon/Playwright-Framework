@@ -1,10 +1,10 @@
 import { test, Browser, BrowserContext, Page } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
-import { AcceptCookiesLogin } from "../utils/AcceptCookiesLogin";
-import { loginUserIDP } from "../utils/loginUserIDP";
-import { OpenPage } from "../utils/OpenPage";
+import { AcceptCookiesLogin } from "../pageObjects/checkout/AcceptCookiesLogin";
+import { loginUserIDP } from "../pageObjects/auth/loginUserIDP";
+import { OpenPage } from "../pageObjects/checkout/OpenPage";
 import { datosvar } from "./constantes";
-import { ObtenerDatos } from "../utils/ObtenerDatos";
+import { ObtenerDatos } from "../pageObjects/ObtenerDatos";
 
 test("Shopping with logged user Riverty", async ({ browser }: { browser: Browser }) => {
 

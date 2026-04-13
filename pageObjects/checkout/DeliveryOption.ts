@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { DatosVar, DatosRail } from '../tests/constantes';
+import { DatosVar, DatosRail } from '../../tests/constantes';
 import { fillDeliveryForm } from './fillDeliveryForm';
 
 type PayCode = 'DEL' | 'KN' | 'KL' | 'CC' | string;

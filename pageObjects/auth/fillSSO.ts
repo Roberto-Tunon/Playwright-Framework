@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { DatosVar } from '../tests/constantes';
+import { DatosVar } from '../../tests/constantes';
 
 export async function fillSSO(page: Page, datosvar: DatosVar): Promise<void> {
   await page.getByRole('link', { name: 'XXXLutz SSO' }).click();

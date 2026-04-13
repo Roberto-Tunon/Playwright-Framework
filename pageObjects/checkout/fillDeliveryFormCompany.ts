@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { DatosVar, DatosRail } from '../tests/constantes';
+import { DatosVar, DatosRail } from '../../tests/constantes';
 
 export async function fillDeliveryFormCompany(page: Page, datosvar: DatosVar, datosrail: DatosRail): Promise<void> {
 
@@ -30,4 +30,3 @@ export async function fillDeliveryFormCompany(page: Page, datosvar: DatosVar, da
 
   await page.locator('[data-purpose="checkout.addressForms.button.submit"]').click();
 }
-

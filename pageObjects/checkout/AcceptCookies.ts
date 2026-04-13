@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { DatosRail } from '../tests/constantes';
+import { DatosRail } from '../../tests/constantes';
  
 export async function AcceptCookies(page: Page, datos: DatosRail): Promise<void> {
  

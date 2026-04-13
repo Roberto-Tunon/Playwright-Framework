@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { DatosVar } from '../tests/constantes';
+import { DatosVar } from '../../tests/constantes';
  
 export async function loginUserIDP(page: Page, datosvar: DatosVar): Promise<void> {
   await page.locator('[data-purpose="accounts.app.email.input.field"]').fill(datosvar.email);

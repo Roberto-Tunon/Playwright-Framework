@@ -1,5 +1,5 @@
 import { Page, Frame } from '@playwright/test';
-import { DatosRail } from '../tests/constantes';
+import { DatosRail } from '../../tests/constantes';
 
 export async function fillKlarna(page: Page, pay: string, datosrail: DatosRail, rail: string): Promise<void> {
 
@@ -98,14 +98,3 @@ export async function fillKlarna(page: Page, pay: string, datosrail: DatosRail, 
       await frame.locator('//input[@id="bias.apis.forms.elements.PasswordElement"]').fill('245677');
       await page.keyboard.press('Tab');
       await page.keyboard.press('Enter');
-
-      await page.waitForTimeout(3000);
-
-      const frame2 = page.frames().find((f: Frame) => f.url().includes(klarnaUrl));
-      if (!frame2) throw new Error('❌ Klarna XS2A frame2 not found');
-      await frame2.locator('//input[@id="bias.apis.forms.elements.OtpElement"]').fill('234570');
-      await page.keyboard.press('Tab');
-      await page.keyboard.press('Enter');
-    }
-  }
-}

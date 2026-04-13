@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { DatosVar, DatosRail } from '../tests/constantes';
+import { DatosVar, DatosRail } from '../../tests/constantes';
 
 export async function fillDeliveryForm(page: Page, datosvar: DatosVar, datosrail: DatosRail): Promise<void> {
 

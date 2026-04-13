@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { PayData, DatosRail } from '../tests/constantes';
+import { PayData, DatosRail } from '../../tests/constantes';
 
 export async function fillCreditCard(page: Page, payData: PayData, datosrail: DatosRail): Promise<void> {
 

@@ -1,9 +1,9 @@
 import { test, Browser, BrowserContext, Page } from "@playwright/test";
-import { fill3DSCreditCard } from "../utils/fill3DSCreditCard";
-import { fillDeliveryFormCompany } from "../utils/fillDeliveryFormCompany";
-import { OpenPage } from "../utils/OpenPage";
+import { fill3DSCreditCard } from "../pageObjects/payments/fill3DSCreditCard";
+import { fillDeliveryFormCompany } from "../pageObjects/checkout/fillDeliveryFormCompany";
+import { OpenPage } from "../pageObjects/checkout/OpenPage";
 import { datosvar, PayQC } from "./constantes";
-import { ObtenerDatos } from "../utils/ObtenerDatos";
+import { ObtenerDatos } from "../pageObjects/ObtenerDatos";
 
 test("Shopping with 3DS Credit Card", async ({ browser }: { browser: Browser }) => {
 

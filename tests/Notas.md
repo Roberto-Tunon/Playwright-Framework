@@ -17,6 +17,9 @@ npm init playwright@latest
 > Interfaz para SSO y ejecuciones locales
 ```bash
 node run-test.mjs
+
+npm run prepare-secret
+Go to GitHub and update secret AUTH_JSON
 ```
 
 > Interfaz para batch y dashboard de Allure
