@@ -16,3 +16,4 @@ export { fill3DSCreditCard, fillCreditCard, fillKlarna } from './payments';
 
 // Utilities
 export { ObtenerDatos } from './ObtenerDatos';
+export { Logger } from './logger';
