@@ -2,7 +2,12 @@
   "name": "fe-deployment-regression",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "login": "npx playwright test tests/auth.spec.ts --project chromium --headed",
+    "test": "node runner.js",
+    "prepare-secret": "cat auth.json | base64 -w 0 && echo '\\n\\n✅ Copy the above base64 string and paste it as AUTH_JSON secret in GitHub'",
+    "show-secret": "echo '📌 AUTH_JSON secret setup:' && echo '1. Run: npm run prepare-secret' && echo '2. Copy the output' && echo '3. Go to: GitHub repo → Settings → Secrets and variables → Actions' && echo '4. Click New repository secret' && echo '5. Name: AUTH_JSON' && echo '6. Value: [paste the base64 string]'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

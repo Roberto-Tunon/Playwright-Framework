@@ -14,12 +14,19 @@ const ALLURE_BIN = path.join(__dirname, 'node_modules', '.bin', 'allure');
 const RESULTS_DIR = path.join(__dirname, 'allure-results');
 const REPORT_DIR = path.join(__dirname, 'allure-report');
 const STATE_PATH = path.resolve(__dirname, 'state.json');
+const AUTH_FILE = path.resolve(__dirname, 'auth.json');
 
 const sessionStart = Date.now();
 
 // 1. INITIAL VALIDATIONS
 if (!fs.existsSync(CONFIG_PATH)) { console.error('❌ config.json not found!'); process.exit(1); }
 if (!fs.existsSync(PLAYWRIGHT_BIN)) { console.error('❌ Playwright not found! Run: npm i'); process.exit(1); }
+if (!fs.existsSync(AUTH_FILE)) { 
+  console.error('❌ auth.json not found!');
+  console.error('   📌 Run: npm run login');
+  console.error('   📌 Or set AUTH_JSON secret in GitHub Actions');
+  process.exit(1); 
+}
 
 const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'));
 const { permanentRuns = [], randomPool = [] } = config;

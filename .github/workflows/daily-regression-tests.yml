@@ -11,10 +11,90 @@ on:
   workflow_dispatch:
 
 jobs:
+  # ═════════════════════════════════════════════════════════════
+  # 1️⃣ LOGIN - Restore SSO Session from GitHub Secret
+  # ═════════════════════════════════════════════════════════════
+  Login:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      # Checkout repository
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      # Restore SSO authentication session from secret
+      - name: 🔐 Restore SSO Session
+        run: |
+          if [[ -z "${{ secrets.AUTH_JSON }}" ]]; then
+            echo ""
+            echo "╔═══════════════════════════════════════════════════════╗"
+            echo "║  ❌ ERROR: AUTH_JSON secret not configured             ║"
+            echo "╚═══════════════════════════════════════════════════════╝"
+            echo ""
+            echo "📌 To fix this, follow these steps:"
+            echo ""
+            echo "   1️⃣  Generate auth.json locally:"
+            echo "       npm run login"
+            echo ""
+            echo "   2️⃣  Encode to base64:"
+            echo "       npm run prepare-secret"
+            echo ""
+            echo "   3️⃣  Add as GitHub Secret:"
+            echo "       - Go to: repo Settings → Secrets and variables → Actions"
+            echo "       - Click: 'New repository secret'"
+            echo "       - Name: AUTH_JSON"
+            echo "       - Value: [paste the base64 string from step 2]"
+            echo "       - Click: 'Add secret'"
+            echo ""
+            echo "   📖 For detailed instructions, see: SSO-GITHUB-ACTIONS.md"
+            echo ""
+            exit 1
+          fi
+          
+          echo "📝 Decoding AUTH_JSON from base64..."
+          echo "${{ secrets.AUTH_JSON }}" | base64 -d > auth.json
+          
+          if [ ! -f auth.json ]; then
+            echo "❌ Failed to create auth.json"
+            exit 1
+          fi
+          
+          echo "✅ SSO session successfully restored from secret"
+          echo "$(wc -c < auth.json) bytes of authentication data loaded"
+      
+      # Verify auth.json is valid JSON
+      - name: ✅ Verify authentication file
+        run: |
+          if jq empty auth.json 2>/dev/null; then
+            echo "✅ auth.json is valid JSON"
+          else
+            echo "❌ auth.json is corrupted or invalid base64"
+            exit 1
+          fi
+      
+      # Summary
+      - name: 📋 Login Complete
+        run: |
+          echo ""
+          echo "════════════════════════════════════════════════════════"
+          echo "✅ LOGIN JOB COMPLETED SUCCESSFULLY"
+          echo "════════════════════════════════════════════════════════"
+          echo "🔐 Step 1: Checkout ✓"
+          echo "🔐 Step 2: Decoded AUTH_JSON secret ✓"
+          echo "🔐 Step 3: Verified authentication file ✓"
+          echo "════════════════════════════════════════════════════════"
+          echo ""
+
+  # ═════════════════════════════════════════════════════════════
+  # 2️⃣ SETUP - Install Dependencies & Browsers
+  # ═════════════════════════════════════════════════════════════
   Setup:
     runs-on: ubuntu-latest
+    needs: Login
     
-    # Force Node.js 24 for GitHub Actions
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     
@@ -91,31 +171,33 @@ jobs:
           echo "Ready to run tests!"
           echo "=========================================="
 
+  # ═════════════════════════════════════════════════════════════
+  # 3️⃣ TESTS - Run Regression Tests
+  # ═════════════════════════════════════════════════════════════
   Tests:
     runs-on: ubuntu-latest
     needs: Setup
     
-    # Force Node.js 24 for GitHub Actions
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     
     timeout-minutes: 60
     
     steps:
-      # Step 5: Clone the repository again (needed for new job)
+      # Step 1: Clone the repository
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
       
-      # Step 6: Setup Node.js again (needed for new job)
+      # Step 2: Setup Node.js
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
       
-      # Recreate .npmrc credentials
+      # Configure npm registry credentials
       - name: 🔐 Configure npm registry credentials
         run: |
           cat > ~/.npmrc << EOF
@@ -132,18 +214,33 @@ jobs:
       - name: 🌐 Install Playwright browsers
         run: npx playwright install --with-deps
       
-      # Step 7: Run the regression tests
+      # Restore auth.json from secret (same as Login job)
+      - name: 🔐 Load SSO Session
+        run: |
+          echo "${{ secrets.AUTH_JSON }}" | base64 -d > auth.json
+          echo "✅ Authentication session loaded"
+      
+      # Step 3: Run the regression tests
       - name: 🚀 Run regression tests
         run: |
           echo "=========================================="
-          echo "STEP 5: STARTING REGRESSION TESTS ⏱️"
+          echo "STARTING REGRESSION TESTS ⏱️"
           echo "=========================================="
           node runner.js
           echo ""
           echo "✅ Tests completed"
       
-      # Step 8: Upload HTML report
-      - name: 📈 Upload Allure report
+      # Step 4: Upload Allure results
+      - name: 📈 Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results/
+          retention-days: 30
+      
+      # Step 5: Upload HTML report
+      - name: 📊 Upload Allure report
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -151,7 +248,7 @@ jobs:
           path: allure-report/
           retention-days: 30
       
-      # Step 9: Publish to GitHub Pages
+      # Step 6: Publish to GitHub Pages
       - name: 🌐 Publish report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
@@ -159,27 +256,34 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
       
-      # Step 11: Failure notification
+      # Step 7: Failure notification
       - name: 💬 Notify on failure
         if: failure()
         run: |
-          echo "❌ Regression tests failed"
+          echo ""
+          echo "╔═══════════════════════════════════════════════════════╗"
+          echo "║  ❌ REGRESSION TESTS FAILED                           ║"
+          echo "╚═══════════════════════════════════════════════════════╝"
+          echo ""
           echo "⏰ Execution time: $(date)"
           echo "📍 Repository: ${{ github.repository }}"
           echo "🔗 View details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo ""
       
-      # Step 12: Success summary
+      # Step 8: Success summary
       - name: ✅ Tests Job Complete
         if: success()
         run: |
           echo ""
-          echo "=========================================="
+          echo "════════════════════════════════════════════════════════"
           echo "✅ TESTS JOB COMPLETED SUCCESSFULLY"
-          echo "=========================================="
-          echo "🚀 Step 5: Tests executed ✓"
-          echo "📊 Step 6: Allure report uploaded ✓"
-          echo "🌐 Step 7: Published to GitHub Pages ✓"
-          echo "=========================================="
+          echo "════════════════════════════════════════════════════════"
+          echo "🚀 Step 1: Tests executed ✓"
+          echo "📊 Step 2: Allure results uploaded ✓"
+          echo "📈 Step 3: Allure report uploaded ✓"
+          echo "🌐 Step 4: Published to GitHub Pages ✓"
+          echo "════════════════════════════════════════════════════════"
           echo "⏱️  Completed at: $(date)"
           echo "🎉 All tests passed!"
-          echo "=========================================="
+          echo "════════════════════════════════════════════════════════"
+          echo ""

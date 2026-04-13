@@ -92,7 +92,21 @@ After each execution:
 
 ---
 
-## 🛠️ Advanced customization
+## � Authentication with GitHub Actions
+
+Since tests require SSO authentication that expires in < 24 hours and MFA cannot be automated, we use an **encoded session secret**.
+
+### Quick Setup:
+
+```bash
+npm run login              # Generate auth.json (interactive - complete MFA)
+npm run prepare-secret     # Encode to base64
+# Copy the output and add as AUTH_JSON secret in GitHub
+```
+
+**→ See [SSO-GITHUB-ACTIONS.md](SSO-GITHUB-ACTIONS.md) for detailed setup instructions**
+
+---
 
 ### 1. **Email notifications on failure**
 
