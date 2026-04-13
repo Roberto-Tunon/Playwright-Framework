@@ -1,9 +1,6 @@
 import { test, expect, Browser, BrowserContext, Page } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
-import { fillDeliveryFormCompany } from "../pageObjects/checkout/fillDeliveryFormCompany";
-import { OpenPage } from "../pageObjects/checkout/OpenPage";
-import { datosvar } from "./constantes";
-import { ObtenerDatos } from "../pageObjects/ObtenerDatos";
+import { fillDeliveryFormCompany, OpenPage, ObtenerDatos } from "../pageObjects";
 
 const testTitle = `[${process.env.COUNTRY ?? "N/A"}] ${process.env.RAIL} - Payment: ${process.env.PAY ?? "Billie"} (${process.env.MODE})`;
 

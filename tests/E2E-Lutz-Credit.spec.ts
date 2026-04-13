@@ -1,10 +1,6 @@
 import { test, Browser, BrowserContext, Page } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
-import { DeliveryOption } from "../pageObjects/checkout/DeliveryOption";
-import { fillCreditCard } from "../pageObjects/payments/fillCreditCard";
-import { OpenPage } from "../pageObjects/checkout/OpenPage";
-import { datosvar, PayQC } from "./constantes";
-import { ObtenerDatos } from "../pageObjects/ObtenerDatos";
+import { DeliveryOption, fillCreditCard, OpenPage, ObtenerDatos } from "../pageObjects";
 
 const testTitle = `[${process.env.COUNTRY ?? "N/A"}] ${process.env.RAIL} - Payment: ${process.env.PAY ?? "CreditCard"} (${process.env.MODE})`;
 

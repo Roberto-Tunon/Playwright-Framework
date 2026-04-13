@@ -1,8 +1,5 @@
 import { test, expect, Browser, BrowserContext, Page } from "@playwright/test";
-import { fillDeliveryForm } from "../pageObjects/checkout/fillDeliveryForm";
-import { fillSSO } from "../pageObjects/auth/fillSSO";
-import { datosvar } from "./constantes";
-import { ObtenerDatos } from "../pageObjects/ObtenerDatos";
+import { fillDeliveryForm, fillSSO, ObtenerDatos } from "../pageObjects";
 
 test("Shopping on Lesnina RS", async ({ browser }: { browser: Browser }) => {
 

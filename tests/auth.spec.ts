@@ -1,6 +1,6 @@
 import { test, Page } from "@playwright/test";
 import { datosvar } from "./constantes";
-import { fillSSO } from "../pageObjects/auth/fillSSO";
+import { fillSSO } from "../pageObjects";
 
 test("SSO Session Capture", async ({ page }: { page: Page }) => {
 
