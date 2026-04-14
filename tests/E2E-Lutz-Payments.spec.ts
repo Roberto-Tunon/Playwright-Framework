@@ -2,6 +2,7 @@ import { test, expect, Browser, BrowserContext, Page } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
 import { DeliveryOption, fillDeliveryForm, fillKlarna, OpenPage, ObtenerDatos } from "../pageObjects";
 import { datosvar } from "./constantes";
+import { Logger } from "../pageObjects/logger";
 
 const testTitle = `[${process.env.COUNTRY ?? "N/A"}] ${process.env.RAIL} - Payment: ${process.env.PAY ?? "CreditCard"} (${process.env.MODE})`;
 
@@ -25,9 +26,8 @@ test(testTitle, async ({ browser }: { browser: Browser }) => {
   await tag(cod_country);
   await parameter("Rail", process.env.RAIL ?? "");
   await parameter("Pay", process.env.PAY ?? "");
-
-  console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: ${pay}`);
   await description(`E2E Test for Country: ${cod_country.toUpperCase()} - Rail: ${rail.toUpperCase()} - Mode: ${mode.toUpperCase()} - Pay: ${pay.toUpperCase()}`);
+  Logger.section(`Executing: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: ${pay}`);
 
   await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
 

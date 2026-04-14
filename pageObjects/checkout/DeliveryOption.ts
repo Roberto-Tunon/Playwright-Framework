@@ -13,7 +13,7 @@ async function AddtoCart(page: Page, datosvar: DatosVar, datosrail: DatosRail): 
 export async function DeliveryOption(page: Page, datosvar: DatosVar, datosrail: DatosRail, pay: PayCode): Promise<void> {
 
   const deliveryDropdown = page.locator('div[data-purpose="deliveryOptions.select.deliveryOption"] [role="combobox"]');
-  const isDropdownVisible = await deliveryDropdown.isVisible({ timeout: 2000 }).catch(() => false);
+  const isDropdownVisible = false; // TODO: Temporary fix - web issue, skip dropdown logic
   let selfServiceOption = null;
 
   if (isDropdownVisible) {

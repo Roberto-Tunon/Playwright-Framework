@@ -2,6 +2,7 @@ import { test, Browser, BrowserContext, Page, Frame } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
 import { DeliveryOption, OpenPage, ObtenerDatos } from "../pageObjects";
 import { datosvar } from "./constantes";
+import { Logger } from "../pageObjects/logger";
 
 const testTitle = `[${process.env.COUNTRY ?? "N/A"}] ${process.env.RAIL} - Payment: ${process.env.PAY ?? "PayPal"} (${process.env.MODE})`;
 
@@ -24,7 +25,7 @@ test(testTitle, async ({ browser }: { browser: Browser }) => {
   await tag(cod_country);
   await parameter("Rail", process.env.RAIL ?? "");
   await description(`E2E Test for Country: ${cod_country.toUpperCase()} - Rail: ${rail.toUpperCase()} - Mode: ${mode.toUpperCase()} - Pay: PayPal`);
-  console.log(`Params: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: PayPal`);
+  Logger.section(`Executing: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: PayPal`);
 
   await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
   await DeliveryOption(page, datosvar, datosrail, "PP");

@@ -12,7 +12,7 @@ export async function OpenPage(
   cod_country: string,
   mode: string
 ): Promise<void> {
-  Logger.section(`Opening ${rail.toUpperCase()}-${cod_country}`);
+  Logger.section(`Executing ${rail.toUpperCase()}-${cod_country}-${mode}`);
 
   try {
     Logger.step(1, 'Navigate to store');

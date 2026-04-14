@@ -2,6 +2,7 @@ import { test, Browser, BrowserContext, Page } from "@playwright/test";
 import { epic, feature, story, description, tag, parameter } from "allure-js-commons";
 import { fillDeliveryForm, OpenPage, ObtenerDatos } from "../pageObjects";
 import { datosvar } from "./constantes";
+import { Logger } from "../pageObjects/logger";
 
 const testTitle = `[${process.env.COUNTRY ?? "N/A"}] ${process.env.RAIL} - Payment: ${process.env.PAY ?? "SplitIT"} (${process.env.MODE})`;
 
@@ -24,6 +25,7 @@ test(testTitle, async ({ browser }: { browser: Browser }) => {
   await tag(cod_country);
   await parameter("Rail", process.env.RAIL ?? "");
   await description(`E2E Test for ${rail}-${cod_country}`);
+  Logger.section(`Executing: Country: ${cod_country}, Rail: ${rail.toUpperCase()}, Mode: ${mode}, Pay: SplitIT`);
 
   await OpenPage(page, datosvar, datosrail, rail, cod_country, mode);
 
