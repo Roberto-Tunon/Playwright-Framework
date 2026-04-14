@@ -1,0 +1,8 @@
+Params: Country: AT, Rail: XXXLUTZ, Mode: 1P, Pay: Credit card
+
+============================================================
+📌 Opening XXXLUTZ-AT
+============================================================
+
+
+📍 Step 1: Navigate to store

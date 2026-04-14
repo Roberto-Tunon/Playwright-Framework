@@ -1,0 +1,14 @@
+Params: Country: AT, Rail: MOEMAX, Mode: 1P, Pay: Credit card
+
+============================================================
+📌 Opening MOEMAX-AT
+============================================================
+
+
+📍 Step 1: Navigate to store
+✅ Store page loaded
+
+📍 Step 2: Accept cookies
+✅ Cookies accepted
+
+📍 Step 4: Add standard product

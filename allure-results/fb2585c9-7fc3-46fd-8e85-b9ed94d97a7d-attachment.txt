@@ -1,0 +1,4 @@
+❌ OpenPage failed: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('[data-purpose="checkout.addtocart"]')
+
