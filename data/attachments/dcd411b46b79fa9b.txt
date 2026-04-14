@@ -1,3 +1,0 @@
-Params: Country: SI, Rail: XXXLESNINA, Mode: 1P, Pay: DEL
-ℹ️ Delivery option searching Self Service
-⚠️ SELF_SERVICE not found. Selecting first option if possible...

@@ -1,2 +1,0 @@
-Params: Country: CZ, Rail: XXXLUTZ, Mode: 1P, Pay: ON
-✅ Botón clickeado.
