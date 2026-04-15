@@ -16,7 +16,7 @@ on:
         default: 'default'
         type: choice
         options:
-          - default
+          - Default
           - Regression
           - Smoke
           - Sanity
