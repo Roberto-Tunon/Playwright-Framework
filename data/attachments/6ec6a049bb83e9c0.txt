@@ -1,5 +1,0 @@
-❌ Failed to add marketplace product: locator.click: Timeout 15000ms exceeded.
-Call log:
-  - waiting for locator('[data-purpose="checkout.addtocart"]')
-
-❌ OpenPage failed: No Marketplace product for Country: DE
