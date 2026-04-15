@@ -26,28 +26,22 @@ Go to GitHub and update secret AUTH_JSON
 ```bash
 node runner.js
 
-# Regression - Suite completa (8 tests)
-node runner.js --suite=Regression
+# Ver ayuda
+node runner.js --help
 
-# Smoke - Validación rápida (2 tests)
-node runner.js --suite=Smoke
+# Ejecución por defecto (8 + 4 random)
+node runner.js
 
-# Sanity - Funcionalidad core (4 tests)
-node runner.js --suite=Sanity
+# Suites predefinidas
+node runner.js --suite=Regression   # 8 tests
+node runner.js --suite=Smoke        # 2 tests
+node runner.js --suite=Sanity       # 4 tests
 
-# Todos los tests de Credit Card en cualquier país
+# Suites dinámicas (filtro por pago/país)
 node runner.js --suite=CreditCard
-
-# Todos los tests de PayPal
 node runner.js --suite=PayPal
-
-# Todos los tests de Klarna
 node runner.js --suite=Klarna
-
-# Todos los tests de Austria
 node runner.js --suite=Austria
-
-# Todos los tests de Germany
 node runner.js --suite=Germany
 ```
 
