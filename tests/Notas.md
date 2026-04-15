@@ -66,6 +66,7 @@ Scripts/Credit-Lutz.sh
     KN  -> Klarna Pay Now (Sofortüberweisung (Bank transfer))
     KO  -> Klarna OverTime
     KL  -> Klarna Play Later (Kauf auf Rechnung)
+    GP  -> Google Pay
     SW  -> Swish
     TW  -> Twint
     ON  -> OnLine Banking       
@@ -159,6 +160,11 @@ RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Billie.spec.ts --proj
 > Riverty 
 ```bash
 RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-Riverty-logged.spec.ts --project chromium --headed
+``` 
+
+> Google Pay
+```bash
+RAIL=xxxlutz COUNTRY=AT npx playwright test tests/E2E-Lutz-GooglePay.spec.ts --project chromium --headed
 ``` 
 
 > Code generator
