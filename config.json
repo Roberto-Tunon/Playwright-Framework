@@ -4,159 +4,401 @@
     "maxRandomRuns": 4
   },
   "permanentRuns": [
-    { 
-      "country": "DE", 
-      "rail": "moemax", 
-      "mode": "1P", 
-      "pay": "PP", 
-      "file": "tests/E2E-Lutz-Paypal.spec.ts",
-      "icon": "wallet"
-    },
-    { 
-      "country": "AT", 
-      "rail": "moemax", 
-      "mode": "1P", 
-      "pay": "CC", 
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CC",
       "file": "tests/E2E-Lutz-Credit.spec.ts",
-      "icon": "credit-card"
+      "icon": "💳"
     },
-    { 
-      "country": "AT", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "CC", 
-      "file": "tests/E2E-Lutz-Credit.spec.ts",
-      "icon": "credit-card"
-    },
-    { 
-      "country": "DE", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "PP", 
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
       "file": "tests/E2E-Lutz-Paypal.spec.ts",
-      "icon": "wallet"
+      "icon": "🅿️"
     },
-    { 
-      "country": "AT", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "KL", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "zap"
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
     },
-    { 
-      "country": "AT", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "BI", 
-      "file": "tests/E2E-Lutz-Billie.spec.ts",
-      "icon": "credit-card"
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
     },
-    { 
-      "country": "SI", 
-      "rail": "xxxlesnina", 
-      "mode": "1P", 
-      "pay": "DEL", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "package"
+    {
+      "country": "CZ",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
     },
-    { 
-      "country": "CZ", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "DEL", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "package"
-    }       
+    {
+      "country": "CH",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "RO",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "SK",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
+    }
   ],
   "randomPool": [
-    { 
-      "country": "CH", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "TW", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "qr-code"
-    },    
-    { 
-      "country": "CZ", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "ON", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "landmark"
-    },
-     { 
-      "country": "HR", 
-      "rail": "xxxlesnina", 
-      "mode": "1P", 
-      "pay": "CC", 
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "2P",
+      "pay": "CC",
       "file": "tests/E2E-Lutz-Credit.spec.ts",
-      "icon": "credit-card"
+      "icon": "💳"
     },
-     { 
-      "country": "SK", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "PP", 
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "KN",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "🚀"
+    },
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "2P",
+      "pay": "PP",
       "file": "tests/E2E-Lutz-Paypal.spec.ts",
-      "icon": "wallet"
+      "icon": "🅿️"
     },
-     { 
-      "country": "HU", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "CC", 
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "KN",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "🚀"
+    },
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "KL",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "⏳"
+    },
+    {
+      "country": "DE",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "KO",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "📅"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "2P",
+      "pay": "CC",
       "file": "tests/E2E-Lutz-Credit.spec.ts",
-      "icon": "credit-card"
+      "icon": "💳"
     },
-    { 
-      "country": "RO", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "SP", 
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "KN",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "🚀"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "KL",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "⏳"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "2P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "2P",
+      "pay": "KL",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "⏳"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "KN",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "🚀"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "KL",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "⏳"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "3P",
+      "pay": "KO",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "📅"
+    },
+    {
+      "country": "AT",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "BI",
+      "file": "tests/E2E-Lutz-Billie.spec.ts",
+      "icon": "🏢"
+    },
+    {
+      "country": "CZ",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "CZ",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "ON",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "🏦"
+    },
+    {
+      "country": "CH",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "CH",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "TW",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "📲"
+    },
+    {
+      "country": "SE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "SE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "SE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "SW",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "🏦"
+    },
+    {
+      "country": "SE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "KN",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "🚀"
+    },
+    {
+      "country": "SE",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "KL",
+      "file": "tests/E2E-Lutz-Payments.spec.ts",
+      "icon": "⏳"
+    },
+    {
+      "country": "RO",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "RO",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "SP",
       "file": "tests/E2E-Lutz-SplitIT.spec.ts",
-      "icon": "smartphone"
-    },   
-    { 
-      "country": "AT", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "KN", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "zap"
+      "icon": "💳"
     },
-    { 
-      "country": "DE", 
-      "rail": "xxxlutz", 
-      "mode": "1P", 
-      "pay": "KN", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "zap"
+    {
+      "country": "RS",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "CO",
+      "file": "tests/E2E-Lutz-RS.spec.ts",
+      "icon": "🦅"
     },
-    { 
-      "country": "DE", 
-      "rail": "xxxlutz", 
-      "mode": "3P", 
-      "pay": "KN", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "zap"
-    },
-    { 
-      "country": "DE", 
-      "rail": "xxxlutz", 
-      "mode": "2P", 
-      "pay": "CC", 
+    {
+      "country": "SI",
+      "rail": "xxxlesnina",
+      "mode": "1P",
+      "pay": "CC",
       "file": "tests/E2E-Lutz-Credit.spec.ts",
-      "icon": "credit-card"
+      "icon": "💳"
     },
-    { 
-      "country": "AT", 
-      "rail": "xxxlutz", 
-      "mode": "2P", 
-      "pay": "KL", 
-      "file": "tests/E2E-Lutz-Payments.spec.ts",
-      "icon": "zap"
+    {
+      "country": "SI",
+      "rail": "xxxlesnina",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "SI",
+      "rail": "xxxlesnina",
+      "mode": "1P",
+      "pay": "SP",
+      "file": "tests/E2E-Lutz-SplitIT.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "HR",
+      "rail": "xxxlesnina",
+      "mode": "1P",
+      "pay": "CC",
+      "file": "tests/E2E-Lutz-Credit.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "HR",
+      "rail": "xxxlesnina",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "HR",
+      "rail": "xxxlesnina",
+      "mode": "1P",
+      "pay": "SP",
+      "file": "tests/E2E-Lutz-SplitIT.spec.ts",
+      "icon": "💳"
+    },
+    {
+      "country": "SK",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
+    },
+    {
+      "country": "HU",
+      "rail": "xxxlutz",
+      "mode": "1P",
+      "pay": "PP",
+      "file": "tests/E2E-Lutz-Paypal.spec.ts",
+      "icon": "🅿️"
     }
-  ]
+  ],
+  "suites": {
+    "Regression": {
+      "description": "Full regression suite - All permanent tests",
+      "tests": [0, 1, 2, 3, 4, 5, 6, 7]
+    },
+    "Smoke": {
+      "description": "Quick smoke test - Essential flows",
+      "tests": [0, 2]
+    },
+    "Sanity": {
+      "description": "Sanity check - Core functionality",
+      "tests": [0, 1, 2, 3]
+    },
+    "CreditCard": {
+      "description": "All Credit Card payment tests across countries",
+      "filter": { "pay": "CC" }
+    },
+    "PayPal": {
+      "description": "All PayPal payment tests across countries",
+      "filter": { "pay": "PP" }
+    },
+    "Klarna": {
+      "description": "All Klarna payment tests",
+      "filter": { "pay": "KL" }
+    },
+    "Austria": {
+      "description": "All Austria (AT) tests",
+      "filter": { "country": "AT" }
+    },
+    "Germany": {
+      "description": "All Germany (DE) tests",
+      "filter": { "country": "DE" }
+    }
+  }
 }

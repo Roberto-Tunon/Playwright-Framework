@@ -29,14 +29,81 @@ if (!fs.existsSync(AUTH_FILE)) {
 }
 
 const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'));
-const { permanentRuns = [], randomPool = [] } = config;
+const { permanentRuns = [], randomPool = [], suites = {} } = config;
 
-// 2. TEST SELECTION (4 FIXED + 4 RANDOM)
-const selectedRandom = [...randomPool].sort(() => 0.5 - Math.random()).slice(0, 4);
+// 2. PARSE CLI ARGUMENTS FOR SUITE SELECTION
+const args = process.argv.slice(2);
+const helpFlag = args.includes('--help') || args.includes('-h');
+const suiteName = args.find(arg => arg.startsWith('--suite='))?.split('=')[1] || 
+                  args[args.indexOf('--suite') + 1];
 
-// Deduplicate in case permanent + random overlap
-const rawQueue = [...permanentRuns, ...selectedRandom];
-const executionQueue = dedupeQueue(rawQueue, (t) => {
+// Show help if requested
+if (helpFlag) {
+  console.log('\n📚 AVAILABLE TEST SUITES:\n');
+  Object.entries(suites).forEach(([name, suite]) => {
+    const testCount = suite.tests ? suite.tests.length : '?';
+    console.log(`  ${name.padEnd(15)} — ${suite.description} (${testCount} tests)`);
+  });
+  console.log('\n💡 USAGE:\n');
+  console.log('  node runner.js                    # Default: 8 fixed + 4 random tests');
+  console.log('  node runner.js --suite=Regression # Run specific suite');
+  console.log('  node runner.js --help             # Show this help\n');
+  process.exit(0);
+}
+
+let executionQueue = [];
+
+if (suiteName && suites[suiteName]) {
+  const suite = suites[suiteName];
+  console.log(`\n📋 Suite selected: ${suiteName}`);
+  console.log(`   ${suite.description}`);
+  
+  const allTests = [...permanentRuns, ...randomPool];
+  
+  if (suite.tests) {
+    // Suite with explicit test indices
+    executionQueue = suite.tests
+      .map(idx => allTests[idx])
+      .filter(t => t); // Filter out undefined
+    console.log(`   Tests indices: [${suite.tests.join(', ')}]`);
+  } else if (suite.filter) {
+    // Suite with dynamic filter
+    executionQueue = allTests.filter(test => {
+      return Object.entries(suite.filter).every(([key, value]) => test[key] === value);
+    });
+    console.log(`   Filter: ${JSON.stringify(suite.filter)}`);
+  }
+  
+  console.log(`   Matched: ${executionQueue.length} tests`);
+  console.log(`\n📌 Tests to execute:`);
+  executionQueue.forEach((test, idx) => {
+    console.log(`   [${idx + 1}] ${test.country} | ${test.rail} | ${test.mode} | ${test.pay} | ${test.file}`);
+  });
+} else {
+  // Default behavior: 4 FIXED + 4 RANDOM
+  if (suiteName) {
+    console.log(`\n❌ Suite '${suiteName}' not found.\n`);
+    console.log(`Available suites:`);
+    Object.entries(suites).forEach(([name, suite]) => {
+      console.log(`   - ${name}: ${suite.description}`);
+    });
+    console.log(`\nRun: node runner.js --help`);
+    process.exit(1);
+  }
+  
+  console.log(`\n📋 Running default batch: 8 permanent + 4 random tests`);
+  const selectedRandom = [...randomPool].sort(() => 0.5 - Math.random()).slice(0, 4);
+  const rawQueue = [...permanentRuns, ...selectedRandom];
+  executionQueue = dedupeQueue(rawQueue, (t) => {
+    const railKey = String(t.rail || '').toUpperCase();
+    return `${t.country}|${railKey}|${t.pay}|${t.file}`;
+  });
+  
+  console.log(`   Selected: ${executionQueue.length} tests\n`);
+}
+
+// Final deduplication
+executionQueue = dedupeQueue(executionQueue, (t) => {
   const railKey = String(t.rail || '').toUpperCase();
   return `${t.country}|${railKey}|${t.pay}|${t.file}`;
 });

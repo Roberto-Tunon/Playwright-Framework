@@ -25,6 +25,30 @@ Go to GitHub and update secret AUTH_JSON
 > Interfaz para batch y dashboard de Allure
 ```bash
 node runner.js
+
+# Regression - Suite completa (8 tests)
+node runner.js --suite=Regression
+
+# Smoke - Validación rápida (2 tests)
+node runner.js --suite=Smoke
+
+# Sanity - Funcionalidad core (4 tests)
+node runner.js --suite=Sanity
+
+# Todos los tests de Credit Card en cualquier país
+node runner.js --suite=CreditCard
+
+# Todos los tests de PayPal
+node runner.js --suite=PayPal
+
+# Todos los tests de Klarna
+node runner.js --suite=Klarna
+
+# Todos los tests de Austria
+node runner.js --suite=Austria
+
+# Todos los tests de Germany
+node runner.js --suite=Germany
 ```
 
 > Dashboard local de ejecuciones

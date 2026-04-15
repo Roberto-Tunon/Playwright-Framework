@@ -7,8 +7,25 @@ on:
     # 0 7 * * * = Every day at 7:00 UTC = 9:00 Madrid (CEST/CET)
     - cron: '0 7 * * *'
   
-  # Allow manual trigger from the UI
+  # Allow manual trigger from the UI with suite selection
   workflow_dispatch:
+    inputs:
+      suite:
+        description: 'Choose test suite to run'
+        required: true
+        default: 'default'
+        type: choice
+        options:
+          - default
+          - Regression
+          - Smoke
+          - Sanity
+          - CreditCard
+          - PayPal
+          - Klarna
+          - Billie
+          - Austria
+          - Germany
 
 jobs:
   # ═════════════════════════════════════════════════════════════
@@ -224,9 +241,19 @@ jobs:
       - name: 🚀 Run regression tests
         run: |
           echo "=========================================="
-          echo "STARTING REGRESSION TESTS ⏱️"
+          echo "STARTING TEST EXECUTION ⏱️"
           echo "=========================================="
-          node runner.js
+          
+          SUITE="${{ github.event.inputs.suite }}"
+          if [ "$SUITE" = "default" ] || [ -z "$SUITE" ]; then
+            echo "📋 Mode: Default batch (8 permanent + 4 random)"
+            node runner.js
+          else
+            echo "📋 Mode: Suite execution"
+            echo "🎯 Suite: $SUITE"
+            node runner.js --suite=$SUITE
+          fi
+          
           echo ""
           echo "✅ Tests completed"
       

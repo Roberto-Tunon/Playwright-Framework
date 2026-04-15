@@ -101,24 +101,73 @@ This launches a local dashboard where you can:
 ### Automated Execution
 
 GitHub Actions are configured for:
-- Daily automated test runs at 11:00 UTC
-- Automatic Allure report generation and deployment
+- Daily automated test runs at 07:00 UTC (9:00 Madrid time)
+- Automatic Allure report generation and deployment with 14-day history
+- Support for suite selection via manual workflow trigger (dropdown)
 
-### Test Coverage Strategy
+**Scheduled Execution:** Automatically runs `Regression` suite daily
+**Manual Execution:** Go to GitHub > Actions > Daily Regression Tests > Run workflow > Select suite from dropdown
 
-- **8 High-Priority Tests** — Run daily (critical business flows)
-- **4 Additional Tests** — Randomly selected from lower-priority scenarios
-- **Total:** 12 tests per batch execution
+### Test Suites
+
+The project defines multiple test suites for flexible execution across different testing strategies:
+
+#### Predefined Suites (by Test Count)
+- **Regression** — Full test suite with all permanent tests (8 tests)
+- **Smoke** — Critical flow validation for quick feedback (2 tests)
+- **Sanity** — Core functionality and essential flows check (4 tests)
+
+#### Dynamic Suites (by Payment Method)
+These suites automatically include ALL tests using the specified payment method, regardless of country or rail:
+- **CreditCard** — All Credit Card payment tests
+- **PayPal** — All PayPal payment tests
+- **Klarna** — All Klarna payment variations
+- **Billie** — All Billie payment method tests
+
+#### Geographic Suites (by Country)
+These suites include ALL tests for the specified country:
+- **Austria** — All Austria (AT) tests across all payment methods
+- **Germany** — All Germany (DE) tests across all payment methods
 
 ### Manual Execution
 
-Trigger batch testing manually via two methods:
-
-**Method 1:** Manually trigger GitHub Actions workflow
-
-**Method 2:** Execute locally:
+#### Default Batch (8 Fixed + 4 Random)
 ```bash
 node runner.js
+```
+Executes 8 permanent tests + 4 randomly selected tests from the pool.
+
+#### Execute Specific Suite Locally
+```bash
+node runner.js --suite=Regression
+node runner.js --suite=Smoke
+node runner.js --suite=Sanity
+node runner.js --suite=CreditCard
+node runner.js --suite=PayPal
+node runner.js --suite=Austria
+node runner.js --suite=Germany
+```
+
+#### Show All Available Suites
+```bash
+node runner.js --help
+```
+Displays list of all available suites with test counts and descriptions.
+
+#### Example Output
+```
+📋 Suite selected: CreditCard
+   All Credit Card payment tests across countries
+   Filter: {"pay":"CC"}
+   Matched: 6 tests
+
+📌 Tests to execute:
+   [1] DE | xxxlutz | 1P | CC | tests/E2E-Lutz-Credit.spec.ts
+   [2] AT | xxxlutz | 1P | CC | tests/E2E-Lutz-Credit.spec.ts
+   [3] CZ | xxxlutz | 1P | CC | tests/E2E-Lutz-Credit.spec.ts
+   [4] CH | xxxlutz | 1P | CC | tests/E2E-Lutz-Credit.spec.ts
+   [5] RO | xxxlutz | 1P | CC | tests/E2E-Lutz-Credit.spec.ts
+   [6] SK | xxxlutz | 1P | CC | tests/E2E-Lutz-Credit.spec.ts
 ```
 
 ## Reports
