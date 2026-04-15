@@ -1,0 +1,227 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Möemax" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: Möemax
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e12] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e13]:
+        - status [ref=e14]:
+          - generic [ref=e15]: Bestellübersicht | Mömax
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - navigation "breadcrumbs" [ref=e19]:
+              - list [ref=e20]:
+                - listitem [ref=e21]:
+                  - link "Startseite" [ref=e23] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e24]:
+                  - link "Warenkorb" [ref=e26] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e27] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e28]
+            - paragraph [ref=e29]: oder den schnellen und sicheren Express-Checkout nutzen
+            - generic [ref=e30]:
+              - iframe [ref=e37]:
+                - link "Pay with PayPal" [ref=f1e5] [cursor=pointer]
+              - button "Mit Apple Pay kaufen" [ref=e42] [cursor=pointer]:
+                - img [ref=e44] [cursor=pointer]:
+                  - generic [ref=e45] [cursor=pointer]:
+                    - generic [ref=e46] [cursor=pointer]: Mit
+                    - img [ref=e47] [cursor=pointer]
+                    - generic [ref=e55] [cursor=pointer]: kaufen
+              - button "Mit GPay kaufen" [ref=e60] [cursor=pointer]
+            - paragraph [ref=e61]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - generic [ref=e66]: "1"
+                - heading "Rechnungsadresse" [level=2] [ref=e67]
+                - generic [ref=e71]:
+                  - generic [ref=e72]:
+                    - heading "Kontakt" [level=3] [ref=e74]
+                    - generic [ref=e75]:
+                      - generic [ref=e76]:
+                        - textbox "E-Mail-Adresse*" [ref=e77]: roberto.tunon@xxxl.digital
+                        - generic "E-Mail-Adresse" [ref=e78]: E-Mail-Adresse*
+                      - generic [ref=e80]:
+                        - text: Sie erhalten eine Bestellbestätigung an
+                        - generic [ref=e81]: roberto.tunon@xxxl.digital
+                    - generic [ref=e83]:
+                      - generic [ref=e84]:
+                        - paragraph [ref=e85]: Ländervorwahl auswählen
+                        - combobox [ref=e87] [cursor=pointer]:
+                          - generic [ref=e92] [cursor=pointer]: "+43"
+                      - textbox "Telefonnummer*" [ref=e93]: "050545454"
+                      - generic "Pflichtfeld" [ref=e94]: Telefonnummer*
+                    - heading "Rechnungsadresse" [level=3] [ref=e96]
+                    - generic [ref=e98]:
+                      - textbox "Vorname*" [ref=e99]: Roberto
+                      - generic "Vorname" [ref=e100]: Vorname*
+                    - generic [ref=e102]:
+                      - textbox "Nachname*" [ref=e103]: Tuñon
+                      - generic "Nachname" [ref=e104]: Nachname*
+                    - generic [ref=e106]:
+                      - textbox "Straße*" [ref=e107]: Bahnhofstraße
+                      - generic "Straße" [ref=e108]: Straße*
+                    - generic [ref=e110]:
+                      - textbox "Hausnummer/Stiege/Tür*" [ref=e111]: "10"
+                      - generic "Hausnummer/Stiege/Tür" [ref=e112]: Hausnummer/Stiege/Tür*
+                    - generic [ref=e114]:
+                      - combobox "Land" [ref=e115] [cursor=pointer]:
+                        - generic [ref=e116] [cursor=pointer]: Österreich
+                      - generic [ref=e117]: Land*
+                    - generic [ref=e118]:
+                      - generic [ref=e121]:
+                        - textbox "PLZ*" [ref=e122]: "4020"
+                        - generic "PLZ" [ref=e123]: PLZ*
+                      - generic [ref=e125]:
+                        - textbox "Ort*" [ref=e126]: Linz
+                        - generic "Ort" [ref=e127]: Ort*
+                    - button "Ich habe eine Bonuscard" [ref=e133] [cursor=pointer]:
+                      - generic [ref=e136] [cursor=pointer]: Ich habe eine Bonuscard
+                  - generic [ref=e139] [cursor=pointer]:
+                    - checkbox "Ich möchte als Firma bezahlen" [ref=e140]
+                    - generic [ref=e142] [cursor=pointer]:
+                      - img
+                    - generic [ref=e145] [cursor=pointer]: Ich möchte als Firma bezahlen
+                  - button "Weiter zu den Zahlungsarten" [active] [ref=e146] [cursor=pointer]:
+                    - generic [ref=e147] [cursor=pointer]: Weiter zu den Zahlungsarten
+              - generic [ref=e149]:
+                - generic [ref=e152]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e153]
+              - generic [ref=e154]:
+                - generic [ref=e157]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e158]
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - heading "Warenkorb" [level=3] [ref=e161]
+              - link "Warenkorb Bearbeiten" [ref=e162] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e163] [cursor=pointer]: Bearbeiten
+            - generic [ref=e164]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e165] [cursor=pointer]:
+                - img [ref=e169] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e170]
+              - generic [ref=e171]:
+                - generic [ref=e172]: Warenwert
+                - generic [ref=e173]: € 2.299,‒
+                - button "Lieferkosten" [ref=e174] [cursor=pointer]:
+                  - generic [ref=e175] [cursor=pointer]: Lieferkosten
+                - generic [ref=e176]: gratis
+              - generic [ref=e177]:
+                - generic [ref=e178]: Gesamt
+                - generic [ref=e179]: € 2.299,‒
+                - generic [ref=e180]: inkl. MwSt.
+              - generic [ref=e182]:
+                - button "Gutscheincode" [ref=e183] [cursor=pointer]:
+                  - generic [ref=e184] [cursor=pointer]: Gutscheincode
+                  - img [ref=e185] [cursor=pointer]
+                - generic [ref=e187]:
+                  - generic [ref=e190]:
+                    - textbox "Code kopieren" [ref=e191]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e192] [cursor=pointer]:
+                    - generic [ref=e193] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e194]:
+              - listitem [ref=e195]: 30 Tage Rückgaberecht
+              - listitem [ref=e196]: Click & Collect
+              - listitem [ref=e197]: Gratis Rücksendung
+    - contentinfo [ref=e198]:
+      - generic [ref=e199]:
+        - list [ref=e201]:
+          - listitem [ref=e202]:
+            - link "Click & Collect" [ref=e203] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e204] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e205]:
+            - link "30 Tage Rückgabe" [ref=e206] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e207] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e208]:
+            - link "Gratis Transporter" [ref=e209] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e210] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e211]:
+            - link "Montage & Lieferung" [ref=e212] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e213] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e215]:
+          - generic [ref=e218]:
+            - paragraph [ref=e219]: Du hast noch Fragen?
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - link "Zum Kontaktformular" [ref=e222] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e223] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e224]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e225]:
+                - link "Häufig gestellte Fragen" [ref=e226] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e227] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e228]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e229]:
+            - generic [ref=e230]: Versandpartner
+            - generic [ref=e231]:
+              - img "Gebrüder Weiss Logo" [ref=e234]
+              - img "Post Logo" [ref=e237]
+          - generic [ref=e238]:
+            - generic [ref=e239]: Zahlungsmöglichkeiten
+            - generic [ref=e240]:
+              - img "Klarna Logo" [ref=e243]
+              - img "PayPal Logo" [ref=e246]
+              - img "Visa Logo" [ref=e249]
+              - img "Mastercard Logo" [ref=e252]
+              - img "Split It Logo" [ref=e255]
+              - img "Google Pay Logo" [ref=e258]
+              - img "Apple Pay Logo" [ref=e261]
+          - generic [ref=e262]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Österreich möglich. Änderungen und Irrtümer vorbehalten. *Vom Hersteller unverbindlich empfohlener Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***Herstellerlistenpreis
+        - generic [ref=e265]:
+          - link "Möemax" [ref=e266] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e267] [cursor=pointer]: Möemax
+            - img [ref=e269] [cursor=pointer]
+          - generic [ref=e272]: © 2026 moemax GmbH
+          - list [ref=e273]:
+            - listitem [ref=e274]:
+              - link "Impressum" [ref=e275] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e276]:
+              - link "AGB" [ref=e277] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e278]:
+              - link "Datenschutz" [ref=e279] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e280]:
+              - button "Cookie-Einstellungen" [ref=e281] [cursor=pointer]
+          - list [ref=e282]:
+            - listitem [ref=e283]:
+              - link "facebook" [ref=e284] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.at/
+            - listitem [ref=e285]:
+              - link "instagram" [ref=e286] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_at/
+            - listitem [ref=e287]:
+              - link "youtube" [ref=e288] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCIeEQdLnz8qzEzrkz1k1Ymw
+            - listitem [ref=e289]:
+              - link "tiktok" [ref=e290] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e291]:
+              - link "pinterest" [ref=e292] [cursor=pointer]:
+                - /url: https://www.pinterest.at/moemax_oesterreich/
+          - link [ref=e293] [cursor=pointer]:
+            - /url: /c/accessibility
+  - generic:
+    - log
+```

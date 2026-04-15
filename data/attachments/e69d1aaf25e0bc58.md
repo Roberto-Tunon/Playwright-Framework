@@ -1,0 +1,234 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Möemax" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: Möemax
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e12] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e13]:
+        - status [ref=e14]:
+          - generic [ref=e15]: Bestellübersicht | Mömax
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - navigation "breadcrumbs" [ref=e19]:
+              - list [ref=e20]:
+                - listitem [ref=e21]:
+                  - link "Startseite" [ref=e23] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e24]:
+                  - link "Warenkorb" [ref=e26] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e27] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e28]
+            - paragraph [ref=e29]: oder den schnellen und sicheren Express-Checkout nutzen
+            - generic [ref=e30]:
+              - iframe [ref=e37]:
+                - link "Pay with PayPal" [ref=f1e5] [cursor=pointer]
+              - button "Mit Apple Pay kaufen" [ref=e42] [cursor=pointer]:
+                - img [ref=e44] [cursor=pointer]:
+                  - generic [ref=e45] [cursor=pointer]:
+                    - generic [ref=e46] [cursor=pointer]: Mit
+                    - img [ref=e47] [cursor=pointer]
+                    - generic [ref=e55] [cursor=pointer]: kaufen
+              - button "Mit GPay kaufen" [ref=e60] [cursor=pointer]
+            - paragraph [ref=e61]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - generic [ref=e66]: "1"
+                - heading "Rechnungsadresse" [level=2] [ref=e67]
+                - generic [ref=e71]:
+                  - generic [ref=e72]:
+                    - heading "Kontakt" [level=3] [ref=e74]
+                    - generic [ref=e75]:
+                      - generic [ref=e76]:
+                        - textbox "E-Mail-Adresse*" [ref=e77]: roberto.tunon@xxxl.digital
+                        - generic "E-Mail-Adresse" [ref=e78]: E-Mail-Adresse*
+                      - generic [ref=e80]:
+                        - text: Sie erhalten eine Bestellbestätigung an
+                        - generic [ref=e81]: roberto.tunon@xxxl.digital
+                    - generic [ref=e83]:
+                      - generic [ref=e84]:
+                        - paragraph [ref=e85]: Ländervorwahl auswählen
+                        - combobox [ref=e87] [cursor=pointer]:
+                          - generic [ref=e92] [cursor=pointer]: "+49"
+                      - textbox "Telefonnummer*" [ref=e93]: "030250025"
+                      - generic "Pflichtfeld" [ref=e94]: Telefonnummer*
+                    - heading "Rechnungsadresse" [level=3] [ref=e96]
+                    - generic [ref=e98]:
+                      - textbox "Vorname*" [ref=e99]: Roberto
+                      - generic "Vorname" [ref=e100]: Vorname*
+                    - generic [ref=e102]:
+                      - textbox "Nachname*" [ref=e103]: Tuñon
+                      - generic "Nachname" [ref=e104]: Nachname*
+                    - generic [ref=e106]:
+                      - textbox "Straße*" [ref=e107]: Bahnhofstraße
+                      - generic "Straße" [ref=e108]: Straße*
+                    - generic [ref=e110]:
+                      - textbox "Hausnummer/Stiege/Tür*" [ref=e111]: "10"
+                      - generic "Hausnummer/Stiege/Tür" [ref=e112]: Hausnummer/Stiege/Tür*
+                    - generic [ref=e114]:
+                      - combobox "Land" [ref=e115] [cursor=pointer]:
+                        - generic [ref=e116] [cursor=pointer]: Deutschland
+                      - generic [ref=e117]: Land*
+                    - generic [ref=e118]:
+                      - generic [ref=e121]:
+                        - textbox "PLZ*" [ref=e122]: "10178"
+                        - generic "PLZ" [ref=e123]: PLZ*
+                      - generic [ref=e125]:
+                        - textbox "Ort*" [ref=e126]: Berlin
+                        - generic "Ort" [ref=e127]: Ort*
+                    - button "Ich habe eine Bonuscard" [ref=e133] [cursor=pointer]:
+                      - generic [ref=e136] [cursor=pointer]: Ich habe eine Bonuscard
+                  - generic [ref=e139] [cursor=pointer]:
+                    - checkbox "Ich möchte als Firma bezahlen" [ref=e140]
+                    - generic [ref=e142] [cursor=pointer]:
+                      - img
+                    - generic [ref=e145] [cursor=pointer]: Ich möchte als Firma bezahlen
+                  - button "Weiter zu den Zahlungsarten" [active] [ref=e146] [cursor=pointer]:
+                    - generic [ref=e147] [cursor=pointer]: Weiter zu den Zahlungsarten
+              - generic [ref=e149]:
+                - generic [ref=e152]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e153]
+              - generic [ref=e154]:
+                - generic [ref=e157]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e158]
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - heading "Warenkorb" [level=3] [ref=e161]
+              - link "Warenkorb Bearbeiten" [ref=e162] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e163] [cursor=pointer]: Bearbeiten
+            - generic [ref=e164]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e165] [cursor=pointer]:
+                - img [ref=e169] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e170]
+              - generic [ref=e171]:
+                - generic [ref=e172]: Warenwert
+                - generic [ref=e173]:
+                  - text: 1.849,
+                  - superscript [ref=e174]: "00"
+                  - text: €
+                - button "Lieferkosten" [ref=e175] [cursor=pointer]:
+                  - generic [ref=e176] [cursor=pointer]: Lieferkosten
+                - generic [ref=e177]: gratis
+              - generic [ref=e178]:
+                - generic [ref=e179]: Gesamt
+                - generic [ref=e180]:
+                  - text: 1.849,
+                  - superscript [ref=e181]: "00"
+                  - text: €
+                - generic [ref=e182]: inkl. MwSt.
+              - generic [ref=e184]:
+                - button "Gutscheincode" [ref=e185] [cursor=pointer]:
+                  - generic [ref=e186] [cursor=pointer]: Gutscheincode
+                  - img [ref=e187] [cursor=pointer]
+                - generic [ref=e189]:
+                  - generic [ref=e192]:
+                    - textbox "Code kopieren" [ref=e193]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e194] [cursor=pointer]:
+                    - generic [ref=e195] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e196]:
+              - listitem [ref=e197]: Umfangreiches Filialnetz
+              - listitem [ref=e198]: 30 Tage Rückgaberecht
+              - listitem [ref=e199]: Sicher bezahlen
+    - contentinfo [ref=e200]:
+      - generic [ref=e201]:
+        - list [ref=e204]:
+          - listitem [ref=e205]:
+            - link "Click & Collect" [ref=e206] [cursor=pointer]:
+              - /url: /c/clickundcollect
+              - img [ref=e207] [cursor=pointer]
+              - text: Click & Collect
+          - listitem [ref=e208]:
+            - link "30 Tage Rückgabe" [ref=e209] [cursor=pointer]:
+              - /url: /c/retouren
+              - img [ref=e210] [cursor=pointer]
+              - text: 30 Tage Rückgabe
+          - listitem [ref=e211]:
+            - link "Gratis Transporter" [ref=e212] [cursor=pointer]:
+              - /url: /c/transporterleihen
+              - img [ref=e213] [cursor=pointer]
+              - text: Gratis Transporter
+          - listitem [ref=e214]:
+            - link "Montage & Lieferung" [ref=e215] [cursor=pointer]:
+              - /url: /c/lieferungundmontage
+              - img [ref=e216] [cursor=pointer]
+              - text: Montage & Lieferung
+        - generic [ref=e218]:
+          - generic [ref=e221]:
+            - paragraph [ref=e222]: Du hast noch Fragen?
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - link "Zum Kontaktformular" [ref=e225] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e226] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e227]: Wir antworten dir innerhalb von fünf Werktagen via E-Mail
+              - generic [ref=e228]:
+                - link "Häufig gestellte Fragen" [ref=e229] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e230] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e231]: In unseren FAQ's findest du sofort Hilfe.
+          - generic [ref=e232]:
+            - generic [ref=e233]: Versandpartner
+            - generic [ref=e234]:
+              - img "Rhenus Home Delivery Logo" [ref=e237]
+              - img "Hermes Logo" [ref=e240]
+              - img "DHL Logo" [ref=e243]
+          - generic [ref=e244]:
+            - generic [ref=e245]: Zahlungsmöglichkeiten
+            - generic [ref=e246]:
+              - img "Split It Logo" [ref=e249]
+              - img "Klarna Logo" [ref=e252]
+              - img "PayPal Logo" [ref=e255]
+              - img "Visa Logo" [ref=e258]
+              - img "Mastercard Logo" [ref=e261]
+              - img "Google Pay Logo" [ref=e264]
+              - img "Apple Pay Logo" [ref=e267]
+          - generic [ref=e268]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. Alle Preise sind Abholpreise in Euro. Solange der Vorrat reicht. Artikel im Onlineshop immer zum Bonuscard Preis – unabhängig jeglicher Rabattaktion. ***UVP
+        - generic [ref=e271]:
+          - link "Möemax" [ref=e272] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e273] [cursor=pointer]: Möemax
+            - img [ref=e275] [cursor=pointer]
+          - generic [ref=e278]: © 2026 moemax Deutschland GmbH
+          - list [ref=e279]:
+            - listitem [ref=e280]:
+              - link "Impressum" [ref=e281] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e282]:
+              - link "AGB" [ref=e283] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e284]:
+              - link "Datenschutz" [ref=e285] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e286]:
+              - button "Cookie-Einstellungen" [ref=e287] [cursor=pointer]
+          - list [ref=e288]:
+            - listitem [ref=e289]:
+              - link "facebook" [ref=e290] [cursor=pointer]:
+                - /url: https://www.facebook.com/moemax.de/
+            - listitem [ref=e291]:
+              - link "instagram" [ref=e292] [cursor=pointer]:
+                - /url: https://www.instagram.com/moemax_de/
+            - listitem [ref=e293]:
+              - link "youtube" [ref=e294] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/MoemaxAT
+            - listitem [ref=e295]:
+              - link "tiktok" [ref=e296] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@moemax_trendmoebelhaus
+            - listitem [ref=e297]:
+              - link "pinterest" [ref=e298] [cursor=pointer]:
+                - /url: https://www.pinterest.de/moemax_com/
+          - link [ref=e299] [cursor=pointer]:
+            - /url: /c/accessibility
+  - generic:
+    - log
+```

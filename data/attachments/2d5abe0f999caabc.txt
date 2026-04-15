@@ -1,0 +1,4 @@
+❌ OpenPage failed: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://xxxlutz-at.qa.xxxl-dev.at/", waiting until "load"
+

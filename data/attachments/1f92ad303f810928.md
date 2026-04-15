@@ -1,0 +1,202 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "XXXLutz" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7] [cursor=pointer]: XXXLutz
+            - img [ref=e9] [cursor=pointer]
+          - link "Zum Hauptinhalt springen" [ref=e15] [cursor=pointer]:
+            - /url: "#main"
+      - main [ref=e16]:
+        - status [ref=e17]:
+          - generic [ref=e18]: Bestellübersicht | XXXLutz
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - navigation "breadcrumbs" [ref=e22]:
+              - list [ref=e23]:
+                - listitem [ref=e24]:
+                  - link "Startseite" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e27]:
+                  - link "Warenkorb" [ref=e29] [cursor=pointer]:
+                    - /url: /cart
+                    - generic [ref=e30] [cursor=pointer]: Warenkorb
+            - heading "Sicher bestellen in 3 Schritten" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Alle mit * markierten Felder sind Pflichtfelder.
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e37]: "1"
+                - heading "Rechnungsadresse" [level=2] [ref=e38]
+                - generic [ref=e42]:
+                  - generic [ref=e43]:
+                    - heading "Kontakt" [level=3] [ref=e45]
+                    - generic [ref=e46]:
+                      - generic [ref=e47]:
+                        - textbox "E-Mail-Adresse*" [ref=e48]: roberto.tunon@xxxl.digital
+                        - generic "E-Mail-Adresse" [ref=e49]: E-Mail-Adresse*
+                      - generic [ref=e51]:
+                        - text: Sie erhalten eine Bestellbestätigung an
+                        - generic [ref=e52]: roberto.tunon@xxxl.digital
+                    - generic [ref=e54]:
+                      - generic [ref=e55]:
+                        - paragraph [ref=e56]: Ländervorwahl auswählen
+                        - combobox [ref=e58] [cursor=pointer]:
+                          - generic [ref=e63] [cursor=pointer]: "+49"
+                      - textbox "Telefonnummer" [ref=e64]: "030250025"
+                      - generic [ref=e65]: Telefonnummer
+                    - heading "Rechnungsadresse" [level=3] [ref=e67]
+                    - generic [ref=e69]:
+                      - textbox "Vorname*" [ref=e70]: Roberto
+                      - generic "Vorname" [ref=e71]: Vorname*
+                    - generic [ref=e73]:
+                      - textbox "Nachname*" [ref=e74]: Tuñon
+                      - generic "Nachname" [ref=e75]: Nachname*
+                    - generic [ref=e77]:
+                      - textbox "Straße*" [ref=e78]: Bahnhofstraße
+                      - generic "Straße" [ref=e79]: Straße*
+                    - generic [ref=e81]:
+                      - textbox "Hausnummer/Etage/Tür*" [ref=e82]: "10"
+                      - generic "Hausnummer/Etage/Tür" [ref=e83]: Hausnummer/Etage/Tür*
+                    - generic [ref=e85]:
+                      - combobox "Land" [ref=e86] [cursor=pointer]:
+                        - generic [ref=e87] [cursor=pointer]: Deutschland
+                      - generic [ref=e88]: Land*
+                    - generic [ref=e89]:
+                      - generic [ref=e92]:
+                        - textbox "PLZ*" [ref=e93]: "10178"
+                        - generic "PLZ" [ref=e94]: PLZ*
+                      - generic [ref=e96]:
+                        - textbox "Ort*" [ref=e97]: Berlin
+                        - generic "Ort" [ref=e98]: Ort*
+                    - button "Ich habe eine Freundschaftskarte (optional)" [ref=e104] [cursor=pointer]:
+                      - generic [ref=e107] [cursor=pointer]: Ich habe eine Freundschaftskarte (optional)
+                  - generic [ref=e110] [cursor=pointer]:
+                    - checkbox "Ich möchte als Firma bezahlen" [ref=e111]
+                    - generic [ref=e113] [cursor=pointer]:
+                      - img
+                    - generic [ref=e116] [cursor=pointer]: Ich möchte als Firma bezahlen
+                  - button "Weiter zu den Zahlungsarten" [ref=e117] [cursor=pointer]:
+                    - generic [ref=e118] [cursor=pointer]: Weiter zu den Zahlungsarten
+              - generic [ref=e120]:
+                - generic [ref=e123]: "2"
+                - heading "Zahlungsarten" [level=2] [ref=e124]
+              - generic [ref=e125]:
+                - generic [ref=e128]: "3"
+                - heading "Prüfen und Absenden" [level=2] [ref=e129]
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - heading "Warenkorb" [level=3] [ref=e132]
+              - link "Warenkorb Bearbeiten" [ref=e133] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e134] [cursor=pointer]: Bearbeiten
+            - generic [ref=e135]:
+              - button "Inhalt des Warenkorbs anzeigen" [ref=e136] [cursor=pointer]:
+                - img [ref=e140] [cursor=pointer]
+              - heading "Zusammenfassung" [level=3] [ref=e141]
+              - generic [ref=e142]:
+                - generic [ref=e143]: Warenwert
+                - generic [ref=e144]:
+                  - text: 845,
+                  - superscript [ref=e145]: "00"
+                  - text: €
+                - button "Lieferkosten" [ref=e146] [cursor=pointer]:
+                  - generic [ref=e147] [cursor=pointer]: Lieferkosten
+                - generic [ref=e148]: gratis
+              - generic [ref=e149]:
+                - generic [ref=e150]: Gesamtsumme
+                - generic [ref=e151]:
+                  - text: 845,
+                  - superscript [ref=e152]: "00"
+                  - text: €
+                - generic [ref=e153]: inkl. gesetzlicher MwSt.
+              - generic [ref=e155]:
+                - button "Gutscheincode" [active] [ref=e156] [cursor=pointer]:
+                  - generic [ref=e157] [cursor=pointer]: Gutscheincode
+                  - img [ref=e158] [cursor=pointer]
+                - generic [ref=e160]:
+                  - generic [ref=e163]:
+                    - textbox "Code kopieren" [ref=e164]
+                    - generic: Code kopieren
+                  - button "Gutschein einlösen" [ref=e165] [cursor=pointer]:
+                    - generic [ref=e166] [cursor=pointer]: Gutschein einlösen
+            - list [ref=e167]:
+              - listitem [ref=e168]: Gratis Leihtransporter
+              - listitem [ref=e169]: 30 Tage Rückgabe
+              - listitem [ref=e170]: Sicher bezahlen
+    - contentinfo [ref=e171]:
+      - generic [ref=e172]:
+        - generic [ref=e174]:
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: Hilfe & Kontakt
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - link "Zum Kontaktformular" [ref=e181] [cursor=pointer]:
+                  - /url: /kontaktcenter
+                  - generic [ref=e182] [cursor=pointer]: Zum Kontaktformular
+                - paragraph [ref=e183]: Kontaktieren Sie uns persönlich.
+              - generic [ref=e184]:
+                - link "Häufig gestellte Fragen" [ref=e185] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e186] [cursor=pointer]: Häufig gestellte Fragen
+                - paragraph [ref=e187]: In unseren FAQ's finden Sie sofort Hilfe.
+          - generic [ref=e188]:
+            - generic [ref=e189]: Versand
+            - generic [ref=e190]:
+              - img "DHL" [ref=e193]
+              - img "Hermes" [ref=e196]
+              - img "XXXLutz Spedition" [ref=e199]
+          - generic [ref=e200]:
+            - generic [ref=e201]: Zahlungsmöglichkeiten
+            - generic [ref=e202]:
+              - img "Paypal" [ref=e205]
+              - img "Klarna" [ref=e208]
+              - img "Master Card" [ref=e211]
+              - img "Visa" [ref=e214]
+              - img "Google Pay" [ref=e217]
+              - img "Apple Pay" [ref=e220]
+              - img "Logo Billie" [ref=e223]
+          - generic [ref=e224]: Alle Preise in Euro und inkl. der gesetzlichen Mehrwertsteuer, ohne Deko, zzgl. Versandkosten. Lieferung nur innerhalb von Deutschland möglich. Änderungen und Irrtümer vorbehalten. *Stattpreis bezieht sich auf den uns vom Hersteller unverbindlich empfohlenen Preis. **Stattpreis bezieht sich auf unseren bisherigen Verkaufspreis. ***Filialpreis ohne Freundschaftskarte.
+        - generic [ref=e227]:
+          - link "XXXLutz" [ref=e228] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e229] [cursor=pointer]: XXXLutz
+            - img [ref=e231] [cursor=pointer]
+          - generic [ref=e237]: © 2026 BDSK Handels GmbH & Co. KG
+          - list [ref=e238]:
+            - listitem [ref=e239]:
+              - link "IMPRESSUM" [ref=e240] [cursor=pointer]:
+                - /url: /c/impressum
+            - listitem [ref=e241]:
+              - link "DATENSCHUTZ" [ref=e242] [cursor=pointer]:
+                - /url: /c/privacy
+            - listitem [ref=e243]:
+              - link "AGB" [ref=e244] [cursor=pointer]:
+                - /url: /c/agb
+            - listitem [ref=e245]:
+              - button "COOKIE-EINSTELLUNGEN" [ref=e246] [cursor=pointer]
+          - list [ref=e247]:
+            - listitem [ref=e248]:
+              - link "facebook" [ref=e249] [cursor=pointer]:
+                - /url: https://www.facebook.com/XXXLutzDeutschland
+            - listitem [ref=e250]:
+              - link "instagram" [ref=e251] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_de/
+            - listitem [ref=e252]:
+              - link "pinterest" [ref=e253] [cursor=pointer]:
+                - /url: https://www.pinterest.de/xxxlutzdeutschland/
+            - listitem [ref=e254]:
+              - link "youtube" [ref=e255] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC1w2HpXiRl5pbLGQEwnUl2w
+            - listitem [ref=e256]:
+              - link "tiktok" [ref=e257] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_de
+          - link [ref=e258] [cursor=pointer]:
+            - /url: /accessibility
+  - generic:
+    - log
+```
