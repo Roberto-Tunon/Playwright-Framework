@@ -1,0 +1,29 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e4]: XXXLdigital
+  - generic [ref=e5]:
+    - banner [ref=e6]:
+      - heading "Sign in to your account" [level=1] [ref=e7]
+    - generic [ref=e9]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: Username
+          - textbox "Username" [active] [ref=e15]
+        - generic [ref=e16]:
+          - generic [ref=e17]: Password
+          - generic [ref=e18]:
+            - textbox "Password" [ref=e19]
+            - button "Show password" [ref=e20] [cursor=pointer]:
+              - generic [ref=e21] [cursor=pointer]: 
+        - button "Sign In" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]:
+        - separator [ref=e25]
+        - heading "Or sign in with" [level=2] [ref=e26]
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - link "XXXLutz SSO" [ref=e29] [cursor=pointer]:
+              - /url: /auth/realms/xxxldigital/broker/lutz-ad-saml/login?client_id=oauth2-proxy&tab_id=PcLjVSvU7yY&client_data=eyJydSI6Imh0dHBzOi8veHh4bGVzbmluYS1zaS5xYS54eHhsLWRldi5hdC9lbXBsb3llZS9vYXV0aDIvY2FsbGJhY2siLCJydCI6ImNvZGUiLCJzdCI6IjNMNi1MWVZQNlZINUpYcTRhYXQ2bDZjWV8xel9tSDBUVWhNdWZpdTJfOVU6L2FwaS9TSS90ZXN0aW5nL3Byb2R1Y3RzL2RlbGl2ZXJ5In0&session_code=ACEYSVZSEXrZCDd7z3Iu1TYob4aJ5w8ajaqzmEST48o
+              - generic [ref=e30] [cursor=pointer]: XXXLutz SSO
+```

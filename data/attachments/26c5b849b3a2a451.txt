@@ -1,0 +1,13 @@
+
+============================================================
+📌 Executing: Country: HU, Rail: XXXLUTZ, Mode: 1P, Pay: PayPal
+============================================================
+
+
+📍 Step 1: Navigate to store
+✅ Store page loaded
+
+📍 Step 2: Accept cookies
+✅ Cookies accepted
+
+📍 Step 4: Add standard product
