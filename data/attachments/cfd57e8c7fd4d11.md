@@ -1,0 +1,847 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e8]:
+            - link "Osobný odber ZADARMO" [ref=e9] [cursor=pointer]:
+              - /url: /c/xxxl-online-nakup
+              - generic [ref=e10] [cursor=pointer]: Osobný odber ZADARMO
+            - link "-15 % na všetko Online Only + doprava ZDARMA" [ref=e11] [cursor=pointer]:
+              - /url: /c/online-only
+              - generic [ref=e12] [cursor=pointer]: "-15 % na všetko Online Only + doprava ZDARMA"
+          - generic [ref=e14]:
+            - link "Prospekty" [ref=e15] [cursor=pointer]:
+              - /url: /c/letaky
+              - generic [ref=e16] [cursor=pointer]: Prospekty
+            - link "Stav objednávky" [ref=e17] [cursor=pointer]:
+              - /url: /stavobjednavky
+              - generic [ref=e18] [cursor=pointer]: Stav objednávky
+            - link "FAQ & kontakty" [ref=e19] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e20] [cursor=pointer]: FAQ & kontakty
+            - switch "Vysoký kontrast" [ref=e21]
+            - generic [ref=e22] [cursor=pointer]:
+              - text: Vysoký kontrast
+              - img [ref=e23] [cursor=pointer]
+        - generic [ref=e27]:
+          - button "Zmeniť navigáciu" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29] [cursor=pointer]: Menu
+          - link "XXXLutz" [ref=e30] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e31] [cursor=pointer]: XXXLutz
+            - img [ref=e33] [cursor=pointer]
+          - link "Prejsť na hlavný obsah" [ref=e39] [cursor=pointer]:
+            - /url: "#main"
+          - search [ref=e40]:
+            - generic [ref=e41]:
+              - button "Hľadať" [ref=e43] [cursor=pointer]
+              - searchbox "Hľadať produkty, značky alebo novinky" [ref=e44]
+              - generic: Hľadať produkty, značky alebo novinky
+              - button "Vyhľadávanie podľa obrázkov" [ref=e48] [cursor=pointer]
+          - generic [ref=e49]:
+            - button "Prihlásiť sa" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52] [cursor=pointer]: Prihlásiť sa
+            - link "Obľúbené 0 produkty" [ref=e54] [cursor=pointer]:
+              - /url: /favourites
+              - generic [ref=e55] [cursor=pointer]: Zoznam obľúbených
+            - link "Nákupný košík 0 produkty" [ref=e57] [cursor=pointer]:
+              - /url: /cart
+              - generic [ref=e58] [cursor=pointer]: Košík
+          - navigation [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Miestnosti" [ref=e62] [cursor=pointer]:
+                  - /url: /c/miestnosti
+              - listitem [ref=e63]:
+                - link "Nábytok" [ref=e64] [cursor=pointer]:
+                  - /url: /c/nabytok
+              - listitem [ref=e65]:
+                - link "Záhrada" [ref=e66] [cursor=pointer]:
+                  - /url: /zahradny-nabytok-C8
+              - listitem [ref=e67]:
+                - link "Online Only" [ref=e68] [cursor=pointer]:
+                  - /url: /c/online-only
+              - listitem [ref=e69]:
+                - link "Doplnky" [ref=e70] [cursor=pointer]:
+                  - /url: /c/bytove-doplnky
+              - listitem [ref=e71]:
+                - link "Varenie" [ref=e72] [cursor=pointer]:
+                  - /url: /c/varenie-stolovanie
+              - listitem [ref=e73]:
+                - link "Svetlá" [ref=e74] [cursor=pointer]:
+                  - /url: /svietidla-a-lampy-C10
+              - listitem [ref=e75]:
+                - link "Deti" [ref=e76] [cursor=pointer]:
+                  - /url: /c/baby
+              - listitem [ref=e77]:
+                - link "AKCIE" [ref=e78] [cursor=pointer]:
+                  - /url: /c/akcie
+              - listitem [ref=e79]:
+                - link "ZĽAVA %" [ref=e80] [cursor=pointer]:
+                  - /url: /c/zlava
+              - listitem [ref=e81]:
+                - link "Trendy" [ref=e82] [cursor=pointer]:
+                  - /url: /c/inspiracie
+              - listitem [ref=e83]:
+                - link "Kuchyne" [ref=e84] [cursor=pointer]:
+                  - /url: /c/xxxlutz-kuchyne
+              - listitem [ref=e85]:
+                - link "Pobočky" [ref=e86] [cursor=pointer]:
+                  - /url: /pobocky
+              - listitem [ref=e87]:
+                - link "Služby" [ref=e88] [cursor=pointer]:
+                  - /url: /c/xxxl-sluzby
+      - main [ref=e89]:
+        - status [ref=e90]:
+          - generic [ref=e91]: Rohová sedacia súprava BELDOMO PREMIUM, sivá
+        - generic [ref=e92]:
+          - navigation "breadcrumbs" [ref=e94]:
+            - list [ref=e95]:
+              - listitem [ref=e96]:
+                - link "Hlavná stránka" [ref=e97] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e98]:
+                - link "Výrobky" [ref=e99] [cursor=pointer]:
+                  - /url: /kategorie/root
+                  - generic [ref=e100] [cursor=pointer]: Výrobky
+              - listitem [ref=e101]:
+                - link "Obývacie izby" [ref=e102] [cursor=pointer]:
+                  - /url: /obyvacie-izby-C1
+                  - generic [ref=e103] [cursor=pointer]: Obývacie izby
+              - listitem [ref=e104]:
+                - link "Sedačky" [ref=e105] [cursor=pointer]:
+                  - /url: /sedacky-C1C1
+                  - generic [ref=e106] [cursor=pointer]: Sedačky
+              - listitem [ref=e107]:
+                - link "Sedacie súpravy" [ref=e108] [cursor=pointer]:
+                  - /url: /sedacie-supravy-C1C1C1
+                  - generic [ref=e109] [cursor=pointer]: Sedacie súpravy
+              - listitem [ref=e110]:
+                - link "Rohové sedačky" [ref=e111] [cursor=pointer]:
+                  - /url: /rohove-sedacky-C1C1C1C1
+                  - generic [ref=e112] [cursor=pointer]: Rohové sedačky
+          - generic [ref=e113]:
+            - generic [ref=e116]:
+              - group [ref=e117]:
+                - group [ref=e118]:
+                  - button "Obrázok produktu 1 / 18" [ref=e119] [cursor=pointer]:
+                    - img [ref=e120] [cursor=pointer]
+                  - button "Obrázok produktu 2 / 18" [ref=e121] [cursor=pointer]:
+                    - img [ref=e122] [cursor=pointer]
+                  - button "Obrázok produktu 3 / 18" [ref=e123] [cursor=pointer]:
+                    - img [ref=e124] [cursor=pointer]
+                  - button "Obrázok produktu 4 / 18" [ref=e125] [cursor=pointer]:
+                    - img [ref=e126] [cursor=pointer]
+                  - button "Obrázok produktu 5 / 18" [ref=e127] [cursor=pointer]:
+                    - img [ref=e128] [cursor=pointer]
+                  - button "Obrázok produktu 6 / 18" [ref=e129] [cursor=pointer]:
+                    - img [ref=e130] [cursor=pointer]
+                  - button "Obrázok produktu 7 / 18" [ref=e131] [cursor=pointer]:
+                    - img [ref=e132] [cursor=pointer]
+                  - button "Obrázok produktu 8 / 18" [ref=e133] [cursor=pointer]:
+                    - img [ref=e134] [cursor=pointer]
+                  - button "Obrázok produktu 9 / 18" [ref=e135] [cursor=pointer]:
+                    - img [ref=e136] [cursor=pointer]
+                  - button "Obrázok produktu 10 / 18" [ref=e137] [cursor=pointer]:
+                    - img [ref=e138] [cursor=pointer]
+                  - button "Obrázok produktu 11 / 18" [ref=e139] [cursor=pointer]:
+                    - img [ref=e140] [cursor=pointer]
+                  - button "Obrázok produktu 12 / 18" [ref=e141] [cursor=pointer]:
+                    - img [ref=e142] [cursor=pointer]
+                  - button "Obrázok produktu 13 / 18" [ref=e143] [cursor=pointer]:
+                    - img [ref=e144] [cursor=pointer]
+                  - button "Obrázok produktu 14 / 18" [ref=e145] [cursor=pointer]:
+                    - img [ref=e146] [cursor=pointer]
+                  - button "Obrázok produktu 15 / 18" [ref=e147] [cursor=pointer]:
+                    - img [ref=e148] [cursor=pointer]
+                  - button "Obrázok produktu 16 / 18" [ref=e149] [cursor=pointer]:
+                    - img [ref=e150] [cursor=pointer]
+                  - button "Obrázok produktu 17 / 18" [ref=e151] [cursor=pointer]:
+                    - img [ref=e152] [cursor=pointer]
+                  - button "Obrázok produktu 18 / 18" [ref=e153] [cursor=pointer]:
+                    - img [ref=e154] [cursor=pointer]
+                - button "next" [ref=e155] [cursor=pointer]
+              - group [ref=e157] [cursor=pointer]:
+                - generic [ref=e158] [cursor=pointer]:
+                  - img "ROHOVÁ SEDAČKA, koža, sivá - sivá/hliníková, Design, kov/koža (195/309cm) - Beldomo Premium" [ref=e159]
+                  - img "Beldomo Premium"
+                - img "ROHOVÁ SEDAČKA, koža, sivá - sivá/hliníková, Design, kov/koža (195/309cm) - Beldomo Premium" [ref=e161]
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - generic [ref=e180]: Číslo výrobku 2507008301
+                - heading "Beldomo Premium ROHOVÁ SEDAČKA, koža, sivá" [level=1] [ref=e181]:
+                  - generic [ref=e182]: Beldomo Premium ROHOVÁ
+                  - text: SEDAČKA, koža, sivá
+                - 'button "sivá rameno: 195/309 cm" [ref=e183] [cursor=pointer]':
+                  - generic [ref=e184] [cursor=pointer]:
+                    - generic [ref=e185] [cursor=pointer]: sivá
+                    - generic [ref=e186] [cursor=pointer]: "rameno: 195/309 cm"
+              - generic [ref=e187]:
+                - generic [ref=e188]: namiesto 6 225,00 €*
+                - generic [ref=e189]:
+                  - text: 3 859,
+                  - superscript [ref=e190]: "00"
+                  - text: €
+                - generic [ref=e191]: Ušetríte 2 366,00 €.
+                - generic [ref=e192]:
+                  - generic [ref=e193]: Vrát. DPH
+                  - generic [ref=e194]:
+                    - text: •
+                    - generic [ref=e195]: plus
+                    - button "Cena za dopravu" [ref=e196] [cursor=pointer]:
+                      - generic [ref=e197] [cursor=pointer]: Cena za dopravu
+              - generic [ref=e198]:
+                - generic [ref=e199]: "Viac z:"
+                - link "Beldomo Premium" [ref=e200] [cursor=pointer]:
+                  - /url: /c/beldomo
+                  - generic [ref=e201] [cursor=pointer]: Beldomo Premium
+              - button "Konfigurovať produkt" [ref=e203] [cursor=pointer]:
+                - generic [ref=e204] [cursor=pointer]: Konfigurovať produkt
+              - generic [ref=e205]:
+                - button "Zu den Favoriten hinzufügen" [ref=e206] [cursor=pointer]
+                - button "ROHOVÁ SEDAČKA, koža, sivá Vložiť do košíka" [ref=e207] [cursor=pointer]:
+                  - generic [ref=e208] [cursor=pointer]: Vložiť do košíka
+              - generic [ref=e209]:
+                - generic [ref=e210]: Predaj a doručenie od
+                - generic [ref=e211]: XXXLutz
+              - generic [ref=e212]:
+                - button "Doručenie špedíciou Zadarmo Dodanie & montáž 39,00 €" [ref=e213] [cursor=pointer]:
+                  - generic [ref=e214] [cursor=pointer]:
+                    - generic [ref=e216] [cursor=pointer]: Doručenie špedíciou
+                    - generic [ref=e217] [cursor=pointer]: Zadarmo
+                  - generic [ref=e219] [cursor=pointer]:
+                    - generic [ref=e221] [cursor=pointer]: Dodanie & montáž
+                    - generic [ref=e222] [cursor=pointer]: 39,00 €
+                - button "Pozrieť čas dodania" [ref=e224] [cursor=pointer]
+              - button "V predajni XXXLutz Zadarmo Vybrať pobočku" [ref=e226] [cursor=pointer]:
+                - generic [ref=e227] [cursor=pointer]:
+                  - generic [ref=e229] [cursor=pointer]: V predajni XXXLutz
+                  - generic [ref=e230] [cursor=pointer]: Zadarmo
+                - generic [ref=e232] [cursor=pointer]: Vybrať pobočku
+              - generic [ref=e233]:
+                - heading "Služby" [level=2] [ref=e234]
+                - list [ref=e235]:
+                  - listitem [ref=e236]:
+                    - link "Osobný odber ZDARMA" [ref=e237] [cursor=pointer]:
+                      - /url: /c/click-collect
+                      - generic [ref=e238] [cursor=pointer]: Osobný odber ZDARMA
+                  - listitem [ref=e239]:
+                    - link "Špedícia od 1299,- € doprava ZDARMA" [ref=e240] [cursor=pointer]:
+                      - /url: /c/xxxl-sposoby-dopravy
+                      - generic [ref=e241] [cursor=pointer]: Špedícia od 1299,- € doprava ZDARMA
+                  - listitem [ref=e242]:
+                    - link "30 dní na vrátenie" [ref=e243] [cursor=pointer]:
+                      - /url: /c/xxxl-reklamacia
+                      - generic [ref=e244] [cursor=pointer]: 30 dní na vrátenie
+                - button "Viac informácií o službách a dodaní" [ref=e245] [cursor=pointer]:
+                  - generic [ref=e246] [cursor=pointer]: Viac informácií o službách a dodaní
+              - button "Detaily výrobku" [ref=e248] [cursor=pointer]
+          - generic [ref=e250]:
+            - 'heading "Rohová sedacia súprava v sivej farbe: Relax par excellence" [level=2] [ref=e251]'
+            - generic [ref=e252]:
+              - button "Zobraziť viac" [ref=e253] [cursor=pointer]:
+                - generic [ref=e254] [cursor=pointer]:
+                  - text: Zobraziť viac
+                  - img [ref=e255] [cursor=pointer]
+              - generic [ref=e260]:
+                - text: Doprajte si v obývacej izbe priestor, kde sa po náročnom dni odreagujete. Rohová sedacia súprava v sivej farbe sa postará o prvotriedny relax vo vašej obývačke.
+                - strong [ref=e261]: "To najdôležitejšie v prehľade:"
+                - list [ref=e262]:
+                  - listitem [ref=e263]:
+                    - text: .
+                    - strong [ref=e264]: "tvar písmena L: cca 195 x 309 cm (rozmer strán)"
+                  - listitem [ref=e265]: ". výška: cca 85-100 cm"
+                  - listitem [ref=e266]: ". počet miest na sedenie: cca 4"
+                  - listitem [ref=e267]: ". hĺbka sedadla: cca 59/79 cm, výška sedadla: cca 47 cm"
+                  - listitem [ref=e268]: ". výška podrúčky: cca 52 cm"
+                - strong [ref=e269]: Pohodlie, ktoré môžete zažiť
+                - text: Kožený poťah prináša okrem luxusného vzhľadu i množstvo ďalších výhod, ako je jednoduchá údržba, odolnosť a príjemný kontakt s pokožkou. Príliš hlbokému zaboreniu sa zabráni príjemné penové čalúnenie.
+                - strong [ref=e270]: Výplň zo studenej peny
+                - text: sa vyznačuje vysokou bodovou pružnosťou a rovnomerným rozložením tlaku. Jemná, rovnomerná pórovitosť a priedušnosť nadchne najmä alergikov. Využite výhody príslušenstva ako je nastaviteľná hĺbka sedadla a zažite nebeské chvíle oddychu a pokoja.
+                - strong [ref=e271]: Dizajn, ktorý je pastvou pre oči
+                - text: Neutrálny odtieň v sivej farbe tvorí vkusný základ pre vytvorenie pohodovej domácej atmosféry. Celkový dizajn okrem toho dopĺňajú hranaté nohy z lesklého hliníka v hliníkovej farbe.
+                - strong [ref=e272]: "Súčasťou balenia:"
+                - list [ref=e273]:
+                  - listitem [ref=e274]: . nastaviteľná hĺbka sedadla
+                - text: Domov je tam, kde je táto sivá rohová sedacia súprava! Keďže pravá koža je prírodný produkt, skutočný vzhľad sa môže líšiť od obrázkov produktu. Informácie o príslušenstve k produktu nájdete v Detailoch výrobku. Informácie o ďalších dostupných variantách, doplnkoch a príslušenstve vám rád poskytne náš zákaznícky servis. Môžete nás tiež kontaktovať priamo prostredníctvom
+                - link [ref=e275] [cursor=pointer]:
+                  - /url: https://www.xxxlutz.sk/kontaktnecentrum
+                  - text: kontaktného formulára
+                - text: .
+          - generic [ref=e279]:
+            - heading "Mohlo by sa vám tiež páčiť" [level=2] [ref=e281]
+            - link "Preskočiť časť Zoznam s názvom Mohlo by sa vám tiež páčiť" [ref=e282] [cursor=pointer]:
+              - /url: "#skip-section-Zoznam-eyJpdGVtSWQiOiJjbXNpdGVtXzAwMTM4NzEyIiwiY2F0YWxvZ0lkIjoieHh4bHV0ei5zay1jb250ZW50IiwiY2F0YWxvZ1ZlcnNpb24iOiJPbmxpbmUifQ"
+              - text: Preskočiť odsek
+            - group [ref=e283]:
+              - group [ref=e284] [cursor=pointer]:
+                - article [ref=e285] [cursor=pointer]:
+                  - generic [ref=e286] [cursor=pointer]:
+                    - generic [ref=e288] [cursor=pointer]:
+                      - link "SEDACIA SÚPRAVA, koža, koňaková" [ref=e289] [cursor=pointer]:
+                        - /url: /p/cantus-sedacia-suprava-koza-konakov-000704011404
+                        - generic [ref=e290] [cursor=pointer]:
+                          - generic [ref=e291] [cursor=pointer]: SEDACIA
+                          - text: SÚPRAVA, koža, koňaková
+                      - generic [ref=e292] [cursor=pointer]: Cantus
+                      - generic [ref=e293] [cursor=pointer]: XXXLutz
+                    - generic [ref=e294] [cursor=pointer]:
+                      - generic [ref=e295] [cursor=pointer]:
+                        - generic [ref=e296] [cursor=pointer]: namiesto 3 738,00 €*
+                        - generic [ref=e297] [cursor=pointer]:
+                          - generic [ref=e298] [cursor=pointer]:
+                            - text: 1 869,
+                            - superscript [ref=e299] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e300] [cursor=pointer]:
+                            - generic [ref=e301] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e302] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e303] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e304] [cursor=pointer]:
+                                - generic [ref=e305] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e306] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e307] [cursor=pointer]
+                        - button "SEDACIA SÚPRAVA, koža, koňaková Vložiť do košíka" [ref=e308] [cursor=pointer]
+                  - img "SEDACIA SÚPRAVA, koža, koňaková - čierna/koňaková, koža/plast (204/104/98cm) - Cantus" [ref=e311] [cursor=pointer]
+                - article [ref=e312] [cursor=pointer]:
+                  - generic [ref=e313] [cursor=pointer]:
+                    - generic [ref=e315] [cursor=pointer]:
+                      - link "SEDACIA SÚPRAVA, textil, koža, antracitová" [ref=e316] [cursor=pointer]:
+                        - /url: /p/celina-home-sedacia-suprava-textil-koza-antracitov-002951002203
+                        - generic [ref=e317] [cursor=pointer]:
+                          - generic [ref=e318] [cursor=pointer]: SEDACIA
+                          - text: SÚPRAVA, textil, koža, antracitová
+                      - generic [ref=e319] [cursor=pointer]: Celina Home
+                      - generic [ref=e320] [cursor=pointer]: XXXLutz
+                    - generic [ref=e321] [cursor=pointer]:
+                      - generic [ref=e322] [cursor=pointer]:
+                        - generic [ref=e323] [cursor=pointer]: namiesto 3 137,00 €*
+                        - generic [ref=e324] [cursor=pointer]:
+                          - generic [ref=e325] [cursor=pointer]:
+                            - text: 1 999,
+                            - superscript [ref=e326] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e327] [cursor=pointer]:
+                            - generic [ref=e328] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e329] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e330] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e331] [cursor=pointer]:
+                                - generic [ref=e332] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e333] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e334] [cursor=pointer]
+                        - button "SEDACIA SÚPRAVA, textil, koža, antracitová Vložiť do košíka" [ref=e335] [cursor=pointer]
+                  - img "SEDACIA SÚPRAVA, textil, koža, antracitová - čierna/antracitová, kov/koža (235/73-97/179cm) - Celina Home" [ref=e338] [cursor=pointer]
+                - article [ref=e339] [cursor=pointer]:
+                  - generic [ref=e340] [cursor=pointer]:
+                    - generic [ref=e342] [cursor=pointer]:
+                      - link "ROHOVÁ SEDACIA SÚPRAVA, textil, koža, svetlosivá" [ref=e343] [cursor=pointer]:
+                        - /url: /p/celina-home-rohova-sedacia-suprava-textil-koza-svetlosiv-000501001825
+                        - generic [ref=e344] [cursor=pointer]:
+                          - generic [ref=e345] [cursor=pointer]: ROHOVÁ
+                          - text: SEDACIA SÚPRAVA, textil, koža, svetlosivá
+                      - generic [ref=e346] [cursor=pointer]: Celina Home
+                      - generic [ref=e347] [cursor=pointer]: XXXLutz
+                    - generic [ref=e348] [cursor=pointer]:
+                      - generic [ref=e349] [cursor=pointer]:
+                        - generic [ref=e350] [cursor=pointer]: namiesto 3 338,00 €*
+                        - generic [ref=e351] [cursor=pointer]:
+                          - generic [ref=e352] [cursor=pointer]:
+                            - text: 1 839,
+                            - superscript [ref=e353] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e354] [cursor=pointer]:
+                            - generic [ref=e355] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e356] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e357] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e358] [cursor=pointer]:
+                                - generic [ref=e359] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e360] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e361] [cursor=pointer]
+                        - button "ROHOVÁ SEDACIA SÚPRAVA, textil, koža, svetlosivá Vložiť do košíka" [ref=e362] [cursor=pointer]
+                  - img "ROHOVÁ SEDACIA SÚPRAVA, textil, koža, svetlosivá - čierna/svetlosivá, Design, kov/koža (212/265cm) - Celina Home" [ref=e365] [cursor=pointer]
+                - article [ref=e366] [cursor=pointer]:
+                  - generic [ref=e367] [cursor=pointer]:
+                    - generic [ref=e369] [cursor=pointer]:
+                      - link "ROHOVÁ SEDAČKA, koža, piesková" [ref=e370] [cursor=pointer]:
+                        - /url: /p/chilliano-rohova-sedacka-koza-pieskov-000137003503
+                        - generic [ref=e371] [cursor=pointer]:
+                          - generic [ref=e372] [cursor=pointer]: ROHOVÁ
+                          - text: SEDAČKA, koža, piesková
+                      - generic [ref=e373] [cursor=pointer]: Chilliano
+                      - generic [ref=e374] [cursor=pointer]: XXXLutz
+                    - generic [ref=e375] [cursor=pointer]:
+                      - generic [ref=e376] [cursor=pointer]:
+                        - generic [ref=e377] [cursor=pointer]: namiesto 10 419,00 €*
+                        - generic [ref=e378] [cursor=pointer]:
+                          - generic [ref=e379] [cursor=pointer]:
+                            - text: 6 979,
+                            - superscript [ref=e380] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e381] [cursor=pointer]:
+                            - generic [ref=e382] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e383] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e384] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e385] [cursor=pointer]:
+                                - generic [ref=e386] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e387] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e388] [cursor=pointer]
+                        - button "ROHOVÁ SEDAČKA, koža, piesková Vložiť do košíka" [ref=e389] [cursor=pointer]
+                  - img "ROHOVÁ SEDAČKA, koža, piesková - piesková/bronzová, Design, kov/koža (298/298cm) - Chilliano" [ref=e392] [cursor=pointer]
+                - article [ref=e393] [cursor=pointer]:
+                  - generic [ref=e394] [cursor=pointer]:
+                    - generic [ref=e395] [cursor=pointer]:
+                      - generic [ref=e396] [cursor=pointer]:
+                        - link "ROHOVÁ SEDAČKA, koža, sivá" [ref=e397] [cursor=pointer]:
+                          - /url: /p/beldomo-premium-rohova-sedacka-koza-siv-002507008301
+                          - generic [ref=e398] [cursor=pointer]:
+                            - generic [ref=e399] [cursor=pointer]: ROHOVÁ
+                            - text: SEDAČKA, koža, sivá
+                        - generic [ref=e400] [cursor=pointer]: Beldomo Premium
+                        - generic [ref=e401] [cursor=pointer]: XXXLutz
+                      - generic [ref=e403] [cursor=pointer]: Konfigurovateľné
+                    - generic [ref=e404] [cursor=pointer]:
+                      - generic [ref=e405] [cursor=pointer]:
+                        - generic [ref=e406] [cursor=pointer]: namiesto 6 225,00 €*
+                        - generic [ref=e407] [cursor=pointer]:
+                          - generic [ref=e408] [cursor=pointer]:
+                            - text: 3 859,
+                            - superscript [ref=e409] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e410] [cursor=pointer]:
+                            - generic [ref=e411] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e412] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e413] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e414] [cursor=pointer]:
+                                - generic [ref=e415] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e416] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e417] [cursor=pointer]
+                        - button "ROHOVÁ SEDAČKA, koža, sivá Vložiť do košíka" [ref=e418] [cursor=pointer]
+                  - img "ROHOVÁ SEDAČKA, koža, sivá - sivá/hliníková, Design, kov/koža (195/309cm) - Beldomo Premium" [ref=e421] [cursor=pointer]
+                - article [ref=e422] [cursor=pointer]:
+                  - generic [ref=e423] [cursor=pointer]:
+                    - generic [ref=e425] [cursor=pointer]:
+                      - link "SEDACIA SÚPRAVA, koža, strieborná" [ref=e426] [cursor=pointer]:
+                        - /url: /p/johann-jakob-sedacia-suprava-koza-strieborn-000297055441
+                        - generic [ref=e427] [cursor=pointer]:
+                          - generic [ref=e428] [cursor=pointer]: SEDACIA
+                          - text: SÚPRAVA, koža, strieborná
+                      - generic [ref=e429] [cursor=pointer]: Johann Jakob
+                      - generic [ref=e430] [cursor=pointer]: XXXLutz
+                    - generic [ref=e431] [cursor=pointer]:
+                      - generic [ref=e432] [cursor=pointer]:
+                        - generic [ref=e433] [cursor=pointer]: namiesto 9 516,00 €*
+                        - generic [ref=e434] [cursor=pointer]:
+                          - generic [ref=e435] [cursor=pointer]:
+                            - text: 6 999,
+                            - superscript [ref=e436] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e437] [cursor=pointer]:
+                            - generic [ref=e438] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e439] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e440] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e441] [cursor=pointer]:
+                                - generic [ref=e442] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e443] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e444] [cursor=pointer]
+                        - button "SEDACIA SÚPRAVA, koža, strieborná Vložiť do košíka" [ref=e445] [cursor=pointer]
+                  - img "SEDACIA SÚPRAVA, koža, strieborná - antracitová/strieborná, Design, kov/koža (291/229cm) - Johann Jakob" [ref=e448] [cursor=pointer]
+                - article [ref=e449] [cursor=pointer]:
+                  - generic [ref=e450] [cursor=pointer]:
+                    - generic [ref=e452] [cursor=pointer]:
+                      - link "ROHOVÁ SEDAČKA, koža, farba lieskového orecha" [ref=e453] [cursor=pointer]:
+                        - /url: /p/dieter-knoll-rohova-sedacka-koza-farba-lieskoveho-orecha-002805002002
+                        - generic [ref=e454] [cursor=pointer]:
+                          - generic [ref=e455] [cursor=pointer]: ROHOVÁ
+                          - text: SEDAČKA, koža, farba lieskového orecha
+                      - generic [ref=e456] [cursor=pointer]: Dieter Knoll
+                      - generic [ref=e457] [cursor=pointer]: XXXLutz
+                    - generic [ref=e458] [cursor=pointer]:
+                      - generic [ref=e459] [cursor=pointer]:
+                        - generic [ref=e460] [cursor=pointer]: namiesto 7 675,00 €*
+                        - generic [ref=e461] [cursor=pointer]:
+                          - generic [ref=e462] [cursor=pointer]:
+                            - text: 3 999,
+                            - superscript [ref=e463] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e464] [cursor=pointer]:
+                            - generic [ref=e465] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e466] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e467] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e468] [cursor=pointer]:
+                                - generic [ref=e469] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e470] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e471] [cursor=pointer]
+                        - button "ROHOVÁ SEDAČKA, koža, farba lieskového orecha Vložiť do košíka" [ref=e472] [cursor=pointer]
+                  - img "ROHOVÁ SEDAČKA, koža, farba lieskového orecha - čierna/farba lieskového orecha, Design, kov/koža (157/300cm) - Dieter Knoll" [ref=e475] [cursor=pointer]
+                - article [ref=e476] [cursor=pointer]:
+                  - generic [ref=e477] [cursor=pointer]:
+                    - generic [ref=e478] [cursor=pointer]:
+                      - generic [ref=e479] [cursor=pointer]:
+                        - link "ROHOVÁ SEDACIA SÚPRAVA, koža, bordová" [ref=e480] [cursor=pointer]:
+                          - /url: /p/celina-home-rohova-sedacia-suprava-koza-bordov-000501003401
+                          - generic [ref=e481] [cursor=pointer]:
+                            - generic [ref=e482] [cursor=pointer]: ROHOVÁ
+                            - text: SEDACIA SÚPRAVA, koža, bordová
+                        - generic [ref=e483] [cursor=pointer]: Celina Home
+                        - generic [ref=e484] [cursor=pointer]: XXXLutz
+                      - generic [ref=e486] [cursor=pointer]: K dispozícii je viac veľkostí
+                    - generic [ref=e487] [cursor=pointer]:
+                      - generic [ref=e488] [cursor=pointer]:
+                        - generic [ref=e489] [cursor=pointer]: namiesto 3 102,00 €*
+                        - generic [ref=e490] [cursor=pointer]:
+                          - generic [ref=e491] [cursor=pointer]:
+                            - text: 1 699,
+                            - superscript [ref=e492] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e493] [cursor=pointer]:
+                            - generic [ref=e494] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e495] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e496] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e497] [cursor=pointer]:
+                                - generic [ref=e498] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e499] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e500] [cursor=pointer]
+                        - button "ROHOVÁ SEDACIA SÚPRAVA, koža, bordová Vložiť do košíka" [ref=e501] [cursor=pointer]
+                  - img "ROHOVÁ SEDACIA SÚPRAVA, koža, bordová - čierna/bordová, Design, kov/koža (268/213cm) - Celina Home" [ref=e504] [cursor=pointer]
+                - article [ref=e505] [cursor=pointer]:
+                  - generic [ref=e506] [cursor=pointer]:
+                    - generic [ref=e508] [cursor=pointer]:
+                      - link "SEDACIA SÚPRAVA, textil, koža, platinová" [ref=e509] [cursor=pointer]:
+                        - /url: /p/celina-home-sedacia-suprava-textil-koza-platinov-002951001203
+                        - generic [ref=e510] [cursor=pointer]:
+                          - generic [ref=e511] [cursor=pointer]: SEDACIA
+                          - text: SÚPRAVA, textil, koža, platinová
+                      - generic [ref=e512] [cursor=pointer]: Celina Home
+                      - generic [ref=e513] [cursor=pointer]: XXXLutz
+                    - generic [ref=e514] [cursor=pointer]:
+                      - generic [ref=e515] [cursor=pointer]:
+                        - generic [ref=e516] [cursor=pointer]: namiesto 3 502,00 €*
+                        - generic [ref=e517] [cursor=pointer]:
+                          - generic [ref=e518] [cursor=pointer]:
+                            - text: 2 489,
+                            - superscript [ref=e519] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e520] [cursor=pointer]:
+                            - generic [ref=e521] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e522] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e523] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e524] [cursor=pointer]:
+                                - generic [ref=e525] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e526] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e527] [cursor=pointer]
+                        - button "SEDACIA SÚPRAVA, textil, koža, platinová Vložiť do košíka" [ref=e528] [cursor=pointer]
+                  - img "SEDACIA SÚPRAVA, textil, koža, platinová - strieborná/platinová, koža/drevo (262/211cm) - Celina Home" [ref=e531] [cursor=pointer]
+                - article [ref=e532] [cursor=pointer]:
+                  - generic [ref=e533] [cursor=pointer]:
+                    - generic [ref=e535] [cursor=pointer]:
+                      - link "ROHOVÁ SEDACIA SÚPRAVA, koža, krémová" [ref=e536] [cursor=pointer]:
+                        - /url: /p/celina-home-rohova-sedacia-suprava-koza-kremov-002951004307
+                        - generic [ref=e537] [cursor=pointer]:
+                          - generic [ref=e538] [cursor=pointer]: ROHOVÁ
+                          - text: SEDACIA SÚPRAVA, koža, krémová
+                      - generic [ref=e539] [cursor=pointer]: Celina Home
+                      - generic [ref=e540] [cursor=pointer]: XXXLutz
+                    - generic [ref=e541] [cursor=pointer]:
+                      - generic [ref=e542] [cursor=pointer]:
+                        - generic [ref=e543] [cursor=pointer]: namiesto 3 653,00 €*
+                        - generic [ref=e544] [cursor=pointer]:
+                          - generic [ref=e545] [cursor=pointer]:
+                            - text: 2 599,
+                            - superscript [ref=e546] [cursor=pointer]: "00"
+                            - text: €
+                          - generic [ref=e547] [cursor=pointer]:
+                            - generic [ref=e548] [cursor=pointer]: Vrát. DPH
+                            - generic [ref=e549] [cursor=pointer]:
+                              - text: •
+                              - generic [ref=e550] [cursor=pointer]: plus
+                              - button "Cena za dopravu" [ref=e551] [cursor=pointer]:
+                                - generic [ref=e552] [cursor=pointer]: Cena za dopravu
+                      - generic [ref=e553] [cursor=pointer]:
+                        - button "Zu den Favoriten hinzufügen" [ref=e554] [cursor=pointer]
+                        - button "ROHOVÁ SEDACIA SÚPRAVA, koža, krémová Vložiť do košíka" [ref=e555] [cursor=pointer]
+                  - img "ROHOVÁ SEDACIA SÚPRAVA, koža, krémová - čierna/krémová, Design, kov/koža (246/175cm) - Celina Home" [ref=e558] [cursor=pointer]
+              - button "Ďalší obrázok" [ref=e559] [cursor=pointer]
+    - contentinfo [ref=e560]:
+      - generic [ref=e561]:
+        - generic [ref=e562]:
+          - generic [ref=e563]: Výhody XXXLutz
+          - list [ref=e565]:
+            - listitem [ref=e566]:
+              - link "Osobný odber ZDARMA" [ref=e567] [cursor=pointer]:
+                - /url: /c/click-collect
+                - text: Osobný odber ZDARMA
+            - listitem [ref=e569]:
+              - link "Väčší nákup – doprava ZDARMA" [ref=e570] [cursor=pointer]:
+                - /url: /c/xxxl-online-nakup
+                - text: Väčší nákup – doprava ZDARMA
+            - listitem [ref=e572]:
+              - link "Rýchle dodanie a výnos až do bytu" [ref=e573] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - text: Rýchle dodanie a výnos až do bytu
+            - listitem [ref=e575]:
+              - link "Bezpečná platba" [ref=e576] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby
+                - text: Bezpečná platba
+            - listitem [ref=e578]:
+              - link "Zapožičanie dodávky výhodne" [ref=e579] [cursor=pointer]:
+                - /url: /c/xxxl-dodavka
+                - text: Zapožičanie dodávky výhodne
+            - listitem [ref=e581]:
+              - link "5 pobočiek po celej Slovenskej republike" [ref=e582] [cursor=pointer]:
+                - /url: /pobocky
+                - text: 5 pobočiek po celej Slovenskej republike
+            - listitem [ref=e584]:
+              - link "Zákaznícky servis e-shopu PO-NE" [ref=e585] [cursor=pointer]:
+                - /url: /kontaktnecentrum
+                - text: Zákaznícky servis e-shopu PO-NE
+        - generic [ref=e587]:
+          - link "Preskočiť ďalšiu časť Zoznam" [ref=e588] [cursor=pointer]:
+            - /url: "#skip-section-Zoznam-new_footer_third_section_node_1"
+            - text: Preskočiť odsek
+          - generic [ref=e589]:
+            - generic [ref=e591]:
+              - generic [ref=e592]: E-shop
+              - list [ref=e593]:
+                - listitem [ref=e594]:
+                  - link "Nákup online" [ref=e595] [cursor=pointer]:
+                    - /url: /c/xxxl-online-nakup
+                - listitem [ref=e596]:
+                  - link "Možnosti platby" [ref=e597] [cursor=pointer]:
+                    - /url: /c/xxxl-sposoby-platby
+                - listitem [ref=e598]:
+                  - link "Spôsoby dopravy" [ref=e599] [cursor=pointer]:
+                    - /url: /c/xxxl-sposoby-dopravy
+                - listitem [ref=e600]:
+                  - link "Vrátenie tovaru & reklamácia" [ref=e601] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamacia
+                - listitem [ref=e602]:
+                  - link "Click & Collect" [ref=e603] [cursor=pointer]:
+                    - /url: /c/click-collect
+                - listitem [ref=e604]:
+                  - link "FAQ" [ref=e605] [cursor=pointer]:
+                    - /url: /faq
+                - listitem [ref=e606]:
+                  - link "Newsletter" [ref=e607] [cursor=pointer]:
+                    - /url: /c/newsletter
+                - listitem [ref=e608]:
+                  - link "Všetky kategórie produktov" [ref=e609] [cursor=pointer]:
+                    - /url: /kategorie/root
+            - generic [ref=e611]:
+              - generic [ref=e612]: Služby
+              - list [ref=e613]:
+                - listitem [ref=e614]:
+                  - link "XXXL Služby" [ref=e615] [cursor=pointer]:
+                    - /url: /c/xxxl-sluzby
+                - listitem [ref=e616]:
+                  - link "XXXL HIT karta" [ref=e617] [cursor=pointer]:
+                    - /url: /c/xxxl-hitkarta
+                - listitem [ref=e618]:
+                  - link "Doprava a montáž" [ref=e619] [cursor=pointer]:
+                    - /url: /c/doprava-montaz
+                - listitem [ref=e620]:
+                  - link "Bývanie na mieru" [ref=e621] [cursor=pointer]:
+                    - /url: /c/nabytok-na-mieru-dohodnut-poradenstvo
+                - listitem [ref=e622]:
+                  - link "B2B program" [ref=e623] [cursor=pointer]:
+                    - /url: /c/b2b-program
+                - listitem [ref=e624]:
+                  - link "XXXL Radca" [ref=e625] [cursor=pointer]:
+                    - /url: /c/poradenstvo
+                - listitem [ref=e626]:
+                  - link "Stav objednávky" [ref=e627] [cursor=pointer]:
+                    - /url: /stavobjednavky
+            - generic [ref=e629]:
+              - generic [ref=e630]: Predajne
+              - list [ref=e631]:
+                - listitem [ref=e632]:
+                  - link "Pobočky" [ref=e633] [cursor=pointer]:
+                    - /url: /pobocky
+                - listitem [ref=e634]:
+                  - link "Výpredajové trháky" [ref=e635] [cursor=pointer]:
+                    - /url: /hs/
+                - listitem [ref=e636]:
+                  - link "XXXL Dodávka" [ref=e637] [cursor=pointer]:
+                    - /url: /c/xxxl-dodavka
+                - listitem [ref=e638]:
+                  - link "Reklamačný poriadok" [ref=e639] [cursor=pointer]:
+                    - /url: /c/reklamacny-poriadok
+                - listitem [ref=e640]:
+                  - link "Financovanie" [ref=e641] [cursor=pointer]:
+                    - /url: /c/financovanie
+                - listitem [ref=e642]:
+                  - link "Prospekty" [ref=e643] [cursor=pointer]:
+                    - /url: /c/letaky
+                - listitem [ref=e644]:
+                  - link "Vrátenie tovaru & reklamácia" [ref=e645] [cursor=pointer]:
+                    - /url: /c/xxxl-reklamacia
+            - generic [ref=e647]:
+              - generic [ref=e648]: O nás
+              - list [ref=e649]:
+                - listitem [ref=e650]:
+                  - link "Firma XXXLutz" [ref=e651] [cursor=pointer]:
+                    - /url: /c/spolocnost-xxxlutz
+                - listitem [ref=e652]:
+                  - link "Rodina Putz" [ref=e653] [cursor=pointer]:
+                    - /url: /c/rodina-putz
+                - listitem [ref=e654]:
+                  - link "Ozvite sa" [ref=e655] [cursor=pointer]:
+                    - /url: /c/speak-up
+                - listitem [ref=e656]:
+                  - link "Tlačové centrum" [ref=e657] [cursor=pointer]:
+                    - /url: https://pr.xxxlutz.sk/
+                - listitem [ref=e658]:
+                  - link "Kariéra v XXXLutz" [ref=e659] [cursor=pointer]:
+                    - /url: https://kariera.xxxlutz.sk/
+                - listitem [ref=e660]:
+                  - link "XXXL Svet značiek" [ref=e661] [cursor=pointer]:
+                    - /url: /c/xxxl-svet-znaciek
+        - generic [ref=e663]:
+          - generic [ref=e666]:
+            - paragraph [ref=e667]: Chcete sa na niečo spýtať?
+            - generic [ref=e668]:
+              - generic [ref=e669]:
+                - link "Ku kontaktnému formuláru" [ref=e670] [cursor=pointer]:
+                  - /url: /kontaktnecentrum
+                  - generic [ref=e671] [cursor=pointer]: Ku kontaktnému formuláru
+                - paragraph [ref=e672]: Kontaktujte nás
+              - generic [ref=e673]:
+                - link "Často kladené otázky" [ref=e674] [cursor=pointer]:
+                  - /url: /faq
+                  - generic [ref=e675] [cursor=pointer]: Často kladené otázky
+                - paragraph [ref=e676]: Ak potrebujete poradiť okamžite, navštívte sekciu s často kladenými otázkami.
+          - generic [ref=e677]:
+            - generic [ref=e678]: Spôsoby platby v e-shope
+            - generic [ref=e679]:
+              - link "Mastercard" [ref=e682] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "Mastercard" [ref=e683] [cursor=pointer]
+              - link "VISA" [ref=e686] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "VISA" [ref=e687] [cursor=pointer]
+              - link "Diners card" [ref=e690] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#pkarta
+                - img "Diners card" [ref=e691] [cursor=pointer]
+              - link "PAYPAL" [ref=e694] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#paypal
+                - img "PAYPAL" [ref=e695] [cursor=pointer]
+              - link "bankovi prevod" [ref=e698] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#bank
+                - img "bankovi prevod" [ref=e699] [cursor=pointer]
+              - link "DOBIERKA" [ref=e702] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#dobierka
+                - img "DOBIERKA" [ref=e703] [cursor=pointer]
+              - link "GPay" [ref=e706] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby
+                - img "GPay" [ref=e707] [cursor=pointer]
+              - link "Apple Pay" [ref=e710] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-platby#applepay
+                - img "Apple Pay" [ref=e711] [cursor=pointer]
+          - generic [ref=e712]:
+            - generic [ref=e713]: Spôsoby dopravy v e-shope
+            - generic [ref=e714]:
+              - link "Gebruder Weiss" [ref=e717] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "Gebruder Weiss" [ref=e718] [cursor=pointer]
+              - link "SPS" [ref=e721] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "SPS" [ref=e722] [cursor=pointer]
+              - link "DPD" [ref=e725] [cursor=pointer]:
+                - /url: /c/xxxl-sposoby-dopravy
+                - img "DPD" [ref=e726] [cursor=pointer]
+          - generic [ref=e727]: "* nezáväzne odporúčaná spotrebiteľská cena. /** doterajšia predajná cena. / ***Najnižšia cena za posledných 30 dní. / Všetky uvedené ceny sú vrátane DPH. / Doprava a montáž nie sú súčasťou uvedených cien. / Dodanie v rámci Slovenskej republiky. / Zmeny a chyby vyhradené."
+        - generic [ref=e730]:
+          - link "XXXLutz" [ref=e731] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e732] [cursor=pointer]: XXXLutz
+            - img [ref=e734] [cursor=pointer]
+          - generic [ref=e740]: © 2026 XLSK Nábytok s.r.o.
+          - list [ref=e741]:
+            - listitem [ref=e742]:
+              - link "Kontakty" [ref=e743] [cursor=pointer]:
+                - /url: /c/kontakty
+            - listitem [ref=e744]:
+              - link "Impresum" [ref=e745] [cursor=pointer]:
+                - /url: /c/impresum
+            - listitem [ref=e746]:
+              - link "Podmienky akcie" [ref=e747] [cursor=pointer]:
+                - /url: /c/podmienkyakcie
+            - listitem [ref=e748]:
+              - link "VOP" [ref=e749] [cursor=pointer]:
+                - /url: /c/vop
+            - listitem
+            - listitem [ref=e750]:
+              - link "Ochrana údajov" [ref=e751] [cursor=pointer]:
+                - /url: /c/ochrana-osobnych-udajov
+            - listitem [ref=e752]:
+              - button "Nastavenia cookie" [ref=e753] [cursor=pointer]
+            - listitem [ref=e754]:
+              - link "Vyhlásenie o prístupnosti" [ref=e755] [cursor=pointer]:
+                - /url: /accessibility
+            - listitem [ref=e756]:
+              - link "Accessibility" [ref=e757] [cursor=pointer]:
+                - /url: /c/accessibility-statement
+          - list [ref=e758]:
+            - listitem [ref=e759]:
+              - link "youtube" [ref=e760] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCe5Dy_RRyw-KGdHu0rbL2hw
+            - listitem [ref=e761]:
+              - link "pinterest" [ref=e762] [cursor=pointer]:
+                - /url: https://www.pinterest.com/Lutznabytok/
+            - listitem [ref=e763]:
+              - link "instagram" [ref=e764] [cursor=pointer]:
+                - /url: https://www.instagram.com/xxxlutz_sk/
+            - listitem [ref=e765]:
+              - link "facebook" [ref=e766] [cursor=pointer]:
+                - /url: https://www.facebook.com/lutznabytok/
+            - listitem [ref=e767]:
+              - link "tiktok" [ref=e768] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@xxxlutz_czsk
+          - link [ref=e769] [cursor=pointer]:
+            - /url: /accessibility
+  - dialog "dialog" [ref=e770]:
+    - generic [ref=e771]:
+      - heading "Cookies pomáhajú vám i nám" [level=3] [ref=e773]:
+        - generic [ref=e774]:
+          - img [ref=e775]
+          - text: Cookies pomáhajú vám i nám
+      - generic [ref=e788]:
+        - paragraph [ref=e789]: My, spoločnosť XLSK Nábytok s.r.o., používame súbory cookies a podobné technológie („cookies“). Cookies používame a údaje nimi získané spracúvame na to, aby sme vám mohli sprístupniť našu webovú stránku a jej funkcie, poskytli optimálny nákupný zážitok, zabezpečili a zlepšovali naše služby, spoznali vaše používateľské správanie a zobrazovali personalizovanú reklamu a obsah na našej webovej stránke aj stránkach tretích strán, v našich newsletteroch a v rámci našej vernostnej karty.
+        - list [ref=e791]:
+          - listitem [ref=e792]:
+            - text: .
+            - paragraph [ref=e794]: Kliknutím na „Prijať všetky cookies“ súhlasíte s použitím všetkých cookies uvedených v nastaveniach cookies. Svoj súhlas môžete kedykoľvek v budúcnosti odvolať alebo zmeniť v nastaveniach cookies.
+          - listitem [ref=e795]:
+            - text: .
+            - paragraph [ref=e797]: Ak nižšie kliknete na „Odmietnuť všetko“, nastavíme iba nevyhnutné cookies a technológie bez použitia cookies na zobrazovanie bannerov.
+          - listitem [ref=e798]:
+            - text: .
+            - paragraph [ref=e800]: Kliknutím na „Nastavenia cookies“ si môžete cookies individuálne vybrať a zistiť o nich viac.
+        - generic [ref=e801]:
+          - button "Prijať všetky cookies" [active] [ref=e802] [cursor=pointer]:
+            - generic [ref=e803] [cursor=pointer]: Prijať všetky cookies
+          - button "Odmietnuť všetko" [ref=e805] [cursor=pointer]:
+            - generic [ref=e806] [cursor=pointer]: Odmietnuť všetko
+        - list [ref=e808]:
+          - listitem [ref=e809]:
+            - button "Nastavenia cookies" [ref=e810] [cursor=pointer]:
+              - generic [ref=e811] [cursor=pointer]: Nastavenia cookies
+          - listitem [ref=e812]:
+            - button "Ochrana osobných údajov" [ref=e813] [cursor=pointer]:
+              - generic [ref=e814] [cursor=pointer]: Ochrana osobných údajov
+          - listitem [ref=e815]:
+            - button "Impresum" [ref=e816] [cursor=pointer]:
+              - generic [ref=e817] [cursor=pointer]: Impresum
+```
