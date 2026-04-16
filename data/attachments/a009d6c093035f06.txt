@@ -1,0 +1,27 @@
+❌ OpenPage failed: locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('[data-purpose="checkout.addtocart"]')
+    - locator resolved to <button title="" tabindex="0" type="button" data-track-id="addToCartPDP" data-product-id="000687023303" data-purpose="checkout.addtocart" aria-label="ŠAT. SKRIŇA S POSUV. DVERAMI, biela, farba duba, 170,3/210,5/61,2 cm Vložiť do košíka" class="_aY8oeswPMrWsKGXo _yD2s3g7k5FB1Cblu _bBvEGVGC65pClMnS _lo1tcWBzUWgcX6sF _rygPX2slTty8Lavs _GQG3m6CCyJyX8TgF">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="presentation" data-testid="backdrop" data-purpose="backdrop" class="_dpUpXNX1PQh1Gb0v"></div> from <div id="modal">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="presentation" data-testid="backdrop" data-purpose="backdrop" class="_dpUpXNX1PQh1Gb0v"></div> from <div id="modal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    24 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div role="presentation" data-testid="backdrop" data-purpose="backdrop" class="_dpUpXNX1PQh1Gb0v"></div> from <div id="modal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+

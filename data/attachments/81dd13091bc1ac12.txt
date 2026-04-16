@@ -1,4 +1,0 @@
-❌ OpenPage failed: locator.click: Timeout 15000ms exceeded.
-Call log:
-  - waiting for locator('[data-purpose="checkout.addtocart"]')
-
